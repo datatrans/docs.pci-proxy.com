@@ -48,7 +48,7 @@ You can have multiple merchant IDs. For instance, if you have different environm
 In order to go live, you will need to replace the test API key with a production API key. You can get your produc-tion keys by registering an account at PCI Proxy.
 
 
-``` http
+```HTTP
 GET payment.datatrans.biz/upp/proxy/pull HTTP/1.1X-CC-URL: channel-partner.com/service/
 X-CC-XPATH: reservation/customer/cc_number
 ```
