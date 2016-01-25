@@ -16,7 +16,7 @@ _You are a middle office that receives booking information on behalf of your cli
 
 _Travel agencies use your software to drop new bookings. At some point, they will enter the customers’ payment data in your software. In order to minimize your PCI scope, this payment data should be added without touching your server._
 
-PCI Proxy supports a varienty of [different approaches for you to collect the payment data](##Register an account). The most common approach is to submit data directly from your software using our [payment pages](link). Another option is [pay-by-email](link) where payment links are issued that can be emailed to customers to let them enter their payment details by them-selves. Now you have shielded your server by using our APIs to extract and collect payment data and stored it in our PCI Proxy vault up front. 
+PCI Proxy supports a varienty of [different approaches for you to collect the payment data](index.html##Register an account). The most common approach is to submit data directly from your software using our [payment pages](link). Another option is [pay-by-email](link) where payment links are issued that can be emailed to customers to let them enter their payment details by them-selves. Now you have shielded your server by using our APIs to extract and collect payment data and stored it in our PCI Proxy vault up front. 
 
 _On behalf of your clients you want to process the booking or transact with different endpoints (e.g. Expedia, Stripe, TUI, Lufthansa, etc.)._
 
