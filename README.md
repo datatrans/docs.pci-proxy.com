@@ -16,7 +16,7 @@ _You are a middle office that receives booking information on behalf of your cli
 
 _Travel agencies use your software to drop new bookings. At some point, they will enter the customers’ payment data in your software. In order to minimize your PCI scope, this payment data should be added without touching your server._
 
-PCI Proxy supports a varienty of [different approaches for you to collect the payment data](#markdown-header-register-an-account). The most common approach is to submit data directly from your software using our [payment pages](#paymentpages). Another option is [pay-by-email](#paybyemail) where payment links are issued that can be emailed to customers to let them enter their payment details by them-selves. Now you have shielded your server by using our APIs to extract and collect payment data and stored it in our PCI Proxy vault up front. 
+PCI Proxy supports a varienty of [different approaches for you to collect the payment data](#collect). The most common approach is to submit data directly from your software using our [payment pages](#paymentpages). Another option is [pay-by-email](#paybyemail) where payment links are issued that can be emailed to customers to let them enter their payment details by them-selves. Now you have shielded your server by using our APIs to extract and collect payment data and stored it in our PCI Proxy vault up front. 
 
 _On behalf of your clients you want to process the booking or transact with different endpoints (e.g. Expedia, Stripe, TUI, Lufthansa, etc.)._
 
@@ -52,7 +52,7 @@ _For your convenience, we have pre-filled our examples with a test API key so yo
 
 In order to [go live](#live), you will need to replace the test API key with a production API key. You can get your produc-tion keys by [registering an account](#register) at PCI Proxy.
 
-##Register an account
+## <a name="collect"></a>Register an account
 
 Before you register an account at PCI Proxy, you can use PCI Proxy only in test mode. With the exception that only [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers) can be used, all PCI Proxy features are fully available in test mode.
 Registering an account at PCI Proxy is simple. You send us an email to <mailto:setup@pci-proxy.com> with the following information:
