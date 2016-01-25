@@ -52,7 +52,7 @@ _For your convenience, we have pre-filled our examples with a test API key so yo
 
 In order to [go live](#live), you will need to replace the test API key with a production API key. You can get your produc-tion keys by [registering an account](#register) at PCI Proxy.
 
-<a name="register"></a>##Register an account
+<a name="register">##Register an account</a>
 
 Before you register an account at PCI Proxy, you can use PCI Proxy only in test mode. With the exception that only [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers) can be used, all PCI Proxy features are fully available in test mode.
 Registering an account at PCI Proxy is simple. You send us an email to <mailto:setup@pci-proxy.com> with the following information:
