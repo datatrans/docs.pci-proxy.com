@@ -62,3 +62,6 @@ Registering an account at PCI Proxy is simple. You send us an email to <mailto:s
 | Company name      |
 | Language      |
 | Country |
+
+#Features
+## Collect or extract payment data
