@@ -10,7 +10,7 @@ Pic Inbound & Outbound
 
 The following list of business cases is not complete and should only give an overview of business types that already use PCI Proxy. 
 
-**Mid Office Example**
+###Middle Office
 
 _You are a mid office that receives booking information on behalf of your clients._
 
@@ -21,6 +21,10 @@ PCI Proxy supports a varienty of [different approaches for you to collect the pa
 _On behalf of your clients you want to process the booking or transact with different endpoints (e.g. Expedia, Stripe, TUI, Lufthansa, etc.)._
 
 PCI Proxy allows you to [forward vaulted payment data](link) to PCI compliant third parties.
+
+### Channel Manager
+
+_You are a channel manager that requests or receives booking information from booking portals/OTAs, e.g. _[Booking.com](http://www.booking.com/)_.
 
 # Quick Start Guide
 
