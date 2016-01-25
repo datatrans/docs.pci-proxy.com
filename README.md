@@ -8,7 +8,9 @@ Pic Inbound & Outbound
 
 ##PCI Proxy supported business cases
 The following list of business cases is not complete and should only give an overview of business types that already use PCI Proxy. If you run a web service that receives or requests messages via API from your partners or clients (channel) that in-clude sensitive payment data, PCI Proxy can extract it and automatically store it securely in PCI Proxys’ vault. 
+
 Together with the stored payment data, a reference number (token) is issued that substitutes the payment data field in your request. The message structure of the channel API always remains the same. The token can be used later on to charge, forward or retrieve payment data. All of this happens before sensitive payment data ever touch your server to minimize your PCI scope. 
+
 You are allowed to store the token in your system, as it is not PCI DSS relevant.If you run a web service that receives or requests messages via API from your partners or clients (channel) that in-clude sensitive payment data, PCI Proxy can extract it and automatically store it securely in PCI Proxys’ vault. 
 Together with the stored payment data, a reference number (token) is issued that substitutes the payment data field in your request. The message structure of the channel API always remains the same. The token can be used later on to charge, forward or retrieve payment data. All of this happens before sensitive payment data ever touch your server to minimize your PCI scope. 
 You are allowed to store the token in your system, as it is not PCI DSS relevant.
