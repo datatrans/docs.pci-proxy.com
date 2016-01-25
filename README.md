@@ -3,32 +3,24 @@
 
 PCI Proxy is a service that can securely collect, store and forward credit cards (payment data) to any payment gateway (e.g. Stripe) or other PCI-certified third party (e.g. Expedia). It can even extract payment data out of exist-ing web service calls (e.g. Booking.com) while allowing the message body to remain unaffected. By using tokeni-zation, our APIs ensure sensitive payment data never touches your system environment.
 
-Hey! I'm your first Markdown document in **StackEdit**[^stackedit]. Don't delete me, I'm very helpful! I can be recovered anyway in the **Utils** tab of the <i class="icon-cog"></i> **Settings** dialog.
-
 #Overview
 Pic Inbound & Outbound
 
-##PCI Proxy supported business cases
-The following list of business cases is not complete and should only give an overview of business types that already use PCI Proxy. If you run a web service that receives or requests messages via API from your partners or clients (channel) that in-clude sensitive payment data, PCI Proxy can extract it and automatically store it securely in PCI Proxys’ vault. 
+##Supported Business Cases
 
-Together with the stored payment data, a reference number (token) is issued that substitutes the payment data field in your request. The message structure of the channel API always remains the same. The token can be used later on to charge, forward or retrieve payment data. All of this happens before sensitive payment data ever touch your server to minimize your PCI scope. 
+The following list of business cases is not complete and should only give an overview of business types that already use PCI Proxy. 
 
-You are allowed to store the token in your system, as it is not PCI DSS relevant.If you run a web service that receives or requests messages via API from your partners or clients (channel) that in-clude sensitive payment data, PCI Proxy can extract it and automatically store it securely in PCI Proxys’ vault. 
-Together with the stored payment data, a reference number (token) is issued that substitutes the payment data field in your request. The message structure of the channel API always remains the same. The token can be used later on to charge, forward or retrieve payment data. All of this happens before sensitive payment data ever touch your server to minimize your PCI scope. 
-You are allowed to store the token in your system, as it is not PCI DSS relevant.
+**Mid Office Example**
 
+_You are a mid office that receives booking information on behalf of your clients._
 
-> **Mid Office Example**
+_Travel agencies use your software to drop new bookings. At some point, they will enter the customers’ payment data in your software. In order to minimize your PCI scope, this payment data should be added without touching your server._
 
-> _You are a mid office that receives booking information on behalf of your clients._
+PCI Proxy supports a varienty of [different approaches for you to collect the payment data](link). The most common approach is to submit data directly from your software using our [payment pages](link). Another option is [pay-by-email](link) where payment links are issued that can be emailed to customers to let them enter their payment details by them-selves. Now you have shielded your server by using our APIs to extract and collect payment data and stored it in our PCI Proxy vault up front. 
 
-> _Travel agencies use your software to drop new bookings. At some point, they will enter the customers’ payment data in your software. In order to minimize your PCI scope, this payment data should be added without touching your server._
+_On behalf of your clients you want to process the booking or transact with different endpoints (e.g. Expedia, Stripe, TUI, Lufthansa, etc.)._
 
-> PCI Proxy supports a varienty of [different approaches for you to collect the payment data](link). The most common approach is to submit data directly from your software using our [payment pages](link). Another option is [pay-by-email](link) where payment links are issued that can be emailed to customers to let them enter their payment details by them-selves. Now you have shielded your server by using our APIs to extract and collect payment data and stored it in our PCI Proxy vault up front. 
-
-> _On behalf of your clients you want to process the booking or transact with different endpoints (e.g. Expedia, Stripe, TUI, Lufthansa, etc.)._
-
-> PCI Proxy allows you to [forward vaulted payment data](link) to PCI compliant third parties.
+PCI Proxy allows you to [forward vaulted payment data](link) to PCI compliant third parties.
 
 # Quick Start Guide
 
@@ -53,12 +45,7 @@ GET payment.datatrans.biz/upp/proxy/pull HTTP/1.1X-CC-URL: channel-partner.com/
 X-CC-XPATH: reservation/customer/cc_number
 ```
 
-```Java
-public static void main(String [] args)
-	{
-		// hello
-	}
-```
+
 
 
 
