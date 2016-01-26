@@ -47,9 +47,9 @@ Here is a quick step-by-step instruction on how to get started and quickly reduc
 
 On the following pages you will find several sample scripts that run on our test environment. You will notice the merchant ID attribute. Merchant IDs are unique API keys that will identify your environments at PCI Proxy once you are registered.
 
-> You can have multiple merchant IDs. For instance, if you have different environments on which you receive pay-ment data (e.g. website, web service, mobile app), we recommend separating your environments by using a single merchant ID for each.
+You can have multiple merchant IDs. For instance, if you have different environments on which you receive pay-ment data (e.g. website, web service, mobile app), we recommend separating your environments by using a single merchant ID for each.
 
-> _For your convenience, we have pre-filled our examples with a test API key so you can start off testing right away._
+_For your convenience, we have pre-filled our examples with a test API key so you can start off testing right away._
 
 In order to [go live](#live), you will need to replace the test API key with a production API key. You can get your produc-tion keys by [registering an account](#register) at PCI Proxy.
 
