@@ -8,5 +8,5 @@
    * [Collect Payment Data](collect_payment_data.md)
        * [From XML/JSON](webservice.md)
        * [On A Website/Application](website-application.md)
-* Activate your account
+* [Activate your account](activate_account.md)
 
