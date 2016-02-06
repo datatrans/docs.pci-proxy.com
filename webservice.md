@@ -87,7 +87,7 @@ Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird 
 
 *You are a travel technology company receiving new reservations from booking portals on an API endpoint at your server. As reservations may contain sensitive payment data, your servers are in PCI scope.*
 
-*With the use of PCI Proxy, payment data ever touch your server and your reduce your PCI scope.* 
+*With the use of PCI Proxy, payment data ever touch your server and, hence, you reduce your PCI scope.* 
 
 #### Quick Start Guide
 
