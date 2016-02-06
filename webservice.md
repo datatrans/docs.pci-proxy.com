@@ -31,7 +31,7 @@ In general, you either perform a pull request to receive data or a channel pushe
 Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird also pull und push
 
 
-
+> **Note:** All testing is done in our test environment. You will need to replace the test credentials with your live credentials for production uses. You can get your live credentials by [activating your account](activate-account). 
 
 
 
@@ -75,7 +75,7 @@ Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird 
         -d 'yourRequest.xml'
 ```
 
-All testing is done on our test environment. You will need to replace the test credentials with your live credentials for production uses. You can get your live credentials by [activating your account](activate-account). 
+
     
 ## Receive a request from a partner
 
@@ -118,31 +118,5 @@ You will receive a confirmation once the channel is successfully added. For push
 We support a variety of channel APIs out of the box. Every day, more and more channels get added.
 
 
-
-
-
-**Live mode and testing**
-
-PCI Proxy accounts are divided into two environments, namely test and production. All your API requests and testing go through our test environment until you [activate your account](activate-account). The test environment gives you the opportunity to test the PCI Proxy and make sure you receive the correct data. In test mode, you can only use [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). You can differentiate test and production environment based on the URL.
-
- 
- | Environment |URL |
-| -- | -- |
-| PROD: | `https://production.datatrans.biz/upp/proxy/` |
- | TEST: | `https://pilot.datatrans.biz/upp/proxy/` |
-
- Once your tests are successful, please [activate your account](activate-account) and receive your productive credentials.
- 
-
-**Activate channels**
-
-Once your tests are successful, you can activate it by sending the following data to setup@pci-proxy.com.
-
-|Information| Description   |
-|---|---|
-|Merchant ID|Once you [register an account](register) you receive your merchant ID.|
-|API Endpoint|Test API endpoint that should be activated|
-
-In return you will receive a unique production push URL for the new push channel that you can pass on to your partner. 
 
 
