@@ -18,9 +18,28 @@ The token can be used later on to charge, forward or retrieve payment data. All 
 
 > *We also have SLAs ready for you. Please [get in touch](start@pci-proxy.com) for more info.*
 
+
+
 ## How to start
 
 In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
+
+
+**Live mode and testing**
+
+PCI Proxy has two environments, test and production. endpoints are hosted in our testing environment. You can differentiate test and production environment based on the URL.
+
+to let you test the channel and make sure you receive the correct data. 
+ 
+ | Environment |URL |
+| -- | -- |
+| PROD: | `https://production.datatrans.biz/upp/proxy/` |
+ | TEST: | `https://pilot.datatrans.biz/upp/proxy/` |
+
+ Once your tests are successful, please [activate your account](activate-account) and receive your productive credentials.
+ 
+ 
+
 
 **Understanding the process flow:**
 
@@ -28,17 +47,7 @@ In general, you either perform a pull request to receive data or a channel pushe
 Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird also pull und push
 
 
----
 
-
-#### Information about test environment
-
- All PCI Proxy endpoints are hosted in our testing environment. You can differentiate test and production environment based on URL and merchant ID. 
- 
- | Environment |URL |
-| -- | -- |
-| PROD: | `https://production .datatrans.biz/upp/proxy/` |
- | TEST: | `https://pilot.datatrans.biz/upp/proxy/` |
 
 
 
@@ -125,11 +134,6 @@ We support a variety of channel APIs out of the box. Every day, more and more ch
 
 
 
-
-
-Once your tests are successful, you can [activate your API endpoint](activate-push-endpoint) and receive the productive API endpoint.
-
-This push URL is hosted in our PCI Proxy pilot environment to let you test the push channel and make sure you receive the correct data. 
 
 
 
