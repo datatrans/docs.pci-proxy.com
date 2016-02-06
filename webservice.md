@@ -6,7 +6,11 @@ Let us assume you receive or request messages with sensitive data via API from y
 
 *You are allowed to store the token in your system, as it is not PCI DSS relevant.*
 
-The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to reduce your PCI scope. 
+The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to reduce your PCI scope.
+
+
+---
+
 
 > **Failure Security & Response Times**
 
