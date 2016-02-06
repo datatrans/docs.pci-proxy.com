@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-   * Getting Started
+   * [Getting Started](getting_started.md)
 * [Introduction](intro.md)
    * [Sample Business Cases](sample_business_cases.md)
 * Features
