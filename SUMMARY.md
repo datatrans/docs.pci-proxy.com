@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+   * Getting Started
 * [Introduction](intro.md)
    * [Getting Started](getting_started.md)
    * [Sample Business Cases](sample_business_cases.md)
