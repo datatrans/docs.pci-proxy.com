@@ -8,7 +8,7 @@ If you run a website where you have customers enter their payment data into a HT
 
 An easy way to start is by integrating our Redirect or Lightbox Payment Page. It takes care of building a conversion-optimised HTML form, validating input fields, and securing your customers' payment data. 
 
-    ```http
+```http
     <a href="https://pilot.datatrans.biz/upp/jsp/upStart.jsp
     		?merchantId=1100004624
     		&refno=1234567890
