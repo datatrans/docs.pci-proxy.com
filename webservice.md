@@ -2,15 +2,15 @@
 
 If you run a web service that receives or requests messages via API from your partners or clients (channel) that include sensitive payment data, PCI Proxy can extract it and automatically store it securely in PCI Proxys’ vault. 
 
-Together with the stored payment data, a reference number (token) is issued that substitutes the payment data field in your request. The message structure of the channel API always remains the same. The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to cut your PCI scope. 
+A reference number (token) is issued that substitutes the payment data field in your request. The message structure of the channel API always remains the same. The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to cut your PCI scope. 
 
 > You are allowed to store the token in your system, as it is not PCI DSS relevant.
 
-**PCI Proxy supports push and pull APIs**
+#### PCI Proxy supports push and pull APIs
 
-In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both operations before sensitive payment data touch your server.
+In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
-#### Extracting from pull API 
+## Extracting from pull API 
 When you perform a pull request against another API, payment data can easily extracted from already sup-ported APIs or by adding a new channel API.
 
 **Consider a business that needs this ability:**
