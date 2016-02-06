@@ -1,6 +1,8 @@
 # From XML/JSON
 
-If you run a web service receiving or requesting messages via API from your partners (channel) that include sensitive payment data, PCI Proxy can extract it and automatically store it securely in PCI Proxys’ vault. 
+Let's assume you receive or request messages with sensitive data via API from your partners (channel).
+
+you run a web service receiving or requesting messages via API from your partners (channel) that include sensitive payment data, PCI Proxy can extract it and automatically store it securely in PCI Proxys’ vault. 
 
 A reference number (token) is issued that substitutes the payment data field in your request. The message structure of the channel API always remains the same. The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to cut your PCI scope. 
 
