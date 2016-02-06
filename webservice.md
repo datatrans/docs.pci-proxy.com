@@ -2,15 +2,17 @@
 
 Let us assume you receive or request messages with sensitive data via API from your partners (channel).
 
-By switching PCI Proxy between you and the channel, payment data is extracted and automatically stored in our secure vault. A reference number (token) is issued that substitutes the payment data in the request or response. The message structure of the channel API always remains the same. 
+By `switching PCI Proxy between you and the channel`, payment data is extracted and automatically stored in our secure vault. A reference number (token) is issued that substitutes the payment data in the request or response. The message structure of the channel API always remains the same. 
 
 *You are allowed to store the token in your system, as it is not PCI DSS relevant.*
 
 The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to reduce your PCI scope. 
 
-**Response Times**
+**Failure Security & Response Times**
 
-*No worries, our servers and connections are blazing fast and handle rerouting in no time so that response times are kept at a minimum. We have SLAs ready for you, so please get in touch for more info.*
+*No worries, our servers and connections are blazing fast and handle rerouting in no time so that response times are kept at a minimum. [Read More](webseite-security-site)*
+
+*We have SLAs ready for you. Please [get in touch](start@pci-proxy.com) for more info.*
 
 ## How to start
 
