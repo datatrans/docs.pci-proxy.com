@@ -3,7 +3,6 @@
 * [Introduction](README.md)
    * [Getting Started](getting_started.md)
    * [Sample Business Cases](sample_business_cases.md)
-* [Introduction](intro.md)
 * Features
    * [Collect Payment Data](collect_payment_data.md)
        * [From XML/JSON](webservice.md)
