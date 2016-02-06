@@ -1,6 +1,8 @@
 # Understand PCI DSS
 
-You will learn who needs to be compliant and how you can achieve PCI DSS compliane.
+You will learn who needs to be compliant and how you can achieve PCI DSS compliant.
+
+Storing and handling sensitive payment data can be a tough try and it makes you a great target. 
 
 ## Who needs to comply with PCI DSS?
 
@@ -19,7 +21,7 @@ Thereby you avoid building your own PCI compliant environment and save costs and
 
 | Handling sensitive card data yourself | Use tokenization as a service |
 | -- | -- |
-| If you handle sensitive cardholder data by yourself, you need to prove your compliance by conducting full onsite audits or completing SAQ D with 286 requirements annually plus performing quarterly network scans by approved scanning vendors. This is depending on the number of transactions you process yearly. | With PCI Proxy you generally prove your compli-ance by relying on Datatrans’ PCI DSS Level 1 certification and fill out only a reduced Self-Assessment Questionnaire (SAQ).  |
+| By handling sensitive payment data by yourself, you need to prove your compliance by conducting full onsite audits or completing SAQ D with 286 requirements annually plus performing quarterly network scans by approved scanning vendors. This is depending on the number of transactions you process yearly. | With PCI Proxy you generally prove your compliance by relying on Datatrans’ PCI DSS Level 1 certification. You can just fill out a reduced Self-Assessment Questionnaire (SAQ).  |
  
 Eventually, the ultimate requirements are dictated by your acquirer/bank.
 
