@@ -85,24 +85,24 @@ To switch PCI Proxy between you and a channel that pushes data, you just add a n
 
 - PCI Proxy Endpoint: ```https://pilot.datatrans.biz/upp/proxy/push/219e781e517d447c``` 
 
-#### How to start
-Once your tests are successful, you can [activate your API endpoint](activate-push-endpoint) and receive the productive API endpoint.
 
-**Add a new channel **
-Please send the following information to setup@pci-proxy.com. 
+
+## Add a new channel
+
+Adding a new channel is easy. Please send the following information to [setup@pci-proxy.com](mailto:setup@pci-proxy.com). 
 
 |Information| Description   |
 |---|---|
-|Target URL|The URL where we should forward the populated request to (your server).|
+|Channel Type|Define if it is a push or pull channel.|
+|Target URL|The URL where we should forward the request to.|
 |Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
-|IP Address|IP address of your partners’ server that will send the push messages.|
 
-In return you will receive a test API endpoint for this push channel.
+You will receive a confirmation once the channel is successfully added. For push channels, you also receive a channel specific API endpoint.
 
-    ```http
-    Example API endpoint: 
-    https://pilot.datatrans.biz/upp/proxy/push/e1963c626c6eb4b32
-    ```
+  
+  
+#### How to start
+Once your tests are successful, you can [activate your API endpoint](activate-push-endpoint) and receive the productive API endpoint.
 
 This push URL is hosted in our PCI Proxy pilot environment to let you test the push channel and make sure you receive the correct data. 
 
