@@ -31,7 +31,7 @@ In general, you either perform a pull request to receive data or a channel pushe
 Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird also pull und push
 
 
-> **Note:** All testing is done in our test environment. You will need to replace the test credentials with your live credentials for production uses. You can get your live credentials by [activating your account](activate-account). 
+> **Note:** You are in test mode and can try the PCI Proxy for free. For production uses, you will need to replace the test credentials with your live credentials. You can get your live credentials by [activating your account](activate-account). 
 
 
 
@@ -54,7 +54,10 @@ Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird 
 2. Add HTTP header to your request.
 
 
-- PCI Proxy Endpoint: ```https://pilot.datatrans.biz/upp/proxy/pull```
+| Test PCI Proxy PULL Endpoint: |
+| -- |
+| https://pilot.datatrans.biz/upp/proxy/pull/|
+
 - Required HTTP header:
 
 
@@ -75,7 +78,7 @@ Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird 
         -d 'yourRequest.xml'
 ```
 
-
+> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live-test).
     
 ## Receive a request from a partner
 
@@ -93,11 +96,11 @@ To switch PCI Proxy between you and a channel that pushes data, you just add a n
 1. Add a push channel to receive `{YOUR-SPECIFIC-KEY}`.
 2. Exchange API endpoint with PCI Proxy PUSH endpoint at your partner.
 
-| PCI Proxy PUSH Endpoint: |
+| Test PCI Proxy PUSH Endpoint: |
 | -- |
 | https://pilot.datatrans.biz/upp/proxy/push/ `{YOUR-SPECIFIC-KEY}`  |
 
-
+> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live-test).
 
 
 
