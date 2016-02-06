@@ -3,4 +3,5 @@
 * [Sample Business Cases](sample_business_cases.md)
 * [Getting Started](getting_started.md)
 * Basics
+   * Getting Started
 
