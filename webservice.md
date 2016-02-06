@@ -24,23 +24,36 @@ In general, you either perform a pull request to receive data or a channel pushe
 
 
 
-**Example:**
+**Quick Start Guide:**
 
-Invoke your normal XML/SOAP request having PCI Proxy as endpoint.
+1. Invoke your XML/SOAP request having PCI Proxy as endpoint.
+2. Add header parameter to your request.
 
-> PCI Proxy Endpoint: ```https://pilot.datatrans.biz/upp/proxy/pull```
+
+- PCI Proxy Endpoint: ```https://pilot.datatrans.biz/upp/proxy/pull```
+- Required HTTP Header:
 
 
-* Your Request (XML)
-    * Header
-        
-        ```curl -X POST -H "Content-Type: text/xml" -H "X-CC-MERCHANT-ID: 1100005433" -H "X-CC-URL: https://apitest.authorize.net/xml/v1/request.api" -H "X-CC-SIGN: 160203112421662698" -d 'createTransactionRequest.xml with token instead of CC (xml file is the one you send us)' "https://pilot.datatrans.biz/upp/proxy/pull"```
+| HTTP Header      | Description                                                        | Example value
+| -------------- | -------------------------------------------------------------------| ---
+| `X-CC-URL` | Specifies the target (channel) URL that will be called | https://api.partner.com/
+| `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
+| `X-CC-SIGN` | Configured security sign | 130709090849785405
             
-    * Body
 
-            {
-                "error": "Invalid title"
-            }
+**Example cURL:**
+
+
+```
+    curl 
+        -X POST 
+        -H "Content-Type: text/xml" 
+        -H "X-CC-MERCHANT-ID: 1100005433" 
+        -H "X-CC-URL: https://api.partner.com/" 
+        -H "X-CC-SIGN: 160203112421662698" 
+        -d 'yourRequest.xml' 
+        "https://pilot.datatrans.biz/upp/proxy/pull"```
+
 
 
 + Booking.com Response (XML)
