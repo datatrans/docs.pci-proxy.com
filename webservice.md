@@ -28,6 +28,20 @@ In general, you either perform a pull request to receive data or a channel pushe
 Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird also pull und push
 
 
+---
+
+
+#### Information about test environment
+
+ All PCI Proxy endpoints are hosted in our testing environment. You can differentiate test and production environment based on URL and merchant ID. 
+ 
+ | Environment |URL |
+| -- | -- |
+| PROD: | `https://production .datatrans.biz/upp/proxy/` |
+ | TEST: | `https://pilot.datatrans.biz/upp/proxy/` |
+
+
+
 ### Perform a pull request against another API
 
 
@@ -68,7 +82,7 @@ Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird 
         -d 'yourRequest.xml'
 ```
     
-## You receive a request from a partner
+### Receive a request from a partner
 
 
 **Consider a business that needs this ability:**
@@ -99,33 +113,25 @@ Adding a new channel is easy. Please send the following information to [setup@pc
 |Target URL|The URL where we should forward the request to.|
 |Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
 
-You will receive a confirmation once the channel is successfully added. For push channels, you also receive a channel specific API endpoint.
+You will receive a confirmation once the channel is successfully added. For push channels, you also receive your specific channel API endpoint.
 
-  
-  
-#### How to start
+### Supported channels
+
+We support a variety of channel APIs out of the box. Every day, more and more channels get added.
+
+
+
+
+
+
 Once your tests are successful, you can [activate your API endpoint](activate-push-endpoint) and receive the productive API endpoint.
 
 This push URL is hosted in our PCI Proxy pilot environment to let you test the push channel and make sure you receive the correct data. 
 
 
-### Supported channel APIs
 
-We support a variety of channel APIs out of the box. Every day, more and more channels get added. Please find below an uncomplete list of channels we already support. In case your required API is not on the list, adding a new channel API is easy. 
+**Activate channels**
 
-    Booking.com – cURL example 
-
-**Adding a new pull channel API**
-
-If your required channel API is not supported yet, you can easily add new pull channel APIs by yourself. Just send us the following information to setup@pci-proxy.com. 
-
-|Information| Description   |
-|---|---|
-|Target URL|The URL where we should forward the request to.|
-|Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
-
-
-**Activate API endpoint**
 Once your tests are successful, you can activate it by sending the following data to setup@pci-proxy.com.
 
 |Information| Description   |
