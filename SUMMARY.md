@@ -1,4 +1,4 @@
 # Summary
 
-* Welcome
+* Getting Started
 
