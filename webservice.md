@@ -8,11 +8,11 @@ By `switching PCI Proxy between you and the channel`, payment data is extracted 
 
 The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to reduce your PCI scope. 
 
-**Failure Security & Response Times**
+> **Failure Security & Response Times**
 
-*No worries, our servers and connections are blazing fast and handle rerouting in no time so that response times are kept at a minimum. [Read More](webseite-security-site)*
+> *No worries, our servers and connections are blazing fast and handle rerouting in no time so that response times are kept at a minimum. [Read More](webseite-security-site)*
 
-*We have SLAs ready for you. Please [get in touch](start@pci-proxy.com) for more info.*
+> *We have SLAs ready for you. Please [get in touch](start@pci-proxy.com) for more info.*
 
 ## How to start
 
