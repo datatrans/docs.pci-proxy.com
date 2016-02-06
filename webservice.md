@@ -31,7 +31,7 @@ In general, you either perform a pull request to receive data or a channel pushe
 Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird also pull und push
 
 
-> **Note:** You are in test mode and can try the PCI Proxy for free. For production uses, you will need to replace the test credentials with your live credentials. You can get your live credentials by [activating your account](activate-account). 
+> **Note:** You are in test mode and can try the PCI Proxy for free. For production uses, you will need to replace the test credentials with your live credentials. You can get your live credentials by [activating your account](activate_account.html). 
 
 
 
