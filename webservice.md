@@ -78,7 +78,7 @@ Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird 
         -d 'yourRequest.xml'
 ```
 
-> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live-test).
+> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live_mode-test.html).
     
 ## Receive a request from a partner
 
