@@ -36,12 +36,13 @@ In general, you either perform a pull request to receive data or a channel pushe
 
 #### Quick Start Guide:
 
-1. POST your XML/SOAP request having PCI Proxy as endpoint.
-2. ADD header parameter to your request.
+1. Add a pull channel to your account
+2. POST your XML/SOAP request having PCI Proxy as endpoint.
+2. Add HTTP header to your request.
 
 
 - PCI Proxy Endpoint: ```https://pilot.datatrans.biz/upp/proxy/pull```
-- Required HTTP Header:
+- Required HTTP header:
 
 
 | HTTP Header      | Description                                                        | Example value
@@ -76,24 +77,18 @@ In general, you either perform a pull request to receive data or a channel pushe
 
 #### Quick Start Guide
 
-To switch PCI Proxy between you and a channel that pushes data, you must request an API endpoint. From now on your partner can invoke the XML 
+To switch PCI Proxy between you and a channel that pushes data, you just add a new channel. The channel can use it and invoke requests having PCI Proxy as endpoint.
 
-1. Request an API endpoint 
-2. Change API entpoint at your partner
-
-
-- PCI Proxy Endpoint: ```https://pilot.datatrans.biz/upp/proxy/push/219e781e517d447c```
+1. Add a new push channel to your account.
+2. Exchange old API endpoint with new PCI Proxy API endpoint at your partner
 
 
-
-PCI Proxy allows you to [request an API endpoint](request-push-endpoint) that you can pass on to your channel partner. From now on your channel partner can push messages to PCI Proxy where sensitive payment data will be extracted before the messages are forwarded to your original API endpoint at your server. 
-
-
+- PCI Proxy Endpoint: ```https://pilot.datatrans.biz/upp/proxy/push/219e781e517d447c``` 
 
 #### How to start
-You can start of with testing by [requesting an API endpoint](request-push-endpoint) for you. If your partner has a test system, pass on the new test API endpoint to him and exchange it with your old API endpoint. Once your tests are successful, you can [activate your API endpoint](activate-push-endpoint) and receive the productive API endpoint.
+Once your tests are successful, you can [activate your API endpoint](activate-push-endpoint) and receive the productive API endpoint.
 
-**Request test API endpoint:**
+**Add a new channel **
 Please send the following information to setup@pci-proxy.com. 
 
 |Information| Description   |
