@@ -1,6 +1,6 @@
 # Welcome 
 
-This site aims to be a comprehensive guide to PCI Proxy. We will cover topics on who and why 
+This site aims to be a comprehensive guide to PCI Proxy. 
 
 ## What is PCI Proxy?
 
