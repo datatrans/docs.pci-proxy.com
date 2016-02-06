@@ -1,6 +1,6 @@
 # Collect payment data from XML/SOAP calls
 
-Let us assume you receive or request messages with sensitive data via API from your partners (channel).
+Let us assume you receive or request messages with sensitive data via API from a partner (channel).
 
 `By switching PCI Proxy between you and the channel`, payment data is extracted and automatically stored in our secure vault. A reference number (token) is issued that substitutes the payment data in the request or response. The message structure of the channel API always remains the same. 
 
