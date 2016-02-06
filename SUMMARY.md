@@ -3,6 +3,7 @@
 * [Introduction](README.md)
    * [Getting Started](getting_started.md)
    * [Sample Business Cases](sample_business_cases.md)
+   * Understand PCI DSS
 * Features
    * [Collect Payment Data](collect_payment_data.md)
        * [From XML/JSON](webservice.md)
