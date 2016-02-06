@@ -2,7 +2,9 @@
 
 Let us assume you receive or request messages with sensitive data via API from your partners (channel).
 
-PCI Proxy can extract just the payment data and automatically store it securely in our vault. A reference number (token) is issued that substitutes the payment data field in your request. The message structure of the channel API always remains the same. The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to cut your PCI scope. 
+PCI Proxy can extract the payment data and automatically store it securely in our vault. A reference number (token) is issued that substitutes the payment data in the request or response. The message structure of the channel API always remains the same. 
+
+The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to cut your PCI scope. 
 
 > You are allowed to store the token in your system, as it is not PCI DSS relevant.
 
@@ -26,8 +28,8 @@ In general, you either perform a pull request to receive data or a channel pushe
 
 **Quick Start Guide:**
 
-1. Invoke your XML/SOAP request having PCI Proxy as endpoint.
-2. Add header parameter to your request.
+1. POST your XML/SOAP request having PCI Proxy as endpoint.
+2. ADD header parameter to your request.
 
 
 - PCI Proxy Endpoint: ```https://pilot.datatrans.biz/upp/proxy/pull```
@@ -41,11 +43,11 @@ In general, you either perform a pull request to receive data or a channel pushe
 | `X-CC-SIGN` | Configured security sign | 130709090849785405
             
 
-**Example cURL:**
 
 
-```
-    curl 
+
+```java
+    $ curl 
         -X POST 
         -H "Content-Type: text/xml" 
         -H "X-CC-MERCHANT-ID: 1100005433" 
@@ -55,20 +57,6 @@ In general, you either perform a pull request to receive data or a channel pushe
         "https://pilot.datatrans.biz/upp/proxy/pull"```
 
 
-
-+ Booking.com Response (XML)
-
-    + Body
-
-            {
-                "error": "Invalid title"
-            }
-            
-    + Header
-
-            {
-                "error": "Invalid title"
-            }
 
 
 ### Supported channel APIs
