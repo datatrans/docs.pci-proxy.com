@@ -22,8 +22,10 @@ The token can be used later on to charge, forward or retrieve payment data. All 
 
 In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
+**Understanding the process flow:**
 
-```Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird also pull und push```
+
+Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird also pull und push
 
 
 ### Perform a pull request against another API
@@ -63,9 +65,9 @@ In general, you either perform a pull request to receive data or a channel pushe
         -H "X-CC-MERCHANT-ID: 1100005433" 
         -H "X-CC-URL: https://api.partner.com/" 
         -H "X-CC-SIGN: 160203112421662698" 
-        -d 'yourRequest.xml'```
-        
-        
+        -d 'yourRequest.xml'
+```
+    
 ## You receive a request from a partner
 
 
