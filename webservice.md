@@ -53,16 +53,16 @@ In general, you either perform a pull request to receive data or a channel pushe
             
 
 
-```java
-    $ curl 
+```javascript
+    $ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
         -X POST 
         -H "Content-Type: text/xml" 
         -H "X-CC-MERCHANT-ID: 1100005433" 
         -H "X-CC-URL: https://api.partner.com/" 
         -H "X-CC-SIGN: 160203112421662698" 
-        -d 'yourRequest.xml' 
-        "https://pilot.datatrans.biz/upp/proxy/pull"
-```
+        -d '<gateway>
+              <gateway_type>test</gateway_type>
+            </gateway>'```
 
 
 
