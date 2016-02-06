@@ -9,4 +9,5 @@
        * [From XML/JSON](webservice.md)
        * [On A Website/Application](website-application.md)
 * [Activate your account](activate_account.md)
+* Live Mode & Testing
 
