@@ -76,6 +76,8 @@ In general, you either perform a pull request to receive data or a channel pushe
 
 #### Quick Start Guide
 
+To switch PCI Proxy between you and a channel that pushes data, you must request an API endpoint. From now on your partner can invoke the XML 
+
 1. Request an API endpoint 
 2. Change API entpoint at your partner
 
