@@ -52,20 +52,16 @@ In general, you either perform a pull request to receive data or a channel pushe
 | `X-CC-SIGN` | Configured security sign | 130709090849785405
             
 
-
-```javascript
+```java
     $ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
         -X POST 
         -H "Content-Type: text/xml" 
         -H "X-CC-MERCHANT-ID: 1100005433" 
         -H "X-CC-URL: https://api.partner.com/" 
         -H "X-CC-SIGN: 160203112421662698" 
-        -d '<gateway>
-              <gateway_type>test</gateway_type>
-            </gateway>'```
-
-
-
+        -d 'yourRequest.xml'```
+        
+        
 ## You receive a request from a partner
 
 
