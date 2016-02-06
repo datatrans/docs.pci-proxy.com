@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-   * Understand PCI DSS
+   * [Understand PCI DSS](understand_pci_dss.md)
    * [Getting Started](getting_started.md)
    * [Sample Business Cases](sample_business_cases.md)
 * Features
