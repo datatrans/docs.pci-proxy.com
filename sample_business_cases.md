@@ -1,9 +1,6 @@
 # Sample Business Cases
 
-Sample Business Cases
-=====================
-
-The following list of business cases is not complete and should only give an overview of business types that already use PCI Proxy.
+The following list of business cases gives an overview of possible business types that already use PCI Proxy.
 
 ## Middle Office
 
