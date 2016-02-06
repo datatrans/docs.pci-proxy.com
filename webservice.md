@@ -14,9 +14,9 @@ The token can be used later on to charge, forward or retrieve payment data. All 
 
 > **Failure Security & Response Times**
 
-> *No worries, our servers and connections are blazing fast and handle rerouting in no time so that response times are kept at a minimum. [Read More](webseite-security-site)*
+> *No worries, our redundant server layouts and connections are blazing fast and handle rerouting in no time so that response times are kept at a minimum. [Read More](webseite-security-site)*
 
-> *We have SLAs ready for you. Please [get in touch](start@pci-proxy.com) for more info.*
+> *We also have SLAs ready for you. Please [get in touch](start@pci-proxy.com) for more info.*
 
 ## How to start
 
