@@ -1,78 +1,71 @@
-# From XML/JSON
+# Collect payment data from XML/SOAP calls
 
-Let's assume you receive or request messages with sensitive data via API from your partners (channel).
+Let us assume you receive or request messages with sensitive data via API from your partners (channel).
 
-you run a web service receiving or requesting messages via API from your partners (channel) that include sensitive payment data, PCI Proxy can extract it and automatically store it securely in PCI Proxys’ vault. 
-
-A reference number (token) is issued that substitutes the payment data field in your request. The message structure of the channel API always remains the same. The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to cut your PCI scope. 
+PCI Proxy can extract just the payment data and automatically store it securely in our vault. A reference number (token) is issued that substitutes the payment data field in your request. The message structure of the channel API always remains the same. The token can be used later on to charge, forward or retrieve payment data. All happens before sensitive payment data ever touch your server to cut your PCI scope. 
 
 > You are allowed to store the token in your system, as it is not PCI DSS relevant.
 
-#### PCI Proxy supports push and pull APIs
+## How to start
 
 In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
-```Bild & Prozessbeschreibung MSC```
 
-## Extracting from pull API 
-When you perform a pull request against another API, payment data can easily extracted from already sup-ported APIs or by adding a new channel API.
+```Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird also pull und push```
+
+
+### You perform a pull request against another API
 
 **Consider a business that needs this ability:**
 
-*You are a travel technology company that pulls new reservations from connected reservation portals such as Booking.com. When performing a pull request against Booking.com’s API, you receive booking information including payment data as a response. Booking.com asks all of their IT providers, which receive payment data to be PCI DSS compliant.*
+*You are a travel technology company pulling new reservations from connected reservation portals such as Booking.com. When performing a pull request against Booking.com’s API, you receive booking information including payment data as a response. Booking.com asks all of their IT providers, which receive payment data to be PCI DSS compliant.*
 
 *With the use of PCI Proxy, Booking.com removes this requirement from you, as we as a company are PCI DSS compliant and you can bank on our full Level 1 PCI DSS compliance.* 
 
-##### How to start
-You can start and perform the following cURL example. It will give you and understanding of how PCI Proxys’ pull channel API works. Once you have understand it, you can use one of our supported pull channel APIs or add a new pull channel API.  
 
-##### Create New Note [POST]
-Create a new note using a title and an optional content body.
 
-+ Request with body (application/json)
+**Example:**
 
-    + Body
+Invoke your normal XML/SOAP request having PCI Proxy as endpoint.
 
-            {
-                "title": "My new note",
-                "body": "This is the body"
-            }
+> PCI Proxy Endpoint: ```https://pilot.datatrans.biz/upp/proxy/pull```
 
-+ Response 201
 
-+ Response 400 (application/json)
-
-    + Body
-
-            {
-                "error": "Invalid title"
-            }
-
-+ Request without body (application/json)
-
-    + Body
-
-            {
-                "title": "My new note"
-            }
-
-+ Response 201
-
-+ Response 400 (application/json)
-
-    + Body
+* Your Request (XML)
+    * Header
+        
+        ```curl -X POST -H "Content-Type: text/xml" -H "X-CC-MERCHANT-ID: 1100005433" -H "X-CC-URL: https://apitest.authorize.net/xml/v1/request.api" -H "X-CC-SIGN: 160203112421662698" -d 'createTransactionRequest.xml with token instead of CC (xml file is the one you send us)' "https://pilot.datatrans.biz/upp/proxy/pull"```
+            
+    * Body
 
             {
                 "error": "Invalid title"
             }
 
 
-**Supported pull channel APIs**
-We support a variety of channel APIs out of the box. Every day, more and more channels get added. Please find below an uncomplete list of channels we already support. In case your required API is not on the list, add-ing a new channel API is easy. 
++ Booking.com Response (XML)
+
+    + Body
+
+            {
+                "error": "Invalid title"
+            }
+            
+    + Header
+
+            {
+                "error": "Invalid title"
+            }
+
+
+### Supported channel APIs
+
+We support a variety of channel APIs out of the box. Every day, more and more channels get added. Please find below an uncomplete list of channels we already support. In case your required API is not on the list, adding a new channel API is easy. 
 
     Booking.com – cURL example 
 
 **Adding a new pull channel API**
+
 If your required channel API is not supported yet, you can easily add new pull channel APIs by yourself. Just send us the following information to setup@pci-proxy.com. 
 
 |Information| Description   |
@@ -81,9 +74,13 @@ If your required channel API is not supported yet, you can easily add new pull c
 |Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
 |IP Address|IP address of your partners’ server that will send the push messages.|
 
+
+
 ### Extracting from push API
 
-Some channels push messages directly to a predefined API endpoint at your server. Because these messages contain sensitive payment data, you will avoid that sensitive data hit your server directly. PCI Proxy allows you to [request an API endpoint](request-push-endpoint) that you can pass on to your channel partner. From now on your channel partner can push messages to PCI Proxy where sensitive payment data will be extracted before the messages are forwarded to your original API endpoint at your server. 
+Some channels push messages directly to a predefined API endpoint at your server. If these messages include sensitive payment data, your servers are in PCI scope.
+
+PCI Proxy allows you to [request an API endpoint](request-push-endpoint) that you can pass on to your channel partner. From now on your channel partner can push messages to PCI Proxy where sensitive payment data will be extracted before the messages are forwarded to your original API endpoint at your server. 
 
 *No worries, our servers and connections are blazing fast and handle a little routing in no time so that response times are kept at a minimum. Please get in touch with us, if you want to know more.*
 
