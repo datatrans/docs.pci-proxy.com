@@ -42,7 +42,7 @@ Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird 
 
 
 
-### Perform a pull request against another API
+## Perform a pull request against another API
 
 
 
@@ -82,7 +82,7 @@ Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird 
         -d 'yourRequest.xml'
 ```
     
-### Receive a request from a partner
+## Receive a request from a partner
 
 
 **Consider a business that needs this ability:**
@@ -95,25 +95,28 @@ Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird 
 
 To switch PCI Proxy between you and a channel that pushes data, you just add a new channel. The channel can use it and invoke requests having PCI Proxy as endpoint.
 
-1. Add a new push channel to your account.
-2. Exchange old API endpoint with new PCI Proxy API endpoint at your partner
+1. Add a push channel to receive `{YOUR-SPECIFIC-KEY}`.
+2. Exchange API endpoint with PCI Proxy PUSH endpoint at your partner.
+
+| PCI Proxy PUSH Endpoint: |
+| -- |
+| https://pilot.datatrans.biz/upp/proxy/push/ `{YOUR-SPECIFIC-KEY}`  |
 
 
-- PCI Proxy Endpoint: ```https://pilot.datatrans.biz/upp/proxy/push/219e781e517d447c``` 
 
 
 
-## Add a new channel
+## Add a channel
 
 Adding a new channel is easy. Please send the following information to [setup@pci-proxy.com](mailto:setup@pci-proxy.com). 
 
 |Information| Description   |
 |---|---|
 |Channel Type|Define if it is a push or pull channel.|
-|Target URL|The URL where we should forward the request to.|
+|API endpoint|The URL where we should forward the request to.|
 |Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
 
-You will receive a confirmation once the channel is successfully added. For push channels, you also receive your specific channel API endpoint.
+You will receive a confirmation once the channel is successfully added. For push channels, you also receive `{YOUR-SPECIFIC-KEY}`.
 
 ### Supported channels
 
