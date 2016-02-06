@@ -11,7 +11,7 @@ Thereby you avoid building your own PCI compliant environment and save costs and
 
 ## How to proof your compliance?
 
-```DEPENDS ON HOW YOU HANDLE SENSITIVE DATA.```
+> Depends on how you handle sensitive payment data.
 
 | Handling sensitive card data yourself | Use tokenization as a service |
 | -- | -- |
@@ -22,7 +22,7 @@ The ultimate requirements are finally dictated by your acquirer/bank.
 
 ## Applicable SAQ
 
-```WHICH SELF-ASSESSMENT-QUESTIONNAIRE (SAQ) IS APPLICABLE TO YOU?```
+> Which Self-Assessment-Questionnaire is applicable to you? 
 
 If you have decided whether you want to handle sensitive card data yourself or use Datatrans PCI Proxy to take care of your sensitive data, you fill out one of the relevant SAQs for online merchants:
 
