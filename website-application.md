@@ -1,8 +1,10 @@
-# On A Website/Application
+# Collect payment data on a website or from an application
 
-If you run a website where you have customers enter their payment data into a HTML web form, PCI Proxy gives you several options on how to collect payment data and securely store it in PCI Proxys’ vault. Many of them assure your servers never get in touch with sensitive card data and reduce your PCI scope to the least.
+Let us assume you run a website or application where customers or agents entering payment data into a HTML web form. 
 
-> Add-on: All available options for collecting payment data offer the possibility to make instant charges to payment data. If you plan to use this feature, please make sure you have a valid acquiring contract with one of the following acquirer (financial institutions).
+`PCI Proxy gives you several options on how to collect payment data from a HTML web form` and securely store it in our vault. Most of them assure your servers never get in touch with sensitive card data and reduce your PCI scope to the least.
+
+*Add-on: All options have a built-in feature to instantly charge that payment data. All you need is an existing acquiring contract.*
 
 ## How to start
 
