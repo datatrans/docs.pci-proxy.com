@@ -19,7 +19,7 @@ Forwarding payment data is like extracing payment data. Therefore, you can use t
 
 **Consider a business that needs this ability:**
 
-*You are a travel technology company and process reservations on behalf on your clients against global distribution systems.*
+*You are a travel technology company and process reservations on behalf on your clients against global distribution systems or an online travel agency (e.g. Expedia).*
 
 #### Quick Start Guide:
 
