@@ -6,6 +6,10 @@ Our APIs automatically tokenize the payment information before they ever touch y
 
 PCI Proxy APIs are organized in environments, meaning the different ways on how you could possibly receive or collect payment data. 
 
+
+---
+
+
 **Considering the following cases:**
 
  - You receive or request messages including payment data via APIs from your partners or clients. For example, you receive transaction related data from Booking.com. [Learn about Extracting.](extract)
