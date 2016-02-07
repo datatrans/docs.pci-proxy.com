@@ -28,7 +28,7 @@ We offer more sophisticated options to seamlessly collect payment data. With our
 
 An easy way to start is by integrating our Redirect or Lightbox Payment Page. It takes care of building a conversion-optimised HTML form and validating input fields. 
 
-### Quick Start Guide
+#### Integrate Redirect Mode
 
 To integrate the `Redirect Mode` you can use a simple HTML a tag:
 
@@ -41,6 +41,8 @@ To integrate the `Redirect Mode` you can use a simple HTML a tag:
     		&theme=DT2015
             &uppAliasOnly=yes">Collect payment data</a>
     ```
+
+#### Integrate Lightbox Mode
 
 To integrate the `Lightbox Mode` you can use the following code snippet:    
 
@@ -67,6 +69,14 @@ To integrate the `Lightbox Mode` you can use the following code snippet:
         });
     </script>            
     ```
+
+
+
+---
+
+
+
+#### Integrate Inline Mode
 
 If you need a more customizable approach, you can try our Inline Mode. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
 
