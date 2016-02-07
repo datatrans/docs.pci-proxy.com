@@ -14,7 +14,7 @@ The token can be used later on to charge, forward or retrieve payment data.
 
 ## How to start
 
-> [Sign up](signup) for a free developer account.
+> [Sign up](signup) for a free developver test account.
 
 Please find below developer manuals and the libraries. 
 
