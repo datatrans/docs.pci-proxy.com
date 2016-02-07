@@ -29,18 +29,17 @@ The token can be used later on to charge, forward or retrieve payment data.
 In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
 
-**Understanding the process flow:**
-
-
-Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird also pull und push
-
-
 > **Note:** You are in test mode and can try the PCI Proxy for free. For production uses, you will need to replace the test credentials with your live credentials. You can get your live credentials by [activating your account](activate_account.html). 
 
 
 
 ## Perform a pull request against another API
 
+
+**Understanding the process flow:**
+
+
+![Channel PULL](Channel PULL.png)
 
 
 **Consider a business that needs this ability:**
@@ -84,14 +83,18 @@ Bild & Prozessbeschreibung MSC beschreiben, dass der entpunkt ausgetauscht wird 
 
 > Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live_mode-test.html).
     
-## Receive a request from a partner
+## Receive a request from a channel
 
+
+**Understanding the process flow:**
+
+![](Channel PUSH.png)
 
 **Consider a business that needs this ability:**
 
 *You are a travel technology company receiving new reservations from booking portals on an API endpoint at your server. As reservations may contain sensitive payment data, your servers are in PCI scope.*
 
-*With the use of PCI Proxy, payment data ever touch your server and, hence, you reduce your PCI scope.* 
+*With the use of PCI Proxy, payment data never touch your server and, hence, you reduce your PCI scope.* 
 
 #### Quick Start Guide
 
