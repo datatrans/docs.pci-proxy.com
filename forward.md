@@ -1,12 +1,20 @@
-# Forward payment data to 3rd party provider
+# Forward payment data to 3rd party
 
-Once you collect and extract sensitive payment data to shield your server and minimize your PCI scope, you will most likely want to use the stored payment data to process, forward or retrieve payment data for several business cases.
+Let us assume you send requests with sensitive payment data via API to a 3rd party.
 
-PCI Proxy allows you to forward vaulted payment data to PCI compliant third parties. This can be any 3rd party that is PCI compliant them self (e.g. online travel agency, payment processor, hotel, airline, car rental, etc.).
+PCI Proxy allows you to forward vaulted payment data to PCI compliant third parties (e.g. online travel agency, payment processor, hotel, airline, car rental, etc.). 
 
-### Set up a new third party receiver
+`By switching PCI Proxy between you and the 3rd party`, you invoke requests having PCI Proxy as endpoint. In your request, you simply use the token that you received when you collected the payment data. PCI Proxy replaces the token with payment data and forwards the record to the 3rd party. Any responses from the 3rd party are passed back to you. 
 
-Before you can forward payment data to PCI compliant third parties, we need the following information to approve and whitelist the new third party:
+## How to start
+
+Before you can forward payment data to a 3rd party, we need proof of PCI compliance of the 3rd party.
+
+
+
+
+For testing purposes, it is not necessary to have the AOC documents ready.
+
 
 | General Information                                                               |
 | --------------------------------------------------------------------------------- |
