@@ -10,10 +10,11 @@ PCI Proxy allows you to forward vaulted payment data to PCI compliant third part
 
 Forwarding payment data is like extracing payment data.
 
+**Understanding the process flow:**
 
-Before you can forward payment data to a 3rd party, we need proof of PCI compliance of the 3rd party.
+Bild
 
-For testing purposes, it is not necessary to have the Attestation of Compliance for 3rd party ready.
+## Invoke a pull request against a 3rd party
 
 **Consider a business that needs this ability:**
 
@@ -54,11 +55,10 @@ For testing purposes, it is not necessary to have the Attestation of Compliance 
 
 ## Add a 3rd party
 
-Adding a new 3rd party is easy. Please send the following information to [setup@pci-proxy.com](mailto:setup@pci-proxy.com). 
+Adding a new 3rd party is easy. Please send the following information to [thirdparty@pci-proxy.com](mailto:thirdparty@pci-proxy.com). 
 
 |Information| Description   |
 |---|---|
-|Channel Type|Define if it is a push or pull channel.|
 |API endpoint|The URL where we should forward the request to.|
 |Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
 
