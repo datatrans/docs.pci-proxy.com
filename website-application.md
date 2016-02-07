@@ -26,6 +26,8 @@ We offer more sophisticated options to seamlessly collect payment data. With our
 
 ## How to start
 
+> [Sign up](signup) for a free developer account.
+
 An easy way to start is by integrating our Redirect or Lightbox Payment Page. It takes care of building a conversion-optimised HTML form and validating input fields. 
 
 #### Integrate Redirect Mode
