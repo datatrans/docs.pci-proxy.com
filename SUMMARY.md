@@ -10,6 +10,6 @@
        * [Website / Application](website-application.md)
 * General Information
    * [Live Mode and Testing](live_mode-test.md)
-   * [Activate your account](activate_account.md)
+   * [Activate Your Account](activate_account.md)
    * Seamless Solutions (SAQ A-EP)
 
