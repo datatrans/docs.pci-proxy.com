@@ -10,10 +10,12 @@ PCI Proxy allows you to forward vaulted payment data to PCI compliant third part
 
 Forwarding payment data is like extracing payment data. Therefore, you can use the same API.
 
-**Understanding the process flow:**
-
 
 ## Perform a pull request against a 3rd party
+
+**Understanding the process flow:**
+
+![3rd party PULL](3rd Party PULL.png)
 
 **Consider a business that needs this ability:**
 
