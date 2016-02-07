@@ -10,7 +10,7 @@ The token can be used later on to charge, forward or retrieve payment data.
 
 *Add-on: All Collect options have a built-in feature to instantly charge payment data. All you need is an existing acquiring contract. *
 
-All options assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.
+**All options assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.**
 
 ## How to start
 
