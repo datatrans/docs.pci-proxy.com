@@ -16,6 +16,40 @@ For testing purposes, it is not necessary to have the Attestation of Compliance 
 
 *You are a travel technology company and process reservations on behalf on your clients against global distribution systems.*
 
+#### Quick Start Guide:
+
+1. Add a pull channel to your account
+2. POST your XML/SOAP request having PCI Proxy as endpoint.
+2. Add HTTP header to your request.
+
+
+| Test PCI Proxy PULL Endpoint: |
+| -- |
+| https://pilot.datatrans.biz/upp/proxy/pull/|
+
+- Required HTTP header:
+
+
+| HTTP Header      | Description                                                        | Example value
+| -------------- | -------------------------------------------------------------------| ---
+| `X-CC-URL` | Specifies the target (channel) URL that will be called | https://api.partner.com/
+| `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
+| `X-CC-SIGN` | Configured security sign | 130709090849785405
+            
+
+```java
+    $ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
+        -X POST 
+        -H "Content-Type: text/xml" 
+        -H "X-CC-MERCHANT-ID: 1100005433" 
+        -H "X-CC-URL: https://api.partner.com/" 
+        -H "X-CC-SIGN: 160203112421662698" 
+        -d 'yourRequest.xml'
+```
+
+> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live_mode-test.html).
+
+
 
 | General Information                                                               |
 | --------------------------------------------------------------------------------- |
