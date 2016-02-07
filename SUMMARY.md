@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
    * [Understand PCI DSS](understand_pci_dss.md)
-   * [Getting Started](getting_started.md)
    * [Sample Business Cases](sample_business_cases.md)
 * [Features](features.md)
    * [Collect Payment Data](collect_payment_data.md)
