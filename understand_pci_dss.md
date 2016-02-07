@@ -10,7 +10,7 @@ Storing and handling sensitive payment data can be a tough try and it makes you 
 
 Even if you use certified third party providers to handle your sensitive card data, *you always need to proof your compliance.* 
 
-PCI Proxy can reduce your efforts for PCI compliance to the minimal requirements. 
+> PCI Proxy can reduce your efforts for PCI compliance to the minimal requirements. 
 
 Thereby you avoid building your own PCI compliant environment and save costs and time.
 
