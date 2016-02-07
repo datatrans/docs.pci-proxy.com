@@ -1,6 +1,6 @@
 # Understand PCI DSS
 
-You will learn who needs to be compliant and how you can achieve PCI DSS compliant.
+Learn who needs to be PCI DSS compliant and how you can achieve PCI DSS compliance.
 
 Storing and handling sensitive payment data can be a tough try and it makes you a great target. 
 
@@ -17,20 +17,18 @@ Thereby you avoid building your own PCI compliant environment and save costs and
 
 ## How to proof your compliance?
 
-> Depends on how you handle sensitive payment data.
+It depends on how you handle sensitive payment data. Eventually, it is dictated by your acquirer/bank.
 
 | Handling sensitive card data yourself | Use tokenization as a service |
 | -- | -- |
-| By handling sensitive payment data by yourself, you need to prove your compliance by conducting full onsite audits or completing SAQ D with 286 requirements annually plus performing quarterly network scans by approved scanning vendors. This is depending on the number of transactions you process yearly. | With PCI Proxy you generally prove your compliance by relying on Datatrans’ PCI DSS Level 1 certification. You can just fill out a reduced Self-Assessment Questionnaire (SAQ).  |
+| You need to prove your compliance by conducting full onsite audits or completing SAQ D with 286 requirements annually plus performing quarterly network scans by approved scanning vendors (Depends on the number of transactions you process yearly). | With PCI Proxy you generally prove your compliance by relying on Datatrans’ PCI DSS Level 1 certification. You can just fill out a reduced Self-Assessment Questionnaire (SAQ).  |
  
-Eventually, the ultimate requirements are dictated by your acquirer/bank.
 
 
-## Applicable SAQ
 
-> Which Self-Assessment-Questionnaire applies to you? 
+## Which SAQ is applicable to you?
 
-If you have decided whether you want to handle sensitive card data yourself or use Datatrans PCI Proxy to take care of your sensitive data, you fill out one of the relevant SAQs for online merchants:
+If you have decided whether you want to handle sensitive card data yourself or use PCI Proxy to take care of your sensitive data, you fill out one of the relevant SAQs for online merchants:
 
 
 ### SAQ A
