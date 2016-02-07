@@ -8,6 +8,9 @@ PCI Proxy allows you to forward vaulted payment data to PCI compliant third part
 
 ## How to start
 
+Forwarding payment data is like extracing payment data.
+
+
 Before you can forward payment data to a 3rd party, we need proof of PCI compliance of the 3rd party.
 
 For testing purposes, it is not necessary to have the Attestation of Compliance for 3rd party ready.
@@ -18,7 +21,7 @@ For testing purposes, it is not necessary to have the Attestation of Compliance 
 
 #### Quick Start Guide:
 
-1. Add a pull channel to your account
+1. Add a 3rd party to your account
 2. POST your XML/SOAP request having PCI Proxy as endpoint.
 2. Add HTTP header to your request.
 
@@ -49,18 +52,27 @@ For testing purposes, it is not necessary to have the Attestation of Compliance 
 
 > Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live_mode-test.html).
 
+## Add a 3rd party
 
+Adding a new 3rd party is easy. Please send the following information to [setup@pci-proxy.com](mailto:setup@pci-proxy.com). 
+
+|Information| Description   |
+|---|---|
+|Channel Type|Define if it is a push or pull channel.|
+|API endpoint|The URL where we should forward the request to.|
+|Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
 
 | General Information                                                               |
 | --------------------------------------------------------------------------------- |
-| Merchant ID - Once you [register an account][3] you receive your merchant ID. |
+| Merchant ID - Sign up to receive your merchant ID. |
 | Company name and website of third party                                           |
 | AOC document of third party as proof of PCI compliance                            |
 
-| Technical Details         | Description                                                                 |
-| ------------------------- | --------------------------------------------------------------------------- |
-| Target URL                | The URL where we should forward the populated request to (3rd party).       |
-| Sample Request & Response | Please include API name, required headers, auth fields, and request method. |
-| IP Address                | IP address of your server                                                   |
 
-Please send this information to setup@datatrans.ch.
+### Supported channels
+
+We support a variety of 3rd party APIs out of the box. Every day, more and more get added.
+
+### VPN and Leased Lines
+
+In case you send data over VPN or Leased Line to the 3rd party, we can add secure connections to adapt to your needs. Please [get in touch](start@pci-proxy.com) for more info.
