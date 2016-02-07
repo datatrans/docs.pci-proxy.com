@@ -14,6 +14,8 @@ The token can be used later on to charge, forward or retrieve payment data.
 
 ## How to start
 
+> [Sign up](signup) for a free developer account.
+
 Please find below developer manuals and the libraries. 
 
 | iOS Library for iPhone, iPad, iPod touch |
