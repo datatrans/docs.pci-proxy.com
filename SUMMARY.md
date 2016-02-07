@@ -8,8 +8,8 @@
    * [Collect Payment Data](collect_payment_data.md)
        * [XML / SOAP / JSON](webservice.md)
        * [Website / Application](website-application.md)
-* [Activate your account](activate_account.md)
 * General Information
    * [Live Mode and Testing](live_mode-test.md)
+   * [Activate your account](activate_account.md)
    * Seamless Solutions (SAQ A-EP)
 
