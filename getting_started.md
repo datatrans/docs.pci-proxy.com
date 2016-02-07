@@ -2,8 +2,8 @@
 
 Here is a quick step-by-step instruction on how to get started and quickly reduce your PCI scope.
 
- 1. Collect or extract payment data with our APIs 
- 2. Use stored payment data
+ 1. [Sign up](signup) for a free developer test account.
+ 2. [Choose API](collect_payment_data.html) to collect or extract payment data 
  
 #### Important: Your API key (merchant ID)
 
