@@ -12,9 +12,6 @@ Forwarding payment data is like extracing payment data. Therefore, you can use t
 
 **Understanding the process flow:**
 
-![Status Quo](Bildschirmfoto 2016-02-07 um 17.06.39.png)
-
-![With PCI Proxy](Bildschirmfoto 2016-02-07 um 17.06.48.png)
 
 ## Perform a pull request against a 3rd party
 
