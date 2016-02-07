@@ -4,9 +4,13 @@ Let us assume you run a website or application where customers or agents enterin
 
 `PCI Proxy gives you several options on how to collect payment data from a HTML web form` and securely store it in our vault. A reference number (token) is issued and sent to your systems. 
 
-Most options assure your servers never get in touch with sensitive card data and reduce your PCI scope to the least.
+*You are allowed to store the token in your system, as it is not PCI DSS relevant.*
 
-*Add-on: All options have a built-in feature to instantly charge that payment data. All you need is an existing acquiring contract.*
+The token can be used later on to charge, forward or retrieve payment data. 
+
+*Add-on: All Collect options have a built-in feature to instantly charge payment data. All you need is an existing acquiring contract. *
+
+All options assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.
 
 ## How to start
 
