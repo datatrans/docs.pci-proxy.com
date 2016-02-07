@@ -122,6 +122,10 @@ You will receive a confirmation once the channel is successfully added. For push
 
 We support a variety of channel APIs out of the box. Every day, more and more channels get added.
 
+### VPN and Leased Lines
+
+In case the channel transmits your data over VPN or Leased Line, we can add secure connections to adapt to your needs. Please [get in touch](start@pci-proxy.com) for more info.
+
 
 
 
