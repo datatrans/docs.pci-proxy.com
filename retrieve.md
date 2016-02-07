@@ -2,15 +2,42 @@
 
 Let us assume you have authorized employees that need to see the original payment data set of a customer.
 
-PCI Proxy enables you retrieve single payment data sets. It is a web interface that can convert a token back into its original payment data. (e.g. to book a no-show, charge payment data via POS terminal, etc.). 
+PCI Proxy enables you to manually retrieve single payment data sets. Basically, it is `a web interface that can convert a token back into its original payment data`. (e.g. to book a no-show, charge payment data via POS terminal, etc.). 
+
+## How to start
+
+There are two ways how you can access and control the interface. You can use our Web Admin Tool and let PCI Proxy handle the user access or call it as an embedded iframe or by redirect in your application. 
+
+*Note: Even though the interface is served by PCI Proxy, your PCI scope can extend.*
+
+**Understanding the process flow:**
+
+![3rd party PULL](3rd Party PULL.png)
+
+## Using our Web Admin Tool
+
+Login to..
+
+## Implement in your application
 
 
 
-This web interface, even though it is served by PCI Proxy, extends your PCI scope. You can call it as an embedded iframe or by redirect. Companies that currently use virtual terminals
+**Consider a business that needs this ability:**
 
-Click to see NoShow.jsp in action: [Retrieve single credit card][1]
+*You are a travel technology company and process reservations on behalf on your clients against global distribution systems or an online travel agency (e.g. Expedia).*
+
+#### Quick Start Guide:
+
+1. Add a 3rd party to your account
+2. POST your XML/SOAP request having PCI Proxy as endpoint.
+2. Add HTTP header to your request.
 
 
+| Test PCI Proxy PULL Endpoint: |
+| -- |
+| https://pilot.datatrans.biz/upp/proxy/pull/|
+
+- Required HTTP header:
 
 ### PCI DSS Compliant User Management
 
