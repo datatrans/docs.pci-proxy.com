@@ -11,7 +11,7 @@
        * [iOS / Android](mobile-app.md)
    * [Validate Payment Data](validate.md)
    * [Utilize Payment Data](utilize.md)
-       * Charge
+       * [Charge](charge.md)
 * General Information
    * [Live Mode and Testing](live_mode-test.md)
    * [Activate Your Account](activate_account.md)
