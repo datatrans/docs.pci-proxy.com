@@ -24,7 +24,7 @@ The token can be used later on to charge, forward or retrieve payment data.
 
 ## How to start
 
-> [Sign up](signup) for a free developver test account.
+> [Sign up](signup) for a free developer test account.
 
 In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
