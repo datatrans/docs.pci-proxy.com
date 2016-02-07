@@ -9,6 +9,7 @@
        * [XML / SOAP / JSON](webservice.md)
        * [Website / Application](website-application.md)
        * [iOS / Android](mobile-app.md)
+   * Validate Payment Data
 * General Information
    * [Live Mode and Testing](live_mode-test.md)
    * [Activate Your Account](activate_account.md)
