@@ -12,7 +12,7 @@
    * [Validate Payment Data](validate.md)
    * [Utilize Payment Data](utilize.md)
        * [Charge](charge.md)
-       * Forward
+       * [Forward](forward.md)
 * General Information
    * [Live Mode and Testing](live_mode-test.md)
    * [Activate Your Account](activate_account.md)
