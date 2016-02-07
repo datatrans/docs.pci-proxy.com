@@ -14,7 +14,7 @@ Forwarding payment data is like extracing payment data.
 
 Bild
 
-## Invoke a pull request against a 3rd party
+## Perform a pull request against a 3rd party
 
 **Consider a business that needs this ability:**
 
@@ -36,7 +36,7 @@ Bild
 
 | HTTP Header      | Description                                                        | Example value
 | -------------- | -------------------------------------------------------------------| ---
-| `X-CC-URL` | Specifies the target (channel) URL that will be called | https://api.partner.com/
+| `X-CC-URL` | Specifies the target (3rd party) URL that will be called | https://api.thirdparty.com/
 | `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
 | `X-CC-SIGN` | Configured security sign | 130709090849785405
             
@@ -46,7 +46,7 @@ Bild
         -X POST 
         -H "Content-Type: text/xml" 
         -H "X-CC-MERCHANT-ID: 1100005433" 
-        -H "X-CC-URL: https://api.partner.com/" 
+        -H "X-CC-URL: https://api.thirdparty.com/" 
         -H "X-CC-SIGN: 160203112421662698" 
         -d 'yourRequest.xml'
 ```
@@ -55,24 +55,21 @@ Bild
 
 ## Add a 3rd party
 
-Adding a new 3rd party is easy. Please send the following information to [thirdparty@pci-proxy.com](mailto:thirdparty@pci-proxy.com). 
+Adding a new 3rd party is easy. Please send the following information to [thirdparty@pci-proxy.com](mailto:thirdparty@pci-proxy.com). You will receive a confirmation as soon as the 3rd party is added.
 
 |Information| Description   |
 |---|---|
 |API endpoint|The URL where we should forward the request to.|
 |Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
-
-| General Information                                                               |
-| --------------------------------------------------------------------------------- |
-| Merchant ID - Sign up to receive your merchant ID. |
-| Company name and website of third party                                           |
-| AOC document of third party as proof of PCI compliance                            |
+| Merchant ID | Sign up to receive your merchant ID.| 
+| Name & URL | Company name and website of third party |
+| AOC document| Attestation of Compliance of third party to proof PCI compliance |
 
 
-### Supported channels
+### Supported 3rd parties
 
 We support a variety of 3rd party APIs out of the box. Every day, more and more get added.
 
 ### VPN and Leased Lines
 
-In case you send data over VPN or Leased Line to the 3rd party, we can add secure connections to adapt to your needs. Please [get in touch](start@pci-proxy.com) for more info.
+In case you send data over VPN or Leased Line to a 3rd party, we can add secure connections to adapt to your needs. Please [get in touch](start@pci-proxy.com) for more info.
