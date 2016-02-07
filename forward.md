@@ -10,10 +10,11 @@ PCI Proxy allows you to forward vaulted payment data to PCI compliant third part
 
 Before you can forward payment data to a 3rd party, we need proof of PCI compliance of the 3rd party.
 
+For testing purposes, it is not necessary to have the Attestation of Compliance for 3rd party ready.
 
+**Consider a business that needs this ability:**
 
-
-For testing purposes, it is not necessary to have the AOC documents ready.
+*You are a travel technology company and process reservations on behalf on your clients against global distribution systems.*
 
 
 | General Information                                                               |
