@@ -12,6 +12,14 @@ The token can be used later on to charge, forward or retrieve payment data.
 
 **All options assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.**
 
+Redirect Mode| Lightbox Mode        | Inline Mode 
+:------------:|:--------------------:|:-----------:
+<img src="../../img/redirect.png" width="150"> | <img src="../../img/lightbox.png" width="150"> | <img src="../../img/inline.png" width="150">      
+Redirect of consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay (iFrame). | Payment page managed by Datatrans is incorporated with iFrame.    
+[Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/redirect-mode) | [Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/lightbox-mode) | [Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/inline-mode)
+
+A comprehensive documentation of our Payment pages can be found on our [Showcase](https://datatrans.ch/showcase/authorisation/redirect-mode)
+
 ## How to start
 
 An easy way to start is by integrating our Redirect or Lightbox Payment Page. It takes care of building a conversion-optimised HTML form, validating input fields, and securing your customers' payment data. 
