@@ -1,4 +1,4 @@
-# Collect payment data on a website or from an application
+# Collect payment data from website or application
 
 Let us assume you run a website or application where customers or agents entering payment data into a HTML web form. 
 
