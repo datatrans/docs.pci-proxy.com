@@ -13,7 +13,7 @@
    * [Utilize Payment Data](utilize.md)
        * [Forward](forward.md)
        * [Charge](charge.md)
-       * Retrieve
+       * [Retrieve](retrieve.md)
 * General Information
    * [Live Mode and Testing](live_mode-test.md)
    * [Activate Your Account](activate_account.md)
