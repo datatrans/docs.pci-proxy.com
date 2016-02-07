@@ -22,22 +22,50 @@ Redirect Mode| Lightbox Mode        | Inline Mode
 Redirect of consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay (iFrame). | Payment page managed by Datatrans is incorporated with iFrame.    
 [Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/redirect-mode) | [Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/lightbox-mode) | [Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/inline-mode)
 
-
+We offer more sophisticated options to seamlessly collect payment data. With our Ajax API and Hidden Mode, you can create and design your own payment data collection forms.
 
 ## How to start
 
 An easy way to start is by integrating our Redirect or Lightbox Payment Page. It takes care of building a conversion-optimised HTML form and validating input fields. 
 
-To integrate the redirect mode you could use a simple HTML a tag:
+### Quick Start Guide
+
+To integrate the `Redirect Mode` you can use a simple HTML a tag:
 
 ```HTML
     <a href="https://pilot.datatrans.biz/upp/jsp/upStart.jsp
     		?merchantId=1100004624
     		&refno=pci-proxy-redirect
-    		&amount=0
+    		&amount=1
     		&currency=CHF
     		&theme=DT2015
             &uppAliasOnly=yes">Collect payment data</a>
+    ```
+
+To integrate the `Lightbox Mode` you can use the following code snippet:    
+
+```HTML
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://pilot.datatrans.biz/upp/payment/js/datatrans-1.0.2.js"></script>
+    
+    <form id="paymentForm"
+        data-merchant-id="1100004624"
+        data-refno="pci-proxy-lightbox"
+        data-amount="1"
+        data-currency="CHF"
+        data-use-alias="true"
+        data-upp-alias-only="yes"
+        data-sign="30916165706580013">
+        
+    <button id="paymentButton">Pay</button>
+    
+    </form>
+
+    <script type="text/javascript">
+        $("#paymentButton").click(function () {
+            Datatrans.startPayment({'form': '#paymentForm'});
+        });
+    </script>            
     ```
 
 If you need a more customizable approach, you can try our Inline Mode Payment Page. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
@@ -50,7 +78,7 @@ If you need a more customizable approach, you can try our Inline Mode Payment Pa
 	    src="https://pilot.datatrans.biz/upp/jsp/upStart.jsp
 		    ?merchantId=1100004547
 		    &refno=pci-proxy-inline
-		    &amount=0
+		    &amount=1
 		    &currency=CHF
 		    &uppAliasOnly=yes
 		    &theme=Inline
