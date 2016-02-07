@@ -9,7 +9,7 @@
        * [XML / SOAP / JSON](webservice.md)
        * [Website / Application](website-application.md)
 * [Activate your account](activate_account.md)
-* [Live Mode and Testing](live_mode-test.md)
 * General Information
+   * [Live Mode and Testing](live_mode-test.md)
    * Seamless Solutions (SAQ A-EP)
 
