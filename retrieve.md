@@ -1,8 +1,16 @@
 # Retrieve single credit cards
 
-There might be situations, where you have authorized personell that needs to be able to retrieve single payment data sets. For instance, to book a NoShow. The NoShow.jsp is a web interface that can convert single tokens back into full credit card numbers. This web interface, even though it is served by PCI Proxy, extends your PCI scope. You can call it as an embedded iframe or by redirect. Companies that currently use virtual terminals
+Let us assume you have authorized employees that need to see the original payment data set of a customer.
+
+PCI Proxy enables you retrieve single payment data sets. It is a web interface that can convert a token back into its original payment data. (e.g. to book a no-show, charge payment data via POS terminal, etc.). 
+
+
+
+This web interface, even though it is served by PCI Proxy, extends your PCI scope. You can call it as an embedded iframe or by redirect. Companies that currently use virtual terminals
 
 Click to see NoShow.jsp in action: [Retrieve single credit card][1]
+
+
 
 ### PCI DSS Compliant User Management
 
