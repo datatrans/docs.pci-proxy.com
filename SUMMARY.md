@@ -8,6 +8,7 @@
    * [Collect Payment Data](collect_payment_data.md)
        * [XML / SOAP / JSON](webservice.md)
        * [Website / Application](website-application.md)
+       * iOS / Android
 * General Information
    * [Live Mode and Testing](live_mode-test.md)
    * [Activate Your Account](activate_account.md)
