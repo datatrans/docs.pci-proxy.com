@@ -69,10 +69,10 @@ Adding a new 3rd party is easy. Please send the following information to [thirdp
 | AOC document| Attestation of Compliance of third party to proof PCI compliance |
 
 
-### Supported 3rd parties
+#### Supported 3rd parties
 
 We support a variety of 3rd party APIs out of the box. Every day, more and more get added.
 
-### VPN and Leased Lines
+#### VPN and Leased Lines
 
 In case you send data over VPN or Leased Line to a 3rd party, we can add secure connections to adapt to your needs. Please [get in touch](start@pci-proxy.com) for more info.
