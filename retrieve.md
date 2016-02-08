@@ -38,20 +38,41 @@ Login to..
 
 **Consider a business that needs this ability:**
 
-*You are a travel technology company and process reservations on behalf on your clients against global distribution systems or an online travel agency (e.g. Expedia).*
+*You are a travel technology company providing hotels with software to manage their reservations. Authorized hotel employees need to retrieve single payment data sets from reservations to book a no-show fee if a guest does not show up.*
 
 ### Quick Start Guide:
 
-1. Add a 3rd party to your account
-2. POST your XML/SOAP request having PCI Proxy as endpoint.
-2. Add HTTP header to your request.
+1. Embed interface as iframe or redirect into your application
+2. Ensure PCI DSS compliant user management
 
 
-| Test PCI Proxy PULL Endpoint: |
+| **No-Show interface endpoint:** |
 | -- |
-| https://pilot.datatrans.biz/upp/proxy/pull/|
+| https://pilot.datatrans.biz/upp/jsp/noShow.jsp |
 
-- Required HTTP header:
+- **Required parameter:**
+
+
+| Parameter      | Description                                                        | Example value
+| -------------- | -------------------------------------------------------------------| ---
+| `merchantId` | Specifies the target (3rd party) URL that will be called | https://api.thirdparty.com/
+| `aliasCC` | Your merchant ID | 1000011011
+| `username` | Configured security sign | 130709090849785405
+| `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256(salt+merchantId+aliasCC)
+            
+*The „**salt**“ value has to be generated in the Datatrans web administration tool (http://pilot.datatrans.biz) under “UPP Administration” -> “Security” -> “Other Services”.*
+
+- **Example POST:**
+
+```XML
+    https://pilot.datatrans.biz/upp/jsp/noShow.jsp
+            ?merchantId=1100005048
+&aliasCC=70119122433810042
+&salt=xUWnv6TR0RqUyPsVWvxgUn0wXKCuPJjWAumgTy67TVUsimiL0V
+&sign=df9ed6edb62df004ce64db6c113038aa21bd769d866ca7cf305bf43610ce6232
+'
+```
+
 
 ### PCI DSS Compliant User Management
 
