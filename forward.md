@@ -28,20 +28,21 @@ Forwarding payment data is like extracing payment data. Therefore, you can use t
 3. POST your XML/SOAP request having PCI Proxy as endpoint.
 
 
-| Test PCI Proxy PULL Endpoint: |
+| **PCI Proxy PULL Endpoint:** |
 | -- |
 | https://pilot.datatrans.biz/upp/proxy/pull/|
 
-- Required HTTP header:
+- **Required HTTP header:**
 
 
-| HTTP Header      | Description                                                        | Example value
+| HTTP header      | Description                                                        | Example value
 | -------------- | -------------------------------------------------------------------| ---
 | `X-CC-URL` | Specifies the target (3rd party) URL that will be called | https://api.thirdparty.com/
 | `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
 | `X-CC-SIGN` | Configured security sign | 130709090849785405
             
 
+- **Example POST:**
 
 ```java
     $ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
