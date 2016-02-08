@@ -29,7 +29,7 @@ The token can be used later on to charge, forward or retrieve payment data.
 In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
 
-> **Note:** You are in test mode and can try the PCI Proxy for free. For production uses, you will need to replace the test credentials with your live credentials. You can get your live credentials by [activating your account](activate_account.html). 
+
 
 
 
@@ -50,33 +50,35 @@ In general, you either perform a pull request to receive data or a channel pushe
 
 
 
-#### Quick Start Guide:
+### Quick Start Guide:
 
-1. Add a pull channel to your account
-2. POST your XML/SOAP request having PCI Proxy as endpoint.
-2. Add HTTP header to your request.
+1. Add a channel to your account
+2. Add required HTTP header to your request.
+3. POST your XML/SOAP request having PCI Proxy as endpoint.
 
 
-| Test PCI Proxy PULL Endpoint: |
+| **PCI Proxy PULL Endpoint:** |
 | -- |
 | https://pilot.datatrans.biz/upp/proxy/pull/|
 
-- Required HTTP header:
+- **Required HTTP header:**
 
 
-| HTTP Header      | Description                                                        | Example value
+| HTTP header      | Description                                                        | Example value
 | -------------- | -------------------------------------------------------------------| ---
-| `X-CC-URL` | Specifies the target (channel) URL that will be called | https://api.partner.com/
+| `X-CC-URL` | Specifies the target (3rd party) URL that will be called | https://api.channel.com/
 | `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
 | `X-CC-SIGN` | Configured security sign | 130709090849785405
             
+
+- **Example POST:**
 
 ```java
     $ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
         -X POST 
         -H "Content-Type: text/xml" 
         -H "X-CC-MERCHANT-ID: 1100005433" 
-        -H "X-CC-URL: https://api.partner.com/" 
+        -H "X-CC-URL: https://api.channel.com/" 
         -H "X-CC-SIGN: 160203112421662698" 
         -d 'yourRequest.xml'
 ```
@@ -96,14 +98,14 @@ In general, you either perform a pull request to receive data or a channel pushe
 
 *With the use of PCI Proxy, payment data never touch your server and, hence, you reduce your PCI scope.* 
 
-#### Quick Start Guide
+### Quick Start Guide
 
 To switch PCI Proxy between you and a channel that pushes data, you just add a new channel. The channel can use it and invoke requests having PCI Proxy as endpoint.
 
 1. Add a push channel to receive `{YOUR-SPECIFIC-KEY}`.
 2. Exchange API endpoint with PCI Proxy PUSH endpoint at your partner.
 
-| Test PCI Proxy PUSH Endpoint: |
+| **Test PCI Proxy PUSH Endpoint:** |
 | -- |
 | https://pilot.datatrans.biz/upp/proxy/push/ `{YOUR-SPECIFIC-KEY}`  |
 
@@ -123,11 +125,11 @@ Adding a new channel is easy. Please send the following information to [setup@pc
 
 You will receive a confirmation once the channel is successfully added. For push channels, you also receive `{YOUR-SPECIFIC-KEY}`.
 
-### Supported channels
+#### Supported channels
 
 We support a variety of channel APIs out of the box. Every day, more and more channels get added.
 
-### VPN and Leased Lines
+#### VPN and Leased Lines
 
 In case the channel transmits your data over VPN or Leased Line, we can add secure connections to adapt to your needs. Please [get in touch](start@pci-proxy.com) for more info.
 
