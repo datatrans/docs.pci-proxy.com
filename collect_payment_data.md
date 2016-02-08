@@ -2,15 +2,21 @@
 
 Whether you receive payment data via API, accept credit cards on a website or collect them in a mobile app, you can use PCI Proxy APIs.
 
-Our APIs automatically tokenize the payment information before they ever touch your systems to instantly reduce your PCI scope. 
+## Understanding the PCI Proxy
+
+- Our APIs switch between you and the source to automatically tokenize the payment data. 
+- PCI Proxy filters messages for payment data and replaces them with a reference number (token).
+- The payment data is encrypted and securely stored in our vault while you receive the token. 
+
+Thereby **your systems never touch payment data but remain flexible**. You still have the possibility to charge the payment data by using the token.
+
+
+
+## Considering the following cases:
 
 PCI Proxy APIs are organized in environments, meaning the different ways on how you could possibly receive or collect payment data. 
 
-
-
-##Considering the following cases:
-
- - You receive or request messages including payment data via APIs from your partners or clients. For example, you receive transaction related data from Booking.com. [Learn about Extracting.](extract)
+ - You receive or request messages including payment data via APIs from your partners or clients. For example, you receive transaction related data via XML from Booking.com. [Learn about Extracting.](extract)
  
  - You collect payment data on a website. For instance, you have an Internet booking engine running on your website. [Learn about Payment Pages.](paymentpage)
  
