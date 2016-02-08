@@ -18,4 +18,5 @@
        * [Forward](forward.md)
        * [Charge](charge.md)
        * [Retrieve](retrieve.md)
+* Full API Reference
 
