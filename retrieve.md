@@ -8,11 +8,14 @@ PCI Proxy enables you to manually retrieve single payment data sets. Basically, 
 
 ## How to start
 
+With your PCI Proxy account comes a sophisticated Web Administration Tool. 
+
+You can use Datatrans Web Admin Tool to retrieve 
 There are two ways how you can access and control the interface:
 
 | **Datatrans Web Admin Tool** | **Integrated Application** |
 | -- | -- |
-| You can use our Web Admin Tool and let PCI Proxy handle the user access | You can use your own application. The interface can be embedded as iframe or by redirect.  |
+| You can use our Web Admin Tool and let PCI Proxy handle the user access |   |
 
 
 
@@ -27,7 +30,9 @@ There are two ways how you can access and control the interface:
 
 Login to..
 
-## Implement in your application
+## Seamless interface integration (NoShow.jsp)
+
+Another way of retrieving payment data is by using a script that can be implemented into your own application. It offers a more seamless approach and can be embedded as iframe or by redirect.
 
  To see the interface in action, click the following link, prefilled with:
  
@@ -55,34 +60,34 @@ Login to..
 
 | Parameter      | Description                                                        | Example value
 | -------------- | -------------------------------------------------------------------| ---
-| `merchantId` | Specifies the target (3rd party) URL that will be called | https://api.thirdparty.com/
-| `aliasCC` | Your merchant ID | 1000011011
-| `username` | Configured security sign | 130709090849785405
+| `merchantId` | Your merchant ID | 1000011011
+| `aliasCC` | Token you received upon payment data collection | 70119122433810042
+| `username` | Username of authorized employee who retrieves it| 70119122433810042
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256(salt+merchantId+aliasCC)
             
 *The „**salt**“ value has to be generated in the Datatrans web administration tool (http://pilot.datatrans.biz) under “UPP Administration” -> “Security” -> “Other Services”.*
 
-- **Example POST:**
+- **Example:**
 
-```XML
+```java
     https://pilot.datatrans.biz/upp/jsp/noShow.jsp
             ?merchantId=1100005048
-&aliasCC=70119122433810042
-&salt=xUWnv6TR0RqUyPsVWvxgUn0wXKCuPJjWAumgTy67TVUsimiL0V
-&sign=df9ed6edb62df004ce64db6c113038aa21bd769d866ca7cf305bf43610ce6232
-'
+            &aliasCC=70119122433810042
+            &salt=xUWnv6TR0RqUyPsVWvxgUn0wXKCuPJjWAumgTy67TVUsimiL0V
+            &sign=df9ed6edb62df004ce64db6c113038aa21bd769d866ca7cf305bf43610ce6232
+
 ```
 
 
 ### PCI DSS Compliant User Management
 
-Using the NoShow.jsp requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find all necessary information for a PCI DSS compliant user management. A more detailed version on PCI DSS user management can be found in the official PCI DSS documents.
+Using  requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find all necessary information for a PCI DSS compliant user management. A more detailed version on PCI DSS user management can be found in the official PCI DSS documents.
 
-### Unique User IDs
+#### Unique User IDs
 
 Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. Shared user logins are not allowed. 
 
-### Password Policy
+#### Password Policy
 
 In general, the following password rules have to be observed:
 
@@ -94,8 +99,4 @@ In general, the following password rules have to be observed:
  - After 15 minutes of inactivity, the password must be entered to reactivate the terminal / session.
  - The maximum session time after which the user must log in again must not exceed 200 minutes.
 
-### No-Show.jsp Usage Logging
 
-Requirement 10
-
-All activity related to the No-Show.jsp has to be logged to provide documentary evidence. Logs must record every time someone accesses regulated data (including cardholder data and log data) to enable a “who-did-what-and-when” audit trail. 
