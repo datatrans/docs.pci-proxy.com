@@ -24,8 +24,8 @@ Forwarding payment data is like extracing payment data. Therefore, you can use t
 #### Quick Start Guide:
 
 1. Add a 3rd party to your account
-2. POST your XML/SOAP request having PCI Proxy as endpoint.
-2. Add HTTP header to your request.
+2. Add required HTTP header to your request.
+3. POST your XML/SOAP request having PCI Proxy as endpoint.
 
 
 | Test PCI Proxy PULL Endpoint: |
@@ -41,6 +41,7 @@ Forwarding payment data is like extracing payment data. Therefore, you can use t
 | `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
 | `X-CC-SIGN` | Configured security sign | 130709090849785405
             
+
 
 ```java
     $ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
