@@ -21,7 +21,7 @@ Forwarding payment data is like extracing payment data. Therefore, you can use t
 
 *You are a travel technology company and process reservations on behalf on your clients against global distribution systems or an online travel agency (e.g. Expedia).*
 
-#### Quick Start Guide:
+### Quick Start Guide:
 
 1. Add a 3rd party to your account
 2. Add required HTTP header to your request.
