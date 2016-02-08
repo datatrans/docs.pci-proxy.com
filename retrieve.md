@@ -4,9 +4,18 @@ Let us assume you have authorized employees that need to see the original paymen
 
 PCI Proxy enables you to manually retrieve single payment data sets. Basically, it is `a web interface that can convert a token back into its original payment data`. (e.g. to book a no-show, charge payment data via POS terminal, etc.). 
 
+
+
 ## How to start
 
-There are two ways how you can access and control the interface. You can use our Web Admin Tool and let PCI Proxy handle the user access or call it as an embedded iframe or by redirect in your application. 
+There are two ways how you can access and control the interface:
+
+| **Datatrans Web Admin Tool** | **Integrated Application** |
+| -- | -- |
+| You can use our Web Admin Tool and let PCI Proxy handle the user access | You can use your own application. The interface can be embedded as iframe or by redirect.  |
+
+
+
 
 *Note: Even though the interface is served by PCI Proxy, your PCI scope can extend.*
 
@@ -20,6 +29,11 @@ Login to..
 
 ## Implement in your application
 
+ To see the interface in action, click the following link, prefilled with:
+ 
+ - Token: 70119122433810042 (should result in test card number 4242 4242 4242 4242)
+
+> [**No-Show Interface**](https://pilot.datatrans.biz/upp/jsp/noShow.jsp?merchantId=1100005048&aliasCC=70119122433810042&salt=xUWnv6TR0RqUyPsVWvxgUn0wXKCuPJjWAumgTy67TVUsimiL0V&sign=df9ed6edb62df004ce64db6c113038aa21bd769d866ca7cf305bf43610ce6232)
 
 
 **Consider a business that needs this ability:**
