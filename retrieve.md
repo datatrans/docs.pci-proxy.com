@@ -26,7 +26,7 @@ Login to..
 
 *You are a travel technology company and process reservations on behalf on your clients against global distribution systems or an online travel agency (e.g. Expedia).*
 
-#### Quick Start Guide:
+### Quick Start Guide:
 
 1. Add a 3rd party to your account
 2. POST your XML/SOAP request having PCI Proxy as endpoint.
