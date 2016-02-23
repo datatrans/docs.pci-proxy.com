@@ -6,7 +6,7 @@ The payment data is checked through Datatrans payment gateway against the card s
 
 ## How to start
 
-> - [Sign up](signup) for a free developer test account.
+> - [Sign up](https://www.datatrans.ch/en/technics/test-account) for a free developer test account.
 > - Make sure, you have collected data first.
 
 
