@@ -16,7 +16,7 @@ By using tokenization, our APIs ensure **sensitive payment data never touches yo
 
 Here is a quick start guide on how to use PCI Proxy and quickly reduce your PCI scope.
 
- 1. [Sign up](signup) for a free test account.
+ 1. Sign up for a free test account.
  2. [Choose API](collect_payment_data.html) to collect or extract payment data.
  3. [Explore features](features.html), e.g. [confirm](validate.html), [charge](charge.html), [forward](forward.html) or [retrieve](retrieve.html) payment data.
  3. After successful testing, [activate your account](activate_account.html) and reduce your PCI scope.
