@@ -6,7 +6,6 @@
 * General Information
    * [Live Mode and Testing](live_mode-test.md)
    * [Activate Your Account](activate_account.md)
-   * [Seamless Solutions (SAQ A-EP)](seamless_solutions.md)
    * IP Addresses and Whitelisting
 * [Features](features.md)
    * [Collect Payment Data](collect_payment_data.md)
