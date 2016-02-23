@@ -58,7 +58,7 @@ Forwarding payment data is like extracing payment data. Therefore, you can use t
 
 ## Add a 3rd party
 
-Adding a new 3rd party is easy. Please send the following information to [thirdparty@pci-proxy.com](mailto:thirdparty@pci-proxy.com). You will receive a confirmation as soon as the 3rd party is added.
+Adding a new 3rd party is easy. Please send the following information to [thirdparty@pci-proxy.com](mailto:). You will receive a confirmation as soon as the 3rd party is added.
 
 |Information| Description   |
 |---|---|
