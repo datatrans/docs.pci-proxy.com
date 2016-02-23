@@ -16,15 +16,15 @@ The token can be used later on to charge, forward or retrieve payment data.
 
 > **Failure Security & Response Times**
 
-> *No worries, our redundant server layouts and connections are blazing fast and handle rerouting in no time so that response times are kept at a minimum. [Read More](webseite-security-site)*
+> *No worries, our redundant server layouts and connections are blazing fast and handle rerouting in no time so that response times are kept at a minimum. [Read More](https://www.datatrans.ch/en/offer/payment-security)*
 
-> *We also have SLAs ready for you. Please [get in touch](start@pci-proxy.com) for more info.*
+> *We also have SLAs ready for you. Please [get in touch](https://www.datatrans.ch/en/contact) for more info.*
 
 
 
 ## How to start
 
-> [Sign up](signup) for a free developer test account.
+> [Sign up](https://www.datatrans.ch/en/technics/test-account) for a free developer test account.
 
 In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
@@ -117,7 +117,7 @@ To switch PCI Proxy between you and a channel that pushes data, you just add a n
 
 ## Add a channel
 
-Adding a new channel is easy. Please send the following information to [setup@pci-proxy.com](mailto:setup@pci-proxy.com). 
+Adding a new channel is easy. Please send the following information to [setup@pci-proxy.com](mailto:). 
 
 |Information| Description   |
 |---|---|
@@ -133,7 +133,7 @@ We support a variety of channel APIs out of the box. Every day, more and more ch
 
 #### VPN and Leased Lines
 
-In case the channel transmits your data over VPN or Leased Line, we can add secure connections to adapt to your needs. Please [get in touch](start@pci-proxy.com) for more info.
+In case the channel transmits your data over VPN or Leased Line, we can add secure connections to adapt to your needs. Please [get in touch](https://www.datatrans.ch/en/contact/contactform) for more info.
 
 
 
