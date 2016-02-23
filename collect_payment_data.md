@@ -16,7 +16,7 @@ Thereby **your systems never touch payment data but remain flexible**. You still
 
 PCI Proxy APIs are organized in environments, meaning the different ways on how you could possibly receive or collect payment data. 
 
- - You receive or request messages including payment data via webservice APIs from your partners or clients. For example, you receive transaction related data via XML from Booking.com. [Learn about webservice.](webservice.html)
+ - You receive or request messages including payment data via webservice APIs from your partners or clients. For example, you receive transaction related data via XML from Booking.com. [Learn about Webservice.](webservice.html)
  
  - You collect payment data on a website. For instance, you have an Internet booking engine running on your website. [Learn about Payment Pages.](website-application.html)
  
