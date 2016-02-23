@@ -75,4 +75,4 @@ We support a variety of 3rd party APIs out of the box. Every day, more and more 
 
 #### VPN and Leased Lines
 
-In case you send data over VPN or Leased Line to a 3rd party, we can add secure connections to adapt to your needs. Please [get in touch](start@pci-proxy.com) for more info.
+In case you send data over VPN or Leased Line to a 3rd party, we can add secure connections to adapt to your needs. Please [get in touch](https://www.datatrans.ch/en/contact/contactform) for more info.
