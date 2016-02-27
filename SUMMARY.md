@@ -15,6 +15,6 @@
    * [Utilize Payment Data](utilize.md)
        * [Forward](forward.md)
        * [Charge](charge.md)
-       * [Retrieve](retrieve.md)
+       * [Show](retrieve.md)
 * [Full API Reference](full_api_reference.md)
 
