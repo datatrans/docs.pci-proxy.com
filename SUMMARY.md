@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * General Information
-   * [Understand PCI DSS](understand_pci_dss.md)
+   * [PCI DSS](understand_pci_dss.md)
    * [Case Studies](sample_business_cases.md)
    * [Test Account](live_mode-test.md)
 * [Features](features.md)
