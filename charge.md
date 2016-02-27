@@ -1,27 +1,28 @@
 # Charge payment data against our payment gateway
 
-Recurring billing
-Recurring billing is used primarily for charging recurring services such as subscriptions for newspapers or membership fees. The cardholder is not involved in the payment process.
+Lets assume you want to authorize or settle an amount on the payment data that you have collected earlier. 
 
-One-click checkout
-If the cardholder has the possibility to identify himself on the merchant’s website and register his credit card on
-his profile, one-click checkout is a userfriendly way to handle recurrent customers. Recurrent customers do not
-need to enter card details again to make a payment. They can pay with only one click.
-Restrictions
-An agreement with your acquirer for transactions without 3-D secure and a dedicated Merchant-ID (another Merchant
-ID as the one for generating the Alias/Token) is required. Please discuss payment process also with your
-Acquirer to have the appropriate agreement (Mail/Phone Order, Internet)
+You can simply use the token to charge the payment data. All you need is an acquring contract.
 
+**Consider the following business cases:**
+
+- **Charge an amount** and transact against the collected payment data.
+
+- **Reserve an amount:** Travel companies often receive payment data that is not charged directly. For instance, hotels require payment data from their customers to guarantee a reservation. Hotels can reserve the amount for the stay or simply test the validity of the payment data by authorizing an amount.
+
+- **Recurring billing** is used primarily for charging recurring services such as subscriptions for newspapers or membership fees. The cardholder is not involved in the payment process.
+
+- **One-click checkout:** You want to simplify your checkout for your recurring customers. One-click checkout is a user-friendly way to handle recurring customers because collected data can be charged many times. The customer has to identify himself on your website and register his credit card on his profile.  Recurrent customers do not need to enter card details again to make a payment. They can simply pay with only one click.
+
+
+
+## Authorization Request
 
 The authorization request needs to be sent as an XML formatted message via a https request to Datatrans endpoint. Once the request is validated, you receive a XML formatted response which contains all necessary information about the transaction. 
 
 | ** Endpoint:** |
 | -- |
 | https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp|
-
-### Authorization Request
-
-The following parameters are mandatory to conduct an authorization request. 
 
 - **Mandatory input parameter:**
 
