@@ -22,3 +22,9 @@ Here is a quick start guide on how to use PCI Proxy and quickly reduce your PCI 
  3. After successful testing, [activate your account](activate) and reduce your PCI scope.
 
 *Before you activate your account, you can use PCI Proxy for free in test mode. With the exception that only [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers) can be used, all PCI Proxy features are fully available in test mode.*
+
+**Note: Merchant IDs**
+
+On the following pages you will find several sample scripts that run on our test environment. You will notice the merchant ID attribute. Merchant IDs are unique and identify your environments at PCI Proxy after [sign up](http://www.pci-proxy.com/).
+
+You can have many merchant IDs. We recommend separating your environments (web service, website, mobile app) by using a single merchant ID for each.
