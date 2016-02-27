@@ -1,4 +1,4 @@
-# Collect payment data from XML/SOAP calls
+# Extract payment data from XML/SOAP calls
 
 Let us assume you receive or request messages with sensitive data via API from a partner (channel).
 
