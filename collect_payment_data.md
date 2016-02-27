@@ -14,7 +14,16 @@ Thereby **your systems never touch payment data but remain flexible**. You still
 
 ## Choose API 
 
-PCI Proxy APIs are organized in environments, meaning the different ways on how you could possibly receive or collect payment data. 
+In general, there are three environments in which you might receive payment data:
+
+| **[Web Service](webservice.html)** | **[Web Interface](website-application.html)** | **[Native Mobile App](mobile-app.html)** |
+| -- | -- | -- |
+| XML / SOAP / JSON / etc. | Website / Application | iOS / Android |
+| e.g. Booking.com / Expedia / Stripe | e.g. Checkout / IBE / Callcenter | e.g. Checkout / IBE in mobile app |
+
+
+*If you have specific environments that are not listed, please get in touch. We are quick and flexible to enhance our features. *
+
 
 **Considering the following cases and choose the API you need:**
 
