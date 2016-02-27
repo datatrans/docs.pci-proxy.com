@@ -8,7 +8,7 @@ Let us assume you run a website or application where customers or agents enterin
 
 The token can be used later on to charge, forward or retrieve payment data. 
 
-*Add-on: All Collect options have a built-in feature to instantly charge payment data. All you need is an existing acquiring contract. *
+*Add-on: All following options have a built-in feature to instantly charge payment data. All you need is an existing acquiring contract. *
 
 **All options assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.**
 
