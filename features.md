@@ -6,7 +6,7 @@ PCI Proxy has 3 major features: Collect, Validate, Use.
 |---|---|---|
 |From Web Service|Credit Card Check|Forward|
 |From Website / Application||Charge|
-|From Mobile App||Retrieve|
+|From Mobile App||Show|
 
 ## Collect
 
@@ -19,7 +19,7 @@ In general, there are three universes in which you might receive payment data.
 | XML / SOAP / JSON / etc. | Website / Application | iOS / Android |
 
 
-*If you have specific environments that are not listed, please get in touch. We are quick and flexible to enhance our Proxy features. *
+*If you have specific environments that are not listed, please get in touch. We are quick and flexible to enhance our features. *
 
 ## Validate
 
@@ -27,10 +27,10 @@ After collection you might want to confirm payment data is valid and can be char
 
 ## Utilize
 
-Eventually, you have collected payment data, to make use of it. 
+Eventually you want to make use of collected payment data. 
 
 | **PCI Proxy allows you to...** |
 | -- |
 | *charge payment data* directly through a payment gateway (e.g. Datatrans) |
 | *forward payment data* to PCI-compliant third-parties (e.g. Expedia) |
-| *retrieve single payment data sets* (e.g. to book a No-Show) |
+| *retrieve single payment data sets* (e.g. charge credit card with your POS terminal) |
