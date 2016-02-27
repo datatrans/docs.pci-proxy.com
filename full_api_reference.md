@@ -4,13 +4,19 @@
 
 The parameters will be sent as HTTP headers. 
 
-- **Mandatory input parameter:**
+| **PCI Proxy PULL Endpoint:** |
+| -- |
+| https://pilot.datatrans.biz/upp/proxy/pull/|
 
-| HTTP Header | Description | Example value |
-| -- | -- |  -- |
-| ```X-CC-URL```  | Specifies the target (Sales Channel) URL that will be called |  |
-| ```X-CC-MERCHANT-ID``` | Your merchantId | 1000011011 |
-| ```X-CC-SIGN``` | Configured security sign | 130709090849785405 |
+- **Mandatory input parameters:**
+
+
+| HTTP header      | Description                                                        | Example value
+| -------------- | -------------------------------------------------------------------| ---
+| `X-CC-URL` | Specifies the target URL that will be called | https://api.thirdparty.com/
+| `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
+| `X-CC-SIGN` | Configured security sign | 130709090849785405
+            
 
 - **Optional input paramter:**
 
@@ -19,6 +25,19 @@ The parameters will be sent as HTTP headers.
 | ```X-CC-TRUST-CERT``` | If target URL server has invalid certificate, this parameter can be used to ignore the certificate. Useful for tests when implementing partners use self signed certificates on URLs simulating 3rd parties. Header should be avoided (not sent) in production environments! | yes/no/true/false/on/off |
 | ```X-CC-ITEM``` | Xpath expression pointing to “record” | /reservations/reservation |
 | ```X-CC-NUMBER``` | XPath expression relative to “record” to locate card number | customer/cc_number |
+
+- **Example POST:**
+
+```java
+    $ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
+        -X POST 
+        -H "Content-Type: text/xml" 
+        -H "X-CC-MERCHANT-ID: 1100005433" 
+        -H "X-CC-URL: https://api.thirdparty.com/" 
+        -H "X-CC-SIGN: 160203112421662698" 
+        -d 'yourRequest.xml'
+```
+
 
 ## Response
 
