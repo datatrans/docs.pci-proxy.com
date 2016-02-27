@@ -7,18 +7,20 @@ You will receive the following demo credentials:
  | Credential | Description |
 | -- | -- |
 | MerchantID | Identifies your environment at PCI Proxy. |
- | Sign1 | It's a security parameter. You will need to sign your webservice calls when you collect or forward payment data. |
+ | X-CC-SIGN | It's a security parameter. You will need to sign your webservice calls when you collect or forward payment data. |
   | Login | Username & Password to login to our [backend](https://pilot.datatrans.biz/). In our [backend](https://pilot.datatrans.biz/) you can set and change the security signs.  |
 
 ### Web Administration Tool
 
-
+| **Web Adminstration Tool:** | 
+| -- |
+| https://pilot.datatrans.biz/|
 
 ### Security signs
 
-Every PCI Proxy account comes with security signs. When you sign up for the developer test account, we set the  *Sign1* for you. It is a static security sign that you need to send as http header with every XML/SOAP call.
+Every PCI Proxy account comes with security signs. When you sign up for the developer test account, we set the  *X-CC-SIGN* for you. It is a static security sign that you need to send as http header with every XML/SOAP call.
 
-In our 
+If you use our [show feature]() to display single payment data, you need a salted SHA.256 security sign.
 
 ##Live and Testing
 
