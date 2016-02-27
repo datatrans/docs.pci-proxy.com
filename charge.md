@@ -2,7 +2,7 @@
 
 
 
-The authorization request needs to be sent as an XML formatted message via a https request to Datatrans endpoint. After the request is validated, the merchant will receive a XML formatted response message which contains all necessary information about the transaction. 
+The authorization request needs to be sent as an XML formatted message via a https request to Datatrans endpoint. Once the request is validated, you receive a XML formatted response which contains all necessary information about the transaction. 
 
 | ** Endpoint:** |
 | -- |
