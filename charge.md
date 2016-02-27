@@ -2,7 +2,7 @@
 
 Lets assume you want to authorize or settle an amount on the payment data that you have collected earlier. 
 
-You can simply use the token to charge the payment data. All you need is an acquring contract.
+You can simply ```send an XML request with a token to charge the payment data```. All you need is an acquring contract.
 
 **Consider the following business cases:**
 
