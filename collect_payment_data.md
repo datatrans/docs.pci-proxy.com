@@ -12,9 +12,11 @@ Thereby **your systems never touch payment data but remain flexible**. You still
 
 
 
-## Considering the following cases:
+## Choose API 
 
 PCI Proxy APIs are organized in environments, meaning the different ways on how you could possibly receive or collect payment data. 
+
+**Considering the following cases and choose the API you need:**
 
  - You receive or request messages including payment data via webservice APIs from your partners or clients. For example, you receive transaction related data via XML from **Booking.com**. [Learn about Webservice.](webservice.html)
  
