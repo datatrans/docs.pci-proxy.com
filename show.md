@@ -18,9 +18,7 @@ There are two ways how you can show single payment data:
 
 
 
-**Understanding the process flow:**
 
-![3rd party PULL](3rd Party PULL.png)
 
 ## 1. Using our Web Admin Tool
 
