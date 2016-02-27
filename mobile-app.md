@@ -1,4 +1,4 @@
-# iOS / Android
+# Collect payment data from native mobile apps
 
 Let us assume you offer a native mobile app to your customers where they can enter payment data.
 
