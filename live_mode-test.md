@@ -8,19 +8,32 @@ You will receive the following demo credentials:
 | -- | -- |
 | MerchantID | Identifies your environment at PCI Proxy. |
  | X-CC-SIGN | It's a security parameter. You will need to sign your webservice calls when you collect or forward payment data. |
-  | Login | Username & Password to login to our [backend](https://pilot.datatrans.biz/). In our [backend](https://pilot.datatrans.biz/) you can set and change the security signs.  |
+  | Login | Username & Password to login to our [web admin tool](https://pilot.datatrans.biz/). In our [web admin tool](https://pilot.datatrans.biz/) you can set and change the security signs.  |
 
 ### Web Administration Tool
+
+Our web admin tool gives you a comprehensive management tool (backoffice) for initiating charges and credits, analysing of transactions, creation of reports and management of configuration data. 
 
 | **Web Adminstration Tool:** | 
 | -- |
 | https://pilot.datatrans.biz/|
 
+For more Information, please visit [Datatrans Backoffice](https://www.datatrans.ch/en/offer/backoffice).
+
 ### Security signs
 
-Every PCI Proxy account comes with security signs. When you sign up for the developer test account, we set the  *X-CC-SIGN* for you. It is a static security sign that you need to send as http header with every XML/SOAP call.
+For every call you make against our PCI Proxy, we ask for your security sign, a digital signature that tells us that it is really you. We differentiate between the following 2:
 
-If you use our [show feature]() to display single payment data, you need a salted SHA.256 security sign.
+**Static Sign (X-CC-SIGN):**
+You send it as X-CC-SIGN in the http header with every webservice call (collect or forward). When you sign up for the developer test account, we set the  *X-CC-SIGN* for you. You can change it any time in our [backend](http://pilot.datatrans.biz) under *“UPP Administration” / “Security”*.
+
+**Dynamic Sign (SHA Hash): **
+If you use our [show feature](show.html) to display single payment data, you need to dynamically sign your call with salted SHA hash. It is built as follows:
+
+`SHA.256(salt+merchantId+aliasCC)`
+
+Generate the *salt* value in our [backend](http://pilot.datatrans.biz) under *“UPP Administration” / “Security” / “Other Services”*.
+
 
 ##Live and Testing
 
