@@ -56,7 +56,7 @@ You can differentiate test and production environment based on the URL.
 
 ## IP Addresses & Whitelisting
 
-
+IP Addresses will follow. If you need our IP addresses for whitelisting, please get in touch with us.
  
 ## Activate your account
 
