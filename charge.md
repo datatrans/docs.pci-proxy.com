@@ -1,5 +1,16 @@
 # Charge payment data against Datatrans payment gateway
 
+Recurring billing
+Recurring billing is used primarily for charging recurring services such as subscriptions for newspapers or membership fees. The cardholder is not involved in the payment process.
+
+One-click checkout
+If the cardholder has the possibility to identify himself on the merchant’s website and register his credit card on
+his profile, one-click checkout is a userfriendly way to handle recurrent customers. Recurrent customers do not
+need to enter card details again to make a payment. They can pay with only one click.
+Restrictions
+An agreement with your acquirer for transactions without 3-D secure and a dedicated Merchant-ID (another Merchant
+ID as the one for generating the Alias/Token) is required. Please discuss payment process also with your
+Acquirer to have the appropriate agreement (Mail/Phone Order, Internet)
 
 
 The authorization request needs to be sent as an XML formatted message via a https request to Datatrans endpoint. Once the request is validated, you receive a XML formatted response which contains all necessary information about the transaction. 
