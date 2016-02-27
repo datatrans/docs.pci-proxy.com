@@ -15,5 +15,6 @@
        * [Forward](forward.md)
        * [Charge](charge.md)
        * [Show](show.md/Show)
+       * Show
 * [Full API Reference](full_api_reference.md)
 
