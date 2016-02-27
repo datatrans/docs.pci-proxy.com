@@ -14,11 +14,11 @@ The token can be used later on to charge, forward or retrieve payment data.
 ---
 
 
-> **Failure Security & Response Times**
+ **Failure Security & Response Times**
 
-> *No worries, our redundant server layouts and connections are blazing fast and handle rerouting in no time so that response times are kept at a minimum. [Read More](https://www.datatrans.ch/en/offer/payment-security)*
-
-> *We also have SLAs ready for you. Please [get in touch](https://www.datatrans.ch/en/contact) for more info.*
+*We understand the challenges of high availability and low response times. Multiple geo-redundant server layouts and blazing fast connections ensure response times are kept at a minimum. PCI Proxy is designed to add only a fractional overhead of 5 – 50 ms per conversion.*
+ 
+*We also have SLAs ready for you. Please [get in touch](https://www.datatrans.ch/en/contact) for more info.*
 
 
 
