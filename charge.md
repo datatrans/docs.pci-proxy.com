@@ -1,4 +1,4 @@
-# Charge payment data against Datatrans payment gateway
+# Charge payment data against our payment gateway
 
 Recurring billing
 Recurring billing is used primarily for charging recurring services such as subscriptions for newspapers or membership fees. The cardholder is not involved in the payment process.
