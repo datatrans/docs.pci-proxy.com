@@ -2,7 +2,7 @@
 
 Whether you receive payment data via API, accept credit cards on a website or collect them in a mobile app, you can use PCI Proxy APIs.
 
-## Understanding the PCI Proxy
+### Understanding the PCI Proxy
 
 - You can interpose our API between you and the source of credit cards to automatically tokenize the payment data. 
 - PCI Proxy filters messages for payment data and replaces them with a reference number (token).
