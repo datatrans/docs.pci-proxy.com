@@ -6,7 +6,9 @@ This site aims to be a comprehensive guide to PCI Proxy. You will learn how to i
 
 PCI Proxy is an API toolbox that allows you to instantly reduce your PCI scope.
 
-Our webservice API securely **extracts credit cards out of XML/SOAP calls. ** (e.g. XML reservation data from Booking.com). 
+Our webservice API securely **extracts credit cards out of XML/SOAP calls. ** 
+
+For instance, you receive XML reservation data from Booking.com that contain credit cards. 
 
 Our payment page APIs let you collect payment data on websites or mobile apps. 
 
