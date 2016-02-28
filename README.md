@@ -6,15 +6,13 @@ This site aims to be a comprehensive guide to PCI Proxy. You will learn how to i
 
 PCI Proxy is an API toolbox that allows you to instantly reduce your PCI scope.
 
-Our webservice API securely **extracts credit cards out of XML/SOAP calls. ** 
-
-*For instance, you receive XML reservation data from [Booking.com](http://www.booking.com/) that contain credit cards.* 
+Our webservice API securely **extracts credit cards out of XML/SOAP calls. ** *For instance, you receive XML reservation data from [Booking.com](http://www.booking.com/) that contain credit cards.* 
 
 Our payment page APIs let you **collect payment data on websites or mobile apps**. 
 
-By using tokenization, our APIs ensure **sensitive payment data never touch your systems**.
+By using tokenization, our APIs ensure **sensitive payment data never touch your systems**. Tokens can be used like normal credit cards. You can validate, forward or charge them. Our APIs detokenize them automatically for processing.
 
-PCI Proxy has 3 major features: Collect, Validate, Use. 
+### Overview of major features: Collect, Validate, Use. 
 
 |**[Collect](collect_payment_data.html)**|**[Validate](validate.html)**|**[Utilize](utilize)**|
 |---|---|---|
