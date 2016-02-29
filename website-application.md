@@ -22,7 +22,7 @@ Redirect Mode| Lightbox Mode        | Inline Mode
 Redirect of consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay (iFrame). | Payment page managed by Datatrans is incorporated with iFrame.    
 [Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/redirect-mode) | [Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/lightbox-mode) | [Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/inline-mode)
 
-We offer more sophisticated options to seamlessly collect payment data. With our Ajax API and Hidden Mode, you can create and design your own payment data collection forms. [Learn More.](ajax-hidden)
+We offer more sophisticated options to seamlessly collect payment data. With our Ajax API and Hidden Mode, you can create and design your own payment data collection forms. Please bear in mind that these solutions increase your PCI scope. [Learn More.](https://www.datatrans.ch/en/technics/payment-apis/hidden-ajax-mode)
 
 ## How to start
 
