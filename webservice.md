@@ -121,6 +121,7 @@ Adding a new channel is easy. Please send the following information to [setup@pc
 
 |Information| Description   |
 |---|---|
+|Merchant ID| Your merchant ID.|
 |Channel Type|Define if it is a push or pull channel.|
 |API endpoint|The URL where we should forward the request to.|
 |Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
