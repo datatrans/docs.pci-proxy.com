@@ -2,7 +2,7 @@
 
 Let us assume you offer a native mobile app to your customers where they can enter payment data.
 
-`Our SDKs for iOS and Android collect payment data in native apps` and automatically store it in our secure vault.A reference number (token) is issued and sent to your systems. +
+`Our SDKs for iOS and Android collect payment data in native apps` and automatically store it in our secure vault. A reference number (token) is issued and sent to your systems.
 
 *You are allowed to store the token in your system, as it is not PCI DSS relevant.*
 
