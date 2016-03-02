@@ -4,7 +4,7 @@ Lets assume you want to authorize or settle an amount on the payment data that y
 
 You can simply ```send an XML request with a token to charge the payment data behind it```. 
 
-*For this feature, you or your customer need an existing acquiring contract. We have integrated a list of acquirer you can choose from. If your desired acquirer is not on the list, please get in touch.*
+*For this feature, you or your customer need an existing acquiring contract. We have integrated with several acquirers you can choose from. If your desired acquirer is not on the list, please get in touch.*
 
 **Consider the following business cases:**
 
