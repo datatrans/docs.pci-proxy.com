@@ -2,13 +2,13 @@
 
 Let us assume you send requests with sensitive payment data via API to a 3rd party.
 
-PCI Proxy allows you to forward vaulted payment data to PCI compliant third parties (e.g. online travel agency, payment processor, hotel, airline, car rental, etc.). 
+PCI Proxy allows you to retain your existing data communication with PCI-compliant 3rd parties. This can be online travel agencies, payment gateways, hotels, airlines, car rentals, etc. 
 
-`By switching PCI Proxy between you and the 3rd party`, you invoke requests having PCI Proxy as endpoint. In your request, you simply use the token that you received when you collected the payment data. PCI Proxy replaces the token with payment data and forwards the record to the 3rd party. Any responses from the 3rd party are passed back to you. 
+`By switching PCI Proxy between you and the 3rd party`, you invoke requests having PCI Proxy as endpoint. In your normal request, you simply use the token that you received when you collected the payment data. PCI Proxy replaces the token with payment data and forwards the populated request to the 3rd party. Any responses from the 3rd party are passed back to you. 
 
 ## How to start
 
-Forwarding payment data is like extracing payment data. Therefore, you can use the same API.
+Forwarding payment data is like extracting payment data. You can use the same webservice API.
 
 
 ## Perform a pull request against a 3rd party
