@@ -4,7 +4,7 @@ Lets assume you want to authorize or settle an amount on the payment data that y
 
 You can simply ```send an XML request with a token to charge the payment data behind it```. 
 
-*For this feature, you or your customer need an existing acquiring contract. We have integrated with several acquirers you can choose from. If your desired acquirer is not on the list, please get in touch.*
+*For this feature, you or your customer need an existing acquiring contract. We have integrated with a many acquirer. Please get in touch.*
 
 **Consider the following business cases:**
 
@@ -16,13 +16,16 @@ You can simply ```send an XML request with a token to charge the payment data be
 
 - **One-click checkout:** You want to simplify your checkout for your recurring customers. One-click checkout is a user-friendly way to handle recurring customers because collected data can be charged many times. The customer has to identify himself on your website and register his credit card on his profile.  Recurrent customers do not need to enter card details again to make a payment. They can simply pay with only one click.
 
+## How to start
+
+You can charge a token by sending an authorization request to our gateway endpoint.
 
 
-## Authorization Request
+### Authorization Request
 
-The authorization request needs to be sent as an XML formatted message via a https request to Datatrans endpoint. Once the request is validated, you receive a XML formatted response which contains all necessary information about the transaction. 
+The authorization request needs to be sent as an XML formatted message via a https request to Datatrans endpoint. 
 
-| ** Endpoint:** |
+| ** Gateway Endpoint:** |
 | -- |
 | https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp|
 
@@ -30,22 +33,22 @@ The authorization request needs to be sent as an XML formatted message via a htt
 
 | Parameter | Type | Description |
 | -- | -- | -- |
-| merchantId | N10 | Your merchant ID or merchant ID of your customer |
-| amount | N | Transaction amount in the smallest available unit |
-| currency | A3 | Transaction currency – ISO character code (CHF, EUR, USD etc.) |
-| refno | AN18 | Unique reference number assigned by you|
-| aliasCC | AN20 | Alias for credit card, Postfinance or PayPal |
-| expm | MM | Expiration month (for credit card only) |
-| expy | YY | Expiration year (for credit card only) |
+| ```merchantId``` | N10 | Your merchant ID or merchant ID of your customer |
+| ```amount``` | N | Transaction amount in the smallest available unit |
+| ```currency``` | A3 | Transaction currency – ISO character code (CHF, EUR, USD etc.) |
+| ```refno``` | AN18 | Unique reference number assigned by you|
+| ```aliasCC``` | AN20 | Token for credit card, Postfinance or PayPal |
+| ```expm``` | MM | Expiration month (for credit card only) |
+| ```expy``` | YY | Expiration year (for credit card only) |
 
 
 - **Optional input parameter:**
 
 | Parameter | Type | Description |
 | -- | -- | -- |
-| uppCustomerIpAddress |  | Customer’s IP address (source IP used by the cardholder) |
-| sign |  | Your security sign |
-| reqtype |  | *NOA* – Authorisation only (default) or *CAA* – Authorisation and settlement |
+| ```uppCustomerIpAddress``` |  | Customer’s IP address (source IP used by the cardholder) |
+| ```sign``` |  | Your security sign |
+| ```reqtype``` |  | *NOA* – Authorisation only (default) or *CAA* – Authorisation and settlement |
 
 
 
@@ -69,24 +72,24 @@ The authorization request needs to be sent as an XML formatted message via a htt
         </authorizationService>
 ```
 
-## Response 
+### Response 
 
-All input parameters will be returned. Additionally you will receive parameters, indicating whether the
+Validated requests receive a XML formatted response containing all necessary information about the transaction. All input parameters will be returned. Additionally you will receive parameters, indicating whether the
 transaction was successful or not.
 
 
-### Successful Authorisation
+#### Successful Authorisation
 
 If the authorization was successful, you will additionally receive the following parameter:
 
 | Parameter | Type | Description |
 | -- | -- | -- |
-| responseCode | N2 | 01 or 02 for a successful transaction |
-| responseMessage |  | Authorisation response message text |
-| uppTransactionId | N18 | Unique transaction identifier assigned by Datatrans |
-| authorizationCode | N9 | Outdated; internal reference ID assigned by Datatrans; please ignore and use uppTransactionId instead |
-| acqAuthorizationCode | AN7 | Authorisation code returned by the acquirer |
-| maskedCC |  | Masked credit card number, which can be stored in your system. |
+| ```responseCode``` | N2 | 01 or 02 for a successful transaction |
+| ```responseMessage``` |  | Authorisation response message text |
+| ```uppTransactionId``` | N18 | Unique transaction identifier assigned by Datatrans |
+| ```authorizationCode``` | N9 | Outdated; internal reference ID assigned by Datatrans; please ignore and use uppTransactionId instead |
+| ```acqAuthorizationCode``` | AN7 | Authorisation code returned by the acquirer |
+| ```maskedCC``` |  | Masked credit card number, which can be stored in your system. |
 
 - **Example of successful authorization response:**
 
@@ -119,17 +122,17 @@ If the authorization was successful, you will additionally receive the following
             </body>
         </authorizationService>```
 
-### Failed Authorization
+#### Failed Authorization
 
 If the authorization failed, you will additionally receive the following error parameter:
 
 | Parameter | Type | Description |
 | -- | -- | -- |
-| errorCode | N7 | Error code, please refer to the Technical Implementation Guide for the response code list |
-| errorMessage |  | Error text |
-| errrorDetail |  | Description of error detail |
-| uppTransactionId | N18 | Unique transaction identifier assigned by Datatrans |
-| acqErrorCode | AN7 | Error code returned by the acquirer |
+| ```errorCode``` | N7 | Error code, please refer to the [Technical Implementation Guide](https://pilot.datatrans.biz/showcase/doc/Technical_Implementation_Guide.pdf) for the response code list |
+| ```errorMessage``` |  | Error text |
+| ```errrorDetail``` |  | Description of error detail |
+| ```uppTransactionId``` | N18 | Unique transaction identifier assigned by Datatrans |
+| ```acqErrorCode``` | AN7 | Error code returned by the acquirer |
 
 - **Example of failed / unsuccessful authorization response:**
 
