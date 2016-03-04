@@ -34,18 +34,18 @@ If you have decided whether you want to handle sensitive card data yourself or u
 ### SAQ A
 Your systems ```do not touch``` sensitive cardholder data or serve card collection forms.
 
-[See relevant PCI PROXY APIs](collect-payment-data)
+[See relevant PCI PROXY APIs](collect_payment_data.html)
 
 
 ### SAQ A-EP
 Your systems ```do not touch``` sensitive cardholder data ```but do serve``` card collection forms.
 
-[See relevant PCI PROXY APIs](collect-payment-data)
+[See relevant PCI PROXY APIs](collect_payment_data.html)
 
 ### SAQ D
 Your systems ```do touch``` sensitive cardholder data.
 
-[See relevant PCI PROXY APIs](collect-payment-data)
+[See relevant PCI PROXY APIs](collect_payment_data.html)
 
 ## What PCI Requirements fulfills PCI Proxy?
 
