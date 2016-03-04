@@ -27,7 +27,7 @@ Here is a quick start guide on how to use PCI Proxy and quickly reduce your PCI 
  1. [Sign up](http://www.pci-proxy.com/) for a free test account.
  2. [Choose API](collect_payment_data.html) to collect or extract payment data.
  3. Explore features, e.g. [validate](validate.html), [charge](charge.html), [forward](forward.html) or [display](retrieve.html) payment data.
- 3. After successful testing, [activate your account](activate) and reduce your PCI scope.
+ 3. After successful testing, [activate your account](live_mode-test.html) and reduce your PCI scope.
 
 *Before you activate your account, you can use PCI Proxy for free in test mode. With the exception that only [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers) can be used, all PCI Proxy features are fully available in test mode.*
 
