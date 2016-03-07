@@ -1,7 +1,7 @@
 # IP Whitelisting
 
 
-Some services may prevent unauthorized access to their servers. Only whitelisted IP addresses are allowed to connect. 
+Some services may prevent unauthorized access to their servers. Only whitelisted IP addresses are allowed to connect. For instance, Booking.com is asking to enter source IPs.
 
 Please use the following IP addresses for whitelisting:
 
