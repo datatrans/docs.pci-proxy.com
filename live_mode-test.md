@@ -60,6 +60,6 @@ Once your tests are successful, please activate your account to receive your pro
 
 |Information| Description   |
 |---|---|
-|Merchant ID|Once you  you receive your merchant ID.|
+|Merchant ID|Once you receive your merchant ID.|
 
-You will receive your productive merchant ID and depending on your set up productive push URLs. you can pass on to your partner. 
+You will receive your productive merchant ID and productive push URLs depending on your setup. You can pass the push URLs on to your partner. 
