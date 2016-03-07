@@ -5,6 +5,7 @@
    * [PCI DSS](understand_pci_dss.md)
    * [Case Studies](sample_business_cases.md)
    * [Test Account](live_mode-test.md)
+   * IP Whitelisting
 * [Features](features.md)
    * [Collect Payment Data](collect_payment_data.md)
        * [Webservice (XML/SOAP)](webservice.md)
