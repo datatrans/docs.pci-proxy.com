@@ -53,9 +53,6 @@ You can differentiate test and production environment based on the URL.
 | PROD: | `https://production.datatrans.biz/upp/proxy/` |
  | TEST: | `https://pilot.datatrans.biz/upp/proxy/` |
 
-## IP Addresses & Whitelisting
-
-IP Addresses will follow. If you need our IP addresses for whitelisting, please get in touch with us.
  
 ## Activate your account
 
