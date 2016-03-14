@@ -106,6 +106,15 @@ If you only want to collect the credit card number on the fly, please use our so
 
 The sensitive card number field is embedded with an iframe into your order or payment page. This gives you great flexibility when designing a custom order process.
 
+| Possible parameter| Description| Example value
+| ----------------- | -----------| ------------ |
+| `merchantId`| Your merchant ID | 1000011011 |
+| `customTheme` | Name of a CSS class selector specified in a custom CSS file* which you submit to Datatrans. | mytheme |
+
+**The following example matches `mytheme` with: `.mytheme input { border: 1px solid red; }`*
+
+To integrate the `Tokenizer iFrame` you can use the following code snippet:    
+
 ```HTML
 <form id="payment-form">
   <label for="cardholder">Cardholder</label>
@@ -135,8 +144,24 @@ The sensitive card number field is embedded with an iframe into your order or pa
     <input type="submit" disabled/> 
 </form>
   ```
-  
- merchantId: Your Datatrans merchantId
- customTheme: Name of a CSS class selector specified in a
-custom CSS file which has to be submitted to Datatrans. In the example above ‘mytheme’ woud match with:
-.mytheme input { border: 1px solid red; }
+
+##### Listening to events
+
+Add an event listener to your parent frame in order to receive the corresponding events once a tokenization was successful or resulted in an error:
+
+```javascript
+if (window.addEventListener) { 
+    window.addEventListener('message', windowEventHandler);
+  } else if (window.attachEvent) {
+    window.attachEvent('message', windowEventHandler); 
+  }
+```
+dsfds
+
+￼```JavaScript
+function windowEventHandler(event) {
+// Make sure to check for event.origin here if(event.data !== undefined) {
+var status = event.data.type;
+var result = event.data.result; }
+}
+```
