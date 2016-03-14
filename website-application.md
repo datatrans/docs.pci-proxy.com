@@ -44,6 +44,8 @@ To integrate the `Redirect Mode` you can use a simple HTML a tag:
             &uppAliasOnly=yes">Collect payment data</a>
     ```
 
+---
+
 #### Integrate Lightbox Mode
 
 To integrate the `Lightbox Mode` you can use the following code snippet:    
@@ -99,6 +101,8 @@ To integrate the `Inline Mode` you have to use an iframe:
 		    &paymentmethod=VIS
 		    &customTheme=mytheme">
     ```
+
+---
 
 #### Integrate Tokenizer iFrame
 
