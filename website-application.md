@@ -30,7 +30,7 @@ Redirect of consumer to payment page managed by Datatrans. | Payment pages are p
 
 An easy way to start is by integrating our Redirect or Lightbox Payment Page. It takes care of building a conversion-optimised HTML form and validating input fields. 
 
-#### Integrate Redirect Mode
+#### Integrate Redirect or Lightbox Mode
 
 To integrate the `Redirect Mode` you can use a simple HTML a tag:
 
@@ -44,9 +44,6 @@ To integrate the `Redirect Mode` you can use a simple HTML a tag:
             &uppAliasOnly=yes">Collect payment data</a>
     ```
 
----
-
-#### Integrate Lightbox Mode
 
 To integrate the `Lightbox Mode` you can use the following code snippet:    
 
@@ -193,3 +190,15 @@ If a wrong card number is detected or the the luhn check didn’t pass the data 
   "result":"not valid credit card" 
 }
 ```
+
+##### Tested Browsers
+
+| Desktop | Mobile |
+| -- | -- |
+| >=IE10 | iOS Safari >= 6 |
+| >=Firefox 30 | Android >=4 |
+| >=Chrome 32 | 
+| >=Safari 6 |
+*http://caniuse.com/#search=postMessage*
+
+
