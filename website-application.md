@@ -80,7 +80,7 @@ To integrate the `Lightbox Mode` you can use the following code snippet:
 
 #### Integrate Inline Mode
 
-If you need a more customizable approach, you can try our Inline Mode. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
+If you need a more custom approach, you can try our Inline Mode. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
 
 To integrate the `Inline Mode` you have to use an iframe:
 
