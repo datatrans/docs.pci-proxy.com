@@ -80,7 +80,7 @@ To integrate the `Lightbox Mode` you can use the following code snippet:
 
 #### Integrate Inline Mode
 
-If you need a more customizable approach, you can try our Inline Mode. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
+If you need a more custom approach, you should use our Inline Mode. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
 
 To integrate the `Inline Mode` you have to use an iframe:
 
@@ -100,4 +100,92 @@ To integrate the `Inline Mode` you have to use an iframe:
 		    &customTheme=mytheme">
     ```
 
+#### Integrate Tokenizer iFrame
 
+If you only want to collect the credit card number on the fly, please use our Tokenizer iFrame. The sensitive card number field is embedded with an iframe into your order or payment page. You can instantly receive the token while your customer is in checkout by listening to the event handler. This gives you great flexibility when designing a custom order process.
+
+| Possible parameter| Description| Example value
+| ----------------- | -----------| ------------ |
+| `merchantId`| Your merchant ID | 1000011011 |
+| `customTheme` | Name of a CSS class selector specified in a custom CSS file* which you submit to Datatrans. | mytheme |
+
+**The following example matches `mytheme` with: `.mytheme input { border: 1px solid red; }`*
+
+To integrate the `Tokenizer iFrame` you can use the following code snippet:    
+
+```HTML
+<form id="payment-form">
+  <label for="cardholder">Cardholder</label>
+  <input type="text" id="cardholder" name="cardholder"/>
+  
+  <!-- This is where the CC number input field will appear -->
+    <div id="cc-wrapper">
+      <div style="display: table-cell; vertical-align: middle;">
+        <label for="tokenizer">Cardno</label> 
+      </div>
+      <div style="display: table-cell; vertical-align: middle;"> 
+        <iframe id="tokenizer"
+                frameborder="0"
+                height="40"
+                scrolling="no"
+                src="https://pilot.datatrans.biz/upp/payment/tokenize?
+                    merchantId=1000011011
+                    &customTheme=mytheme">
+        </iframe> 
+      </div>
+    </div>
+  <!-- Expiry Month and Year are not PCI-sensitive data-->
+  <label for="month">Expiry Date</label> 
+    <input name="month" type="text" size="4"> / 
+    <input name="year" type="text" size="4"> 
+    <br/><br/>
+    <input type="submit" disabled/> 
+</form>
+  ```
+
+##### Listening to events
+
+Add an event listener to your parent frame in order to receive the corresponding events once a tokenization was successful or resulted in an error:
+
+```javascript
+if (window.addEventListener) { 
+    window.addEventListener('message', windowEventHandler);
+  } else if (window.attachEvent) {
+    window.attachEvent('message', windowEventHandler); 
+  }
+```
+
+```javascript
+function windowEventHandler(event) {
+  // Make sure to check for event.origin here 
+  if(event.data !== undefined) {
+    var status = event.data.type;
+    var result = event.data.result; 
+  }
+}
+```
+
+An event is getting posted to the parent frame when the card number input field loses focus (onblur). 
+
+In case of a successful tokenization the data object of the event passed to the windowEventHandler contains the following data:
+
+```JavaScript
+{
+  "type":"success", 
+  "result":
+    {
+    "aliasCC":"70119122433810042", 
+    "maskedCC": "424242xxxxxx4242", 
+    "paymentmethod":"visa"
+    } 
+}
+```
+
+If a wrong card number is detected or the the luhn check didn’t pass the data object looks like:
+
+```JavaScript
+￼{ 
+  "type":"error",
+  "result":"not valid credit card" 
+}
+```
