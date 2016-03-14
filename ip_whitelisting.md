@@ -8,7 +8,7 @@ Please use the following IP addresses for whitelisting:
 | Name | Address |
 | -- | -- |
 | pilot.datatrans.biz (Test) | 193.16.220.3 |
-| payment.datatrans.biz (Production) | 193.16.220.4 |
+| payment.datatrans.biz (Production) | 193.16.220.152 |
 | payment.datatrans2.biz (Production Backup) | 91.223.186.4  |
 | sftp.datatrans.biz (SFTP Production) | 193.16.220.16 |
 
