@@ -80,7 +80,7 @@ To integrate the `Lightbox Mode` you can use the following code snippet:
 
 #### Integrate Inline Mode
 
-If you need a more custom approach, you can try our Inline Mode. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
+If you need a more custom approach, you should use our Inline Mode. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
 
 To integrate the `Inline Mode` you have to use an iframe:
 
@@ -100,4 +100,43 @@ To integrate the `Inline Mode` you have to use an iframe:
 		    &customTheme=mytheme">
     ```
 
+#### Integrate Tokenizer iFrame
 
+If you only want to collect the credit card number on the fly, please use our sophisticated Tokenizer iFrame.  
+
+The sensitive card number field is embedded with an iframe into your order or payment page. This gives you great flexibility when designing a custom order process.
+
+```HTML
+<form id="payment-form">
+  <label for="cardholder">Cardholder</label>
+  <input type="text" id="cardholder" name="cardholder"/>
+  
+  <!-- This is where the CC number input field will appear -->
+    <div id="cc-wrapper">
+      <div style="display: table-cell; vertical-align: middle;">
+        <label for="tokenizer">Cardno</label> 
+      </div>
+      <div style="display: table-cell; vertical-align: middle;"> 
+        <iframe id="tokenizer"
+                frameborder="0"
+                height="40"
+                scrolling="no"
+                src="https://pilot.datatrans.biz/upp/payment/tokenize?
+                    merchantId=1000011011
+                    &customTheme=mytheme">
+        </iframe> 
+      </div>
+    </div>
+  <!-- Expiry Month and Year are not PCI-sensitive data-->
+  <label for="month">Expiry Date</label> 
+    <input name="month" type="text" size="4"> / 
+    <input name="year" type="text" size="4"> 
+    <br/><br/>
+    <input type="submit" disabled/> 
+</form>
+  ```
+  
+ merchantId: Your Datatrans merchantId
+ customTheme: Name of a CSS class selector specified in a
+custom CSS file which has to be submitted to Datatrans. In the example above ‘mytheme’ woud match with:
+.mytheme input { border: 1px solid red; }
