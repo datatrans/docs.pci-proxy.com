@@ -102,9 +102,7 @@ To integrate the `Inline Mode` you have to use an iframe:
 
 #### Integrate Tokenizer iFrame
 
-If you only want to collect the credit card number on the fly, please use our sophisticated Tokenizer iFrame.  
-
-The sensitive card number field is embedded with an iframe into your order or payment page. This gives you great flexibility when designing a custom order process.
+If you only want to collect the credit card number on the fly, please use our Tokenizer iFrame. The sensitive card number field is embedded with an iframe into your order or payment page. You can instantly receive the token while your customer is in checkout by listening to the event handler. This gives you great flexibility when designing a custom order process.
 
 | Possible parameter| Description| Example value
 | ----------------- | -----------| ------------ |
