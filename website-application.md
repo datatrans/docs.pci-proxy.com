@@ -156,12 +156,38 @@ if (window.addEventListener) {
     window.attachEvent('message', windowEventHandler); 
   }
 ```
-dsfds
 
-￼```JavaScript
+```javascript
 function windowEventHandler(event) {
-// Make sure to check for event.origin here if(event.data !== undefined) {
-var status = event.data.type;
-var result = event.data.result; }
+  // Make sure to check for event.origin here 
+  if(event.data !== undefined) {
+    var status = event.data.type;
+    var result = event.data.result; 
+  }
+}
+```
+
+An event is getting posted to the parent frame when the card number input field loses focus (onblur). 
+
+In case of a successful tokenization the data object of the event passed to the windowEventHandler contains the following data:
+
+```JavaScript
+{
+  "type":"success", 
+  "result":
+    {
+    "aliasCC":"70119122433810042", 
+    "maskedCC": "424242xxxxxx4242", 
+    "paymentmethod":"visa"
+    } 
+}
+```
+
+If a wrong card number is detected or the the luhn check didn’t pass the data object looks like:
+
+```JavaScript
+￼{ 
+  "type":"error",
+  "result":"not valid credit card" 
 }
 ```
