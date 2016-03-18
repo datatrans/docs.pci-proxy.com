@@ -30,12 +30,12 @@ The following list of business cases gives an overview of business types that al
 
  PCI Proxy provides several ways on how to [use stored payment data][7]. Your clients can either [retrieve single payment data sets][8], [charge payment data][9] against a payment processor or [forward payment data][4] to a PCI-compliant third party, eg. Expedia.
 
- [1]: #collect
- [2]: #paymentpages
- [3]: #paybyemail
- [4]: #forward
+ [1]: collect_payment_data.html
+ [2]: website-application.html
+ [3]: https://www.datatrans.ch/en/offer/special-solutions/pay-by-e-mail
+ [4]: forward.html
  [5]: http://www.booking.com/
- [6]: #extract
- [7]: #use
- [8]: #retrieve
- [9]: #charge
+ [6]: webservice.html
+ [7]: utilize.html
+ [8]: show.html
+ [9]: charge.html
