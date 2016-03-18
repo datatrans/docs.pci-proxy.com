@@ -35,4 +35,4 @@ Here is a quick start guide on how to use PCI Proxy and quickly reduce your PCI 
 
 On the following pages you will find several sample scripts that run on our test environment. You will notice the merchant ID attribute. Merchant IDs are unique and identify your environments at PCI Proxy after [sign up](http://www.pci-proxy.com/).
 
-You can have many merchant IDs. We recommend to use a single merchant ID for each environment (web service, website, mobile app).
+You can have many merchant IDs. We recommend to use a unique merchant ID for each environment (web service, website, mobile app).
