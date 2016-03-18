@@ -7,7 +7,8 @@ If possible, please whitelist our full Class C network:
 
 ```
 193.16.220.0/24 
-91.223.186.0/2```
+91.223.186.0/24
+92.```
 
 
 Depending on how restrictive you want to setup the whitelist, you can also specify only the following IPs:
