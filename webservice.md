@@ -70,7 +70,7 @@ In general, you either perform a pull request to receive data or a channel pushe
 | `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
 | `X-CC-SIGN` | Configured security sign | 130709090849785405
             
-The X-CC-SIGN can be generated in the Datatrans Web Admin Tool (http://pilot.datatrans.biz) under “UPP Administration” -> “Security” -> “Other Services”.
+The X-CC-SIGN can be generated in the Datatrans Web Admin Tool (http://pilot.datatrans.biz) under “UPP Administration” -> “Security” -> “Transaction Security”.
 
 
 - **Example POST:**
