@@ -41,7 +41,7 @@ Does the partner channel push the data directly to you (API endpoint at you) = P
 
 **Understanding the process flow:**
 
-You will need the *Collect Webservice PULL Proxy* when you start the request and receive the payment data in the response.
+You will use the *Collect Webservice PULL Proxy* when you start the request and receive the payment data in the response.
 
 ![Channel PULL](Channel PULL.png)
 
@@ -96,7 +96,7 @@ The X-CC-SIGN can be generated in the Datatrans Web Admin Tool (http://pilot.dat
 
 **Understanding the process flow:**
 
-You will need the *Collect Webservice PUSH Proxy* when the channel (your partner) starts the request and pushes the payment data directly to you.
+You will use the *Collect Webservice PUSH Proxy* when the channel (your partner) starts the request and pushes the payment data directly to you.
 
 
 ![](Channel PUSH.png)
