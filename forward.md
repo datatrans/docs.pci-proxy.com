@@ -19,7 +19,7 @@ Forwarding payment data is like collecting payment data. You can use the same we
 
 **Consider a business that needs this ability:**
 
-*You are a travel technology company and process reservations on behalf on your clients against global distribution systems or an online travel agency (e.g. Expedia).*
+*You are a travel technology company and process reservations on behalf on your clients against global distribution systems or an online travel agency (e.g. Expedia, Galileo, Cytric, etc.).*
 
 ### Quick Start Guide:
 
