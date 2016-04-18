@@ -39,7 +39,7 @@ You will need the *Use Forward PULL Proxy* when **you start the request** to for
 
 | HTTP header      | Description                                                        | Example value
 | -------------- | -------------------------------------------------------------------| ---
-| `X-CC-URL` | Specifies the target (3rd party) URL that will be called | https://api.thirdparty.com/
+| `X-CC-URL` | API Endpoint - Specifies the target (3rd party) URL that will be called | https://api.thirdparty.com/
 | `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
 | `X-CC-SIGN` | Configured security sign | 130709090849785405
             
