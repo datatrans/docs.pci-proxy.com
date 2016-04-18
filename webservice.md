@@ -70,7 +70,7 @@ You will need the *Collect Webservice PULL Proxy* when you start the request and
 
 | HTTP header      | Description                                                        | Example value
 | -------------- | -------------------------------------------------------------------| ---
-| `X-CC-URL` | Specifies the target (3rd party) URL that will be called | https://api.channel.com/
+| `X-CC-URL` | API Endpoint - Specifies the target (channel) URL that will be called | https://api.channel.com/
 | `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
 | `X-CC-SIGN` | Configured security sign | 130709090849785405
             
