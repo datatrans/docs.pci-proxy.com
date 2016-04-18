@@ -28,6 +28,9 @@ The token can be used later on to charge, forward or retrieve payment data.
 
 In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
+Do you pull data from a channel (API endpoint at the channel) = PULL
+Does the partner channel push the data directly to you (API endpoint at you) = PUSH
+
 
 
 
