@@ -11,9 +11,11 @@ PCI Proxy allows you to retain your existing data communication with PCI-complia
 Forwarding payment data is like collecting payment data. You can use the same webservice API.
 
 
-## Perform a pull request against a 3rd party (PULL)
+## Push payment data to a 3rd party (PUSH)
 
 **Understanding the process flow:**
+
+You will need the *Use Forward PUSH Proxy* when **you start the request** and send data directly to a 3rd party.
 
 ![3rd party PULL](3rd Party PULL.png)
 
