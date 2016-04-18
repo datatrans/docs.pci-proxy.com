@@ -8,10 +8,10 @@ PCI Proxy allows you to retain your existing data communication with PCI-complia
 
 ## How to start
 
-Forwarding payment data is like extracting payment data. You can use the same webservice API.
+Forwarding payment data is like collecting payment data. You can use the same webservice API.
 
 
-## Perform a pull request against a 3rd party
+## PULL: Perform a pull request against a 3rd party
 
 **Understanding the process flow:**
 
