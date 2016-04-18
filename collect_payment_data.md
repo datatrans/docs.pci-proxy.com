@@ -4,7 +4,7 @@ Whether you receive payment data via API, accept credit cards on a website or co
 
 ### Understanding the PCI Proxy
 
-- You can interpose our API between you and the source of credit cards to automatically tokenize the payment data. 
+- You can switch our PCI Proxy server between you and the source of credit cards.
 - PCI Proxy filters messages for payment data and replaces them with a reference number (token).
 - The payment data is encrypted and securely stored in our vault while you receive the token. 
 
@@ -12,7 +12,7 @@ Thereby **your systems never touch payment data but remain flexible**. You still
 
 
 
-## Choose API 
+## Choose API: How do you receive payment data?
 
 In general, there are three environments in which you might receive payment data:
 
