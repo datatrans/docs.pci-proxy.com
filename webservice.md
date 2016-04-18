@@ -96,7 +96,7 @@ The X-CC-SIGN can be generated in the Datatrans Web Admin Tool (http://pilot.dat
 
 **Understanding the process flow:**
 
-You will need the *Collect Webservice PUSH Proxy* when the channel (your partner) starts the request and pushes the payment data directly.
+You will need the *Collect Webservice PUSH Proxy* when the channel (your partner) starts the request and pushes the payment data directly to you.
 
 
 ![](Channel PUSH.png)
