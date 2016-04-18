@@ -33,11 +33,12 @@ In general, you either perform a pull request to receive data or a channel pushe
 
 
 
-## Perform a pull request against another API
+## Perform a pull request against another API (PULL)
 
 
 **Understanding the process flow:**
 
+You will need the *Collect Webservice PULL Proxy* when you start the request and receive the payment data in the response.
 
 ![Channel PULL](Channel PULL.png)
 
@@ -87,10 +88,13 @@ The X-CC-SIGN can be generated in the Datatrans Web Admin Tool (http://pilot.dat
 
 > Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live_mode-test.html).
     
-## Receive a request from a channel
+## Receive a request from a channel (PUSH)
 
 
 **Understanding the process flow:**
+
+You will need the *Collect Webservice PUSH Proxy* when the channel (your partner) starts the request and pushes the payment data directly.
+
 
 ![](Channel PUSH.png)
 
