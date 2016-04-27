@@ -12,7 +12,7 @@
        * [Website / Application](website-application.md)
        * [iOS / Android](mobile-app.md)
    * [Validate Payment Data](validate.md)
-   * [Use Payment Data](utilize.md)
+   * [Use tokenized Payment Data](utilize.md)
        * [Forward](forward.md)
        * [Charge](charge.md)
        * [Show](show.md)
