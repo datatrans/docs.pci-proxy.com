@@ -6,7 +6,7 @@
    * [Case Studies](sample_business_cases.md)
    * [Test Account](live_mode-test.md)
    * [IP Whitelisting](ip_whitelisting.md)
-* [Features](features.md)
+* [Features](featuresmd.md)
    * [Collect Payment Data](collect_payment_data.md)
        * [Webservice (XML/SOAP)](webservice.md)
        * [Website / Application](website-application.md)
