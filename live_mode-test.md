@@ -48,10 +48,7 @@ In test mode, you can only use [test credit cards](https://www.datatrans.ch/show
 You can differentiate test and production environment based on the URL.
 
  
- | Environment |URL |
-| -- | -- |
-| PROD: | `https://production.datatrans.biz/upp/proxy/` |
- | TEST: | `https://pilot.datatrans.biz/upp/proxy/` |
+ 
 
  
 ## Activate your account
@@ -60,6 +57,5 @@ Once your tests are successful, please activate your account to receive your pro
 
 |Information| Description   |
 |---|---|
-|Merchant ID|Once you receive your merchant ID.|
-
+|Merchant ID|Once you receive your merchant 
 You will receive your productive merchant ID and productive push URLs depending on your setup. You can pass the push URLs on to your partner. 
