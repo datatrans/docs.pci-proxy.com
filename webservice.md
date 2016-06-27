@@ -64,7 +64,7 @@ You will use the *Collect Webservice PULL Proxy* when you start the request and 
 
 | **PCI Proxy PULL Endpoint:** |
 | -- |
-| https://pilot.datatrans.biz/upp/proxy/pull/|
+| https://pilot.datatrans.biz/upp/proxy/pull|
 
 - **Required HTTP header:**
 
