@@ -50,7 +50,7 @@ You can differentiate test and production environment based on the URL.
  
  | Environment |URL |
 | -- | -- |
-| PROD: | `https://production.datatrans.biz/upp/proxy/` |
+| PROD: | `https://payment.datatrans.biz/upp/proxy/` |
  | TEST: | `https://pilot.datatrans.biz/upp/proxy/` |
 
  
