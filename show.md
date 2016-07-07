@@ -59,6 +59,7 @@ The token *70119122433810042* should result in test card number *424242424242424
 | `aliasCC` | Token you received upon payment data collection | 70119122433810042
 | `username` | Username of authorized employee who retrieves it| max.mustermann
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256(salt+merchantId+aliasCC)
+| `language` | The language code in which the no-show page should be displayed  | en
             
 *The „**salt**“ value has to be generated in the Datatrans web administration tool (http://pilot.datatrans.biz) under “UPP Administration” -> “Security” -> “Other Services”.*
 
