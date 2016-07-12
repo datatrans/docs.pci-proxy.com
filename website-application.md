@@ -14,13 +14,12 @@ The token can be used later on to charge, forward or retrieve payment data.
 
 ## Overview
 
-With the following 3 options, you can collect payment data and reduce your PCI scope to the least, qualifying for the [SAQ A](understand_pci_dss.html).
+With the following 4 options, you can collect payment data and reduce your PCI scope to the least, qualifying for the [SAQ A](understand_pci_dss.html).
 
-Redirect Mode| Lightbox Mode        | Inline Mode 
-:------------:|:--------------------:|:-----------:
-![Redirect Mode](redirect.png) | ![Lightbox Mode](lightbox.png) | ![Inline Mode](inline2.png)    
-Redirect of consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay (iFrame). | Payment page managed by Datatrans is incorporated with iFrame.    
-[Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/redirect-mode) | [Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/lightbox-mode) | [Demo + Code Sample](https://www.datatrans.ch/showcase/authorisation/inline-mode)
+Redirect Mode| Lightbox Mode        | Inline Mode  | Tokenizer iFrame 
+:------------:|:--------------------:|:-----------:|:-----------:
+![Redirect Mode](redirect.png) | ![Lightbox Mode](lightbox.png) | ![Inline Mode](inline2.png) | ![Tokenizer iFrame](tokenizer_iframe.png)   
+Redirect of consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay (iFrame). | Payment page managed by Datatrans is incorporated with iFrame. | Single form field for instant tokenization with event listener embedded as iFrame
 
 *We offer more sophisticated options to seamlessly collect payment data. With our Ajax API and Hidden Mode, you can create and design your own payment data collection forms. Please bear in mind that Ajax and Hidden-Mode solutions increase your PCI scope to SAQ A-EP. [Learn More.](https://www.datatrans.ch/en/technics/payment-apis/hidden-ajax-mode)*
 
