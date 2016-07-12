@@ -19,7 +19,7 @@ With the following 4 options, you can collect payment data and reduce your PCI s
 Redirect Mode| Lightbox Mode        | Inline Mode  | Tokenizer iFrame 
 :------------:|:--------------------:|:-----------:|:-----------:
 ![Redirect Mode](redirect.png) | ![Lightbox Mode](lightbox.png) | ![Inline Mode](inline2.png) | ![Tokenizer iFrame](tokenizer_iframe.png)   
-Redirect of consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay (iFrame). | Payment page managed by Datatrans is incorporated with iFrame. | Single form field for instant tokenization with event listener embedded as iFrame
+Redirect of consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay (iFrame). | Payment page managed by Datatrans is incorporated with iFrame. | Single form field for instant tokenization with callbacks embedded as iFrame
 
 *We offer more sophisticated options to seamlessly collect payment data. With our Ajax API and Hidden Mode, you can create and design your own payment data collection forms. Please bear in mind that Ajax and Hidden-Mode solutions increase your PCI scope to SAQ A-EP. [Learn More.](https://www.datatrans.ch/en/technics/payment-apis/hidden-ajax-mode)*
 
@@ -27,11 +27,27 @@ Redirect of consumer to payment page managed by Datatrans. | Payment pages are p
 
 > [Sign up](https://www.datatrans.ch/en/technics/test-account) for a free developer test account.
 
-An easy way to start is by integrating our Redirect or Lightbox Payment Page. It takes care of building a conversion-optimised HTML form and validating input fields. 
 
-#### Integrate Redirect or Lightbox Mode
 
-To integrate the `Redirect Mode` you can use a simple HTML a tag:
+#### Integrate with Payment Page (Redirect, Lightbox or Inline)
+
+An easy way to start is by integrating our Payment Page `Redirect Mode` or `Lightbox Mode`. It takes care of building a conversion-optimised HTML form and validating input fields. 
+
+If you need a more custom approach, you should use our Payment Page `Inline Mode`. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
+
+
+| Mandatory Parameter| Description| Example value
+| ----------------- | -----------| ------------ |
+| `merchantId`| Your merchant ID | 1000011011 |
+| `refno`| You can set a (unique) reference number for identification | yourreference |
+| `amount`| Use `0` to tokenize or enter transaction amount in smallest unit of currency to transact | 1000 |
+| `currency`| transaction currency – ISO Character Code - ignored for tokenization  | EUR |
+| `sign`| Configured security sign (can be set in Web Admin Tool) | 130709090849785405 |
+| `uppAliasOnly`| Decide if you want to tokenize (yes) or transact (no) a card | *yes* or *no* |
+
+*All Payment Page modes can also be used to transact (authorize/settle) against an entered credit card. Please note, that you need an active acquiring contract for this. Just set `uppAliasOnly=no` to transact or `uppAliasOnly=yes` to just tokenize a credit card.*
+
+To integrate the Payment Page `Redirect Mode` you can use a simple HTML a tag:
 
 ```HTML
     <a href="https://pilot.datatrans.biz/upp/jsp/upStart.jsp
@@ -44,7 +60,7 @@ To integrate the `Redirect Mode` you can use a simple HTML a tag:
     ```
 
 
-To integrate the `Lightbox Mode` you can use the following code snippet:    
+To integrate the Payment Page `Lightbox Mode` you can use the following code snippet:    
 
 ```HTML
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -53,9 +69,8 @@ To integrate the `Lightbox Mode` you can use the following code snippet:
     <form id="paymentForm"
         data-merchant-id="1100004624"
         data-refno="pci-proxy-lightbox"
-        data-amount="1"
+        data-amount="0"
         data-currency="CHF"
-        data-use-alias="true"
         data-upp-alias-only="yes"
         data-sign="30916165706580013">
         
@@ -72,15 +87,8 @@ To integrate the `Lightbox Mode` you can use the following code snippet:
 
 
 
----
 
-
-
-#### Integrate Inline Mode
-
-If you need a more custom approach, you should use our Inline Mode. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
-
-To integrate the `Inline Mode` you have to use an iframe:
+To integrate the Payment Page `Inline Mode` you have to use an iframe:
 
 ```HTML
 <iframe width="600" 
@@ -97,6 +105,11 @@ To integrate the `Inline Mode` you have to use an iframe:
 		    &paymentmethod=VIS
 		    &customTheme=mytheme">
     ```
+| Parameter| Description| Example value
+| ----------------- | -----------| ------------ |
+| `theme` | evokes payment page in Inline Mode | Inline |
+| `paymentMethod` | defines payment method (see list above) | VIS |
+| `customTheme` | Name of a CSS class selector specified in a custom CSS file* which you submit to Datatrans. | mytheme |
 
 ---
 
@@ -104,7 +117,7 @@ To integrate the `Inline Mode` you have to use an iframe:
 
 If you only want to collect the credit card number on the fly, please use our Tokenizer iFrame. The sensitive card number field is embedded with an iframe into your order or payment page. You can instantly receive the token while your customer is in checkout by listening to the event handler. This gives you great flexibility when designing a custom order process.
 
-| Possible parameter| Description| Example value
+| Parameter| Description| Example value
 | ----------------- | -----------| ------------ |
 | `merchantId`| Your merchant ID | 1000011011 |
 | `customTheme` | Name of a CSS class selector specified in a custom CSS file* which you submit to Datatrans. | mytheme |
