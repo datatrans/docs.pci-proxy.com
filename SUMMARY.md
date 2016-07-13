@@ -18,5 +18,5 @@
        * [Show](show.md)
 * [Full API Reference](full_api_reference.md)
 * Resources
-   * Test Card Numbers
+   * [Test Card Numbers](test_card_numbers.md)
 
