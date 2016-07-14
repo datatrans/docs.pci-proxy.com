@@ -14,7 +14,7 @@
    * [Use stored Credit Cards](utilize.md)
        * [1. Forward](forward.md)
        * [2. Charge](charge.md)
-       * [Show](show.md)
+       * [3. Show](show.md)
 * Resources
    * [Supported Acquirer](supported_acquirer.md)
 * References
