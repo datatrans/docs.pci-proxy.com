@@ -5,8 +5,6 @@
    * [Case Studies](sample_business_cases.md)
    * [Test Account & Test Data](live_mode-test.md)
    * [IP Whitelisting](ip_whitelisting.md)
-* [Good to Know](general_information.md)
-   * [PCI DSS](understand_pci_dss.md)
 * [Features](featuresmd.md)
    * [Collect Credit Cards](collect_payment_data.md)
        * [Webservice (XML/SOAP)](webservice.md)
