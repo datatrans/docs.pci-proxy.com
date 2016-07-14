@@ -13,7 +13,7 @@
    * [Validate Credit Cards](validate.md)
    * [Use stored Credit Cards](utilize.md)
        * [1. Forward](forward.md)
-       * [Charge](charge.md)
+       * [2. Charge](charge.md)
        * [Show](show.md)
 * Resources
    * [Supported Acquirer](supported_acquirer.md)
