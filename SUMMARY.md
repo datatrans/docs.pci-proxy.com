@@ -10,7 +10,7 @@
 * [Features](featuresmd.md)
    * [Collect Payment Data](collect_payment_data.md)
        * [via Webservice (XML/SOAP)](webservice.md)
-       * [Website / Application](website-application.md)
+       * [via Website / Application](website-application.md)
        * [iOS / Android](mobile-app.md)
    * [Validate Payment Data](validate.md)
    * [Use tokenized Payment Data](utilize.md)
