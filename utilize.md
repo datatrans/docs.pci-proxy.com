@@ -1,6 +1,6 @@
 # Use Tokenized Credit Cards
 
-Collecting and tokenizing credit cards is just the first step to get you out of PCI DSS scope. Eventually you want to make use of tokenized credit cards. PCI Proxy offers different approaches how you can use tokenized credit cards.
+Collecting and tokenizing payment data (credit cards) is just the first step to get you out of PCI DSS scope. Eventually you want to make use of tokenized credit cards. PCI Proxy offers different approaches how you can use tokenized credit cards.
 
 | **PCI Proxy allows you to...** |
 | -- |
