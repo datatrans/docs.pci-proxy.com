@@ -11,7 +11,7 @@
        * [Website / Application](website-application.md)
        * [iOS / Android](mobile-app.md)
    * [Validate Credit Cards](validate.md)
-   * [Use Tokenized Credit Cards](utilize.md)
+   * [Use stored Credit Cards](utilize.md)
        * [Forward](forward.md)
        * [Charge](charge.md)
        * [Show](show.md)
