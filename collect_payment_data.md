@@ -1,6 +1,6 @@
 # Collect Credit Cards
 
-Whether you receive payment data via API, accept credit cards on a website or collect them in a mobile app, you can use PCI Proxy APIs to keep payment data off your systems.
+Whether you receive payment data (credit cards) via API, accept credit cards on a website or collect them in a mobile app, you can use PCI Proxy APIs to keep payment data off your systems.
 
 ### Understanding the PCI Proxy
 
