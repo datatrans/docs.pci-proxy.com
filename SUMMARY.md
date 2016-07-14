@@ -12,7 +12,7 @@
        * [3. iOS / Android](mobile-app.md)
    * [Validate Credit Cards](validate.md)
    * [Use stored Credit Cards](utilize.md)
-       * [Forward](forward.md)
+       * [1. Forward](forward.md)
        * [Charge](charge.md)
        * [Show](show.md)
 * Resources
