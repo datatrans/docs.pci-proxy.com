@@ -1,4 +1,4 @@
-# Validate Payment Data
+# Validate Credit Cards
 
 After collection you might want to confirm payment data is valid and can be charged. 
 
