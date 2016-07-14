@@ -1,12 +1,12 @@
-# Collect payment data from native mobile apps
+# Collect credit cards from native mobile apps
 
-Let us assume you offer a native mobile app to your customers where they can enter payment data.
+Let us assume you offer a native mobile app to your customers where they can enter credit cards.
 
-`Our SDKs for iOS and Android collect payment data in native apps` and automatically store it in our secure vault. A reference number (token) is issued and sent to your systems.
+`Our SDKs for iOS and Android collect credit cards in native apps` and automatically store it in our secure vault. A reference number (token) is issued and sent to your systems.
 
 *You are allowed to store the token in your system, as it is not PCI DSS relevant.*
 
-The token can be used later on to charge, forward or retrieve payment data.
+The token can be used later on to validate, charge, forward or show credit cards.
 
 *Add-on: Our SDKs have a built-in feature to instantly charge payment data. All you need is an existing acquiring contract.*
 
