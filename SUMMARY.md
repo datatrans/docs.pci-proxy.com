@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [General Information](general_information.md)
+* [Good to Know](general_information.md)
    * [PCI DSS](understand_pci_dss.md)
    * [Case Studies](sample_business_cases.md)
    * [Test Account](live_mode-test.md)
