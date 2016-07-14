@@ -8,7 +8,7 @@
    * [Test Card Numbers](test_card_numbers.md)
    * [IP Whitelisting](ip_whitelisting.md)
 * [Features](featuresmd.md)
-   * [Collect Payment Data](collect_payment_data.md)
+   * [Collect Credit Cards](collect_payment_data.md)
        * [via Webservice (XML/SOAP)](webservice.md)
        * [via Website / Application](website-application.md)
        * [iOS / Android](mobile-app.md)
