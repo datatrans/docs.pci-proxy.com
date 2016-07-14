@@ -1,14 +1,14 @@
 # Show single credit cards
 
-Let us assume you have authorized employees that need to see the original payment data set of a customer.
+Let us assume you have authorized employees that need to see the original credit card number of a customer.
 
-PCI Proxy enables you to manually retrieve single payment data sets. Basically, it is `a web interface that can convert a token back into its original payment data`. (e.g. to charge a credit card via POS terminal). 
+PCI Proxy enables you to manually retrieve single credit cards. Basically, it is `a web interface that can convert a token back into its original credit card number`. (e.g. to charge a credit card via POS terminal). 
 
 
 
 ## How to start
 
-There are two ways how you can show single payment data:
+There are two ways how you can show single credit cards:
 
 | **Datatrans Web Admin Tool** | **Integration into your application** |
 | -- | -- |
@@ -27,18 +27,18 @@ Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under 
 
 ## 2. Seamless interface integration (NoShow.jsp)
 
-Another way of showing single payment data is by using our *NoShow.jsp *script. You can implement it directly into your application. It offers a more seamless approach and can be embedded as iframe or by redirect.
+Another way of showing single credit card numbers is by using our *NoShow.jsp *script. You can implement it directly into your application. It offers a more seamless approach and can be embedded as iframe or by redirect.
 
  To see the interface in action, click the following link, prefilled with:
  
 
 > [**No-Show Interface**](https://pilot.datatrans.biz/upp/jsp/noShow.jsp?merchantId=1100005048&aliasCC=70119122433810042&salt=xUWnv6TR0RqUyPsVWvxgUn0wXKCuPJjWAumgTy67TVUsimiL0V&sign=df9ed6edb62df004ce64db6c113038aa21bd769d866ca7cf305bf43610ce6232)
 
-The token *70119122433810042* should result in test card number *4242424242424242*
+The token *70119122433810042* should result in [test card number](http://docs.pci-proxy.com/test_card_numbers.html) *4242424242424242*
 
 
 **Consider a business that needs this ability:**
-*You are a travel technology company providing hotels with software to manage their reservations. Authorized hotel employees need to retrieve single payment data sets from reservations to book a no-show fee with their POS terminal if a guest does not show up.*
+*You are a travel technology company providing hotels with software to manage their reservations. Authorized hotel employees need to retrieve single credit cards from reservations to book a no-show fee with their POS terminal if a guest does not show up.*
 
 ### Quick Start Guide:
 
@@ -56,7 +56,7 @@ The token *70119122433810042* should result in test card number *424242424242424
 | Parameter      | Description                                                        | Example value
 | -------------- | -------------------------------------------------------------------| ---
 | `merchantId` | Your merchant ID | 1000011011
-| `aliasCC` | Token you received upon payment data collection | 70119122433810042
+| `aliasCC` | Token you received when you collected the credit card | 70119122433810042
 | `username` | Username of authorized employee who retrieves it| max.mustermann
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256(salt+merchantId+aliasCC)
 | `language` | The language code in which the no-show page should be displayed  | en
@@ -79,7 +79,7 @@ Using our *NoShow.jsp* script requires you to handle your user management in a P
 
 #### Unique User IDs
 
-Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. Shared user logins are not allowed. 
+Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. **Shared user logins are not allowed. **
 
 #### Password Policy
 
