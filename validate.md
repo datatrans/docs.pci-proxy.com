@@ -1,10 +1,10 @@
 # Validate Credit Cards
 
-After collection you might want to confirm payment data is valid and can be charged. 
+After collecting and tokenizing credit cards you might want to confirm that the credit card is still valid and can be charged at a later point in time. 
 
-To avoid fraudulent or invalid payment data, PCI Proxy allows you to conduct card validity checks and validate collected payment data. 
+To avoid fraudulent or invalid credit cards, PCI Proxy allows you to conduct card validity checks and validate collected credit cards by using the token. 
 
-The payment data is checked through Datatrans payment gateway against the card scheme networks and notifies if payment data is valid at that point in time. 
+The credit card is checked through Datatrans payment gateway against the card scheme networks and notifies if the credit card number is valid at that point in time. 
 
 ## How to start
 
