@@ -9,7 +9,7 @@
    * [IP Whitelisting](ip_whitelisting.md)
 * [Features](featuresmd.md)
    * [Collect Payment Data](collect_payment_data.md)
-       * [Webservice (XML/SOAP)](webservice.md)
+       * [via Webservice (XML/SOAP)](webservice.md)
        * [Website / Application](website-application.md)
        * [iOS / Android](mobile-app.md)
    * [Validate Payment Data](validate.md)
