@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-   * PCI DSS
+   * [PCI DSS](pci_dss.md)
 * [Good to Know](general_information.md)
    * [PCI DSS](understand_pci_dss.md)
    * [Case Studies](sample_business_cases.md)
