@@ -19,7 +19,6 @@
        * [Show](show.md)
 * Resources
    * [Supported Acquirer](supported_acquirer.md)
-* [Full API Reference](full_api_reference.md)
 * References
    * [Webservice API](webservice_api.md)
 
