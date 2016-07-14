@@ -11,7 +11,7 @@
    * [Collect Credit Cards](collect_payment_data.md)
        * [Webservice (XML/SOAP)](webservice.md)
        * [Website / Application](website-application.md)
-       * [via iOS / Android](mobile-app.md)
+       * [iOS / Android](mobile-app.md)
    * [Validate Credit Cards](validate.md)
    * [Use Tokenized Credit Cards](utilize.md)
        * [Forward](forward.md)
