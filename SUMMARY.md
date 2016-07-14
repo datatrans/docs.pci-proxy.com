@@ -2,9 +2,9 @@
 
 * [Introduction](README.md)
    * [PCI DSS](pci_dss.md)
+   * [Case Studies](sample_business_cases.md)
    * [Test Account & Test Data](live_mode-test.md)
    * [IP Whitelisting](ip_whitelisting.md)
-   * [Case Studies](sample_business_cases.md)
 * [Good to Know](general_information.md)
    * [PCI DSS](understand_pci_dss.md)
 * [Features](featuresmd.md)
