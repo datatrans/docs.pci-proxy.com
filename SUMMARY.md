@@ -10,7 +10,7 @@
 * [Features](featuresmd.md)
    * [Collect Credit Cards](collect_payment_data.md)
        * [Webservice (XML/SOAP)](webservice.md)
-       * [via Website / Application](website-application.md)
+       * [Website / Application](website-application.md)
        * [via iOS / Android](mobile-app.md)
    * [Validate Credit Cards](validate.md)
    * [Use Tokenized Credit Cards](utilize.md)
