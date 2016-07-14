@@ -13,7 +13,7 @@
        * [via Website / Application](website-application.md)
        * [iOS / Android](mobile-app.md)
    * [Validate Credit Cards](validate.md)
-   * [Use tokenized Payment Data](utilize.md)
+   * [Use Tokenized Credit Cards](utilize.md)
        * [Forward](forward.md)
        * [Charge](charge.md)
        * [Show](show.md)
