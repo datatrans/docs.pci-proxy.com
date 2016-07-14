@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
    * [PCI DSS](pci_dss.md)
-   * [Test Account](live_mode-test.md)
+   * [Test Account & Test Data](live_mode-test.md)
    * [Test Card Numbers](test_card_numbers.md)
    * [IP Whitelisting](ip_whitelisting.md)
    * [Case Studies](sample_business_cases.md)
