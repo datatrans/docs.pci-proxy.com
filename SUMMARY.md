@@ -19,4 +19,5 @@
        * [Show](show.md)
 * [Full API Reference](full_api_reference.md)
 * Resources
+   * Supported Acquirer
 
