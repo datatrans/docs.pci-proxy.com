@@ -8,6 +8,6 @@ The credit card is checked through Datatrans payment gateway against the card sc
 
 ## How to start
 
-> - [Sign up](https://www.datatrans.ch/en/technics/test-account) for a free developer test account.
+> - [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
 > - Make sure, you have collected data first.
-> - [Contact us](https://www.datatrans.ch/en/contact/contactform)
+> - Contact us at [sales@pci-proxy.com ](mailto:sales@pci-proxy.com)
