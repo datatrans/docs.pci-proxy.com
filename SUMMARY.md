@@ -18,7 +18,7 @@
        * [Charge](charge.md)
        * [Show](show.md)
 * Resources
-   * [Supported Acquirer](supported_acquirer.md)
+   * [- Supported Acquirer](supported_acquirer.md)
 * References
    * [Webservice API](webservice_api.md)
 
