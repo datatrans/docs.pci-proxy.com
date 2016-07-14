@@ -7,7 +7,7 @@
    * [IP Whitelisting](ip_whitelisting.md)
 * Features
    * [Collect Credit Cards](collect_payment_data.md)
-       * [Webservice (XML/SOAP)](webservice.md)
+       * [1. Webservice (XML/SOAP)](webservice.md)
        * [Website / Application](website-application.md)
        * [iOS / Android](mobile-app.md)
    * [Validate Credit Cards](validate.md)
