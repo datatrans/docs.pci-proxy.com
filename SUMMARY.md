@@ -14,7 +14,7 @@
        * [via iOS / Android](mobile-app.md)
    * [Validate Credit Cards](validate.md)
    * [Use Tokenized Credit Cards](utilize.md)
-       * [to Forward](forward.md)
+       * [Forward](forward.md)
        * [to Charge](charge.md)
        * [Show](show.md)
 * [Full API Reference](full_api_reference.md)
