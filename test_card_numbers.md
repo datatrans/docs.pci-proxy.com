@@ -1,5 +1,7 @@
 # Test Card Numbers
 
+We have a set of test credit card numbers that you can use in our test environment to test your integration. Test rules and 3D support is only needed for transactions and not for tokenization.
+
 | Card type | Card number | Expiration Date | CVV  | Test rule | Support 3D |
 | -- | -- | -- | -- | -- | -- | -- |
 | Visa | 4242424242424242 | 12/2018 or 06/2018 | 123  | w/limit | No |
