@@ -1,6 +1,6 @@
-# Collect payment data from website or application
+# Collect credit cards from website or application
 
-Let us assume you run a website or application where customers or agents entering payment data into a HTML web form. 
+Let us assume you run a website or application where customers or agents entering payment data (credit cards) into a HTML web form. 
 
 `PCI Proxy gives you several options on how to collect payment data from a HTML web form` and securely store it in our vault. A reference number (token) is issued and sent to your systems. 
 
