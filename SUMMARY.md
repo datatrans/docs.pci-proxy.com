@@ -7,6 +7,7 @@
    * [Test Account](live_mode-test.md)
    * [Test Card Numbers](test_card_numbers.md)
    * [IP Whitelisting](ip_whitelisting.md)
+   * Supported Acquirer
 * [Features](featuresmd.md)
    * [Collect Credit Cards](collect_payment_data.md)
        * [Webservice (XML/SOAP)](webservice.md)
