@@ -12,7 +12,7 @@
        * [via Webservice (XML/SOAP)](webservice.md)
        * [via Website / Application](website-application.md)
        * [iOS / Android](mobile-app.md)
-   * [Validate Payment Data](validate.md)
+   * [Validate Credit Cards](validate.md)
    * [Use tokenized Payment Data](utilize.md)
        * [Forward](forward.md)
        * [Charge](charge.md)
