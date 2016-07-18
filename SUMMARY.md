@@ -17,6 +17,7 @@
        * [3. Show](show.md)
 * Resources
    * [Supported Acquirer](supported_acquirer.md)
+   * Supported Channels
 * References
    * [Webservice API](webservice_api.md)
 
