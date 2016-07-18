@@ -42,10 +42,9 @@ If you need a more custom approach, you should use our Payment Page `Inline Mode
 | `refno`| You can set a (unique) reference number for identification | yourreference |
 | `amount`| Use `0` to tokenize or enter transaction amount in smallest unit of currency to transact | 1000 |
 | `currency`| transaction currency – ISO Character Code - ignored for tokenization  | EUR |
-| `sign`| Configured security sign (can be set in Web Admin Tool) | 130709090849785405 |
-| `uppAliasOnly`| Decide if you want to tokenize (yes) or transact (no) a card | *yes* or *no* |
+| `sign`| Configured security sign1 (can be set in Web Admin Tool) | 130709090849785405 |
+| `uppAliasOnly`| Mandatory to tokenize the credit card  | yes |
 
-*All Payment Page modes can also be used to transact (authorize/settle) against an entered credit card. Please note, that you need an active acquiring contract for this. Just set `uppAliasOnly=no` to transact or `uppAliasOnly=yes` to just tokenize a credit card.*
 
 To integrate the Payment Page `Redirect Mode` you can use a simple HTML a tag:
 
