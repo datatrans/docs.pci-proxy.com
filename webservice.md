@@ -136,37 +136,6 @@ Adding a new channel is easy. Please send the following information to [setup@pc
 
 You will receive a confirmation once the channel is successfully added. For push channels, you also receive `{YOUR-SPECIFIC-KEY}`.
 
-#### Supported channels
-
-We already support a variety of channel APIs (excerpt): 
-
-| Channel | Type | 
-| -- | -- | 
-| [Agoda](https://www.agoda.com) | PULL |
-| [Amadeus](http://www.amadeus.com/) | PUSH |
-| [Atrapalo](https://www.atrapalo.com/) | PULL |
-| [Availpro](http://site.availpro.com/) | PULL |
-| [Booking](https://www.booking.com/) | PULL | 
-| [Booking OTA](https://www.booking.com/) | PULL | 
-| [Cubilis](http://www.cubilis.com/) | PULL | 
-| [Expedia](https://www.expedia.com) | PULL | 
-| [Expedia EAN](http://www.ean.com/) | PULL | 
-| [Hoteliers](https://www.hoteliers.com) | PUSH |
-| [Hotelreservation](https://www.hotelreservation.com/) | PULL |
-| [HotelREZ](https://www.hotelrez.net/) | PULL |
-| [Hotels.nl](http://www.hotels.nl/) | PULL |
-| [Initalia](http://www.initalia.it/) | PULL | 
-| [Lastminute](http://www.lastminute.com/) | PULL |
-| [Laterooms](http://www.laterooms.com/) | PUSH |
-| [Orbitz](https://www.orbitz.com/) | PULL | 
-| [Reconline GDS](http://www.reconline.com) | PULL |
-| [TravelRepublic](https://www.travelrepublic.co.uk/) | PULL |
-| [Traveltainment](http://www.traveltainment.de/) | PULL |
-| [Tripadvisor](http://developer-tripadvisor.com/connectivity-solutions/instant-booking-api/documentation/booking_submit/) | PUSH |
-| [TrustInternational / Sabre](http://www.trustinternational.com/) | PULL |
-
-Every day, more and more channels get added.
-
 #### VPN and Leased Lines
 
 In case the channel transmits your data over VPN or Leased Line, we can add secure connections to adapt to your needs. Please [get in touch](https://www.datatrans.ch/en/contact/contactform) for more info.
