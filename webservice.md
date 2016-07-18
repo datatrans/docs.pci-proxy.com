@@ -161,6 +161,7 @@ We already support a variety of channel APIs (excerpt):
 | [Orbitz](https://www.orbitz.com/) | PULL | 
 | [Reconline GDS](http://www.reconline.com) | PULL |
 | [TravelRepublic](https://www.travelrepublic.co.uk/) | PULL |
+| [Traveltainment](http://www.traveltainment.de/) | PULL |
 | [Tripadvisor](http://developer-tripadvisor.com/connectivity-solutions/instant-booking-api/documentation/booking_submit/) | PUSH |
 | [TrustInternational / Sabre](http://www.trustinternational.com/) | PULL |
 
