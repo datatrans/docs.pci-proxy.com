@@ -8,13 +8,12 @@ Let us assume you offer a native mobile app to your customers where they can ent
 
 The token can be used later on to validate, charge, forward or show credit cards.
 
-*Add-on: Our SDKs have a built-in feature to instantly charge payment data. All you need is an existing acquiring contract.*
-
 **All SDKs assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.**
 
 ## How to start
 
 > [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
+
 
 Please find below developer manuals and the libraries. 
 
@@ -28,6 +27,7 @@ Please find below developer manuals and the libraries.
 
 ---
 
+### Integrate on Android
 
 
 | Android Library |
