@@ -16,7 +16,9 @@ The token can be used later on to validate, charge, forward or show credit cards
 
 Our library allows you to tokenize credit cards by using your own native forms (hidden mode). In hidden mode, you invoke our payment library with the necessary credit card data to generate an alias.
 
-
+| Supported Credit Card Brands |
+| -- |
+| American Express, Mastercard, Visa, Mastercard|
 
 ### Integrate on iOS
 
