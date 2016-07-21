@@ -8,15 +8,37 @@ Let us assume you offer a native mobile app to your customers where they can ent
 
 The token can be used later on to validate, charge, forward or show credit cards.
 
-*Add-on: Our SDKs have a built-in feature to instantly charge payment data. All you need is an existing acquiring contract.*
-
 **All SDKs assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.**
 
 ## How to start
 
 > [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
 
-Please find below developer manuals and the libraries. 
+### Integrate on iOS
+
+Our iOS library allows you to tokenize credit cards by using your own native forms (hidden mode). In hidden mode, you invoke our payment library with the necessary credit card data to generate an alias.
+
+**You can use the following code snippet:**
+
+  ```swift
+DTCardPaymentMethod* card = [[DTCardPaymentMethod alloc] 
+    initWithPaymentMethod:DTPaymentMethodVisa 
+      number:@"4444333322221111"
+      expMonth:12 
+      expYear:2015 
+      cvv:@"123" 
+      holder:nil
+  ];
+
+DTAliasRequest* ar = [[DTAliasRequest alloc]
+    initWithMerchantId:YOUR_MERCHANT_ID
+      cardPaymentMethod:card verifyingTransaction:NO];
+
+DTPaymentController* pc = [DTPaymentController 
+    paymentControllerWithDelegate:self aliasRequest:ar];
+```
+
+
 
 | iOS Library for iPhone, iPad, iPod touch |
 | -- |
@@ -28,7 +50,28 @@ Please find below developer manuals and the libraries.
 
 ---
 
+### Integrate on Android
 
+Our iOS library allows you to tokenize credit cards by using your own native forms (hidden mode). In hidden mode, you invoke our payment library with the necessary credit card data to generate an alias.
+
+**You can use the following code snippet:**
+
+```javascript
+PaymentMethodCreditCard pm = new PaymentMethodCreditCard(
+    PaymentMethodType.VISA,
+    "4444333322221111", 
+    2015, 
+    12, 
+    123, 
+    "Max Muster");
+    
+AliasRequest ar = new AliasRequest(
+    YOUR_MERCHANT_ID, 
+    pm, 
+    false);
+
+PaymentProcessAndroid ppa = new PaymentProcessAndroid(dc,ar);
+```
 
 | Android Library |
 | -- |
