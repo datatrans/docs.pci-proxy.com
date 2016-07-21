@@ -14,11 +14,19 @@ The token can be used later on to validate, charge, forward or show credit cards
 
 > [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
 
+Our library allows you to tokenize credit cards by using your own native forms (hidden mode). In hidden mode, you invoke our payment library with the necessary credit card data to generate an alias.
+
+
+
 ### Integrate on iOS
 
-Our iOS library allows you to tokenize credit cards by using your own native forms (hidden mode). In hidden mode, you invoke our payment library with the necessary credit card data to generate an alias.
+| iOS Library for iPhone, iPad, iPod touch |
+| -- |
+| [Release Notes](https://pilot.datatrans.biz/showcase/doc/iOS_Release_Notes.pdf) |
+| [Developer Manual](https://pilot.datatrans.biz/showcase/doc/iOS_Developers_Manual.pdf) |
+| [iOS Library (zip)](https://pilot.datatrans.biz/showcase/doc/iOS_Library.zip) |
 
-**You can use the following code snippet:**
+**You can use the following code snippet to generate a token:**
 
   ```swift
 DTCardPaymentMethod* card = [[DTCardPaymentMethod alloc] 
@@ -38,25 +46,20 @@ DTPaymentController* pc = [DTPaymentController
     paymentControllerWithDelegate:self aliasRequest:ar];
 ```
 
-
-
-| iOS Library for iPhone, iPad, iPod touch |
-| -- |
-| [Release Notes](https://pilot.datatrans.biz/showcase/doc/iOS_Release_Notes.pdf) |
-| [Developer Manual](https://pilot.datatrans.biz/showcase/doc/iOS_Developers_Manual.pdf) |
-| [iOS Library (zip)](https://pilot.datatrans.biz/showcase/doc/iOS_Library.zip) |
-
-
-
 ---
 
 ### Integrate on Android
 
-Our iOS library allows you to tokenize credit cards by using your own native forms (hidden mode). In hidden mode, you invoke our payment library with the necessary credit card data to generate an alias.
+| Android Library |
+| -- |
+| [Release Notes](https://pilot.datatrans.biz/showcase/doc/Android_Release_Notes.pdf) |
+| [Developer Manual](https://pilot.datatrans.biz/showcase/doc/Android_Developers_Manual.pdf) |
+| [Android Library (zip)](https://pilot.datatrans.biz/showcase/doc/Android_Library.zip) |
+| [Sample application](https://github.com/datatrans/android-sample-app) |
 
-**You can use the following code snippet:**
+**You can use the following code snippet to generate a token:**
 
-```javascript
+```java
 PaymentMethodCreditCard pm = new PaymentMethodCreditCard(
     PaymentMethodType.VISA,
     "4444333322221111", 
@@ -73,9 +76,3 @@ AliasRequest ar = new AliasRequest(
 PaymentProcessAndroid ppa = new PaymentProcessAndroid(dc,ar);
 ```
 
-| Android Library |
-| -- |
-| [Release Notes](https://pilot.datatrans.biz/showcase/doc/Android_Release_Notes.pdf) |
-| [Developer Manual](https://pilot.datatrans.biz/showcase/doc/Android_Developers_Manual.pdf) |
-| [Android Library (zip)](https://pilot.datatrans.biz/showcase/doc/Android_Library.zip) |
-| [Sample application](https://github.com/datatrans/android-sample-app) |
