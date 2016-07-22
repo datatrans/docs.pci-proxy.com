@@ -10,15 +10,16 @@ The token can be used later on to validate, charge, forward or show credit cards
 
 **All SDKs assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.**
 
+| Supported Credit Card Brands |
+| -- |
+| American Express, Mastercard, Visa, JCB, Diners|
+
 ## How to start
 
 > [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
 
 Our library allows you to tokenize credit cards by using your own native forms (hidden mode). In hidden mode, you invoke our payment library with the necessary credit card data to generate an alias.
 
-| Supported Credit Card Brands |
-| -- |
-| American Express, Mastercard, Visa, JCB, Diners|
 
 ### Integrate on iOS
 
