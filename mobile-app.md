@@ -14,8 +14,13 @@ The token can be used later on to validate, charge, forward or show credit cards
 
 > [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
 
+Our library allows you to tokenize credit cards by using your own native forms (hidden mode). In hidden mode, you invoke our payment library with the necessary credit card data to generate an alias.
 
-Please find below developer manuals and the libraries. 
+| Supported Credit Card Brands |
+| -- |
+| American Express, Mastercard, Visa, JCB, Diners|
+
+### Integrate on iOS
 
 | iOS Library for iPhone, iPad, iPod touch |
 | -- |
@@ -23,12 +28,29 @@ Please find below developer manuals and the libraries.
 | [Developer Manual](https://pilot.datatrans.biz/showcase/doc/iOS_Developers_Manual.pdf) |
 | [iOS Library (zip)](https://pilot.datatrans.biz/showcase/doc/iOS_Library.zip) |
 
+**You can use the following code snippet to generate a token:**
 
+  ```swift
+DTCardPaymentMethod* card = [[DTCardPaymentMethod alloc] 
+    initWithPaymentMethod:DTPaymentMethodVisa 
+      number:@"4444333322221111"
+      expMonth:12 
+      expYear:2015 
+      cvv:@"123" 
+      holder:nil
+  ];
+
+DTAliasRequest* ar = [[DTAliasRequest alloc]
+    initWithMerchantId:YOUR_MERCHANT_ID
+      cardPaymentMethod:card verifyingTransaction:NO];
+
+DTPaymentController* pc = [DTPaymentController 
+    paymentControllerWithDelegate:self aliasRequest:ar];
+```
 
 ---
 
 ### Integrate on Android
-
 
 | Android Library |
 | -- |
@@ -36,3 +58,23 @@ Please find below developer manuals and the libraries.
 | [Developer Manual](https://pilot.datatrans.biz/showcase/doc/Android_Developers_Manual.pdf) |
 | [Android Library (zip)](https://pilot.datatrans.biz/showcase/doc/Android_Library.zip) |
 | [Sample application](https://github.com/datatrans/android-sample-app) |
+
+**You can use the following code snippet to generate a token:**
+
+```java
+PaymentMethodCreditCard pm = new PaymentMethodCreditCard(
+    PaymentMethodType.VISA,
+    "4444333322221111", 
+    2015, 
+    12, 
+    123, 
+    "Max Muster");
+    
+AliasRequest ar = new AliasRequest(
+    YOUR_MERCHANT_ID, 
+    pm, 
+    false);
+
+PaymentProcessAndroid ppa = new PaymentProcessAndroid(dc,ar);
+```
+
