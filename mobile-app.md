@@ -23,12 +23,6 @@ Our library allows you to tokenize credit cards by using your own native forms (
 
 ### Integrate on iOS
 
-| iOS Library for iPhone, iPad, iPod touch |
-| -- |
-| [Release Notes](https://pilot.datatrans.biz/showcase/doc/iOS_Release_Notes.pdf) |
-| [Developer Manual](https://pilot.datatrans.biz/showcase/doc/iOS_Developers_Manual.pdf) |
-| [iOS Library (zip)](https://pilot.datatrans.biz/showcase/doc/iOS_Library.zip) |
-
 **You can use the following code snippet to generate a token:**
 
   ```swift
@@ -49,16 +43,16 @@ DTPaymentController* pc = [DTPaymentController
     paymentControllerWithDelegate:self aliasRequest:ar];
 ```
 
+| iOS Library for iPhone, iPad, iPod touch |
+| -- |
+| [Release Notes](https://pilot.datatrans.biz/showcase/doc/iOS_Release_Notes.pdf) |
+| [Developer Manual](https://pilot.datatrans.biz/showcase/doc/iOS_Developers_Manual.pdf) |
+| [iOS Library (zip)](https://pilot.datatrans.biz/showcase/doc/iOS_Library.zip) |
+
 ---
 
 ### Integrate on Android
 
-| Android Library |
-| -- |
-| [Release Notes](https://pilot.datatrans.biz/showcase/doc/Android_Release_Notes.pdf) |
-| [Developer Manual](https://pilot.datatrans.biz/showcase/doc/Android_Developers_Manual.pdf) |
-| [Android Library (zip)](https://pilot.datatrans.biz/showcase/doc/Android_Library.zip) |
-| [Sample application](https://github.com/datatrans/android-sample-app) |
 
 **You can use the following code snippet to generate a token:**
 
@@ -79,3 +73,9 @@ AliasRequest ar = new AliasRequest(
 PaymentProcessAndroid ppa = new PaymentProcessAndroid(dc,ar);
 ```
 
+| Android Library |
+| -- |
+| [Release Notes](https://pilot.datatrans.biz/showcase/doc/Android_Release_Notes.pdf) |
+| [Developer Manual](https://pilot.datatrans.biz/showcase/doc/Android_Developers_Manual.pdf) |
+| [Android Library (zip)](https://pilot.datatrans.biz/showcase/doc/Android_Library.zip) |
+| [Sample application](https://github.com/datatrans/android-sample-app) |
