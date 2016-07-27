@@ -34,7 +34,7 @@ Another way of showing single credit card numbers is by using our *NoShow.jsp *s
 
 > [**No-Show Interface**](https://pilot.datatrans.biz/upp/jsp/noShow.jsp?merchantId=1100005048&aliasCC=70119122433810042&salt=xUWnv6TR0RqUyPsVWvxgUn0wXKCuPJjWAumgTy67TVUsimiL0V&sign=df9ed6edb62df004ce64db6c113038aa21bd769d866ca7cf305bf43610ce6232)
 
-The token *70119122433810042* should result in [test card number](http://docs.pci-proxy.com/test_card_numbers.html) *4242424242424242*
+The token *70119122433810042* should result in [test card number](test_card_numbers.html) *4242424242424242*
 
 
 **Consider a business that needs this ability:**
