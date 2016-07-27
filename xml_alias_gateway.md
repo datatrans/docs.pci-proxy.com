@@ -35,7 +35,8 @@ In order to generate a token, use the following example request.
 
 - **Example request:**
 
-```java
+
+```xml
     $ curl 
       -X POST 
       -H "Content-Type: text/xml; charset=utf8" 
@@ -55,7 +56,7 @@ In order to generate a token, use the following example request.
 
 - **Example response:**
 
-```java
+```xml
 <?xml version='1.0' encoding='UTF8'?>
   <aliasCCService version='1'>
     <body merchantId='1000011011' status='accepted'>
@@ -82,7 +83,7 @@ In order to generate a token, use the following example request.
 
 - **Example request:**
 
-```java
+```xml
     $ curl 
       -X POST 
       -H "Content-Type: text/xml; charset=utf8" 
@@ -103,7 +104,7 @@ In order to generate a token, use the following example request.
 
 - **Example response:**
 
-```java
+```xml
 <?xml version='1.0' encoding='UTF8'?>
   <aliasCCService version='1'>
     <body merchantId='1000011011' status='accepted'>
