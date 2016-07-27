@@ -18,13 +18,13 @@ The token can be used later on to charge, forward or retrieve payment data.
 
 *We understand the challenges of high availability and low response times. Multiple geo-redundant server layouts and blazing fast connections ensure response times are kept at a minimum. PCI Proxy is designed to add only a fractional overhead of 5 – 50 ms per conversion.*
  
-*We also have SLAs ready for you. Please [get in touch](https://www.datatrans.ch/en/contact) for more info.*
+*We also have SLAs ready for you. Please [get in touch](https://www.pci-proxy.com/#/signup) for more info.*
 
 
 
 ## How to start
 
-> [Sign up](https://www.datatrans.ch/en/technics/test-account) for a free developer test account.
+> [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
 
 In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
