@@ -36,8 +36,10 @@ In order to generate a token, use the following example request.
 - **Example request:**
 
 ```java
-    $ curl -X POST -H "Content-Type: text/xml; charset=utf8" --data-binary @-https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp 
-        <<PAYLOAD
+    $ curl 
+      -X POST 
+      -H "Content-Type: text/xml; charset=utf8" 
+        --data-binary @-https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp 
           <?xml version="1.0" encoding="UTF8" ?>
             <aliasCCService version="1">
               <body merchantId="1000011011">
@@ -49,7 +51,6 @@ In order to generate a token, use the following example request.
                 </alias>
               </body>
             </aliasCCService>
-          PAYLOAD
 ```
 
 - **Example response:**
@@ -82,8 +83,10 @@ In order to generate a token, use the following example request.
 - **Example request:**
 
 ```java
-    $ curl -X POST -H "Content-Type: text/xml; charset=utf8" --data-binary @-https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp 
-        <<PAYLOAD
+    $ curl 
+      -X POST 
+      -H "Content-Type: text/xml; charset=utf8" 
+        --data-binary @-https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp 
           <?xml version="1.0" encoding="UTF8" ?>
             <aliasCCService version="1">
               <body merchantId="1000011011">
@@ -95,7 +98,7 @@ In order to generate a token, use the following example request.
                 </alias>
               </body>
             </aliasCCService>
-          PAYLOAD
+
 ```
 
 - **Example response:**
