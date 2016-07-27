@@ -18,6 +18,7 @@
 * Resources
    * [Supported Acquirer](supported_acquirer.md)
    * [Supported Channels](supported_channels.md)
+   * XML Alias Gateway
 * References
    * [Webservice API](webservice_api.md)
 
