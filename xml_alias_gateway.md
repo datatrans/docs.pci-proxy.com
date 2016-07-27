@@ -9,3 +9,4 @@ Let us assume you want to create a token for a credit card number.
 
 ## How to start
 
+In order to convert a card into a token, you can 
