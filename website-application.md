@@ -25,7 +25,7 @@ Redirect of consumer to payment page managed by Datatrans. | Payment pages are p
 
 ## How to start
 
-> [Sign up](https://www.datatrans.ch/en/technics/test-account) for a free developer test account.
+> [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
 
 
 
