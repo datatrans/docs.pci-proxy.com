@@ -138,7 +138,7 @@ You will receive a confirmation once the channel is successfully added. For push
 
 #### VPN and Leased Lines
 
-In case the channel transmits your data over VPN or Leased Line, we can add secure connections to adapt to your needs. Please [get in touch](https://www.datatrans.ch/en/contact/contactform) for more info.
+In case the channel transmits your data over VPN or Leased Line, we can add secure connections to adapt to your needs. Please [get in touch](https://www.pci-proxy.com/#/signup) for more info.
 
 
 
