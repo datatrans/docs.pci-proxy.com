@@ -1,6 +1,6 @@
 # Developer Test Account
 
-[Sign up](http://www.pci-proxy.com/) for a developer test account to start testing in our test environment.
+[Sign up](http://www.pci-proxy.com/#/signup) for a developer test account to start testing in our test environment.
 
 You will receive the following demo credentials:
 
