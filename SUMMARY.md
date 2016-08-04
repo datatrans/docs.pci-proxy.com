@@ -19,7 +19,7 @@
    * [Supported Acquirer](supported_acquirer.md)
    * [Supported Channels](supported_channels.md)
    * [XML Alias Gateway](xml_alias_gateway.md)
-   * Supported Credit Cards
+   * [Supported Credit Cards](supported_credit_cards.md)
 * References
    * [Webservice API](webservice_api.md)
 
