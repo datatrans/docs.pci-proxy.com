@@ -22,7 +22,7 @@ There are two ways how you can show single credit cards:
 
 ## 1. Using our Web Admin Tool
 
-Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under *"Book Entries" / "Alias"*.
+Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under *"Process" / "Inverse Alias"*.
 
 
 ## 2. Seamless interface integration (NoShow.jsp)
