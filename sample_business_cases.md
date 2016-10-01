@@ -20,15 +20,19 @@ The following list of business cases gives an overview of business types that al
 
 ## Channel Manager
 
+
 *You are a channel manager that requests or receives booking information from distribution channels, e.g. [Booking.com][5].*
 
 *Hotels and accommodation providers transmit availabilities and prices to various distribution channels. It also automatically retrieves bookings including payment data from the online booking platforms.*
 
- PCI Proxy allows you to [extract payment data from web service calls][6] and securely store it in PCI Proxys' vault. Your server will never get in touch with sensitive card data which reduces your PCI scope immediately.
+PCI Proxy allows you to [extract payment data from web service calls][6] and securely store it in PCI Proxys' vault. Your server will never get in touch with sensitive card data which reduces your PCI scope immediately.
+
+Rather than sending the request directly to the distribution channel (e.g. Booking.com), send it via the PCI Proxy. PCI Proxy recognized the destination of the request and ensures your reservation data is filtered and sensitive data is automatically tokenized and securely stored in our vault in Switzerland before it will be returned to your server. No sensitive data hits your server, reducing your PCI scope immediately.
+
 
 *Generally, you will store payment data only to allow your hotels to charge cards in case of a no-show.*
 
- PCI Proxy provides several ways on how to [use stored payment data][7]. Your clients can either [retrieve single payment data sets][8], [charge payment data][9] against a payment processor or [forward payment data][4] to a PCI-compliant third party, eg. Expedia.
+PCI Proxy provides several ways on how to [use stored payment data][7]. Your clients can either [retrieve single payment data sets][8], [charge payment data][9] against a payment processor or [forward payment data][4] to a PCI-compliant third party, eg. Expedia, Trust, and more.
 
  [1]: collect_payment_data.html
  [2]: website-application.html
