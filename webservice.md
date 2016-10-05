@@ -2,7 +2,7 @@
 
 Let us assume you receive or request messages including payment data (credit cards) via API from a partner (channel).
 
-`By switching PCI Proxy between you and the channel`, payment data is extracted and automatically stored in our secure vault. A reference number (token) is issued that substitutes the payment data in the request or response. The message structure of the channel API always remains the same. 
+`By placing PCI Proxy between you and the channel`, payment data is extracted and automatically stored in our secure vault. A reference number (token) is issued that substitutes the payment data in the request or response. The message structure of the channel API always remains the same. 
 
 *You are allowed to store the token in your system, as it is not PCI DSS relevant.*
 
