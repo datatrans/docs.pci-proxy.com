@@ -7,7 +7,7 @@ The document you need for the compliance validation is the** Attestation of Comp
 
 ## What we need for the proof of compliance?
 
-When you are using the PCI Proxy, we need the following documents from your service providers to be able to forward cardholder to them.
+When you are using the PCI Proxy, we need the following documents from your service providers to be able to forward cardholder data to them.
 
 
 | Attestation of Compliance (AOC) | Letter of Acknowledgment |
