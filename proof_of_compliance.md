@@ -2,7 +2,7 @@
 
 As a business owner, it is your responsibility to make sure you are partnering with the right service providers. Knowing your service providers PCI DSS compliance status provides assurance and awareness about whether they comply with the same requirements that your organization is subject to.  
 
-The formal document you need for proof PCI compliance is the Attestation of Compliance (AOC). In addition, the service provider has to maintain a written agreement that includes an acknowledgment that the service providers are responsible for the security of cardholder data the service providers possess or otherwise store, process or transmit on behalf of the customer.
+The formal document you need for proof PCI compliance is the** Attestation of Compliance (AOC).** In addition, the service provider has to maintain a** written agreement** that includes an acknowledgment that the service providers are responsible for the security of cardholder data the service providers possess or otherwise store, process or transmit on behalf of the customer.
 
 
 ## What we need for the proof of compliance?
