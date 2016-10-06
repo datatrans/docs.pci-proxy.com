@@ -6,14 +6,12 @@ The formal document you need for proof PCI compliance is the Attestation of Comp
 
 If you perfom a request against a service provider (3rd party) we need the following documents for the validation of PCI DSS compliance:
 
- **What we need: **
 
--	Attestation of Compliance (AOC):
+## What we need for the proof your compliance?
 
-The Attestations of Compliance (AOC) is the only official document recognized for PCI DSS validation. Any other form of certificate or documentation issued for the purposes of illustrating compliance to PCI DSS or any other PCI standard are not authorized and their use is not acceptable for evidencing compli-ance. 
+If you perfom a requst against a 3rd party 
 
--	Letter of Acknowledgment: 
-
-With the acknowledgement, the service providers evidences their commitment to maintaining proper security of cardholder data that it obtains from Datatrans on behalf of its clients. The Letter of Acknowledgement should promote a consistent level of understanding between the service provider and Datatrans about their applicable PCI DSS responsibilities. This includes for example the maintaining of their PCI DSS compliance and immediately notification I case of a non-compliance status (Require-ments and Security Assessment Procedures, Version 3.2, Requirement 12.8.2.) 
-
-
+| Attestation of Compliance (AOC) | Letter of Acknowledgment |
+| -- | -- |
+| The Attestations of Compliance (AOC) is the only official document recognized for PCI DSS validation. Any other form of certificate or documentation issued for the purposes of illustrating compliance to PCI DSS or any other PCI standard are not authorized and their use is not acceptable for evidencing compliance.| With the acknowledgement, the service providers evidences their commitment to maintaining proper security of cardholder data that it obtains from Datatrans on behalf of its clients. The Letter of Acknowledgement should promote a consistent level of understanding between the service provider and Datatrans about their applicable PCI DSS responsibilities. This includes for example the maintaining of their PCI DSS compliance and immediately notification I case of a non-compliance status (Require-ments and Security Assessment Procedures, Version 3.2, Requirement 12.8.2.)   |
+ 
