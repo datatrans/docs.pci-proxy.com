@@ -15,14 +15,12 @@
        * [1. Forward](forward.md)
        * [2. Charge](charge.md)
        * [3. Show](show.md)
-* [XML Alias Gateway](xml_alias_gateway.md)
-   * Proof of Compliance
 * Resources
+   * [XML Alias Gateway](xml_alias_gateway.md)
+       * Proof of Compliance
    * [Supported Acquirer](supported_acquirer.md)
    * [Supported Channels](supported_channels.md)
    * [Supported Credit Cards](supported_credit_cards.md)
-   * [XML Alias Gateway](xml_alias_gateway.md)
-       * Proof of Compliance
 * References
    * [Webservice API](webservice_api.md)
 
