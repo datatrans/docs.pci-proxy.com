@@ -17,9 +17,9 @@
        * [3. Show](show.md)
 * Resources
    * [Supported Acquirer](supported_acquirer.md)
-   * [Proof of Compliance](proof_of_compliance.md)
    * [Supported Channels](supported_channels.md)
    * [XML Alias Gateway](xml_alias_gateway.md)
+   * [Proof of Compliance](proof_of_compliance.md)
    * [Supported Credit Cards](supported_credit_cards.md)
 * References
    * [Webservice API](webservice_api.md)
