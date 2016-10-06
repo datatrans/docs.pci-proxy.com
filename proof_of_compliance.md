@@ -18,9 +18,12 @@ When you are using the PCI Proxy, we need the following documents from your serv
  
 ## Useful links
 
-Check if your service provider is compliant
+##### Global Registry of PCI compliant service providers:
 
-https://de.pcisecuritystandards.org/document_library
-http://www.visa.com/splisting/searchGrsp.do
-https://www.visaeurope.com/receiving-payments/security/downloads-and-resources
-https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html
+- http://www.visa.com/splisting/searchGrsp.do
+- https://www.visaeurope.com/receiving-payments/security/downloads-and-resources
+- https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html
+
+##### Official PCI DSS Document Library, FAQs
+- https://de.pcisecuritystandards.org/document_library
+- https://www.pcisecuritystandards.org/faqs
