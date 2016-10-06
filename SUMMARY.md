@@ -15,6 +15,8 @@
        * [1. Forward](forward.md)
        * [2. Charge](charge.md)
        * [3. Show](show.md)
+* [XML Alias Gateway](xml_alias_gateway.md)
+   * Proof of Compliance
 * Resources
    * [Supported Acquirer](supported_acquirer.md)
    * [Supported Channels](supported_channels.md)
