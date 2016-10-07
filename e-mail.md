@@ -12,6 +12,11 @@ Our PayByEmailService allows you to generate Pay-by-Email payment links.
 
 ### Generate payment links
 
+| **PayByEmailService Endpoint:** |
+| -- |
+| https://pilot.datatrans.biz/upp/jsp/XML_PayByEmail|
+
+
 **Just send the following payload to our PayByEmailService Endpoint:**
 
   ```xml
