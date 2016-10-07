@@ -10,7 +10,7 @@
        * [1. Webservice (XML/SOAP)](webservice.md)
        * [2. Website / Application](website-application.md)
        * [3. iOS / Android](mobile-app.md)
-       * E-Mail
+       * [E-Mail](e-mail.md)
    * [Validate Credit Cards](validate.md)
    * [Use stored Credit Cards](utilize.md)
        * [1. Forward](forward.md)
