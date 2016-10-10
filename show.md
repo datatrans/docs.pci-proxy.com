@@ -87,7 +87,7 @@ Every single user having access to the No-Show.jsp needs to have a unique user l
 In general, the following password rules have to be observed:
 
  - Passwords must be changed at least every 90 days.
- - The password must have a minimum length of 8 characters.
+ - The password must have a minimum length of 7 characters.
  - The password must contain upper and lower case letters, numbers and at least one special character.
  - When changing the password none of the last four passwords can be used.
  - After 6 failed login attempts a user account is locked. It can only be unlocked by the administrator.
