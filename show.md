@@ -76,7 +76,7 @@ The token *70119122433810042* should result in [test card number](test_card_numb
 
 ### PCI DSS Compliant User Management
 
-Using our *NoShow.jsp* script requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find a comprehensive overview for a PCI DSS compliant user management. For a more detailed version on PCI DSS user management please see the official PCI DSS documents.
+Using our *NoShow.jsp* script requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find a comprehensive overview for a PCI DSS compliant user management. For a more detailed version on PCI DSS user management please see the official PCI DSS documents (Requirement 8)  [PCI DSS - Requirements and Security Assessment Procedures](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2.pdf?agreement=true&time=1476177008560).
 
 #### Unique User IDs
 
@@ -93,5 +93,6 @@ In general, the following password rules have to be observed:
  - After 6 failed login attempts a user account is locked. It can only be unlocked by the administrator.
  - After 15 minutes of inactivity, the password must be entered to reactivate the terminal / session.
  - The maximum session time after which the user must log in again must not exceed 200 minutes.
+
 
 
