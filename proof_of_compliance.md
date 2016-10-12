@@ -13,7 +13,7 @@ When you are using the PCI Proxy, we need the following documents from your serv
 | Attestation of Compliance (AOC) | Letter of Acknowledgment |
 | -- | -- |
 | The Attestations of Compliance (AOC) is the only official document recognized for PCI DSS validation. Any other forms of certification issued for the purposes of illustrating compliance to PCI DSS are not acceptable for proving compliance.| The written agreement should promote a consistent level of understanding between the service provider and Datatrans and their responsibilities. With the agreement, the service providers evidences their commitment to maintaining proper security of cardholder data that it obtains from Datatrans on behalf of its clients.     |
-| example: [AOC_Version 3.2_April 2016](Attestation of Compliance_Version 3.2_April 2016.docx) | example: [Datatrans PCI compliance letter](Example_Datatrans PCI Compliance Letter.docx)| 
+| example: [AOC Version 3.2 April 2016](Attestation of Compliance_Version 3.2_April 2016.pdf)
 
  
 ## Useful links
