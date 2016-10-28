@@ -16,6 +16,7 @@ Depending on how restrictive you want to setup the whitelist, you can also speci
 ```
 193.16.220.3
 193.16.220.4
+193.16.220.8
 193.16.220.16
 193.16.220.152
 193.16.220.153
