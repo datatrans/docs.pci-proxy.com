@@ -10,17 +10,6 @@ If possible, please whitelist our full Class C network:
 91.223.186.0/24```
 
 
-Depending on how restrictive you want to setup the whitelist, you can also specify only the following IPs:
-
-
-```
-193.16.220.3
-193.16.220.4
-193.16.220.8
-193.16.220.16
-193.16.220.152
-193.16.220.153
-91.223.186.4```
 
 
 
