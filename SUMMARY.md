@@ -1,7 +1,6 @@
 # Summary
 
 * [Basics](README.md)
-   * [PCI DSS](pci_dss.md)
    * [Case Studies](sample_business_cases.md)
    * [Test Account & Test Data](live_mode-test.md)
    * [IP Whitelisting](ip_whitelisting.md)
