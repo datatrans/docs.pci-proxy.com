@@ -24,5 +24,5 @@
    * Supported Receivers
    * [Supported Credit Cards](supported_credit_cards.md)
 * Others
-   * ggh
+   * Showcase
 
