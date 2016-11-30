@@ -26,4 +26,5 @@
 * Others
    * Showcase
    * Billing Plan
+   * Glossary
 
