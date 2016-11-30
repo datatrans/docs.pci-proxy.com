@@ -8,9 +8,9 @@
        * [2. Website / Application](website-application.md)
        * [3. iOS / Android](mobile-app.md)
        * [4. E-Mail](e-mail.md)
-   * [Validate Credit Cards](validate.md)
    * [Use stored Credit Cards](utilize.md)
        * [1. Forward](forward.md)
+       * [Validate Credit Cards](validate.md)
        * [2. Charge](charge.md)
        * [3. Show](show.md)
 * Resources
