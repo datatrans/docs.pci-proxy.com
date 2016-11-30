@@ -1,8 +1,8 @@
 # Summary
 
 * [Basics](README.md)
+   * [Test Account & Test Data](live_mode-test.md)
    * [IP Whitelisting](ip_whitelisting.md)
-* [Test Account & Test Data](live_mode-test.md)
 * Features
    * [Collect Credit Cards](collect_payment_data.md)
        * [1. Webservice (XML/SOAP)](webservice.md)
