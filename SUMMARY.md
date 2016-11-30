@@ -29,4 +29,5 @@
    * Glossary
    * FAQ
    * Contact us
+* Guides
 
