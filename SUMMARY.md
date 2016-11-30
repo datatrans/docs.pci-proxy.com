@@ -12,7 +12,7 @@
    * [1. Forward](forward.md)
    * [Validate Credit Cards](validate.md)
    * [Charge](charge.md)
-   * [3. Show](show.md)
+   * [- Show](show.md)
 * Guides
    * Create a Test Account
    * Generate a Security Sign
