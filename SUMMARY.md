@@ -6,8 +6,8 @@
 * Collect Credit Cards
    * [1. Webservice (XML/SOAP)](webservice.md)
    * [2. Website / Application](website-application.md)
+   * [3. iOS / Android](mobile-app.md)
    * [Collect Credit Cards](collect_payment_data.md)
-       * [2. Website / Application](website-application.md)
        * [3. iOS / Android](mobile-app.md)
        * [4. E-Mail](e-mail.md)
    * [Use stored Credit Cards](utilize.md)
