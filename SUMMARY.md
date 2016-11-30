@@ -2,7 +2,6 @@
 
 * [Basics](README.md)
    * [Test Account & Test Data](live_mode-test.md)
-   * [IP Whitelisting](ip_whitelisting.md)
 * Features
    * [Collect Credit Cards](collect_payment_data.md)
        * [1. Webservice (XML/SOAP)](webservice.md)
@@ -20,6 +19,7 @@
    * [Supported Credit Cards](supported_credit_cards.md)
    * [XML Alias Gateway](xml_alias_gateway.md)
    * [Proof of Compliance](proof_of_compliance.md)
+* [IP Whitelisting](ip_whitelisting.md)
 * References
    * [Webservice API](webservice_api.md)
 
