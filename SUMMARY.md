@@ -15,7 +15,7 @@
    * [Show](show.md)
 * [Guides](guides.md)
    * [Create a Test Account](create_a_test_account.md)
-   * Generate a Security Sign
+   * [Generate a Security Sign](generate_a_security_sign.md)
    * Add a Channel (inbound)
    * Add a Receiver (outbound)
    * Live and Testing
