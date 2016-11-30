@@ -4,6 +4,7 @@
    * Introduction
    * [Test Account & Test Data](live_mode-test.md)
 * Collect Credit Cards
+   * [1. Webservice (XML/SOAP)](webservice.md)
    * [Collect Credit Cards](collect_payment_data.md)
        * [1. Webservice (XML/SOAP)](webservice.md)
        * [2. Website / Application](website-application.md)
