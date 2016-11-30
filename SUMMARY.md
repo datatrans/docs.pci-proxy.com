@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Basics](README.md)
    * [PCI DSS](pci_dss.md)
    * [Case Studies](sample_business_cases.md)
    * [Test Account & Test Data](live_mode-test.md)
