@@ -13,7 +13,7 @@
    * [Validate](validate.md)
    * [Charge](charge.md)
    * [Show](show.md)
-* Guides
+* [Guides](guides.md)
    * Create a Test Account
    * Generate a Security Sign
    * Add a Channel (inbound)
