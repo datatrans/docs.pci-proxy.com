@@ -13,7 +13,6 @@
        * [1. Forward](forward.md)
        * [2. Charge](charge.md)
        * [3. Show](show.md)
-* Use stored Credit Cards
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
    * [Supported Acquirer](supported_acquirer.md)
