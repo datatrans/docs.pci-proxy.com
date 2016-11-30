@@ -12,7 +12,7 @@
    * [Forward](forward.md)
    * [Validate](validate.md)
    * [Charge](charge.md)
-   * [- Show](show.md)
+   * [Show](show.md)
 * Guides
    * Create a Test Account
    * Generate a Security Sign
