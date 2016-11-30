@@ -13,6 +13,7 @@
    * [Validate Credit Cards](validate.md)
    * [2. Charge](charge.md)
    * [3. Show](show.md)
+* Guides
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
    * Token-Format
@@ -29,5 +30,4 @@
    * Glossary
    * FAQ
    * Contact us
-* Guides
 
