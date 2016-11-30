@@ -11,7 +11,7 @@
 * [Use stored Credit Cards](utilize.md)
    * [1. Forward](forward.md)
    * [Validate Credit Cards](validate.md)
-   * [2. Charge](charge.md)
+   * [Charge](charge.md)
    * [3. Show](show.md)
 * Guides
    * Create a Test Account
