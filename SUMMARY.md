@@ -22,4 +22,5 @@
    * [Proof of Compliance](proof_of_compliance.md)
 * References
    * [Webservice API](webservice_api.md)
+* Use stored Credit Cards
 
