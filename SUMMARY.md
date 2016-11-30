@@ -2,6 +2,7 @@
 
 * [Basics](README.md)
    * [Test Account & Test Data](live_mode-test.md)
+   * Introduction
 * Collect Credit Cards
    * [Collect Credit Cards](collect_payment_data.md)
        * [1. Webservice (XML/SOAP)](webservice.md)
