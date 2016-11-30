@@ -16,8 +16,8 @@
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
    * Token-Format
-   * [XML Alias Gateway](xml_alias_gateway.md)
    * [Webservice API](webservice_api.md)
+   * [XML Alias Gateway](xml_alias_gateway.md)
    * Shared-Certificates
    * [Supported Acquirer](supported_acquirer.md)
    * [Supported Channels](supported_channels.md)
