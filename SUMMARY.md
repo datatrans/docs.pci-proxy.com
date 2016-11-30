@@ -25,4 +25,5 @@
    * [Supported Credit Cards](supported_credit_cards.md)
 * Others
    * Showcase
+   * Billing Plan
 
