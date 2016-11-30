@@ -19,6 +19,7 @@
    * [Supported Channels](supported_channels.md)
    * [Supported Credit Cards](supported_credit_cards.md)
    * [XML Alias Gateway](xml_alias_gateway.md)
+   * Token-Format
 * [Webservice API](webservice_api.md)
 * [Proof of Compliance](proof_of_compliance.md)
 * References
