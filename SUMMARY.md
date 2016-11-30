@@ -14,6 +14,7 @@
    * [2. Charge](charge.md)
    * [3. Show](show.md)
 * Guides
+   * Create a Test Account
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
    * Token-Format
