@@ -10,7 +10,7 @@
    * [4. E-Mail](e-mail.md)
 * [Use stored Credit Cards](utilize.md)
    * [Forward](forward.md)
-   * [- Validate](validate.md)
+   * [Validate](validate.md)
    * [- Charge](charge.md)
    * [- Show](show.md)
 * Guides
