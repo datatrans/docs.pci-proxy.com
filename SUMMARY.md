@@ -9,7 +9,7 @@
    * [3. iOS / Android](mobile-app.md)
    * [4. E-Mail](e-mail.md)
 * [Use stored Credit Cards](utilize.md)
-   * [1. Forward](forward.md)
+   * [Forward](forward.md)
    * [- Validate](validate.md)
    * [- Charge](charge.md)
    * [- Show](show.md)
