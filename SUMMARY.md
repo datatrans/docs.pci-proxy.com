@@ -15,6 +15,7 @@
    * [3. Show](show.md)
 * Guides
    * Create a Test Account
+   * Generate a Security Sign
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
    * Token-Format
