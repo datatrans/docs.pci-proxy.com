@@ -23,6 +23,6 @@
    * [Supported Channels](supported_channels.md)
    * Supported Receivers
    * [Supported Credit Cards](supported_credit_cards.md)
-* References
+* Others
    * ggh
 
