@@ -27,4 +27,5 @@
    * Showcase
    * Billing Plan
    * Glossary
+   * FAQ
 
