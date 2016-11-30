@@ -1,7 +1,7 @@
 # Summary
 
 * [Basics](README.md)
-   * Introduction
+   * [Introduction](introduction.md)
    * [Test Account & Test Data](live_mode-test.md)
 * Collect Credit Cards
    * [Webservice (XML/SOAP)](webservice.md)
