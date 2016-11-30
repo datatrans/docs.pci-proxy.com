@@ -9,12 +9,11 @@
    * [3. iOS / Android](mobile-app.md)
    * [4. E-Mail](e-mail.md)
    * [Collect Credit Cards](collect_payment_data.md)
-       * [4. E-Mail](e-mail.md)
-   * [Use stored Credit Cards](utilize.md)
-       * [1. Forward](forward.md)
-       * [Validate Credit Cards](validate.md)
-       * [2. Charge](charge.md)
-       * [3. Show](show.md)
+* [Use stored Credit Cards](utilize.md)
+   * [1. Forward](forward.md)
+   * [Validate Credit Cards](validate.md)
+   * [2. Charge](charge.md)
+   * [3. Show](show.md)
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
    * Token-Format
