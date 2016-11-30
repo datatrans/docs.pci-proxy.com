@@ -28,4 +28,5 @@
    * Billing Plan
    * Glossary
    * FAQ
+   * Contact us
 
