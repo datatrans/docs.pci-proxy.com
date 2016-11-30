@@ -21,8 +21,8 @@
    * Shared-Certificates
    * [Supported Acquirer](supported_acquirer.md)
    * [Supported Channels](supported_channels.md)
-   * [Supported Credit Cards](supported_credit_cards.md)
    * Supported Receivers
+   * [Supported Credit Cards](supported_credit_cards.md)
 * [Proof of Compliance](proof_of_compliance.md)
 * References
    * ggh
