@@ -64,7 +64,7 @@ You will use the *Collect Webservice PULL Proxy* when you start the request and 
 
 | **PCI Proxy PULL Endpoint:** |
 | -- |
-| https://pilot.datatrans.biz/upp/proxy/pull|
+| https://sandbox.pci-proxy.com/v1/pull|
 
 - **Required HTTP header:**
 
@@ -117,7 +117,7 @@ To switch PCI Proxy between you and a channel that pushes data, you just add a n
 
 | **Test PCI Proxy PUSH Endpoint:** |
 | -- |
-| https://pilot.datatrans.biz/upp/proxy/push/ `{YOUR-SPECIFIC-KEY}`  |
+| https://sandbox.pci-proxy.com/v1/push/ `{YOUR-SPECIFIC-KEY}`  |
 
 > Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live_mode-test.html).
 
