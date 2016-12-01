@@ -1,14 +1,3 @@
-# Developer Test Account
-
-[Sign up](https://www.pci-proxy.com/#/signup) for a developer test account to start testing in our test environment.
-
-You will receive the following demo credentials:
-
- | Credential | Description |
-| -- | -- |
-| MerchantID | Identifies your environment at PCI Proxy. |
- | X-CC-SIGN | It's a security parameter. You will need to sign your webservice calls when you collect or forward payment data. |
-  | Login | Username & Password to login to our [web admin tool](https://pilot.datatrans.biz/). In our [web admin tool](https://pilot.datatrans.biz/) you can set and change the security signs.  |
 
 ### Web Administration Tool
 
