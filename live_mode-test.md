@@ -36,8 +36,8 @@ You can differentiate test and production environment based on the URL.
  
  | Environment |URL |
 | -- | -- |
-| PROD: | `https://payment.datatrans.biz/upp/proxy/` |
- | TEST: | `https://pilot.datatrans.biz/upp/proxy/` |
+| PROD: | `https://sandbox.pci-proxy.com/v1/` |
+ | TEST: | `https://api-pci-proxy.com/v1/` |
  
  ---
 
