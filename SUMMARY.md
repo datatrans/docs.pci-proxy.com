@@ -17,7 +17,7 @@
    * [Create a Test Account](create_a_test_account.md)
    * [Generate a Security Sign](generate_a_security_sign.md)
    * [Add a Channel (inbound)](add_a_channel_inbound.md)
-   * Add a Receiver (outbound)
+   * [Add a Receiver (outbound)](add_a_receiver_outbound.md)
    * Live and Testing
    * Test Credit Card Number
 * Resources
