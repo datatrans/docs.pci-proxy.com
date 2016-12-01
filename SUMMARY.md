@@ -19,7 +19,7 @@
    * [Add a Channel (inbound)](add_a_channel_inbound.md)
    * [Add a Receiver (outbound)](add_a_receiver_outbound.md)
    * Live and Testing
-   * Test Credit Card Number
+   * [Test Credit Card Number](test_credit_card_number.md)
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
    * Token-Format
