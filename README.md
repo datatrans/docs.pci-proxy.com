@@ -1,10 +1,10 @@
-# Welcome 
+# Welcome to PCI Proxy
 
-This site aims to be a comprehensive guide to PCI Proxy. You will learn how to integrate the PCI Proxy. 
+Here you will find information on how to integrate with and use the PCI Proxy. We have tried to make this documentation user-friendly and example-filled, but please drop us a line if you see room for improvement.  
 
-## What is PCI Proxy?
+## Overview
 
-PCI Proxy is an API toolbox that allows you to instantly reduce your PCI scope.
+PCI Proxy is a tokenization service that allows you to reduce your PCI scope. 
 
 Our webservice API securely **extracts credit cards out of XML/SOAP calls. ** Your XML/SOAP requests and responses remain unchanged. *For instance, you receive XML reservation data from [Booking.com](http://www.booking.com/) that contain credit cards.* 
 
@@ -20,9 +20,9 @@ By using tokenization, our APIs ensure **sensitive payment data never touch your
 |From [Website / Application](website-application.html)||[Charge](charge.html)|
 |From [Mobile App](mobile-app.html)||[Show](show.html)|
 
-## Get Started
+## Quick Start
 
-Here is a quick start guide on how to use PCI Proxy and quickly reduce your PCI scope.
+The fastest way to get started with PCI Proxy is by following our quick start guide. 
 
  1. [Sign up](https://www.pci-proxy.com/#/signup) for a free test account.
  2. [Choose API](collect_payment_data.html) to collect or extract payment data.
