@@ -2,24 +2,7 @@
 
 Get ready to start collecting cardholder data and more. The following sections describe how to use the PCI Proxy Sandbox: 
                   
-                  
-
-
-
-
-
-1.	Create a Sandbox Account
-
-2.	Generate a Security Sign  
-
-3.	Choose your API
-
-3.	Add a Channel, Third Party or Payment Gateway to your Sandbox
-
-4.	Start collect or extract payment information
-
-
-
+ 
 
 ---
 
@@ -30,16 +13,19 @@ Get ready to start collecting cardholder data and more. The following sections d
 
 To create a new test account in the Sandbox: 
 
-5.	Sign up for a free test account at http://www.pci-proxy.com/#/signup
+1.	**Sign up** for a free test account at http://www.pci-proxy.com/#/signup
 
-6.	Once submitted, you will receive your Sandbox login data.
+2.	Once submitted, you will receive your Sandbox login data.
 
-7.	Log in to the Sandbox https://pilot.datatrans.biz/.
+3.	**Log in** to the Sandbox https://pilot.datatrans.biz/.
 
-8.	Navigate to user administration and create a new password. 
+4.	Navigate to user administration and **create a new password**. 
 
 
-If you need further information about the sandbox environment, please visit https://docs.pci-proxy.com/live_mode-test.html
+
+
+---
+
 
 
 
@@ -48,6 +34,7 @@ If you need further information about the sandbox environment, please visit http
 
 
 Once you logged in and set your password, you have to generate a security sign:
+
 
 
 1.	Navigate to UPP Administration
@@ -61,7 +48,9 @@ Once you logged in and set your password, you have to generate a security sign:
 5.	Click on Update 
 
 
-If you do not know which sign you need, please visit https://docs.pci-proxy.com/live_mode-test.html
+
+---
+
 
 
 ## 3. Add a Channel or Third Party to your Sandbox
@@ -76,4 +65,35 @@ Before you can collect or extract cardholder data, you will need to send us the 
   3.	Sample Request & Response (Please Include API name, required heards, auth fields and request method)
 
   4.	Attestation of Compliance (only for Forwards)
+
+
+
+---
+
+
+## 4. Add a Channel, Third Party or Payment Gateway to your Sandbox
+
+
+
+Before you can collect or extract cardholder data, you will need to send us the following information to setup@pci-proxy.com: 
+
+1.	Channel Type (Define if it is a push or pull channel)
+
+2.	API Endpoint (The URL where we should forward the request to)
+
+3.	Sample Request & Response (Please Include API name, required heards, auth fields and request method)
+
+4.	Attestation of Compliance (only for Forwards)
+
+
+
+---
+
+
+## 5. Start collect or extract payment information
+
+
+
+In general, you might receive payment data in three environments:
+
 
