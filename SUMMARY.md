@@ -3,7 +3,7 @@
 * [Basics](README.md)
    * [Introduction](introduction.md)
    * [Test Account & Test Data](live_mode-test.md)
-   * Get Started
+   * [Get Started](get_started.md)
 * Collect Credit Cards
    * [Webservice (XML/SOAP)](webservice.md)
    * [Website / Application](website-application.md)
