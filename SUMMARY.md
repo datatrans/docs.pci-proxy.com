@@ -5,6 +5,7 @@
    * [Case Studies](sample_business_cases.md)
    * [Test Account & Test Data](live_mode-test.md)
    * [IP Whitelisting](ip_whitelisting.md)
+   * Get Started
 * Features
    * [Collect Credit Cards](collect_payment_data.md)
        * [1. Webservice (XML/SOAP)](webservice.md)
