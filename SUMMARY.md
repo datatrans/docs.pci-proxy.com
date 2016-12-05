@@ -4,7 +4,7 @@
    * [Introduction](introduction.md)
    * [Test Account & Test Data](live_mode-test.md)
    * [Get Started](get_started.md)
-* Collect Credit Cards
+* [Collect Credit Cards](collect_credit_cards.md)
    * [Webservice (XML/SOAP)](webservice.md)
    * [Website / Application](website-application.md)
    * [Mobile Apps (iOS / Android)](mobile-app.md)
