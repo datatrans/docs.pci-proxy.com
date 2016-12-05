@@ -53,7 +53,32 @@ Once you logged in and set your password, you have to generate a security sign:
 
 
 
-## 3. Add a Channel or Third Party to your Sandbox
+## 3. Choose your API: 
+
+
+
+Once you logged in and set your password, you have to generate a security sign:
+
+
+
+1.	Web Service (XML, SOAP, JSON, etc.)
+
+2.	Web Application  
+
+3.	Choose between Static Sign 1 (X-CC-SIGN) and Dynamic Sign 2 (SHA HASH) 
+
+4.	Generate new sign or salt 
+
+5.	Click on Update 
+
+
+
+---
+
+
+
+
+## 4. Add a Channel or Third Party to your Sandbox
 
 
 Before you can collect or extract cardholder data, you will need to send us the following information to setup@pci-proxy.com: 
@@ -71,7 +96,7 @@ Before you can collect or extract cardholder data, you will need to send us the 
 ---
 
 
-## 4. Add a Channel, Third Party or Payment Gateway to your Sandbox
+## 5. Add a Channel, Third Party or Payment Gateway to your Sandbox
 
 
 
@@ -90,7 +115,7 @@ Before you can collect or extract cardholder data, you will need to send us the 
 ---
 
 
-## 5. Start collect or extract payment information
+## 6. Start collect or extract payment information
 
 
 
