@@ -57,16 +57,34 @@ For every request you make against our PCI Proxy, we ask for your security sign.
 - merchantId
 - aliasCC
 
+ ---
+
+## Web Service Endpoints
+
+
+|Pull Endpoint| Push Endpoint   |
+|---|---|
+|https://sandbox.pci-proxy.com/v1/pull|https://sandbox.pci-proxy.com/v1/push|
+
+
+ ---
+ 
+ ## Test Data
+
+Once your tests are successful, please activate your account to receive your productive credentials. Send the following data to [setup@pci-proxy.com](mailto:setup@pci-proxy.com):
+
+|Pull Endpoint| Push Endpoint   |
+|---|---|
+|https://sandbox.pci-proxy.com/v1/pull|https://sandbox.pci-proxy.com/v1/push|
 
 
  ---
 
+
+
+
 ## Going Live
+[setup@pci-proxy.com](mailto:setup@pci-proxy.com):
 
-Once your tests are successful, please activate your account to receive your productive credentials. Send the following data to [setup@pci-proxy.com](mailto:setup@pci-proxy.com):
+Once your tests are successful, please activate your account to receive your productive credentials. You will receive your productive merchant ID and productive push URLs depending on your setup.
 
-|Information| Description   |
-|---|---|
-|Merchant ID|Once you receive your merchant ID.|
-
-You will receive your productive merchant ID and productive push URLs depending on your setup. You can pass the push URLs on to your partner. 
