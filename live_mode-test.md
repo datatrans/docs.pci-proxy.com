@@ -1,37 +1,55 @@
 
-### Web Administration Tool
+### Sandbox (Test) Environment
 
-Our web admin tool gives you a comprehensive management tool (backoffice) for initiating charges and credits, analysing of transactions, creation of reports and management of configuration data. 
+Sandbox Endpoint: https://sandbox.pci-proxy.com/v1/
 
-| **Web Adminstration Tool:** | 
-| -- |
-| https://pilot.datatrans.biz/|
+Before taking your integration live, use our sandbox environment to test it thoroughly. The PCI Proxy sandbox environment is a self-contained testing environment, designed to simulate our production environment. Please note, in test mode you can only use test credit cards. 
 
-For more Information, please visit [Datatrans Backoffice](https://www.datatrans.ch/en/offer/backoffice).
 
 ---
 
 
-##Live and Testing
+##Create a Sandbox Account
 
-PCI Proxy accounts are divided into two environments, namely test and production. 
+To create a test account in the Sandbox: 
 
-All your API requests and testing go through our test environment until you activate your account. 
+1.	Sign up for a free test account at http://www.pci-proxy.com/#/signup
+2.	Once submitted, you will receive your Sandbox login data.
+3.	Log in to the Sandbox https://pilot.datatrans.biz/.
+4.	Navigate to user administration and create a new password. 
 
-In test mode, you can only use [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). 
 
-You can differentiate test and production environment based on the URL.
-
- 
- | Environment |URL |
-| -- | -- |
-| PROD: | `https://sandbox.pci-proxy.com/v1/` |
- | TEST: | `https://api-pci-proxy.com/v1/` |
- 
  ---
 
  
-## Activate your account
+## Sandbox Credentials
+Once you are signed up, you will receive the following test credentials for your sandbox account:
+
+| Credential | Description |
+| -- | -- |
+| Sandbox Merchant ID | Mandatory Parameter which identifies your sandbox environment at PCI Proxy. |
+| Login Data | Username & Password to login to our web admin tool |
+
+ ---
+
+## Web Administration Tool
+URL: https://pilot.datatrans.biz/
+
+
+Our web admin tool gives you a comprehensive management tool (backoffice) for initiating charges and credits, analysing of transactions, personalization of the web application interface, creation of reports and management of configuration data.
+
+
+ ---
+
+## Security Signs
+
+
+
+
+
+ ---
+
+## Going Live
 
 Once your tests are successful, please activate your account to receive your productive credentials. Send the following data to [setup@pci-proxy.com](mailto:setup@pci-proxy.com):
 
