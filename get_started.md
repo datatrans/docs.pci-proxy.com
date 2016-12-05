@@ -2,7 +2,7 @@
 
 Get ready to start collecting cardholder data and more. The following sections describe how to use the PCI Proxy Sandbox: 
                   
- 
+ Grafik mit den einzelnen Steps.
 
 ---
 
@@ -20,6 +20,8 @@ To create a new test account in the Sandbox:
 3.	**Log in** to the Sandbox https://pilot.datatrans.biz/.
 
 4.	Navigate to user administration and **create a new password**. 
+
+
 
 
 
