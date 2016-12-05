@@ -1,8 +1,8 @@
 # Summary
 
 * [Basics](README.md)
-   * [Introduction](introduction.md)
    * [Sandbox (Test) Account](live_mode-test.md)
+   * [Introduction](introduction.md)
    * [Get Started](get_started.md)
 * [Collect Credit Cards](collect_credit_cards.md)
    * [Webservice (XML/SOAP)](webservice.md)
