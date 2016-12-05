@@ -57,19 +57,14 @@ Once you logged in and set your password, you have to generate a security sign:
 
 
 
-Once you logged in and set your password, you have to generate a security sign:
+Choose the way you would like to collect cardholder data:
 
 
+| **[Web Service](webservice.html)** | **[Web Interface](website-application.html)** | **[Native Mobile App](mobile-app.html)** | E-Mail |
+| -- | -- | -- | -- |
+| XML / SOAP / JSON / etc. | Website / Application | iOS / Android | E-Mail|
+| e.g. Booking.com / Expedia / Stripe | e.g. Checkout / IBE / Callcenter | e.g. Checkout / IBE in mobile app | e.g. Redirect to Web Interface | 
 
-1.	Web Service (XML, SOAP, JSON, etc.)
-
-2.	Web Application  
-
-3.	Choose between Static Sign 1 (X-CC-SIGN) and Dynamic Sign 2 (SHA HASH) 
-
-4.	Generate new sign or salt 
-
-5.	Click on Update 
 
 
 
@@ -78,7 +73,7 @@ Once you logged in and set your password, you have to generate a security sign:
 
 
 
-## 4. Add a Channel or Third Party to your Sandbox
+## 4. Add a Channel or Receiver to your Sandbox (if applicable)
 
 
 Before you can collect or extract cardholder data, you will need to send us the following information to setup@pci-proxy.com: 
@@ -96,29 +91,11 @@ Before you can collect or extract cardholder data, you will need to send us the 
 ---
 
 
-## 5. Add a Channel, Third Party or Payment Gateway to your Sandbox
-
-
-
-Before you can collect or extract cardholder data, you will need to send us the following information to setup@pci-proxy.com: 
-
-1.	Channel Type (Define if it is a push or pull channel)
-
-2.	API Endpoint (The URL where we should forward the request to)
-
-3.	Sample Request & Response (Please Include API name, required heards, auth fields and request method)
-
-4.	Attestation of Compliance (only for Forwards)
-
-
-
----
-
 
 ## 6. Start collect or extract payment information
 
 
 
-In general, you might receive payment data in three environments:
+...
 
 
