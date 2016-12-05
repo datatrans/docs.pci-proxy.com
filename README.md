@@ -30,9 +30,3 @@ The fastest way to get started with PCI Proxy is by following our quick start gu
  3. After successful testing, [activate your account](live_mode-test.html) and reduce your PCI scope.
 
 *Before you activate your account, you can use PCI Proxy for free in test mode. With the exception that only [test credit cards](live_mode-test.html) can be used, all PCI Proxy features are fully available in test mode.*
-
-**Note: Merchant IDs**
-
-On the following pages you will find several sample scripts that run on our test environment. You will notice the merchant ID attribute. Merchant IDs are unique and identify your environments at PCI Proxy after [sign up](https://www.pci-proxy.com/#/signup).
-
-You can have many merchant IDs. We recommend to use a unique merchant ID for each environment (web service, website, mobile app).
