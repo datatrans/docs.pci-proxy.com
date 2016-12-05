@@ -1,7 +1,7 @@
 
-### Sandbox (Test) Environment
 
-Sandbox Endpoint: https://sandbox.pci-proxy.com/v1/
+#  Sandbox (Test) Environment
+
 
 Before taking your integration live, use our sandbox environment to test it thoroughly. The PCI Proxy sandbox environment is a self-contained testing environment, designed to simulate our production environment. Please note, in test mode you can only use test credit cards. 
 
@@ -11,13 +11,17 @@ Before taking your integration live, use our sandbox environment to test it thor
 
 ##Create a Sandbox Account
 
-To create a test account in the Sandbox: 
+Test our solution by creating a Sandbox account: 
 
 1.	Sign up for a free test account at http://www.pci-proxy.com/#/signup
+
 2.	Once submitted, you will receive your Sandbox login data.
+
 3.	Log in to the Sandbox https://pilot.datatrans.biz/.
+
 4.	Navigate to user administration and create a new password. 
 
+Note: The fastest way to get started with PCI Proxy is by following our quick start guide. 
 
  ---
 
@@ -59,10 +63,10 @@ For every request you make against our PCI Proxy, we ask for your security sign.
 
  ---
 
-## Web Service Endpoints
+## Sandbox Endpoints
 
 
-|Pull Endpoint| Push Endpoint   |
+|Pull Endpoint | Push Endpoint |
 |---|---|
 |https://sandbox.pci-proxy.com/v1/pull|https://sandbox.pci-proxy.com/v1/push|
 
@@ -71,11 +75,26 @@ For every request you make against our PCI Proxy, we ask for your security sign.
  
  ## Test Data
 
-Once your tests are successful, please activate your account to receive your productive credentials. Send the following data to [setup@pci-proxy.com](mailto:setup@pci-proxy.com):
 
-|Pull Endpoint| Push Endpoint   |
-|---|---|
-|https://sandbox.pci-proxy.com/v1/pull|https://sandbox.pci-proxy.com/v1/push|
+Ordinary credit card information cannot be used in the sandbox. We have a set of test credit card numbers that you can use in our sandbox environment to test your integration. 
+
+| Card type | Card number | Expiration Date | CVV  | Test rule | Support 3D |
+| -- | -- | -- | -- | -- | -- | -- |
+| Visa | 4242424242424242 | 12/2018 or 06/2018 | 123  | w/limit | No |
+| Visa | 4900000000000086 | 12/2018 or 06/2018 | 123  | wo/limit | Yes |
+| Visa | 4900000000000003 | 12/2018 or 06/2018 | 123  | w/limit | Yes |
+| MasterCard | 5404000000000001 | 12/2018 or 06/2018 | 123 | w/limit | Yes |
+| MasterCard | 5200000000000007 | 12/2018 or 06/2018 | 123 | w/limit | No |
+| MasterCard | 5200000000000080 | 12/2018 or 06/2018 | 123 | wo/limit | Yes |
+| Amex | 375811111111115 | 12/2018 or 06/2018 | 1234 | w/limit | No |
+| Amex | 375000000000007 | 12/2018 or 06/2018 | 1234 | wo/limit | Yes |
+| Amex | 375811111111123 | 12/2018 or 06/2018 | 1234 | wo/limit | No |
+| Diners | 36168002586009 | 12/2018 or 06/2018 | 123 | w/limit | - |
+| Diners | 36167719110012 | 12/2018 or 06/2018 | 123 | wo/limit | - |
+| JCB | 3569990010030442 | 12/2018 or 06/2018 | 123 | w/limit | - |
+| JCB | 3569990010030400 | 12/2018 or 06/2018 | 123 | wo/limit | - |
+
+
 
 
  ---
