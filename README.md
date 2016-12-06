@@ -6,8 +6,6 @@ Here you will find information on how to integrate with and use the PCI Proxy. W
 
 Before we get started, take a minute and let us introduce you to the magic of PCI Proxy.  
 
-
-
 PCI Proxy is a tokenization service that allows you to reduce your PCI scope. 
 
 Our webservice API securely **extracts credit cards out of XML/SOAP calls. ** Your XML/SOAP requests and responses remain unchanged. *For instance, you receive XML reservation data from [Booking.com](http://www.booking.com/) that contain credit cards.* 
