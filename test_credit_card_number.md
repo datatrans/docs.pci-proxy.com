@@ -7,7 +7,7 @@ The following credit card numbers can be used for testing purposes in the PCI Pr
 
 | Card Type | Card Number | Expiration Date | CVV  | Test Rule | Support 3D |
 | -- | -- | -- | -- | -- | -- | -- |
-|  | 4242424242424242 | 12/2018 or 06/2018 | 123  | w/limit | No |
+| Visa | 4242424242424242 | 12/2018 or 06/2018 | 123  | w/limit | No |
 | Visa | 4900000000000086 | 12/2018 or 06/2018 | 123  | wo/limit | Yes |
 | Visa | 4900000000000003 | 12/2018 or 06/2018 | 123  | w/limit | Yes |
 | MasterCard | 5404000000000001 | 12/2018 or 06/2018 | 123 | w/limit | Yes |
