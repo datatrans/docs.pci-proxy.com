@@ -23,7 +23,7 @@ Forwarding cardholder data to a third party (Receiver) requires a proof of compl
 
 The document you need for compliance validation is the Attestation of Compliance (AOC). The Attestations of Compliance is the only official document recognized for PCI DSS validation. Any other forms of certification issued for the purposes of illustrating compliance to PCI DSS are not acceptable for proving compliance.
 
-Example of an AOC: 
+Example of an AOC: [AOC](Attestation of Compliance_Version 3.2_April 2016.pdf)
 
 ### Useful Links
 
