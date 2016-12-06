@@ -6,20 +6,20 @@ As an independent payment service provider, we support a variety of internationa
 
 The following acquirer are directly integrated and fully supported:
 
-| Acquirer Europe | Acquirer International |
-| -- | -- |
-| Aduno SA | Wirecard |
-| European Merchant Services EMS | Cardnet Merchant Services (Lloyds) |
-| SIX Payment Services | Nets Holding A/S  |
-| Acceptance | Worldpay |
-| B+S Card Service GmbH | American Express Int'l |
-| ConCardis GmbH | AirPlus  |
-| Elavon Merchant Services | UATP  |
-| EVO Payments International | JP Morgan Chase |
-| Hobex AG |  |
-| SIX Payment Services Austria | |
-| Société Générale |  |
-| Swisscard AECS |  - |
+| Acquirer Switzerland | Acquirer Europe | Acquirer International |
+| -- | -- | -- |
+| Aduno SA | European Merchant Services EMS | Wirecard |
+| Swisscard AECS | SIX Payment Services | Cardnet Merchant Services (Lloyds) |
+| Postfinance | Nets Holding A/S  | Nets Holding A/S  |
+| MyOne Service | Acceptance | Worldpay |
+| -| B+S Card Service GmbH | American Express Int'l |
+|  -| ConCardis GmbH  |AirPlus  |
+|  -| Elavon Merchant Services  |UATP  |
+|   -| Hobex AG |JP Morgan Chase |
+|  - | Deutsche Postbank |- |
+| - | Société Générale | - |
+
+
 
 
 
