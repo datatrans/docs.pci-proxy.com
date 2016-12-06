@@ -27,5 +27,5 @@ The following acquirer are directly integrated and fully supported:
 
 
 
-
+---
 
