@@ -1,4 +1,4 @@
-# Supported Credit Cards
+![]()# Supported Credit Cards
 
 PCI Proxy supports all major credit card brands. Please see the following list with our respective parameter values for our Payment Pages (e.g. ```&paymentmethod=VIS```):
 
@@ -15,3 +15,4 @@ PCI Proxy supports all major credit card brands. Please see the following list w
 Please let us know, if you like to add a specific card brand.
 
 
+![](Card Brands.jpg)
