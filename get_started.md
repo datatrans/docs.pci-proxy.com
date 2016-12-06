@@ -106,6 +106,8 @@ Once the channel or receiver is added to your Sandbox, you can start to collect 
   
   3.	Perform a pull reques against a receiver (3rd Party): https://docs.pci-proxy.com/forward.html
 
+Please note: In test mode, only test credit cards are allowed. These cards are not involve any actual conversion or transaction and do not work on the PCI Proxy LIVE Environment
+
 ...
 
 
