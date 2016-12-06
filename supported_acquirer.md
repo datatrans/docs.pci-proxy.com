@@ -24,7 +24,7 @@ The following acquirer are some of our directly integrated and fully supported a
 
 
 
-![](Card Brands.jpg)
+
 
 
 
