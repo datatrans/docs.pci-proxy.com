@@ -22,7 +22,9 @@ By using tokenization, our APIs ensure **sensitive payment data never touch your
 
 ## Quick Start
 
-The fastest way to get started with PCI Proxy is by following our quick start guide. 
+
+If you are just getting started with PCI Proxy, it is highly recommended that you start with the get started guide first.
+ 
 
  1. [Sign up](https://www.pci-proxy.com/#/signup) for a free test account.
  2. [Choose API](collect_payment_data.html) to collect or extract payment data.
