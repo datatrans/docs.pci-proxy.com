@@ -8,8 +8,9 @@ The sign can be generated in the Datatrans Web Admin Tool (http://pilot.datatran
 
 For every request you make against our PCI Proxy, we ask for your security sign. It is a digital signature that tells us that it is really you and secures the data transmission. We differentiate between the following two:
 
-**Static Sign1 (X-CC-SIGN):** Our [Webservice (XML/SOAP) Proxy](https://docs.pci-proxy.com/webservice.html), the [Forward Proxy](https://docs.pci-proxy.com/forward.html) and our [Charge API](https://docs.pci-proxy.com/charge.html) need a static sign. You send it as X-CC-SIGN in the http header with every webservice call (collect or forward). When you sign up for the developer test account, we set the  *X-CC-SIGN* for you. You can change it any time in our [web admin tool](http://pilot.datatrans.biz) under *“UPP Administration” / “Security”*.
 
+
+**Static Sign1 (X-CC-SIGN):** Our [Webservice (XML/SOAP) Proxy](https://docs.pci-proxy.com/webservice.html), the [Forward Proxy](https://docs.pci-proxy.com/forward.html) and our [Charge API](https://docs.pci-proxy.com/charge.html) need a static sign. You send it as X-CC-SIGN in the http header with every webservice call (collect or forward). When you sign up for the developer test account, we set the  *X-CC-SIGN* for you. You can change it any time in our [web admin tool](http://pilot.datatrans.biz) under *“UPP Administration” / “Security”*.
 
 
 **Dynamic Sign2 (SHA Hash): **
