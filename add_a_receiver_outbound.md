@@ -19,6 +19,8 @@ PCI Proxy supports already a bunch on test and production gateways. Feel free an
 
 ## Proof of Compliance (AOC)
 
+The Attestation of Compliance (AOC) is a mandatory document that we need to connect with another API.
+
 Forwarding cardholder data to a third party (Receiver) requires a proof of compliance. As a business owner, it is your responsibility to make sure you are partnering with the right service providers (Receiver). Knowing your partners compliance status provides assurance and awareness about how they deal with cardholder data of your customers.
 
 The document you need for compliance validation is the Attestation of Compliance (AOC). The Attestations of Compliance is the only official document recognized for PCI DSS validation. Any other forms of certification issued for the purposes of illustrating compliance to PCI DSS are not acceptable for proving compliance.
@@ -31,8 +33,5 @@ Global Registry of PCI compliant service providers:
 - http://www.visa.com/splisting/searchGrsp.do
 - https://www.visaeurope.com/receiving-payments/security/downloads-and-resources
 - https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html
-
-Official PCI DSS Document Library, FAQs
-
 - https://de.pcisecuritystandards.org/document_library
 - https://www.pcisecuritystandards.org/faqs
