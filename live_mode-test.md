@@ -3,7 +3,7 @@
 #  Sandbox (Test) Environment
 
 
-Before taking your integration live, use our sandbox environment to test it thoroughly. The PCI Proxy sandbox environment is a self-contained testing environment, designed to simulate our production environment. Please note, in test mode you can only use test credit cards. 
+Before taking your integration live, use our Sandbox environment to test it thoroughly. The Sandbox environment is a self-contained testing environment, identical to our productive environment. 
 
 
 ---
@@ -11,7 +11,7 @@ Before taking your integration live, use our sandbox environment to test it thor
 
 ##Create a Sandbox Account
 
-Test our solution by creating a Sandbox account: 
+Follow these steps to creat a Sandbox account: 
 
 1.	Sign up for a free test account at http://www.pci-proxy.com/#/signup
 
