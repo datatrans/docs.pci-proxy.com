@@ -29,7 +29,7 @@
    * Shared-Certificates
    * [Supported Acquirer](supported_acquirer.md)
    * [Supported Channels](supported_channels.md)
-   * Supported Receivers
+   * [Supported Receivers](supported_receivers.md)
    * [Supported Credit Cards](supported_credit_cards.md)
 * Others
    * Showcase

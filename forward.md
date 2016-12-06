@@ -1,6 +1,6 @@
 # Forward payment data to 3rd party
 
-Let us assume you send requests with sensitive payment data via API to a 3rd party.
+Let us assume you send requests with sensitive payment data via API to a 3rd party. 
 
 PCI Proxy allows you to retain your existing data communication with PCI-compliant 3rd parties. This can be online travel agencies, payment gateways, hotels, airlines, car rentals, etc. 
 
