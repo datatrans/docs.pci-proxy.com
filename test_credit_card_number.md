@@ -3,6 +3,8 @@
 
 The following credit card numbers can be used for testing purposes in the PCI Proxy Sandbox environment.
 
+**Please note:** Test rules and 3D support is only needed for transactions and not for tokenization.
+
 
 
 | Card Type | Card Number | Expiration Date | CVV  | Test Rule | Support 3D |
@@ -24,17 +26,12 @@ The following credit card numbers can be used for testing purposes in the PCI Pr
 
 ### Test Rules
 
+
 | Amount / amount range | Error message |
 | -- | -- |
 | <= 90.-- | Transaction authorized |
 | > 90.-- and <= 100.-- | Transaction declined (i.e. insufficient limit, bad expiry date) |
 | > 110.-- | Card blocked (lost or stolen) |
-
-
-
-
-<img src="https://jobs.visa.com/sites/visa/images/visa_logo_blu.png" width="200px" height="200px" />
-
 
 
 
