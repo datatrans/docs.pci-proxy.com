@@ -59,7 +59,9 @@ You will need the *Use Forward PULL Proxy* when **you start the request** to for
 > Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live_mode-test.html).
 
 
+#### Add a Receiver to your Sandbox
 
+Check out our Guides and we will show you have to add a receiver in a few steps. 
 
 #### Supported 3rd parties
 
