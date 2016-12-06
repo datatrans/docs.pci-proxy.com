@@ -1,12 +1,13 @@
-# Test Credit Card Number
+# Sandbox Credit Card Data
 
-## Test Card Numbers
 
-We have a set of test credit card numbers that you can use in our test environment to test your integration. Test rules and 3D support is only needed for transactions and not for tokenization.
+The following credit card numbers can be used for testing purposes in the PCI Proxy Sandbox environment.
 
-| Card type | Card number | Expiration Date | CVV  | Test rule | Support 3D |
+
+
+| Card Type | Card Number | Expiration Date | CVV  | Test Rule | Support 3D |
 | -- | -- | -- | -- | -- | -- | -- |
-| Visa | 4242424242424242 | 12/2018 or 06/2018 | 123  | w/limit | No |
+|  | 4242424242424242 | 12/2018 or 06/2018 | 123  | w/limit | No |
 | Visa | 4900000000000086 | 12/2018 or 06/2018 | 123  | wo/limit | Yes |
 | Visa | 4900000000000003 | 12/2018 or 06/2018 | 123  | w/limit | Yes |
 | MasterCard | 5404000000000001 | 12/2018 or 06/2018 | 123 | w/limit | Yes |
@@ -28,3 +29,13 @@ We have a set of test credit card numbers that you can use in our test environme
 | <= 90.-- | Transaction authorized |
 | > 90.-- and <= 100.-- | Transaction declined (i.e. insufficient limit, bad expiry date) |
 | > 110.-- | Card blocked (lost or stolen) |
+
+
+
+
+<img src="https://jobs.visa.com/sites/visa/images/visa_logo_blu.png" width="200px" height="200px" />
+
+
+
+
+
