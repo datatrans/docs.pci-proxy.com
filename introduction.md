@@ -7,9 +7,9 @@ Before taking your integration live, use our sandbox environment to test it thor
 ---
 
 
-## Going Live in a few steps
+## Get A Production Account
 
-You are finish with testing. 
+If you haven't already, contact us for  up for a Braintree production account:
 
 1.	Contact your sales representative and ask for contract
 
@@ -24,7 +24,8 @@ You are finish with testing.
 
  
 ## Production Credentials
-Once you are signed up, you will receive the following test credentials for your sandbox account:
+
+Once you signed a contract, you will receive the following test credentials for your productive account:
 
 | Credential | Description |
 | -- | -- |
