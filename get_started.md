@@ -1,8 +1,10 @@
 # Quick Start Guide
 
-Get ready to start collecting cardholder data and more. The following sections describe how to use the PCI Proxy Sandbox: 
+Get ready to start collecting cardholder data and more. 
+
+The following sections describe how to use the PCI Proxy Sandbox in a few easy steps: 
                   
- Grafik mit den einzelnen Steps.
+ ![](2016_12_06_14_24_41_Dokument3_Word.jpg)
 
 ---
 
@@ -96,7 +98,13 @@ Before you can collect or extract cardholder data, you will need to send us the 
 
 ## 6. Start collect or extract payment information
 
+Once the channel or receiver is added to your Sandbox, you can start to collect or forward cardholder data by performing a pull or push request. 
 
+  1.	Perform a pull request against a channel: https://docs.pci-proxy.com/webservice.html 
+  
+  2.	Receive a push request from a channel: https://docs.pci-proxy.com/webservice.html
+  
+  3.	Perform a pull reques against a receiver (3rd Party): https://docs.pci-proxy.com/forward.html
 
 ...
 
