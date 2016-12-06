@@ -1,8 +1,12 @@
 # Welcome to PCI Proxy
 
-Here you will find information on how to integrate with and use the PCI Proxy. We have tried to make this documentation user-friendly and example-filled, but please drop us a line if you see room for improvement.  
+Here you will find information on how to integrate with and use the PCI Proxy. We have tried to make this documentation as example-filled as possible, so let's check it out !  
 
 ## Overview
+
+Before we get started, take a minute and let us introduce you to the magic of PCI Proxy.  
+
+
 
 PCI Proxy is a tokenization service that allows you to reduce your PCI scope. 
 
