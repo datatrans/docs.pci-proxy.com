@@ -15,7 +15,7 @@
        * [1. Forward](forward.md)
        * [2. Charge](charge.md)
        * [3. Show](show.md)
-       * [4. Validate Credit Cards](validate.md)
+       * [4. Validate](validate.md)
 * Resources
    * [Supported Acquirer](supported_acquirer.md)
    * [Supported Channels](supported_channels.md)
