@@ -1,6 +1,8 @@
 # Welcome to PCI Proxy
 
-Here you will find information on how to integrate with and use the PCI Proxy. We have tried to make the documentations as simple and example-filled as possible, so let's check it out !
+Here you will find information on how to integrate with and use the PCI Proxy. 
+
+We have tried to make the documentations as simple and example-filled as possible, just check it out !
 
 ## Overview
 
