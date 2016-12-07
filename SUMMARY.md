@@ -13,9 +13,9 @@
        * [4. E-Mail](e-mail.md)
    * [Use stored Credit Cards](utilize.md)
        * [1. Forward](forward.md)
-       * [Validate Credit Cards](validate.md)
        * [2. Charge](charge.md)
        * [3. Show](show.md)
+* [Validate Credit Cards](validate.md)
 * Resources
    * [Supported Acquirer](supported_acquirer.md)
    * [Supported Channels](supported_channels.md)
