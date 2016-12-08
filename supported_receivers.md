@@ -28,7 +28,7 @@
 | [Cielo](http://www.cielo.com.br/) | PULL | 
 | [Datacash](http://www.mastercard.com/gateway/) | PULL | 
 | [Diners (Dataflexnet)](https://www.dinersclub.com/) | PULL | 
-| PayPal3t| PULL | 
+| [PayPal3t](https://www.paypal.com/us/webapps/mpp/home)| PULL | 
 | [SaferPay](https://www.six-payment-services.com/en/site/e-commerce/home.html)| PULL | 
 | [Sagepay](http://www.sagepay.co.uk/) | PULL | 
 | [Stripe](https://stripe.com/de)| PULL | 
