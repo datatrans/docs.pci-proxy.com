@@ -35,6 +35,7 @@
    * FAQ
    * [Contact us](contact_us.md)
 * Collect Credit Cards
+   * asda
 * [Forward](forward.md)
 * Use Stored Credit Cards
 
