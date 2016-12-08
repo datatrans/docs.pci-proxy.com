@@ -1,8 +1,8 @@
 # Quick Start Guide
 
-Get ready to start collecting cardholder data and more. 
+Get ready to start collecting cardholder data and more in five simple steps. 
 
-The following sections describe how to use the PCI Proxy Sandbox in a few easy steps: 
+
                   
  ![](2016_12_06_14_24_41_Dokument3_Word.jpg)
 
