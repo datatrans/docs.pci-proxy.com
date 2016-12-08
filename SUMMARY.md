@@ -5,7 +5,6 @@
    * [Productive Environment](introduction.md)
    * [Get Started](get_started.md)
 * [Collect Credit Cards](collect_credit_cards.md)
-   * [Mobile Apps (iOS / Android)](mobile-app.md)
    * [E-Mail](e-mail.md)
 * [Use stored Credit Cards](utilize.md)
    * [Forward](forward.md)
@@ -37,5 +36,6 @@
    * [Webservice (XML/SOAP)](webservice.md)
    * [Website / Application](website-application.md)
    * asda
+* [Mobile Apps (iOS / Android)](mobile-app.md)
 * Use Stored Credit Cards
 
