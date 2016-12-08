@@ -33,8 +33,8 @@
    * [Contact us](contact_us.md)
 * Use Stored Credit Cards
    * [Forward](forward.md)
-   * [Validate](validate.md)
    * [Charge](charge.md)
    * [Show](show.md)
+   * [Validate](validate.md)
    * fsdf
 
