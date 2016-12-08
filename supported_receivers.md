@@ -1,6 +1,6 @@
 # Supported Receivers
 
-| Channel | Type | 
+| Channel | Web Service Type | 
 | -- | -- | 
 | [Amadeus](http://www.amadeus.com/) | PUSH |
 | [Booking](https://www.booking.com/) | PULL | 
@@ -24,7 +24,7 @@ We are adding more receivers. Let us know if a receiver is missing: [setup@pci-p
 
 # Supported Payment Gateways
 
-| Payment Gateways | Type | 
+| Payment Gateways | Web Service Type | 
 | -- | -- | 
 | [Banorte](https://www.banorte.com/wps/portal/gfb/Home/inicio/!ut/p/a1/hc7LDoIwEAXQb3HBlo5QEN01kPCM-IgRujFgasFUSgDh90XixsTH7O7k3MwgihJEq6wvedaVssrEM1Pz5Gpzy9NtCGMn1IH4W-OwwxsXO8YI0hHAlyHwr39EdCK2Szy8iABi7GpArHWA98ZSA998gR8nAkS5kPn0bkqqXLc4og27sIY16r0Z10XX1e1KAQWGYVC5lFww9Vwo8KlRyLZDyRtE9S2BqyH6iMxmD9c73J8!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/) | PUSH |
 | [Braintree](https://www.braintreepayments.com/) | PULL | 
@@ -39,3 +39,4 @@ We are adding more receivers. Let us know if a receiver is missing: [setup@pci-p
 
 We are adding more payment gateways. Let us know if a payment gateway is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
 
+---
