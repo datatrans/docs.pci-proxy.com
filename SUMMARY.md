@@ -34,8 +34,8 @@
 * Collect Credit Cards
    * [Webservice (XML/SOAP)](webservice.md)
    * [Website / Application](website-application.md)
+   * [E-Mail](e-mail.md)
    * asda
-* [E-Mail](e-mail.md)
 * [Mobile Apps (iOS / Android)](mobile-app.md)
 * Use Stored Credit Cards
 
