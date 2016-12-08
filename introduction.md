@@ -1,7 +1,6 @@
 #  Productive (Live) Environment
 
 
-Before taking your integration live, use our sandbox environment to test it thoroughly. The PCI Proxy sandbox environment is a self-contained testing environment, designed to simulate our production environment. Please note, in test mode you can only use test credit cards. 
 
 
 ---
@@ -9,7 +8,7 @@ Before taking your integration live, use our sandbox environment to test it thor
 
 ## Get A Production Account
 
-If you haven't already, contact us for  up for a Braintree production account:
+If you haven't already, contact us for PCI Proxy production account:
 
 1.	Contact your sales representative and ask for contract
 
@@ -35,7 +34,7 @@ Once you signed a contract, you will receive the following test credentials for 
  ---
 
 ## Web Administration Tool
-URL: https://pilot.datatrans.biz/
+URL: https://payment.datatrans.biz/
 
 
 Our web admin tool gives you a comprehensive management tool (backoffice) for initiating charges and credits, analysing of transactions, personalization of the web application interface, creation of reports and management of configuration data.
@@ -74,9 +73,4 @@ For every request you make against our PCI Proxy, we ask for your security sign.
 
 
 
-
-## Going Live
-[setup@pci-proxy.com](mailto:setup@pci-proxy.com):
-
-Once your tests are successful, please activate your account to receive your productive credentials. You will receive your productive merchant ID and productive push URLs depending on your setup.
 
