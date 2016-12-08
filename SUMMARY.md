@@ -14,7 +14,6 @@
    * [Charge](charge.md)
    * [Show](show.md)
    * [Validate](validate.md)
-* [Use stored Credit Cards](utilize.md)
 * [Guides](guides.md)
    * [Generate a Security Sign](generate_a_security_sign.md)
    * [Add a Channel (inbound)](add_a_channel_inbound.md)
