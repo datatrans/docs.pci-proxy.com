@@ -19,7 +19,6 @@
    * [Add a Channel (inbound)](add_a_channel_inbound.md)
    * [Add a Receiver (outbound)](add_a_receiver_outbound.md)
    * [Sandbox Credit Card Data](test_credit_card_number.md)
-   * asd
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
    * Token-Format
