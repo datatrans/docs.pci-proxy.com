@@ -35,6 +35,16 @@ Once you are signed up, you will receive the following test credentials for your
 | Login Data | Username & Password to login to our [web administration tool](https://pilot.datatrans.biz/)  |
 | X-CC-Sign | You will need to sign your webservice calls when you collect or forward payment data. |
 
+---
+
+## Sandbox Endpoints
+
+
+|Pull Endpoint | Push Endpoint |
+|---|---|
+|https://sandbox.pci-proxy.com/v1/pull|https://sandbox.pci-proxy.com/v1/push|
+
+
  ---
 
 ## Web Administration Tool
@@ -76,15 +86,6 @@ Translate HMAC key from hex to byte format. Create string to be signed by concat
 
 ---
 
-## Sandbox Endpoints
-
-
-|Pull Endpoint | Push Endpoint |
-|---|---|
-|https://sandbox.pci-proxy.com/v1/pull|https://sandbox.pci-proxy.com/v1/push|
-
-
- ---
  
  ## Test Data
 
