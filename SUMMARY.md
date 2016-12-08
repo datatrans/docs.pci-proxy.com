@@ -36,6 +36,5 @@
    * [Website / Application](website-application.md)
    * [Mobile Apps (iOS / Android)](mobile-app.md)
    * [E-Mail](e-mail.md)
-   * asda
 * Use Stored Credit Cards
 
