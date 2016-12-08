@@ -5,7 +5,6 @@
    * [Productive Environment](introduction.md)
    * [Get Started](get_started.md)
 * [Collect Credit Cards](collect_credit_cards.md)
-   * Collect Credit Cards
    * [Webservice (XML/SOAP)](webservice.md)
    * [Website / Application](website-application.md)
    * [Mobile Apps (iOS / Android)](mobile-app.md)
