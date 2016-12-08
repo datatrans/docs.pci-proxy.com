@@ -36,4 +36,5 @@
    * FAQ
    * [Contact us](contact_us.md)
 * Collect Credit Cards
+* Use Stored Credit Cards
 
