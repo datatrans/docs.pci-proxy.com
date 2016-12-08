@@ -113,16 +113,14 @@ Please note: Ordinary credit card information cannot be used in the sandbox.
  ---
 
 ## Slack Developer Chat
-[setup@pci-proxy.com](mailto:setup@pci-proxy.com):
 
-Chat with our developers if you need support relating to your sandbox account. 
+Chat with our developers if you need support relating to your sandbox account. Just drop us a line with your name and email adress and we will invite you. 
 
 
 ---
 
 
-## Get Started
-[setup@pci-proxy.com](mailto:setup@pci-proxy.com):
+## Go-Live
 
-Once your tests are successful, please activate your account to receive your productive credentials. You will receive your productive merchant ID and productive push URLs depending on your setup.
+Once your tests are successful, please activate your account at [setup@pci-proxy.com](mailto:setup@pci-proxy.com) to receive your productive credentials. You will receive your productive merchant ID and productive push URLs depending on your setup.
 
