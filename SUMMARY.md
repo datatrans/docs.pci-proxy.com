@@ -9,6 +9,11 @@
    * [Website / Application](website-application.md)
    * [Mobile Apps (iOS / Android)](mobile-app.md)
    * [E-Mail](e-mail.md)
+* Use Stored Credit Cards
+   * [Forward](forward.md)
+   * [Charge](charge.md)
+   * [Show](show.md)
+   * [Validate](validate.md)
 * [Use stored Credit Cards](utilize.md)
 * [Guides](guides.md)
    * [Generate a Security Sign](generate_a_security_sign.md)
@@ -31,9 +36,4 @@
    * Glossary
    * FAQ
    * [Contact us](contact_us.md)
-* Use Stored Credit Cards
-   * [Forward](forward.md)
-   * [Charge](charge.md)
-   * [Show](show.md)
-   * [Validate](validate.md)
 
