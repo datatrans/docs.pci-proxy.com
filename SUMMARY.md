@@ -34,5 +34,5 @@
    * Billing Plan
    * Glossary
    * FAQ
-   * Contact us
+   * [Contact us](contact_us.md)
 
