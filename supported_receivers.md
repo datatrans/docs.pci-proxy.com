@@ -17,6 +17,9 @@
 | [Travelport (Galileo)](https://www.travelport.com) | PULL | 
 | [TrustInternational / Sabre](http://www.trustinternational.com/) | PULL |
 
+Please let us know, if you like to add a specific receiver.
+
+
 ---
 
 # Supported Payment Gateways
@@ -33,3 +36,6 @@
 | [Sagepay](http://www.sagepay.co.uk/) | PULL | 
 | [Stripe](https://stripe.com/de)| PULL | 
 | [Virtual Merchant](https://www.myvirtualmerchant.com/VirtualMerchant/)| PULL |
+
+Please let us know, if you like to add a specific payment gateway.
+
