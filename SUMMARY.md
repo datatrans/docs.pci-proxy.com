@@ -10,7 +10,6 @@
    * [Mobile Apps (iOS / Android)](mobile-app.md)
    * [E-Mail](e-mail.md)
 * [Use stored Credit Cards](utilize.md)
-   * [Forward](forward.md)
    * [Validate](validate.md)
    * [Charge](charge.md)
    * [Show](show.md)
@@ -36,5 +35,6 @@
    * FAQ
    * [Contact us](contact_us.md)
 * Use Stored Credit Cards
+   * [Forward](forward.md)
    * fsdf
 
