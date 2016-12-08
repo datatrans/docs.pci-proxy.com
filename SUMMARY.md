@@ -9,7 +9,6 @@
    * [Website / Application](website-application.md)
    * [Mobile Apps (iOS / Android)](mobile-app.md)
    * [E-Mail](e-mail.md)
-* [Collect Credit Cards](collect_credit_cards.md)
 * [Use stored Credit Cards](utilize.md)
    * [Forward](forward.md)
    * [Validate](validate.md)
