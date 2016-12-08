@@ -90,7 +90,7 @@ Translate HMAC key from hex to byte format. Create string to be signed by concat
  ## Test Data and Test Rules
 
 
-We have a set of test credit card numbers that you can use in our sandbox environment to test your integration. 
+We have a set of test credit card numbers that you can use in our sandbox environment to test your integration. Test rules and 3D support is only needed for transactions and not for tokenization.
 
 | Card type | Card number | Expiration Date | CVV  | Test rule | Support 3D |
 | -- | -- | -- | -- | -- | -- | -- |
@@ -118,6 +118,8 @@ Please note: Ordinary credit card information cannot be used in the sandbox.
 | <= 90.-- | Transaction authorized |
 | > 90.-- and <= 100.-- | Transaction declined (i.e. insufficient limit, bad expiry date) |
 | > 110.-- | Card blocked (lost or stolen) |
+
+
  ---
 
 ## Slack Developer Chat
