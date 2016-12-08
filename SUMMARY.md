@@ -14,7 +14,6 @@
    * [Charge](charge.md)
    * [Show](show.md)
    * [Validate](validate.md)
-* [Guides](guides.md)
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
    * Token-Format
