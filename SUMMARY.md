@@ -4,6 +4,11 @@
    * [Sandbox Environment](live_mode-test.md)
    * [Productive Environment](introduction.md)
    * [Get Started](get_started.md)
+* Collect Credit Cards
+   * [Webservice (XML/SOAP)](webservice.md)
+   * [Website / Application](website-application.md)
+   * [Mobile Apps (iOS / Android)](mobile-app.md)
+   * [E-Mail](e-mail.md)
 * [Collect Credit Cards](collect_credit_cards.md)
 * [Use stored Credit Cards](utilize.md)
    * [Forward](forward.md)
@@ -31,10 +36,5 @@
    * Glossary
    * FAQ
    * [Contact us](contact_us.md)
-* Collect Credit Cards
-   * [Webservice (XML/SOAP)](webservice.md)
-   * [Website / Application](website-application.md)
-   * [Mobile Apps (iOS / Android)](mobile-app.md)
-   * [E-Mail](e-mail.md)
 * Use Stored Credit Cards
 
