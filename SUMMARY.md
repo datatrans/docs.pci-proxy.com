@@ -21,7 +21,7 @@
    * [Sandbox Credit Card Data](test_credit_card_number.md)
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
-   * Token-Format
+   * [Token-Format](token-format.md)
    * [Webservice API](webservice_api.md)
    * [XML Alias Gateway](xml_alias_gateway.md)
    * Shared-Certificates
