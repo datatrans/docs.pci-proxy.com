@@ -10,6 +10,7 @@
    * [Mobile Apps (iOS / Android)](mobile-app.md)
    * [E-Mail](e-mail.md)
 * [Use stored Credit Cards](utilize.md)
+   * [Forward](forward.md)
    * [Validate](validate.md)
    * [Charge](charge.md)
    * [Show](show.md)
@@ -36,6 +37,5 @@
    * [Contact us](contact_us.md)
 * Collect Credit Cards
    * asda
-* [Forward](forward.md)
 * Use Stored Credit Cards
 
