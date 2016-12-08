@@ -15,7 +15,6 @@
    * [Show](show.md)
    * [Validate](validate.md)
 * [Guides](guides.md)
-   * [Add a Channel (inbound)](add_a_channel_inbound.md)
    * [Add a Receiver (outbound)](add_a_receiver_outbound.md)
    * [Sandbox Credit Card Data](test_credit_card_number.md)
 * Resources
@@ -36,5 +35,6 @@
    * [Contact us](contact_us.md)
 * Guides
    * [Generate a Security Sign](generate_a_security_sign.md)
+   * [Add a Channel (inbound)](add_a_channel_inbound.md)
    * asd
 
