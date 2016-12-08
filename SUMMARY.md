@@ -14,6 +14,12 @@
    * [Charge](charge.md)
    * [Show](show.md)
    * [Validate](validate.md)
+* Guides
+   * [Generate a Security Sign](generate_a_security_sign.md)
+   * [Add a Channel (inbound)](add_a_channel_inbound.md)
+   * [Add a Receiver (outbound)](add_a_receiver_outbound.md)
+   * [Sandbox Credit Card Data](test_credit_card_number.md)
+   * asd
 * Resources
    * [IP Whitelisting](ip_whitelisting.md)
    * Token-Format
@@ -30,10 +36,4 @@
    * Glossary
    * FAQ
    * [Contact us](contact_us.md)
-* Guides
-   * [Generate a Security Sign](generate_a_security_sign.md)
-   * [Add a Channel (inbound)](add_a_channel_inbound.md)
-   * [Add a Receiver (outbound)](add_a_receiver_outbound.md)
-   * [Sandbox Credit Card Data](test_credit_card_number.md)
-   * asd
 
