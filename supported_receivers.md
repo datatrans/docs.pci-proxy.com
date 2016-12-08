@@ -17,7 +17,7 @@
 | [Travelport (Galileo)](https://www.travelport.com) | PULL | 
 | [TrustInternational / Sabre](http://www.trustinternational.com/) | PULL |
 
-Please let us know, if you like to add a specific receiver.
+We are adding more receivers. Let us know if a receiver is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
 
 
 ---
@@ -37,5 +37,5 @@ Please let us know, if you like to add a specific receiver.
 | [Stripe](https://stripe.com/de)| PULL | 
 | [Virtual Merchant](https://www.myvirtualmerchant.com/VirtualMerchant/)| PULL |
 
-Please let us know, if you like to add a specific payment gateway.
+We are adding more payment gateways. Let us know if a payment gateway is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
 
