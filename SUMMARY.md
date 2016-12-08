@@ -12,11 +12,11 @@
        * [3. iOS / Android](mobile-app.md)
        * [4. E-Mail](e-mail.md)
    * [4. Validate](validate.md)
+   * Validate Credit Cards
    * [Use stored Credit Cards](utilize.md)
        * [1. Forward](forward.md)
        * [2. Charge](charge.md)
        * [3. Show](show.md)
-   * Validate Credit Cards
 * Resources
    * [Supported Acquirer](supported_acquirer.md)
    * [Supported Channels](supported_channels.md)
