@@ -35,4 +35,5 @@
    * Glossary
    * FAQ
    * [Contact us](contact_us.md)
+* Collect Credit Cards
 
