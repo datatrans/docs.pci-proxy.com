@@ -40,4 +40,4 @@ For [collecting credit cards via webservice (XML/SOAP)](webservice.html) or [for
 | [TrustInternational / Sabre](http://www.trustinternational.com/) | PULL |
 | [Vioma](https://www.vioma.de/) | PULL |
 
-*We are adding more channels. Let us know if a channel is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)*
+We are adding more channels. Let us know if a channel is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
