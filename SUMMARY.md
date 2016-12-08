@@ -12,7 +12,7 @@
        * [3. iOS / Android](mobile-app.md)
        * [4. E-Mail](e-mail.md)
    * [4. Validate](validate.md)
-   * Validate Credit Cards
+   * [Validate Credit Cards](validate_credit_cards.md)
    * [Use stored Credit Cards](utilize.md)
        * [1. Forward](forward.md)
        * [2. Charge](charge.md)
