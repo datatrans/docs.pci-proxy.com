@@ -1,7 +1,6 @@
 # Add a Channel (inbound)
 
 
-## Add a channel
 
 Adding a new channel is easy. Please send the following information to [setup@pci-proxy.com](mailto:). 
 

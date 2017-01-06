@@ -1,7 +1,7 @@
 # Add a Receiver (outbound)
 
 
-Adding a new 3rd party is easy. 
+
 
 Just send the following information to [thirdparty@pci-proxy.com](mailto:) and we will take care on the setup. 
 
@@ -16,6 +16,8 @@ Just send the following information to [thirdparty@pci-proxy.com](mailto:) and w
 You will receive a confirmation as soon as the 3rd party is added.
 
 PCI Proxy supports already a bunch on test and production gateways. Feel free an take a look at: 
+
+---
 
 ## Proof of Compliance (AOC)
 
