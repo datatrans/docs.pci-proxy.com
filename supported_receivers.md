@@ -1,28 +1,28 @@
 # Supported Receivers
 
-| Channel | Web Service Type | 
+
+
+| 3rd Party Gateways | Web Service Type | 
 | -- | -- | 
 | [Amadeus](http://www.amadeus.com/) | PUSH |
+| [Availpro](http://site.availpro.com/) | PUSH |
 | [Booking](https://www.booking.com/) | PULL | 
 | [Cubilis](http://www.cubilis.com/) | PULL | 
-| [Datacash](http://www.mastercard.com/gateway/) | PULL | 
-| [Diners (Dataflexnet)](https://www.dinersclub.com/) | PULL | 
 | [eRevMax Technologies (RateTiger)](http://www.erevmax.com/) | PULL | 
 | [Peakwork](http://www.peakwork.com/) | PULL | 
+| [Protel](http://www.protel.net/de/) | PUSH| 
 | [RateGain](http://rategain.com/) | PULL | 
 | [Realex Payments](https://www.realexpayments.com/) | PULL | 
 | [Sabre](http://www.sabre.com) | PULL |
-| [Six Payment Services](https://www.six-payment-services.com/en/home.html) | PULL |
 | [Siteminder](http://www.siteminder.com) | PULL |
 | [Travelport (Galileo)](https://www.travelport.com) | PULL | 
+| [Traveltainment](http://www.traveltainment.de/) | PULL | 
 | [TrustInternational / Sabre](http://www.trustinternational.com/) | PULL |
+| [WebRezPro](http://www.webrezpro.com/) | PUSH|
+| [Yieldplanet](https://www.yieldplanet.com/) | PUSH|
 
-We are adding more receivers. Let us know if a receiver is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
 
 
----
-
-# Supported Payment Gateways
 
 | Payment Gateways | Web Service Type | 
 | -- | -- | 
@@ -34,9 +34,10 @@ We are adding more receivers. Let us know if a receiver is missing: [setup@pci-p
 | [PayPal3t](https://www.paypal.com/us/webapps/mpp/home)| PULL | 
 | [SaferPay](https://www.six-payment-services.com/en/site/e-commerce/home.html)| PULL | 
 | [Sagepay](http://www.sagepay.co.uk/) | PULL | 
+| [Six Payment Services](https://www.six-payment-services.com/en/home.html) | PULL |
 | [Stripe](https://stripe.com/de)| PULL | 
 | [Virtual Merchant](https://www.myvirtualmerchant.com/VirtualMerchant/)| PULL |
 
-We are adding more payment gateways. Let us know if a payment gateway is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
+We are adding more receivers. Let us know if a receiver is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
 
----
+
