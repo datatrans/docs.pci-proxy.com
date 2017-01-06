@@ -32,7 +32,7 @@
 * Others
     * Showcase
     * Billing Plan
-    * Glossary
-    * FAQ
+    * [Glossary](glossary.md)
+    * [FAQ](faq.md)
     * [Contact us](contact_us.md)
 
