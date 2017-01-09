@@ -1,4 +1,4 @@
-# Supported Receivers
+# Supported Receivers (Gateways)
 
 | 3rd Party Gateways | Web Service Type \(XML/SOAP/JSON\) |
 | --- | --- |

@@ -15,8 +15,8 @@
     * [Show](show.md)
     * [Validate](validate.md)
 * Guides
-    * [Add a Channel \(inbound\)](add_a_channel_inbound.md)
-    * [Add a Receiver \(outbound\)](add_a_receiver_outbound.md)
+    * [Add a Channel \(tokenize\)](add_a_channel_inbound.md)
+    * [Add a Receiver \(detokenize\)](add_a_receiver_outbound.md)
 * Resources
     * [IP Whitelisting](ip_whitelisting.md)
     * [Token-Format](token-format.md)
@@ -25,7 +25,7 @@
     * [Shared-Certificates](shared-certificates.md)
     * [Supported Acquirer](supported_acquirer.md)
     * [Supported Channels](supported_channels.md)
-    * [Supported Receivers](supported_receivers.md)
+    * [Supported Receivers \(Gateways\)](supported_receivers.md)
     * [Supported Credit Cards](supported_credit_cards.md)
 * Others
     * Showcase

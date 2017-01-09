@@ -1,6 +1,6 @@
 # Supported Channels
 
-For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) or [forward stored credit cards](forward.html), we already support a variety of channel APIs \(excerpt\): abcs
+For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we already support a variety of channel APIs: 
 
 | Channel | Type |
 | --- | --- |
@@ -27,8 +27,6 @@ For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) or [f
 | [Tripadvisor](http://developer-tripadvisor.com/connectivity-solutions/instant-booking-api/documentation/booking_submit/) | PUSH |
 | [Vioma](https://www.vioma.de/) | PULL |
 | [WuBook](http://en.wubook.net/) | PULL |
-
-
 
 We are adding more channels. Let us know if a channel is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
 
