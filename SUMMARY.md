@@ -1,9 +1,9 @@
 # Summary
 
 * [Basics](README.md)
+    * [Get Started](get_started.md)
     * [Sandbox Environment](live_mode-test.md)
     * [Productive Environment](introduction.md)
-    * [Get Started](get_started.md)
 * [Tokenize - Collect Credit Cards](collect-credit-cards.md)
     * [Webservice \(XML\/SOAP\)](webservice.md)
     * [Website \/ Application](website-application.md)
