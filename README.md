@@ -1,14 +1,24 @@
-# Welcome to PCI Proxy
+# PCI Proxy Documentation
 
-Here you will find information on how to integrate with and use the PCI Proxy. We have tried to make the documentations as simple and example-filled as possible, just check it out !
+Welcome to PCI Proxy! With this documentation you get familiar with PCI Proxy and reduce your PCI scope in no time.
 
 ## Overview
 
 Before we get started, take a minute and let us introduce you to the magic of PCI Proxy.
 
-PCI Proxy is a tokenization service that allows you to reduce your PCI scope in a simple kind of way.
+![](http://localhost:3000/assets/images/entry_visual.svg)
 
-Our webservice API securely **extracts credit cards out of any XML/SOAP/JSON calls. ** Thereby, your requests and responses remain unchanged. Means, we leave you complete control over your processes. _For instance, you receive XML reservation data from _[_Booking.com_](http://www.booking.com/)_ or other third party systems that contain credit cards, our webservice API filters the card data and replaces them with a token. The rest of the response will remain unchanged, whit the small difference, that there will be a token instead of a real card number. _Same procedure if you use our payment page APIs that will let you **collect payment data on websites or mobile apps**.
+> ##### PCI Proxy is a tokenization service that reduces your PCI scope in a simple and secure way.
+
+Our customer base spans across many different industries and business types. All of them have specific needs and processes in place. PCI Proxy is build with flexibility in mind to accommodate those needs at best.
+
+
+
+---
+
+## Getting Started
+
+Our Webservice API securely **extracts credit cards out of any XML/SOAP/JSON calls. ** Thereby, your requests and responses remain unchanged. Means, we leave you complete control over your processes. _For instance, you receive XML reservation data from _[_Booking.com_](http://www.booking.com/)\_ or other third party systems that contain credit cards, our webservice API filters the card data and replaces them with a token. The rest of the response will remain unchanged, whit the small difference, that there will be a token instead of a real card number. \_Same procedure if you use our payment page APIs that will let you **collect payment data on websites or mobile apps**.
 
 By using tokenization, our APIs ensure **sensitive payment data never touch your systems**. Tokens can be used like normal credit cards. You can validate, forward or charge them. Our APIs detokenize them automatically for processing.
 
@@ -30,4 +40,8 @@ If you are just getting started with PCI Proxy, it is highly recommended that yo
 4. After successful testing, [activate your account](live_mode-test.html) and reduce your PCI scope.
 
 _Before you activate your account, you can use PCI Proxy for free in test mode. With the exception that only _[_test credit cards_](live_mode-test.html)_ can be used, all PCI Proxy features are fully available in test mode._
+
+# Questions?
+
+
 

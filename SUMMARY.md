@@ -3,7 +3,7 @@
 * [Basics](README.md)
     * [Get Started](get_started.md)
     * [Sandbox Environment](live_mode-test.md)
-    * [Productive Environment](introduction.md)
+    * [Go Live](introduction.md)
 * [Tokenize - Collect Credit Cards](collect-credit-cards.md)
     * [Webservice \(XML\/SOAP\)](webservice.md)
     * [Website \/ Application](website-application.md)
@@ -28,8 +28,8 @@
     * [Supported Receivers \(Gateways\)](supported_receivers.md)
     * [Supported Credit Cards](supported_credit_cards.md)
 * Others
-    * Showcase
-    * Billing Plan
+    * [Showcase](showcase.md)
+    * [Billing Plan](billing-plan.md)
     * [Glossary](glossary.md)
     * [FAQ](faq.md)
     * [Contact us](contact_us.md)
