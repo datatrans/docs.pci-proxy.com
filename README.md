@@ -6,17 +6,20 @@ Welcome to PCI Proxy! With this documentation you get familiar with PCI Proxy an
 
 Before we get started, take a minute and let us introduce you to the magic of PCI Proxy.
 
-![](http://localhost:3000/assets/images/entry_visual.svg)
-
 > ##### PCI Proxy is a tokenization service that reduces your PCI scope in a simple and secure way.
 
 Our customer base spans across many different industries and business types. All of them have specific needs and processes in place. PCI Proxy is build with flexibility in mind to accommodate those needs at best.
 
-
+PCI Proxy is a battle-tested tokenization solution that is powered by [Datatrans AG](https://www.datatrans.ch/), the leading Swiss Payment Service Provider. 
 
 ---
 
 ## Getting Started
+
+PCI Proxy operates on the following principle:
+
+1. Securely collect sensitive card data using tokenzation
+2. Use stored card data 
 
 Our Webservice API securely **extracts credit cards out of any XML/SOAP/JSON calls. ** Thereby, your requests and responses remain unchanged. Means, we leave you complete control over your processes. _For instance, you receive XML reservation data from _[_Booking.com_](http://www.booking.com/)\_ or other third party systems that contain credit cards, our webservice API filters the card data and replaces them with a token. The rest of the response will remain unchanged, whit the small difference, that there will be a token instead of a real card number. \_Same procedure if you use our payment page APIs that will let you **collect payment data on websites or mobile apps**.
 
