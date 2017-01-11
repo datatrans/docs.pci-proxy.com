@@ -16,14 +16,12 @@ PCI Proxy is a battle-tested tokenization solution that is powered by [Datatrans
 
 ## Getting Started
 
-PCI Proxy operates on the following principle:
-
-* #### Step 1: Sign up for your free, dedicated sandbox account. 
+PCI Proxy operates on the following principle. Simply level through 
 
 * #### Step 1: [Securely collect sensitive card data with one of our APIs](#step1-securely-collect-sensitive-card-data-with-one-of-our-apis)
 * #### Step 2: [Use stored card data](#use-stored-card-data)
 
-
+#### 
 
 ### Step1: Securely collect sensitive card data
 
@@ -43,15 +41,17 @@ With all described methods, **sensitive card data never touch your servers**.
 * [**Webservice:** Simply redirect requests with sensitive data through PCI Proxy.](/webservice.md)
 * [**Native App:** Natively collect sensitive card data within your mobile app \(iOS / Android\).](/mobile-app.md)
 
-Once sensitive card data is captured, we store the real credit card data in our vaults in Switzerland and return a credit card token to you. Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. With the credit card token linked to the real credit card data, you can now use the token to process the underlying credit card.
+> ### **Congrats, Level 1 completed: You are out of PCI scope! **
+>
+> Once sensitive card data is captured, we store the real credit card data in our vaults in Switzerland and return a credit card token to you. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on to the next level.
 
 ---
 
 ### Step 2: Use stored card data
 
-PCI Proxy allows you to keep your existing business processes as before. 
+Now that you have your credit card token, you can make use of it. PCI Proxy allows you to keep your existing business processes as before. As we connect every stored credit card number to a specific token, you simply use the token to tell PCI Proxy what you want to do with the underlying credit card data.
 
-We provide three methods for using stored card data:
+With the following three methods you can use stored card data:
 
 | Charge | Forward | Show |
 | :--- | :--- | :--- |
@@ -61,9 +61,9 @@ We provide three methods for using stored card data:
 
 
 
-Our Webservice API securely **extracts credit cards out of any XML/SOAP/JSON calls. ** Thereby, your requests and responses remain unchanged. Means, we leave you complete control over your processes. _For instance, you receive XML reservation data from _[_Booking.com_](http://www.booking.com/)\_ or other third party systems that contain credit cards, our webservice API filters the card data and replaces them with a token. The rest of the response will remain unchanged, whit the small difference, that there will be a token instead of a real card number. \_Same procedure if you use our payment page APIs that will let you **collect payment data on websites or mobile apps**.
 
-By using tokenization, our APIs ensure **sensitive payment data never touch your systems**. Tokens can be used like normal credit cards. You can validate, forward or charge them. Our APIs detokenize them automatically for processing.
+
+
 
 ### Overview of major features: Collect, Validate, Use.
 
