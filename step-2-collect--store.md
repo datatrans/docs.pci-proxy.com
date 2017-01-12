@@ -11,11 +11,7 @@ The three main sources of credit card data are:
 
 In order to avoid sensitive card data touching your systems, you pick the relevant source of credit card data and implement the PCI Proxy according to the respective Quickstart.
 
-
-
 > With all described methods, **sensitive card data never touch your servers**.
-
-
 
 | Jump to Quickstart &gt; [Website](/website-application.md) | Jump to Quickstart &gt; [Webservice](/webservice.md) | Jump to Quickstart &gt; [Native App](/mobile-app.md) |
 | :--- | :--- | :--- |
@@ -24,9 +20,16 @@ In order to avoid sensitive card data touching your systems, you pick the releva
 
 ---
 
-> #### **Congrats, Level 1 completed: You are out of PCI scope! **
+> ### **Congrats, Level 2 completed: You are out of PCI scope! **
 >
-> Once sensitive card data is captured, we store the real credit card data in our vaults in Switzerland and return a credit card token to you. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on to the next level.
+> You have securely captured sensitive card data. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+>
+> ##### Questions?
+>
+> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+>
+> Phone: +41 44 256 81 91  
+> Email: [support@pci-proxy.com](/mailto:support@pci-proxy.com)
 
 
 
