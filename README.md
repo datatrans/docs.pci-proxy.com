@@ -8,6 +8,8 @@ Before we get started, take a minute and let us introduce you to the magic of PC
 
 > ##### PCI Proxy is a tokenization service that reduces your PCI scope in a simple and secure way.
 
+PCI Proxy let you **instantly collect and store credit card data **without touching your servers. Once stored and tokenized, you can simply **use tokens to validate, charge, display, or forward **your stored card data.
+
 Our customer base spans across many different industries and business types. All of them have specific needs and processes in place. PCI Proxy is build with flexibility in mind to accommodate those needs at best.
 
 PCI Proxy is a battle-tested tokenization solution that is powered by [Datatrans AG](https://www.datatrans.ch/), the leading Swiss Payment Service Provider.
@@ -16,14 +18,14 @@ PCI Proxy is a battle-tested tokenization solution that is powered by [Datatrans
 
 ## Getting Started
 
-PCI Proxy operates on the following principle. Simply level through 
+PCI Proxy operates on the following principle. Simply level through the following steps to achieve PCI compliance:
 
-* #### Step 1: [Securely collect sensitive card data with one of our APIs](#step1-securely-collect-sensitive-card-data-with-one-of-our-apis)
+* #### Step 1: [Securely collect sensitive card data and store for later use](#step1-securely-collect-sensitive-card-data)
 * #### Step 2: [Use stored card data](#use-stored-card-data)
 
 #### 
 
-### Step1: Securely collect sensitive card data
+### Step 1: Securely collect sensitive card data and store for later use
 
 In general, you have different inbound channels where you receive sensitive card data from customers or partners. The three main sources are:
 
@@ -49,7 +51,7 @@ With all described methods, **sensitive card data never touch your servers**.
 
 ### Step 2: Use stored card data
 
-Now that you have your credit card token, you can make use of it. PCI Proxy allows you to keep your existing business processes as before. As we connect every stored credit card number to a specific token, you simply use the token to tell PCI Proxy what you want to do with the underlying credit card data.
+Now that you have your credit card token, you can make use of it. PCI Proxy allows you to keep your existing business processes as before. As we connect every stored credit card number to a specific credit card token, you simply use the token to tell PCI Proxy what you want to do with the underlying credit card data.
 
 With the following three methods you can use stored card data:
 
@@ -57,13 +59,7 @@ With the following three methods you can use stored card data:
 | :--- | :--- | :--- |
 | Use our payment gateway to charge or validate a stored card. | Pass stored card data on to any PCI-compliant 3rd party. | Let authorized users manually de-tokenize stored card to see it. |
 
-
-
-
-
-
-
-
+### 
 
 ### Overview of major features: Collect, Validate, Use.
 
