@@ -18,7 +18,7 @@ PCI Proxy is a battle-tested tokenization solution that is powered by [Datatrans
 
 ## Getting Started
 
-PCI Proxy operates on the following principle. Simply level through the following steps to achieve PCI compliance:
+PCI Proxy can be integrated by following these two easy steps. Simply level through our guides to achieve PCI compliance:
 
 * #### Step 1: [Securely collect sensitive card data and store for later use](#step1-securely-collect-sensitive-card-data)
 * #### Step 2: [Use stored card data](#use-stored-card-data)
@@ -32,6 +32,7 @@ In general, you have different inbound channels where you receive sensitive card
 | Website | Webservice | Native App |
 | :--- | :--- | :--- |
 | Your customers enter their credit card data on a form within your website. | You receive a request from a remote server including credit card data. | Your customers enter their credit card data on a form within your native app. |
+| ie. Internet Booking Engine \(IBE\) | ie. XML messages with card data from [Booking.com](https://www.booking.com), [Expedia](https://www.expedia.com/), etc. | ie. Mobile Booking Application |
 
 In order to avoid sensitive card data touching your systems, you pick the relevant source of credit card data and implement the PCI Proxy according to the respective Quickstart.
 
@@ -39,12 +40,12 @@ In order to avoid sensitive card data touching your systems, you pick the releva
 
 With all described methods, **sensitive card data never touch your servers**.
 
-* [**Website:** Seamlessly collect sensitive data within your website.](/website-application.md)
-* [**Webservice:** Simply redirect requests with sensitive data through PCI Proxy.](/webservice.md)
-* [**Native App:** Natively collect sensitive card data within your mobile app \(iOS / Android\).](/mobile-app.md)
+| Jump to Quickstart &gt; [Website](/website-application.md) | Jump to Quickstart &gt; [Webservice](/webservice.md) | Jump to Quickstart &gt; [Native App](/mobile-app.md) |
+| :--- | :--- | :--- |
+| Seamlessly collect sensitive data within your website. | Simply redirect requests with sensitive data through PCI Proxy. | Natively collect sensitive card data within your mobile app \(iOS / Android\) |
 
-> ### **Congrats, Level 1 completed: You are out of PCI scope! **
->
+> #### **Congrats, Level 1 completed: You are out of PCI scope! **
+
 > Once sensitive card data is captured, we store the real credit card data in our vaults in Switzerland and return a credit card token to you. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on to the next level.
 
 ---
@@ -55,32 +56,20 @@ Now that you have your credit card token, you can make use of it. PCI Proxy allo
 
 With the following three methods you can use stored card data:
 
-| Charge | Forward | Show |
+| Learn to &gt; [Charge](/charge.md) a stored card | Learn to &gt; [Forward](/charge.md) a stored card | Learn to &gt; [Show](/show.md) a stored card |
 | :--- | :--- | :--- |
 | Use our payment gateway to charge or validate a stored card. | Pass stored card data on to any PCI-compliant 3rd party. | Let authorized users manually de-tokenize stored card to see it. |
 
-### 
+> #### Done! Enjoy PCI compliance in a risk-free environment.
 
-### Overview of major features: Collect, Validate, Use.
+> Now you should have covered all your business processes that existed before you implemented PCI Proxy - just without the PCI hassle. Keep in mind that you can use stored data as often as you need it.
 
-| [**Collect**](collect_payment_data.html) | [**Validate**](validate.html) | [**Utilize**](utilize) |
-| --- | --- | --- |
-| From [Web Service](webservice.html) | [Credit Card Check](validate.html) | [Forward](forward.html) |
-| From [Website / Application](website-application.html) |  | [Charge](charge.html) |
-| From [Mobile App](mobile-app.html) |  | [Show](show.html) |
-
-## Quick Start
-
-If you are just getting started with PCI Proxy, it is highly recommended that you start with the get started guide first.
-
-1. [Sign up](https://www.pci-proxy.com/#/signup) for a free test account.
-2. [Choose API](collect_payment_data.html) to collect or extract payment data.
-3. Explore features, e.g. [validate](validate.html), [charge](charge.html), [forward](forward.html) or [display](retrieve.html) payment data.
-4. After successful testing, [activate your account](live_mode-test.html) and reduce your PCI scope.
-
-_Before you activate your account, you can use PCI Proxy for free in test mode. With the exception that only _[_test credit cards_](live_mode-test.html)_ can be used, all PCI Proxy features are fully available in test mode._
+---
 
 # Questions? {#questions}
 
+Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
 
+Phone: +41 44 256 81 91  
+Email: support@pci-proxy.com
 
