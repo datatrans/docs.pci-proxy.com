@@ -1,4 +1,4 @@
-### Step 2: Securely collect sensitive card data and store for later use
+## Step 2: Securely collect sensitive card data and store for later use
 
 In general, you have different inbound channels where you receive sensitive card data from customers or partners. The three main sources are:
 
