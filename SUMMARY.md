@@ -1,7 +1,7 @@
 # Summary
 
 * [Getting Started](README.md)
-    * [Step 1: Create Sandbox](live_mode-test.md)
+    * [Step 1: Signup & Setup](live_mode-test.md)
     * [Step 2: Collect & Store](step-2-collect--store.md)
     * [Step 3: Use Stored Data](step-3-use-stored-data.md)
     * [Webservice \(XML\/SOAP\)](webservice.md)
@@ -29,6 +29,7 @@
     * [Supported Receivers \(Gateways\)](supported_receivers.md)
     * [Supported Credit Cards](supported_credit_cards.md)
     * [Webservice API](webservice_api.md)
+    * [Sandbox Account](sandbox-environment.md)
 * Others
     * [Showcase](showcase.md)
     * [Billing Plan](billing-plan.md)
