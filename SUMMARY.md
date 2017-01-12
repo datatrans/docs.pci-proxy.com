@@ -20,13 +20,13 @@
 * Resources
     * [IP Whitelisting](ip_whitelisting.md)
     * [Token-Format](token-format.md)
-    * [Webservice API](webservice_api.md)
     * [XML Alias Gateway](xml_alias_gateway.md)
     * [Shared-Certificates](shared-certificates.md)
     * [Supported Acquirer](supported_acquirer.md)
     * [Supported Channels](supported_channels.md)
     * [Supported Receivers \(Gateways\)](supported_receivers.md)
     * [Supported Credit Cards](supported_credit_cards.md)
+    * [Webservice API](webservice_api.md)
 * Others
     * [Showcase](showcase.md)
     * [Billing Plan](billing-plan.md)

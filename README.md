@@ -16,9 +16,9 @@ PCI Proxy is a battle-tested tokenization solution that is powered by [Datatrans
 
 ---
 
-## Getting Started
+## Integration: Getting Started
 
-PCI Proxy can be integrated by following these two easy steps. Simply level through our guides to achieve PCI compliance:
+PCI Proxy can be integrated by following two steps. Simply level through our guides to achieve PCI compliance:
 
 * #### Step 1: [Securely collect sensitive card data and store for later use](#step1-securely-collect-sensitive-card-data)
 * #### Step 2: [Use stored card data](#use-stored-card-data)
@@ -45,7 +45,7 @@ With all described methods, **sensitive card data never touch your servers**.
 | Seamlessly collect sensitive data within your website. | Simply redirect requests with sensitive data through PCI Proxy. | Natively collect sensitive card data within your mobile app \(iOS / Android\) |
 
 > #### **Congrats, Level 1 completed: You are out of PCI scope! **
-
+>
 > Once sensitive card data is captured, we store the real credit card data in our vaults in Switzerland and return a credit card token to you. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on to the next level.
 
 ---
@@ -61,7 +61,7 @@ With the following three methods you can use stored card data:
 | Use our payment gateway to charge or validate a stored card. | Pass stored card data on to any PCI-compliant 3rd party. | Let authorized users manually de-tokenize stored card to see it. |
 
 > #### Done! Enjoy PCI compliance in a risk-free environment.
-
+>
 > Now you should have covered all your business processes that existed before you implemented PCI Proxy - just without the PCI hassle. Keep in mind that you can use stored data as often as you need it.
 
 ---
