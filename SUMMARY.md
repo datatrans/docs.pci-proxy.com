@@ -1,11 +1,11 @@
 # Summary
 
-* [Basics](README.md)
-    * [Get Started](get_started.md)
-    * [Sandbox Environment](live_mode-test.md)
+* [Getting Started](README.md)
+    * [Step 1: Create Sandbox](live_mode-test.md)
+    * [Step 2: Collect & Store](get_started.md)
+    * [Webservice \(XML\/SOAP\)](webservice.md)
     * [Go Live](introduction.md)
 * [Tokenize - Collect Credit Cards](collect-credit-cards.md)
-    * [Webservice \(XML\/SOAP\)](webservice.md)
     * [Website \/ Application](website-application.md)
     * [Mobile Apps \(iOS \/ Android\)](mobile-app.md)
     * [E-Mail](e-mail.md)

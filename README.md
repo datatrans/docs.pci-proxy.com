@@ -20,6 +20,7 @@ PCI Proxy is a battle-tested tokenization solution that is powered by [Datatrans
 
 PCI Proxy can be integrated by following two steps. Simply level through our guides to achieve PCI compliance:
 
+* #### Step 1: Create Sandbox
 * #### Step 1: [Securely collect sensitive card data and store for later use](#step1-securely-collect-sensitive-card-data)
 * #### Step 2: [Use stored card data](#use-stored-card-data)
 
