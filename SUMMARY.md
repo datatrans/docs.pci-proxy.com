@@ -3,7 +3,7 @@
 * [Getting Started](README.md)
     * [Step 1: Signup & Setup](live_mode-test.md)
     * [Step 2: Collect & Store](step-2-collect--store.md)
-        * [Webservice](webservice.md)
+        * [Web Service](webservice.md)
         * [Website \/ Application](website-application.md)
         * [Mobile Apps \(iOS \/ Android\)](mobile-app.md)
         * [E-Mail](e-mail.md)

@@ -1,26 +1,14 @@
-# Extract credit cards from XML/SOAP/JSON calls
+# Quickstart: Collect card data within Web Service requests
 
-Let us assume you receive or request messages including payment data \(credit cards\) via API from a partner \(channel\).
+Securely extract sensitive card data out of your web service communication.
 
-`By placing PCI Proxy between you and the channel`, payment data is extracted and automatically stored in our secure vault. A reference number \(token\) is issued that substitutes the payment data in the request or response. The message structure of the channel API always remains the same.
+Simply `redirect requests containing sensitive card data through PCI Proxy` before it hits your servers. PCI Proxy automatically scans requests for sensitive card data. Located card data is instantly collected, tokenized and stored in our secure vaults in Switzerland. A reference number \(token\) is issued that substitutes the sensitive data in the request or response. The message structure of the channel API always remains the same.
 
-_You are allowed to store the token in your system, as it is not PCI DSS relevant._
-
-The token can be used later on to charge, forward or retrieve payment data.
-
-**All happens before sensitive payment data ever touch your server to reduce your PCI scope.**
+**All happens before sensitive card data ever touches your servers to reduce your PCI scope.**
 
 ---
 
-**Failure Security & Response Times**
 
-_We understand the challenges of high availability and low response times. Multiple geo-redundant server layouts and blazing fast connections ensure response times are kept at a minimum. PCI Proxy is designed to add only a fractional overhead of 5 – 50 ms per conversion._
-
-_We also have SLAs ready for you. Please _[_get in touch_](https://www.pci-proxy.com/#/signup)_ for more info._
-
-## How to start
-
-> [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
 
 In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
@@ -106,6 +94,4 @@ To switch PCI Proxy between you and a channel that pushes data, you just add a n
 #### VPN and Leased Lines
 
 In case the channel transmits your data over VPN or Leased Line, we can add secure connections to adapt to your needs. Please [get in touch](https://www.pci-proxy.com/#/signup) for more info.
-
-
 
