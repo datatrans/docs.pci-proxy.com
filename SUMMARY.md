@@ -2,9 +2,11 @@
 
 * [Getting Started](README.md)
     * [Step 1: Create Sandbox](live_mode-test.md)
-    * [Step 2: Collect & Store](get_started.md)
+    * [Step 2: Collect & Store](step-2-collect--store.md)
+    * [Step 3: Use Stored Data](step-3-use-stored-data.md)
     * [Webservice \(XML\/SOAP\)](webservice.md)
     * [Go Live](introduction.md)
+* [Quick Start alt](get_started.md)
 * [Tokenize - Collect Credit Cards](collect-credit-cards.md)
     * [Website \/ Application](website-application.md)
     * [Mobile Apps \(iOS \/ Android\)](mobile-app.md)
