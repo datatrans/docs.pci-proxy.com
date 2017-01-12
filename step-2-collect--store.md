@@ -1,6 +1,6 @@
 # Step 2: Collect sensitive card data and store for later use
 
-In general, you have different inbound channels where you receive sensitive card data from customers or partners. 
+In general, you have different inbound channels where you receive sensitive card data from customers or partners.
 
 The three main sources of credit card data are:
 
@@ -11,12 +11,18 @@ The three main sources of credit card data are:
 
 In order to avoid sensitive card data touching your systems, you pick the relevant source of credit card data and implement the PCI Proxy according to the respective Quickstart.
 
-With all described methods, **sensitive card data never touch your servers**.
+
+
+> With all described methods, **sensitive card data never touch your servers**.
+
+
 
 | Jump to Quickstart &gt; [Website](/website-application.md) | Jump to Quickstart &gt; [Webservice](/webservice.md) | Jump to Quickstart &gt; [Native App](/mobile-app.md) |
 | :--- | :--- | :--- |
 | ![](/assets/Website.png) | ![](/assets/Webservice.png) | ![](/assets/App.png) |
 | Seamlessly collect sensitive data within your website. | Simply redirect requests with sensitive data through PCI Proxy. | Natively collect sensitive card data within your mobile app \(iOS / Android\) |
+
+---
 
 > #### **Congrats, Level 1 completed: You are out of PCI scope! **
 >

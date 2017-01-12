@@ -107,5 +107,3 @@ To switch PCI Proxy between you and a channel that pushes data, you just add a n
 
 In case the channel transmits your data over VPN or Leased Line, we can add secure connections to adapt to your needs. Please [get in touch](https://www.pci-proxy.com/#/signup) for more info.
 
-
-
