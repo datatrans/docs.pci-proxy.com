@@ -8,7 +8,7 @@ The parameters will be sent as HTTP headers.
 
 | **PCI Proxy PULL Endpoint:** |
 | --- |
-| [https://pilot.datatrans.biz/upp/proxy/pull/](https://pilot.datatrans.biz/upp/proxy/pull/) |
+| [https://sandbox.pci-proxy.com/v1/pull](https://sandbox.pci-proxy.com/v1/pull) |
 
 * **Mandatory input parameters:**
 
