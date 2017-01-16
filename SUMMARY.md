@@ -1,7 +1,7 @@
 # Summary
 
 * [Getting Started](README.md)
-    * [Step 1: Signup & Setup](live_mode-test.md)
+    * [Step 1: Signup and Setup](step-1-signup-and-setup.md)
     * [Step 2: Collect & Store](step-2-collect--store.md)
         * [Web Service](webservice.md)
         * [Website \/ Application](website-application.md)
@@ -13,7 +13,6 @@
         * [Validate](validate.md)
         * [Show](show.md)
     * [Step 4: Go Live](introduction.md)
-* [Step 1: Signup and Setup](step-1-signup-and-setup.md)
 * Guides
     * [Add a Channel \(tokenize\)](add_a_channel_inbound.md)
     * [Add a Receiver \(detokenize\)](add_a_receiver_outbound.md)
