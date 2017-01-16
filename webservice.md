@@ -2,39 +2,54 @@
 
 Securely extract sensitive card data out of your web service communication.
 
-Simply `redirect requests containing sensitive card data through PCI Proxy` before it hits your servers. PCI Proxy automatically scans requests for sensitive card data. Located card data is instantly collected, tokenized and stored in our secure vaults in Switzerland. A reference number \(token\) is issued that substitutes the sensitive data in the request or response. The message structure of the channel API always remains the same.
+Simply `redirect requests containing sensitive card data through PCI Proxy` to avoid sensitive data hitting your servers. PCI Proxy automatically scans requests for sensitive card data. Located card data is instantly collected, tokenized and stored in our secure vaults in Switzerland. A reference number \(token\) is issued that substitutes the sensitive data in the request or response. The message structure of the channel API always remains the same.
 
 **All happens before sensitive card data ever touches your servers to reduce your PCI scope.**
 
 ---
 
+## Understand channel types
+
+The integration of PCI Proxy for Web Service depends on the channel type. In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract sensitive data from both.
+
+| PULL Channel | PUSH Channel |
+| :--- | :--- |
+| ![](/assets/pull_status_quo.png) | ![](/assets/channel_push_status_quo.png) |
+| Whenever _you start the request_ and _receive card data in the response_ \(channel provides API\), we talk about a PULL channel type.  | Whenever the _channel starts the request_ and _sends card data in the request _\(you provide API\), we talk about a PUSH channel type.  |
+
+Please see a list of supported channels and their respective channel type: [Supported Channels](/supported_channels.md).
+
+### Process flow: PULL channel
+
+1. Simply redirect your channel request to PCI Proxy PULL endpoint and add 3 HTTP headers. 
+2. PCI Proxy forwards your request directly to the URL in the HTTP header you just added. 
+3. Channel sends response message to PCI Proxy. 
+4. PCI Proxy scans response message for sensitive card data and tokenizes located card data. 
+5. PCI Proxy forwards response message with tokenized credit card data to you.
 
 
-In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
 
-Do you pull data from a channel \(API endpoint at the channel\) = PULL
+---
 
-Does the partner channel push the data directly to you \(API endpoint at you\) = PUSH
+## 2. Add channel to your account
 
-## Perform a pull request against another API \(PULL\)
+Please send us a quick email with all [supported channels](/supported_channels.md) you would like to add to your account to [setup@pci-proxy.com](/mailto:setup@pci-proxy.com). In case, you would like to add a channel that is currently not supported, please send the following information to [setup@pci-proxy.com](mailto:):
 
-**Understanding the process flow:**
+| Information | Description |
+| --- | --- |
+| Merchant ID | Your merchant ID |
+| Channel Type | Define if it is a push or pull channel. |
+| API endpoint | The URL where we should forward the request to. |
+| Sample Request & Response | Please include API name, required headers, auth fields, and request method. |
 
-You will use the _Collect Webservice PULL Proxy_ when you start the request and receive the payment data in the response.
+You receive a confirmation once the channel is successfully added. For push channels, you also receive `{YOUR-SPECIFIC-KEY}`.
 
-![Channel PULL](Channel PULL.png)
+---
 
-**Consider a business that needs this ability:**
+## 3a. Make a PULL request
 
-_You are a travel technology company pulling new reservations from portals such as Booking.com. As reservations may contain payment data, Booking.com asks for your PCI DSS compliance._
-
-_By using PCI Proxy, Booking.com removes this requirement from you, because we as a company are PCI DSS compliant and you can bank on our full Level 1 PCI DSS compliance._
-
-### Quick Start Guide:
-
-1. Add a channel to your account
-2. Add required HTTP header to your request.
-3. POST your XML/SOAP request having PCI Proxy as endpoint.
+1. Add required HTTP header to your request
+2. POST your XML/SOAP request having PCI Proxy as endpoint.
 
 | **PCI Proxy PULL Endpoint:** |
 | --- |

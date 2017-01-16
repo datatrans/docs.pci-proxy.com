@@ -216,9 +216,9 @@ Additionally, the iframe sends the `ready` event to signal that the iframe is re
 }
 ```
 
-This event allows you to customize the iframe. 
+This event allows you to customize the iframe.
 
-Currently it's possible to change the `placeholder` attribute of the card number input field. 
+Currently it's possible to change the `placeholder` attribute of the card number input field.
 
 ```js
 function windowEventHandler( event ) {
