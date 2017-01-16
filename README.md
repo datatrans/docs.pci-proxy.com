@@ -23,7 +23,7 @@ PCI Proxy can be integrated by following these three steps. Simply level through
 * #### Step 1: [Signup and setup Sandbox](/step-1-signup-and-setup.md)
 * #### Step 2: [Securely collect sensitive card data and store for later use](/step-2-collect--store.md)
 * #### Step 3: [Use stored card data](/step-3-use-stored-data.md)
-* #### Step 4: [Go live](/introduction.md)
+* #### Step 4: [Go live](/step-4-go-live.md)
 
 ---
 

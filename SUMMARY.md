@@ -12,7 +12,7 @@
         * [Charge](charge.md)
         * [Validate](validate.md)
         * [Show](show.md)
-    * [Step 4: Go Live](introduction.md)
+    * [Step 4: Go Live](step-4-go-live.md)
 * Guides
     * [Add a Channel \(tokenize\)](add_a_channel_inbound.md)
     * [Add a Receiver \(detokenize\)](add_a_receiver_outbound.md)
