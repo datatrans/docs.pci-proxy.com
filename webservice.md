@@ -55,7 +55,7 @@ You receive a confirmation once the channel is successfully added. For push chan
 
 Now that you have added a PULL channel to your account, you can redirect requests to that channel via the PCI Proxy. For your convenience we have prepared a little comparison of two curl samples
 
-**Example without PCI Proxy:**
+**Example **_**without**_** PCI Proxy**
 
 This is just a basic example of how your request could look like and should reflect a standard XML request that you directly send to a channel API endpoint without PCI Proxy:
 
@@ -63,32 +63,31 @@ This is just a basic example of how your request could look like and should refl
 $ curl "https://api.channel.com/"                   // HOST: Channel API Endpoint
         -X POST                                     // Request Method POST
         -H "Content-Type: text/xml"                 // Content-Type - We support almost all types
-        -d 'yourRequest.xml'                        // XML Body message that is expected by Channel 
+        -d 'yourRequest.xml'                        // XML Body message that is expected by Channel
 ```
 
-### **Example with PCI Proxy:**
+### **Example **_**with**_** PCI Proxy**
 
 In order to have PCI Proxy clean up and tokenize credit card data that the channel might send as a response, redirect your XML request \(`yourRequest.xml`\) through PCI Proxy by using the following curl sample:
 
 ```java
- 
 $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
         -X POST                                      // Request Method POST
-        
+
         -H "X-CC-MERCHANT-ID: 1100005433"            // New HEADER : Merchant ID you received during Signup
         -H "X-CC-URL: https://api.channel.com/"      // New HEADER parameter: Channel API Endpoint
         -H "X-CC-SIGN: 160203112421662698"           // New HEADER parameter: Security Sign you created in Step 1 
-        
+
         -H "Content-Type: text/xml"                  // Content-Type - We support almost all types
         -d 'yourRequest.xml'                         // XML Body message that is expected by Channel
 ```
 
-Universally spoken, you only need to change your current request as follows: 
+Universally spoken, you only need to change your current request as follows:
 
-1. Change `HOST` from Channel API Endpoint to PCI Proxy endpoint 
-2. Add required `HTTP header` to your request
+1. ##### Change `HOST` from Channel API Endpoint to PCI Proxy endpoint 
+2. ##### Add required `HTTP header` to your request
 
-**Done! **
+> Good Job! The response from the channel will now automatically filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we put the tokenized card data in
 
 #### PCI Proxy PULL Endpoint
 
