@@ -1,23 +1,25 @@
-# Quickstart: Collect card data within Web Service requests
+# Quickstart: Forward card data to a Receiver via web service
 
-Securely extract sensitive card data out of your web service communication.
+PCI Proxy allows you to retain your existing data communication with PCI-compliant Receiver. This can be online travel agencies, payment gateways, hotels, airlines, car rentals, etc.
 
-Simply `redirect requests containing sensitive card data through PCI Proxy` to avoid sensitive data hitting your servers. PCI Proxy automatically scans requests for sensitive card data. Located card data is instantly collected, tokenized and stored in our secure vaults in Switzerland. A reference number \(token\) is issued that substitutes the sensitive data in the request or response. The message structure of the channel API always remains the same.
+> **Forwarding card data to a Receiver works the same way as **[**collecting card data via web service**](/webservice.md)**.**
 
-**All happens before sensitive card data ever touches your servers to reduce your PCI scope.**
+Simply `redirect requests containing tokens through PCI Proxy` to avoid sensitive data hitting your servers. PCI Proxy automatically scans requests for tokens and replaces located tokens with sensitive card data and forwards the populated request to the PCI-compliant Receiver. The message structure of your request always remains the same. Any responses from the Receiver are passed back to you and sensitive card data is tokenized if needed.
+
+**Your requests are populated with sensitive card data after they left your systems to keep you out of PCI scope.**
 
 ---
 
-## 1. Add channel to your account
+## 1. Add Receiver to your account
 
-**Understand channel types**
+**Understand Receiver types**
 
-The integration of PCI Proxy for Web Service depends on the channel type. In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract sensitive data from both.
+Forwarding card data to a Receiver via web service can work in two ways. In general, you either perform a pull request to forward card data to a Receiver or a Receiver starts the request to ask for card data. PCI Proxy can populate sensitive data in both.
 
 | PULL Channel | PUSH Channel |
 | :--- | :--- |
 | ![](/assets/channel_pull_status_quo_color.png) | ![](/assets/channel_push_status_quo_color.png) |
-| Whenever _you start the request_ and _receive card data in the response_ \(channel provides API\), we talk about a PULL channel type. | Whenever the _channel starts the request_ and _sends card data in the request _\(you provide API\), we talk about a PUSH channel type. |
+| Whenever _you start the request_ and _send card data in the request_ \(Receiver provides API\), we talk about a PULL Receiver type. | Whenever the _ Receiverstarts the request_ and _sends card data in the request _\(you provide API\), we talk about a PUSH channel type. |
 
 Please see a list of supported channels and their respective channel type: [Supported Channels](/supported_channels.md).
 
