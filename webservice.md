@@ -75,7 +75,7 @@ $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
 
 _Note: In test mode, only test credit cards are allowed!_
 
-> ### **Congrats, Level 2 completed: You are out of PCI scope! **
+> ### **Congrats, Level 2 completed: Your channel is out of PCI scope! **
 >
 > You have securely captured sensitive card data. The response from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the response and forward it to you. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
 
@@ -123,7 +123,7 @@ Redirect requests coming from a channel with a single step:
 
 _Note: In test mode, only test credit cards are allowed!_
 
-> ### **Congrats, Level 2 completed: You are out of PCI scope! **
+> ### **Congrats, Level 2 completed: Your channel is out of PCI scope! **
 >
 > If the channel now sends a request to the channel-specific PCI Proxy PUSH endpoint, PCI Proxy recognizes the channel and connects it to your account. The request coming from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to you.
 >
@@ -138,6 +138,15 @@ _Note: In test mode, only test credit cards are allowed!_
 | 2. PCI Proxy recognizes channel by endpoint, scans request message for sensitive data, and tokenizes located card data. |
 | 3. PCI Proxy forward request message with tokenized credit card data to you. |
 | 4. Response message from you will just be passed through PCI Proxy back to channel. |
+
+---
+
+> ##### Questions?
+>
+> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+>
+> Phone: +41 44 256 81 91  
+> Email: [support@pci-proxy.com](/mailto:support@pci-proxy.com)
 
 
 

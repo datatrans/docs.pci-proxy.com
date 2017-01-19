@@ -6,7 +6,7 @@
 
 ---
 
-## 1. Pick integration option
+## 1. Pick an integration option
 
 With the following 4 options, you can collect sensitive card data and reduce your PCI scope to the least, qualifying for the [SAQ A](understand_pci_dss.html).
 
@@ -15,9 +15,9 @@ With the following 4 options, you can collect sensitive card data and reduce you
 | ![Redirect Mode](redirect.png) | ![Lightbox Mode](lightbox.png) | ![Inline Mode](inline2.png) | ![Tokenizer iFrame](tokenizer_iframe.png) |
 | Redirect consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay \(iFrame\). | Payment page managed by Datatrans is incorporated with iFrame. | Single form field for instant tokenization with callbacks embedded as iFrame |
 
-* The easiest way to start is by integrating our Payment Page `Redirect Mode` or `Lightbox Mode`. It takes care of building a conversion-optimized HTML form and validating input fields. 
+* The easiest way to start is by integrating our Payment Page `Redirect Mode` or `Lightbox Mode`. It takes care of building a conversion-optimized HTML form and validating input fields.
 
-* If you need a more custom approach, try our Payment Page `Inline Mode`. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS. 
+* If you need a more custom approach, try our Payment Page `Inline Mode`. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
 
 * The `Tokenizer iFrame` can be used if you only need to tokenize sensitive card data.
 
@@ -80,9 +80,9 @@ To integrate the Payment Page `Inline Mode` you have to use an iframe:
 
 _Note: In test mode, only test credit cards are allowed!_
 
-> #### Good Job!
+> ### Congrats, Level 2 completed: Your site is out of PCI scope!
 >
-> You just captured credit card data on your website without sensitive data touching your servers.
+> You have securely captured sensitive card data on your website without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
 
 #### Reference
 
@@ -233,6 +233,19 @@ function windowEventHandler( event ) {
         }
     }
 ```
+
+---
+
+> ### Congrats, Level 2 completed: Your site is out of PCI scope!
+>
+> You have securely captured sensitive card data on your website without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+>
+> ##### Questions?
+>
+> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+>
+> Phone: +41 44 256 81 91  
+> Email: [support@pci-proxy.com](/mailto:support@pci-proxy.com)
 
 
 

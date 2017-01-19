@@ -19,13 +19,13 @@ Forwarding card data to a Receiver via web service can work in two ways. In gene
 | PULL Channel | PUSH Channel |
 | :--- | :--- |
 | ![](/assets/channel_pull_status_quo_color.png) | ![](/assets/channel_push_status_quo_color.png) |
-| Whenever _you start the request_ and _send card data in the request_ \(Receiver provides API\), we talk about a PULL Receiver type. | Whenever the _ Receiverstarts the request_ and _sends card data in the request _\(you provide API\), we talk about a PUSH channel type. |
+| Whenever _you start the request_ and _send card data in the request_ \(Receiver provides API\), we talk about a PULL Receiver type. | Whenever the_ Receiver starts a request_ and _you forward card data in the response _\(you provide API\), we talk about a PUSH channel type. |
 
-Please see a list of supported channels and their respective channel type: [Supported Channels](/supported_channels.md).
+Please see a list of supported channels and their respective channel type:[ Supported Receivers \(Gateways\)](/supported_receivers.md).
 
-**Add channel**
+**Add Receiver**
 
-Please send us a quick email with all [supported channels](/supported_channels.md) you would like to add to your account to [setup@pci-proxy.com](/mailto:setup@pci-proxy.com). In case, you would like to add a channel that is currently not supported, please send the following information to [setup@pci-proxy.com](mailto:):
+Please send us a quick email with all [Supported Receivers \(Gateways\)](/supported_receivers.md) you would like to add to your account to [setup@pci-proxy.com](/mailto:setup@pci-proxy.com). In case, you would like to add a Receiver that is currently not supported, please send the following information to [setup@pci-proxy.com](mailto:):
 
 | Information | Description |
 | --- | --- |
@@ -34,20 +34,20 @@ Please send us a quick email with all [supported channels](/supported_channels.m
 | API endpoint | The URL where we should forward the request to. |
 | Sample Request & Response | Please include API name, required headers, auth fields, and request method. |
 
-You receive a confirmation once the channel is successfully added. For push channels, you also receive `{UNIQUE-CHANNEL-KEY}`.
+You receive a confirmation once the Receiver is successfully added. For PUSH Receiver, you also receive `{UNIQUE-CHANNEL-KEY}`.
 
 ---
 
 ## 2a. PULL: Redirect your request through PCI Proxy
 
-Now that you have added a PULL channel to your account, you can easily redirect requests to that channel via the PCI Proxy. For your convenience we have prepared a little comparison of two curl samples _with_ and _without_ PCI Proxy:
+Now that you have added a PULL Receiver to your account, you can easily redirect requests to that Receiver via the PCI Proxy. For your convenience we have prepared a little comparison of two curl samples _with_ and _without_ PCI Proxy:
 
 **Example **_**without**_** PCI Proxy**
 
 This is just a basic example of how your request could look like and should reflect a standard XML request that you directly send to a channel API endpoint without PCI Proxy:
 
 ```java
-$ curl "https://api.channel.com/"                   // HOST: Channel API Endpoint
+$ curl "https://api.receiver.com/"                   // HOST: Receiver API Endpoint
         -X POST                                     // Request Method POST
         -H "Content-Type: text/xml"                 // Content-Type - We support almost all types
         -d 'yourRequest.xml'                        // XML Body message that is expected by Channel
@@ -57,7 +57,7 @@ $ curl "https://api.channel.com/"                   // HOST: Channel API Endpoin
 
 Universally spoken, you only need to change your request above as follows:
 
-1. ##### Change `HOST` from `Channel API Endpoint` to `PCI Proxy Endpoint`
+1. ##### Change `HOST` from` Receiver API Endpoint` to `PCI Proxy Endpoint`
 2. ##### Add required `HTTP header` to your request
 3. ##### Done!
 
@@ -68,7 +68,7 @@ $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
         -X POST                                      // Request Method POST
 
         -H "X-CC-MERCHANT-ID: 1100005433"            // New HEADER : Merchant ID you received during Signup
-        -H "X-CC-URL: https://api.channel.com/"      // New HEADER parameter: Channel API Endpoint
+        -H "X-CC-URL: https://api.receiver.com/"     // New HEADER parameter: Receiver API Endpoint
         -H "X-CC-SIGN: 160203112421662698"           // New HEADER parameter: Security Sign you created in Step 1 
 
         -H "Content-Type: text/xml"                  // Content-Type - We support almost all types
@@ -77,9 +77,9 @@ $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
 
 _Note: In test mode, only test credit cards are allowed!_
 
-> ### **Congrats, Level 2 completed: You are out of PCI scope! **
+> ### **Congrats, Level 3 completed: You have forwarded card data to a Receiver! **
 >
-> You have securely captured sensitive card data. The response from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the response and forward it to you. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+> You have securely forwarded sensitive card data without ever touching your servers. The request will automatically from the Receiver will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the response and forward it to you. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 4**](/step-4-go-live.md).
 
 #### Reference
 

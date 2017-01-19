@@ -4,19 +4,9 @@ Let us assume you offer a native mobile app to your customers where they can ent
 
 `Our SDKs for iOS and Android collect credit cards in native apps` and automatically store it in our secure vault. A reference number \(token\) is issued and sent to your systems.
 
-_You are allowed to store the token in your system, as it is not PCI DSS relevant._
-
-The token can be used later on to validate, charge, forward or show credit cards.
-
 **All SDKs assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.**
 
-| Supported Credit Card Brands |
-| --- |
-| American Express, Mastercard, Visa, JCB, Diners |
-
-## How to start
-
-> [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
+---
 
 Our library allows you to tokenize credit cards by using your own native forms \(hidden mode\). In hidden mode, you invoke our payment library with the necessary credit card data to generate an alias.
 
@@ -41,6 +31,12 @@ DTAliasRequest* ar = [[DTAliasRequest alloc]
 DTPaymentController* pc = [DTPaymentController 
     paymentControllerWithDelegate:self aliasRequest:ar];
 ```
+
+> ### Congrats, Level 2 competed: Your app is our of PCI scope!
+>
+> You have securely captured sensitive card data within your app without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+
+#### Reference
 
 | iOS Library for iPhone, iPad, iPod touch |
 | --- |
@@ -71,12 +67,27 @@ AliasRequest ar = new AliasRequest(
 PaymentProcessAndroid ppa = new PaymentProcessAndroid(dc,ar);
 ```
 
+> ### Congrats, Level 2 completed: Your site is out of PCI scope!
+>
+> You have securely captured sensitive card data within your app without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+
+#### Reference
+
 | Android Library |
 | --- |
 | [Release Notes](https://pilot.datatrans.biz/showcase/doc/Android_Release_Notes.pdf) |
 | [Developer Manual](https://pilot.datatrans.biz/showcase/doc/Android_Developers_Manual.pdf) |
 | [Android Library \(zip\)](https://pilot.datatrans.biz/showcase/doc/Android_Library.zip) |
 | [Sample application](https://github.com/datatrans/android-sample-app) |
+
+---
+
+> ##### Questions?
+>
+> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+>
+> Phone: +41 44 256 81 91  
+> Email: [support@pci-proxy.com](/mailto:support@pci-proxy.com)
 
 
 

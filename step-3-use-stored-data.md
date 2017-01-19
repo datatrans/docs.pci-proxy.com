@@ -8,7 +8,9 @@ With the following three methods you can use stored card data:
 
 | Learn to &gt; [Charge](/charge.md) a stored card | Learn to &gt; [Forward](/charge.md) a stored card | Learn to &gt; [Show](/show.md) a stored card |
 | :--- | :--- | :--- |
-| Use our payment gateway to charge or validate a stored card. | Pass stored card data on to any PCI-compliant 3rd party. | Let authorized users manually de-tokenize stored card to see it. |
+| Use our payment gateway to charge or validate a stored card. | Pass stored card data on to any PCI-compliant Receiver. | Let authorized users manually de-tokenize stored card to see it. |
+
+---
 
 > #### Questions?
 >

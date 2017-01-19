@@ -1,6 +1,6 @@
 # Quickstart: Collect credit cards via Email
 
-Let us assume you have an offer for your customers and you want to collect the card data directly via email. Just generate a payment link and copy it into your email. Your customers can click on the link and our payment page is opened. They can choose their favorite payment method and pay directly.
+Let us assume you have an offer for your customers and you want to `collect the card data directly via email`. Just generate a payment link and copy it into your email. Your customers can click on the link and our payment page is opened. They can choose their favorite payment method and pay directly.
 
 ## How to start
 
@@ -42,6 +42,19 @@ _Duedate should be in the yyyymmdd format._
     </body>
   </payByEmailService>
 ```
+
+_Note: In test mode, only test credit cards are allowed!_
+
+> ### Congrats, Level 2 completed: Your server is out of PCI scope!
+>
+> You have securely captured sensitive card data through email without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+
+> ##### Questions?
+>
+> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+>
+> Phone: +41 44 256 81 91  
+> Email: [support@pci-proxy.com](/mailto:support@pci-proxy.com)
 
 
 
