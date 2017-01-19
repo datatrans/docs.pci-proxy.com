@@ -81,7 +81,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 #### Reference
 
-| Process Flow with PCI Proxy |
+| PULL Process Flow with PCI Proxy |
 | :--- |
 | ![](/assets/channel_pull_pciproxy_color.png) |
 | 1. Simply redirect your channel request to PCI Proxy PULL endpoint and add 3 HTTP headers. |
@@ -108,37 +108,36 @@ _Note: In test mode, only test credit cards are allowed!_
 
 ## 2b. PUSH: Receive a request from a channel
 
-Contrary to the PULL integration, you usually don't have much influence on how the channel starts the request or don't want to force them to change the integration. Therefore, we use a different approach for PUSH channels. 
+Contrary to the PULL integration, you usually don't have much influence on how the request is started or don't want to force the channel to change the integration. Therefore, we use a different approach for PUSH channels.
 
-When you add a PUSH Channel to your account, you receive a `{UNIQUE-CHANNEL-KEY}` for each channel that is set up. Together with our PCI Proxy service URL, it results in a PCI Proxy PUSH Endpoint that is specific for that channel:
+When you [add a PUSH Channel to your account](#1-add-channel-to-your-account), you receive a `{UNIQUE-CHANNEL-KEY}` for each channel that is set up. Together with our PCI Proxy PUSH service URL, it results in a PCI Proxy PUSH Endpoint that is specific to that channel:
 
 | **PCI Proxy PUSH Endpoint:** |
 | :--- |
 | [https://sandbox.pci-proxy.com/v1/push/](https://sandbox.pci-proxy.com/v1/push/) `{UNIQUE-CHANNEL-KEY}` |
 
-In order to implement a PUSH channel, just do the following:  
+Redirect requests coming from a channel with a single step:
 
-1. ##### Change API endpoint at the channel from `Your API Endpoint` to `PCI Proxy Endpoint with { YOUR SPECIFIC KEY }`
+1. ##### Change API endpoint at the channel from `Your API Endpoint` to channel-specific `PCI Proxy PUSH Endpoint`
 2. ##### Done!
 
 _Note: In test mode, only test credit cards are allowed!_
 
 > #### Good Job!
 >
-> If the channel now sends a request to the channel-specific PCI Proxy PUSH endpoint, PCI Proxy recognizes the channel and connects it to your account. 
+> If the channel now sends a request to the channel-specific PCI Proxy PUSH endpoint, PCI Proxy recognizes the channel and connects it to your account.
 >
 > The request coming from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to you.
 
 #### Reference
 
-| Process Flow with PCI Proxy |
+| PUSH Process Flow with PCI Proxy |
 | :--- |
 | ![](/assets/channel_push_pciproxy_color.png) |
-| 1. Simply redirect your channel request to PCI Proxy PULL endpoint and add 3 HTTP headers. |
-| 2. PCI Proxy forwards your request directly to the URL in the HTTP header you just added. |
-| 3. Channel sends response message to PCI Proxy. |
-| 4. PCI Proxy scans response message for sensitive card data and tokenizes located card data. |
-| 5. PCI Proxy forwards response message with tokenized credit card data to you. |
+| 1. Channel sends request to channel-specific PCI Proxy PUSH endpoint.  |
+| 2. PCI Proxy recognizes channel by endpoint, scans request message for sensitive data, and tokenizes located card data. |
+| 3. PCI Proxy forward request message with tokenized credit card data to you. |
+| 4. Response message from you will just be passed through PCI Proxy back to channel. |
 
 
 
