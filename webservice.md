@@ -134,7 +134,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | PUSH Process Flow with PCI Proxy |
 | :--- |
 | ![](/assets/channel_push_pciproxy_color.png) |
-| 1. Channel sends request to channel-specific PCI Proxy PUSH endpoint.  |
+| 1. Channel sends request to channel-specific PCI Proxy PUSH endpoint. |
 | 2. PCI Proxy recognizes channel by endpoint, scans request message for sensitive data, and tokenizes located card data. |
 | 3. PCI Proxy forward request message with tokenized credit card data to you. |
 | 4. Response message from you will just be passed through PCI Proxy back to channel. |
