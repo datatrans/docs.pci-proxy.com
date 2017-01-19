@@ -75,9 +75,9 @@ $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
 
 _Note: In test mode, only test credit cards are allowed!_
 
-> #### Good Job!
+> ### **Congrats, Level 2 completed: You are out of PCI scope! **
 >
-> The response from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the response and forward it to you.
+> You have securely captured sensitive card data. The response from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the response and forward it to you. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
 
 #### Reference
 
@@ -123,11 +123,13 @@ Redirect requests coming from a channel with a single step:
 
 _Note: In test mode, only test credit cards are allowed!_
 
-> #### Good Job!
+> #### **Congrats, Level 2 completed: You are out of PCI scope! **
 >
-> If the channel now sends a request to the channel-specific PCI Proxy PUSH endpoint, PCI Proxy recognizes the channel and connects it to your account.
->
-> The request coming from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to you.
+> If the channel now sends a request to the channel-specific PCI Proxy PUSH endpoint, PCI Proxy recognizes the channel and connects it to your account. The request coming from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to you.
+
+> Thereby, you have securely captured sensitive card data. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+
+
 
 #### Reference
 

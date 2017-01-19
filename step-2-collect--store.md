@@ -22,11 +22,7 @@ In order to avoid sensitive card data touching your systems, you pick the releva
 
 ---
 
-> ### **Congrats, Level 2 completed: You are out of PCI scope! **
->
-> You have securely captured sensitive card data. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
->
-> ##### Questions?
+> ### Questions?
 >
 > Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
 >
