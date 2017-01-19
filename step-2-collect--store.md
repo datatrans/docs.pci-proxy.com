@@ -13,7 +13,7 @@ The three main sources of credit card data are:
 
 In order to avoid sensitive card data touching your systems, you pick the relevant source of credit card data and implement the PCI Proxy according to the respective Quickstart.
 
-> With all described methods, **sensitive card data never touch your servers**.
+**With all described methods, sensitive card data never touch your servers**.
 
 | Jump to Quickstart &gt; [Website](/website-application.md) | Jump to Quickstart &gt; [Webservice](/webservice.md) | Jump to Quickstart &gt; [Native App](/mobile-app.md) |
 | :--- | :--- | :--- |
