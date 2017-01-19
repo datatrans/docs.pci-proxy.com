@@ -1,8 +1,6 @@
 # Step 4: Go live
 
----
-
-## Get A Production Account
+## Get a production account
 
 If you haven't already contacted us for PCI Proxy production account:
 
