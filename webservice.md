@@ -15,7 +15,7 @@ The integration of PCI Proxy for Web Service depends on the channel type. In gen
 | PULL Channel | PUSH Channel |
 | :--- | :--- |
 | ![](/assets/pull_status_quo.png) | ![](/assets/channel_push_status_quo.png) |
-| Whenever _you start the request_ and _receive card data in the response_ \(channel provides API\), we talk about a PULL channel type.  | Whenever the _channel starts the request_ and _sends card data in the request _\(you provide API\), we talk about a PUSH channel type.  |
+| Whenever _you start the request_ and _receive card data in the response_ \(channel provides API\), we talk about a PULL channel type. | Whenever the _channel starts the request_ and _sends card data in the request _\(you provide API\), we talk about a PUSH channel type. |
 
 Please see a list of supported channels and their respective channel type: [Supported Channels](/supported_channels.md).
 
@@ -27,11 +27,16 @@ Please see a list of supported channels and their respective channel type: [Supp
 4. PCI Proxy scans response message for sensitive card data and tokenizes located card data. 
 5. PCI Proxy forwards response message with tokenized credit card data to you.
 
+### Process flow: PUSH channel
 
+1. Channel sends request to your specific PCI Proxy PUSH endpoint.
+2. PCI Proxy recognizes channel by endpoint, scans request message for sensitive data, and tokenizes located card data. 
+3. PCI Proxy forward request message with tokenized credit card data to you. 
+4. Response message from you will just be passed through PCI Proxy back to channel.
 
 ---
 
-## 2. Add channel to your account
+## 1. Add channel to your account
 
 Please send us a quick email with all [supported channels](/supported_channels.md) you would like to add to your account to [setup@pci-proxy.com](/mailto:setup@pci-proxy.com). In case, you would like to add a channel that is currently not supported, please send the following information to [setup@pci-proxy.com](mailto:):
 
@@ -46,40 +51,64 @@ You receive a confirmation once the channel is successfully added. For push chan
 
 ---
 
-## 3a. Make a PULL request
+## 2a. PULL: Redirect your request through PCI Proxy
 
-1. Add required HTTP header to your request
-2. POST your XML/SOAP request having PCI Proxy as endpoint.
+Now that you have added a PULL channel to your account, you can redirect requests to that channel via the PCI Proxy. For your convenience we have prepared a little comparison of two curl samples
+
+**Example without PCI Proxy:**
+
+This is just a basic example of how your request could look like and should reflect a standard XML request that you directly send to a channel API endpoint without PCI Proxy:
+
+```java
+$ curl "https://api.channel.com/"                   // HOST: Channel API Endpoint
+        -X POST                                     // Request Method POST
+        -H "Content-Type: text/xml"                 // Content-Type - We support almost all types
+        -d 'yourRequest.xml'                        // XML Body message that is expected by Channel 
+```
+
+### **Example with PCI Proxy:**
+
+In order to have PCI Proxy clean up and tokenize credit card data that the channel might send as a response, redirect your XML request \(`yourRequest.xml`\) through PCI Proxy by using the following curl sample:
+
+```java
+ 
+$ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
+        -X POST                                      // Request Method POST
+        
+        -H "X-CC-MERCHANT-ID: 1100005433"            // New HEADER : Merchant ID you received during Signup
+        -H "X-CC-URL: https://api.channel.com/"      // New HEADER parameter: Channel API Endpoint
+        -H "X-CC-SIGN: 160203112421662698"           // New HEADER parameter: Security Sign you created in Step 1 
+        
+        -H "Content-Type: text/xml"                  // Content-Type - We support almost all types
+        -d 'yourRequest.xml'                         // XML Body message that is expected by Channel
+```
+
+Universally spoken, you only need to change your current request as follows: 
+
+1. Change `HOST` from Channel API Endpoint to PCI Proxy endpoint 
+2. Add required `HTTP header` to your request
+
+**Done! **
+
+#### PCI Proxy PULL Endpoint
 
 | **PCI Proxy PULL Endpoint:** |
 | --- |
 | [https://sandbox.pci-proxy.com/v1/pull](https://sandbox.pci-proxy.com/v1/pull) |
 
-* **Required HTTP header:**
+#### **Required HTTP header**
 
 | HTTP header | Description | Example value |
 | --- | --- | --- |
 | `X-CC-URL` | API Endpoint - Specifies the target \(channel\) URL that will be called | [https://api.channel.com/](https://api.channel.com/) |
 | `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011 |
-| `X-CC-SIGN` | Configured security sign | 130709090849785405 |
-
-The X-CC-SIGN can be generated in the Datatrans Web Admin Tool \([http://pilot.datatrans.biz](http://pilot.datatrans.biz)\) under “UPP Administration” -&gt; “Security” -&gt; “Transaction Security”.
-
-* **Example POST:**
-
-```java
-$ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
-        -X POST 
-        -H "Content-Type: text/xml" 
-        -H "X-CC-MERCHANT-ID: 1100005433" 
-        -H "X-CC-URL: https://api.channel.com/" 
-        -H "X-CC-SIGN: 160203112421662698" 
-        -d 'yourRequest.xml'
-```
+| `X-CC-SIGN` | Configured Security Sign \(see Step1\) | 130709090849785405 |
 
 > Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](live_mode-test.html). Learn more about [live mode and testing](live_mode-test.html).
 
-## Receive a request from a channel \(PUSH\)
+---
+
+## 2b. PUSH: Receive a request from a channel
 
 **Understanding the process flow:**
 
