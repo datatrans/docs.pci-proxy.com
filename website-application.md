@@ -15,9 +15,9 @@ With the following 4 options, you can collect sensitive card data and reduce you
 | ![Redirect Mode](redirect.png) | ![Lightbox Mode](lightbox.png) | ![Inline Mode](inline2.png) | ![Tokenizer iFrame](tokenizer_iframe.png) |
 | Redirect consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay \(iFrame\). | Payment page managed by Datatrans is incorporated with iFrame. | Single form field for instant tokenization with callbacks embedded as iFrame |
 
-* The easiest way to start is by integrating our Payment Page `Redirect Mode` or `Lightbox Mode`. It takes care of building a conversion-optimized HTML form and validating input fields. Both options also support simultaneous tokenization and direct payment processing including 3D Secure and a range of alternative payment methods.
+* The easiest way to start is by integrating our Payment Page `Redirect Mode` or `Lightbox Mode`. It takes care of building a conversion-optimized HTML form and validating input fields. 
 
-* If you need a more custom approach, you should try our Payment Page `Inline Mode`. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS. This option also supports simultaneous tokenization and direct payment processing.
+* If you need a more custom approach, try our Payment Page `Inline Mode`. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS. 
 
 * The `Tokenizer iFrame` can be used if you only need to tokenize sensitive card data.
 
@@ -95,7 +95,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | `sign / data-sign` | Configured security sign1 \(can be set in Web Admin Tool\) | 130709090849785405 |
 | `uppAliasOnly / data-upp-alias-only` | Mandatory to tokenize the credit card | yes |
 
-kjkljk
+-
 
 | Additional Parameter | Description | Example value |
 | --- | --- | --- |
@@ -103,13 +103,11 @@ kjkljk
 | `paymentMethod` | defines payment method \(see list above\) | VIS |
 | `customTheme` | Name of a CSS class selector specified in a custom CSS file\* which you submit to Datatrans. | mytheme |
 
-
-
 ---
 
 #### Integrate Tokenizer iFrame
 
-If you only want to collect the credit card number on the fly, please use our Tokenizer iFrame. The sensitive card number field is embedded with an iframe into your order or payment page. You can instantly receive the token while your customer is in checkout by listening to the event handler. This gives you great flexibility when designing a custom order process.
+If you only want to collect the credit card number on the fly, please use our `Tokenizer iFrame`. The sensitive card number field is embedded with an iframe into your order or payment page. You can instantly receive the token while your customer is in checkout by listening to the event handler. This gives you great flexibility when designing a custom order process.
 
 | Parameter | Description | Example value |
 | --- | --- | --- |
