@@ -52,7 +52,13 @@ $ curl "https://pilot.datatrans.biz/upp/proxy/pull"
         -d 'yourRequest.xml'
 ```
 
-> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live_mode-test.html).
+Note: In test mode, only test credit cards are allowed. 
+
+---
+
+> ### Done! Enjoy PCI compliance in a risk-free environment.
+>
+> Now you should have covered all your business processes that existed before you implemented PCI Proxy - just without the PCI hassle. Keep in mind that you can use stored data as often as you need it.
 
 
 

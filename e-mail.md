@@ -1,4 +1,4 @@
-# Collect credit cards via Email
+# Quickstart: Collect credit cards via Email
 
 Let us assume you have an offer for your customers and you want to collect the card data directly via email. Just generate a payment link and copy it into your email. Your customers can click on the link and our payment page is opened. They can choose their favorite payment method and pay directly.
 
