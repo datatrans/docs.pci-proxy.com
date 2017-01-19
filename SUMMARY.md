@@ -27,9 +27,6 @@
     * [Supported Receivers \(Gateways\)](supported_receivers.md)
     * [Supported Credit Cards](supported_credit_cards.md)
 * Others
-    * [Showcase](showcase.md)
-    * [Billing Plan](billing-plan.md)
-    * [Glossary](glossary.md)
     * [FAQ](faq.md)
     * [Contact us](contact_us.md)
 

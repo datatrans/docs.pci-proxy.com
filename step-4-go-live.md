@@ -4,11 +4,11 @@
 
 ## Get A Production Account
 
-If you haven't already, contact us for PCI Proxy production account:
+If you haven't already contacted us for PCI Proxy production account:
 
 1. Contact your sales representative and ask for a contract
 
-2. Sign Contract and return
+2. Sign contract and return
 
 3. Log in to the Web Admin Tool [https://payment.datatrans.biz/](https://payment.datatrans.biz/).
 
@@ -19,8 +19,6 @@ If you haven't already, contact us for PCI Proxy production account:
 ## Production Credentials
 
 Once you signed a contract, you will receive the following login credentials for your productive account:
-
-
 
 ---
 
