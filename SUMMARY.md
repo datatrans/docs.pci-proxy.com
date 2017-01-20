@@ -16,6 +16,7 @@
     * [Step 4: Go Live](step-4-go-live.md)
 * Guides
     * [Add a Receiver \(detokenize\)](add_a_receiver_outbound.md)
+    * [Webservice-old](webservice-old.md)
 * [Resources](resources.md)
     * [Sandbox Account](sandbox-environment.md)
     * [Request Types](request-types.md)
