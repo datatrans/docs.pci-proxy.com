@@ -36,9 +36,9 @@ _You are a travel technology company providing hotels with software to manage th
 1. Embed interface as iframe or redirect into your application.
 2. Ensure PCI DSS compliant user management.
 
-| **No-Show interface endpoint \(Sandbox\):** | 
-| --- | --- |
-| [https://pilot.datatrans.biz/upp/jsp/noShow.jsp](https://pilot.datatrans.biz/upp/jsp/noShow.jsp) | 
+| **No-Show interface endpoint \(Sandbox\):** |
+| :--- |
+| [https://pilot.datatrans.biz/upp/jsp/noShow.jsp](https://pilot.datatrans.biz/upp/jsp/noShow.jsp) |
 
 * **Required parameter:**
 

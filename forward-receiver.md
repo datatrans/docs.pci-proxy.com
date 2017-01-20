@@ -1,4 +1,4 @@
-# Quickstart: Forward card data to a Receiver via web service
+# Quickstart: Forward card data to a Receiver \(Web Service\)
 
 PCI Proxy allows you to retain your existing data communication with PCI-compliant Receiver. This can be online travel agencies, payment gateways, hotels, airlines, car rentals, etc.
 
@@ -90,9 +90,7 @@ _Note: In test mode, only test credit cards are allowed!_
 >
 > Enjoy PCI compliance in a risk-free environment. Keep in mind that you can use stored data as often as you need it.
 >
->
->
-> ##### Questions?
+> #### Questions?
 >
 > Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
 >

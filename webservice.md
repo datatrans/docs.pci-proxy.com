@@ -1,4 +1,4 @@
-# Quickstart: Collect card data within Web Service requests
+# Quickstart: Collect card data from a Channel \(Web Service\)
 
 Securely extract sensitive card data out of your web service communication.
 
@@ -67,7 +67,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 | **PCI Proxy PULL Endpoint:** |
 | :--- |
-| [https://sandbox.pci-proxy.com/v1/pu](https://www.gitbook.com/book/dtrx/pci-proxy/edit#)ll |
+| [https://sandbox.pci-proxy.com/v1/pull](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
 
 | **PCI Proxy PUSH Endpoint:** |
 | :--- |
