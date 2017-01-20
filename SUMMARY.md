@@ -16,8 +16,9 @@
     * [Step 4: Go Live](step-4-go-live.md)
 * Guides
     * [Add a Receiver \(detokenize\)](add_a_receiver_outbound.md)
-* Resources
+* [Resources](resources.md)
     * [Sandbox Account](sandbox-environment.md)
+    * [Request Types](request-types.md)
     * [Token-Format](token-format.md)
     * [IP Whitelisting](ip_whitelisting.md)
     * [XML Alias Gateway](xml_alias_gateway.md)

@@ -12,17 +12,6 @@ Simply `redirect requests containing tokens through PCI Proxy` to avoid sensitiv
 
 ## 1. Add Receiver to your account
 
-**Understand Receiver types**
-
-Forwarding card data to a Receiver via web service can work in two ways. In general, you either perform a pull request to forward card data to a Receiver or a Receiver starts the request to ask for card data. PCI Proxy can populate sensitive data in both.
-
-| PULL Channel | PUSH Channel |
-| :--- | :--- |
-| ![](/assets/channel_pull_status_quo_color.png) | ![](/assets/channel_push_status_quo_color.png) |
-| Whenever _you start the request_ and _send card data in the request_ \(Receiver provides API\), we talk about a PULL Receiver type. | Whenever the_ Receiver starts a request_ and _you forward card data in the response _\(you provide API\), we talk about a PUSH channel type. |
-
-Please see a list of supported channels and their respective channel type:[ Supported Receivers \(Gateways\)](/supported_receivers.md).
-
 **Add Receiver**
 
 Please send us a quick email with all [Supported Receivers \(Gateways\)](/supported_receivers.md) you would like to add to your account to [setup@pci-proxy.com](/mailto:setup@pci-proxy.com). In case, you would like to add a Receiver that is currently not supported, please send the following information to [setup@pci-proxy.com](mailto:):
