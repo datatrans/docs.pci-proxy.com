@@ -10,7 +10,7 @@ Let us assume you offer a native mobile app to your customers where they can ent
 
 Our library allows you to tokenize credit cards by using your own native forms \(hidden mode\). In hidden mode, you invoke our payment library with the necessary credit card data to generate an alias.
 
-### Integrate on iOS
+## 1a. Integrate on iOS
 
 **You can use the following code snippet to generate a token:**
 
@@ -32,21 +32,9 @@ DTPaymentController* pc = [DTPaymentController
     paymentControllerWithDelegate:self aliasRequest:ar];
 ```
 
-> ### Congrats, Level 2 competed: Your app is our of PCI scope!
->
-> You have securely captured sensitive card data within your app without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
-
-#### Reference
-
-| iOS Library for iPhone, iPad, iPod touch |
-| --- |
-| [Release Notes](https://pilot.datatrans.biz/showcase/doc/iOS_Release_Notes.pdf) |
-| [Developer Manual](https://pilot.datatrans.biz/showcase/doc/iOS_Developers_Manual.pdf) |
-| [iOS Library \(zip\)](https://pilot.datatrans.biz/showcase/doc/iOS_Library.zip) |
-
 ---
 
-### Integrate on Android
+## 1b. Integrate on Android
 
 **You can use the following code snippet to generate a token:**
 
@@ -67,11 +55,15 @@ AliasRequest ar = new AliasRequest(
 PaymentProcessAndroid ppa = new PaymentProcessAndroid(dc,ar);
 ```
 
-> ### Congrats, Level 2 completed: Your site is out of PCI scope!
->
-> You have securely captured sensitive card data within your app without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+---
 
 #### Reference
+
+| iOS Library for iPhone, iPad, iPod touch |
+| --- |
+| [Release Notes](https://pilot.datatrans.biz/showcase/doc/iOS_Release_Notes.pdf) |
+| [Developer Manual](https://pilot.datatrans.biz/showcase/doc/iOS_Developers_Manual.pdf) |
+| [iOS Library \(zip\)](https://pilot.datatrans.biz/showcase/doc/iOS_Library.zip) |
 
 | Android Library |
 | --- |
@@ -82,6 +74,10 @@ PaymentProcessAndroid ppa = new PaymentProcessAndroid(dc,ar);
 
 ---
 
+> ### Congrats, Level 2 completed: Your mobile app is out of PCI scope!
+>
+> You have securely captured sensitive card data within your app without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+>
 > ##### Questions?
 >
 > Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.

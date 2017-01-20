@@ -25,7 +25,7 @@ _We offer even more sophisticated options to seamlessly collect payment data. Wi
 
 ---
 
-#### 2a. Embedding Payment Page \(Redirect, Lightbox or Inline\) in your site
+## 2a. Embedding Payment Page \(Redirect, Lightbox or Inline\) in your site
 
 To get started with the Payment Page `Redirect Mode` , add the following simple HTML a tag to your page:
 
