@@ -9,10 +9,10 @@
         * [E-Mail](e-mail.md)
     * [Step 3: Use Stored Data](step-3-use-stored-data.md)
         * [Forward](forward.md)
+        * [Forward \(Receiver\)](forward-receiver.md)
         * [Charge](charge.md)
         * [Validate](validate.md)
         * [Show](show.md)
-        * [Forward \(Receiver\)](forward-receiver.md)
     * [Step 4: Go Live](step-4-go-live.md)
 * Guides
     * [Add a Receiver \(detokenize\)](add_a_receiver_outbound.md)

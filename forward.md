@@ -52,7 +52,7 @@ $ curl "https://pilot.datatrans.biz/upp/proxy/pull"
         -d 'yourRequest.xml'
 ```
 
-Note: In test mode, only test credit cards are allowed. 
+Note: In test mode, only test credit cards are allowed.
 
 ---
 
