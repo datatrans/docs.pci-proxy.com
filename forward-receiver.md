@@ -57,7 +57,7 @@ $ curl "https://api.receiver.com/"                   // HOST: Receiver API Endpo
 
 Universally spoken, you only need to change your request above as follows:
 
-1. ##### Change `HOST` from` Receiver API Endpoint` to `PCI Proxy Endpoint`
+1. ##### Change `HOST` from`Receiver API Endpoint` to `PCI Proxy Endpoint`
 2. ##### Add required `HTTP header` to your request
 3. ##### Done!
 
