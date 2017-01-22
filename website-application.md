@@ -19,7 +19,7 @@ With the following 4 options, you can collect sensitive card data and reduce you
 
 * If you need a more custom approach, try our Payment Page `Inline Mode`. The Inline Mode allows you to integrate the payment form into your website with an iframe. With this approach you can adjust the style of the payment form by applying your custom CSS.
 
-* The `Tokenizer iFrame` can be used if you only need to tokenize sensitive card data.
+* The `Tokenizer iFrame` can be used if you only need to tokenize sensitive card data on the fly. The event listener allows you to receive tokens instantly while your customer is still in the checkout.
 
 _We offer even more sophisticated options to seamlessly collect payment data. With our Ajax API and Hidden Mode, you can create and design your own payment data collection forms. Please bear in mind that Ajax and Hidden-Mode solutions increase your PCI scope to SAQ A-EP. _[_Learn More._](https://www.datatrans.ch/en/technics/payment-apis/hidden-ajax-mode)
 
