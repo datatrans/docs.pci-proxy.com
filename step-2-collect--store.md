@@ -1,6 +1,8 @@
 # Step 2: Collect sensitive card data and store for later use
 
-In general, you have different inbound channels where you receive sensitive card data from customers or partners.
+In general, you have different inbound channels where you receive sensitive card data from customers or partners. In order to avoid sensitive card data touching your systems, you pick the relevant source of credit card data and implement the PCI Proxy according to the respective Quickstart.
+
+---
 
 ## 1. Choose source of card data
 
@@ -11,7 +13,9 @@ The three main sources of credit card data are:
 | Your customers enter their credit card data on a form within your website. | You receive a request from a remote server including credit card data. | Your customers enter their credit card data on a form within your native app. |
 | ie. Internet Booking Engine \(IBE\) | ie. XML messages with card data from [Booking.com](https://www.booking.com), [Expedia](https://www.expedia.com/), etc. | ie. Mobile Booking Application |
 
-In order to avoid sensitive card data touching your systems, you pick the relevant source of credit card data and implement the PCI Proxy according to the respective Quickstart.
+---
+
+## 2. Integrate PCI Proxy 
 
 **With all described methods, sensitive card data never touch your servers**.
 
