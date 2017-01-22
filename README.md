@@ -1,6 +1,6 @@
 # PCI Proxy Documentation
 
-Welcome to PCI Proxy! With this documentation you get familiar with PCI Proxy and reduce your PCI scope in no time.
+Learn how to simplify your PCI compliance. 
 
 ## Overview
 
