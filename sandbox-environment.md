@@ -1,6 +1,6 @@
 # Sandbox Account
 
-Please find here all relevant information to your Sandbox account. 
+Please find here all relevant information to your Sandbox account.
 
 ## Sandbox Endpoints
 
@@ -69,5 +69,5 @@ Chat with our developers if you need support relating to your sandbox account. J
 
 ## Go-Live
 
-Once your tests are successful, please activate your account at [setup@pci-proxy.com](mailto:setup@pci-proxy.com) to receive your productive credentials. You will receive your productive merchant ID and productive push URLs depending on your setup.
+Please see [**Step 4: Go Live**](/step-4-go-live.md).
 

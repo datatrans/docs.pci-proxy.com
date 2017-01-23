@@ -1,6 +1,6 @@
 # PCI Proxy Documentation
 
-Learn how to simplify your PCI compliance. 
+Learn how to simplify your PCI compliance.
 
 ## Overview
 
@@ -13,6 +13,10 @@ PCI Proxy let you **instantly collect and store credit card data **without touch
 Our customer base spans across many different industries and business types. All of them have specific needs and processes in place. PCI Proxy is build with flexibility in mind to accommodate those needs at best.
 
 PCI Proxy is a battle-tested tokenization solution that is powered by [Datatrans AG](https://www.datatrans.ch/), the leading Swiss Payment Service Provider.
+
+PCI Proxy supports all major credit card brands:
+
+![](/Card Brands.jpg)
 
 ---
 

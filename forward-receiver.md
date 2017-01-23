@@ -18,6 +18,8 @@ Adding Receivers is easy. You can either pick from our list of [supported Receiv
 | :--- |
 
 
+_Learn more about _[_Request Types_](/request-types.md)_._
+
 ---
 
 ## 2a. Redirect a PULL Receiver through PCI Proxy

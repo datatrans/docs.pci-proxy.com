@@ -24,13 +24,7 @@ As a business owner, it is your responsibility to make sure you are partnering w
 
 ### Useful Links
 
-Global Registry of PCI compliant service providers:
 
-* [http://www.visa.com/splisting/searchGrsp.do](http://www.visa.com/splisting/searchGrsp.do)
-* [https://www.visaeurope.com/receiving-payments/security/downloads-and-resources](https://www.visaeurope.com/receiving-payments/security/downloads-and-resources)
-* [https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html](https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html)
-* [https://de.pcisecuritystandards.org/document\_library](https://de.pcisecuritystandards.org/document_library)
-* [https://www.pcisecuritystandards.org/faqs](https://www.pcisecuritystandards.org/faqs)
 
 
 

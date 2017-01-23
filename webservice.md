@@ -16,6 +16,8 @@ Adding Channels is easy. You can either pick from our list of [supported Channel
 | :--- |
 
 
+_Learn more about _[_Request Types_](/request-types.md)_._
+
 ---
 
 ## 2a. Redirect a PULL Channel through PCI Proxy

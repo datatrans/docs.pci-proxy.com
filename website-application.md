@@ -103,6 +103,18 @@ _Note: In test mode, only test credit cards are allowed!_
 | `paymentMethod` | defines payment method \(see list above\) | VIS |
 | `customTheme` | Name of a CSS class selector specified in a custom CSS file\* which you submit to Datatrans. | mytheme |
 
+Please see the following list with our respective parameter values for `paymentMethod`
+
+| Credit Card Brand | Parameter Value |
+| --- | --- |
+| Visa | VIS |
+| MasterCard | ECA |
+| American Express | AMX |
+| Diners | DIN |
+| Discover | DIS |
+| JCB | JCB |
+| Maestro | MAU |
+
 ---
 
 #### Integrate Tokenizer iFrame
