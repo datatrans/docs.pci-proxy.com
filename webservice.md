@@ -12,7 +12,7 @@ Simply `redirect requests containing sensitive card data through PCI Proxy` to a
 
 Adding Channels is easy. You can either pick from our list of [supported Channels](/supported_channels.md) or add new ones:
 
-| Click to [Add Channels](/www.pci-proxy.com) |
+| [Click to Add Channels](https://www.cognitoforms.com/PCIProxy/AddChannel) |
 | :--- |
 
 
