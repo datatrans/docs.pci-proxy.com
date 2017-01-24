@@ -79,7 +79,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | :--- | :--- | :--- |
 | `X-CC-URL` | API Endpoint - Specifies the Channel URL that will be called | [https://api.channel.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
 | `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
-| `X-CC-SIGN` | Configured Security Sign \(see Step1\) | 130709090849785405 |
+| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 130709090849785405 |
 
 ---
 

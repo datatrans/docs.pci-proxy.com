@@ -14,7 +14,7 @@ Simply `redirect requests containing tokens through PCI Proxy` to avoid sensitiv
 
 Adding Receivers is easy. You can either pick from our list of [supported Receivers \(Gateways\)](/supported_receivers.md) or add new ones:
 
-| Click to [Add Receivers](/www.pci-proxy.com) |
+| [Click to Add Receivers](https://www.cognitoforms.com/PCIProxy/AddReceiver) |
 | :--- |
 
 
@@ -82,7 +82,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | :--- | :--- | :--- |
 | `X-CC-URL` | API Endpoint - Specifies the Receiver URL that will be called | [https://api.receiver.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
 | `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
-| `X-CC-SIGN` | Configured Security Sign \(see Step1\) | 130709090849785405 |
+| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 130709090849785405 |
 
 ---
 
