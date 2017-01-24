@@ -42,6 +42,8 @@ SHA.256(salt+merchantId+aliasCC)                                                
 → Sign: 428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5               // Security Sign for NoShow.jsp
 ```
 
+> Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html)
+
 **2. Build NoShow Link with **`merchandId`**, **`aliasCC`** \(token\), **`sign`** and **`username`
 
 ```js
@@ -52,9 +54,9 @@ https://pilot.datatrans.biz/upp/jsp/noShow.jsp
                &username=max.mustermann
 ```
 
-##### 3. Embed NoShow Link into your application
+##### 3. Embed `NoShow Link` into your application
 
-**4. Ensure PCI DSS compliant user management**
+**4. Ensure PCI-compliant user management**
 
 _Note: In test mode, only test credit cards are allowed!_
 
