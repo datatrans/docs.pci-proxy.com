@@ -1,10 +1,9 @@
-# Show single credit cards
+# Quickstart: Show credit card number of a stored card
 
-Let us assume you have authorized employees \(e.g. to hotel users\) that need to see the original credit card number of a customer.
+PCI Proxy enables you to see the original credit card number of a stored credit card. Basically, it is `a web interface that can convert a token back into its original credit card number`. 
 
-PCI Proxy enables you to manually retrieve single credit cards. Basically, it is `a web interface that can convert a token back into its original credit card number`. \(e.g. to charge a credit card via POS terminal\).
-
-## How to start
+**Consider a business that needs this ability:**  
+_You are a travel technology company providing hotels with software to manage their reservations. Authorized hotel employees need to retrieve single credit cards from reservations to book a no-show fee with their POS terminal if a guest does not show up._
 
 There are two ways how you can show single credit cards:
 
@@ -14,24 +13,46 @@ There are two ways how you can show single credit cards:
 
 _Note: Even though the interface is served by PCI Proxy, your PCI scope can extend._
 
-## 1. Using our Web Admin Tool
+---
+
+## 1a. Show a credit card number via Web Admin tool
 
 Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under _"Process" / "Inverse Alias"_.
 
-## 2. Seamless interface integration \(NoShow.jsp\)
+## 1b. Seamless interface integration \(NoShow.jsp\)
 
-Another way of showing single credit card numbers is by using our \_NoShow.jsp \_script. You can implement it directly into your application. It offers a more seamless approach and can be embedded as iframe or by redirect.
+Example link, pre-filled with token _70119122433810042_
 
-To see the interface in action, click the following link, prefilled with:
+| [**Click to Show Credit Card Number**](/h ttps://pilot.datatrans.biz/upp/jsp/noShow.jsp ?merchantId=1100005048 &aliasCC=70119122433810042 &sign=df9ed6edb62df004ce64db6c113038aa21bd769d866ca7cf305bf43610ce6232 &username=max.mustermann) |
+| :--- |
 
-> [**No-Show Interface**](https://pilot.datatrans.biz/upp/jsp/noShow.jsp?merchantId=1100005048&aliasCC=70119122433810042&salt=xUWnv6TR0RqUyPsVWvxgUn0wXKCuPJjWAumgTy67TVUsimiL0V&sign=df9ed6edb62df004ce64db6c113038aa21bd769d866ca7cf305bf43610ce6232)
 
-The token _70119122433810042_ should result in [test card number](test_card_numbers.html) _4242424242424242_
+The NoShow link should retrieve the [test card number](test_card_numbers.html) _4242 4242 4242 4242._
 
-**Consider a business that needs this ability:**  
-_You are a travel technology company providing hotels with software to manage their reservations. Authorized hotel employees need to retrieve single credit cards from reservations to book a no-show fee with their POS terminal if a guest does not show up._
+1. ##### Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId` and `aliasCC` \(token\)
 
-### Quick Start Guide:
+   ```
+   salt= V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs
+   merchantId = 1100005007 
+   aliasCC = 424242SKMPRI4242                                                            // Token
+
+
+   → String:V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 3 values
+
+
+   → SHA256 Hash:428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5        // Use SHA256 Hash Calculator
+
+   ```
+2. ##### Build NoShow Link
+
+   ```js
+   https://pilot.datatrans.biz/upp/jsp/noShow.jsp
+               ?merchantId=1100005048
+               &aliasCC=70119122433810042
+               &sign=df9ed6edb62df004ce64db6c113038aa21bd769d866ca7cf305bf43610ce6232
+               &username=max.mustermann
+   ```
+3. ##### Embed NoShow Link into your application
 
 1. Embed interface as iframe or redirect into your application.
 2. Ensure PCI DSS compliant user management.

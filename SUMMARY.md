@@ -21,7 +21,7 @@
     * [XML Alias Gateway](xml_alias_gateway.md)
     * [Supported Acquirer](supported_acquirer.md)
     * [Supported Channels](supported_channels.md)
-    * [Supported Receivers \(Gateways\)](supported_receivers.md)
+    * [Supported Receivers](supported_receivers.md)
 * Others
     * [FAQ](faq.md)
     * [Contact us](contact_us.md)

@@ -1,6 +1,6 @@
-# Supported Receivers (Gateways)
+# Supported Receivers
 
-| 3rd Party Gateways | Web Service Type \(XML/SOAP/JSON\) |
+| 3rd Party - Receiver | Web Service Type \(XML/SOAP/JSON\) |
 | --- | --- |
 | [Amadeus](http://www.amadeus.com/) | PUSH |
 | [Availpro](http://site.availpro.com/) | PUSH |
@@ -19,7 +19,7 @@
 | [WebRezPro](http://www.webrezpro.com/) | PUSH |
 | [Yieldplanet](https://www.yieldplanet.com/) | PUSH |
 
-| Payment Gateways | Web Service Type \(XML/SOAP/JSON\) |
+| Payment Gateway - Receiver | Web Service Type \(XML/SOAP/JSON\) |
 | --- | --- |
 | [Banorte](https://www.banorte.com/wps/portal/gfb/Home/inicio/!ut/p/a1/hc7LDoIwEAXQb3HBlo5QEN01kPCM-IgRujFgasFUSgDh90XixsTH7O7k3MwgihJEq6wvedaVssrEM1Pz5Gpzy9NtCGMn1IH4W-OwwxsXO8YI0hHAlyHwr39EdCK2Szy8iABi7GpArHWA98ZSA998gR8nAkS5kPn0bkqqXLc4og27sIY16r0Z10XX1e1KAQWGYVC5lFww9Vwo8KlRyLZDyRtE9S2BqyH6iMxmD9c73J8!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/) | PUSH |
 | [Braintree](https://www.braintreepayments.com/) | PULL |
