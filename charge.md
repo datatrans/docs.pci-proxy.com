@@ -4,7 +4,7 @@ Lets assume you want to authorize or settle an amount on the payment data that y
 
 You can simply `send an XML request with a token to charge the stored card.`
 
-> _For this feature, you or your customer need an existing acquiring contract. Please see our list of _[_**Supported Acquirer**_](/supported_acquirer.md)_._
+> _For this feature, you need an existing acquiring contract. Please see our list of _[_**Supported Acquirer**_](/supported_acquirer.md)_._
 
 | Charge an amount | Reserve an amount | Recur transaction |
 | :--- | :--- | :--- |
