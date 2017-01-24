@@ -8,7 +8,7 @@
 
 ## 1. Pick an integration option
 
-With the following 4 options, you can collect sensitive card data and reduce your PCI scope to the least, qualifying for the [SAQ A](understand_pci_dss.html).
+With the following 4 options, you can collect sensitive card data and reduce your PCI scope to the least, qualifying for the `SAQ A`.
 
 | Redirect Mode | Lightbox Mode | Inline Mode | Tokenizer iFrame |
 | :---: | :---: | :---: | :---: |
@@ -29,7 +29,7 @@ _We offer even more sophisticated options to seamlessly collect payment data. Wi
 
 To get started with the Payment Page `Redirect Mode` , add the following simple HTML a tag to your page:
 
-```java
+```js
 <a href="https://pilot.datatrans.biz/upp/jsp/upStart.jsp
             ?merchantId=1100004624
             &refno=pci-proxy-redirect
@@ -41,7 +41,7 @@ To get started with the Payment Page `Redirect Mode` , add the following simple 
 
 To get started with the Payment Page `Lightbox Mode`, you can use the following code snippet:
 
-```java
+```js
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://pilot.datatrans.biz/upp/payment/js/datatrans-1.0.2.js"></script>
 
@@ -66,7 +66,7 @@ To get started with the Payment Page `Lightbox Mode`, you can use the following 
 
 To integrate the Payment Page `Inline Mode` you have to use an iframe:
 
-```java
+```js
 <iframe width="600" height="500" frameborder="0" border="0" src="https://pilot.datatrans.biz/upp/jsp/upStart.jsp
             ?merchantId=1100004547
             &refno=pci-proxy-inline
