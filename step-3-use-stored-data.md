@@ -6,7 +6,7 @@ PCI Proxy allows you to keep your existing business processes as before. As we c
 
 With the following three methods you can use stored card data:
 
-| &gt; [Charge](/charge.md) a stored card | &gt; [Forward](/charge.md) a stored card | &gt; [Show](/show.md) a stored card |
+| &gt; [Charge](/charge.md) a stored card | &gt; [Forward](/forward-receiver.md) a stored card | &gt; [Show](/show.md) a stored card |
 | :--- | :--- | :--- |
 | Use our payment gateway to charge or validate a stored card. | Pass stored card data on to any PCI-compliant Receiver. | Let authorized users manually de-tokenize stored card to see it. |
 
