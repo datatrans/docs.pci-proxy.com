@@ -51,7 +51,7 @@ Forwarding card data to a Receiver via web service can work in two ways. In gene
 
 #### PULL
 
-You will use the _Receiver PULL Proxy _when **you start the request with card data**.
+You will use the _Receiver PULL Proxy_ when **you start the request with card data**.
 
 | PULL Receiver Process Flow w/o PCI Proxy | PULL Receiver Process Flow w/ PCI Proxy |
 | :--- | :--- |
