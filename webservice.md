@@ -34,7 +34,7 @@ Redirect your XML request \(`yourRequest.xml`\) through PCI Proxy by using the f
 $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
         -X POST                                      // Request Method POST
 
-        -H "X-CC-MERCHANT-ID: 1100005433"            // New HEADER : Merchant ID you received during Signup
+        -H "X-CC-MERCHANT-ID: 1100005433"            // New HEADER parameter: Merchant ID you received during Signup
         -H "X-CC-URL: https://api.channel.com/"      // New HEADER parameter: Channel API Endpoint
         -H "X-CC-SIGN: 160203112421662698"           // New HEADER parameter: Security Sign you created in Step 1 
 
