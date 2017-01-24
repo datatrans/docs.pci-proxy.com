@@ -19,7 +19,7 @@ _Note: Even though the interface is served by PCI Proxy, your PCI scope can exte
 
 Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under _"Process" / "Inverse Alias"_.
 
-## 1b. Seamless interface integration \(NoShow.jsp\)
+## 1b. Show a credit card number via NoShow.jsp
 
 Example link, pre-filled with token _70119122433810042:_
 
@@ -41,8 +41,6 @@ aliasCC     = 424242SKMPRI4242                                                  
 SHA.256(salt+merchantId+aliasCC)                                                       // Use SHA.256 Hash Converter
 → Sign: 428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5               // Security Sign for NoShow.jsp
 ```
-
-
 
 **2. Build NoShow Link with **`merchandId`**, **`aliasCC`** \(token\), **`sign`** and **`username`
 
@@ -102,7 +100,7 @@ In general, the following password rules have to be observed:
 
 > ### Great job**: You have successfully integrated PCI Proxy! **
 >
-> You have securely charged a stored credit card without ever touching your servers. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **
+> You have securely retrieved a stored credit card without ever touching your servers. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **
 >
 > Enjoy PCI compliance in a risk-free environment. Keep in mind that you can use stored data as often as you need it.
 >
