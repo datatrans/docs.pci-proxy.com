@@ -52,14 +52,14 @@ _Note: In test mode, only test credit cards are allowed!_
 
 Contrary to the PULL integration, you usually don't have much influence on how the request is started or don't want to force the Channel to change the integration. Therefore, we use a different approach for PUSH Channels.
 
-When you [add a PUSH Channel to your account](#1-add-channel-to-your-account), you receive a `{UNIQUE-CHANNEL-KEY}` for each Channel that is set up. Together with our PCI Proxy PUSH service URL, it results in a `PCI Proxy PUSH Endpoint` that is specific to that Channel:
+When you [**add a PUSH Channel**](#1-add-channel-to-your-account) to your account, you receive a `{UNIQUE-CHANNEL-KEY}` for each Channel that is set up. Together with our PCI Proxy PUSH service URL, it results in a `PCI Proxy PUSH Endpoint` that is specific to that Channel:
 
 Redirect requests coming from a Channel with a single step:
 
 1. ##### Change API endpoint at Channel from `Your API Endpoint` to specific [`PCI Proxy PUSH Endpoint`](#reference)
 2. ##### Whitelist [IP addresses](/ip_whitelisting.md) from PCI Proxy at Channel, if needed.
 
-If Channel sends a request to Channel-specific [`PCI Proxy PUSH endpoint`](#reference), PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
+If Channel sends a request to Channel-specific [**`PCI Proxy PUSH endpoint`**](#reference), PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
 
 _Note: In test mode, only test credit cards are allowed!_
 
@@ -85,7 +85,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 > ### **Congrats, Level 2 completed: Your Channels are out of PCI scope!**
 >
-> You have securely captured sensitive card data. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **Move on and learn how you can use stored card data. Please continue to [**Step 3**](https://www.gitbook.com/book/dtrx/pci-proxy/edit#).
+> You have securely captured sensitive card data. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
 >
 > ##### Questions?
 >

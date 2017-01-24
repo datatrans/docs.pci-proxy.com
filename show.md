@@ -29,7 +29,7 @@ Example link, pre-filled with token _70119122433810042:_
 
 The NoShow link should retrieve the [test card number](test_card_numbers.html) _4242 4242 4242 4242._
 
-#####   1. Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId` and `aliasCC` \(token\)
+##### 1. Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId` and `aliasCC` \(token\)
 
 ```js
 salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
@@ -44,7 +44,7 @@ SHA.256(salt+merchantId+aliasCC)                                                
 
 > Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
-  **2. Build NoShow Link with **`merchandId`**, **`aliasCC`** \(token\), **`sign`** and **`username`
+**2. Build NoShow Link with **`merchandId`**, **`aliasCC`** \(token\), **`sign`** and **`username`
 
 ```js
 https://pilot.datatrans.biz/upp/jsp/noShow.jsp
@@ -54,7 +54,7 @@ https://pilot.datatrans.biz/upp/jsp/noShow.jsp
                &username=max.mustermann
 ```
 
-#####   3**. Optional: Add JavaScript callbacks/hooks**
+##### 3**. Optional: Add JavaScript callbacks/hooks**
 
 ```js
 // Use attached Javascript callsbacks/hooks file to see wich events are getting emitted to the parent frame.
@@ -64,7 +64,7 @@ function messageReceived(message)
 {
   console.log(message.data);
 }
- 
+
 if(window.addEventListener)
   window.addEventListener("message",messageReceived);
 else
@@ -76,9 +76,9 @@ else
 
 > Check out our [**Javascript callbacks/hooks sample file**](https://datatrans.github.io/docs.pci-proxy.com/noshow-test-pilot.html).
 
-  **4. Ensure PCI-compliant user management**
+**4. Ensure PCI-compliant user management**
 
-#####   5. Embed `NoShow Link` into your application
+##### 5. Embed `NoShow Link` into your application
 
 _Note: In test mode, only test credit cards are allowed!_
 
