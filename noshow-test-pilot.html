@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NoShow Test</title>
+    <style>
+        * {
+            font-family: "Arial", Helvetica, sans-serif;
+            font-size: 1em;
+        }
+        fieldset { background-color: #e1edf7; border-radius: 7px; border: 0; margin-bottom: 5px; }
+        fieldset label { margin-right: 10px; width: 100px; display: inline-block; }
+        fieldset div { margin-bottom: 4px; }
+        fieldset button { margin-left: 115px; }
+        input, textarea { padding: 8px; }
+
+        textarea, dt { font-family: Consolas, Courier, monospace}
+        #messageLog {
+            width: 100%;
+            height: 300px;
+            box-sizing: border-box;
+        }
+
+        #noShow {
+            width: 100%; height: 300px;
+            margin-bottom: 5px;
+        }
+
+        .column { width: 500px; float: left;
+            margin-right: 20px; }
+
+        #column2 {
+            background-color: rgba(237, 252, 212, 0.48); border-radius: 7px;
+            padding: 0 16px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>NoShow Test</h1>
+<div class="column" id="column1">
+    <form action="https://pilot.datatrans.biz/upp/jsp/noShow.jsp" target="noShow">
+        <fieldset>
+            <div>
+                https://pilot.datatrans.biz/upp/jsp/noShow.jsp
+                <hr/>
+            </div>
+            <div>
+                <label for="merchantId">merchantId</label>
+                <input type="text" name="merchantId" id="merchantId" value="1000011011"/>
+            </div>
+            <div>
+                <label for="aliasCC">aliasCC</label>
+                <input type="text" name="aliasCC" id="aliasCC" value="424242VMKSNZ4242"/>
+            </div>
+            <div>
+                <label for="aliasCVV">aliasCVV</label>
+                <input type="text" name="aliasCVV" id="aliasCVV" value=""/>
+            </div>
+            <div>
+                <label for="sign">sign</label>
+                <input type="text" name="sign" id="sign" value="wrong"/>
+            </div>
+            <button type="submit">GO</button>
+        </fieldset>
+    </form>
+
+    <h3>Noshow iframe</h3>
+    <iframe id="noShow" name="noShow"
+            src="">
+    </iframe>
+
+    <div>
+        <h3><label for="messageLog">Message log</label></h3>
+        <textarea id="messageLog" readonly="readonly"></textarea>
+    </div>
+</div>
+
+<div class="column" id="column2">
+    <h3>Messages</h3>
+    <dl>
+        <dt>{type: 'error', reason: 'wrong request'}</dt>
+        <dd>Invalid merchant id, alias or sign</dd>
+    </dl>
+    <dl>
+        <dt>{type: 'error', reason: 'service not allowed'}</dt>
+        <dd>Merchant not configured</dd>
+    </dl>
+    <dl>
+        <dt>{type: 'error', reason: 'fraud check 3082'}</dt>
+        <dd>Declined by fraud check</dd>
+    </dl>
+    <dl>
+        <dt>{type: 'error', reason: 'system error'}</dt>
+        <dd>System error</dd>
+    </dl>
+    <dl>
+        <dt>{type: 'error', reason: 'invalid sign'}</dt>
+        <dd>Invalid sign (production only)</dd>
+    </dl>
+    <dl>
+        <dt>{type: 'error', reason: 'time expired'}</dt>
+        <dd>The user did not enter the chaptcha in less than 90 seconds</dd>
+    </dl>
+    <dl>
+        <dt>{type: 'error', reason: 'wrong captcha'}</dt>
+        <dd>The entered captcha was wrong</dd>
+    </dl>
+    <dl>
+        <dt>{type: 'error', reason: 'invalid card'}</dt>
+        <dd>Wrong card number</dd>
+    </dl>
+    <dl>
+        <dt>{type: 'error', reason: 'velocity checker'}</dt>
+        <dd>Declined by velocity checker</dd>
+    </dl>
+    <dl>
+        <dt>{type: 'error', reason: 'wrong alias'}</dt>
+        <dd>Wrong alias</dd>
+    </dl>
+    <dl>
+        <dt>{type: 'waiting', reason: 'captcha'}</dt>
+        <dd>The page is waiting for user input of captcha</dd>
+    </dl>
+    <dl>
+        <dt>{type: <span style="background-color: lightgreen;">'success'</span>, reason: 'CC'}</dt>
+        <dd>The card number was successfully displayed</dd>
+    </dl>
+    <dl>
+        <dt>{type: <span style="background-color: lightgreen;">'success'</span>, reason: 'CVV'}</dt>
+        <dd>The CVV code was successfully displayed</dd>
+    </dl>
+</div>
+
+<script type="text/javascript">
+
+    function messageReceived( message )
+    {
+        var messageLog = document.getElementById("messageLog");
+
+        console.log( message.data );
+
+        messageLog.value += JSON.stringify( message.data ) + "\n";
+    }
+
+    if ( window.addEventListener )
+        window.addEventListener("message",messageReceived);
+    else
+    if ( window.attachEvent )
+        window.attachEvent("message",messageReceived);
+    else
+        alert( "Could not listen.")
+
+</script>
+</body>
+</html>
