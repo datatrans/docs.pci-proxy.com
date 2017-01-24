@@ -12,7 +12,7 @@ Simply `redirect requests containing sensitive card data through PCI Proxy` to a
 
 Adding Channels is easy. You can either pick from our list of [supported Channels](/supported_channels.md) or add new ones:
 
-| [Click to Add Channels](https://www.cognitoforms.com/PCIProxy/AddChannel) |
+| [Click to Add Channels](https://pilot.datatrans.biz/showcase/pci-proxy/add-channel.html) |
 | :--- |
 
 
@@ -59,7 +59,7 @@ Redirect requests coming from a Channel with a single step:
 1. ##### Change API endpoint at Channel from `Your API Endpoint` to specific [`PCI Proxy PUSH Endpoint`](#reference)
 2. ##### Whitelist [IP addresses](/ip_whitelisting.md) from PCI Proxy at Channel, if needed.
 
-If Channel sends a request to Channel-specific [**`PCI Proxy PUSH endpoint`**](#reference), PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
+If Channel sends a request to Channel-specific [`PCI Proxy PUSH endpoint`](#reference), PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
 
 _Note: In test mode, only test credit cards are allowed!_
 
