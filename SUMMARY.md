@@ -13,9 +13,6 @@
         * [Show](show.md)
     * [Step 4: Go Live](step-4-go-live.md)
 * Guides
-* Others
-    * [FAQ](faq.md)
-    * [Contact us](contact_us.md)
 * [Resources](resources.md)
     * [Sandbox Account](sandbox-environment.md)
     * [Request Types](request-types.md)
@@ -24,4 +21,7 @@
     * [Supported Acquirer](supported_acquirer.md)
     * [Supported Channels](supported_channels.md)
     * [Supported Receivers](supported_receivers.md)
+* [Others](others.md)
+    * [FAQ](faq.md)
+    * [Contact us](contact_us.md)
 
