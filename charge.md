@@ -39,7 +39,7 @@ In the example above the CVV code for the payment method \(VIS\) is mandatory. T
 Open the following URL with parameters:
 
 ```js
-  https://pilot.datatrans.biz/upp/jsp/upStart.jsp            // HOST: Payment Page Endpoint
+https://pilot.datatrans.biz/upp/jsp/upStart.jsp            // HOST: Payment Page Endpoint
                 ?theme=DT2015                                
                 &merchantId=1100004624                       // Merchant ID you received at adding a Acquirer
                 &amount=1337                                 // Specify the amount you want to authorize
