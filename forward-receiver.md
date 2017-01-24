@@ -2,7 +2,7 @@
 
 PCI Proxy allows you to retain your existing data communication with PCI-compliant Receiver. This can be online travel agencies, payment gateways, hotels, airlines, car rentals, etc.
 
-> **Forwarding card data to a Receiver works the same way as **[**collecting card data via web service**](/webservice.md)**.**
+> **Forwarding card data to a Receiver works the same way as collecting card data via web service.**
 
 Simply `redirect requests containing tokens through PCI Proxy` to avoid sensitive data hitting your servers. PCI Proxy automatically scans requests for tokens and replaces located tokens with sensitive card data and forwards the populated request to the PCI-compliant Receiver. The message structure of your request always remains the same. Any responses from the Receiver are passed back to you and sensitive card data is tokenized if needed.
 
