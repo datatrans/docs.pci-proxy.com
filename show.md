@@ -27,8 +27,6 @@ Example link, pre-filled with token 424242SKMPRI4242_:_
 | :--- |
 | The NoShow link should retrieve the [test card number](/sandbox-environment.md) 4242 4242 4242 4242. |
 
-
-
 ##### 1. Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId` and `aliasCC` \(token\)
 
 ```js
@@ -48,9 +46,9 @@ SHA.256(salt+merchantId+aliasCC)                                                
 
 ```js
 https://pilot.datatrans.biz/upp/jsp/noShow.jsp
-               ?merchantId=1100005048
-               &aliasCC=70119122433810042
-               &sign=df9ed6edb62df004ce64db6c113038aa21bd769d866ca7cf305bf43610ce6232
+               ?merchantId=1100005007
+               &aliasCC=424242SKMPRI4242
+               &sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5
                &username=max.mustermann
 ```
 
