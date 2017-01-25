@@ -14,9 +14,7 @@ Adding Channels is easy. You can either pick from our list of [supported Channel
 
 | [Click to Add Channels](https://pilot.datatrans.biz/showcase/pci-proxy/add-channel.html) |
 | :--- |
-
-
-_Learn more about _[_Request Types_](/request-types.md)_._
+| _Learn more about _[_**Request Types**_](/request-types.md)_._ |
 
 ---
 
