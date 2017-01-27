@@ -2,52 +2,48 @@
 
 Let us assume you send requests with sensitive payment data via API to a 3rd party.
 
-PCI Proxy allows you to retain your existing data communication with PCI-compliant 3rd parties. This can be online travel agencies, payment gateways, hotels, airlines, car rentals, etc. 
+PCI Proxy allows you to retain your existing data communication with PCI-compliant 3rd parties. This can be online travel agencies, payment gateways, hotels, airlines, car rentals, etc.
 
-`By switching PCI Proxy between you and the 3rd party`, you invoke requests having PCI Proxy as endpoint. In your normal request, you simply use the token that you received when you collected the payment data. PCI Proxy replaces the token with payment data and forwards the populated request to the 3rd party. Any responses from the 3rd party are passed back to you. 
+`By switching PCI Proxy between you and the 3rd party`, you invoke requests having PCI Proxy as endpoint. In your normal request, you simply use the token that you received when you collected the payment data. PCI Proxy replaces the token with payment data and forwards the populated request to the 3rd party. Any responses from the 3rd party are passed back to you.
 
 ## How to start
 
 Forwarding payment data is like collecting payment data. You can use the same webservice API.
 
-
-## Perform a pull request against a 3rd party (PULL)
+## Perform a pull request against a 3rd party \(PULL\)
 
 **Understanding the process flow:**
 
-You will need the *Use Forward PULL Proxy* when **you start the request** to forward payment data to a 3rd party.
+You will need the _Use Forward PULL Proxy_ when **you start the request** to forward payment data to a 3rd party.
 
 ![3rd party PULL](3rd Party PULL.png)
 
 **Consider a business that needs this ability:**
 
-*You are a travel technology company and process reservations on behalf on your clients against global distribution systems or an online travel agency (e.g. Expedia, Galileo, Cytric, etc.).*
+_You are a travel technology company and process reservations on behalf on your clients against global distribution systems or an online travel agency \(e.g. Expedia, Galileo, Cytric, etc.\)._
 
 ### Quick Start Guide:
 
-1. Add a 3rd party to your account
+1. [Add a Receiver](/add_a_receiver_outbound.md) to your account
 2. Add required HTTP header to your request.
 3. POST your XML/SOAP request having PCI Proxy as endpoint.
 
-
 | **PCI Proxy PULL Endpoint:** |
-| -- |
-| https://pilot.datatrans.biz/upp/proxy/pull/|
+| --- |
+| [https://pilot.datatrans.biz/upp/proxy/pull/](https://pilot.datatrans.biz/upp/proxy/pull/) |
 
-- **Required HTTP header:**
+* **Required HTTP header:**
 
+| HTTP header | Description | Example value |
+| --- | --- | --- |
+| `X-CC-URL` | API Endpoint - Specifies the target \(3rd party\) URL that will be called | [https://api.thirdparty.com/](https://api.thirdparty.com/) |
+| `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011 |
+| `X-CC-SIGN` | Configured security sign | 130709090849785405 |
 
-| HTTP header      | Description                                                        | Example value
-| -------------- | -------------------------------------------------------------------| ---
-| `X-CC-URL` | API Endpoint - Specifies the target (3rd party) URL that will be called | https://api.thirdparty.com/
-| `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
-| `X-CC-SIGN` | Configured security sign | 130709090849785405
-            
-
-- **Example POST:**
+* **Example POST:**
 
 ```java
-    $ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
+$ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
         -X POST 
         -H "Content-Type: text/xml" 
         -H "X-CC-MERCHANT-ID: 1100005433" 
@@ -56,25 +52,13 @@ You will need the *Use Forward PULL Proxy* when **you start the request** to for
         -d 'yourRequest.xml'
 ```
 
-> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live_mode-test.html).
+Note: In test mode, only test credit cards are allowed.
 
-## Add a 3rd party
+---
 
-Adding a new 3rd party is easy. Please send the following information to [thirdparty@pci-proxy.com](mailto:). You will receive a confirmation as soon as the 3rd party is added.
-
-|Information| Description   |
-|---|---|
-|API endpoint|The URL where we should forward the request to.|
-|Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
-| Merchant ID | Sign up to receive your merchant ID.| 
-| Name & URL | Company name and website of third party |
-| AOC document| Attestation of Compliance of third party to proof PCI compliance |
+> ### Done! Enjoy PCI compliance in a risk-free environment.
+>
+> Now you should have covered all your business processes that existed before you implemented PCI Proxy - just without the PCI hassle. Keep in mind that you can use stored data as often as you need it.
 
 
-#### Supported 3rd parties
 
-We support a variety of 3rd party APIs out of the box. Every day, more and more get added.
-
-#### VPN and Leased Lines
-
-In case you send data over VPN or Leased Line to a 3rd party, we can add secure connections to adapt to your needs. Please [get in touch](https://www.datatrans.ch/en/contact/contactform) for more info.

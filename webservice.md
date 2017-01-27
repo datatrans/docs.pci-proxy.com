@@ -1,145 +1,96 @@
-# Extract credit cards from XML/SOAP calls
+# Quickstart: Collect card data from a Channel \(Web Service\)
 
-Let us assume you receive or request messages including payment data (credit cards) via API from a partner (channel).
+Securely extract sensitive card data out of your web service communication.
 
-`By placing PCI Proxy between you and the channel`, payment data is extracted and automatically stored in our secure vault. A reference number (token) is issued that substitutes the payment data in the request or response. The message structure of the channel API always remains the same. 
+Simply `redirect requests containing sensitive card data through PCI Proxy` to avoid sensitive data hitting your servers. PCI Proxy automatically scans requests for sensitive card data. Located card data is instantly collected, tokenized and stored in our secure vaults in Switzerland. A reference number \(token\) is issued that substitutes the sensitive data in the request or response. The message structure of the channel API always remains the same.
 
-*You are allowed to store the token in your system, as it is not PCI DSS relevant.*
-
-The token can be used later on to charge, forward or retrieve payment data. 
-
-**All happens before sensitive payment data ever touch your server to reduce your PCI scope.**
-
+**All happens before sensitive card data ever touches your servers to reduce your PCI scope.**
 
 ---
 
+## 1. Add Channel to your account
 
- **Failure Security & Response Times**
+Adding Channels is easy. You can either pick from our list of [supported Channels](/supported_channels.md) or add new ones:
 
-*We understand the challenges of high availability and low response times. Multiple geo-redundant server layouts and blazing fast connections ensure response times are kept at a minimum. PCI Proxy is designed to add only a fractional overhead of 5 – 50 ms per conversion.*
- 
-*We also have SLAs ready for you. Please [get in touch](https://www.pci-proxy.com/#/signup) for more info.*
+| [Click to Add Channels](https://pilot.datatrans.biz/showcase/pci-proxy/add-channel.html) |
+| :--- |
+| _Learn more about _[_**Request Types**_](/request-types.md)_._ |
 
+---
 
+## 2a. Redirect a PULL Channel through PCI Proxy
 
-## How to start
+If you have added a PULL Channel to your account, you can easily redirect requests to that Channel via the PCI Proxy.
 
-> [Sign up](https://www.pci-proxy.com/#/signup) for a free developer test account.
+1. ##### Use[`PCI Proxy Endpoint`](#reference)  as `HOST`
+2. ##### Add required [`X-CC HTTP header`](#reference) to your request
+3. ##### Keep all other parameters of your request as always
 
-In general, you either perform a pull request to receive data or a channel pushes data to your server. PCI Proxy can extract payment data from both.
-
-Do you pull data from a channel (API endpoint at the channel) = PULL
-
-Does the partner channel push the data directly to you (API endpoint at you) = PUSH
-
-
-
-
-
-
-## Perform a pull request against another API (PULL)
-
-
-**Understanding the process flow:**
-
-You will use the *Collect Webservice PULL Proxy* when you start the request and receive the payment data in the response.
-
-![Channel PULL](Channel PULL.png)
-
-
-**Consider a business that needs this ability:**
-
-*You are a travel technology company pulling new reservations from portals such as Booking.com. As reservations may contain payment data, Booking.com asks for your PCI DSS compliance.*
-
-*By using PCI Proxy, Booking.com removes this requirement from you, because we as a company are PCI DSS compliant and you can bank on our full Level 1 PCI DSS compliance.*
-
-
-
-### Quick Start Guide:
-
-1. Add a channel to your account
-2. Add required HTTP header to your request.
-3. POST your XML/SOAP request having PCI Proxy as endpoint.
-
-
-| **PCI Proxy PULL Endpoint:** |
-| -- |
-| https://pilot.datatrans.biz/upp/proxy/pull|
-
-- **Required HTTP header:**
-
-
-| HTTP header      | Description                                                        | Example value
-| -------------- | -------------------------------------------------------------------| ---
-| `X-CC-URL` | API Endpoint - Specifies the target (channel) URL that will be called | https://api.channel.com/
-| `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011
-| `X-CC-SIGN` | Configured security sign | 130709090849785405
-            
-The X-CC-SIGN can be generated in the Datatrans Web Admin Tool (http://pilot.datatrans.biz) under “UPP Administration” -> “Security” -> “Transaction Security”.
-
-
-- **Example POST:**
+Redirect your XML request \(`yourRequest.xml`\) through PCI Proxy by using the following simple call:
 
 ```java
-    $ curl "https://pilot.datatrans.biz/upp/proxy/pull" 
-        -X POST 
-        -H "Content-Type: text/xml" 
-        -H "X-CC-MERCHANT-ID: 1100005433" 
-        -H "X-CC-URL: https://api.channel.com/" 
-        -H "X-CC-SIGN: 160203112421662698" 
-        -d 'yourRequest.xml'
+$ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
+        -X POST                                      // Request Method POST
+
+        -H "X-CC-MERCHANT-ID: 1100005433"            // New HEADER parameter: Merchant ID you received during Signup
+        -H "X-CC-URL: https://api.channel.com/"      // New HEADER parameter: Channel API Endpoint
+        -H "X-CC-SIGN: 160203112421662698"           // New HEADER parameter: Security Sign you created in Step 1 
+
+        -H "Content-Type: text/xml"                  // Content-Type - We support almost all types
+        -d @yourRequest.xml                          // XML Body message that is expected by Channel
 ```
 
-> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](live_mode-test.html). Learn more about [live mode and testing](live_mode-test.html).
-    
-## Receive a request from a channel (PUSH)
+You have securely captured sensitive card data. The response from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the response and forward it to you.
 
+_Note: In test mode, only test credit cards are allowed!_
 
-**Understanding the process flow:**
+---
 
-You will use the *Collect Webservice PUSH Proxy* when the channel (your partner) starts the request and pushes the payment data directly to you.
+## 2b. Redirect a PUSH Channel through PCI Proxy
 
+Contrary to the PULL integration, you usually don't have much influence on how the request is started or don't want to force the Channel to change the integration. Therefore, we use a different approach for PUSH Channels.
 
-![](Channel PUSH.png)
+When you [**add a PUSH Channel**](#1-add-channel-to-your-account) to your account, you receive a `{UNIQUE-CHANNEL-KEY}` for each Channel that is set up. Together with our PCI Proxy PUSH service URL, it results in a `PCI Proxy PUSH Endpoint` that is specific to that Channel:
 
-**Consider a business that needs this ability:**
+Redirect requests coming from a Channel with a single step:
 
-*You are a travel technology company receiving new reservations from booking portals on an API endpoint at your server. As reservations may contain sensitive payment data, your servers are in PCI scope.*
+1. ##### Change API endpoint at Channel from `Your API Endpoint` to specific [`PCI Proxy PUSH Endpoint`](#reference)
+2. ##### Whitelist [IP addresses](/ip_whitelisting.md) from PCI Proxy at Channel, if needed.
 
-*With the use of PCI Proxy, payment data never touch your server and, hence, you reduce your PCI scope.* 
+If Channel sends a request to Channel-specific [`PCI Proxy PUSH endpoint`](#reference), PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
 
-### Quick Start Guide
+_Note: In test mode, only test credit cards are allowed!_
 
-To switch PCI Proxy between you and a channel that pushes data, you just add a new channel. The channel can use it and invoke requests having PCI Proxy as endpoint.
+---
 
-1. Add a push channel to receive `{YOUR-SPECIFIC-KEY}`.
-2. Exchange API endpoint with PCI Proxy PUSH endpoint at your partner.
+#### Reference
 
-| **Test PCI Proxy PUSH Endpoint:** |
-| -- |
-| https://pilot.datatrans.biz/upp/proxy/push/ `{YOUR-SPECIFIC-KEY}`  |
+| **PCI Proxy PULL Endpoint:** |
+| :--- |
+| [https://sandbox.pci-proxy.com/v1/pull](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
 
-> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers). Learn more about [live mode and testing](live_mode-test.html).
+| **PCI Proxy PUSH Endpoint:** |
+| :--- |
+| [https://sandbox.pci-proxy.com/v1/push/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#)`{UNIQUE-CHANNEL-KEY}` |
 
+| Required HTTP header | Description | Example value |
+| :--- | :--- | :--- |
+| `X-CC-URL` | API Endpoint - Specifies the Channel URL that will be called | [https://api.channel.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
+| `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
+| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 130709090849785405 |
 
+---
 
-## Add a channel
-
-Adding a new channel is easy. Please send the following information to [setup@pci-proxy.com](mailto:). 
-
-|Information| Description   |
-|---|---|
-|Merchant ID| Your merchant ID.|
-|Channel Type|Define if it is a push or pull channel.|
-|API endpoint|The URL where we should forward the request to.|
-|Sample Request & Response|Please include API name, required headers, auth fields, and request method.|
-
-You will receive a confirmation once the channel is successfully added. For push channels, you also receive `{YOUR-SPECIFIC-KEY}`.
-
-#### VPN and Leased Lines
-
-In case the channel transmits your data over VPN or Leased Line, we can add secure connections to adapt to your needs. Please [get in touch](https://www.pci-proxy.com/#/signup) for more info.
-
+> ### **Congrats, Level 2 completed: Your Channels are out of PCI scope!**
+>
+> You have securely captured sensitive card data. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+>
+> ##### Questions?
+>
+> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+>
+> Phone: +41 44 256 81 91  
+> Email: [support@pci-proxy.com](/mailto:support@pci-proxy.com)
 
 
 
