@@ -37,7 +37,7 @@ $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
         -H "X-CC-SIGN: 160203112421662698"           // New HEADER parameter: Security Sign you created in Step 1 
 
         -H "Content-Type: text/xml"                  // Content-Type - We support almost all types
-        -d 'yourRequest.xml'                         // XML Body message that is expected by Channel
+        -d @yourRequest.xml                          // XML Body message that is expected by Channel
 ```
 
 You have securely captured sensitive card data. The response from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the response and forward it to you.
