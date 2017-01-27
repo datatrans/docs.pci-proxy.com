@@ -40,7 +40,7 @@ $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
         -H "X-CC-SIGN: 160203112421662698"           // New HEADER parameter: Security Sign you created in Step 1 
 
         -H "Content-Type: text/xml"                  // Content-Type - We support almost all types
-        -d 'yourRequest.xml'                         // XML Body message that is expected by Channel
+        -d @yourRequest.xml                          // XML Body message that is expected by Channel
 ```
 
 You have securely forwarded sensitive card data without ever touching your servers. Your request had been populated with sensitive card data while it was routed through PCI Proxy. Thereby, your Receiver obtained full credit card data.
