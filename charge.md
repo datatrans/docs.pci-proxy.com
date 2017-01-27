@@ -1,4 +1,4 @@
-# Charge stored card with Datatrans' Payment gateway
+# Quickstart: Charge stored card with Datatrans' Payment gateway
 
 Lets assume you want to authorize or settle an amount on the payment data that you have collected earlier.
 
