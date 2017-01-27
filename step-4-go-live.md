@@ -19,20 +19,22 @@ Follow these steps to get your Production Account:
 
 ### Production Data vs. Sandbox Data
 
-| Data | Sandbox Account | Production Account |
-| :--- | :--- | :--- |
-| Login / Merchant ID | 1100001111 | 3000001111 |
-| Username & Password | Sandbox Login | Production Login |
-| Sign | Sandbox Sign | Production Sign |
-| Salt | Sandbox Salt | Production Salt |
-| Web Admin Tool | [https://pilot.datatrans.biz/](https://pilot.datatrans.biz/) | [https://payment.datatrans.biz/](https://payment.datatrans.biz/) |
-| PULL API Endpoint | [https://sandbox.pci-proxy.com/v1/pull/](https://sandbox.pci-proxy.com/v1/pull/) | [https://api.pci-proxy.com/v1/pull/](https://api.pci-proxy.com/v1/pull/) |
-| PUSH API Endpoint | [https://sandbox.pci-proxy.com/v1/push/](https://sandbox.pci-proxy.com/v1/push/) | [https://api.pci-proxy.com/v1/push/](https://api.pci-proxy.com/v1/push) |
-| XML Gateway Endpoint | [https://pilot.datatrans.biz/upp/jsp/XML\_authorize.jsp](https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp) | [https://payment.datatrans.biz/upp/jsp/XML\_authorize.jsp](https://payment.datatrans.biz/upp/jsp/XML_authorize.jsp) |
-| Payment Page Endpoint | [https://pilot.datatrans.biz/upp/jsp/upStart.jsp](https://pilot.datatrans.biz/upp/jsp/upStart.jsp) | [https://payment.datatrans.biz/upp/jsp/upStart.jsp](https://payment.datatrans.biz/upp/jsp/upStart.jsp) |
-| Tokenizer Endpoint | [https://pilot.datatrans.biz/upp/payment/tokenize](https://pilot.datatrans.biz/upp/payment/tokenize) | [https://payment.datatrans.biz/upp/payment/tokenize](https://payment.datatrans.biz/upp/payment/tokenize) |
-| No-Show API | [https://pilot.datatrans.biz/upp/jsp/noShow.jsp](https://pilot.datatrans.biz/upp/jsp/noShow.jsp) | [https://payment.datatrans.biz/upp/jsp/noShow.jsp](https://payment.datatrans.biz/upp/jsp/noShow.jsp) |
-| Pay-by-Email Endpoint | [https://pilot.datatrans.biz/upp/jsp/XML\_PayByEmail](https://pilot.datatrans.biz/upp/jsp/XML_PayByEmail) | [https://payment.datatrans.biz/upp/jsp/XML\_PayByEmail](https://payment.datatrans.biz/upp/jsp/XML_PayByEmail) |
+Our production environment and sandbox environment always behave the same. Once all tests on your Sandbox Account are successful, you can be rest assured that everything works the same in production. However, we differentiate between Production and Sandbox data to keep the environment separated. You will receive an email with the following Production data:
+
+| Data | Sandbox Account |
+| :--- | :--- |
+| Login / Merchant ID | 1100001111 |
+| Username & Password | Sandbox Login |
+| Sign | Sandbox Sign |
+| Salt | Sandbox Salt |
+| Web Admin Tool | [https://pilot.datatrans.biz/](https://pilot.datatrans.biz/) |
+| PULL API Endpoint | [https://sandbox.pci-proxy.com/v1/pull/](https://sandbox.pci-proxy.com/v1/pull/) |
+| PUSH API Endpoint | [https://sandbox.pci-proxy.com/v1/push/](https://sandbox.pci-proxy.com/v1/push/) |
+| XML Gateway Endpoint | [https://pilot.datatrans.biz/upp/jsp/XML\_authorize.jsp](https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp) |
+| Payment Page Endpoint | [https://pilot.datatrans.biz/upp/jsp/upStart.jsp](https://pilot.datatrans.biz/upp/jsp/upStart.jsp) |
+| Tokenizer Endpoint | [https://pilot.datatrans.biz/upp/payment/tokenize](https://pilot.datatrans.biz/upp/payment/tokenize) |
+| No-Show API | [https://pilot.datatrans.biz/upp/jsp/noShow.jsp](https://pilot.datatrans.biz/upp/jsp/noShow.jsp) |
+| Pay-by-Email Endpoint | [https://pilot.datatrans.biz/upp/jsp/XML\_PayByEmail](https://pilot.datatrans.biz/upp/jsp/XML_PayByEmail) |
 
 ---
 
