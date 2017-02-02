@@ -12,7 +12,7 @@ Please see a list of supported Receivers \(Gateways\) and their respective Recei
 
 Collecting card data from a Channel via web service can work in two ways. In general, you either perform a pull request to receive card data from the Channel or a Channel starts the request with card data. PCI Proxy can populate sensitive data in both.
 
-#### PULL
+#### PULL Channel
 
 You will use the _Channel PULL Proxy_ when **you start the request and receive card data in the response**.
 
@@ -28,7 +28,7 @@ You will use the _Channel PULL Proxy_ when **you start the request and receive c
 
 RQ = Request; RS = Response; PCIP = PCI Proxy API
 
-#### PUSH
+#### PUSH Channel
 
 You will use the _Channel PUSH Proxy_ when **your partner starts the request with card data**.
 
@@ -49,7 +49,7 @@ RQ = Request; RS = Response; PCIP = PCI Proxy API
 
 Forwarding card data to a Receiver via web service can work in two ways. In general, you either perform a pull request to forward card data to a Receiver or a Receiver starts the request to ask for card data. PCI Proxy can populate sensitive data in both.
 
-#### PULL
+#### PULL Receiver
 
 You will use the _Receiver PULL Proxy_ when **you start the request with card data**.
 
@@ -64,7 +64,7 @@ You will use the _Receiver PULL Proxy_ when **you start the request with card da
 
 RQ = Request; RS = Response; PCIP = PCI Proxy API
 
-#### PUSH
+#### PUSH Receiver
 
 You will use the _Receiver PUSH Proxy_ when **your partner start the request and you return card data in the response**.
 
