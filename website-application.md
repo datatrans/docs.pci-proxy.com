@@ -145,9 +145,7 @@ To integrate the `Tokenizer iFrame` you can use the following code snippet:
                 frameborder="0"
                 height="40"
                 scrolling="no"
-                src="https://pilot.datatrans.biz/upp/payment/tokenize?
-                    merchantId=1000011011
-                    &customTheme=mytheme">
+                src="https://pilot.datatrans.biz/upp/payment/tokenize?merchantId=1000011011&customTheme=mytheme">
         </iframe> 
       </div>
     </div>
