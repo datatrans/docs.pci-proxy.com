@@ -48,6 +48,7 @@ We have a set of test credit card numbers that you can use in our sandbox enviro
 | Amex | 375811111111123 | 12/2018 or 06/2018 | 1234 | wo/limit | No |
 | Diners | 36168002586009 | 12/2018 or 06/2018 | 123 | w/limit | - |
 | Diners | 36167719110012 | 12/2018 or 06/2018 | 123 | wo/limit | - |
+| Discover | 6011000000000004 | 06/2018 | 123 | wo/limit |  |
 | JCB | 3569990010030442 | 12/2018 or 06/2018 | 123 | w/limit | - |
 | JCB | 3569990010030400 | 12/2018 or 06/2018 | 123 | wo/limit | - |
 
