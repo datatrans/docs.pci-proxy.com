@@ -16,8 +16,6 @@ URL: [https://pilot.datatrans.biz/](https://pilot.datatrans.biz/)
 
 Our web admin tool gives you a comprehensive management tool \(backoffice\) for initiating charges and credits, analyzing of transactions, personalization of the web application interface, creation of reports and management of configuration data.
 
-![](Pilot_Datatrans.jpg)
-
 ---
 
 ## Security Signs
