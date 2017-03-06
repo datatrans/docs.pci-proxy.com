@@ -16,11 +16,11 @@ $ curl "https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp"         // HOST: 
 
         -d '<?xml version="1.0" encoding="UTF-8" ?>                    // We expect an XML formatted message       
                 <authorizationService version="3">                     
-                    <body merchantId="1000011011">                     // Merchant ID you received at adding a Acquirer
+                    <body merchantId="1000011011">                     // Merchant ID you received
                         <transaction refno="107988">                   // Unique ID for reference - assigned by you
                             <request>                                  
-                                <amount>0</amount>                     // Specify the amount you want to authorize
-                                <currency>CHF</currency>               // Specify currency in which you want to charge
+                                <amount>0</amount>                     // Specify zero-amount
+                                <currency>CHF</currency>               // Specify currency
                                 <aliasCC>70323122544331174</aliasCC>   // Token to identify stored credit card
                                 <expm>12</expm>                        // Expiry Month of stored credit card
                                 <expy>18</expy>                        // Expiry Year of stored credit card
@@ -89,14 +89,7 @@ Example of successful card check:
     </authorizationService>
 ```
 
-##### 
 
-> #### Questions?
->
-> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
->
-> Phone: +41 44 256 81 91  
-> Email: [support@pci-proxy.com](/mailto:support@pci-proxy.com)
 
 
 
