@@ -1,6 +1,6 @@
 # Quickstart: Check validity of stored cards
 
-After collecting credit cards, you might want to check the validity of credit cards.
+After collecting credit cards, you might want to check the validity of the card.
 
 Therefore, simply send a zero-amount authorization request against our XML gateway endpoint. The authorization does not appear on the customer statement but still gives you the abillity to test the validity of a credit card.
 
@@ -88,8 +88,6 @@ Example of successful card check:
         </body> 
     </authorizationService>
 ```
-
-
 
 
 
