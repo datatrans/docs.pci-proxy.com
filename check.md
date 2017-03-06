@@ -1,8 +1,8 @@
-# Quickstart: Check validity of stored cards 
+# Quickstart: Check validity of stored cards
 
-After collecting credit cards, you might want to check the validity of the credit cards. 
+After collecting credit cards, you might want to check the validity of credit cards.
 
-Therefore, simply send a zero-amount authorization request against our XML gateway endpoint. The authorization does not appear on the customer statement but still gives you the abillity to test the validity of a credit card. 
+Therefore, simply send a zero-amount authorization request against our XML gateway endpoint. The authorization does not appear on the customer statement but still gives you the abillity to test the validity of a credit card.
 
 ---
 
@@ -56,7 +56,7 @@ The zero-amount authorization request needs to be sent as an XML formatted messa
 | --- | --- | --- |
 | `uppCustomerIpAddress` |  | Customer’s IP address \(source IP used by the cardholder\) |
 | `sign` |  | Your security sign |
-| `reqtype` |  | _NOA_ – Authorisation only \(default\) or  |
+| `reqtype` |  | _NOA_ – Authorisation only \(default\) or |
 
 ##### 
 
