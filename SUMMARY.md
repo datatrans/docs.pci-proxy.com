@@ -13,7 +13,7 @@
     * [Show](show.md)
     * [Check](check.md)
   * [Step 4: Go Live](step-4-go-live.md)
-* Guides
+* [Guides](guides.md)
 * [FAQ](faq.md)
 * [Contact us](contact_us.md)
 * Resources
