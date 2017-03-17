@@ -33,6 +33,8 @@
 | [Six Payment Services](https://www.six-payment-services.com/en/home.html) | PULL |
 | [Stripe](https://stripe.com/de) | PULL |
 | [Virtual Merchant](https://www.myvirtualmerchant.com/VirtualMerchant/) | PULL |
+| [YesPay](http://yespay.co.in/) | PULL |
+| [Worldpay](http://www.worldpay.com/) | PULL |
 
 We are adding more third party APIs and payment gateways. Let us know if one is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
 
