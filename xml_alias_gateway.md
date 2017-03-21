@@ -30,42 +30,51 @@ In order to generate a token, use the following example request.
 * **Example request:**
 
 ```xml
-$ curl 
-      -X POST 
-      -H "Content-Type: text/xml; charset=utf8" 
-        --data-binary @-https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp 
-          <?xml version="1.0" encoding="UTF8" ?>
-            <aliasCCService version="1">
-              <body merchantId="1000011011">
-                <alias>
-                  <request>
-                    <cardno>4950000111111110</cardno>
-                    <sign>30916165706580013</sign>
-                  </request>
-                </alias>
-              </body>
-            </aliasCCService>
+curl "https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Content-Type: text/xml" -d '
+<?xml version="1.0" encoding="UTF-8"?>
+ <aliasCCService version="1">
+   <body merchantId="1000011011">
+     <alias>
+        <request>
+            <cardno>375811111111115</cardno>
+        </request>
+     </alias>
+     <alias>
+        <request>
+            <cvv>123</cvv>
+        </request>
+     </alias>
+   </body>
+ </aliasCCService>' 
 ```
 
 * **Example response:**
 
 ```xml
-<?xml version='1.0' encoding='UTF8'?>
-  <aliasCCService version='1'>
+<?xml version='1.0' encoding='UTF-8'?>
+<aliasCCService version='1'>
     <body merchantId='1000011011' status='accepted'>
-      <alias aliasStatus='response'>
-        <request>
-          <cardno>4950000111111110</cardno>
-          <sign>30916165706580013</sign>
-        </request>
-        <response>
-          <aliasCC>80205164913895528</aliasCC>
-          <cardno>4950000111111110</cardno>
-          <maskedCC>495000xxxxxx1110</maskedCC>
-        </response>
-      </alias>
+        <alias aliasStatus='response'>
+            <request>
+                <cardno>375811111111115</cardno>
+            </request>
+            <response>
+                <aliasCC>375811OMTYEE115</aliasCC>
+                <cardno>375811111111115</cardno>
+                <maskedCC>375811xxxxx1115</maskedCC>
+            </response>
+        </alias>
+        <alias aliasStatus='response'>
+            <request>
+                <cvv>123</cvv>
+            </request>
+            <response>
+                <aliasCVV>EicQYIP6QA69Or_6DqBOLNQf</aliasCVV>
+                <uppCvvExpiryDate>2017-03-28</uppCvvExpiryDate>
+            </response>
+        </alias>
     </body>
-  </aliasCCService>
+</aliasCCService>
 ```
 
 > Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](live_mode-test.html). Learn more about [live mode and testing](live_mode-test.html).
@@ -75,42 +84,52 @@ $ curl
 * **Example request:**
 
 ```xml
-$ curl 
-      -X POST 
-      -H "Content-Type: text/xml; charset=utf8" 
-        --data-binary @-https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp 
-          <?xml version="1.0" encoding="UTF8" ?>
-            <aliasCCService version="1">
-              <body merchantId="1000011011">
-                <alias>
-                  <request>
-                    <cardno>4950000111111110</cardno>
-                    <sign>30916165706580013</sign>
-                  </request>
-                </alias>
-              </body>
-            </aliasCCService>
+curl "https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Content-Type: text/xml" -d '
+<?xml version="1.0" encoding="UTF-8"?>
+ <aliasCCService version="1">
+   <body merchantId="1000011011">
+     <alias>
+        <request>
+            <cardno>000</cardno>
+        </request>
+     </alias>
+     <alias>
+        <request>
+            <cvv>a</cvv>
+        </request>
+     </alias>
+   </body>
+ </aliasCCService>' 
 ```
 
 * **Example response:**
 
 ```xml
-<?xml version='1.0' encoding='UTF8'?>
-  <aliasCCService version='1'>
+<?xml version='1.0' encoding='UTF-8'?>
+<aliasCCService version='1'>
     <body merchantId='1000011011' status='accepted'>
-      <alias aliasStatus='error'>
-        <request>
-          <cardno>49500001111110</cardno>
-          <sign>30916165706580013</sign>
-        </request>
-        <error>
-          <errorCode>1004</errorCode>
-          <errorMessage>CC number is not valid</errorMessage>
-          <errorDetail>check modulo10 failed</errorDetail>
-        </error>
-      </alias>
+        <alias aliasStatus='error'>
+            <request>
+                <cardno>000</cardno>
+            </request>
+            <error>
+                <errorCode>1004</errorCode>
+                <errorMessage>CC number is not valid</errorMessage>
+                <errorDetail>check modulo-10 failed</errorDetail>
+            </error>
+        </alias>
+        <alias aliasStatus='error'>
+            <request>
+                <cvv>a</cvv>
+            </request>
+            <error>
+                <errorCode>2022</errorCode>
+                <errorMessage>invalid value</errorMessage>
+                <errorDetail>cvv</errorDetail>
+            </error>
+        </alias>
     </body>
-  </aliasCCService>
+</aliasCCService>
 ```
 
 #### Possible error cases
