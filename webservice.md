@@ -40,7 +40,7 @@ $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
         -d @yourRequest.xml                          // XML Body message that is expected by Channel
 ```
 
-Sample of Booking.com Channel Reservation PULL:
+For instance, if you want to pull reservations from Channel Booking.com, see the following sample:
 
 ```bash
 curl "https://sandbox.pci-proxy.com/v1/pull" -X POST -H "Content-Type: text/xml" -H "X-CC-SIGN: 170321150149414327" -H "X-CC-MERCHANT-ID: 1100006578" -H "X-CC-URL: https://secure-supply-xml.booking.com/hotels/xml/reservations" -d '
