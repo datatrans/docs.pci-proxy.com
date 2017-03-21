@@ -32,9 +32,9 @@ Redirect your XML request \(`yourRequest.xml`\) through PCI Proxy by using the f
 $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
         -X POST                                      // Request Method POST
 
-        -H "X-CC-MERCHANT-ID: 1100005433"            // New HEADER parameter: Merchant ID you received during Signup
+        -H "X-CC-MERCHANT-ID: 1000011011"            // New HEADER parameter: Merchant ID you received during Signup
         -H "X-CC-URL: https://api.channel.com/"      // New HEADER parameter: Channel API Endpoint
-        -H "X-CC-SIGN: 160203112421662698"           // New HEADER parameter: Security Sign you created in Step 1 
+        -H "X-CC-SIGN: 30916165706580013"           // New HEADER parameter: Security Sign you created in Step 1 
 
         -H "Content-Type: text/xml"                  // Content-Type - We support almost all types
         -d @yourRequest.xml                          // XML Body message that is expected by Channel
@@ -43,7 +43,7 @@ $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
 For instance, if you want to pull reservations from Channel Booking.com, see the following sample:
 
 ```bash
-curl "https://sandbox.pci-proxy.com/v1/pull" -X POST -H "Content-Type: text/xml" -H "X-CC-SIGN: 170321150149414327" -H "X-CC-MERCHANT-ID: 1100006578" -H "X-CC-URL: https://secure-supply-xml.booking.com/hotels/xml/reservations" -d '
+curl "https://sandbox.pci-proxy.com/v1/pull" -X POST -H "Content-Type: text/xml" -H "X-CC-SIGN: 30916165706580013" -H "X-CC-MERCHANT-ID: 1000011011" -H "X-CC-URL: https://secure-supply-xml.booking.com/hotels/xml/reservations" -d '
 <request>
   <username>your-user</username>
   <password>your-pass</password>
@@ -87,7 +87,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | :--- | :--- | :--- |
 | `X-CC-URL` | API Endpoint - Specifies the Channel URL that will be called | [https://api.channel.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
 | `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
-| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 130709090849785405 |
+| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 30916165706580013 |
 
 ---
 
