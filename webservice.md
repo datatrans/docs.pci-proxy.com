@@ -34,7 +34,7 @@ $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
 
         -H "X-CC-MERCHANT-ID: 1000011011"            // New HEADER parameter: Merchant ID you received during Signup
         -H "X-CC-URL: https://api.channel.com/"      // New HEADER parameter: Channel API Endpoint
-        -H "X-CC-SIGN: 30916165706580013"           // New HEADER parameter: Security Sign you created in Step 1 
+        -H "X-CC-SIGN: 30916165706580013"            // New HEADER parameter: Security Sign you created in Step 1 
 
         -H "Content-Type: text/xml"                  // Content-Type - We support almost all types
         -d @yourRequest.xml                          // XML Body message that is expected by Channel
