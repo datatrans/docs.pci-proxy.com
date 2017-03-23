@@ -1,6 +1,6 @@
 # Supported Channels
 
-For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we already support a variety of channel APIs: 
+For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we already support a variety of channel APIs:
 
 | Channel | Type |
 | --- | --- |
@@ -14,6 +14,7 @@ For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we al
 | [Despegar](http://www.us.despegar.com/) | PULL |
 | [Expedia](https://www.expedia.com) | PULL |
 | [Expedia EAN](http://www.ean.com/) | PULL |
+| [HomeAway](https://www.homeaway.com/) | PUSH |
 | [Hoteliers](https://www.hoteliers.com) | PUSH |
 | [Hotelreservation](https://www.hotelreservation.com/) | PULL |
 | [HotelREZ](https://www.hotelrez.net/) | PULL |
