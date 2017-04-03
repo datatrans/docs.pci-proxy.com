@@ -10,6 +10,7 @@ For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we al
 | [Booking](https://www.booking.com/) | PULL |
 | [Booking OTA](https://www.booking.com/) | PULL |
 | [Booking Expert](http://www.bookingexpert.it/) | PULL |
+| [Budgetplaces](http://www.budgetplaces.com/) | PULL |
 | [Cubilis](http://www.cubilis.com/) | PULL |
 | [Despegar](http://www.us.despegar.com/) | PULL |
 | [Expedia](https://www.expedia.com) | PULL |
@@ -19,10 +20,13 @@ For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we al
 | [Hotelreservation](https://www.hotelreservation.com/) | PULL |
 | [HotelREZ](https://www.hotelrez.net/) | PULL |
 | [Hotels.nl](http://www.hotels.nl/) | PULL |
+| [Hotusa Hotels](http://www.hotusa.com/) | PULL |
 | [Initalia](http://www.initalia.it/) | PULL |
 | [Lastminute](http://www.lastminute.com/) | PULL |
 | [Laterooms](http://www.laterooms.com/) | PUSH |
 | [Orbitz](https://www.orbitz.com/) | PULL |
+| [Rental United](http://rentalsunited.com) | PULL |
+| [Siteminder PMS](http://www.siteminder.com) | PULL |
 | [Travelport \(Galileo\)](https://www.travelport.com) | PULL |
 | [TravelRepublic](https://www.travelrepublic.co.uk/) | PULL |
 | [Tripadvisor](http://developer-tripadvisor.com/connectivity-solutions/instant-booking-api/documentation/booking_submit/) | PUSH |
