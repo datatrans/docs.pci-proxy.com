@@ -6,13 +6,19 @@
 | [Availpro](http://site.availpro.com/) | PUSH |
 | [Booking](https://www.booking.com/) | PULL |
 | [Cubilis](http://www.cubilis.com/) | PULL |
+| [DHISCO](http://www.dhisco.com/) | PULL |
+| [Dingus](https://www.dingus-services.com/en/) | PULL |
 | [eRevMax Technologies \(RateTiger\)](http://www.erevmax.com/) | PULL |
+| [HBSI \(IBS Software\)](http://www.hotelbookingsolutions.com/) | PULL |
+| [Hotel-Spider](http://www.hotel-spider.com/en/) | PUSH |
+| [Opera](https://www.oracle.com/industries/hospitality/products/opera-cloud-services.html) | PUSH |
 | [Peakwork](http://www.peakwork.com/) | PULL |
 | [Protel](http://www.protel.net/de/) | PUSH |
 | [RateGain](http://rategain.com/) | PULL |
 | [Realex Payments](https://www.realexpayments.com/) | PULL |
 | [Sabre](http://www.sabre.com) | PULL |
-| [Siteminder](http://www.siteminder.com) | PULL |
+| [Siteminder Siteconnect ](http://www.siteminder.com/) | PULL |
+| [Tesipro](http://tesipro.com/) | PUSH |
 | [Travelport \(Galileo\)](https://www.travelport.com) | PULL |
 | [Traveltainment](http://www.traveltainment.de/) | PULL |
 | [TrustInternational / Sabre](http://www.trustinternational.com/) | PULL |
@@ -26,6 +32,7 @@
 | [Cielo](http://www.cielo.com.br/) | PULL |
 | [Datacash](http://www.mastercard.com/gateway/) | PULL |
 | [Diners \(Dataflexnet\)](https://www.dinersclub.com/) | PULL |
+| [Ogone / Ingenico](https://ingenico.co.uk/epayments) | PULL |
 | [PayPal3t](https://www.paypal.com/us/webapps/mpp/home) | PULL |
 | [Realex Payments](https://www.realexpayments.com/) | PULL |
 | [SaferPay](https://www.six-payment-services.com/en/site/e-commerce/home.html) | PULL |
