@@ -211,8 +211,8 @@ If a wrong card number is detected or the the luhn check didn’t pass the data 
 | --- | --- |
 | &gt;=IE10 | iOS Safari &gt;= 6 |
 | &gt;=Firefox 30 | Android &gt;=4 |
-|  | &gt;=Chrome 32 |
-|  | &gt;=Safari 6 |
+| &gt;= Chrome 32 | &gt;=Chrome 32 |
+| &gt;= Safari 6 |  |
 
 [http://caniuse.com/\#search=postMessage](http://caniuse.com/#search=postMessage)
 
