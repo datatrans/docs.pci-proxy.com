@@ -4,6 +4,7 @@ The inline mode allows you to securely collect card data by injecting iframes to
 
 Below you can find a preview of a sample payment form.
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style>
     label { display: block }
     button { font-size: 90% }
@@ -22,9 +23,11 @@ Below you can find a preview of a sample payment form.
 <div id="cvvPlaceholder" style="display: inline-block; width: 250px; height: 55px;"></div>
 </div>
 
-<button type="button" id="go">GO</button>
+<button type="button" class="btn btn-primary" id="go">Get Token!</button>
 </fieldset>
 </form>
+
+<div id="result"></div>
 
 <script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
