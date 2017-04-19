@@ -25,15 +25,21 @@ Below you can find a preview of a sample payment form.
 <button type="button" class="btn btn-primary" id="go">Get Token!</button>
 
 </form>
-
+<br><br>
 <div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
 
 <script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
+$(document).ready(function() {
 Inline.initTokenize( "1100002469", {
 cardNumber: "cardNumberPlaceholder", 
 cvv: "cvvPlaceholder"           
 });
+});
+
+
+
+
 
 
 Inline.on("ready", function() {
