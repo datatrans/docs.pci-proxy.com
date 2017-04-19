@@ -8,12 +8,34 @@ Below you can find a preview of a sample payment form.
 <script>alert('Hello World');</script>
 
 <style>
-    #my-header {
-        background: #333; color: #fff;
-    }
+    label { display: block }
+    button { font-size: 90% }
 </style>
 
-<h1 id="my-header">Hello World</h1>
+
+<form>
+<fieldset>
+<div>
+<label for="cardNumberPlaceholder">Card Number</label>
+<div id="cardNumberPlaceholder" style="display: inline-block; width: 500px; height: 55px;">
+</div>
+</div>
+<div>
+<label for="cvvPlaceholder">Cvv</label>
+<div id="cvvPlaceholder" style="display: inline-block; width: 250px; height: 55px;"></div>
+</div>
+
+<button type="button" id="go">GO</button>
+</fieldset>
+</form>
+
+<script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
+<script type="text/javascript">
+Inline.initTokenize( "1100002469", {
+cardNumber: "cardNumberPlaceholder", 
+cvv: "cvvPlaceholder"           
+});
+</script>
 
 
 
