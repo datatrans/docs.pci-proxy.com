@@ -74,7 +74,7 @@ Inline.submit(); // submit the "form"
 Inline.on("success", function(data) {
 if(data.transactionId !== undefined) {
 var trxId = document.getElementById("result");
-trxId.textContent = "Your payment token is: " + data.transactionId;
+trxId.textContent = "Your transactionId is: " + data.transactionId;
 trxId.style.display = 'block';
 }
 });
