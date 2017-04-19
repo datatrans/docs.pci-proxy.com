@@ -49,12 +49,12 @@ cvv: "cvvPlaceholder"
 
 Inline.on("ready", function() {
 
-Inline.setStyle("cardNumber","width: 80%; border-radius: 1px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
+Inline.setStyle("cardNumber","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
 
-Inline.setStyle("cvv","width: 80%; border-radius: 3px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
+Inline.setStyle("cvv","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
 
-Inline.setPlaceholder("cardNumber", "Card number");
-Inline.setPlaceholder("cvv", "CVV Code");
+Inline.setPlaceholder("cardNumber", "4242 4242 4242 4242");
+Inline.setPlaceholder("cvv", "123");
 
 Inline.focus("cardNumber");
 });
