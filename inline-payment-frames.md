@@ -6,13 +6,12 @@ Below you can find a preview of a sample payment form.
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style>
-    label { display: block }
-    button { font-size: 90% }
-    fieldset { border: 0px; background-color: #F7F8F9 }
+    label { display: block }    
+    .paymentForm { border: 0px; background-color: #F7F8F9; padding: 10px }
 </style>
 
 <form>
-<fieldset>
+<div class="container paymentForm">
 <div>
 <label for="cardNumberPlaceholder">Card Number</label>
 <div id="cardNumberPlaceholder" style="display: inline-block; width: 500px; height: 55px;">
@@ -24,10 +23,10 @@ Below you can find a preview of a sample payment form.
 </div>
 
 <button type="button" class="btn btn-primary" id="go">Get Token!</button>
-</fieldset>
+<div class="container paymentForm">
 </form>
 
-<div id="result"></div>
+<div id="result" class="alert alert-success" role="alert"></div>
 
 <script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
@@ -44,10 +43,27 @@ Inline.setStyle("cardNumber","width: 80%; border-radius: 1px; border: 1px solid 
 Inline.setStyle("cvv","width: 80%; border-radius: 3px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
 
 Inline.setPlaceholder("cardNumber", "Card number");
-
 Inline.setPlaceholder("cvv", "CVV Code");
 
 Inline.focus("cardNumber");
+});
+
+Inline.on("validate", function(data) {
+Inline.setStyle("cardNumber", data.fields.cardNumber.valid ? "border: 1px solid #ccc": "border: 1px solid #f00");
+Inline.setStyle("cvv", data.fields.cvv.valid ? "border: 1px solid #ccc" : "border: 1px solid #f00");
+});
+
+$(function() {
+$("#go").click( function() {
+Inline.submit(); // submit the "form"
+})
+});
+
+Inline.on("success", function(data) {
+if(data.transactionId !== undefined) {
+var trxId = document.getElementById("result");
+trxId.textContent = data.transactionId;
+}
 });
 
 </script>
