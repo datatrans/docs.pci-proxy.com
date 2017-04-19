@@ -6,7 +6,7 @@
     * [Website](website-application.md)
     * [Inline Mode](inline-payment-frames.md)
       * [Examples](inline-payment-frames/examples.md)
-      * Styling, Events & Error handling
+      * [Styling, Events & Error handling](inline-payment-frames/styling-events-and-error-handling.md)
     * [Web Service](webservice.md)
     * [Native App](mobile-app.md)
     * [E-Mail](e-mail.md)
