@@ -84,11 +84,72 @@ trxId.style.display = 'block';
 To get started, include the following script on your page. Please make sure to always load it directly from https://pilot.datatrans.biz (you can find the productive Endpoint in the Webadmin Tool).
 
 
+```js
+<script src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 ```
-<script src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js">
-</script>
+# Step 2: Create your form to collect card data
+In order for the inline mode to insert the card number and cvv iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are:
+- `card-number-placeholder`
+- `cvv-placeholder`
+
+```html
+<form>
+    <div class="paymentForm">
+        <div>
+            <label for="card-number-placeholder">Card Number</label>
+            <!-- card number container -->
+            <div id="card-number-placeholder" style="width: 250px; height: 55px;"></div>
+        </div>
+        <div>
+            <label for="cvv-placeholder">Cvv</label>
+            <!-- cvv container -->
+            <div id="cvv-placeholder" style="width: 90px; height: 55px;"></div>
+        </div>
+
+        <button type="button" id="go">Get Token!</button>
+    </div>
+</form>
+```
+# Step 3: Retrieving a transactionId
+
+Initialise the inline mode with your merchantId and specify which DOM element containers should be used to inject the iframes:
+
+```js
+Inline.initTokenize( "1100002469", {
+  cardNumber: "card-number-placeholder", 
+  cvv: "cvv-placeholder"                
+});
+```
+Next up is to submit the form and listening for the success event.
+
+```js
+$(function() {
+  $("#go").click( function() {
+    Inline.submit(); // submit the "form"
+  })
+});
+
+Inline.on("success", function(data) {
+  if(data.transactionId !== undefined) {
+    // transmit data.transactionId and the rest
+    // of the form to your server    
+  }
+});
 ```
 
+# Step 4: Using the transactionId to obtain the tokens
+Once you transmitted the transaction Id retrieved in step 3 to your server (together with the the rest of your form) you can execute a server to server request to get the tokens for your card number and cvv:
 
-
+```bash
+$ curl "https://pilot.datatrans.biz/upp/services/v1/inline/token?transactionId=170419151426624571" \
+       -u 'merchantId:password'
+```
+The password can be found in the webadmin tool under _UPP Administartion > Security > Server-to-Server services security_. A sample response from the request above looks like:
+```json
+{
+  "aliasCC" : "424242SKMPRI4242",
+  "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
+}
+```
+Thats all! Proceed with [one of the ways](/step-3-use-stored-data.md) to use the tokens. Please also have a look at the Styling, Events & Error handling reference.
 

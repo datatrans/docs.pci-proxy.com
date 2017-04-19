@@ -5,7 +5,8 @@
   * [Step 2: Collect & Store](step-2-collect--store.md)
     * [Website](website-application.md)
     * [Inline Mode](inline-payment-frames.md)
-      * Examples
+      * [Examples](inline-payment-frames/examples.md)
+      * Styling, Events & Error handling
     * [Web Service](webservice.md)
     * [Native App](mobile-app.md)
     * [E-Mail](e-mail.md)
