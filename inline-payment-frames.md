@@ -39,6 +39,12 @@ cvv: "cvvPlaceholder"
 });
 });
 
+$(document).ajaxComplete(function() {
+Inline.initTokenize( "1100002469", {
+cardNumber: "cardNumberPlaceholder", 
+cvv: "cvvPlaceholder"           
+});
+});
 
 
 Inline.on("ready", function() {
