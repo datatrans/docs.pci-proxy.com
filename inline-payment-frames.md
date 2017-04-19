@@ -11,19 +11,19 @@ label { display: block }
 </style>
 
 <form>
-<div class="paymentForm">
-<div>
-<label for="cardNumberPlaceholder">Card Number</label>
-<div id="cardNumberPlaceholder" style="display: inline-block; width: 300px; height: 55px;">
-</div>
-</div>
-<div>
-<label for="cvvPlaceholder">Cvv</label>
-<div id="cvvPlaceholder" style="display: inline-block; width: 120px; height: 55px;"></div>
-</div>
-
-<button type="button" class="btn btn-primary" id="go">Get Token!</button>
-
+  <div class="paymentForm">
+    <div>
+      <label for="cardNumberPlaceholder">Card Number</label>
+      <div id="cardNumberPlaceholder" style="display: inline-block; width: 300px;           height: 55px;">
+      </div>
+    </div>
+    <div>
+      <label for="cvvPlaceholder">Cvv</label>
+      <div id="cvvPlaceholder" style="display: inline-block; width: 120px; height: 55px;">
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-primary" id="go">Get Token!</button>
 </form>
 
 <div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
