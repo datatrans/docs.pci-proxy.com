@@ -4,7 +4,7 @@ The inline mode allows you to securely collect card data by injecting iframes to
 
 Below you can find a preview of a sample payment form.
 
-```
+
 <script>alert('Hello World');</script>
 
 <style>
@@ -14,7 +14,7 @@ Below you can find a preview of a sample payment form.
 </style>
 
 <h1 id="my-header">Hello World</h1>
-```
+
 
 
 
