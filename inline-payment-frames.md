@@ -4,14 +4,10 @@ The inline mode allows you to securely collect card data by injecting iframes to
 
 Below you can find a preview of a sample payment form.
 
-
-<script>alert('Hello World');</script>
-
 <style>
     label { display: block }
     button { font-size: 90% }
 </style>
-
 
 <form>
 <fieldset>
@@ -35,6 +31,21 @@ Inline.initTokenize( "1100002469", {
 cardNumber: "cardNumberPlaceholder", 
 cvv: "cvvPlaceholder"           
 });
+
+
+Inline.on("ready", function() {
+
+Inline.setStyle("cardNumber","width: 80%; border-radius: 1px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
+
+Inline.setStyle("cvv","width: 80%; border-radius: 3px; border: 1px solid #ccc; " padding: .65em .5em; font-size: 91%;");
+
+Inline.setPlaceholder("cardNumber", "card goes here");
+
+Inline.setPlaceholder("cvv", "cvv here");
+
+Inline.focus("cardNumber");
+});
+
 </script>
 
 
