@@ -8,7 +8,7 @@ Below you can find a preview of a sample payment form.
 <style>
     label { display: block }
     button { font-size: 90% }
-    fieldset { border: 0px }
+    fieldset { border: 0px; background-color: #F7F8F9 }
 </style>
 
 <form>
