@@ -11,7 +11,7 @@ Below you can find a preview of a sample payment form.
 </style>
 
 <form>
-<div class="container paymentForm">
+<div class="paymentForm">
 <div>
 <label for="cardNumberPlaceholder">Card Number</label>
 <div id="cardNumberPlaceholder" style="display: inline-block; width: 500px; height: 55px;">
@@ -26,7 +26,7 @@ Below you can find a preview of a sample payment form.
 <div class="container paymentForm">
 </form>
 
-<div id="result" class="alert alert-success" role="alert"></div>
+<div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
 
 <script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
@@ -62,7 +62,8 @@ Inline.submit(); // submit the "form"
 Inline.on("success", function(data) {
 if(data.transactionId !== undefined) {
 var trxId = document.getElementById("result");
-trxId.textContent = data.transactionId;
+trxId.textContent = "Your payment token is: " + data.transactionId;
+trxId.style.display = 'block';
 }
 });
 
