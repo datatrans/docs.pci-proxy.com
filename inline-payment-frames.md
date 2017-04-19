@@ -10,27 +10,6 @@ label { display: block }
 .paymentForm { border: 0px; background-color: #F7F8F9; padding: 10px }
 </style>
 
-<form>
-  <div class="paymentForm">
-    <div>
-      <label for="cardNumberPlaceholder">Card Number</label>
-      <div id="cardNumberPlaceholder" style="display: inline-block; width: 300px;           height: 55px;">
-      </div>
-    </div>
-    <div>
-      <label for="cvvPlaceholder">Cvv</label>
-      <div id="cvvPlaceholder" style="display: inline-block; width: 120px; height: 55px;">
-      </div>
-    </div>
-  </div>
-  <button type="button" class="btn btn-primary" id="go">Get Token!</button>
-</form>
-
-<div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
-<br/>
-<br/>
-
-
 # Step 1: Setup the Inline Mode
 To get started, include the following script on your page. Please make sure to always load it directly from https://pilot.datatrans.biz (you can find the productive Endpoint in the Webadmin Tool).
 
