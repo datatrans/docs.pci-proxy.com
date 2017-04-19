@@ -23,7 +23,7 @@ Below you can find a preview of a sample payment form.
 </div>
 
 <button type="button" class="btn btn-primary" id="go">Get Token!</button>
-<div class="container paymentForm">
+
 </form>
 
 <div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
