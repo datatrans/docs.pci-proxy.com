@@ -2,7 +2,7 @@
 
 The inline mode allows you to securely collect card data by injecting iframes to your DOM. A separate iframe for the card number and CVV code is used. Like this, sensitive data never reaches your server.
 
-Below you can find a preview of a sample payment form.
+Below you can find a preview of a sample form to collect the card number and CVV code.
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style>
