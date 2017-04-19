@@ -4,6 +4,31 @@ The inline mode allows you to securely collect card data by injecting iframes to
 
 Below you can find a preview of a sample form to collect the card number and CVV code.
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+label { display: block }
+.paymentForm { border: 0px; background-color: #F7F8F9; padding: 10px }
+</style>
+
+<form>
+<div class="paymentForm">
+<div>
+<label for="cardNumberPlaceholder">Card Number</label>
+<div id="cardNumberPlaceholder" style="display: inline-block; width: 300px; height: 55px;">
+</div>
+</div>
+<div>
+<label for="cvvPlaceholder">Cvv</label>
+<div id="cvvPlaceholder" style="display: inline-block; width: 120px; height: 55px;"></div>
+</div>
+
+<button type="button" class="btn btn-primary" id="go">Get Token!</button>
+
+</form>
+
+<div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
+<br/>
+<br/>
 
 
 # Step 1: Setup the Inline Mode
