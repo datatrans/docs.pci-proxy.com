@@ -4,21 +4,17 @@ The inline mode allows you to securely collect card data by injecting iframes to
 
 Below you can find a preview of a sample payment form.
 
-&lt;script&gt;alert\('Hello World'\);&lt;/script&gt;
+```
+<script>alert('Hello World');</script>
 
-
-
-&lt;style&gt;
-
-    \#my-header {
-
-        background: \#333; color: \#fff;
-
+<style>
+    #my-header {
+        background: #333; color: #fff;
     }
+</style>
 
-&lt;/style&gt;
+<h1 id="my-header">Hello World</h1>
+```
 
 
-
-&lt;h1 id="my-header"&gt;Hello World&lt;/h1&gt;
 
