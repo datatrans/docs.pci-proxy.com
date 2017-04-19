@@ -27,6 +27,8 @@ Below you can find a preview of a sample payment form.
 </form>
 
 <div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
+<br/>
+<br/>
 
 <script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
