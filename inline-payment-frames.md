@@ -14,12 +14,12 @@ Below you can find a preview of a sample payment form.
 <div class="paymentForm">
 <div>
 <label for="cardNumberPlaceholder">Card Number</label>
-<div id="cardNumberPlaceholder" style="display: inline-block; width: 250px; height: 55px;">
+<div id="cardNumberPlaceholder" style="display: inline-block; width: 300px; height: 55px;">
 </div>
 </div>
 <div>
 <label for="cvvPlaceholder">Cvv</label>
-<div id="cvvPlaceholder" style="display: inline-block; width: 90px; height: 55px;"></div>
+<div id="cvvPlaceholder" style="display: inline-block; width: 120px; height: 55px;"></div>
 </div>
 
 <button type="button" class="btn btn-primary" id="go">Get Token!</button>
