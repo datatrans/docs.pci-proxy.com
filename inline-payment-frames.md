@@ -83,10 +83,10 @@ trxId.style.display = 'block';
 # Step 1: Setup the Inline Mode
 To get started, include the following script on your page. Please make sure to always load it directly from https://pilot.datatrans.biz (you can find the productive Endpoint in the Webadmin Tool).
 
-
 ```js
 <script src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 ```
+
 # Step 2: Create your form to collect card data
 In order for the inline mode to insert the card number and cvv iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are:
 - `card-number-placeholder`
@@ -110,6 +110,7 @@ In order for the inline mode to insert the card number and cvv iframes at the ri
     </div>
 </form>
 ```
+
 # Step 3: Retrieving a transactionId
 
 Initialise the inline mode with your merchantId and specify which DOM element containers should be used to inject the iframes:
@@ -120,6 +121,7 @@ Inline.initTokenize( "1100002469", {
   cvv: "cvv-placeholder"                
 });
 ```
+
 Next up is to submit the form and listening for the success event.
 
 ```js
