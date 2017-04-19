@@ -4,6 +4,7 @@
   * [Step 1: Signup and Setup](step-1-signup-and-setup.md)
   * [Step 2: Collect & Store](step-2-collect--store.md)
     * [Website](website-application.md)
+    * [Inline Mode](inline-payment-frames.md)
     * [Web Service](webservice.md)
     * [Native App](mobile-app.md)
     * [E-Mail](e-mail.md)
