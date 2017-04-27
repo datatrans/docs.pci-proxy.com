@@ -9,7 +9,7 @@ Follow these steps to get your Production Account:
 2. Once signed, _we setup your Production Account with all Channels and Receiver_ according to your Sandbox Account.
 
 3. You will receive your Production credentials in 2 separate Emails: Login \(merchant ID\), Username, Password.  
-   _If you haven't received anything, please check your spam folder or contact support@pci-proxy.com._
+   _If you haven't received anything, please check your spam folder or contact support@datatrans.com._
 
 4. [**Log in**](https://pilot.datatrans.biz/) with your credentials and follow instructions to create your own password.
 
@@ -27,14 +27,14 @@ Our production environment and sandbox environment always behave the same. Once 
 | Username & Password | Sandbox Login |
 | Sign | Sandbox Sign |
 | Salt | Sandbox Salt |
-| Web Admin Tool | [https://pilot.datatrans.biz/](https://pilot.datatrans.biz/) |
+| Web Admin Tool | [https://admin.sandbox.datatrans.com/](https://admin.sandbox.datatrans.com/) |
 | PULL API Endpoint | [https://sandbox.pci-proxy.com/v1/pull/](https://sandbox.pci-proxy.com/v1/pull/) |
 | PUSH API Endpoint | [https://sandbox.pci-proxy.com/v1/push/](https://sandbox.pci-proxy.com/v1/push/) |
-| XML Gateway Endpoint | [https://pilot.datatrans.biz/upp/jsp/XML\_authorize.jsp](https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp) |
-| Payment Page Endpoint | [https://pilot.datatrans.biz/upp/jsp/upStart.jsp](https://pilot.datatrans.biz/upp/jsp/upStart.jsp) |
-| Tokenizer Endpoint | [https://pilot.datatrans.biz/upp/payment/tokenize](https://pilot.datatrans.biz/upp/payment/tokenize) |
-| No-Show API | [https://pilot.datatrans.biz/upp/jsp/noShow.jsp](https://pilot.datatrans.biz/upp/jsp/noShow.jsp) |
-| Pay-by-Email Endpoint | [https://pilot.datatrans.biz/upp/jsp/XML\_PayByEmail](https://pilot.datatrans.biz/upp/jsp/XML_PayByEmail) |
+| XML Gateway Endpoint | [https://api.sandbox.datatrans.com/upp/jsp/XML\_authorize.jsp](https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp) |
+| Payment Page Endpoint | [https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp](https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp) |
+| Tokenizer Endpoint | [https://pay.sandbox.datatrans.com/upp/payment/tokenize](https://pay.sandbox.datatrans.com/upp/payment/tokenize) |
+| No-Show API | [https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp](https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp) |
+| Pay-by-Email Endpoint | [https://api.sandbox.datatrans.com/upp/jsp/XML\_PayByEmail](https://api.sandbox.datatrans.com/upp/jsp/XML_PayByEmail) |
 
 ---
 
