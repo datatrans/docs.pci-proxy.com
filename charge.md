@@ -47,7 +47,8 @@ https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp            // HOST: Paymen
                 &refno=123456789                             // Unique ID for reference - assigned by you
                 &sign=30916165706580013                      // Security Sign you created in Step 1
                 &paymentmethod=VIS                           // Specify the payment method you want to charge
-                &aliasCC=424242SKMPRI4242                    // Token to identify stored credit card
+                &aliasCC=424242SKMPRI4242                    // CC token to identify stored credit card number
+                &aliasCVV=LfDiiolgQ86kRSyNEXyx8jwU           // CVV token to identify stored CVV code
                 &expm=12                                     // Expiry Month of stored credit card
                 &expy=18                                     // Expiry Year of stored credit card
                 &language=en                                 // Define language in which Payment Page should be opened
@@ -68,7 +69,8 @@ $ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp"         // 
                             <request>                                  
                                 <amount>1000</amount>                  // Specify the amount you want to authorize
                                 <currency>CHF</currency>               // Specify currency in which you want to charge
-                                <aliasCC>424242SKMPRI4242</aliasCC>   // Token to identify stored credit card
+                                <aliasCC>424242SKMPRI4242</aliasCC>    // CC token to identify stored credit card
+                                <aliasCVV>xxx</aliasCVV>               // CV token to identify stored CVV code
                                 <expm>12</expm>                        // Expiry Month of stored credit card
                                 <expy>15</expy>                        // Expiry Year of stored credit card
                                 <sign>30916165706580013</sign>         // Security Sign you created in Step 1
@@ -94,7 +96,8 @@ The authorization request needs to be sent as an XML formatted message via a htt
 | `amount` | N | Transaction amount in the smallest available unit |
 | `currency` | A3 | Transaction currency – ISO character code \(CHF, EUR, USD etc.\) |
 | `refno` | AN18 | Unique reference number assigned by you |
-| `aliasCC` | AN20 | Token for credit card, Postfinance or PayPal |
+| `aliasCC` | AN20 | CC token for credit card number, Postfinance or PayPal |
+| `aliasCVV` |  | CVV token for CVV code |
 | `expm` | MM | Expiration month \(for credit card only\) |
 | `expy` | YY | Expiration year \(for credit card only\) |
 
