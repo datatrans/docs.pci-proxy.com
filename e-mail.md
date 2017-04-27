@@ -35,7 +35,7 @@ _Duedate should be in the yyyymmdd format._
 <?xml version="1.0" encoding="UTF-8"?>
   <payByEmailService version="1">
     <body merchantId="1000011011">
-      <payByEmailURL>https://pilot.datatrans.biz/upp/jsp/upStartFromTemplate?paymentTemplateId=021935b9-
+      <payByEmailURL>https://pay.sandbox.datatrans.com/upp/jsp/upStartFromTemplate?paymentTemplateId=021935b9-
 54fb-f8f8-0000-015191015e03</payByEmailURL>
     </body>
   </payByEmailService>
