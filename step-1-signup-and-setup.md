@@ -13,7 +13,7 @@ Follow these steps to create your Sandbox account:
 2. Once submitted, you will receive your Sandbox credentials in 2 separate Emails: Login \(merchant ID\), Username, Password.  
    _If you haven't received anything, please check your spam folder or contact support@pci-proxy.com. _
 
-3. [**Log in**](https://pilot.datatrans.biz/) with your credentials and follow instructions to create your own password.
+3. [**Log in**](https://admin.datatrans.com/) with your credentials and follow instructions to create your own password.
 
 ---
 
