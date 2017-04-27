@@ -97,7 +97,7 @@ The authorization request needs to be sent as an XML formatted message via a htt
 | `currency` | A3 | Transaction currency – ISO character code \(CHF, EUR, USD etc.\) |
 | `refno` | AN18 | Unique reference number assigned by you |
 | `aliasCC` | AN20 | CC token for credit card number, Postfinance or PayPal |
-| `aliasCVV` |  | CVV token for CVV code |
+| `aliasCVV` | base64 | CVV token for CVV code |
 | `expm` | MM | Expiration month \(for credit card only\) |
 | `expy` | YY | Expiration year \(for credit card only\) |
 
