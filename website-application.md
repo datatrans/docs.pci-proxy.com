@@ -30,28 +30,16 @@ _We offer even more sophisticated options to seamlessly collect payment data. Wi
 To get started with the Payment Page `Redirect Mode` , add the following simple HTML a tag to your page:
 
 ```js
-<a href="https://pilot.datatrans.biz/upp/jsp/upStart.jsp
-            ?merchantId=1100004624
-            &refno=pci-proxy-redirect
-            &amount=1
-            &currency=CHF
-            &theme=DT2015
-            &uppAliasOnly=yes">Collect card data</a>
+<a href="https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp?merchantId=1100004624&refno=pci-proxy-redirect&amount=1&currency=CHF&theme=DT2015&uppAliasOnly=yes">Collect card data</a>
 ```
 
 To get started with the Payment Page `Lightbox Mode`, you can use the following code snippet:
 
 ```js
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="https://pilot.datatrans.biz/upp/payment/js/datatrans-1.0.2.js"></script>
+    <script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-1.0.2.js"></script>
 
-    <form id="paymentForm"
-        data-merchant-id="1100004624"
-        data-refno="pci-proxy-lightbox"
-        data-amount="1"
-        data-currency="CHF"
-        data-upp-alias-only="yes"
-        data-sign="30916165706580013">
+    <form id="paymentForm" data-merchant-id="1100004624" data-refno="pci-proxy-lightbox" data-amount="1" data-currency="CHF" data-upp-alias-only="yes" data-sign="30916165706580013">
 
     <button id="paymentButton">Pay</button>
 
@@ -67,15 +55,7 @@ To get started with the Payment Page `Lightbox Mode`, you can use the following 
 To integrate the Payment Page `Inline Mode` you have to use an iframe:
 
 ```js
-<iframe width="600" height="500" frameborder="0" border="0" src="https://pilot.datatrans.biz/upp/jsp/upStart.jsp
-            ?merchantId=1100004547
-            &refno=pci-proxy-inline
-            &amount=1
-            &currency=CHF
-            &uppAliasOnly=yes
-            &theme=Inline
-            &paymentmethod=VIS
-            &customTheme=mytheme">
+<iframe width="600" height="500" frameborder="0" border="0" src="https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp?merchantId=1100004547&refno=pci-proxy-inline&amount=1&currency=CHF&uppAliasOnly=yes&theme=Inline&paymentmethod=VIS&customTheme=mytheme">
 ```
 
 _Note: In test mode, only test credit cards are allowed!_
@@ -145,7 +125,7 @@ To integrate the `Tokenizer iFrame` you can use the following code snippet:
                 frameborder="0"
                 height="40"
                 scrolling="no"
-                src="https://pilot.datatrans.biz/upp/payment/tokenize?merchantId=1000011011&customTheme=mytheme">
+                src="https://pay.sandbox.datatrans.com/upp/payment/tokenize?merchantId=1000011011&customTheme=mytheme">
         </iframe> 
       </div>
     </div>
@@ -189,7 +169,7 @@ In case of a successful tokenization the data object of the event passed to the 
   "type":"success", 
   "result":
     {
-    "aliasCC":"70119122433810042", 
+    "aliasCC":"424242SKMPRI4242", 
     "maskedCC": "424242xxxxxx4242", 
     "paymentmethod":"visa"
     } 
