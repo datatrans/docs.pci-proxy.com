@@ -30,7 +30,7 @@ If you have added an Acquirer to your account, you can either use the Payment Pa
 
 When using the Payment Page , all possible input fields are getting pre-filled. See example:
 
-| [Charge stored credit card via Payment Page](https://pilot.datatrans.biz/upp/jsp/upStart.jsp?theme=DT2015&merchantId=1100004624&amount=1337&currency=CHF&refno=123456789&sign=30916165706580013&paymentmethod=VIS&aliasCC=70119122433810042&expm=12&expy=18&language=en) |
+| [Charge stored credit card via Payment Page](https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp?theme=DT2015&merchantId=1100004624&amount=1337&currency=CHF&refno=123456789&sign=30916165706580013&paymentmethod=VIS&aliasCC=70119122433810042&expm=12&expy=18&language=en) |
 | :--- |
 
 
@@ -39,7 +39,7 @@ In the example above the CVV code for the payment method \(VIS\) is mandatory. T
 Open the following URL with parameters:
 
 ```js
-https://pilot.datatrans.biz/upp/jsp/upStart.jsp            // HOST: Payment Page Endpoint
+https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp            // HOST: Payment Page Endpoint
                 ?theme=DT2015                                
                 &merchantId=1100004624                       // Merchant ID you received at adding a Acquirer
                 &amount=1337                                 // Specify the amount you want to authorize
@@ -47,7 +47,7 @@ https://pilot.datatrans.biz/upp/jsp/upStart.jsp            // HOST: Payment Page
                 &refno=123456789                             // Unique ID for reference - assigned by you
                 &sign=30916165706580013                      // Security Sign you created in Step 1
                 &paymentmethod=VIS                           // Specify the payment method you want to charge
-                &aliasCC=70119122433810042                   // Token to identify stored credit card
+                &aliasCC=424242SKMPRI4242                    // Token to identify stored credit card
                 &expm=12                                     // Expiry Month of stored credit card
                 &expy=18                                     // Expiry Year of stored credit card
                 &language=en                                 // Define language in which Payment Page should be opened
@@ -58,7 +58,7 @@ https://pilot.datatrans.biz/upp/jsp/upStart.jsp            // HOST: Payment Page
 Send an XML request to Datatrans' XML Gateway Endpoint by using the following call:
 
 ```js
-$ curl "https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp"         // HOST: XML Gateway Endpoint
+$ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp"         // HOST: XML Gateway Endpoint
         -H "Content-Type: application/xml"                             // Content-Type: application/xml
 
         -d '<?xml version="1.0" encoding="UTF-8" ?>                    // We expect an XML formatted message       
@@ -68,7 +68,7 @@ $ curl "https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp"         // HOST: 
                             <request>                                  
                                 <amount>1000</amount>                  // Specify the amount you want to authorize
                                 <currency>CHF</currency>               // Specify currency in which you want to charge
-                                <aliasCC>70323122544331174</aliasCC>   // Token to identify stored credit card
+                                <aliasCC>424242SKMPRI4242</aliasCC>   // Token to identify stored credit card
                                 <expm>12</expm>                        // Expiry Month of stored credit card
                                 <expy>15</expy>                        // Expiry Year of stored credit card
                                 <sign>30916165706580013</sign>         // Security Sign you created in Step 1
@@ -86,7 +86,7 @@ The authorization request needs to be sent as an XML formatted message via a htt
 
 | ** XML Gateway Endpoint:** |
 | --- |
-| [https://pilot.datatrans.biz/upp/jsp/XML\_authorize.jsp](https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp) |
+| [https://api.sandbox.datatrans.com/upp/jsp/XML\_authorize.jsp](https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp) |
 
 | Mandatory Input Parameter | Type | Description |
 | --- | --- | --- |
@@ -127,7 +127,7 @@ Example of successful authorization response:
                 <request> 
                     <amount>1000</amount> 
                     <currency>CHF</currency> 
-                    <aliasCC>70323122544331174</aliasCC> 
+                    <aliasCC>424242SKMPRI4242</aliasCC> 
                     <expm>12</expm> 
                     <expy>15</expy> 
                     <uppCustomerDetails> 
@@ -172,7 +172,7 @@ Example of failed authorization response:
                 <request> 
                     <amount>1000</amount> 
                     <currency>CHF</currency> 
-                    <aliasCC>70323122544331174</aliasCC> 
+                    <aliasCC>424242SKMPRI4242</aliasCC> 
                     <expm>12</expm> 
                     <expy>15</expy> 
                     <uppCustomerDetails> 
