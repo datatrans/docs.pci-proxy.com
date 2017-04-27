@@ -63,13 +63,13 @@ PaymentProcessAndroid ppa = new PaymentProcessAndroid(dc,ar);
 | --- |
 | [Release Notes](https://pilot.datatrans.biz/showcase/doc/iOS_Release_Notes.pdf) |
 | [Developer Manual](https://pilot.datatrans.biz/showcase/doc/iOS_Developers_Manual.pdf) |
-| [iOS Library \(zip\)](https://pilot.datatrans.biz/showcase/doc/iOS_Library.zip) |
+| [iOS Library \(zip\)](https://pay.sandbox.datatrans.com/showcase/doc/iOS_Library.zip) |
 
 | Android Library |
 | --- |
 | [Release Notes](https://pilot.datatrans.biz/showcase/doc/Android_Release_Notes.pdf) |
 | [Developer Manual](https://pilot.datatrans.biz/showcase/doc/Android_Developers_Manual.pdf) |
-| [Android Library \(zip\)](https://pilot.datatrans.biz/showcase/doc/Android_Library.zip) |
+| [Android Library \(zip\)](https://pay.sandbox.datatrans.com/showcase/doc/Android_Library.zip) |
 | [Sample application](https://github.com/datatrans/android-sample-app) |
 
 ---
