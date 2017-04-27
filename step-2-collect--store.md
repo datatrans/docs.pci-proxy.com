@@ -15,11 +15,11 @@ The three main sources of credit card data are:
 
 ---
 
-## 2. Integrate PCI Proxy 
+## 2. Integrate PCI Proxy
 
 **With all described methods, sensitive card data never touch your servers**.
 
-| Jump to Quickstart &gt; [**Website**](/website-application.md) | Jump to Quickstart &gt; [**Webservice**](/webservice.md) | Jump to Quickstart &gt; [**Native App**](/mobile-app.md) |
+| Jump to Quickstart &gt; [**Website**](/website-application.md) | Jump to Quickstart &gt; [**Webservice**](/webservice.md) | Jump to Quickstart &gt; [**Native App**](/xml_alias_gateway.md) |
 | :--- | :--- | :--- |
 | ![](/assets/Website.png) | ![](/assets/Webservice.png) | ![](/assets/App.png) |
 | Seamlessly collect sensitive data within your web application. | Securely extract sensitive card data out of your web service communication. | Natively collect sensitive card data within your mobile app \(iOS / Android\). |
