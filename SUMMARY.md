@@ -5,7 +5,6 @@
   * [Step 2: Collect & Store](step-2-collect--store.md)
     * [Website](website-application.md)
     * [Web Service](webservice.md)
-    * [Native App](mobile-app.md)
     * [E-Mail](e-mail.md)
   * [Step 3: Use Stored Data](step-3-use-stored-data.md)
     * [Charge](charge.md)
