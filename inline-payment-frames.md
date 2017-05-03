@@ -17,12 +17,12 @@ label { display: block }
 <div class="paymentForm">
   <div>
     <label for="cardNumberPlaceholder">Card Number</label>
-    <div id="cardNumberPlaceholder" style="display: inline-block; width: 300px; height: 55px;">
+    <div id="cardNumberPlaceholder" style="display: inline-block; width: 300px; height: 38px;">
     </div>
   </div>
   <div>
     <label for="cvvPlaceholder">Cvv</label>
-    <div id="cvvPlaceholder" style="display: inline-block; width: 120px; height: 55px;">
+    <div id="cvvPlaceholder" style="display: inline-block; width: 120px; height: 38px;">
     </div>
   </div>
 
