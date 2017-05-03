@@ -2,7 +2,7 @@
 
 With the inline mode you have the complete control about the styling of your payment form. The card number and cvv fields can be styled individually.
 
-```
+```js
 var styles = {
     // set style to all elements, JSON accepted too
     "*": "border: 2px solid black; background-color: blue; padding: .65em .5em",
@@ -52,7 +52,7 @@ var styles = {
 
 The individual fields can also be styled dynamically based on some events.
 
-```
+```js
 // the card number field
 Inline.setStyle("cardNumber", "border: 1px solid #ccc");
 
