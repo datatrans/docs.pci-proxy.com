@@ -95,3 +95,18 @@ Where the `event` callback object has the following structure:
   }
 }
 ```
+
+## On `error` event
+The error event will be emitted if there was an error after calling         `Inline.initTokenize(...)`.
+Possible scenarios are:
+* Wrong merchantId configured in `Inline.init(...);`
+* Wrong name of cardno, cvv fields
+* Wrong merchantId configuration on Datarans side
+
+Those errors should only occur during development/testing.
+```js
+Inline.on("error", function(data) {
+  // something bad happened
+});
+```
+
