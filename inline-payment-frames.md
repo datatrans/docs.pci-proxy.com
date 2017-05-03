@@ -134,7 +134,7 @@ $(function() {
 });
 
 Inline.on("success", function(data) {
-  if(data.transactionId !== undefined) {
+  if(data.transactionId) {
     // transmit data.transactionId and the rest
     // of the form to your server    
   }
@@ -142,7 +142,7 @@ Inline.on("success", function(data) {
 ```
 
 ## Step 4: Using the transactionId to obtain the tokens
-Once you transmitted the transaction Id retrieved in step 3 to your server (together with the the rest of your form) you can execute a server to server request to get the tokens for your card number and cvv:
+Once you transmitted the transactionId retrieved in step 3 to your server (together with the the rest of your form) you can execute a server to server request to get the tokens for your card number and cvv:
 
 ```bash
 $ curl "https://pilot.datatrans.biz/upp/services/v1/inline/token?transactionId=170419151426624571" \
@@ -155,5 +155,5 @@ The password can be found in the webadmin tool under _UPP Administartion > Secur
   "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
 }
 ```
-Thats all! Proceed with [one of the ways](/step-3-use-stored-data.md) to use the tokens. Please also have a look at the Styling, Events & Error handling reference.
+Thats all! Proceed with [one of the ways](/step-3-use-stored-data.md) to use the tokens. Please also have a look at the [Styling](/inline-payment-frames/styling.md) and [Events](/inline-payment-frames/events.md) references.
 
