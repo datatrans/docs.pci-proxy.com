@@ -9,6 +9,8 @@ Below you can find a preview of a sample form to collect the card number and CVV
 label { display: block }
 .paymentForm { border: 0px; background-color: #F7F8F9; padding: 10px }
 </style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="             crossorigin="anonymous">
+</script>
 
 
 <form>
