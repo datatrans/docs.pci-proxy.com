@@ -25,7 +25,7 @@ var styles = {
     cardNumber: "font-weight: bold;",
     cvv: "color: green;",
 
-    // setting style based on states
+    // setting style based on CSS classes (see 'Toggled classes')
     "cardNumber.valid:hover": "background-color: green;",
     "cardNumber.invalid:hover": "background-color: red;",    
 
