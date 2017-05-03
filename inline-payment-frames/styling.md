@@ -8,15 +8,15 @@ var styles = {
     "*": "border: 2px solid black; background-color: blue; padding: .65em .5em",
 
     // or with JSON
-    '*': {
-        border: '2px solid black',
-        padding: '.65em .5em'       
-        backgroundColor: 'blue',  // background-color
-        backgroundImage: 'none',  // background-image
-        boxSizing: 'border-box',  // box-sizing
-        WebkitBoxShadow: 'none',  // -webkit-box-shadow
-        WebkitAppearance: 'none'  // -webkit-appearance
-    }
+    //'*': {
+    //    border: '2px solid black',
+    //    padding: '.65em .5em'       
+    //    backgroundColor: 'blue',  // background-color
+    //    backgroundImage: 'none',  // background-image
+    //    boxSizing: 'border-box',  // box-sizing
+    //    WebkitBoxShadow: 'none',  // -webkit-box-shadow
+    //    WebkitAppearance: 'none'  // -webkit-appearance
+    //}
 
     // ::hover on all elements
     "*::hover": "-webkit-box-shadow: none; -ms-box-shadow: none; -moz-appearance: none; ",
@@ -33,19 +33,20 @@ var styles = {
     '*:focus': 'border: 1px solid #66AFE9',
     '*:hover': 'border: 1px solid #66AFE9',
     '*::placeholder': 'color: #999999',
-    '*:-ms-input-placeholder': 'color: #999999' // thanks MS :(  
+    '*:-ms-input-placeholder': 'color: #999999' // thanks MS :( 
+}; 
         
-    Inline.initTokenize(
-         ":your-merchant-id",
-         {
-             cardNumber: "cardNumberPlaceholder",
-             cvv: "cvvPlaceholder"
-         },{            
-             styles: styles,
-             focus: "cardNumber" // or Inline.focus("cardNumber");
-         }
-     );    
-};
+Inline.initTokenize(
+     ":your-merchant-id",
+     {
+         cardNumber: "cardNumberPlaceholder",
+         cvv: "cvvPlaceholder"
+     },{            
+         styles: styles,
+         focus: "cardNumber" // or Inline.focus("cardNumber");
+     }
+ );    
+
 ```
 
 ## Dynamic styling
