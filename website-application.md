@@ -12,7 +12,7 @@ With the following 4 options, you can collect sensitive card data and reduce you
 
 | Redirect Mode | Lightbox Mode | Inline Mode | Tokenizer iFrame |
 | :---: | :---: | :---: | :---: |
-| ![Redirect Mode](redirect.png) | ![Lightbox Mode](lightbox.png) | ![Inline Mode](inline2.png) | ![Tokenizer iFrame](tokenizer_iframe.png) |
+| ![Redirect Mode](redirect.png) | ![Lightbox Mode](lightbox.png) | ![Inline Mode](inline2.png) |  |
 | Redirect consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay \(iFrame\). | Payment page managed by Datatrans is incorporated with iFrame. | Single form field for instant tokenization with callbacks embedded as iFrame |
 
 * The easiest way to start is by integrating our Payment Page `Redirect Mode` or `Lightbox Mode`. It takes care of building a conversion-optimized HTML form and validating input fields.

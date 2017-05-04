@@ -155,5 +155,22 @@ The password can be found in the Web Admin Tool under _UPP Administartion > Secu
   "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
 }
 ```
-Thats all! Proceed with [one of the ways](/step-3-use-stored-data.md) to use the tokens. Please also have a look at the [Styling](/inline-payment-frames/styling.md) and [Events](/inline-payment-frames/events.md) references.
+
+Please also have a look at the [Styling](/inline-payment-frames/styling.md) and [Events](/inline-payment-frames/events.md) references.
+
+---
+
+> ### Congrats, Level 2 completed: Your site is out of PCI scope!
+>
+> You have securely captured sensitive card data on your website without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](/step-3-use-stored-data.md).
+>
+> ##### Questions?
+>
+> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+>
+> Phone: +41 44 256 81 91  
+> Email: [support@pci-proxy.com](/mailto:support@pci-proxy.com)
+
+
+
 
