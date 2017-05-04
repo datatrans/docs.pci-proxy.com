@@ -20,7 +20,7 @@ label { display: block }
 
 
 <form>
-<div>
+<div class="paymentForm">
   <div>
     <label for="cardNumberPlaceholder">Card Number</label>
     <div id="cardNumberPlaceholder" style="display: inline-block; width: 300px; height: 38px;">
@@ -106,7 +106,7 @@ In order for the Inline Mode to insert the card number and CVV iframes at the ri
 
 ```html
 <form>
-    <div class="paymentForm">
+    <div>
         <div>
             <label for="card-number-placeholder">Card Number</label>
             <!-- card number container -->
