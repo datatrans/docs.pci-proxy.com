@@ -14,7 +14,7 @@ label { display: block }
 
 
 <form>
-<div class="paymentForm">
+<div>
   <div>
     <label for="cardNumberPlaceholder">Card Number</label>
     <div id="cardNumberPlaceholder" style="display: inline-block; width: 300px; height: 38px;">
