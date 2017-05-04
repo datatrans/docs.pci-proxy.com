@@ -1,6 +1,6 @@
 # Styling
 
-With the inline mode you have the complete control about the styling of your payment form. The card number and cvv fields can be styled individually.
+Using Inline Mode leaves you complete control over the styling of your payment form. The card number and CVV fields can be styled individually.
 
 ```js
 var styles = {
@@ -35,7 +35,7 @@ var styles = {
     '*::placeholder': 'color: #999999',
     '*:-ms-input-placeholder': 'color: #999999' // thanks MS :( 
 }; 
-        
+
 Inline.initTokenize(
      ":your-merchant-id",
      {
@@ -45,8 +45,7 @@ Inline.initTokenize(
          styles: styles,
          focus: "cardNumber" // or Inline.focus("cardNumber");
      }
- );    
-
+ );
 ```
 
 ## Dynamic styling
@@ -57,7 +56,7 @@ The individual fields can also be styled dynamically:
 // the card number field
 Inline.setStyle("cardNumber", "border: 1px solid #ccc");
 
-// the cvv field
+// the CVV field
 Inline.setStyle("cvv", "border: 1px solid #ccc")
 ```
 
@@ -72,8 +71,9 @@ The inline mode automatically toggles CSS classes on the input fields based on v
 | `empty` | When the field is empty. |
 | `identified` | When a supported brand \(for example Visa or Mastercard\) was detected when typing in the card number field. |
 
-## Advanced initialisation
-The `initTokenize` function allows to set the input type, placeholder value and which field to be focused right from the beginning. The (random) example from below ensures the following:
+## Advanced initialization
+
+The `initTokenize` function allows to set the input type, placeholder value and which field to be focused right from the beginning. The \(random\) example from below ensures the following:
 
 * The CVV field gets initial focus
 * The CVV fields input type gets set to `tel`
@@ -95,5 +95,6 @@ Inline.initTokenize(
     }
 );
 ```
+
 
 
