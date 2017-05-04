@@ -65,10 +65,10 @@ $(document).ajaxComplete(function() {
 Inline.on("ready", function() {
 
 Inline.setStyle("cardNumber","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
-Inline.setStyle("cardNumber::placeholder","color: #F7F8F9");
+Inline.setStyle("cardNumber::placeholder","color: #D8D8D8");
 
 Inline.setStyle("cvv","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
-Inline.setStyle("cvv::placeholder","color: #F7F8F9");
+Inline.setStyle("cvv::placeholder","color: #D8D8D8");
 
 Inline.setPlaceholder("cardNumber", "4242 4242 4242 4242");
 Inline.setPlaceholder("cvv", "123");
