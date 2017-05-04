@@ -45,10 +45,14 @@ label { display: block }
 
 
 $(document).ready(function() {
-  Inline.initTokenize( "1100002469", {
-    cardNumber: "cardNumberPlaceholder",
-    cvv: "cvvPlaceholder"
-  });
+  Inline.initTokenize( 
+    "1100002469", {
+      cardNumber: "cardNumberPlaceholder",
+      cvv: "cvvPlaceholder"
+    },{
+      debug: true          
+    }    
+  );
 });
 
 
