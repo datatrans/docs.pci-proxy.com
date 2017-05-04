@@ -42,6 +42,10 @@ label { display: block }
 
 <script type="text/javascript" src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
+$(window).on('load', function(){
+    console.log("#### load");
+});
+
 $(document).ready(function() {
 Inline.initTokenize( "1100002469", {
 cardNumber: "cardNumberPlaceholder",
