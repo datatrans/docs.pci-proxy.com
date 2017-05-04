@@ -42,10 +42,13 @@ label { display: block }
 
 <script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
-Inline = new InlineMode();
+
 
 
 $(document).ready(function() {
+  console.log("### $(document).ready called!");
+  Inline = new InlineMode();
+
   Inline.initTokenize( 
     "1100002469", {
       cardNumber: "cardNumberPlaceholder",
@@ -54,9 +57,7 @@ $(document).ready(function() {
       debug: true          
     }    
   );
-});
-
-
+  
 Inline.on("ready", function() {
 
 Inline.setStyle("cardNumber","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
@@ -88,7 +89,10 @@ var trxId = document.getElementById("result");
 trxId.textContent = "Your transactionId is: " + data.transactionId;
 trxId.style.display = 'block';
 }
+});   
+  
 });
+
 </script>
 
 ---
