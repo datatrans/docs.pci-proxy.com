@@ -16,6 +16,8 @@ label { display: block }
 .paymentForm { border: 0px; background-color: #F7F8F9; padding: 10px }
 </style>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="             crossorigin="anonymous">
+<script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
+
 </script>
 
 
@@ -40,7 +42,7 @@ label { display: block }
 
 <div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
 
-<script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
+
 <script type="text/javascript">
 
 
