@@ -2,7 +2,7 @@
 
 `PCI Proxy gives you several options on how to collect payment data from a HTML web form` and securely store it in our vault. A reference number \(token\) is issued and sent to your systems.
 
-**All options assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.**
+
 
 ---
 
