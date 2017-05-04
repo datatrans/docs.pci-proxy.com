@@ -4,6 +4,10 @@ The Inline Mode allows you to securely collect card data by injecting iframes to
 
 > **The Inline Mode qualifies you for SAQ A.**
 
+---
+
+## Sample
+
 Below you can find a preview of a sample form to collect the card number and CVV code.
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -84,10 +88,7 @@ trxId.style.display = 'block';
 });
 </script>
 
-
-
-
-
+---
 
 ## Step 1: Setup the Inline Mode
 To get started include the following script on your page. Please make sure to always load it directly from https://pay.sandbox.datatrans.com (you can find the productive endpoint in the Web Admin Tool).
@@ -95,6 +96,8 @@ To get started include the following script on your page. Please make sure to al
 ```js
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 ```
+
+---
 
 ## Step 2: Create your form to collect card data
 In order for the Inline Mode to insert the card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are:
@@ -119,6 +122,8 @@ In order for the Inline Mode to insert the card number and CVV iframes at the ri
     </div>
 </form>
 ```
+
+---
 
 ## Step 3: Retrieving a transactionId
 
@@ -147,6 +152,8 @@ Inline.on("success", function(data) {
   }
 });
 ```
+
+---
 
 ## Step 4: Using the transactionId to obtain tokens
 Once you've transmitted the transactionId (step 3) to your server (together with the the rest of your form) you can execute a server to server request to get the tokens for card number and CVV code:
