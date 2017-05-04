@@ -34,7 +34,7 @@ label { display: block }
 
 <div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
 
-<script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
+<script type="text/javascript" src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 Inline.initTokenize( "1100002469", {
@@ -86,7 +86,7 @@ trxId.style.display = 'block';
 To get started include the following script on your page. Please make sure to always load it directly from https://pilot.datatrans.biz (you can find the productive endpoint in the Web Admin Tool).
 
 ```js
-<script src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
+<script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 ```
 
 ## Step 2: Create your form to collect card data
@@ -148,7 +148,7 @@ Once you've transmitted the transactionId (step 3) to your server (together with
 $ curl "https://pilot.datatrans.biz/upp/services/v1/inline/token?transactionId=170419151426624571" \
        -u 'merchantId:password'
 ```
-The password can be found in the Web Admin Tool under _UPP Administartion > Security > Server-to-Server services security_. A sample response from the request above looks like:
+The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com) under _UPP Administartion > Security > Server-to-Server services security_. A sample response from the request above looks like:
 ```json
 {
   "aliasCC" : "424242SKMPRI4242",
