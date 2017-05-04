@@ -58,7 +58,7 @@ $(document).ready(function() {
   
   function setup() { 
     
-    Inline = new InlineMode();
+    //Inline = new InlineMode();
   
     Inline.initTokenize( 
       "1100002469", {
