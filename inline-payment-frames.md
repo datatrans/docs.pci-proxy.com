@@ -42,13 +42,7 @@ label { display: block }
 
 <script type="text/javascript" src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
-$(document).ajaxComplete(function() {
-  console.log("###### ajaxComplete");
-  Inline.initTokenize( "1100002469", {
-    cardNumber: "cardNumberPlaceholder",
-    cvv: "cvvPlaceholder"
-  });
-});
+
 
 $(document).ready(function() {
   Inline.initTokenize( "1100002469", {
@@ -57,12 +51,24 @@ $(document).ready(function() {
   });
 });
 
+$(document).ajaxComplete(function() {
+  console.log("###### ajaxComplete");
+  Inline.initTokenize( "1100002469", {
+    cardNumber: "cardNumberPlaceholder",
+    cvv: "cvvPlaceholder"
+  });
+});
+
+
+
 
 Inline.on("ready", function() {
 
 Inline.setStyle("cardNumber","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
+Inline.setStyle("cardNumber::placeholder","color: #F7F8F9");
 
 Inline.setStyle("cvv","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
+Inline.setStyle("cvv::placeholder","color: #F7F8F9");
 
 Inline.setPlaceholder("cardNumber", "4242 4242 4242 4242");
 Inline.setPlaceholder("cvv", "123");
