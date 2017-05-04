@@ -83,7 +83,7 @@ trxId.style.display = 'block';
 </script>
 
 ## Step 1: Setup the Inline Mode
-To get started include the following script on your page. Please make sure to always load it directly from https://pilot.datatrans.biz (you can find the productive endpoint in the Web Admin Tool).
+To get started include the following script on your page. Please make sure to always load it directly from https://pay.sandbox.datatrans.com (you can find the productive endpoint in the Web Admin Tool).
 
 ```js
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
