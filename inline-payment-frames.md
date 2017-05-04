@@ -17,9 +17,6 @@ label { display: block }
 </style>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="             crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
-
-
 <form>
 <div class="paymentForm">
   <div>
@@ -41,58 +38,74 @@ label { display: block }
 
 <div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
 
-
+<script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
 
-
-
 $(document).ready(function() {
-  console.log("### $(document).ready called!");
-  Inline = new InlineMode();
-
-  Inline.initTokenize( 
-    "1100002469", {
-      cardNumber: "cardNumberPlaceholder",
-      cvv: "cvvPlaceholder"
-    },{
-      debug: true          
-    }    
-  );
+  console.log("### $(document).ready called!");  
   
-Inline.on("ready", function() {
-
-Inline.setStyle("cardNumber","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
-Inline.setStyle("cardNumber::placeholder","color: #D8D8D8");
-
-Inline.setStyle("cvv","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
-Inline.setStyle("cvv::placeholder","color: #D8D8D8");
-
-Inline.setPlaceholder("cardNumber", "4242 4242 4242 4242");
-Inline.setPlaceholder("cvv", "123");
-
-Inline.focus("cardNumber");
-});
-
-Inline.on("validate", function(data) {
-Inline.setStyle("cardNumber", data.fields.cardNumber.valid ? "border: 1px solid #ccc": "border: 1px solid #f00");
-Inline.setStyle("cvv", data.fields.cvv.valid ? "border: 1px solid #ccc" : "border: 1px solid #f00");
-});
-
-$(function() {
-$("#go").click( function() {
-Inline.submit(); // submit the "form"
-})
-});
-
-Inline.on("success", function(data) {
-if(data.transactionId !== undefined) {
-var trxId = document.getElementById("result");
-trxId.textContent = "Your transactionId is: " + data.transactionId;
-trxId.style.display = 'block';
-}
-});   
+  var target = "https://pay.sandbox.datatrans.com";
+  var inlineScriptUrl = target + "/upp/payment/js/datatrans-inline-1.0.0.js";
   
+  loadScript(inlineScriptUrl, setup);
+
+  function loadScript(src, onload) {
+    var script = document.createElement('script');
+    script.onload = onload;
+    script.src = src;
+    document.head.appendChild(script);
+  }
+  
+  function setup() { 
+    
+    Inline = new InlineMode();
+  
+    Inline.initTokenize( 
+      "1100002469", {
+        cardNumber: "cardNumberPlaceholder",
+        cvv: "cvvPlaceholder"
+      },{
+        debug: true          
+      }    
+    );
+    
+    Inline.on("ready", function() {
+      
+      Inline.setStyle("cardNumber","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
+      Inline.setStyle("cardNumber::placeholder","color: #D8D8D8");
+      
+      Inline.setStyle("cvv","width: 80%; background-color: white; border-radius: 4px; border: 1px solid #ccc; padding: .65em .5em; font-size: 91%;");
+      Inline.setStyle("cvv::placeholder","color: #D8D8D8");
+      
+      Inline.setPlaceholder("cardNumber", "4242 4242 4242 4242");
+      Inline.setPlaceholder("cvv", "123");
+      
+      Inline.focus("cardNumber");
+    });
+    
+    Inline.on("validate", function(data) {
+      Inline.setStyle("cardNumber", data.fields.cardNumber.valid ? "border: 1px solid #ccc": "border: 1px solid #f00");
+      Inline.setStyle("cvv", data.fields.cvv.valid ? "border: 1px solid #ccc" : "border: 1px solid #f00");
+    });
+    
+   
+    $("#go").click( function() {
+      Inline.submit(); // submit the "form"  
+    });
+    
+    Inline.on("success", function(data) {
+      if(data.transactionId !== undefined) {
+        var trxId = document.getElementById("result");
+        trxId.textContent = "Your transactionId is: " + data.transactionId;
+        trxId.style.display = 'block';
+      }
+    });
+    
+  }
+    
 });
+
+
 
 </script>
 
