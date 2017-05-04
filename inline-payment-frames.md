@@ -43,6 +43,7 @@ label { display: block }
 <script type="text/javascript" src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
 $(document).ajaxComplete(function() {
+  console.log("###### ajaxComplete");
   Inline.initTokenize( "1100002469", {
     cardNumber: "cardNumberPlaceholder",
     cvv: "cvvPlaceholder"
