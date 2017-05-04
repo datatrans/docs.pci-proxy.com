@@ -141,7 +141,7 @@ Inline.on("success", function(data) {
 });
 ```
 
-## Step 4: Using the transactionId to obtain the tokens
+## Step 4: Using the transactionId to obtain tokens
 Once you've transmitted the transactionId (step 3) to your server (together with the the rest of your form) you can execute a server to server request to get the tokens for card number and CVV code:
 
 ```bash
