@@ -2,7 +2,7 @@
 
 `PCI Proxy gives you several options on how to collect payment data from a HTML web form` and securely store it in our vault. A reference number \(token\) is issued and sent to your systems.
 
-**All options assure your servers never get in touch with sensitive card data to reduce your PCI scope to the least.**
+
 
 ---
 
@@ -12,7 +12,7 @@ With the following 4 options, you can collect sensitive card data and reduce you
 
 | Redirect Mode | Lightbox Mode | Inline Mode | Tokenizer iFrame |
 | :---: | :---: | :---: | :---: |
-| ![Redirect Mode](redirect.png) | ![Lightbox Mode](lightbox.png) | ![Inline Mode](inline2.png) | ![Tokenizer iFrame](tokenizer_iframe.png) |
+| ![Redirect Mode](redirect.png) | ![Lightbox Mode](lightbox.png) | ![Inline Mode](inline2.png) |  |
 | Redirect consumer to payment page managed by Datatrans. | Payment pages are placed on shop as overlay \(iFrame\). | Payment page managed by Datatrans is incorporated with iFrame. | Single form field for instant tokenization with callbacks embedded as iFrame |
 
 * The easiest way to start is by integrating our Payment Page `Redirect Mode` or `Lightbox Mode`. It takes care of building a conversion-optimized HTML form and validating input fields.
@@ -30,16 +30,28 @@ _We offer even more sophisticated options to seamlessly collect payment data. Wi
 To get started with the Payment Page `Redirect Mode` , add the following simple HTML a tag to your page:
 
 ```js
-<a href="https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp?merchantId=1100004624&refno=pci-proxy-redirect&amount=1&currency=CHF&theme=DT2015&uppAliasOnly=yes">Collect card data</a>
+<a href="https://pilot.datatrans.biz/upp/jsp/upStart.jsp
+            ?merchantId=1100004624
+            &refno=pci-proxy-redirect
+            &amount=1
+            &currency=CHF
+            &theme=DT2015
+            &uppAliasOnly=yes">Collect card data</a>
 ```
 
 To get started with the Payment Page `Lightbox Mode`, you can use the following code snippet:
 
 ```js
 <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-1.0.2.js"></script>
+    <script src="https://pilot.datatrans.biz/upp/payment/js/datatrans-1.0.2.js"></script>
 
-    <form id="paymentForm" data-merchant-id="1100004624" data-refno="pci-proxy-lightbox" data-amount="1" data-currency="CHF" data-upp-alias-only="yes" data-sign="30916165706580013">
+    <form id="paymentForm"
+        data-merchant-id="1100004624"
+        data-refno="pci-proxy-lightbox"
+        data-amount="1"
+        data-currency="CHF"
+        data-upp-alias-only="yes"
+        data-sign="30916165706580013">
 
     <button id="paymentButton">Pay</button>
 
@@ -55,7 +67,15 @@ To get started with the Payment Page `Lightbox Mode`, you can use the following 
 To integrate the Payment Page `Inline Mode` you have to use an iframe:
 
 ```js
-<iframe width="600" height="500" frameborder="0" border="0" src="https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp?merchantId=1100004547&refno=pci-proxy-inline&amount=1&currency=CHF&uppAliasOnly=yes&theme=Inline&paymentmethod=VIS&customTheme=mytheme">
+<iframe width="600" height="500" frameborder="0" border="0" src="https://pilot.datatrans.biz/upp/jsp/upStart.jsp
+            ?merchantId=1100004547
+            &refno=pci-proxy-inline
+            &amount=1
+            &currency=CHF
+            &uppAliasOnly=yes
+            &theme=Inline
+            &paymentmethod=VIS
+            &customTheme=mytheme">
 ```
 
 _Note: In test mode, only test credit cards are allowed!_
@@ -125,7 +145,7 @@ To integrate the `Tokenizer iFrame` you can use the following code snippet:
                 frameborder="0"
                 height="40"
                 scrolling="no"
-                src="https://pay.sandbox.datatrans.com/upp/payment/tokenize?merchantId=1000011011&customTheme=mytheme">
+                src="https://pilot.datatrans.biz/upp/payment/tokenize?merchantId=1000011011&customTheme=mytheme">
         </iframe> 
       </div>
     </div>
@@ -169,7 +189,7 @@ In case of a successful tokenization the data object of the event passed to the 
   "type":"success", 
   "result":
     {
-    "aliasCC":"424242SKMPRI4242", 
+    "aliasCC":"70119122433810042", 
     "maskedCC": "424242xxxxxx4242", 
     "paymentmethod":"visa"
     } 
