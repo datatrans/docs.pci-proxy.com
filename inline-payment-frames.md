@@ -2,6 +2,8 @@
 
 The Inline Mode allows you to securely collect card data by injecting iframes to your DOM. A separate iframe for both, card number and CVV code is used. Thereby, sensitive data never touches your server and allows you to capture all other related card data such as cardholder name, expiry date, etc. directly by yourself.
 
+> **The Inline Mode qualifies you for SAQ A.**
+
 Below you can find a preview of a sample form to collect the card number and CVV code.
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -81,6 +83,11 @@ trxId.style.display = 'block';
 }
 });
 </script>
+
+
+
+
+
 
 ## Step 1: Setup the Inline Mode
 To get started include the following script on your page. Please make sure to always load it directly from https://pay.sandbox.datatrans.com (you can find the productive endpoint in the Web Admin Tool).
