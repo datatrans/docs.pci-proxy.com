@@ -42,6 +42,7 @@ label { display: block }
 
 <script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
+Inline = new InlineMode();
 
 
 $(document).ready(function() {
