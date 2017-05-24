@@ -76,7 +76,7 @@ The inline mode automatically toggles CSS classes on the input fields based on v
 The `initTokenize` function allows to set the input type, placeholder value and which field to be focused right from the beginning. The \(random\) example from below ensures the following:
 
 * The CVV field gets initial focus
-* The CVV fields input type gets set to `tel`
+* The CVV field's input type gets set to `tel`
 * The placeholder value will be `enter your cvv`
 
 ```js
@@ -95,6 +95,30 @@ Inline.initTokenize(
     }
 );
 ```
+
+## Web fonts
+
+Web fonts are supported via the standard `@font-face` CSS rule. Because of security concerns it is not permitted to link external resources so, in order to get custom fonts, one needs to:
+* Contact Datatrans setup team and provide the font files (woff, woof2, ttf etc). The files will be uploaded into your merchant id hosted files space.
+* Reference the font files, by name (no path) in the styles section of the `Inline.initTokenize` call:
+
+```js
+var styles = {
+            // setting the font-family to both fields
+            "*": "font-family: Metamorphous;",
+
+            "@font-face": {
+                "*": {
+                    fontFamily: "Metamorphous",
+                    fontStyle: "normal",
+                    fontWeight: 400,
+                    src: "url('metamorphous.woff2') format('woff2')"
+                }
+            }
+}
+```
+
+
 
 
 
