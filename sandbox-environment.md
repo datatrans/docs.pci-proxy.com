@@ -48,7 +48,10 @@ We have a set of test credit card numbers that you can use in our sandbox enviro
 | Diners | 36167719110012 | 361677GQVJHV12 | 12/2018 or 06/2018 | 123 | wo/limit | - |
 | Discover | 6011000000000004 | 601100EQYBBH0004 | 06/2018 | 123 | wo/limit |  |
 | JCB | 3569990010030442 | 356999BIUWJW0442 | 12/2018 or 06/2018 | 123 | w/limit | - |
-| JCB | 3569990010030400 | 356999PUCUIV0400 | 12/2018 or 06/2018 | 123 | wo/limit | - |
+| JCB | 3569990010030400 | 356999PUCUIV0400 | 12/2018 or 06/2018 | 123 | wo/limit | No |
+| ELO | 6550000000000001 | 655000BFQHZD0001 | 12/2018 | 123 | wo/limit | No |
+| ELO | 4514160000000003 | 451416TTIRVD0003 | 12/2018 | 123 | wo/limit | No |
+| ELO | 6362970000457013 | 636297KMDXHG7013 | 12/2018 | 123 | wo/limit | No |
 
 Please note: Ordinary credit card information cannot be used in the sandbox.
 
