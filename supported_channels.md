@@ -24,11 +24,14 @@ For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we al
 | [Hotelreservation](https://www.hotelreservation.com/) | PULL |
 | [HotelREZ](https://www.hotelrez.net/) | PULL |
 | [Hotels.nl](http://www.hotels.nl/) | PULL |
+| [Hotelscombined](https://www.hotelscombined.com) | PUSH |
 | [Hotusa Hotels](http://www.hotusa.com/) | PULL |
 | [Initalia](http://www.initalia.it/) | PULL |
 | [Lastminute](http://www.lastminute.com/) | PULL |
 | [Laterooms](http://www.laterooms.com/) | PUSH |
+| [Mirai](https://es.mirai.com/) | PULL |
 | [Orbitz](https://www.orbitz.com/) | PULL |
+| [Pegasus](http://www.pegasus.io/) | PUSH |
 | [Reconline](https://www.reconline.com/) | PULL |
 | [Rental United](http://rentalsunited.com) | PULL |
 | [Siteminder PMS](http://www.siteminder.com) | PULL |
