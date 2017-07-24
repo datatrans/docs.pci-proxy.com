@@ -36,6 +36,7 @@
 | [Datacash](http://www.mastercard.com/gateway/) | PULL |
 | [Diners \(Dataflexnet\)](https://www.dinersclub.com/) | PULL |
 | [Ogone / Ingenico](https://ingenico.co.uk/epayments) | PULL |
+| [Paybox](http://www1.paybox.com/?lang=en) | PULL |
 | [PayPal3t](https://www.paypal.com/us/webapps/mpp/home) | PULL |
 | [Realex Payments](https://www.realexpayments.com/) | PULL |
 | [SaferPay](https://www.six-payment-services.com/en/site/e-commerce/home.html) | PULL |
