@@ -96,6 +96,23 @@ Inline.initTokenize(
 );
 ```
 
+## Setting up payment methods
+
+By default all credit cards available in your merchant setup will be accepted. Use the `paymentMethods` option if there's a need to accept only a subset of card types.
+
+```js
+Inline.initTokenize(
+    merchantId,
+    {
+        cardNumber: "cardNumberPlaceholder",
+        cvv:  "cvvPlaceholder"
+    },{        
+        styles: styles,
+        paymentMethods: ["ECA", "VIS"]  // allowing Mastercard and Visa only
+    }
+);
+```
+
 ## Web fonts
 
 Web fonts are supported via the standard `@font-face` CSS rule. Because of security concerns it is not permitted to link external resources. So, in order to get custom fonts, one needs to:

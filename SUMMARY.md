@@ -5,7 +5,7 @@
   * [Step 2: Collect & Store](step-2-collect--store.md)
     * [Webservice](webservice.md)
     * [Website / Frontend](inline-payment-frames.md)
-      * [Styling](inline-payment-frames/styling.md)
+      * [Initialization and Styling](inline-payment-frames/styling.md)
       * [Events](inline-payment-frames/events.md)
     * [E-Mail](e-mail.md)
   * [Step 3: Use Stored Data](step-3-use-stored-data.md)
