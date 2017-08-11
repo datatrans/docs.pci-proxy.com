@@ -15,7 +15,7 @@
     * [Check](check.md)
   * [Step 4: Go Live](step-4-go-live.md)
 * [Guides](guides.md)
-  * [Whitlisting PCI Proxy IPs at Booking Provider Portal](whitliste-pci-proxy-ips-at-booking.md)
+  * [Whitelisting PCI Proxy IPs at Booking Provider Portal](whitliste-pci-proxy-ips-at-booking.md)
 * [FAQ](faq.md)
 * [Contact us](contact_us.md)
 * Resources
