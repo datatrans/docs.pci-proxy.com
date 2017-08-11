@@ -33,24 +33,24 @@ For every request you make against our PCI Proxy, we ask for your security sign.
 
 We have a set of test credit card numbers that you can use in our sandbox environment to test your integration. Test rules and 3D support is only needed for transactions and not for tokenization.
 
-| Card type | Card number | Token | Expiration Date | CVV | Test rule | Support 3D |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| Visa | 4242424242424242 | 424242SKMPRI4242 | 12/2018 or 06/2018 | 123 | w/limit | No |
-| Visa | 4900000000000086 | 490000VUFMRQ0086 | 12/2018 or 06/2018 | 123 | wo/limit | Yes |
-| Visa | 4900000000000003 | 490000PVCGFB0003 | 12/2018 or 06/2018 | 123 | w/limit | Yes |
-| MasterCard | 5404000000000001 | 540400FEQOYX0001 | 12/2018 or 06/2018 | 123 | w/limit | Yes |
-| MasterCard | 5200000000000007 | 520000ZOGGIP0007 | 12/2018 or 06/2018 | 123 | w/limit | No |
-| MasterCard | 5200000000000080 | 520000RIVWAS0080 | 12/2018 or 06/2018 | 123 | wo/limit | Yes |
-| Amex | 375811111111115 | 375811OMTYEE115 | 12/2018 or 06/2018 | 1234 | w/limit | No |
-| Amex | 375000000000007 | 375000ARZULD007 | 12/2018 or 06/2018 | 1234 | wo/limit | Yes |
-| Amex | 375811111111123 | 375811MGVGZR123 | 12/2018 or 06/2018 | 1234 | wo/limit | No |
-| Diners | 36168002586009 | 361680IYUAUR09 | 12/2018 or 06/2018 | 123 | w/limit | - |
-| Diners | 36167719110012 | 361677GQVJHV12 | 12/2018 or 06/2018 | 123 | wo/limit | - |
-| Discover | 6011000000000004 | 601100EQYBBH0004 | 06/2018 | 123 | wo/limit |  |
-| JCB | 3569990010030442 | 356999BIUWJW0442 | 12/2018 or 06/2018 | 123 | w/limit | - |
-| JCB | 3569990010030400 | 356999PUCUIV0400 | 12/2018 or 06/2018 | 123 | wo/limit | No |
-| ELO | 6550000000000001 | 655000BFQHZD0001 | 12/2018 | 123 | wo/limit | No |
-| ELO | 6362970000457013 | 636297KMDXHG7013 | 12/2018 | 123 | wo/limit | No |
+| Card type | paymentmethod | Card number | Token | Expiration Date | CVV | Test rule | Support 3D |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| Visa | VIS | 4242424242424242 | 424242SKMPRI4242 | 12/2018 or 06/2018 | 123 | w/limit | No |
+| Visa | VIS | 4900000000000086 | 490000VUFMRQ0086 | 12/2018 or 06/2018 | 123 | wo/limit | Yes |
+| Visa | VIS | 4900000000000003 | 490000PVCGFB0003 | 12/2018 or 06/2018 | 123 | w/limit | Yes |
+| MasterCard | ECA | 5404000000000001 | 540400FEQOYX0001 | 12/2018 or 06/2018 | 123 | w/limit | Yes |
+| MasterCard | ECA | 5200000000000007 | 520000ZOGGIP0007 | 12/2018 or 06/2018 | 123 | w/limit | No |
+| MasterCard | ECA | 5200000000000080 | 520000RIVWAS0080 | 12/2018 or 06/2018 | 123 | wo/limit | Yes |
+| Amex | AMX | 375811111111115 | 375811OMTYEE115 | 12/2018 or 06/2018 | 1234 | w/limit | No |
+| Amex | AMX | 375000000000007 | 375000ARZULD007 | 12/2018 or 06/2018 | 1234 | wo/limit | Yes |
+| Amex | AMX | 375811111111123 | 375811MGVGZR123 | 12/2018 or 06/2018 | 1234 | wo/limit | No |
+| Diners | DIN | 36168002586009 | 361680IYUAUR09 | 12/2018 or 06/2018 | 123 | w/limit | - |
+| Diners | DIN | 36167719110012 | 361677GQVJHV12 | 12/2018 or 06/2018 | 123 | wo/limit | - |
+| Discover | DIS | 6011000000000004 | 601100EQYBBH0004 | 06/2018 | 123 | wo/limit |  |
+| JCB | JCB | 3569990010030442 | 356999BIUWJW0442 | 12/2018 or 06/2018 | 123 | w/limit | - |
+| JCB | JCB | 3569990010030400 | 356999PUCUIV0400 | 12/2018 or 06/2018 | 123 | wo/limit | No |
+| ELO | ELO | 6550000000000001 | 655000BFQHZD0001 | 12/2018 | 123 | wo/limit | No |
+| ELO | ELO | 6362970000457013 | 636297KMDXHG7013 | 12/2018 | 123 | wo/limit | No |
 
 Please note: Ordinary credit card information cannot be used in the sandbox.
 
