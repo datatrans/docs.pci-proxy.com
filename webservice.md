@@ -12,7 +12,7 @@ Simply `redirect requests containing sensitive card data through PCI Proxy` to a
 
 Adding Channels is easy. You can either pick from our list of [supported Channels](/supported_channels.md) or add new ones:
 
-| [Click to Add Channels](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-channel.html) |
+| Click to [**Add Channels**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-channel.html) |
 | :--- |
 | _Learn more about _[_**Request Types**_](/request-types.md)_._ |
 
