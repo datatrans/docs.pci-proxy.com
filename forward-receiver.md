@@ -14,7 +14,7 @@ Simply `redirect requests containing tokens through PCI Proxy` to avoid sensitiv
 
 Adding Receivers is easy. You can either pick from our list of [supported Receivers \(Gateways\)](/supported_receivers.md) or add new ones:
 
-| [Click to Add Receivers](https://pilot.datatrans.biz/showcase/pci-proxy/add-receiver.html) |
+| Click to [**Add Receivers**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) |
 | :--- |
 | _Learn more about _[_**Request Types**_](/request-types.md)_._ |
 
