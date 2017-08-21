@@ -61,7 +61,7 @@ $(document).ready(function() {
     //Inline = new InlineMode();
   
     Inline.initTokenize( 
-      "1100002469", {
+      "1100007006", {
         cardNumber: "cardNumberPlaceholder",
         cvv: "cvvPlaceholder"
       },{
@@ -151,7 +151,7 @@ In order for the Inline Mode to insert the card number and CVV iframes at the ri
 Initialize the Inline Mode with your merchantId and specify which DOM element containers should be used to inject the iframes:
 
 ```js
-Inline.initTokenize( "1100002469", {
+Inline.initTokenize( "1100007006", {
   cardNumber: "card-number-placeholder", 
   cvv: "cvv-placeholder"                
 });
