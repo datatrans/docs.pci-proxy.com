@@ -1,5 +1,11 @@
 #Token API
 
+|Endpoint|
+| :--- |
+|GET https://api.sandbox.datatrans.com/upp/services/v1/inline/token|
+
+The service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com) under _UPP Administration > Security > Server-to-Server services security_.
+
 |Parameter||Description|
 | :--- |
 |`transactionId`|mandatory|The transaction id obtained via the `Inline.submit()` operation.|
