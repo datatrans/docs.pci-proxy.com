@@ -7,6 +7,7 @@
     * [Website / Frontend](inline-payment-frames.md)
       * [Initialization and Styling](inline-payment-frames/styling.md)
       * [Events](inline-payment-frames/events.md)
+      * [Token API](inline-payment-frames/token-api.md)
     * [E-Mail](e-mail.md)
   * [Step 3: Use Stored Data](step-3-use-stored-data.md)
     * [Charge](charge.md)

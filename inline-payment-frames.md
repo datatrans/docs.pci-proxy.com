@@ -177,7 +177,7 @@ Inline.on("success", function(data) {
 ---
 
 ## Step 4: Using the transactionId to obtain tokens
-Once you've transmitted the transactionId (step 3) to your server (together with the the rest of your form) you can execute a server to server request to get the tokens for card number and CVV code:
+Once you've transmitted the transactionId (step 3) to your server (together with the the rest of your form) you can execute a server to server [Token API](/inline-payment-frames/token-api.md) request to get the tokens for card number and CVV code:
 
 ```bash
 $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \
@@ -191,7 +191,7 @@ The password can be found in the [Web Admin Tool](https://admin.sandbox.datatran
 }
 ```
 
-Please also have a look at the [Styling](/inline-payment-frames/styling.md) and [Events](/inline-payment-frames/events.md) references.
+Please also have a look at [Styling](/inline-payment-frames/styling.md), [Events](/inline-payment-frames/events.md) and [Token API](/inline-payment-frames/token-api.md) references.
 
 ---
 
