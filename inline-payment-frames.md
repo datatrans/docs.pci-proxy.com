@@ -38,7 +38,7 @@ label { display: block }
 
 <div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
 
-<script type="text/javascript" src="https://pilot.datatrans.biz/upp/payment/js/datatrans-inline-1.0.0.js"></script>
+<script type="text/javascript" src="https://api.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function() {
@@ -180,7 +180,7 @@ Inline.on("success", function(data) {
 Once you've transmitted the transactionId (step 3) to your server (together with the the rest of your form) you can execute a server to server request to get the tokens for card number and CVV code:
 
 ```bash
-$ curl "https://pilot.datatrans.biz/upp/services/v1/inline/token?transactionId=170419151426624571" \
+$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \
        -u 'merchantId:password'
 ```
 The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com) under _UPP Administartion > Security > Server-to-Server services security_. A sample response from the request above looks like:
