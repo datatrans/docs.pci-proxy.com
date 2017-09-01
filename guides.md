@@ -1,4 +1,4 @@
-* #### [IP Whitelisting at Booking.com Provider Portal](/IP Whitelisting at Booking.com Provider Portal.html)
+* #### [IP Whitelisting at Booking.com Provider Portal](/whitliste-pci-proxy-ips-at-booking.md)
 
 #### 
 
