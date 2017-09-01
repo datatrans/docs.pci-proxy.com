@@ -8,11 +8,11 @@ The following acquirers are some of our directly integrated and fully supported 
 
 | Acquirer Switzerland | Acquirer Europe | Acquirer International |
 | --- | --- | --- |
-| Aduno SA | European Merchant Services EMS | Wirecard |
+| SIX Payment Services AG | European Merchant Services EMS | Wirecard |
 | Swisscard AECS | SIX Payment Services | Cardnet Merchant Services \(Lloyds\) |
 | Postfinance | Nets Holding A/S | Nets Holding A/S |
 | - | Acceptance | Worldpay |
-| - | B+S Card Service GmbH | American Express Int'l |
+| - | BS PAYONE GmbH | American Express Int'l |
 | - | ConCardis GmbH | AirPlus |
 | - | Société Générale | UATP |
 | - | Hobex AG | JP Morgan Chase |
