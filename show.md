@@ -55,7 +55,7 @@ https://pilot.datatrans.biz/upp/jsp/noShow.jsp
 ##### 3**. Optional: Add JavaScript callbacks/hooks**
 
 ```js
-// Use attached Javascript callsbacks/hooks file to see wich events are getting emitted to the parent frame.
+// Use attached Javascript callsbacks/hooks file to see which events are getting emitted to the parent frame.
 // Bind an event listener to the parent frame to listen for those events:
 
 function messageReceived(message)
