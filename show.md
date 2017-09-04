@@ -41,7 +41,7 @@ SHA.256(salt+merchantId+aliasCC)                                                
 ```
 
 > Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
-
+>
 > **2. Build NoShow Link with **`merchandId`**, **`aliasCC`** \(token\), **`sign`**, **`username`**and **`userEmail`
 
 ```js
@@ -94,7 +94,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | `merchantId` | Your merchant ID | 1000011011 |
 | `aliasCC` | Token you received when you collected the credit card | 70119122433810042 |
 | `username` | Username of authorized employee who retrieves it | max.mustermann |
-| userEmail | Email address of authorized employee who retrieves it | max.mustermann@yourcompany.com |
+|  | Email address of authorized employee who retrieves it | max.mustermann@yourcompany.com |
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC\) |
 | `language` | The language code in which the no-show page should be displayed | en |
 
