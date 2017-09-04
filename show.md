@@ -42,7 +42,7 @@ SHA.256(salt+merchantId+aliasCC)                                                
 
 > Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
-**2. Build NoShow Link with **`merchandId`**, **`aliasCC`** \(token\), **`sign`** and **`username`
+**2. Build NoShow Link with **`merchandId`**, **`aliasCC`** \(token\), **`sign`**, **`username`**and `emailadress`**
 
 ```js
 https://pilot.datatrans.biz/upp/jsp/noShow.jsp
@@ -50,6 +50,7 @@ https://pilot.datatrans.biz/upp/jsp/noShow.jsp
                &aliasCC=424242SKMPRI4242
                &sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5
                &username=max.mustermann
+               &emailadress=max.mustermann@yourcompany.com
 ```
 
 ##### 3**. Optional: Add JavaScript callbacks/hooks**
