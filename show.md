@@ -92,7 +92,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | --- | --- | --- |
 | `merchantId` | Your merchant ID | 1000011011 |
 | `aliasCC` | Token you received when you collected the credit card | 70119122433810042 |
-| `username` | Username of authorized employee who retrieves it | max.mustermann@yourcompany.com |
+| `username` | Valid, non generic email address of authorized employee who retrieves it | max.mustermann@yourcompany.com |
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC\) |
 | `language` | The language code in which the no-show page should be displayed | en |
 
