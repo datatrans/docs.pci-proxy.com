@@ -113,6 +113,19 @@ Inline.initTokenize(
 );
 ```
 
+Parameter values for “paymentmethod”:
+
+| Card Type | paymentmethod |
+| :--- | :--- |
+| Visa | VIS |
+| MasterCard | ECA |
+| AMEX | AMX |
+| Diners | DIN |
+| Discover | DIS |
+| JCB | JCB |
+| ELO | ELO |
+| China UnionPay | CPU |
+
 ## Web fonts
 
 Web fonts are supported via the standard `@font-face` CSS rule. Because of security concerns it is not permitted to link external resources. So, in order to get custom fonts, one needs to:
