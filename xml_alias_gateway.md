@@ -24,8 +24,8 @@ In order to generate a token, use the following example request.
 
 | Schema | Location |
 | --- | --- |
-| `base.xsd` | [https://](https://pilot.datatrans.biz/upp/schema/base.xsd)[api.sandbox.datatrans.com](https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp)[/upp/schema/base.xsd](https://pilot.datatrans.biz/upp/schema/base.xsd) |
-| `aliasCC.xsd` | [https://](https://pilot.datatrans.biz/upp/schema/aliasCC.xsd)[api.sandbox.datatrans.com](https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp)[/upp/schema/aliasCC.xsd](https://pilot.datatrans.biz/upp/schema/aliasCC.xsd) |
+| `base.xsd` | [https://api.sandbox.datatrans.com/upp/schema/base.xsd](https://api.sandbox.datatrans.com/upp/schema/base.xsd) |
+| `aliasCC.xsd` | [https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd](https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd) |
 
 * **Example request:**
 
