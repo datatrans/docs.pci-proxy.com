@@ -98,7 +98,7 @@ Inline.initTokenize(
 
 ## Setting up payment methods
 
-By default all credit cards available in your merchant setup will be accepted. Use the `paymentMethods` option if there's a need to accept only a subset of card types.
+By default all credit cards available in your merchant setup will be accepted. Use the `paymentMethods` option if there's a need to accept only a subset of card `types`.
 
 ```js
 Inline.initTokenize(
@@ -117,14 +117,14 @@ Parameter values for “paymentmethod”:
 
 | Card Type | paymentmethod |
 | :--- | :--- |
-| Visa | VIS |
-| MasterCard | ECA |
-| AMEX | AMX |
-| Diners | DIN |
-| Discover | DIS |
-| JCB | JCB |
-| ELO | ELO |
-| China UnionPay | CPU |
+| Visa | `VIS` |
+| MasterCard | `ECA` |
+| AMEX | `AMX` |
+| Diners | `DIN` |
+| Discover | `DIS` |
+| JCB | `JCB` |
+| ELO | `ELO` |
+| China UnionPay | `CUP` |
 
 ## Web fonts
 
