@@ -2,9 +2,9 @@
 
 * [Getting Started](README.md)
   * [Step 1: Signup and Setup](step-1-signup-and-setup.md)
-  * [Step 2: Collect & Store](step-2-collect--store.md)
-    * [Filter API](webservice.md)
-    * [Inline Tokenizer API](inline-payment-frames.md)
+  * [Step 2: Tokenize & Store](step-2-collect--store.md)
+    * [Filter](webservice.md)
+    * [Inline Tokenizer](inline-payment-frames.md)
       * [Initialization and Styling](inline-payment-frames/styling.md)
       * [Events](inline-payment-frames/events.md)
       * [Token API](inline-payment-frames/token-api.md)
