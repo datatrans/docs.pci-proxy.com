@@ -18,14 +18,14 @@ In order to generate a token, use the following example request.
 
 | **PCI Proxy PULL Endpoint:** |
 | --- |
-| [https://pilot.datatrans.biz/upp/jsp/XML\_AliasGateway.jsp](https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp) |
+| [https://api.sandbox.datatrans.com/upp/jsp/XML\_AliasGateway.jsp](https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp) |
 
 * **XSD schema locations:**
 
 | Schema | Location |
 | --- | --- |
-| `base.xsd` | [https://pilot.datatrans.biz/upp/schema/base.xsd](https://pilot.datatrans.biz/upp/schema/base.xsd) |
-| `aliasCC.xsd` | [https://pilot.datatrans.biz/upp/schema/aliasCC.xsd](https://pilot.datatrans.biz/upp/schema/aliasCC.xsd) |
+| `base.xsd` | [https://](https://pilot.datatrans.biz/upp/schema/base.xsd)[api.sandbox.datatrans.com](https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp)[/upp/schema/base.xsd](https://pilot.datatrans.biz/upp/schema/base.xsd) |
+| `aliasCC.xsd` | [https://](https://pilot.datatrans.biz/upp/schema/aliasCC.xsd)[api.sandbox.datatrans.com](https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp)[/upp/schema/aliasCC.xsd](https://pilot.datatrans.biz/upp/schema/aliasCC.xsd) |
 
 * **Example request:**
 
@@ -45,7 +45,7 @@ curl "https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Cont
         </request>
      </alias>
    </body>
- </aliasCCService>' 
+ </aliasCCService>'
 ```
 
 * **Example response:**
@@ -99,7 +99,7 @@ curl "https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Cont
         </request>
      </alias>
    </body>
- </aliasCCService>' 
+ </aliasCCService>'
 ```
 
 * **Example response:**
