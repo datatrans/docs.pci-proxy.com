@@ -1,7 +1,7 @@
 # Summary
 
 * [Getting Started](README.md)
-  * [Step 1: Signup and Setup](step-1-signup-and-setup.md)
+  * [Setup](step-1-signup-and-setup.md)
   * [Tokenize & store cards](step-2-collect--store.md)
     * [Payloads](webservice.md)
     * [Websites](inline-payment-frames.md)

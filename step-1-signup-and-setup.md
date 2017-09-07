@@ -1,4 +1,4 @@
-# Step 1: Signup and setup your Sandbox \(Test\) Environment
+# Setup your Sandbox \(Test\) Environment
 
 Before taking your integration live, use our Sandbox environment to test it thoroughly. The Sandbox environment is a self-contained testing environment, identical to our productive environment.
 
