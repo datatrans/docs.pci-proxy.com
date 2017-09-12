@@ -16,6 +16,7 @@
               var aliasCC = document.getElementById('aliasCC').value;
               var hash = CryptoJS.SHA256(salt+merchantId+aliasCC);
               document.getElementById('sign').value = hash;
+              var username = document.getElementById('username').value;
             }
         </script>
     </head>
@@ -69,6 +70,13 @@
               <label for="sign">sign</label>
               <p class="help-block">Click the 'Calculate sing' button above!</p>
               <input type="text" class="form-control" id="sign" name="sign" placeholder="sign" value="" readonly="readonly">
+            </div>
+          </div>
+            
+          <div class="form-group row">
+            <div class="col-xs-3">
+              <label for="username">username</label>
+              <input type="text" class="form-control" id="username" name="username" placeholder="username" value="max.mustermann&#x40yourcompany.com">
             </div>
           </div>
 
