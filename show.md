@@ -86,7 +86,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 | **No-Show interface endpoint \(Sandbox\):** |
 | :--- |
-| [https://pilot.datatrans.biz/upp/jsp/noShow.jsp](https://pilot.datatrans.biz/upp/jsp/noShow.jsp) |
+| [https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp](https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp) |
 
 | Required Parameter | Description | Example value |
 | --- | --- | --- |
