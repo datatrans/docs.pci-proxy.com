@@ -12,7 +12,7 @@ Please find here all relevant information to your Sandbox account.
 
 ## Web Administration Tool
 
-URL: [https://pilot.datatrans.biz/](https://pilot.datatrans.biz/)
+URL: [https://admin.sandbox.datatrans.com/](https://admin.sandbox.datatrans.com/)
 
 Our web admin tool gives you a comprehensive management tool \(backoffice\) for initiating charges and credits, analyzing of transactions, personalization of the web application interface, creation of reports and management of configuration data.
 
