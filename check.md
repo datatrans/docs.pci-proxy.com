@@ -39,7 +39,7 @@ The zero-amount authorization request needs to be sent as an XML formatted messa
 
 | ** XML Gateway Endpoint:** |
 | --- |
-| [https://pilot.datatrans.biz/upp/jsp/XML\_authorize.jsp](https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp) |
+| [https://api.sandbox.datatrans.com/upp/jsp/XML\_authorize.jsp](https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp) |
 
 | Mandatory Input Parameter | Type | Description |
 | --- | --- | --- |
