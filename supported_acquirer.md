@@ -9,14 +9,15 @@ The following acquirers are some of our directly integrated and fully supported 
 | Acquirer Switzerland | Acquirer Europe | Acquirer International |
 | --- | --- | --- |
 | SIX Payment Services AG | European Merchant Services EMS | Wirecard |
-| Swisscard AECS | SIX Payment Services | Cardnet Merchant Services \(Lloyds\) |
+| Swisscard AECS | SIX Payment Services \(Europe\) SA | Cardnet Merchant Services \(Lloyds\) |
 | Postfinance | Nets Holding A/S | Nets Holding A/S |
-| - | Acceptance | Worldpay |
+| Concardis GmbH | Acceptance | Worldpay |
 | - | BS PAYONE GmbH | American Express Int'l |
-| - | ConCardis GmbH | AirPlus |
+| - | Concardis GmbH | AirPlus |
 | - | Société Générale | UATP |
 | - | Hobex AG | JP Morgan Chase |
 | - | Deutsche Postbank | Elavon Merchant Services |
+|  | card complete Service Bank AG | EVO Payments International GmbH |
 
 To have a full view on our partner network, please visit [our website](https://www.datatrans.ch/en/e-payment/methods-of-payment-international/credit-cards).
 
