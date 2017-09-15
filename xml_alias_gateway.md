@@ -30,7 +30,7 @@ In order to generate a token, use the following example request.
 * **Example request:**
 
 ```xml
-curl "https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Content-Type: text/xml" -d '
+curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Content-Type: text/xml" -d '
 <?xml version="1.0" encoding="UTF-8"?>
  <aliasCCService version="1">
    <body merchantId="1000011011">
@@ -84,7 +84,7 @@ curl "https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Cont
 * **Example request:**
 
 ```xml
-curl "https://pilot.datatrans.biz/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Content-Type: text/xml" -d '
+curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Content-Type: text/xml" -d '
 <?xml version="1.0" encoding="UTF-8"?>
  <aliasCCService version="1">
    <body merchantId="1000011011">
