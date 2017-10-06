@@ -45,7 +45,7 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H
         </request>
      </alias>
    </body>
- </aliasCCService>'
+ </aliasCCService>
 ```
 
 * **Example response:**
