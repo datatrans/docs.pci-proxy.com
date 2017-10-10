@@ -77,7 +77,7 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H
 </aliasCCService>
 ```
 
-> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://www.datatrans.ch/showcase/test-cc-numbers).
+> Note: In test mode, only test credit cards are allowed. For testing purposes, you will need our [test credit cards](https://docs.pci-proxy.com/sandbox-environment.html#test-data-and-test-rules).
 
 ### Error Case
 
