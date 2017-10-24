@@ -15,9 +15,9 @@ Follow these steps to get your Production Account:
 
 5. Setup your Production Account with Security Sign and Salt Value according to [**Step 1**](/step-1-signup-and-setup.md).
 
-> If you are in possession of an existing stock of sensitive cardholder data you would like to tokenize in terms of going-live, please refer to our [XML-Alias Gateway](https://docs.pci-proxy.com/xml_alias_gateway.html) or contact us directly.
+> If you are in possession of an existing stock of sensitive cardholder data you would like to tokenize initially in terms of going-live, please refer to our [XML-Alias Gateway](https://docs.pci-proxy.com/xml_alias_gateway.html) or contact us directly.
 
-    6. Change the following details for production usage:
+1. Change the following details for production usage:
 
 ### Production Data vs. Sandbox Data
 
