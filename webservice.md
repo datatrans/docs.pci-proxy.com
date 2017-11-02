@@ -65,7 +65,8 @@ When you [**add a PUSH Channel**](#1-add-channel-to-your-account) to your accoun
 Redirect requests coming from a Channel with a single step:
 
 1. ##### Change API endpoint at Channel from `Your API Endpoint` to specific [`PCI Proxy PUSH Endpoint`](#reference)
-2. ##### Whitelist [IP addresses](/ip_whitelisting.md) from PCI Proxy at Channel, if needed.
+2. ##### Let us know IP addresses from PUSH receiver to whiteliste them on our side.
+3. ##### Whitelist [IP addresses](/ip_whitelisting.md) from PCI Proxy at Channel, if needed.
 
 If Channel sends a request to Channel-specific [`PCI Proxy PUSH endpoint`](#reference), PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
 
