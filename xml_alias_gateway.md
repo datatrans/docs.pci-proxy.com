@@ -53,8 +53,8 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
 <aliasCCService version='1'>
-    <body merchantId='1000011011' status='accepted'>
-        <alias aliasStatus='response'>
+    <body merchantId="1000011011" status="accepted">
+        <alias aliasStatus="response">
             <request>
                 <cardno>375811111111115</cardno>
             </request>
@@ -64,7 +64,7 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H
                 <maskedCC>375811xxxxx1115</maskedCC>
             </response>
         </alias>
-        <alias aliasStatus='response'>
+        <alias aliasStatus="response">
             <request>
                 <cvv>123</cvv>
             </request>
@@ -107,8 +107,8 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
 <aliasCCService version='1'>
-    <body merchantId='1000011011' status='accepted'>
-        <alias aliasStatus='error'>
+    <body merchantId="1000011011" status="accepted">
+        <alias aliasStatus="error">
             <request>
                 <cardno>000</cardno>
             </request>
@@ -118,7 +118,7 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H
                 <errorDetail>check modulo-10 failed</errorDetail>
             </error>
         </alias>
-        <alias aliasStatus='error'>
+        <alias aliasStatus="error">
             <request>
                 <cvv>a</cvv>
             </request>
