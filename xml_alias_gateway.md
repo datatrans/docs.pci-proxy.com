@@ -52,7 +52,7 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H
 
 ```xml
 <?xml version='1.0' encoding='UTF-8'?>
-<aliasCCService version='1'>
+<aliasCCService version="1">
     <body merchantId="1000011011" status="accepted">
         <alias aliasStatus="response">
             <request>
