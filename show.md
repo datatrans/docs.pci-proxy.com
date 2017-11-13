@@ -45,7 +45,7 @@ SHA.256(salt+merchantId+aliasCC)                                                
 > **2. Build NoShow Link with **`merchandId`**, **`aliasCC`** \(token\), **`sign`** and **`username`
 
 ```js
-https://pilot.datatrans.biz/upp/jsp/noShow.jsp
+https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp 
                ?merchantId=1100005007
                &aliasCC=424242SKMPRI4242
                &sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5
