@@ -12,6 +12,7 @@ For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we al
 | [Booking OTA](https://www.booking.com/) | PULL |
 | [Booking Expert](http://www.bookingexpert.it/) | PULL |
 | [Budgetplaces](http://www.budgetplaces.com/) | PULL |
+| [Ctrip](http://english.ctrip.com/) | PULL |
 | [Cubilis](http://www.cubilis.com/) | PULL |
 | [Despegar](http://www.us.despegar.com/) | PULL |
 | [Expedia](https://www.expedia.com) | PULL |
@@ -19,6 +20,7 @@ For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we al
 | [Fastbooking](http://www.fastbooking.com/products/) | PULL |
 | [HomeAway](https://www.homeaway.com/) | PUSH |
 | [Hotelbeds](https://www.hotelbeds.com/home) | PULL |
+| [Hotelbonanza](https://www.hotelbonanza.com/) | PULL/PUSH |
 | [Hoteliers](https://www.hoteliers.com) | PUSH |
 | [Hotelpartner / Yieldagent](http://www.hotelpartner-ym.com/de/) | PULL |
 | [Hotelreservation](https://www.hotelreservation.com/) | PULL |
@@ -30,6 +32,7 @@ For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we al
 | [Lastminute](http://www.lastminute.com/) | PULL |
 | [Laterooms](http://www.laterooms.com/) | PUSH |
 | [Mirai](https://es.mirai.com/) | PULL |
+| [Opentravel](http://opentravel.com/) | PULL |
 | [Orbitz](https://www.orbitz.com/) | PULL |
 | [Pegasus](http://www.pegasus.io/) | PUSH |
 | [Reconline](https://www.reconline.com/) | PULL |
