@@ -16,6 +16,7 @@
 | [Protel](http://www.protel.net/de/) | PUSH |
 | [RateGain](http://rategain.com/) | PULL |
 | [Realex Payments](https://www.realexpayments.com/) | PULL |
+| [Rentals United](https://rentalsunited.com/de/) | PULL |
 | [Sabre Airline Solutions](https://www.sabreairlinesolutions.com/home/) | PULL |
 | [Sabre \(Synxis\)](https://reservations.synxis.com/) | PULL |
 | [Siteminder Siteconnect ](http://www.siteminder.com/) | PULL |
@@ -25,14 +26,17 @@
 | [Traveltainment](http://www.traveltainment.de/) | PULL |
 | [TripAuthority](http://www.alliancereservations.com/xml-web-services.html) | PULL |
 | [TrustInternational / Sabre](http://www.trustinternational.com/) | PULL |
+| [Vertical Booking](https://www.verticalbooking.com/en/index.html?force_language=1) | PUSH |
 | [Yieldplanet](https://www.yieldplanet.com/) | PUSH |
 
 | Payment Gateway - Receiver | Web Service Type \(XML/SOAP/JSON\) |
 | --- | --- |
+| [Adyen](https://www.adyen.com/) | PULL |
 | [Banorte](https://www.banorte.com/wps/portal/gfb/Home/inicio/!ut/p/a1/hc7LDoIwEAXQb3HBlo5QEN01kPCM-IgRujFgasFUSgDh90XixsTH7O7k3MwgihJEq6wvedaVssrEM1Pz5Gpzy9NtCGMn1IH4W-OwwxsXO8YI0hHAlyHwr39EdCK2Szy8iABi7GpArHWA98ZSA998gR8nAkS5kPn0bkqqXLc4og27sIY16r0Z10XX1e1KAQWGYVC5lFww9Vwo8KlRyLZDyRtE9S2BqyH6iMxmD9c73J8!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/) | PUSH |
 | [Braintree](https://www.braintreepayments.com/) | PULL |
 | [Cielo](http://www.cielo.com.br/) | PULL |
 | [Centralpay](https://www.centralpay.eu/fr/) | PULL |
+| [Concardis](https://www.concardis.com/) | PULL |
 | [Datacash](http://www.mastercard.com/gateway/) | PULL |
 | [Diners \(Dataflexnet\)](https://www.dinersclub.com/) | PULL |
 | [Ogone / Ingenico](https://ingenico.co.uk/epayments) | PULL |
