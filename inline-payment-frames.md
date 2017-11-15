@@ -1,4 +1,4 @@
-# Quickstart: Collect card data from a website
+# Quickstart: Collect card data from a website (Inline Mode)
 
 The Inline Mode allows you to securely collect card data by injecting iframes to your DOM. A separate iframe for both, card number and CVV code is used. Thereby, sensitive data never touches your server and allows you to capture all other related card data such as cardholder name, expiry date, etc. directly by yourself.
 
