@@ -15,6 +15,8 @@ Follow these steps to create your Sandbox account:
 
 3. [**Log in**](https://admin.sandbox.datatrans.com/) with your credentials and follow instructions to create your own password.
 
+> Please consider that you will receive two separate merchant IDs when using Website Tokenization and Webservice \(Filter Payloads\).
+
 ---
 
 ## 2. Setup your Sandbox Account
