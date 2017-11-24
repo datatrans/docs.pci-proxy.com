@@ -8,6 +8,8 @@ Simply `redirect requests containing tokens through PCI Proxy` to avoid sensitiv
 
 **Your requests are populated with sensitive card data after they left your systems to keep you out of PCI scope.**
 
+> Using Receivers not listed on [supported Receivers \(Gateways\)](/supported_receivers.md) requires a valid AOC \(Attestation of Compliance\)
+
 ---
 
 ## 1. Add Receiver to your account
