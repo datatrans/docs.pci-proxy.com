@@ -82,6 +82,7 @@ Error cases \(returned with headers X-CC-ERROR-CODE and X-CC-ERROR\):
 | 200 | Could not apply xPath on xml response: `<XPATH-EXPRESSION>` | There was an error applying the xpath expression |
 | 201 | Denied by velocity check | Sent during alias to card conversion \(if such case\) if there were too many attempts to convert bad aliases to cards. |
 | 202 | Denied by parallel connection checker | Security measure which avoids that there were sent too many requests parallel. |
+| 203 | Denied by whitelist | IP is not whitelisted on PCI Proxy. Please contact PCI Proxy Support. |
 | 300 | Unknown content type in 3rd party response: `<CONTENT-TYPE>` | The proxy is not able to parse the 3rd party response as xml or html. |
 | 301 | Unknown content type in source request: `<CONTENT-TYPE>` | Proxy cannot parse source response as xml or html. |
 | 400 | Pull not configured | There is no pull configuration for the specified merchant. Please contact Datatrans Support. |
