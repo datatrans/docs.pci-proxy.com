@@ -10,7 +10,7 @@ Before we get started, take a minute and let us introduce you to the magic of [*
 
 PCI Proxy let you **instantly collect and store credit card data **without touching your servers. Once stored and tokenized, you can simply **use tokens to validate, charge, display, or forward **your stored card data.
 
-* [**Explore PCI Proxy Features**](https://www.pci-proxy.com/features.html)
+* [**Explore PCI Proxy Features**](https://www.pci-proxy.com/pci-proxy/features/)
 
 Our [**customer base**](https://www.pci-proxy.com/customers.html) spans across many different industries and business types. All of them have specific needs and processes in place. PCI Proxy is build with flexibility in mind to accommodate those needs at best.
 
