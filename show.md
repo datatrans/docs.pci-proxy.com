@@ -23,7 +23,7 @@ Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under 
 
 Example link, pre-filled with token 424242SKMPRI4242_:_
 
-| **Click to **[**Show Credit Card Number**](https://pilot.datatrans.biz/upp/jsp/noShow.jsp?merchantId=1100005007&aliasCC=424242SKMPRI4242&aliasCVV=&sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5) |
+| **Click to **[**Show Credit Card Number**](https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp?merchantId=1100005007&aliasCC=424242SKMPRI4242&aliasCVV=&sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5) |
 | :--- |
 | The NoShow link should retrieve the [test card number](/sandbox-environment.md) 4242 4242 4242 4242. |
 
@@ -96,7 +96,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC\) |
 | `language` | The language code in which the no-show page should be displayed | en |
 
-_The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[http://pilot.datatrans.biz](http://pilot.datatrans.biz)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
+_The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
 
 #### PCI DSS Compliant User Management
 
