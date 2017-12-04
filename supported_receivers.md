@@ -9,6 +9,9 @@
 | [DHISCO](http://www.dhisco.com/) | PULL |
 | [Dingus](https://www.dingus-services.com/en/) | PULL |
 | [eRevMax Technologies \(RateTiger\)](http://www.erevmax.com/) | PULL |
+| [Guestline](https://www.guestline.com/) | PULL |
+| [HanseMerkur](https://www.hansemerkur.de/) | PULL |
+| [Hasting Hotels](https://www.hastingshotels.com/) | PULL |
 | [HBSI \(IBS Software\)](http://www.hotelbookingsolutions.com/) | PULL |
 | [Hotel-Spider](http://www.hotel-spider.com/en/) | PUSH |
 | [Opera](https://www.oracle.com/industries/hospitality/products/opera-cloud-services.html) | PUSH |
