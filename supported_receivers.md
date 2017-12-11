@@ -13,6 +13,7 @@
 | [HanseMerkur](https://www.hansemerkur.de/) | PULL |
 | [Hasting Hotels](https://www.hastingshotels.com/) | PULL |
 | [HBSI \(IBS Software\)](http://www.hotelbookingsolutions.com/) | PULL |
+| [HotelPartner](http://www.hotelpartner-ym.com/en/) | PULL |
 | [Hotel-Spider](http://www.hotel-spider.com/en/) | PUSH |
 | [Opera](https://www.oracle.com/industries/hospitality/products/opera-cloud-services.html) | PUSH |
 | [Peakwork](http://www.peakwork.com/) | PULL |
@@ -30,6 +31,7 @@
 | [TripAuthority](http://www.alliancereservations.com/xml-web-services.html) | PULL |
 | [TrustInternational / Sabre](http://www.trustinternational.com/) | PULL |
 | [Vertical Booking](https://www.verticalbooking.com/en/index.html?force_language=1) | PUSH |
+| [Winchester Hotel](http://www.thewinchesterhotel.co.uk/) | PUSH |
 | [Yieldplanet](https://www.yieldplanet.com/) | PUSH |
 
 | Payment Gateway - Receiver | Web Service Type \(XML/SOAP/JSON\) |
