@@ -13,6 +13,8 @@
     * [Charge](charge.md)
     * [Check](check.md)
     * [Forward](forward-receiver.md)
+      * [API](forward-receiver/api.md)
+      * [SFTP](forward-receiver/sftp.md)
     * [Show](show.md)
   * [Step 4 - Go Live](step-4-go-live.md)
 * [Guides](guides.md)
