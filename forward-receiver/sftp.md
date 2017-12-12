@@ -14,19 +14,7 @@ Adding a SFTP-Reicever requires changes on our Firewall. Please complete the for
 
 ---
 
-## 3a. Use simple POST
-
-```
-$curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX'
-    -X POST \
-    -H "Accept: appplication/json" \
-    -H "type: BTA or TAMARA" \ // please choose between BTA or TAMARA
-    -H "Cache-Control: no-cache" \
-    -H "Content-Type: text/plain; charset=UTF-8" \
-    -d '0000080915K...'
-```
-
-## 3b. Use x-www-form-url encoded
+## 3a. Use x-www-form-url encoded
 
 ```
 $curl https://pilot.datatrans.biz/upp/services/v1/proxy/ft                                     // HOST: PCI Proxy Endpoint
@@ -40,6 +28,18 @@ $curl https://pilot.datatrans.biz/upp/services/v1/proxy/ft                      
     &sign=30916165706580013                                                                    // Security Sign you created in Step 1 
     &url=sftp%3A%2F%2Fint-tests%40193.16.220.99%2FBTATEST%2Ftest.txt&file=SOME+FILE+CONTENT    // SFTP Endpoint
     &password=...'                                                                             // Your password
+```
+
+## 3b. Use simple Post
+
+```
+$curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX'
+    -X POST \
+    -H "Accept: appplication/json" \
+    -H "type: BTA or TAMARA" \ // please choose between BTA or TAMARA
+    -H "Cache-Control: no-cache" \
+    -H "Content-Type: text/plain; charset=UTF-8" \
+    -d '0000080915K...'
 ```
 
 
