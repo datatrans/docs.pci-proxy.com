@@ -1,14 +1,20 @@
 ## 1. Add SFTP-Receiver to your account
 
-Adding Receivers is easy. You can either pick from our list of [supported Receivers \(Gateways\)](/supported_receivers.md) or add new ones:
+Adding SFTP-Receivers is easy. You can either pick from our list of [supported Receivers \(Gateways\)](/supported_receivers.md) or add new ones:
 
 | Click to [**Add Receivers**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) |
 | :--- |
-| _Learn more about _[_**Request Types**_](/request-types.md)_._ |
+
 
 ---
 
-## 2a. Use simple POST
+## 2. Firewall changes
+
+1. Complete the form here to let us know the IP addresses for your outgoing connection.
+
+---
+
+## 3a. Use simple POST
 
 ```
 $curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX'
@@ -20,7 +26,7 @@ $curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX
     -d '0000080915K...'
 ```
 
-## 2b. x-www-form-urlencoded
+## 3b. Use x-www-form-url encoded
 
 ```
 $curl https://pilot.datatrans.biz/upp/services/v1/proxy/ft                         // HOST: PCI Proxy Endpoint
@@ -29,7 +35,7 @@ $curl https://pilot.datatrans.biz/upp/services/v1/proxy/ft                      
     -H "type: BTA or TAMARA"                                                       // NEW HEADER: Please choose between BTA or TAMARA
     -H "Cache-Control: no-cache"                                                   // NEW HEADER: Please choose no-cache
     -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8"            // NEW HEADER: application/x-www-form-urlencoded; charset=UTF-8
-    
+
     -d 'merchantId=1000011011&sign=30916165706580013&url=sftp%3A%2F%2Fint-tests%40193.16.220.99%2FBTATEST%2Ftest.txt&file=SOME+FILE+CONTENT&password=...'
 ```
 

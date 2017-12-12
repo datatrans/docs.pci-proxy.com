@@ -73,7 +73,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 ---
 
-> ## \#
+> ## \
 
 
 
