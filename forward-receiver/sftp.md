@@ -29,14 +29,17 @@ $curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX
 ## 3b. Use x-www-form-url encoded
 
 ```
-$curl https://pilot.datatrans.biz/upp/services/v1/proxy/ft                         // HOST: PCI Proxy Endpoint
-    -X POST                                                                        // Request Method POST
-    -H "Accept: text/plain"                                                        // NEW HEADER: Please choose test/plain
-    -H "type: BTA or TAMARA"                                                       // NEW HEADER: Please choose between BTA or TAMARA
-    -H "Cache-Control: no-cache"                                                   // NEW HEADER: Please choose no-cache
-    -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8"            // NEW HEADER: application/x-www-form-urlencoded; charset=UTF-8
+$curl https://pilot.datatrans.biz/upp/services/v1/proxy/ft                                     // HOST: PCI Proxy Endpoint
+    -X POST                                                                                    // Request Method POST
+    -H "Accept: text/plain"                                                                    // NEW HEADER: Please choose test/plain
+    -H "type: BTA or TAMARA"                                                                   // NEW HEADER: Please choose between BTA or TAMARA
+    -H "Cache-Control: no-cache"                                                               // NEW HEADER: Please choose no-cache
+    -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8"                        // NEW HEADER: application/x-www-form-urlencoded; charset=UTF-8
 
-    -d 'merchantId=1000011011&sign=30916165706580013&url=sftp%3A%2F%2Fint-tests%40193.16.220.99%2FBTATEST%2Ftest.txt&file=SOME+FILE+CONTENT&password=...'
+    -d 'merchantId=1000011011                                                                  // Merchant ID you received during Signup
+    &sign=30916165706580013                                                                    // Security Sign you created in Step 1 
+    &url=sftp%3A%2F%2Fint-tests%40193.16.220.99%2FBTATEST%2Ftest.txt&file=SOME+FILE+CONTENT    // SFTP Endpoint
+    &password=...'                                                                             // Your password
 ```
 
 
