@@ -1,6 +1,6 @@
 ## 1. Add SFTP-Receiver to your account
 
-Adding SFTP-Receivers is easy. You can either pick from our list of [supported Receivers \(Gateways\)](/supported_receivers.md) or add new ones:
+Adding SFTP-Receivers is easy. You can either pick from our list of supported Receivers or add new ones:
 
 | Click to [**Add Receivers**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) |
 | :--- |
@@ -10,7 +10,7 @@ Adding SFTP-Receivers is easy. You can either pick from our list of [supported R
 
 ## 2. Firewall changes
 
-1. Complete the form here to let us know the IP addresses for your outgoing connection.
+Adding a SFTP-Reicever requires changes on our Firewall. Please complete the form [here](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) to let us know concerned IP-addresses.
 
 ---
 
