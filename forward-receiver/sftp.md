@@ -48,15 +48,29 @@ $curl https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft                
 
 ```
 $curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX&type=BTA'
-
     -X POST                                                     // Request Method POST
-    -H "Accept: appplication/json"                              // Content-Type
-    -H "Cache-Control: no-cache"                                // Cache-Control
-    -H "Content-Type: text/plain; charset=UTF-8"                // Accepted: 'text/plan'; 'application/json'; 'application/xml'
+
+    -H "X-CC-Authorization: xxxxxx"                             // Basic-Auth
+    -H "X-CC-Cache-Control: no-cache"                           // Cache-Control
+    -H "X-CC-Content-Type: text/plain; charset=UTF-8"           // Accepted: 'text/plan'; 'application/json'; 'application/xml'
     -d '0000080915K...'
 ```
 
 The service responds based on the_accept header_: Supported are_text/plain, application/json _\(default\) and _application/xml_
+
+---
+
+#### Reference
+
+| **PCI Proxy SFTP Endpoint:** |
+| :--- |
+| [https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft](/`https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft) |
+
+| Required HTTP header | Description | Example value |
+| :--- | :--- | :--- |
+| `X-CC-URL` | SFTP Endpoint - Specifies the SFTP-Receiver URL that will be called | [https://api.receiver.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
+| `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
+| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 130709090849785405 |
 
 > ---
 >
