@@ -22,7 +22,7 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 
 1. ##### Put `token` instead of `sensitive card data` into your request
 2. ##### Use [`PCI Proxy Endpoint`](#reference) as HOST with following paramters `merchantID` , `sign` , `url` , `password` and define `type` with `BTA` or `TAMARA`
-3. ##### Add required [`X-CC HTTP`](#reference) header
+3. ##### Add required [`X-CC HTTP`](#reference) header to your request
 
 ```
 $curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX&type=BTA'
