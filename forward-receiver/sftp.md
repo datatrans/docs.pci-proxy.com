@@ -23,14 +23,12 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 3. ##### Add required [`X-CC HTTP header`](#reference) to your request
 4. ##### Keep all other parameters of your request as always
 
-Redirect your XML request \(`yourRequest.xml`\) through PCI Proxy by using the following simple call:
-
 ## 3a. Use x-www-form-url encoded
 
 ```
 $curl https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft                               // HOST: PCI Proxy Endpoint
     -X POST                                                                                    // Request Method POST
-    -H "Accept: text/plain"                                                                    // NEW HEADER: Please choose test/plain
+    -H "Accept: text/plain"                                                                    // NEW HEADER: Please choose text/plain
     -H "type: BTA or TAMARA"                                                                   // NEW HEADER: Please choose between BTA or TAMARA
     -H "Cache-Control: no-cache"                                                               // NEW HEADER: Please choose no-cache
     -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8"                        // NEW HEADER: application/x-www-form-urlencoded; charset=UTF-8
@@ -44,13 +42,17 @@ $curl https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft                
 
 ## 3b. Use simple Post
 
+1. ##### Put `token` instead of `sensitive card data` into your request
+2. ##### Use [`PCI Proxy Endpoint`](#reference) as HOST with following paramters `merchantID` , `sign` , `url` , `password` and define `type` with `BTA` or `TAMARA`
+3. ##### Add required `X-CC HTTP` header
+
 ```
-$curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX'
-    -X POST \
-    -H "Accept: appplication/json" \
-    -H "type: BTA or TAMARA" \ // please choose between BTA or TAMARA
-    -H "Cache-Control: no-cache" \
-    -H "Content-Type: text/plain; charset=UTF-8" \
+$curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX&type=BTA'
+
+    -X POST                                                     // Request Method POST
+    -H "Accept: appplication/json"                              // Content-Type
+    -H "Cache-Control: no-cache"                                // Cache-Control
+    -H "Content-Type: text/plain; charset=UTF-8"                // Accepted: 'text/plan'; 'application/json'; 'application/xml'
     -d '0000080915K...'
 ```
 
