@@ -54,5 +54,9 @@
 | [YesPay](http://yespay.co.in/) | PULL |
 | [Worldpay](http://www.worldpay.com/) | PULL |
 
-We are adding more third party APIs and payment gateways. Let us know if one is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
+| SFTP-Reicever | Type |
+| :--- | :--- |
+| Amexco | BTA / TAMARA |
+
+We are adding more third party APIs, payment gateways and SFTP-Receivers. Let us know if one is missing: [Adding Receiver](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html)
 

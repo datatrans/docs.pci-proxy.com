@@ -47,5 +47,5 @@ For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we al
 | [Voila](https://www.voilahotels.com/) | PUSH |
 | [WuBook](http://en.wubook.net/) | PULL |
 
-We are adding more channels. Let us know if a channel is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
+We are adding more channels. Let us know if a channel is missing: [Adding Channel](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-channel.html)
 

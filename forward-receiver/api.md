@@ -73,7 +73,18 @@ _Note: In test mode, only test credit cards are allowed!_
 
 ---
 
-> ## \
+## Great job**: You have successfully integrated PCI Proxy! **
+
+> You have securely forwarded sensitive card data without ever touching your servers. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **
+>
+> Enjoy PCI compliance in a risk-free environment. Keep in mind that you can use stored data as often as you need it.
+>
+> #### Questions?
+>
+> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+>
+> Phone: +41 44 256 81 91  
+> Email: [support@pci-proxy.com](/mailto:support@pci-proxy.com)
 
 
 
