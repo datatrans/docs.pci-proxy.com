@@ -41,6 +41,7 @@ The service responds based on the _accept header_: Supported are_text/plain, app
 1. ##### Put `token` instead of `sensitive card data` into your request
 2. ##### Use [`PCI Proxy Endpoint`](#reference) as `HOST`
 3. ##### Add required [`X-CC HTTP header`](#reference) to your request
+4. ##### Add rquired POST data: `merchantID`, `sign`, `url`, `file` and `password`
 
 ```
 $curl https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft                           // HOST: PCI Proxy Endpoint
