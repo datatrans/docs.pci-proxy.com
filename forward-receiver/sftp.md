@@ -31,7 +31,7 @@ $curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX
     -H "X-CC-Authorization: xxxxxx"                             // Basic-Auth
     -H "X-CC-Cache-Control: no-cache"                           // Cache-Control
     -H "X-CC-Content-Type: text/plain; charset=UTF-8"           // Accepted: 'text/plan'; 'application/json'; 'application/xml'
-    -d '0000080915K...'
+    -d '0000080915K...'                                         // define the content
 ```
 
 The service responds based on the _accept header_: Supported are_text/plain, application/json _\(default\) and _application/xml_
@@ -58,9 +58,11 @@ $curl https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft                
     &password=...'                                                                         // Your password
 ```
 
+_Note: In test mode, only test credit cards are allowed!_
+
 ---
 
-#### Reference
+## Reference
 
 | **PCI Proxy SFTP Endpoint:** |
 | :--- |
