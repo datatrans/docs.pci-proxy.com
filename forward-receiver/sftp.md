@@ -1,6 +1,6 @@
 ## 1. Add SFTP-Receiver to your account
 
-Adding SFTP-Receivers is easy. You can either pick from our list of supported SFTP-Receivers or add new ones:
+Adding a SFTP-Receiver is easy. You can either pick from our list of supported SFTP-Receivers or add new ones:
 
 | Click to Add** **[**SFTP-Receivers**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) |
 | :--- |
