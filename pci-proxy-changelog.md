@@ -1,12 +1,10 @@
 ## **PCI Proxy Changelog**
 
-
-
-
-
 ---
 
-##### 18th December, 2017
+#### Support for SFTP-Receiver
 
-PCI Proxy now supports forwarding card data to  [SFTP-Receiver](/forward-receiver/sftp.md)
+###### 18th December, 2017
+
+PCI Proxy now supports forwarding sensitive card data to  SFTP-Receiver. Please see [SFTP ](/forward-receiver/sftp.md)for details. 
 
