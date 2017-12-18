@@ -38,7 +38,7 @@ label { display: block }
 
 <div id="result" class="alert alert-success" role="alert" style="display: none;"></div>
 
-<script type="text/javascript" src="https://api.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
+<script type="text/javascript" src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function() {
