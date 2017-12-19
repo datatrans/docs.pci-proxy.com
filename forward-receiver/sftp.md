@@ -10,7 +10,7 @@ Adding a SFTP-Receiver is easy. You can either pick from our list of supported S
 
 ## 2. Firewall changes
 
-Adding a SFTP-Reicever requires changes on our Firewall. Please complete the form [here](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) to let us know concerned IP-addresses.
+Adding SFTP-Reicever requires changes on our firewall. Please complete the form [here](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) to let us know concerned IP-addresses.
 
 ---
 
