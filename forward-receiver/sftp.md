@@ -53,9 +53,9 @@ $curl https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft                
 
     -d 'merchantId=1000011011                                                              // Merchant ID you received during Signup
     &sign=30916165706580013                                                                // Security Sign you created in Step 1 
-    &url=sftp%3A%2F%2Fint-tests%40193.16.220.99%2FBTATEST%2Ftest.txt                       // SFTP Endpoint
+    &url=sftp%3A%2F%2Fint-tests%40127.0.0.1%2Ffolder%2Ftest.txt                       // SFTP Endpoint
     &file=SOME+FILE+CONTENT                                                                // Your File
-    &password=...'                                                                         // Your password
+    &password=XXX'                                                                         // Your password
 ```
 
 _Note: In test mode, only test credit cards are allowed!_
