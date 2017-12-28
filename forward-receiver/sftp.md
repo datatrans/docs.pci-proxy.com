@@ -58,6 +58,8 @@ $curl https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft                
     &password=XXX'                                                                         // Your password
 ```
 
+You have securely forwarded sensitive card data without ever touching your servers. Your request had been populated with sensitive card data while it was routed through PCI Proxy. Thereby, your Receiver obtained full credit card data.
+
 _Note: In test mode, only test credit cards are allowed!_
 
 ---
