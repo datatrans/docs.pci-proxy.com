@@ -70,12 +70,6 @@ _Note: In test mode, only test credit cards are allowed!_
 | :--- |
 | [https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft](/`https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft) |
 
-| Required HTTP header | Description | Example value |
-| :--- | :--- | :--- |
-| `X-CC-URL` | SFTP Endpoint - Specifies the SFTP-Receiver URL that will be called | [https://sftp.receiver.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
-| `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
-| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 130709090849785405 |
-
 > ---
 >
 > ## Great job**: You have successfully integrated PCI Proxy! **
