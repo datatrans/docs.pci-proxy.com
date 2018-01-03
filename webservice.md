@@ -20,9 +20,15 @@ Adding Channels is easy. You can either pick from our list of [supported Channel
 
 ## 2a. Redirect a PULL Channel through PCI Proxy
 
+| **PCI Proxy PULL Endpoint:** |
+| :--- |
+| [https://sandbox.pci-proxy.com/v1/pull ](https://sandbox.pci-proxy.com/v1/pull ) |
+
+
+
 If you have added a PULL Channel to your account, you can easily redirect requests to that Channel via the PCI Proxy.
 
-1. ##### Use[`PCI Proxy Endpoint`](#reference)  as `HOST`
+1. ##### Use`PCI Proxy PULL Endpoint`  as `HOST`
 2. ##### Add required [`X-CC HTTP header`](#reference) to your request
 3. ##### Keep all other parameters of your request as always
 
@@ -66,13 +72,17 @@ _Note: In test mode, only test credit cards are allowed!_
 
 ## 2b. Redirect a PUSH Channel through PCI Proxy
 
+| **PCI Proxy PUSH Endpoint:** |
+| :--- |
+| [https://sandbox.pci-proxy.com/v1/push/](https://sandbox.pci-proxy.com/v1/push/)`{UNIQUE-RECEIVER-KEY}` |
+
 Contrary to the PULL integration, you usually don't have much influence on how the request is started or don't want to force the Channel to change the integration. Therefore, we use a different approach for PUSH Channels.
 
 When you [**add a PUSH Channel**](#1-add-channel-to-your-account) to your account, you receive a `{UNIQUE-CHANNEL-KEY}` for each Channel that is set up. Together with our PCI Proxy PUSH service URL, it results in a `PCI Proxy PUSH Endpoint` that is specific to that Channel:
 
 Redirect requests coming from a Channel with a single step:
 
-1. ##### Change API endpoint at Channel from `Your API Endpoint` to specific [https://sandbox.pci-proxy.com/v1/push/](https://sandbox.pci-proxy.com/v1/push/) `{UNIQUE-CHANNEL-KEY}`
+1. ##### Change API endpoint at Channel from `Your API Endpoint` to specific `PCI Proxy PUSH Endpoint`
 2. ##### Whitelist [IP addresses](/ip_whitelisting.md) from PCI Proxy at Channel, if needed.
 
 ##### 
