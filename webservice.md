@@ -52,6 +52,18 @@ curl "https://sandbox.pci-proxy.com/v1/pull" -X POST -H "Content-Type: text/xml"
 
 You have securely captured sensitive card data. The response from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the response and forward it to you.
 
+
+
+| Required HTTP header |
+| :--- |
+
+
+|  | Description | Example value |
+| :--- | :--- | :--- |
+| `X-CC-URL` | API Endpoint - Specifies the Channel URL that will be called | [https://api.channel.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
+| `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
+| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 30916165706580013 |
+
 _Note: In test mode, only test credit cards are allowed!_
 
 ---
@@ -64,7 +76,7 @@ When you [**add a PUSH Channel**](#1-add-channel-to-your-account) to your accoun
 
 Redirect requests coming from a Channel with a single step:
 
-1. ##### Change API endpoint at Channel from `Your API Endpoint` to specific [`PCI Proxy PUSH Endpoint`](#reference)
+1. ##### Change API endpoint at Channel from `Your API Endpoint` to specific [https://sandbox.pci-proxy.com/v1/push/](https://sandbox.pci-proxy.com/v1/push/) `{UNIQUE-CHANNEL-KEY}`
 2. ##### Whitelist [IP addresses](/ip_whitelisting.md) from PCI Proxy at Channel, if needed.
 
 ##### 
@@ -72,24 +84,6 @@ Redirect requests coming from a Channel with a single step:
 If Channel sends a request to Channel-specific [`PCI Proxy PUSH endpoint`](#reference), PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
 
 _Note: In test mode, only test credit cards are allowed!_
-
----
-
-#### Reference
-
-| **PCI Proxy PULL Endpoint:** |
-| :--- |
-| [https://sandbox.pci-proxy.com/v1/pull](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
-
-| **PCI Proxy PUSH Endpoint:** |
-| :--- |
-| [https://sandbox.pci-proxy.com/v1/push/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#)`{UNIQUE-CHANNEL-KEY}` |
-
-| Required HTTP header | Description | Example value |
-| :--- | :--- | :--- |
-| `X-CC-URL` | API Endpoint - Specifies the Channel URL that will be called | [https://api.channel.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
-| `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
-| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 30916165706580013 |
 
 ---
 
