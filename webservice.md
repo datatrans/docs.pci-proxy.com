@@ -52,11 +52,7 @@ curl "https://sandbox.pci-proxy.com/v1/pull" -X POST -H "Content-Type: text/xml"
 
 You have securely captured sensitive card data. The response from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the response and forward it to you.
 
-
-
-| Required HTTP header |
-| :--- |
-
+##### Required HTTP-Header:
 
 |  | Description | Example value |
 | :--- | :--- | :--- |
