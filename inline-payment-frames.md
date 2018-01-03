@@ -6,10 +6,15 @@ The Inline Mode allows you to securely collect card data by injecting iframes to
 
 Browser comptability for the Inline Mode:
 >Internet Explorer: >= 10
+
 >Firefox: >= 30
+
 >Chrome: >= 32
+
 >Safari: >= 6
+
 >iOS Safari: >= 6
+
 >Android: >= 4
 
 ---
