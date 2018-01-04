@@ -10,6 +10,10 @@ Adding Receivers is easy. You can either pick from our list of [supported Receiv
 
 ## 2a. Redirect a PULL Receiver through PCI Proxy
 
+| **PCI Proxy PULL Endpoint:** |
+| :--- |
+| https://sandbox.pci-proxy.com/v1/pull |
+
 If you have added a PULL Receiver to your account, you can easily redirect requests to that Receiver via the PCI Proxy.
 
 1. ##### Put `token` instead of `sensitive card data` into your request
@@ -33,11 +37,23 @@ $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
 
 You have securely forwarded sensitive card data without ever touching your servers. Your request had been populated with sensitive card data while it was routed through PCI Proxy. Thereby, your Receiver obtained full credit card data.
 
+##### Required HTTP Header:
+
+| Header | Description | Example value |
+| :--- | :--- | :--- |
+| `X-CC-URL` | API Endpoint - Specifies the Receiver URL that will be called | [https://api.receiver.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
+| `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
+| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 130709090849785405 |
+
 _Note: In test mode, only test credit cards are allowed!_
 
 ---
 
 ## 2b. Redirect a PUSH Receiver through PCI Proxy
+
+| **PCI Proxy PUSH Endpoint:** |
+| :--- |
+| https://sandbox.pci-proxy.com/v1/push/`{UNIQUE-RECEIVER-KEY}` |
 
 Contrary to the PULL integration, you usually don't have much influence on how the request is started or don't want to force the Receiver to change the integration. Therefore, we use a different approach for PUSH Receiver.
 
@@ -45,31 +61,13 @@ When you [add a PUSH Receiver to your account](#1-add-receiver-to-your-account),
 
 Redirect requests coming from a Receiver with a single step:
 
-1. ##### Change API endpoint at Receiver from `Your API Endpoint` to specific [`PCI Proxy PUSH Endpoint`](#reference)
+1. ##### Change API endpoint at Receiver from `Your API Endpoint` to specific `PCI Proxy PUSH Endpoint`
 2. ##### Let us know IP addresses of PUSH Receiver if not already mentioned in [1. Add Receiver to your account](#1-add-receiver-to-your-account)
 3. ##### Whitelist [IP addresses](/ip_whitelisting.md) of PCI Proxy at Receiver, if needed.
 
-If Receiver sends a request to Receiver-specific [`PCI Proxy PUSH endpoint`](#reference), PCI Proxy recognizes Receiver and connects it to your account. The request from Receiver will be passed directly on to your system. Your response will be populated with sensitive card data while it was routed through PCI Proxy and forwarded to Receiver. Thereby, your Receiver obtained full credit card data.
+If Receiver sends a request to Receiver-specific `PCI Proxy PUSH endpoint`, PCI Proxy recognizes Receiver and connects it to your account. The request from Receiver will be passed directly on to your system. Your response will be populated with sensitive card data while it was routed through PCI Proxy and forwarded to Receiver. Thereby, your Receiver obtained full credit card data.
 
 _Note: In test mode, only test credit cards are allowed!_
-
----
-
-#### Reference
-
-| **PCI Proxy PULL Endpoint:** |
-| :--- |
-| [https://sandbox.pci-proxy.com/v1/pull](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
-
-| **PCI Proxy PUSH Endpoint:** |
-| :--- |
-| [https://sandbox.pci-proxy.com/v1/push/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#)`{UNIQUE-RECEIVER-KEY}` |
-
-| Required HTTP header | Description | Example value |
-| :--- | :--- | :--- |
-| `X-CC-URL` | API Endpoint - Specifies the Receiver URL that will be called | [https://api.receiver.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
-| `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
-| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](/step-1-signup-and-setup.md)\) | 130709090849785405 |
 
 ---
 
