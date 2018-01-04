@@ -12,7 +12,7 @@ Adding Receivers is easy. You can either pick from our list of [supported Receiv
 
 | **PCI Proxy PULL Endpoint:** |
 | :--- |
-| https://sandbox.pci-proxy.com/v1/pull |
+| [https://sandbox.pci-proxy.com/v1/pull](https://sandbox.pci-proxy.com/v1/pull) |
 
 If you have added a PULL Receiver to your account, you can easily redirect requests to that Receiver via the PCI Proxy.
 
@@ -53,7 +53,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 | **PCI Proxy PUSH Endpoint:** |
 | :--- |
-| https://sandbox.pci-proxy.com/v1/push/`{UNIQUE-RECEIVER-KEY}` |
+| https://sandbox.pci-proxy.com/v1/push/ {UNIQUE-RECEIVER-KEY} |
 
 Contrary to the PULL integration, you usually don't have much influence on how the request is started or don't want to force the Receiver to change the integration. Therefore, we use a different approach for PUSH Receiver.
 
