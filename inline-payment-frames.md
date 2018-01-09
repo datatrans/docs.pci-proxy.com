@@ -5,17 +5,17 @@ The Inline Mode allows you to securely collect card data by injecting iframes to
 > **The Inline Mode qualifies you for SAQ A.**
 
 Browser compatibility for the Inline Mode:
->Internet Explorer: >= 10
+>Internet Explorer: >= 11
 
 >Firefox: >= 30
 
 >Chrome: >= 32
 
->Safari: >= 6
+>Safari: >= 7
 
 >iOS Safari: >= 6
 
->Android: >= 4
+>Android: >= 5
 
 ---
 
