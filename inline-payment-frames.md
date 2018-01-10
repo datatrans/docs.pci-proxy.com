@@ -57,28 +57,14 @@ label { display: block }
 $(document).ready(function() {
   console.log("### $(document).ready called!");  
   
-  var target = "https://pay.sandbox.datatrans.com";
-  var inlineScriptUrl = target + "/upp/payment/js/datatrans-inline-1.0.0.js";
-  
-  loadScript(inlineScriptUrl, setup);
-
-  function loadScript(src, onload) {
-    var script = document.createElement('script');
-    script.onload = onload;
-    script.src = src;
-    document.head.appendChild(script);
-  }
-  
   function setup() { 
     
-    //Inline = new InlineMode();
-  
     Inline.initTokenize( 
       "1100007006", {
         cardNumber: "cardNumberPlaceholder",
         cvv: "cvvPlaceholder"
       },{
-        debug: true          
+        // options...          
       }    
     );
     
