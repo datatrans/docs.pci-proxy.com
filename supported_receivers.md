@@ -56,5 +56,12 @@
 | [YesPay](http://yespay.co.in/) | PULL |
 | [Worldpay](http://www.worldpay.com/) | PULL |
 
+| SFTP-Receiver | Type |
+| :--- | :--- |
+| American Express | BTA |
+| Airplus | TAMARA |
+
+
+
 We are adding more third party APIs and payment gateways. Let us know if one is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
 
