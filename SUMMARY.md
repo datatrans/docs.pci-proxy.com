@@ -25,7 +25,6 @@
   * [Sandbox Account](sandbox-environment.md)
   * [Full API Reference](full-api-reference.md)
   * [Request Types](request-types.md)
-  * [Changelog](pci-proxy-changelog.md)
   * [IP Whitelisting](ip_whitelisting.md)
   * [XML Alias Gateway](xml_alias_gateway.md)
   * [Supported Acquirer](supported_acquirer.md)
