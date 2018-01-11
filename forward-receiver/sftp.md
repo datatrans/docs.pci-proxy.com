@@ -40,7 +40,7 @@ The service responds based on the _accept header_: Supported are_text/plain, app
 
 1. ##### Put `token` instead of `sensitive card data` into your request
 2. ##### Use [`PCI Proxy Endpoint`](#reference) as `HOST`
-3. ##### Add required [`X-CC HTTP header`](#reference) to your request
+3. ##### Add required [`parameter`](#reference) to your request
 4. ##### Add rquired POST data: `merchantID`, `sign`, `url`, `file` and `password`
 
 ```
@@ -78,6 +78,8 @@ _Note: In test mode, only test credit cards are allowed!_
 | file | The file you want to upload | some+file+content |
 | password | Your password | asdfölksdjfasjdh |
 | type | Filetype, choose between BTA or TAMARA | BTA or TAMARA |
+
+
 
 ---
 
