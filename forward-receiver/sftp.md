@@ -21,7 +21,7 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 ### 3a. Use simple Post
 
 1. ##### Put `token` instead of `sensitive card data` into your request
-2. ##### Use [`PCI Proxy Endpoint`](#reference) as HOST with following paramters `merchantID` , `sign` , `url` , `password` and define `type` with `BTA` or `TAMARA`
+2. ##### Use [`PCI Proxy Endpoint`](#reference) as HOST with following paramters `merchantId` , `sign` , `url` , `password` and define `type` with `BTA` or `TAMARA`
 3. ##### Add required [`X-CC HTTP`](#reference) header to your request
 
 ```
@@ -78,8 +78,6 @@ _Note: In test mode, only test credit cards are allowed!_
 | file | The file you want to upload | some+file+content |
 | password | Your password | asdfölksdjfasjdh |
 | type | Filetype, choose between BTA or TAMARA | BTA or TAMARA |
-
-
 
 ---
 
