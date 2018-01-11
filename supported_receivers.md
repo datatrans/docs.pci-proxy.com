@@ -56,7 +56,8 @@
 
 | SFTP-Reicever | Type |
 | :--- | :--- |
-| Amexco | BTA / TAMARA |
+| American Express | BTA  |
+| Airplus | TAMARA |
 
 We are adding more third party APIs, payment gateways and SFTP-Receivers. Let us know if one is missing: [Adding Receiver](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html)
 
