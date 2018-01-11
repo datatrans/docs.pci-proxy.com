@@ -7,7 +7,7 @@ Simply `redirect requests containing tokens through PCI Proxy` to avoid sensitiv
 PCI Proxy provides you two different ways forwarding data to a Receiver.
 
 1. [Forward data by using our PULL or PUSH API](https://docs.pci-proxy.com/forward-receiver/api.html)
-2. [Forward data to an SFTP server](https://docs.pci-proxy.com/forward-receiver/sftp.html)
+2. [Forward data to a SFTP server](https://docs.pci-proxy.com/forward-receiver/sftp.html)
 
 ### **Watch out!**
 
