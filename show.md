@@ -32,7 +32,9 @@ Example link, pre-filled with token 424242SKMPRI4242_:_
 ```js
 salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
 merchantId  = 1100005007                                                               // Your Merchant ID
-aliasCC     = 424242SKMPRI4242                                                         // Token to be de-tokenized
+aliasCC     = 424242SKMPRI4242                                                         // CC token to be de-tokenized
+aliasCVV    = xxx                                                                      // CVV token to be detokenized (optional)
+userEmail   = example@gmail.com                                                        // Email address of NoShow-User
 
 → String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 3 values
 
