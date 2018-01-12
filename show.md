@@ -25,7 +25,7 @@ Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under 
 | :--- |
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
-1. **Execute Server-to-Server call to retrieve NoShow link with `merchantId`, `aliasCC`, `sign` and `userEmail`**
+1. **Execute Server-to-Server call to retrieve NoShow link with **`merchantId`**, **`aliasCC`**, **[`sign`](#sign)** and **`userEmail`
 
 ```js
 curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
@@ -46,40 +46,15 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 </response>
 ```
 
-
-
 Example link, pre-filled with token 424242SKMPRI4242_:_
 
 | **Click to **[**Show Credit Card Number**](https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp?merchantId=1100005007&aliasCC=424242SKMPRI4242&aliasCVV=&sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5) |
 | :--- |
 | The NoShow link should retrieve the [test card number](/sandbox-environment.md) 4242 4242 4242 4242. |
 
-##### 1. Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId` and `aliasCC` \(token\)
-
-```js
-salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
-merchantId  = 1100005007                                                               // Your Merchant ID
-aliasCC     = 424242SKMPRI4242                                                         // CC token to be de-tokenized
-aliasCVV    = xxx                                                                      // CVV token to be detokenized (optional)
-userEmail   = example@gmail.com                                                        // Email address of NoShow-User
-
-→ String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 3 values
-
-SHA.256(salt+merchantId+aliasCC)                                                       // Use SHA.256 Hash Converter
-→ Sign: 428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5               // Security Sign for NoShow.jsp
-```
+##### 
 
 > Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
->
-> **2. Build NoShow Link with **`merchandId`**, **`aliasCC`** \(token\), **`sign`** and **`username`
-
-```js
-https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp 
-               ?merchantId=1100005007
-               &aliasCC=424242SKMPRI4242
-               &sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5
-               &username=max.mustermann@yourcompany.com
-```
 
 ##### 3**. Optional: Add JavaScript callbacks/hooks**
 
@@ -129,13 +104,12 @@ _Note: In test mode, only test credit cards are allowed!_
 
 ### SIGN
 
-##### Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId` and `aliasCC` \(token\)
+##### Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId,` `aliasCC` \(token\) and `userEmail`
 
 ```js
 salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
 merchantId  = 1100005007                                                               // Your Merchant ID
 aliasCC     = 424242SKMPRI4242                                                         // CC token to be de-tokenized
-aliasCVV    = xxx                                                                      // CVV token to be detokenized (optional)
 userEmail   = example@gmail.com                                                        // Email address of NoShow-User
 
 → String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 3 values
