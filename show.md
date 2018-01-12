@@ -88,13 +88,15 @@ _Note: In test mode, only test credit cards are allowed!_
 
 | **No-Show interface endpoint \(Sandbox\):** |
 | :--- |
-| [https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp](https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp) |
+| [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
 | Required Parameter | Description | Example value |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `merchantId` | Your merchant ID | 1000011011 |
-| `aliasCC` | Token you received when you collected the credit card | 70119122433810042 |
-| `username` | Valid, non generic email address of authorized employee who retrieves it | max.mustermann@yourcompany.com |
+| `aliasCC` | Token you received when you collected the credit card | 424242SKMPRI4242 |
+| aliasCVV | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
+| `username` |  |  |
+| userEmail | Email address of authorized employee who retrieves it | james.bond@yourcompany.com |
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC\) |
 | `language` | The language code in which the no-show page should be displayed | en |
 
