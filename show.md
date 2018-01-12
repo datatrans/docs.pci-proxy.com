@@ -21,6 +21,14 @@ Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under 
 
 ## 1b. Show a credit card number via NoShow.jsp
 
+| PCI Proxy NoShow Endpoint |
+| :--- |
+| [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
+
+
+
+1. Execute Server-to-Server to retrieve NoShow link with `merchantId`, `aliasCC`, `sign` and `userEmail`
+
 Example link, pre-filled with token 424242SKMPRI4242_:_
 
 | **Click to **[**Show Credit Card Number**](https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp?merchantId=1100005007&aliasCC=424242SKMPRI4242&aliasCVV=&sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5) |
