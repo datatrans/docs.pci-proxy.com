@@ -25,9 +25,28 @@ Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under 
 | :--- |
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
+1. **Execute Server-to-Server call to retrieve NoShow link with `merchantId`, `aliasCC`, `sign` and `userEmail`**
+
+```js
+curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
+  -H 'content-type: application/xml' \
+  -d '<request>
+        <merchantId>1000011011</merchantId>
+        <aliasCC>70119122433810042</aliasCC>
+        <sign>d17ead827458e3532fd868b3b110671586b7e7ee0db106d5ae94e85ca93782ab</sign>
+        <userEmail>email@example.com</userEmail>
+     </request>'
+```
+
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+  <url>https://api.sandbox.datatrans.com/upp/noshow?token=27cfba38-a606-49c0-9f03-c3bc6d580a66</url>
+  <errorCode>0</errorCode>
+</response>
+```
 
 
-1. Execute Server-to-Server to retrieve NoShow link with `merchantId`, `aliasCC`, `sign` and `userEmail`
 
 Example link, pre-filled with token 424242SKMPRI4242_:_
 
@@ -107,6 +126,23 @@ _Note: In test mode, only test credit cards are allowed!_
 | userEmail | Email address of authorized employee who retrieves it | james.bond@yourcompany.com |
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC\) |
 | `language` | The language code in which the no-show page should be displayed | en |
+
+### SIGN
+
+##### Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId` and `aliasCC` \(token\)
+
+```js
+salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
+merchantId  = 1100005007                                                               // Your Merchant ID
+aliasCC     = 424242SKMPRI4242                                                         // CC token to be de-tokenized
+aliasCVV    = xxx                                                                      // CVV token to be detokenized (optional)
+userEmail   = example@gmail.com                                                        // Email address of NoShow-User
+
+→ String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 3 values
+
+SHA.256(salt+merchantId+aliasCC)                                                       // Use SHA.256 Hash Converter
+→ Sign: 428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5               // Security Sign for NoShow.jsp
+```
 
 _The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
 
