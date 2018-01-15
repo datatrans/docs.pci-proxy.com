@@ -107,7 +107,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | `merchantId` | Your merchant ID | 1000011011 |
 | `aliasCC` | Token you received when you collected the credit card | 424242SKMPRI4242 |
 | `aliasCVV` \(optional\) | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
-| `username` | Unique and non generic userid or username | 659751 |
+| `username` \(optional\) | Unique and non generic userid or username | 659751 |
 | `userEmail` | Email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC\) |
 | `language` \(optional\) | The language code in which the no-show page should be displayed | en |
@@ -120,11 +120,11 @@ _Note: In test mode, only test credit cards are allowed!_
 salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
 merchantId  = 1100005007                                                               // Your Merchant ID
 aliasCC     = 424242SKMPRI4242                                                         // CC token to be de-tokenized
-userEmail   = example@gmail.com                                                        // Email address of NoShow-User
+userEmail   = james.bond@yourcompany.com                                               // Email address of NoShow-User
 
 → String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 3 values
 
-SHA.256(salt+merchantId+aliasCC)                                                       // Use SHA.256 Hash Converter
+SHA.256(salt+merchantId+aliasCC+userEmail                                               // Use SHA.256 Hash Converter
 → Sign: 428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5               // Security Sign for NoShow.jsp
 ```
 
