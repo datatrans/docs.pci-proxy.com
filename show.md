@@ -98,7 +98,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 ### Reference
 
-| **No-Show interface endpoint \(Sandbox\):** |
+| PCI Proxy NoShow Endpoint** \(Sandbox\):** |
 | :--- |
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
