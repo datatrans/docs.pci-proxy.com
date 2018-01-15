@@ -25,7 +25,7 @@ Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under 
 | :--- |
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
-1. **Use `PCI Proxy NoShow Endpoint` as `Host` with following parameter `merchantId`, `aliasCC`, **[**`sign`**](#sign)** and `userEmail` to retrieve NoShow link**
+1. **Use **`PCI Proxy NoShow Endpoint`** as **`Host`** with following parameter **`merchantId`**, **`aliasCC`**, **[`sign`](#sign)** and **`userEmail`** to retrieve NoShow link**
 
 ```js
 curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
@@ -38,15 +38,15 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
      </request>'
 ```
 
-2. Embed the received NoShow Link into your application.
-
-3. Once the user clicks the link an email will be sent to `userEmail`
-
-4. User has to enter the received 6 digit code
+2. Embed the NoShow Link from the response into your application.
 
 
 
 
+
+1. Once the user clicks the link an email will be sent to `userEmail`
+
+2. User has to enter the received 6 digit code
 
 Example link, pre-filled with token 424242SKMPRI4242_:_
 
