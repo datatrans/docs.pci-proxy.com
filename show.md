@@ -25,7 +25,8 @@ Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under 
 | :--- |
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
-1. **Use **`PCI Proxy NoShow Endpoint`** as **`Host`** with following parameter **`merchantId`**, **`aliasCC`**, **[`sign`](#sign)** and **`userEmail`** to retrieve NoShow link**
+1. **Let us know your IP address for whitelisting**
+2. **Use **`PCI Proxy NoShow Endpoint`** as **`Host`** with following parameter **`merchantId`**, **`aliasCC`**, **[`sign`](#sign)** and **`userEmail`** to retrieve NoShow link**
 
 ```js
 curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
@@ -38,11 +39,15 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
      </request>'
 ```
 
-2. Embed the NoShow Link from the response into your application.
+**3. Embed the NoShow Link from the response into your application.**
 
-
-
-
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+  <url>https://api.sandbox.datatrans.com/upp/noshow?token=27cfba38-a606-49c0-9f03-c3bc6d580a66</url>
+  <errorCode>0</errorCode>
+</response>
+```
 
 1. Once the user clicks the link an email will be sent to `userEmail`
 
