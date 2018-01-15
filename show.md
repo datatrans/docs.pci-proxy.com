@@ -49,7 +49,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 </response>
 ```
 
-**4. Once the user clicks the link an iFrame will be opened where the user have to enter a six digits alphanumeric code which will be sent by email  to `userEmail`**![](/assets/Unbenannt.JPG)
+**4. Once the user clicks the link an iFrame will be opened where the user have to enter a six digits alphanumeric code which will be sent by email  to **`userEmail`![](/assets/Unbenannt.JPG)
 
 Example link, pre-filled with token 424242SKMPRI4242_:_
 
@@ -67,11 +67,10 @@ Example link, pre-filled with token 424242SKMPRI4242_:_
 // Use attached Javascript callsbacks/hooks file to see which events are getting emitted to the parent frame.
 // Bind an event listener to the parent frame to listen for those events:
 
-function messageReceived(message)
-{
+function messageReceived(message) {
   console.log(message.data);
 }
-
+ 
 if(window.addEventListener)
   window.addEventListener("message",messageReceived);
 else
@@ -79,6 +78,24 @@ if(window.attachEvent)
   window.attachEvent("message",messageReceived);
 else
   console.log("Could not listen.")
+  
+/*
+    Possible event messages:
+    {type: 'error',     reason: 'wrong request'}        Invalid merchant id, alias or sign
+    {type: 'error',     reason: 'service not allowed'}  Merchant not configured
+    {type: 'error',     reason: 'fraud check 3082'}     Declined by fraud check
+    {type: 'error',     reason: 'system error'}         System error
+    {type: 'error',     reason: 'invalid sign'}         Invalid sign
+    {type: 'error',     reason: 'time expired'}         The user did not enter the chaptcha in less than 90 seconds
+    {type: 'error',     reason: 'wrong captcha'}        The entered captcha was wrong
+    {type: 'error',     reason: 'invalid card'}         Wrong card number
+    {type: 'error',     reason: 'velocity checker'}     Declined by velocity checker
+    {type: 'error',     reason: 'wrong alias'}          Wrong alias
+    {type: 'waiting',   reason: 'captcha'}              The page is waiting for user input of captcha
+    {type: 'success',   reason: 'CC'}                   The card number was successfully displayed
+    {type: 'success',   reason: 'CVV'}                  The CVV code was successfully displayed
+*/
+  
 ```
 
 > Check out our [**Javascript callbacks/hooks sample file**](https://datatrans.github.io/docs.pci-proxy.com/noshow-test-pilot.html).
