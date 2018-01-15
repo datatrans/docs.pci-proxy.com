@@ -49,9 +49,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 </response>
 ```
 
-1. Once the user clicks the link an email will be sent to `userEmail`
-
-2. User has to enter the received 6 digit code
+**4. Once the user clicks the link an iFrame will be opened where the user have to enter a six digits alphanumeric code which will be sent by email  to `userEmail`**![](/assets/Unbenannt.JPG)
 
 Example link, pre-filled with token 424242SKMPRI4242_:_
 
