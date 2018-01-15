@@ -115,9 +115,9 @@ _Note: In test mode, only test credit cards are allowed!_
 | :--- | :--- | :--- |
 | `merchantId` | Your merchant ID | 1000011011 |
 | `aliasCC` | Token you received when you collected the credit card | 424242SKMPRI4242 |
-| aliasCVV | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
-| `username` |  |  |
-| userEmail | Email address of authorized employee who retrieves it | james.bond@yourcompany.com |
+| `aliasCVV` | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
+| `username` | Unique and non generic userid or username | 659751 |
+| `userEmail` | Email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC\) |
 | `language` | The language code in which the no-show page should be displayed | en |
 
