@@ -61,7 +61,7 @@ Example link, pre-filled with token 424242SKMPRI4242_:_
 
 > Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
-##### 3**. Optional: Add JavaScript callbacks/hooks**
+##### 4**. Optional: Add JavaScript callbacks/hooks**
 
 ```js
 // Use attached Javascript callsbacks/hooks file to see which events are getting emitted to the parent frame.
@@ -70,7 +70,7 @@ Example link, pre-filled with token 424242SKMPRI4242_:_
 function messageReceived(message) {
   console.log(message.data);
 }
- 
+
 if(window.addEventListener)
   window.addEventListener("message",messageReceived);
 else
@@ -78,7 +78,7 @@ if(window.attachEvent)
   window.attachEvent("message",messageReceived);
 else
   console.log("Could not listen.")
-  
+
 /*
     Possible event messages:
     {type: 'error',     reason: 'wrong request'}        Invalid merchant id, alias or sign
@@ -95,14 +95,11 @@ else
     {type: 'success',   reason: 'CC'}                   The card number was successfully displayed
     {type: 'success',   reason: 'CVV'}                  The CVV code was successfully displayed
 */
-  
 ```
 
 > Check out our [**Javascript callbacks/hooks sample file**](https://datatrans.github.io/docs.pci-proxy.com/noshow-test-pilot.html).
 
-**4. Ensure PCI-compliant user management**
-
-##### 5. Embed `NoShow Link` into your application
+**5. Ensure PCI-compliant user management**
 
 _Note: In test mode, only test credit cards are allowed!_
 
