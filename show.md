@@ -40,7 +40,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
      </request>'
 ```
 
-**3. Embed the NoShow Link from the response into your application.**
+**3. Embed the NoShow link from the response into your application**
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -50,19 +50,9 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 </response>
 ```
 
-**4. Once the user clicks the link an iFrame will be opened where the user have to enter a six digits alphanumeric code which will be sent by email  to **`userEmail`![](/assets/Unbenannt.JPG)
+**4. Once the user clicks on the link an iFrame will be opened where the user have to enter a six digits alphanumeric code which will be sent by email  to **`userEmail`![](/assets/Unbenannt.JPG)Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
-Example link, pre-filled with token 424242SKMPRI4242_:_
-
-| **Click to **[**Show Credit Card Number**](https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp?merchantId=1100005007&aliasCC=424242SKMPRI4242&aliasCVV=&sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5) |
-| :--- |
-| The NoShow link should retrieve the [test card number](/sandbox-environment.md) 4242 4242 4242 4242. |
-
-##### 
-
-> Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
-
-##### 4**. Optional: Add JavaScript callbacks/hooks**
+##### 5**. Optional: Add JavaScript callbacks/hooks**
 
 ```js
 // Use attached Javascript callsbacks/hooks file to see which events are getting emitted to the parent frame.
@@ -100,7 +90,7 @@ else
 
 > Check out our [**Javascript callbacks/hooks sample file**](https://datatrans.github.io/docs.pci-proxy.com/noshow-test-pilot.html).
 
-**5. Ensure PCI-compliant user management**
+**6. Ensure PCI-compliant user management**
 
 _Note: In test mode, only test credit cards are allowed!_
 
@@ -139,6 +129,8 @@ SHA.256(salt+merchantId+aliasCC)                                                
 ```
 
 _The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
+
+Example: [NoShow sign calculation](file:///C:/Users/beda.schumacher/Downloads/no-show-sign-calculation%20%282%29.html)
 
 #### PCI DSS Compliant User Management
 
