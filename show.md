@@ -26,6 +26,7 @@ Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under 
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
 1. **Let us know your IP address for whitelisting**
+
 2. **Use **`PCI Proxy NoShow Endpoint`** as **`Host`** with following parameter **`merchantId`**, **`aliasCC`**, **[`sign`](#sign)** and **`userEmail`** to retrieve NoShow link**
 
 ```js
@@ -111,15 +112,15 @@ _Note: In test mode, only test credit cards are allowed!_
 | :--- |
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
-| Required Parameter | Description | Example value |
+| Parameter | Description | Example value |
 | :--- | :--- | :--- |
 | `merchantId` | Your merchant ID | 1000011011 |
 | `aliasCC` | Token you received when you collected the credit card | 424242SKMPRI4242 |
-| `aliasCVV` | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
+| `aliasCVV` \(optional\) | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
 | `username` | Unique and non generic userid or username | 659751 |
 | `userEmail` | Email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC\) |
-| `language` | The language code in which the no-show page should be displayed | en |
+| `language` \(optional\) | The language code in which the no-show page should be displayed | en |
 
 ### SIGN
 
