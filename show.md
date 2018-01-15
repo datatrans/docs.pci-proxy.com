@@ -40,7 +40,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
      </request>'
 ```
 
-**3. Embed the NoShow link from the response into your application**
+**3. Embed NoShow link from the response into your application**
 
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -130,7 +130,7 @@ SHA.256(salt+merchantId+aliasCC)                                                
 
 _The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
 
-Example: [NoShow sign calculation](file:///C:/Users/beda.schumacher/Downloads/no-show-sign-calculation%20%282%29.html)
+Example: [NoShow sign calculation](file:///C:/Users/beda.schumacher/Downloads/no-show-sign-calculation %282%29.html)
 
 #### PCI DSS Compliant User Management
 
