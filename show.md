@@ -50,7 +50,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 </response>
 ```
 
-**4. Once the user clicks on the link an iFrame will be opened where the user have to enter a six digits alphanumeric code which will be sent automatically by email  to **`userEmail`![](/assets/Unbenannt.JPG)Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
+**4. Once the user clicks on the link an iFrame opens where the user have to enter a six digits alphanumeric code which will be sent automatically by email  to **`userEmail`![](/assets/Unbenannt.JPG)Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
 ##### 5**. Optional: Add JavaScript callbacks/hooks**
 
@@ -107,7 +107,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | `merchantId` | Your merchant ID | 1000011011 |
 | `aliasCC` | Token you received when you collected the credit card | 424242SKMPRI4242 |
 | `aliasCVV` \(optional\) | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
-| `username` \(optional\) | Unique userID or username if parameter `userEmail` is generic | 659751 or JamesBond |
+| `username` \(optional\) | [Unique userID](#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond |
 | `userEmail` | Email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC\) |
 | `language` \(optional\) | The language code in which the no-show page should be displayed | en |
@@ -125,7 +125,7 @@ userEmail   = james.bond@yourcompany.com                                        
 → String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 3 values
 
 SHA.256(salt+merchantId+aliasCC+userEmail                                               // Use SHA.256 Hash Converter
-→ Sign: 428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5               // Security Sign for NoShow.jsp
+→ Sign: 428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5                // Security Sign for NoShow.jsp
 ```
 
 _The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
