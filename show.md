@@ -110,7 +110,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
 | `language` \(optional\) | The language code in which the no-show page should be displayed | en |
 
-### SIGN
+### Sign
 
 ##### Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId,` `aliasCC` \(token\) and `userEmail`
 
@@ -130,7 +130,7 @@ _The „**salt**“ value has to be generated in the Datatrans web administratio
 
 Example: [NoShow sign calculation](file:///C:/Users/beda.schumacher/Downloads/no-show-sign-calculation %282%29.html)
 
-#### PCI DSS Compliant User Management
+### PCI DSS Compliant User Management
 
 Using our _NoShow.jsp_ script requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find a comprehensive overview for a PCI DSS compliant user management. For a more detailed version on PCI DSS user management please see the official PCI DSS documents \(Requirement 8\)  [PCI DSS - Requirements and Security Assessment Procedures](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2.pdf?agreement=true&time=1476177008560).
 
@@ -138,7 +138,7 @@ Using our _NoShow.jsp_ script requires you to handle your user management in a P
 
 Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. **Shared user logins are not allowed. **
 
-#### Password Policy
+### Password Policy
 
 In general, the following password rules have to be observed:
 
