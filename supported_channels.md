@@ -15,7 +15,7 @@ For [collecting credit cards via webservice \(XML/SOAP\)](webservice.html) we al
 | [Ctrip](http://english.ctrip.com/) | PULL |
 | [Cubilis](http://www.cubilis.com/) | PULL |
 | [Despegar](http://www.us.despegar.com/) | PULL |
-| [Expedia](https://www.expedia.com) | PULL |
+| [Expedia](https://www.expedia.com) | PULL/PUSH |
 | [Expedia EAN](http://www.ean.com/) | PULL |
 | [Fastbooking](http://www.fastbooking.com/products/) | PULL |
 | [HomeAway](https://www.homeaway.com/) | PUSH |
