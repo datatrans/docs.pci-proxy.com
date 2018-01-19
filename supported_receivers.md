@@ -9,6 +9,7 @@
 | [DHISCO](http://www.dhisco.com/) | PULL |
 | [Dingus](https://www.dingus-services.com/en/) | PULL |
 | [eRevMax Technologies \(RateTiger\)](http://www.erevmax.com/) | PULL |
+| [Expedia](https://www.expedia.com/) | PULL |
 | [Guestline](https://www.guestline.com/) | PULL |
 | [HanseMerkur](https://www.hansemerkur.de/) | PULL |
 | [Hasting Hotels](https://www.hastingshotels.com/) | PULL |
@@ -60,8 +61,6 @@
 | :--- | :--- |
 | American Express | BTA |
 | Airplus | TAMARA |
-
-
 
 We are adding more third party APIs and payment gateways. Let us know if one is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
 
