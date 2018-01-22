@@ -27,6 +27,7 @@
 | [Siteminder Siteconnect ](http://www.siteminder.com/) | PULL |
 | [Tesipro](http://tesipro.com/) | PUSH |
 | [Tradyso / Idiso](https://www.idiso.com/de/index.html) | PULL |
+| [Traffics](http://www.traffics.travel/) | PULL |
 | [Travelport \(Galileo\)](https://www.travelport.com) | PULL |
 | [Traveltainment](http://www.traveltainment.de/) | PULL |
 | [TripAuthority](http://www.alliancereservations.com/xml-web-services.html) | PULL |
@@ -42,6 +43,7 @@
 | [Braintree](https://www.braintreepayments.com/) | PULL |
 | [Cielo](http://www.cielo.com.br/) | PULL |
 | [Centralpay](https://www.centralpay.eu/fr/) | PULL |
+| [Computop](https://www.computop.com/de/) | PULL |
 | [Concardis](https://www.concardis.com/) | PULL |
 | [Datacash](http://www.mastercard.com/gateway/) | PULL |
 | [Diners \(Dataflexnet\)](https://www.dinersclub.com/) | PULL |
@@ -51,6 +53,7 @@
 | [Realex Payments](https://www.realexpayments.com/) | PULL |
 | [SaferPay](https://www.six-payment-services.com/en/site/e-commerce/home.html) | PULL |
 | [Sagepay](http://www.sagepay.co.uk/) | PULL |
+| [Sipay](http://www.sipay.es/en/) | PUSH |
 | [Six Payment Services](https://www.six-payment-services.com/en/home.html) | PULL |
 | [Stripe](https://stripe.com/de) | PULL |
 | [Virtual Merchant](https://www.myvirtualmerchant.com/VirtualMerchant/) | PULL |
