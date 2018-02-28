@@ -50,7 +50,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 </response>
 ```
 
-**4. Once the user clicks on the link an iFrame opens where the user have to enter a six digit code which will be sent automatically by email  to **`userEmail`![](/assets/Unbenannt.JPG)Need more help? Check out our **NoShow example script**.
+**4. Once the user clicks on the link an iFrame opens where the user have to enter a six digit code which will be sent automatically by email  to **`userEmail`![](/assets/Unbenannt.JPG)Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
 ##### 5**. Optional: Add JavaScript callbacks/hooks**
 
