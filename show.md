@@ -88,7 +88,7 @@ else
 */
 ```
 
-**6. Ensure PCI-compliant user management**
+**6. Ensure **[**PCI-compliant user management**](#pci-dss-compliant-user-management)
 
 _Note: In test mode, only test credit cards are allowed!_
 
