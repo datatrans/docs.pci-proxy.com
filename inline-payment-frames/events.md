@@ -51,7 +51,7 @@ Where the `event` callback object has the following structure:
 The success event will be emitted if the tokenization was successful.
 
 ```js
-Inline.on("success", function(event) {
+Inline.on("success", function(data) {
   if(data.transactionId) {
     // send data.transactionId and the
     // rest of the form to your server
