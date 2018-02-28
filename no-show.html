@@ -2,89 +2,295 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>No Show API Example</title>
+        <title>No Show API showcase</title>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
               integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <script src="https://pilot.datatrans.biz/showcase/libs/sha256.js"></script>
-        <script>
-            function calculateSign() {
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+        </script>
+
+        <style>
+            textarea, dt { font-family: Consolas, Courier, monospace}
+        </style>
+      
+        <script type="text/javascript">
+            var envPresets = {
+                "pilot": {
+                    "apiUrl": "https://api.sandbox.datatrans.com/upp/services/v1/noshow/init",
+                    "payUrl": "https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp",
+                    "salt": "WyuN2pTiHzmGhqnw4K7JKaq12N2MhpRQguQfOkfwPmeqGmZJQY"
+                },
+
+                "production": {
+                    "apiUrl": "https://api.datatrans.com/upp/services/v1/noshow/init",
+                    "payUrl": "https://pay.datatrans.com/upp/jsp/noShow.jsp",
+                    "salt": ""
+                },
+
+                "localhost": {
+                    "apiUrl": "http://api.localhost:8080/upp/services/v1/noshow/init",
+                    "payUrl": "http://pay.localhost:8080/upp/jsp/noShow.jsp",
+                    "salt": "uKulGfQ2SyrGB5k9CZfr4ew50MTzJcFqxk8LCBPFJXEyRt1zUl"
+                }
+            };
+
+            var env;
+
+            function selectEnv() {
+                env = envPresets[$('input[name=env]:checked').val()];
+
+                $("form").attr("action", env.payUrl);
+                $("#salt").val(env.salt);
+
+                refresh();
+            }
+
+            function refresh() {
               var salt = document.getElementById('salt').value;
               var merchantId = document.getElementById('merchantId').value;
               var aliasCC = document.getElementById('aliasCC').value;
-              var hash = CryptoJS.SHA256(salt+merchantId+aliasCC);
-              document.getElementById('sign').value = hash;
-              var username = document.getElementById('username').value;
+              var aliasCVV = document.getElementById('aliasCVV').value;
+              var userEmail = document.getElementById('userEmail').value;
+              var sign = CryptoJS.SHA256(salt+merchantId+aliasCC);
+
+
+              document.getElementById('sign').value = sign;
+
+                    var curl = "curl -X POST " + env.apiUrl + " \\\n" +
+                        "  -H 'content-type: application/xml' \\\n" +
+                        "  -d '<request>\n" +
+                        "        <merchantId>" + merchantId + "</merchantId>\n" +
+                        "        <aliasCC>" + aliasCC + "</aliasCC>\n" +
+ (aliasCVV.length > 0 ? "        <aliasCVV>" + aliasCVV + "</aliasCVV>\n" : "") +
+                        "        <sign>" + sign + "</sign>\n" +
+(userEmail.length > 0 ? "        <userEmail>" + userEmail + "</userEmail>\n" : "") +
+                        "     </request>'";
+
+                document.getElementById("curl").value = curl;
+            }
+
+            function messageReceived( message ) {
+                console.log( message.data );
+                var messageLog = document.getElementById("messageLog");
+                messageLog.value += JSON.stringify( message.data ) + "\n";
+            }
+
+            function init() {
+                window.addEventListener ?
+                    window.addEventListener("message", messageReceived)
+                    :
+                    window.attachEvent && window.attachEvent("message", messageReceived);
+
+                $("input[type=text]").bind("change keyup", refresh);
+                $("input[name=env]").bind("change", selectEnv);
+
+                selectEnv();
+
+                refresh();
+            }
+
+            function copyToClipboard() {
+                var copyText = document.getElementById("curl");
+                copyText.select();
+                document.execCommand("Copy");
             }
         </script>
     </head>
-    <body onload="calculateSign()">
+    <body onload="init()">
 
-      <div class="container" id="content" tabindex="-1">
-        <h4>Convert a token back into a credit card number</h4>
+    <div class="container" id="content">
 
-        <!-- using GET here so that the browser URL bar shows the query params
-              for easy copy pasting =) -->
-        <form action="https://pilot.datatrans.biz/upp/jsp/noShow.jsp" method="get">
-
-          <div class="form-group row">
-            <div class="col-xs-3">
-              <label for="merchantId">merchantId</label>
-              <input type="text" class="form-control" id="merchantId" name="merchantId" placeholder="merchantId" value="1100005007">
-            </div>
-          </div>
-
-          <div class="form-group row">
-            <div class="col-xs-3">
-              <label for="aliasCC">aliasCC</label>
-              <input type="text" class="form-control" id="aliasCC" name="aliasCC" placeholder="aliasCC" value="424242SKMPRI4242">
-            </div>
-          </div>
-
-          <div class="form-group row">
-              <div class="col-xs-3">
-                <label for="aliasCVV">aliasCVV</label>
-                <p class="help-block">Create one <a target="_blank" href="https://pilot.datatrans.biz/upp/jsp/upStart.jsp?uppAliasOnly=yes&merchantId=1000011011&amount=1000&currency=CHF&refno=800381&sign=30916165706580013&paymentmethod=VIS&aliasCC=70119122433810042&expm=12&expy=18&cvv=123">here.</a></p>
-                <input type="text" class="form-control" id="aliasCVV" name="aliasCVV" placeholder="aliasCVV">
-              </div>
-          </div>
-
-          <div class="form-group row">
-              <div class="col-xs-7">
-                <label for="salt">salt</label>
-                <div class="input-group">
-                  <!-- not giving a name because we don't want to post the salt to the server -->
-                  <input type="text" class="form-control" id="salt" placeholder="salt" value="V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs">
-                  <div class="input-group-btn">
-                    <button type="button" class="btn btn-primary" onclick="calculateSign()">Calculate sign</button>
-                  </div>
+        <div class="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <span class="navbar-brand">NoShow API showcase</span>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <form class="navbar-form navbar-right">
+                            <div class="btn-group colors" data-toggle="buttons">
+                                <label class="btn btn-default active">
+                                    <input type="radio" name="env" value="pilot" autocomplete="off" checked> pilot
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="env" value="production" autocomplete="off"> production
+                                </label>
+                                <label class="btn btn-default">
+                                    <input type="radio" name="env" value="localhost" autocomplete="off"> &nbsp;
+                                </label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-              </div>
-          </div>
-          <p class="help-block">You can get the Salt value from: Webadmin --> UPP Administration --> Security --> Other services</p>
+            </nav>
+        </div>
 
-          <div class="form-group row">
-            <div class="col-xs-7">
-              <label for="sign">sign</label>
-              <p class="help-block">Click the 'Calculate sing' button above!</p>
-              <input type="text" class="form-control" id="sign" name="sign" placeholder="sign" value="" readonly="readonly">
+       <!-- using GET here so that the browser URL bar shows the query params
+              for easy copy pasting =) -->
+        <form id="form" action="" method="get" target="noShow">
+
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="merchantId">merchantId</label>
+                    <input type="text" class="form-control" id="merchantId" name="merchantId" placeholder="merchantId"
+                           value="1000011011">
+                </div>
+
+                <div class="col-xs-9">
+                    <label for="salt">salt</label>
+                    <div class="input-group">
+                        <!-- not giving a name because we don't want to post the salt to the server -->
+                        <input type="text" class="form-control" id="salt" placeholder="salt"
+                               value="WyuN2pTiHzmGhqnw4K7JKaq12N2MhpRQguQfOkfwPmeqGmZJQY">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-primary" onclick="refresh()">Calculate sign
+                            </button>
+                        </div>
+                    </div>
+                    <p class="help-block">You can get the Salt value from: Webadmin --> UPP Administration --> Security -->
+                        Other services</p>
+                </div>
             </div>
-          </div>
 
-          <div class="form-group row">
-             <div class="col-xs-3">
-               <label for="username">username</label>
-               <input type="text" class="form-control" id="username" name="username" placeholder="username" value="max.mustermann&#x40yourcompany.com">
-             </div>
-          </div>
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="aliasCC">aliasCC</label>
+                    <input type="text" class="form-control" id="aliasCC" name="aliasCC" placeholder="aliasCC"
+                           value="70119122433810042">
+                </div>
 
-          <button type="submit" class="btn btn-success">Send request</button>
+                <div class="col-xs-9">
+                    <label for="sign">sign</label>
+                    <input type="text" class="form-control" id="sign" name="sign" placeholder="sign" value=""
+                        readonly="readonly">
+                    <p class="help-block">Click the 'Calculate sign' button above!</p>
+                </div>
+            </div>
 
+            <div class="form-group row">
+                <div class="col-xs-3">
+                    <label for="aliasCVV">aliasCVV</label>
+                    <input type="text" class="form-control" id="aliasCVV" name="aliasCVV" placeholder="aliasCVV">
+                    <p class="help-block">Create a fresh aliasCVV <a target="_blank"
+                        href="https://pilot.datatrans.biz/upp/jsp/upStart.jsp?uppAliasOnly=yes&merchantId=1000011011&amount=1000&currency=CHF&refno=800381&sign=30916165706580013&paymentmethod=VIS&aliasCC=70119122433810042&expm=12&expy=18&cvv=123">here.</a>
+                    </p>
+
+                    <label for="aliasCVV">userEmail</label>
+                    <input type="text" class="form-control" id="userEmail" name="userEmail" placeholder="email@example.com"
+                        value="email@example.com">
+                    <p class="help-block">optional for direct call</p>
+                </div>
+
+                <div class="col-xs-9">
+                    <button class="btn btn-xs pull-right" onclick="copyToClipboard()">copy to clipboard</button>
+                    <label for="curl">curl NoShow server-to-server init</label>
+                    <textarea class="form-control" id="curl" style="height: 180px; font-size: 0.9em"></textarea>
+                </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-success">Send direct request</button>
         </form>
 
+        <hr/>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">NoShow iframe</h3>
+            </div>
+            <div class="panel-body">
+                <iframe id="noShow" style="width: 100%; height: 100%;" name="noShow"
+                        src="">
+                </iframe>
+            </div>
+            <div class="panel-footer">
+                <label for="messageLog">Message log</label> (events sent by the NoShow iFrame)<br/>
+                <textarea id="messageLog" style="width: 100%; height: 300px;" readonly="readonly"></textarea>
+
+                <h5>Possible messages:</h5>
+                <dl>
+                    <dt>{type: 'error', reason: 'wrong request'}</dt>
+                    <dd>Invalid merchant id, alias or sign</dd>
+                </dl>
+                <dl>
+                    <dt>{type: 'error', reason: 'service not allowed'}</dt>
+                    <dd>Merchant not configured</dd>
+                </dl>
+                <dl>
+                    <dt>{type: 'error', reason: 'fraud check 3082'}</dt>
+                    <dd>Declined by fraud check</dd>
+                </dl>
+                <dl>
+                    <dt>{type: 'error', reason: 'system error'}</dt>
+                    <dd>System error</dd>
+                </dl>
+                <dl>
+                    <dt>{type: 'error', reason: 'invalid sign'}</dt>
+                    <dd>Invalid sign (production only)</dd>
+                </dl>
+                <dl>
+                    <dt>{type: 'error', reason: 'time expired'}</dt>
+                    <dd>The user did not enter the chaptcha in less than 90 seconds</dd>
+                </dl>
+                <dl>
+                    <dt>{type: 'error', reason: 'wrong captcha'}</dt>
+                    <dd>The entered captcha was wrong</dd>
+                </dl>
+                <dl>
+                    <dt>{type: 'error', reason: 'invalid card'}</dt>
+                    <dd>Wrong card number</dd>
+                </dl>
+                <dl>
+                    <dt>{type: 'error', reason: 'velocity checker'}</dt>
+                    <dd>Declined by velocity checker</dd>
+                </dl>
+                <dl>
+                    <dt>{type: 'error', reason: 'wrong alias'}</dt>
+                    <dd>Wrong alias</dd>
+                </dl>
+                <dl>
+                    <dt>{type: 'waiting', reason: 'captcha'}</dt>
+                    <dd>The page is waiting for user input of captcha</dd>
+                </dl>
+                <dl>
+                    <dt>{type: <span style="background-color: lightgreen;">'success'</span>, reason: 'CC'}</dt>
+                    <dd>The card number was successfully displayed</dd>
+                </dl>
+                <dl>
+                    <dt>{type: <span style="background-color: lightgreen;">'success'</span>, reason: 'CVV'}</dt>
+                    <dd>The CVV code was successfully displayed</dd>
+                </dl>
+
+            </div>
+        </div>
+
     </div>
+
+    <script type="text/javascript">
+/*
+CryptoJS v3.1.2
+code.google.com/p/crypto-js
+(c) 2009-2013 by Jeff Mott. All rights reserved.
+code.google.com/p/crypto-js/wiki/License
+*/
+var CryptoJS=CryptoJS||function(h,s){var f={},t=f.lib={},g=function(){},j=t.Base={extend:function(a){g.prototype=this;var c=new g;a&&c.mixIn(a);c.hasOwnProperty("init")||(c.init=function(){c.$super.init.apply(this,arguments)});c.init.prototype=c;c.$super=this;return c},create:function(){var a=this.extend();a.init.apply(a,arguments);return a},init:function(){},mixIn:function(a){for(var c in a)a.hasOwnProperty(c)&&(this[c]=a[c]);a.hasOwnProperty("toString")&&(this.toString=a.toString)},clone:function(){return this.init.prototype.extend(this)}},
+q=t.WordArray=j.extend({init:function(a,c){a=this.words=a||[];this.sigBytes=c!=s?c:4*a.length},toString:function(a){return(a||u).stringify(this)},concat:function(a){var c=this.words,d=a.words,b=this.sigBytes;a=a.sigBytes;this.clamp();if(b%4)for(var e=0;e<a;e++)c[b+e>>>2]|=(d[e>>>2]>>>24-8*(e%4)&255)<<24-8*((b+e)%4);else if(65535<d.length)for(e=0;e<a;e+=4)c[b+e>>>2]=d[e>>>2];else c.push.apply(c,d);this.sigBytes+=a;return this},clamp:function(){var a=this.words,c=this.sigBytes;a[c>>>2]&=4294967295<<
+32-8*(c%4);a.length=h.ceil(c/4)},clone:function(){var a=j.clone.call(this);a.words=this.words.slice(0);return a},random:function(a){for(var c=[],d=0;d<a;d+=4)c.push(4294967296*h.random()|0);return new q.init(c,a)}}),v=f.enc={},u=v.Hex={stringify:function(a){var c=a.words;a=a.sigBytes;for(var d=[],b=0;b<a;b++){var e=c[b>>>2]>>>24-8*(b%4)&255;d.push((e>>>4).toString(16));d.push((e&15).toString(16))}return d.join("")},parse:function(a){for(var c=a.length,d=[],b=0;b<c;b+=2)d[b>>>3]|=parseInt(a.substr(b,
+2),16)<<24-4*(b%8);return new q.init(d,c/2)}},k=v.Latin1={stringify:function(a){var c=a.words;a=a.sigBytes;for(var d=[],b=0;b<a;b++)d.push(String.fromCharCode(c[b>>>2]>>>24-8*(b%4)&255));return d.join("")},parse:function(a){for(var c=a.length,d=[],b=0;b<c;b++)d[b>>>2]|=(a.charCodeAt(b)&255)<<24-8*(b%4);return new q.init(d,c)}},l=v.Utf8={stringify:function(a){try{return decodeURIComponent(escape(k.stringify(a)))}catch(c){throw Error("Malformed UTF-8 data");}},parse:function(a){return k.parse(unescape(encodeURIComponent(a)))}},
+x=t.BufferedBlockAlgorithm=j.extend({reset:function(){this._data=new q.init;this._nDataBytes=0},_append:function(a){"string"==typeof a&&(a=l.parse(a));this._data.concat(a);this._nDataBytes+=a.sigBytes},_process:function(a){var c=this._data,d=c.words,b=c.sigBytes,e=this.blockSize,f=b/(4*e),f=a?h.ceil(f):h.max((f|0)-this._minBufferSize,0);a=f*e;b=h.min(4*a,b);if(a){for(var m=0;m<a;m+=e)this._doProcessBlock(d,m);m=d.splice(0,a);c.sigBytes-=b}return new q.init(m,b)},clone:function(){var a=j.clone.call(this);
+a._data=this._data.clone();return a},_minBufferSize:0});t.Hasher=x.extend({cfg:j.extend(),init:function(a){this.cfg=this.cfg.extend(a);this.reset()},reset:function(){x.reset.call(this);this._doReset()},update:function(a){this._append(a);this._process();return this},finalize:function(a){a&&this._append(a);return this._doFinalize()},blockSize:16,_createHelper:function(a){return function(c,d){return(new a.init(d)).finalize(c)}},_createHmacHelper:function(a){return function(c,d){return(new w.HMAC.init(a,
+d)).finalize(c)}}});var w=f.algo={};return f}(Math);
+(function(h){for(var s=CryptoJS,f=s.lib,t=f.WordArray,g=f.Hasher,f=s.algo,j=[],q=[],v=function(a){return 4294967296*(a-(a|0))|0},u=2,k=0;64>k;){var l;a:{l=u;for(var x=h.sqrt(l),w=2;w<=x;w++)if(!(l%w)){l=!1;break a}l=!0}l&&(8>k&&(j[k]=v(h.pow(u,0.5))),q[k]=v(h.pow(u,1/3)),k++);u++}var a=[],f=f.SHA256=g.extend({_doReset:function(){this._hash=new t.init(j.slice(0))},_doProcessBlock:function(c,d){for(var b=this._hash.words,e=b[0],f=b[1],m=b[2],h=b[3],p=b[4],j=b[5],k=b[6],l=b[7],n=0;64>n;n++){if(16>n)a[n]=
+c[d+n]|0;else{var r=a[n-15],g=a[n-2];a[n]=((r<<25|r>>>7)^(r<<14|r>>>18)^r>>>3)+a[n-7]+((g<<15|g>>>17)^(g<<13|g>>>19)^g>>>10)+a[n-16]}r=l+((p<<26|p>>>6)^(p<<21|p>>>11)^(p<<7|p>>>25))+(p&j^~p&k)+q[n]+a[n];g=((e<<30|e>>>2)^(e<<19|e>>>13)^(e<<10|e>>>22))+(e&f^e&m^f&m);l=k;k=j;j=p;p=h+r|0;h=m;m=f;f=e;e=r+g|0}b[0]=b[0]+e|0;b[1]=b[1]+f|0;b[2]=b[2]+m|0;b[3]=b[3]+h|0;b[4]=b[4]+p|0;b[5]=b[5]+j|0;b[6]=b[6]+k|0;b[7]=b[7]+l|0},_doFinalize:function(){var a=this._data,d=a.words,b=8*this._nDataBytes,e=8*a.sigBytes;
+d[e>>>5]|=128<<24-e%32;d[(e+64>>>9<<4)+14]=h.floor(b/4294967296);d[(e+64>>>9<<4)+15]=b;a.sigBytes=4*d.length;this._process();return this._hash},clone:function(){var a=g.clone.call(this);a._hash=this._hash.clone();return a}});s.SHA256=g._createHelper(f);s.HmacSHA256=g._createHmacHelper(f)})(Math);
+</script>
 
     </body>
 </html>
