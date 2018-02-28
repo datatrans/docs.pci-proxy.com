@@ -21,45 +21,44 @@ Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under 
 
 ## 1b. Show a credit card number via NoShow.jsp
 
-Example link, pre-filled with token 424242SKMPRI4242_:_
-
-| **Click to **[**Show Credit Card Number**](https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp?merchantId=1100005007&aliasCC=424242SKMPRI4242&aliasCVV=&sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5) |
+| PCI Proxy NoShow Endpoint |
 | :--- |
-| The NoShow link should retrieve the [test card number](/sandbox-environment.md) 4242 4242 4242 4242. |
+| [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
-##### 1. Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId` and `aliasCC` \(token\)
+1. **Let us know your IP address for whitelisting**
 
-```js
-salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
-merchantId  = 1100005007                                                               // Your Merchant ID
-aliasCC     = 424242SKMPRI4242                                                         // Token to be de-tokenized
-
-→ String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 3 values
-
-SHA.256(salt+merchantId+aliasCC)                                                       // Use SHA.256 Hash Converter
-→ Sign: 428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5               // Security Sign for NoShow.jsp
-```
-
-> Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
->
-> **2. Build NoShow Link with **`merchandId`**, **`aliasCC`** \(token\), **`sign`** and **`username`
+2. **Use **`PCI Proxy NoShow Endpoint`** as **`Host`** with following parameter **`merchantId`**, **`aliasCC`**, **[`sign`](#sign)** and **`userEmail`** to retrieve NoShow link**
 
 ```js
-https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp 
-               ?merchantId=1100005007
-               &aliasCC=424242SKMPRI4242
-               &sign=428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5
-               &username=max.mustermann@yourcompany.com
+curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
+  -H 'content-type: application/xml' \
+  -d '<request>
+        <merchantId>1000011011</merchantId>
+        <aliasCC>70119122433810042</aliasCC>
+        <sign>d17ead827458e3532fd868b3b110671586b7e7ee0db106d5ae94e85ca93782ab</sign>
+        <userEmail>james.bond@yourcompany.com</userEmail>
+     </request>'
 ```
 
-##### 3**. Optional: Add JavaScript callbacks/hooks**
+**3. Embed NoShow link from the response into your application**
+
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+  <url>https://api.sandbox.datatrans.com/upp/noshow?token=27cfba38-a606-49c0-9f03-c3bc6d580a66</url>
+  <errorCode>0</errorCode>
+</response>
+```
+
+**4. Once the user clicks on the link an iFrame opens where the user have to enter a six digit code which will be sent automatically by email  to **`userEmail`![](/assets/Unbenannt.JPG)Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
+
+##### 5**. Optional: Add JavaScript callbacks/hooks**
 
 ```js
 // Use attached Javascript callsbacks/hooks file to see which events are getting emitted to the parent frame.
 // Bind an event listener to the parent frame to listen for those events:
 
-function messageReceived(message)
-{
+function messageReceived(message) {
   console.log(message.data);
 }
 
@@ -70,13 +69,26 @@ if(window.attachEvent)
   window.attachEvent("message",messageReceived);
 else
   console.log("Could not listen.")
+
+/*
+    Possible event messages:
+    {type: 'error',     reason: 'wrong request'}        Invalid merchant id, alias or sign
+    {type: 'error',     reason: 'service not allowed'}  Merchant not configured
+    {type: 'error',     reason: 'fraud check 3082'}     Declined by fraud check
+    {type: 'error',     reason: 'system error'}         System error
+    {type: 'error',     reason: 'invalid sign'}         Invalid sign
+    {type: 'error',     reason: 'time expired'}         The user did not enter the chaptcha in less than 90 seconds
+    {type: 'error',     reason: 'wrong captcha'}        The entered captcha was wrong
+    {type: 'error',     reason: 'invalid card'}         Wrong card number
+    {type: 'error',     reason: 'velocity checker'}     Declined by velocity checker
+    {type: 'error',     reason: 'wrong alias'}          Wrong alias
+    {type: 'waiting',   reason: 'captcha'}              The page is waiting for user input of captcha
+    {type: 'success',   reason: 'CC'}                   The card number was successfully displayed
+    {type: 'success',   reason: 'CVV'}                  The CVV code was successfully displayed
+*/
 ```
 
-> Check out our [**Javascript callbacks/hooks sample file**](https://datatrans.github.io/docs.pci-proxy.com/noshow-test-pilot.html).
-
-**4. Ensure PCI-compliant user management**
-
-##### 5. Embed `NoShow Link` into your application
+**6. Ensure **[**PCI-compliant user management**](#pci-dss-compliant-user-management)
 
 _Note: In test mode, only test credit cards are allowed!_
 
@@ -84,21 +96,41 @@ _Note: In test mode, only test credit cards are allowed!_
 
 ### Reference
 
-| **No-Show interface endpoint \(Sandbox\):** |
+| PCI Proxy NoShow Endpoint** \(Sandbox\):** |
 | :--- |
-| [https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp](https://pay.sandbox.datatrans.com/upp/jsp/noShow.jsp) |
+| [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
-| Required Parameter | Description | Example value |
-| --- | --- | --- |
+| Parameter | Description | Example value |
+| :--- | :--- | :--- |
 | `merchantId` | Your merchant ID | 1000011011 |
-| `aliasCC` | Token you received when you collected the credit card | 70119122433810042 |
-| `username` | Valid, non generic email address of authorized employee who retrieves it | max.mustermann@yourcompany.com |
-| `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC\) |
-| `language` | The language code in which the no-show page should be displayed | en |
+| `aliasCC` | Token you received when you collected the credit card | 424242SKMPRI4242 |
+| `aliasCVV` \(optional\) | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
+| `username` \(optional\) | [Unique userID](#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond |
+| `userEmail` | Email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
+| `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
+| `language` \(optional\) | The language code in which the no-show page should be displayed | en |
+
+### Sign
+
+##### Generate NoShow-specific `SHA.256 Security Sign` with `salt value`, `merchantId,` `aliasCC` \(token\) and `userEmail`
+
+```js
+salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
+merchantId  = 1100005007                                                               // Your Merchant ID
+aliasCC     = 424242SKMPRI4242                                                         // CC token to be de-tokenized
+userEmail   = james.bond@yourcompany.com                                               // Email address of NoShow-User
+
+→ String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 3 values
+
+SHA.256(salt+merchantId+aliasCC+userEmail                                               // Use SHA.256 Hash Converter
+→ Sign: 428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5                // Security Sign for NoShow.jsp
+```
 
 _The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
 
-#### PCI DSS Compliant User Management
+Example: [NoShow sign calculation](file:///C:/Users/beda.schumacher/Downloads/no-show-sign-calculation %282%29.html)
+
+### PCI DSS Compliant User Management
 
 Using our _NoShow.jsp_ script requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find a comprehensive overview for a PCI DSS compliant user management. For a more detailed version on PCI DSS user management please see the official PCI DSS documents \(Requirement 8\)  [PCI DSS - Requirements and Security Assessment Procedures](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2.pdf?agreement=true&time=1476177008560).
 
@@ -106,7 +138,7 @@ Using our _NoShow.jsp_ script requires you to handle your user management in a P
 
 Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. **Shared user logins are not allowed. **
 
-#### Password Policy
+### Password Policy
 
 In general, the following password rules have to be observed:
 
