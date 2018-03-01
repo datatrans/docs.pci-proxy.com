@@ -5,21 +5,11 @@ PCI Proxy enables you to see the original credit card number of a stored credit 
 **Consider a business that needs this ability:**  
 _You are a travel technology company providing hotels with software to manage their reservations. Authorized hotel employees need to retrieve single credit cards from reservations to book a no-show fee with their POS terminal if a guest does not show up._
 
-There are two ways how you can show single credit cards:
-
-| **Datatrans Web Admin Tool** | **NoShow.jsp integration into your application** |
-| --- | --- |
-| You can use our Web Admin Tool and let PCI Proxy handle the user access. | You can use our _NoShow.jsp_ script and integrate this feature seamlessly into your application. |
-
 _Note: Even though the interface is served by PCI Proxy, your PCI scope can extend._
 
 ---
 
-## 1a. Show a credit card number via Web Admin tool
-
-Simply log into our [Web Admin Tool](https://pilot.datatrans.biz/) and go under _"Process" / "Inverse Alias"_.
-
-## 1b. Show a credit card number via NoShow.jsp
+## Show a credit card number via NoShow.jsp
 
 | PCI Proxy NoShow Endpoint |
 | :--- |
