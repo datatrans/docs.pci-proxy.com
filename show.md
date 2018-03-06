@@ -17,7 +17,7 @@ _Note: Even though the interface is served by PCI Proxy, your PCI scope can exte
 
 1. **Let us know your IP address for whitelisting**
 
-2. **Use **`PCI Proxy NoShow Endpoint`** as **`Host`** with following parameter **`merchantId`**, **`aliasCC`**, **`userName`**, **`userEmail`**, [`sign`](#sign)** **and** **`language`** ***to retrieve NoShow link***
+2. **Use **`PCI Proxy NoShow Endpoint`** as **`Host`** with following parameter **`merchantId`**, **`aliasCC`**, **`userName`**, **`userEmail`**, **[`sign`](#sign) **and** `language` _**to retrieve NoShow link**_
 
 ```js
 curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
@@ -42,7 +42,9 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 </response>
 ```
 
-**4. Once the user clicks on the link an iFrame opens where the user have to enter a six digit code which will be sent automatically by email  to **`userEmail`![](/assets/Unbenannt.JPG)Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
+**4. Once the user clicks on the link an iFrame opens where the user has to enter a six digit code which will be sent automatically by email  to **`userEmail`![](/assets/Unbenannt.JPG)5. 
+
+Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
 ##### 5**. Optional: Add JavaScript callbacks/hooks**
 
