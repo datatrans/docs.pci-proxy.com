@@ -112,6 +112,10 @@ To get started include the following script on your page. Please make sure to al
 ```js
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 ```
+Minfied Version
+```js
+<script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.min.js"></script>
+```
 
 ---
 
