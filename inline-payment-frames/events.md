@@ -63,8 +63,16 @@ Where the `event` callback object has the following structure:
 
 ```js
 {
-  "transactionId": "170407160646158477",
-  "result": "success"
+  "result":"success",
+  "transactionId":"180403204621339015",
+  "cardInfo":
+  {
+    "brand":"VISA DEBIT",
+    "issuer": "Some Bank",
+    "type":"debit", // debit or credit
+    "distinction":"unknown", // consumer or corporate
+    "country":"US"
+  }
 }
 ```
 
