@@ -68,7 +68,7 @@ Where the `event` callback object has the following structure:
   "cardInfo":
   {
     "brand":"VISA DEBIT",
-    "issuer": "Some Bank",
+    "issuer":"Some Bank",
     "type":"debit", // debit or credit
     "distinction":"unknown", // consumer or corporate
     "country":"US"
