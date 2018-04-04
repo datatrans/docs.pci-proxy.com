@@ -86,7 +86,7 @@ To get started include the following script on your page. Please make sure to al
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 ```
 
-Minfied Version
+Minified Version
 
 ```javascript
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.min.js"></script>
