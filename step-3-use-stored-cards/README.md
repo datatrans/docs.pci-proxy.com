@@ -1,4 +1,4 @@
-# Step 3 - Use stored cards
+# Use stored cards
 
 Now that you have your credit card token, you can make use of it.
 
