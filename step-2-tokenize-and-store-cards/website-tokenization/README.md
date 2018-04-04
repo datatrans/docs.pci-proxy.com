@@ -15,62 +15,6 @@ Browser compatibility for the Inline Mode:
 
 ## Sample
 
-Below you can find a preview of a sample form to collect the card number and CVV code.
-
- label { display: block } .paymentForm { border: 0px; background-color: \#F7F8F9; padding: 10px } 
-
- Card Number Cvv Get token!
-
-  
-  
-$\(document\).ready\(function\(\) {  
-  console.log\("\#\#\# $\(document\).ready called!"\);    
-  
-  Inline.initTokenize\(   
-    "1100007006", {  
-      cardNumber: "cardNumberPlaceholder",  
-      cvv: "cvvPlaceholder"  
-    },{  
-      // options...            
-    }      
-  \);  
-  
-  Inline.on\("ready", function\(\) {  
-  
-    Inline.setStyle\("cardNumber","width: 80%; background-color: white; border-radius: 4px; border: 1px solid \#ccc; padding: .65em .5em; font-size: 91%;"\);  
-    Inline.setStyle\("cardNumber::placeholder","color: \#D8D8D8"\);  
-  
-    Inline.setStyle\("cvv","width: 80%; background-color: white; border-radius: 4px; border: 1px solid \#ccc; padding: .65em .5em; font-size: 91%;"\);  
-    Inline.setStyle\("cvv::placeholder","color: \#D8D8D8"\);  
-  
-    Inline.setPlaceholder\("cardNumber", "4242 4242 4242 4242"\);  
-    Inline.setPlaceholder\("cvv", "123"\);  
-  
-    Inline.focus\("cardNumber"\);  
-  }\);  
-  
-  Inline.on\("validate", function\(data\) {  
-    Inline.setStyle\("cardNumber", data.fields.cardNumber.valid ? "border: 1px solid \#ccc": "border: 1px solid \#f00"\);  
-    Inline.setStyle\("cvv", data.fields.cvv.valid ? "border: 1px solid \#ccc" : "border: 1px solid \#f00"\);  
-  }\);  
-  
-  
-  $\("\#go"\).click\( function\(\) {  
-    Inline.submit\(\); // submit the "form"    
-  }\);  
-  
-  Inline.on\("success", function\(data\) {  
-    if\(data.transactionId !== undefined\) {  
-      var trxId = document.getElementById\("result"\);  
-      trxId.textContent = "Your transactionId is: " + data.transactionId;  
-      trxId.style.display = 'block';  
-    }  
-  }\);  
-  
-}\);  
-  
-  
-  
 
 
 ## Step 1: Setup the Inline Mode
