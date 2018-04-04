@@ -1,4 +1,4 @@
-# Step 2 - Tokenize & store cards
+# Tokenize & store cards
 
 In general, you have different inbound channels where you receive sensitive card data from customers or partners. In order to avoid sensitive card data touching your systems, you pick the relevant source of credit card data and implement the PCI Proxy according to the respective Quickstart.
 

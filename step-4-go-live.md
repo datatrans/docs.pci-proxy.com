@@ -1,4 +1,4 @@
-# Step 4 - Go Live
+# Go Live
 
 ## 1. Get your Production Account
 
