@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Getting Started](README.md)
-* [Step 1 - Setup](step-1-setup.md)
+* [Setup](step-1-setup.md)
 * [Step 2 - Tokenize & store cards](step-2-tokenize-and-store-cards/README.md)
   * [Filter Payloads](step-2-tokenize-and-store-cards/filter-payloads.md)
   * [Website Tokenization](step-2-tokenize-and-store-cards/website-tokenization/README.md)

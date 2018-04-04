@@ -1,4 +1,4 @@
-# Step 1 - Setup
+# Setup
 
 Before taking your integration live, use our Sandbox environment to test it thoroughly. The Sandbox environment is a self-contained testing environment, identical to our productive environment.
 
