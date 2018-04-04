@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# FAQ
 
 **How does PCI Proxy reduce my PCI DSS scope?**
 
@@ -38,6 +38,4 @@
 > * [https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html](https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html)
 > * [https://de.pcisecuritystandards.org/document\_library](https://de.pcisecuritystandards.org/document_library)
 > * [https://www.pcisecuritystandards.org/faqs](https://www.pcisecuritystandards.org/faqs)
-
-
 
