@@ -1,3 +1,7 @@
+---
+description: Share stored card data with your partners or payment gateways.
+---
+
 # Forward
 
 PCI Proxy allows you to retain your existing data communication with PCI-compliant Receiver. This can be online travel agencies, payment gateways, hotels, airlines, car rentals, etc.
