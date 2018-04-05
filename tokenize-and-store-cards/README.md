@@ -1,5 +1,5 @@
 ---
-description: PCI Proxy Tokenization APIs
+description: Tokenize and store cards with our Tokenization APIs
 ---
 
 # Tokenize & store cards
