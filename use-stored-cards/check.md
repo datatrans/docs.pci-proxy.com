@@ -1,8 +1,10 @@
+---
+description: Check if a stored card is still a valid credit card.
+---
+
 # Check
 
-After collecting credit cards, you might want to check the validity of the card.
-
-Therefore, simply send a zero-amount authorization request against our XML gateway endpoint. The authorization does not appear on the customer statement but still gives you the abillity to test the validity of a credit card.
+Simply send a zero-amount authorization request against our XML gateway endpoint. We run your query against VISA & Mastercard network to check if the card is still valid. The authorization does not appear on the customer statement but still gives you the abillity to test the validity of a credit card.
 
 ## 1. Check validity of a stored card
 
