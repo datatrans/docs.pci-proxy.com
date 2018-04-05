@@ -1,3 +1,7 @@
+---
+description: Authorize and/or settle a stored credit card.
+---
+
 # Charge
 
 Lets assume you want to authorize or settle an amount on the payment data that you have collected earlier.
