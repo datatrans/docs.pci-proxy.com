@@ -1,4 +1,4 @@
-# Untitled
+# Token API2
 
 {% api-method method="get" host="https://api.sandbox.datatrans.com/upp/services" path="/v1/inline/token" %}
 {% api-method-summary %}
@@ -18,12 +18,12 @@ Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="returnPaymentMethod" type="boolean" required=false %}
-
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="transactionId" type="number" required=true %}
 The transaction id obtained via the `Inline.submit()` operation.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="returnPaymentMethod" type="boolean" %}
+Instructs the API to additionally return the paymentMethod used with this transaction.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="mandatoryAliasCVV" type="boolean" %}
@@ -68,6 +68,65 @@ Invalid username:password
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+
+
+{% code-tabs %}
+{% code-tabs-item title="Example: Basic usage" %}
+```bash
+$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \ 
+        -u 'merchantId:password'
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="Response" %}
+```bash
+{
+  "aliasCC" : "424242SKMPRI4242",
+  "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
+
+{% code-tabs %}
+{% code-tabs-item title="Example: returnPaymentMethod=true returning paymentMethod" %}
+```bash
+$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571&returnPaymentMethod=true" \
+       -u 'merchantId:password'
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="Response" %}
+```bash
+{
+    "aliasCC": "424242SKMPRI4242",
+    "aliasCVV": "4F1zjRYITiW8JrqgNxE5o4cM",
+    "paymentMethod": "VIS"
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+
+
+{% code-tabs %}
+{% code-tabs-item title="Example: mandatoryAliasCVV=true w/ transactionId that has no CVV token" %}
+```bash
+$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170822090245534063&mandatoryAliasCVV=true" \
+       -u 'merchantId:password'
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="Response" %}
+```bash
+400 Bad Request
+Tokenization with CVV not found
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 
 
