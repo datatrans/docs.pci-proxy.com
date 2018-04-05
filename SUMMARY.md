@@ -17,9 +17,9 @@
     * [SFTP](use-stored-cards/forward/sftp.md)
   * [Show](use-stored-cards/show.md)
 * [Go Live](go-live.md)
+* [FAQ](faq-1.md)
 * [Guides](guides/README.md)
   * [Booking Provider Portal](guides/booking-provider-portal.md)
-* [FAQ](faq.md)
 * [Contact us](contact-us.md)
 * [Resources](resources/README.md)
   * [Sandbox Account](resources/sandbox-account.md)
@@ -30,5 +30,4 @@
   * [Supported Acquirer](resources/supported-acquirer.md)
   * [Supported Channels](resources/supported-channels.md)
   * [Supported Receivers](resources/supported-receivers.md)
-* [FAQ](faq-1.md)
 
