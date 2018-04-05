@@ -10,7 +10,7 @@ Follow these steps to get your Production Account:
 2. Once signed, _we setup your Production Account with all Channels and Receiver_ according to your Sandbox Account.
 3. You will receive your Production credentials in 2 separate Emails: Login \(merchant ID\), Username, Password. _If you haven't received anything, please check your spam folder or contact support@datatrans.com._
 4. [**Log in**](https://admin.sandbox.datatrans.com) with your credentials and follow instructions to create your own password.
-5. Setup your Production Account with Security Sign and Salt Value according to [**Step 1**](step-1-setup.md).
+5. Setup your Production Account with Security Sign and Salt Value according to [**Step 1**](setup.md).
 6. Change the following details for production usage:
 
 ### Production Data vs. Sandbox Data

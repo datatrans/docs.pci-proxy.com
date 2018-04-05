@@ -15,7 +15,7 @@ The three main sources of credit card data are:
 
 **With all described methods, sensitive card data never touch your servers**.
 
-| Jump to Quickstart &gt; [**Website**](website-tokenization/) | Jump to Quickstart &gt; [**Webservice**](filter-payloads.md) | Jump to Quickstart &gt; [**Native App**](../resources/xml-alias-gateway.md) |
+| Jump to Quickstart &gt; [**Website**]() | Jump to Quickstart &gt; [**Webservice**](filter-payloads.md) | Jump to Quickstart &gt; [**Native App**](../resources/xml-alias-gateway.md) |
 | :--- | :--- | :--- |
 | ![](../.gitbook/assets/website.png) | ![](../.gitbook/assets/webservice.png) | ![](../.gitbook/assets/app.png) |
 | Seamlessly collect sensitive data within your web application. | Securely extract sensitive card data out of your web service communication. | Natively collect sensitive card data within your mobile app \(iOS / Android\). |

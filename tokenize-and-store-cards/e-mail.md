@@ -43,7 +43,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 > ## Congrats, Level 2 completed: Your server is out of PCI scope!
 >
-> You have securely captured sensitive card data through email without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](../step-3-use-stored-cards/).
+> You have securely captured sensitive card data through email without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](../use-stored-cards/).
 >
 > ### Questions?
 >

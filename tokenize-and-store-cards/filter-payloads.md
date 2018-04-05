@@ -58,7 +58,7 @@ You have securely captured sensitive card data. The response from the channel wi
 | :--- | :--- | :--- |
 | `X-CC-URL` | API Endpoint - Specifies the Channel URL that will be called | [https://api.channel.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
 | `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
-| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](../step-1-setup.md)\) | 30916165706580013 |
+| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](../setup.md)\) | 30916165706580013 |
 
 _Note: In test mode, only test credit cards are allowed!_
 
@@ -83,7 +83,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 > ### **Congrats, Level 2 completed: Your Channels are out of PCI scope!**
 >
-> You have securely captured sensitive card data. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **Move on and learn how you can use stored card data. Please continue to [**Step 3**](../step-3-use-stored-cards/).
+> You have securely captured sensitive card data. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **Move on and learn how you can use stored card data. Please continue to [**Step 3**](../use-stored-cards/).
 >
 > #### Questions?
 >

@@ -60,5 +60,5 @@ Chat with our developers if you need support relating to your sandbox account. J
 
 ## Go-Live
 
-Please see [**Step 4: Go Live**](../step-4-go-live.md).
+Please see [**Step 4: Go Live**](../go-live.md).
 

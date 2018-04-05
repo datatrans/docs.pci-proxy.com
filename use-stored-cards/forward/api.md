@@ -43,7 +43,7 @@ You have securely forwarded sensitive card data without ever touching your serve
 | :--- | :--- | :--- |
 | `X-CC-URL` | API Endpoint - Specifies the Receiver URL that will be called | [https://api.receiver.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
 | `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
-| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](../../step-1-setup.md)\) | 130709090849785405 |
+| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](../../setup.md)\) | 130709090849785405 |
 
 _Note: In test mode, only test credit cards are allowed!_
 
