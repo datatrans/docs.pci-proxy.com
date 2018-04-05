@@ -30,5 +30,5 @@
   * [Supported Acquirer](resources/supported-acquirer.md)
   * [Supported Channels](resources/supported-channels.md)
   * [Supported Receivers](resources/supported-receivers.md)
-* [Token API2](untitled.md)
+* [Token API](untitled.md)
 
