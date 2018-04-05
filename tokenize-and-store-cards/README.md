@@ -1,24 +1,26 @@
+---
+description: PCI Proxy Tokenization APIs
+---
+
 # Tokenize & store cards
 
-In general, you have different inbound channels where you receive sensitive card data from customers or partners. In order to avoid sensitive card data touching your systems, you pick the relevant source of credit card data and implement the PCI Proxy according to the respective Quickstart.
+In general, you have different inbound channels where you receive sensitive card data from customers or partners. In order to avoid sensitive card data touching your systems, you pick the relevant source of credit card data and implement the respective PCI Proxy API.
 
-## 1. Choose source of card data
+## Choose source of card data and integrate PCI Proxy API
 
 The three main sources of credit card data are:
 
-| Website | Webservice | Native App |
-| :--- | :--- | :--- |
-| Your customers enter their credit card data on a form within your website. | You receive a request from a remote server including credit card data. | Your customers enter their credit card data on a form within your native app. |
-| ie. Internet Booking Engine \(IBE\) | ie. XML messages with card data from [Booking.com](https://www.booking.com), [Expedia](https://www.expedia.com/), etc. | ie. Mobile Booking Application |
-
-## 2. Integrate PCI Proxy
-
-**With all described methods, sensitive card data never touch your servers**.
-
-| Jump to Quickstart &gt; [**Website**]() | Jump to Quickstart &gt; [**Webservice**](filter-payloads.md) | Jump to Quickstart &gt; [**Native App**](../resources/xml-alias-gateway.md) |
+| [**Website**](website-tokenization/) \(IBE\) | [**Webservice**](filter-payloads.md) \(e.g. Booking.com\) | [**Native App**](../resources/xml-alias-gateway.md) \(iOS / Android\) |
 | :--- | :--- | :--- |
 | ![](../.gitbook/assets/website.png) | ![](../.gitbook/assets/webservice.png) | ![](../.gitbook/assets/app.png) |
-| Seamlessly collect sensitive data within your web application. | Securely extract sensitive card data out of your web service communication. | Natively collect sensitive card data within your mobile app \(iOS / Android\). |
+| Your customers enter their credit card data on a form within your website. | You receive a request from a remote server including credit card data in the payload. | Your customers enter their credit card data on a form within your native app. |
+| [Inline Mode](website-tokenization/) seamlessly tokenizes sensitive data within your web app. | [PUSH & PULL Proxy](filter-payloads.md) tokenizes on the fly sensitive data within your web services. | [XML Alias Gateway](../resources/xml-alias-gateway.md) tokenizes sensitive data within your mobile app. |
+
+{% hint style="success" %}
+**With all described methods, sensitive card data never touch your servers**.
+{% endhint %}
+
+
 
 > ### Questions?
 >
