@@ -75,6 +75,12 @@ Invalid username:password
 
 
 
+{% hint style="info" %}
+The service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+{% endhint %}
+
+
+
 {% code-tabs %}
 {% code-tabs-item title="Example: Basic usage" %}
 ```bash
