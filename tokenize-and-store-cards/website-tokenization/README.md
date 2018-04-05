@@ -1,5 +1,5 @@
 ---
-description: Securely tokenize card data on your website.
+description: Securely collect and tokenize card data on your website.
 ---
 
 # Website Tokenization
