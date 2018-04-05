@@ -6,11 +6,18 @@ description: Securely collect and tokenize card data on your website.
 
 The Inline Mode allows you to securely collect card data by injecting iframes to your DOM. A separate iframe for both, card number and CVV code is used. Thereby, sensitive data never touches your server and allows you to capture all other related card data such as cardholder name, expiry date, etc. directly by yourself.
 
-> **The Inline Mode qualifies you for SAQ A.**
+{% hint style="success" %}
+**The Inline Mode qualifies you for SAQ A.**
+{% endhint %}
 
 Browser compatibility for the Inline Mode:
 
-> Internet Explorer: &gt;= 11 Firefox: &gt;= 30 Chrome: &gt;= 32 Safari: &gt;= 7 iOS Safari: &gt;= 6 Android: &gt;= 5
+* Internet Explorer: &gt;= 11 
+* Firefox: &gt;= 30 
+* Chrome: &gt;= 32 
+* Safari: &gt;= 7 
+* iOS Safari: &gt;= 6 
+* Android: &gt;= 5
 
 ## Sample
 
