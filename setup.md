@@ -15,7 +15,7 @@ Follow these steps to create your Sandbox account:
 ## 2. Setup Sandbox Account
 
 Create additional merchant identification to secure your communication.   
-You will need this information for Step 2 and 3.
+You will need this information for different tokenization and detokenization APIs.
 
 ### Create Security Sign
 
