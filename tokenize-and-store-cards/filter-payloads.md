@@ -26,22 +26,22 @@ PULL method
 {% endapi-method-summary %}
 
 {% api-method-description %}
-`/v1/pull` method allows you to send a request through PCI Proxy to receive a response where the payload is filtered for credit card data and automatically tokenized. Please just add the following header params to your request. All other headers and your payload will be routed through PCI Proxy without modification.
+`/v1/pull` method allows you to send a request via PCI Proxy to an API endpoint to receive a response where the payload is filtered for credit card data and automatically tokenized. Just add the following header params to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be routed through PCI Proxy without modification.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="X-CC-MERCHANT-ID" type="string" required=true %}
-
+Your merchant id \(e.g. 1000011011\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="X-CC-SIGN" type="string" required=true %}
-
+Your security sign \(e.g. 30916165706580013\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="X-CC-URL" type="string" required=true %}
-
+API endpoint \(https://api.channel.com/\)
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 {% endapi-method-request %}
@@ -49,20 +49,36 @@ PULL method
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Response will contain tokenized credit card data.
 {% endapi-method-response-example-description %}
 
-```javascript
-
+```markup
+<?xml version="1.0" encoding="UTF-8"?>
+<reservations>
+    <reservation>
+        <customer>
+            <cc_cvc>xC80dmLNReahfVnMNeW6DHt_</cc_cvc>
+            <cc_expiration_date>07/2018</cc_expiration_date>
+            <cc_name>John Doe</cc_name>
+            <cc_number>424242SKMPRI4242</cc_number>
+            <cc_type>Visa</cc_type>
+        </customer>
+        <truncated>...for better visability</truncated>
+    </reservation>   
+</reservations>
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
 
-| **PCI Proxy PULL Endpoint:** |
-| :--- |
-| [https://sandbox.pci-proxy.com/v1/pull ](https://sandbox.pci-proxy.com/v1/pull%20) |
+{% hint style="warning" %}
+In test mode, only [test credit cards](../resources/sandbox-account.md) are allowed.
+{% endhint %}
+
+
+
+Example
 
 If you have added a PULL Channel to your account, you can easily redirect requests to that Channel via the PCI Proxy.
 
@@ -95,16 +111,6 @@ curl "https://sandbox.pci-proxy.com/v1/pull" -X POST -H "Content-Type: text/xml"
 ```
 
 You have securely captured sensitive card data. The response from the channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the response and forward it to you.
-
-#### Required HTTP Header:
-
-| Header | Description | Example value |
-| :--- | :--- | :--- |
-| `X-CC-URL` | API Endpoint - Specifies the Channel URL that will be called | [https://api.channel.com/](https://www.gitbook.com/book/dtrx/pci-proxy/edit#) |
-| `X-CC-MERCHANT-ID` | Your Merchant ID | 1000011011 |
-| `X-CC-SIGN` | Configured Security Sign \(see [**Step1**](../setup.md)\) | 30916165706580013 |
-
-_Note: In test mode, only test credit cards are allowed!_
 
 ## 2b. Redirect a PUSH Channel through PCI Proxy
 
