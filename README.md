@@ -36,11 +36,14 @@ PCI Proxy can be integrated by following these four steps to achieve PCI complia
 
 {% page-ref page="go-live.md" %}
 
-## Questions?
 
-Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
 
-Phone: +41 44 256 81 91  
-Email: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)  
-Web: [https://www.pci-proxy.com](https://www.pci-proxy.com)
+> #### Questions?
+>
+> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+>
+> Phone: +41 44 256 81 91  
+> Email: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
+
+
 
