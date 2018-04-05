@@ -1,6 +1,8 @@
-# Filter Payloads
+---
+description: Securely extract sensitive card data out of your web service communication.
+---
 
-Securely extract sensitive card data out of your web service communication.
+# Filter Payloads
 
 Simply `redirect requests containing sensitive card data through PCI Proxy` to avoid sensitive data hitting your servers. PCI Proxy automatically scans requests for sensitive card data. Located card data is instantly collected, tokenized and stored in our secure vaults in Switzerland. A reference number \(token\) is issued that substitutes the sensitive data in the request or response. The message structure of the channel API always remains the same.
 
