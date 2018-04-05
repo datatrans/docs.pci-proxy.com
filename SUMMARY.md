@@ -7,7 +7,7 @@
   * [Website Tokenization](tokenize-and-store-cards/website-tokenization/README.md)
     * [Initialization and Styling](tokenize-and-store-cards/website-tokenization/initialization-and-styling.md)
     * [Events](tokenize-and-store-cards/website-tokenization/events.md)
-    * [Token API](tokenize-and-store-cards/website-tokenization/token-api.md)
+    * [Token API](tokenize-and-store-cards/website-tokenization/tokenapi.md)
   * [E-Mail](tokenize-and-store-cards/e-mail.md)
 * [Use stored cards](use-stored-cards/README.md)
   * [Charge](use-stored-cards/charge.md)
@@ -30,5 +30,4 @@
   * [Supported Acquirer](resources/supported-acquirer.md)
   * [Supported Channels](resources/supported-channels.md)
   * [Supported Receivers](resources/supported-receivers.md)
-* [Token API](untitled.md)
 
