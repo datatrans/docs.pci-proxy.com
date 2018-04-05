@@ -44,7 +44,7 @@ You will need this information for different tokenization and detokenization API
 
    ![Create Salt Value via https://pilot.datatrans.biz/](.gitbook/assets/2018-04-04-16.38.06.gif)
 
-> ### Great, Setup completed!
+> ### Great, setup completed!
 >
 > You have successfully signed up and setup your Sandbox account.   
 > Next up, learn how to securely [tokenize and store cards](tokenize-and-store-cards/) without ever touching your systems.
