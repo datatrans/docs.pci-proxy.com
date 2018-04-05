@@ -1,3 +1,7 @@
+---
+description: Sign up and setup your sandbox account.
+---
+
 # Setup
 
 Before taking your integration live, use our Sandbox environment to test it thoroughly. The Sandbox environment is a self-contained testing environment, identical to our productive environment.
