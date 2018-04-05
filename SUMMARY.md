@@ -30,4 +30,5 @@
   * [Supported Acquirer](resources/supported-acquirer.md)
   * [Supported Channels](resources/supported-channels.md)
   * [Supported Receivers](resources/supported-receivers.md)
+* [FAQ](faq-1.md)
 
