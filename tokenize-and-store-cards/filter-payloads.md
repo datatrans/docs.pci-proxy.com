@@ -78,7 +78,7 @@ In test mode, only [test credit cards](../resources/sandbox-account.md) are allo
 
 
 
-Example
+### Example
 
 If you have added a PULL Channel to your account, you can easily redirect requests to that Channel via the PCI Proxy.
 
@@ -86,7 +86,7 @@ If you have added a PULL Channel to your account, you can easily redirect reques
 2. **Add required **[**`X-CC HTTP header`**](filter-payloads.md#reference)** to your request**
 3. **Keep all other parameters of your request as always**
 
-Redirect your XML request \(`yourRequest.xml`\) through PCI Proxy by using the following simple call:
+For instance, redirect your XML payload through PCI Proxy by using the following simple call:
 
 ```bash
 $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
