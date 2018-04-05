@@ -47,8 +47,10 @@ You will need this information for different tokenization and detokenization API
 > ### Great, setup completed!
 >
 > You have successfully signed up and setup your Sandbox account.   
-> Next up, learn how to securely [tokenize and store cards](tokenize-and-store-cards/) without ever touching your systems.
->
+> Next up, learn how to securely tokenize and store cards without ever touching your systems:
+
+{% page-ref page="tokenize-and-store-cards/" %}
+
 > #### Questions?
 >
 > Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
