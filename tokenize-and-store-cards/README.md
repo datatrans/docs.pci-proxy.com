@@ -10,7 +10,7 @@ In general, you have different inbound channels where you receive sensitive card
 
 The three main sources of credit card data are:
 
-| [**Website**](website-tokenization/) \(IBE\) | [**Webservice**](filter-payloads.md) \(e.g. Booking.com\) | [**Native App**](../resources/xml-alias-gateway.md) \(iOS / Android\) |
+| [**Website**](website-tokenization/) \(IBE\) | [**Webservice**](filter-payloads.md) \(eg. Booking.com\) | [**Native App**](../resources/xml-alias-gateway.md) \(iOS / Android\) |
 | :--- | :--- | :--- |
 | ![](../.gitbook/assets/website.png) | ![](../.gitbook/assets/webservice.png) | ![](../.gitbook/assets/app.png) |
 | Your customers enter their credit card data on a form within your website. | You receive a request from a remote server including credit card data in the payload. | Your customers enter their credit card data on a form within your native app. |
@@ -20,12 +20,12 @@ The three main sources of credit card data are:
 **With all described methods, sensitive card data never touch your servers**.
 {% endhint %}
 
+{% hint style="info" %}
+**Questions?**
 
+Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
 
-> ### Questions?
->
-> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
->
-> Phone: +41 44 256 81 91  
-> Email: [support@pci-proxy.com](mailto:support@pci-proxy.com)
+Phone: +41 44 256 81 91  
+Email: [support@pci-proxy.com](mailto:support@pci-proxy.com)
+{% endhint %}
 
