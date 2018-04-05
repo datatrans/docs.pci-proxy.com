@@ -25,64 +25,6 @@ Below you can find a preview of a sample form to collect the card number and CVV
 
 {% embed data="{\"url\":\"https://codepen.io/pciproxy/pen/GxXeZm\",\"type\":\"rich\",\"title\":\"PCI Proxy Inline Mode Sample\",\"description\":\"The Inline Mode allows you to securely collect card data by injecting iframes to your DOM. A separate iframe for both, card number and CVV code is used...\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/m.cdpn.io/screenshot-coming-soon-small.png\",\"width\":384,\"height\":225,\"aspectRatio\":0.5859375},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/pciproxy/embed/preview/GxXeZm?height=300&slug-hash=GxXeZm&default-tabs=html,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\"https://codepen.io/pciproxy/embed/preview/GxXeZm?height=300&amp;slug-hash=GxXeZm&amp;default-tabs=html,result&amp;host=https://codepen.io&amp;embed-version=2\\" style=\\"border: 0; width: 100%; height: 300px;\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null},\"caption\":\"Inline Mode Sample Script\"}" %}
 
-
-
-  label { display: block } .paymentForm { border: 0px; background-color: \#F7F8F9; padding: 10px }  
-
- Card Number Cvv Get token!
-
-  
-  
- $\(document\).ready\(function\(\) {  
-   console.log\("\#\#\# $\(document\).ready called!"\);    
-  
-   Inline.initTokenize\(   
-     "1100007006", {  
-       cardNumber: "cardNumberPlaceholder",  
-       cvv: "cvvPlaceholder"  
-     },{  
-       // options...            
-     }      
-   \);  
-  
-   Inline.on\("ready", function\(\) {  
-  
-     Inline.setStyle\("cardNumber","width: 80%; background-color: white; border-radius: 4px; border: 1px solid \#ccc; padding: .65em .5em; font-size: 91%;"\);  
-     Inline.setStyle\("cardNumber::placeholder","color: \#D8D8D8"\);  
-  
-     Inline.setStyle\("cvv","width: 80%; background-color: white; border-radius: 4px; border: 1px solid \#ccc; padding: .65em .5em; font-size: 91%;"\);  
-     Inline.setStyle\("cvv::placeholder","color: \#D8D8D8"\);  
-  
-     Inline.setPlaceholder\("cardNumber", "4242 4242 4242 4242"\);  
-     Inline.setPlaceholder\("cvv", "123"\);  
-  
-     Inline.focus\("cardNumber"\);  
-   }\);  
-  
-   Inline.on\("validate", function\(data\) {  
-     Inline.setStyle\("cardNumber", data.fields.cardNumber.valid ? "border: 1px solid \#ccc": "border: 1px solid \#f00"\);  
-     Inline.setStyle\("cvv", data.fields.cvv.valid ? "border: 1px solid \#ccc" : "border: 1px solid \#f00"\);  
-   }\);  
-  
-  
-   $\("\#go"\).click\( function\(\) {  
-     Inline.submit\(\); // submit the "form"    
-   }\);  
-  
-   Inline.on\("success", function\(data\) {  
-     if\(data.transactionId !== undefined\) {  
-       var trxId = document.getElementById\("result"\);  
-       trxId.textContent = "Your transactionId is: " + data.transactionId;  
-       trxId.style.display = 'block';  
-     }  
-   }\);  
-  
- }\);  
-  
-  
-  
- 
-
 ## Step 1: Setup the Inline Mode
 
 To get started include the following script on your page. Please make sure to always load it directly from [https://pay.sandbox.datatrans.com](https://pay.sandbox.datatrans.com)
