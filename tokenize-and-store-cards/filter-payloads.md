@@ -1,5 +1,5 @@
 ---
-description: Securely extract sensitive card data out of your web service communication.
+description: Securely extract and tokenize card data from incoming web services.
 ---
 
 # Filter Payloads
