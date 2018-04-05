@@ -44,17 +44,23 @@ You will need this information for different tokenization and detokenization API
 
    ![Create Salt Value via https://pilot.datatrans.biz/](.gitbook/assets/2018-04-04-16.38.06.gif)
 
-> ### Great, setup completed!
->
-> You have successfully signed up and setup your Sandbox account.   
-> Next up, learn how to securely tokenize and store cards without ever touching your systems:
+{% hint style="success" %}
+### Great, setup completed!
+
+You have successfully signed up and setup your Sandbox account.   
+Next up, learn how to securely tokenize and store cards without ever touching your systems:
+{% endhint %}
 
 {% page-ref page="tokenize-and-store-cards/" %}
 
-> #### Questions?
->
-> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
->
-> Phone: +41 44 256 81 91  
-> Email: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
+{% hint style="info" %}
+**Questions?**
+
+Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+
+Phone: +41 44 256 81 91  
+Email: [support@pci-proxy.com](mailto:support@pci-proxy.com)
+{% endhint %}
+
+
 
