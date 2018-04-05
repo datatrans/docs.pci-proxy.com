@@ -20,6 +20,46 @@ Adding Channels is easy. You can either pick from our list of [supported Channel
 
 ## 2a. Redirect a PULL Channel through PCI Proxy
 
+{% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
+{% api-method-summary %}
+PULL method
+{% endapi-method-summary %}
+
+{% api-method-description %}
+`/v1/pull` method allows you to send a request through PCI Proxy to receive a response where the payload is filtered for credit card data and automatically tokenized. Please just add the following header params to your request. All other headers and your payload will be routed through PCI Proxy without modification.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="X-CC-MERCHANT-ID" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="X-CC-SIGN" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="X-CC-URL" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```javascript
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 | **PCI Proxy PULL Endpoint:** |
 | :--- |
 | [https://sandbox.pci-proxy.com/v1/pull ](https://sandbox.pci-proxy.com/v1/pull%20) |
@@ -32,16 +72,16 @@ If you have added a PULL Channel to your account, you can easily redirect reques
 
 Redirect your XML request \(`yourRequest.xml`\) through PCI Proxy by using the following simple call:
 
-```java
+```bash
 $ curl "https://sandbox.pci-proxy.com/v1/pull"       // HOST: PCI Proxy Endpoint
         -X POST                                      // Request Method POST
 
-        -H "X-CC-MERCHANT-ID: 1000011011"            // New HEADER parameter: Merchant ID you received during Signup
-        -H "X-CC-URL: https://api.channel.com/"      // New HEADER parameter: Channel API Endpoint
-        -H "X-CC-SIGN: 30916165706580013"            // New HEADER parameter: Security Sign you created in Step 1 
+        -H "X-CC-MERCHANT-ID: 1000011011"            // New param: Merchant ID        
+        -H "X-CC-URL: https://api.channel.com/"      // New param: API Endpoint
+        -H "X-CC-SIGN: 30916165706580013"            // New param: Security Sign
 
-        -H "Content-Type: text/xml"                  // Content-Type - We support almost all types
-        -d @yourRequest.xml                          // XML Body message that is expected by Channel
+        -H "Content-Type: text/xml"                  // We support almost all types
+        -d '...<payload>...'                         // payload expected by Channel                        
 ```
 
 For instance, if you want to pull reservations from Channel Booking.com, see the following sample:
