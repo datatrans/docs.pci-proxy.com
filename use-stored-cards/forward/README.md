@@ -10,7 +10,7 @@ Simply redirect requests containing tokens through PCI Proxy to avoid sensitive 
 
 PCI Proxy supports various communication methods to forward sensitive card data to a Receiver:
 
-{% page-ref page="api.md" %}
+{% page-ref page="https.md" %}
 
 {% page-ref page="sftp.md" %}
 

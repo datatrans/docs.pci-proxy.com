@@ -17,8 +17,8 @@ Adding Receivers is easy. You can either pick from our list of [supported Receiv
 If you have added a PULL Receiver to your account, you can easily redirect requests to that Receiver via the PCI Proxy.
 
 1. **Put `token` instead of `sensitive card data` into your request**
-2. **Use **[**`PCI Proxy Endpoint`**](api.md#reference)** as `HOST`**
-3. **Add required **[**`X-CC HTTP header`**](api.md#reference)** to your request**
+2. **Use **[**`PCI Proxy Endpoint`**](https.md#reference)** as `HOST`**
+3. **Add required **[**`X-CC HTTP header`**](https.md#reference)** to your request**
 4. **Keep all other parameters of your request as always**
 
 Redirect your XML request \(`yourRequest.xml`\) through PCI Proxy by using the following simple call:
@@ -55,12 +55,12 @@ _Note: In test mode, only test credit cards are allowed!_
 
 Contrary to the PULL integration, you usually don't have much influence on how the request is started or don't want to force the Receiver to change the integration. Therefore, we use a different approach for PUSH Receiver.
 
-When you [add a PUSH Receiver to your account](api.md#1-add-receiver-to-your-account), you receive a `{UNIQUE-RECEIVER-KEY}` for each Receiver that is set up. Together with our PCI Proxy PUSH service URL, it results in a `PCI Proxy PUSH Endpoint` that is specific to that Receiver:
+When you [add a PUSH Receiver to your account](https.md#1-add-receiver-to-your-account), you receive a `{UNIQUE-RECEIVER-KEY}` for each Receiver that is set up. Together with our PCI Proxy PUSH service URL, it results in a `PCI Proxy PUSH Endpoint` that is specific to that Receiver:
 
 Redirect requests coming from a Receiver with a single step:
 
 1. **Change API endpoint at Receiver from `Your API Endpoint` to specific `PCI Proxy PUSH Endpoint`**
-2. **Let us know IP addresses of PUSH Receiver if not already mentioned in **[**1. Add Receiver to your account**](api.md#1-add-receiver-to-your-account)
+2. **Let us know IP addresses of PUSH Receiver if not already mentioned in **[**1. Add Receiver to your account**](https.md#1-add-receiver-to-your-account)
 3. **Whitelist **[**IP addresses**](../../resources/ip-whitelisting.md)** of PCI Proxy at Receiver, if needed.**
 
 If Receiver sends a request to Receiver-specific `PCI Proxy PUSH endpoint`, PCI Proxy recognizes Receiver and connects it to your account. The request from Receiver will be passed directly on to your system. Your response will be populated with sensitive card data while it was routed through PCI Proxy and forwarded to Receiver. Thereby, your Receiver obtained full credit card data.
