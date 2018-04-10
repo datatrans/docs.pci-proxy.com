@@ -2,7 +2,7 @@
 
 ## 1. Get your Production Account
 
-> If you are in possession of an existing stock of sensitive cardholder data you would like to tokenize initially in terms of going-live, please refer to our [XML-Alias Gateway](resources/xml-alias-gateway.md) or contact us directly.
+> If you are in possession of an existing stock of sensitive cardholder data you would like to tokenize initially in terms of going-live, please refer to our [XML-Alias Gateway](pci-proxy/resources/xml-alias-gateway.md) or contact us directly.
 
 Follow these steps to get your Production Account:
 

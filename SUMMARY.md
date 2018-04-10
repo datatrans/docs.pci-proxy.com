@@ -17,15 +17,6 @@
     * [SFTP](use-stored-cards/forward/sftp.md)
   * [Show](use-stored-cards/show.md)
 * [Go Live](go-live.md)
-* [Resources](resources/README.md)
-  * [Sandbox Account](resources/sandbox-account.md)
-  * [Full API Reference](resources/full-api-reference.md)
-  * [Request Types](resources/request-types.md)
-  * [IP Whitelisting](resources/ip-whitelisting.md)
-  * [XML Alias Gateway](resources/xml-alias-gateway.md)
-  * [Supported Acquirer](resources/supported-acquirer.md)
-  * [Supported Channels](resources/supported-channels.md)
-  * [Supported Receivers](resources/supported-receivers.md)
 
 ## Guides
 
@@ -35,4 +26,16 @@
 
 * [FAQ](have-a-question-1/faq-1.md)
 * [Contact us](have-a-question-1/contact-us.md)
+
+## Resources
+
+* [Resources](pci-proxy/resources/README.md)
+  * [Sandbox Account](pci-proxy/resources/sandbox-account.md)
+  * [Full API Reference](pci-proxy/resources/full-api-reference.md)
+  * [Request Types](pci-proxy/resources/request-types.md)
+  * [IP Whitelisting](pci-proxy/resources/ip-whitelisting.md)
+  * [XML Alias Gateway](pci-proxy/resources/xml-alias-gateway.md)
+  * [Supported Acquirer](pci-proxy/resources/supported-acquirer.md)
+  * [Supported Channels](pci-proxy/resources/supported-channels.md)
+  * [Supported Receivers](pci-proxy/resources/supported-receivers.md)
 

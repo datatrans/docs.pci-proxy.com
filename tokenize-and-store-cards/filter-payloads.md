@@ -12,11 +12,11 @@ All happens before sensitive card data ever touches your servers to reduce your 
 
 ## Add Channels
 
-Adding Channels is easy. Before you can start to filter payloads you have to You can either pick from our list of [supported Channels](../resources/supported-channels.md) or add new ones:
+Adding Channels is easy. Before you can start to filter payloads you have to You can either pick from our list of [supported Channels](../pci-proxy/resources/supported-channels.md) or add new ones:
 
 | Click to [**Add Channels**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-channel.html) |
 | :--- |
-| _Learn more about _[_**Request Types**_](../resources/request-types.md)_._ |
+| _Learn more about _[_**Request Types**_](../pci-proxy/resources/request-types.md)_._ |
 
 ## Select filter method
 
@@ -82,7 +82,7 @@ Response will contain tokenized credit card data.
 {% endapi-method %}
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](../resources/sandbox-account.md) are allowed.
+In test mode, only [test credit cards](../pci-proxy/resources/sandbox-account.md) are allowed.
 {% endhint %}
 
 ### Examples
@@ -173,7 +173,7 @@ Your partner can simply push its request to the `uniquePushKey` endpoint.
 {% endapi-method %}
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](../resources/sandbox-account.md) are allowed.
+In test mode, only [test credit cards](../pci-proxy/resources/sandbox-account.md) are allowed.
 {% endhint %}
 
 ### Examples
@@ -183,7 +183,7 @@ When you [**add a PUSH Channel**](filter-payloads.md#1-add-channel-to-your-accou
 Redirect requests coming from a Channel with a single step:
 
 1. **Change API endpoint at Channel from `Your API Endpoint` to specific `PCI Proxy PUSH Endpoint`**
-2. **Whitelist **[**IP addresses**](../resources/ip-whitelisting.md)** from PCI Proxy at Channel, if needed.**
+2. **Whitelist **[**IP addresses**](../pci-proxy/resources/ip-whitelisting.md)** from PCI Proxy at Channel, if needed.**
 
 {% hint style="success" %}
 If Channel sends a request to Channel-specific `PCI Proxy PUSH Endpoint` , PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.

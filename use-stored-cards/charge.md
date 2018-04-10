@@ -8,7 +8,7 @@ Lets assume you want to authorize or settle an amount on the payment data that y
 
 You can simply `send an XML request with a token to charge the stored card.`
 
-> _For this feature, you need an existing acquiring contract. Please see our list of _[_**Supported Acquirer**_](../resources/supported-acquirer.md)_._
+> _For this feature, you need an existing acquiring contract. Please see our list of _[_**Supported Acquirer**_](../pci-proxy/resources/supported-acquirer.md)_._
 
 | Charge an amount | Reserve an amount | Recur transaction |
 | :--- | :--- | :--- |
@@ -16,7 +16,7 @@ You can simply `send an XML request with a token to charge the stored card.`
 
 ## 1. Add an Acquirer to your Account
 
-You can choose from a list of [**Supported Acquirer**](../resources/supported-acquirer.md).
+You can choose from a list of [**Supported Acquirer**](../pci-proxy/resources/supported-acquirer.md).
 
 | Contact us at [setup@pci-proxy.com](mailto:setup@pci-proxy.com) |
 | :--- |

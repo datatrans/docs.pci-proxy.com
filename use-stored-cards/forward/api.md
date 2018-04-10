@@ -2,11 +2,11 @@
 
 ## 1. Add Receiver to your account
 
-Adding Receivers is easy. You can either pick from our list of [supported Receivers \(Gateways\)](../../resources/supported-receivers.md) or add new ones:
+Adding Receivers is easy. You can either pick from our list of [supported Receivers \(Gateways\)](../../pci-proxy/resources/supported-receivers.md) or add new ones:
 
 | Click to [**Add Receivers**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) |
 | :--- |
-| _Learn more about _[_**Request Types**_](../../resources/request-types.md)_._ |
+| _Learn more about _[_**Request Types**_](../../pci-proxy/resources/request-types.md)_._ |
 
 ## 2a. Redirect a PULL Receiver through PCI Proxy
 
@@ -61,7 +61,7 @@ Redirect requests coming from a Receiver with a single step:
 
 1. **Change API endpoint at Receiver from `Your API Endpoint` to specific `PCI Proxy PUSH Endpoint`**
 2. **Let us know IP addresses of PUSH Receiver if not already mentioned in **[**1. Add Receiver to your account**](api.md#1-add-receiver-to-your-account)
-3. **Whitelist **[**IP addresses**](../../resources/ip-whitelisting.md)** of PCI Proxy at Receiver, if needed.**
+3. **Whitelist **[**IP addresses**](../../pci-proxy/resources/ip-whitelisting.md)** of PCI Proxy at Receiver, if needed.**
 
 If Receiver sends a request to Receiver-specific `PCI Proxy PUSH endpoint`, PCI Proxy recognizes Receiver and connects it to your account. The request from Receiver will be passed directly on to your system. Your response will be populated with sensitive card data while it was routed through PCI Proxy and forwarded to Receiver. Thereby, your Receiver obtained full credit card data.
 
