@@ -12,14 +12,11 @@ The Inline Mode allows you to securely collect card data by injecting iframes to
 
 Browser compatibility for the Inline Mode:
 
-* Internet Explorer: &gt;= 11 
-* Firefox: &gt;= 30 
-* Chrome: &gt;= 32 
-* Safari: &gt;= 7 
-* iOS Safari: &gt;= 6 
-* Android: &gt;= 5
+| Internet Explorer | Firefox | Chrome | Safari | iOS Safari | Android |
+| --- | --- |
+| &gt;=11 | &gt;=30 | &gt;=32 | &gt;=7 | &gt;=6 | &gt;=5 |
 
-## Setup Inline Mode
+## 1. Setup Inline Mode
 
 To get started include the following script on your page. 
 
@@ -41,7 +38,7 @@ To get started include the following script on your page.
 Please make sure to always load it directly from [https://pay.sandbox.datatrans.com](https://pay.sandbox.datatrans.com)
 {% endhint %}
 
-## Create payment form
+## 2. Create payment form
 
 In order for the Inline Mode to insert the card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are:
 
@@ -67,7 +64,7 @@ In order for the Inline Mode to insert the card number and CVV iframes at the ri
 </form>
 ```
 
-## Retrieve a transactionId
+## 3. Retrieve a transactionId
 
 Initialize the Inline Mode with your merchantId and specify which DOM element containers should be used to inject the iframes:
 
@@ -95,7 +92,7 @@ Inline.on("success", function(data) {
 });
 ```
 
-## Obtain tokens
+## 4. Obtain tokens
 
 Once you've transmitted the transactionId to your server \(together with the the rest of your form\) you can execute a server to server GET Token request to get tokens for card number and CVV code:
 
