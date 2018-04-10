@@ -8,7 +8,7 @@ description: Learn how to simplify your PCI compliance by using PCI Proxy.
 
 Before we get started, take a minute and let us introduce you to the magic of [**PCI Proxy**](https://www.pci-proxy.com).
 
-{% hint style="info" %}
+{% hint style="success" %}
 PCI Proxy is a tokenization service that reduces your PCI scope in a simple and secure way.
 {% endhint %}
 
