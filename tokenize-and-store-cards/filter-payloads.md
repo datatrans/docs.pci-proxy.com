@@ -10,7 +10,7 @@ Simply redirect requests containing sensitive card data through PCI Proxy to avo
 All happens before sensitive card data ever touches your servers to reduce your PCI scope.
 {% endhint %}
 
-## 1. Add Channels
+## Add Channels
 
 Adding Channels is easy. Before you can start to filter payloads you have to You can either pick from our list of [supported Channels](../resources/supported-channels.md) or add new ones:
 
@@ -18,7 +18,7 @@ Adding Channels is easy. Before you can start to filter payloads you have to You
 | :--- |
 | _Learn more about _[_**Request Types**_](../resources/request-types.md)_._ |
 
-## 2. Select filter method
+## Select filter method
 
 PCI Proxy supports two different filter methods `/v1/pull` and `/v1/push` to suit all your needs. 
 

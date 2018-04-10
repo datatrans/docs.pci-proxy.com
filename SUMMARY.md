@@ -17,9 +17,6 @@
     * [SFTP](use-stored-cards/forward/sftp.md)
   * [Show](use-stored-cards/show.md)
 * [Go Live](go-live.md)
-* [FAQ](faq-1.md)
-* [Guides](guides/README.md)
-  * [Booking Provider Portal](guides/booking-provider-portal.md)
 * [Resources](resources/README.md)
   * [Sandbox Account](resources/sandbox-account.md)
   * [Full API Reference](resources/full-api-reference.md)
@@ -29,5 +26,13 @@
   * [Supported Acquirer](resources/supported-acquirer.md)
   * [Supported Channels](resources/supported-channels.md)
   * [Supported Receivers](resources/supported-receivers.md)
-* [Contact us](contact-us.md)
+
+## Guides
+
+* [Booking Provider Portal](have-a-question/booking-provider-portal.md)
+
+## Have a Question?
+
+* [FAQ](have-a-question-1/faq-1.md)
+* [Contact us](have-a-question-1/contact-us.md)
 
