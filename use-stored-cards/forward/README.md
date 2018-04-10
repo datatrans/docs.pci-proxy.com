@@ -8,7 +8,7 @@ PCI Proxy allows you to retain your existing data communication with PCI-complia
 
 Simply redirect requests containing tokens through PCI Proxy to avoid sensitive data hitting your servers. PCI Proxy automatically scans requests for tokens and replaces located tokens with sensitive card data and forwards the populated request to the PCI-compliant Receiver. The message structure of your request always remains the same. Any responses from the Receiver are passed back to you and sensitive card data is tokenized if needed.
 
-PCI Proxy provides you two different ways to forward data to a Receiver:
+PCI Proxy supports various communication methods to forward sensitive card data to a Receiver:
 
 {% page-ref page="api.md" %}
 
