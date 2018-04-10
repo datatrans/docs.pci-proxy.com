@@ -32,7 +32,7 @@ You will use the _Channel PUSH Proxy_ when **your partner starts the request wit
 
 | PUSH Channel Process Flow w/o PCI Proxy | PUSH Channel Process Flow w/ PCI Proxy |
 | :--- | :--- |
-| ![](../.gitbook/assets/channel_push_status_quo_color.png) | ![](../.gitbook/assets/channel_push_pciproxy_color.png) |
+| ![](../.gitbook/assets/channel_push_status_quo_color.png) | ![](../.gitbook/assets/channel_push_pciproxy_color%20%281%29.png) |
 | 1. **Channel starts **_**RQ with card data**_ against Your API. | 1. _**Channel starts RQ**_** **_**with card data**_ against PCIP Endpoint. |
 | _- You receive sensitive card data -&gt; PCI scope. -_ | 2. PCI Proxy scans _RQ_ and tokenizes card data. |
 | 2. You return _RS_ to Channel. | 3. PCI Proxy forwards _**RS with token**_ to Your API. |

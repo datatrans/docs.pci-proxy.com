@@ -6,7 +6,7 @@ description: Receive credit card and CVV token
 
 {% api-method method="get" host="https://api.sandbox.datatrans.com/upp/services" path="/v1/inline/token" %}
 {% api-method-summary %}
-Get Token
+Token
 {% endapi-method-summary %}
 
 {% api-method-description %}

@@ -19,22 +19,29 @@ Browser compatibility for the Inline Mode:
 * iOS Safari: &gt;= 6 
 * Android: &gt;= 5
 
+## Setup Inline Mode
 
-## Step 1: Setup the Inline Mode
+To get started include the following script on your page. 
 
-To get started include the following script on your page. Please make sure to always load it directly from [https://pay.sandbox.datatrans.com](https://pay.sandbox.datatrans.com)
-
+{% code-tabs %}
+{% code-tabs-item title="Inline Mode Script" %}
 ```javascript
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
 ```
+{% endcode-tabs-item %}
 
-Minified Version
-
+{% code-tabs-item title="Minified Version" %}
 ```javascript
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.min.js"></script>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-## Step 2: Create your form to collect card data
+{% hint style="warning" %}
+Please make sure to always load it directly from [https://pay.sandbox.datatrans.com](https://pay.sandbox.datatrans.com)
+{% endhint %}
+
+## Create payment form
 
 In order for the Inline Mode to insert the card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are:
 
@@ -60,7 +67,7 @@ In order for the Inline Mode to insert the card number and CVV iframes at the ri
 </form>
 ```
 
-## Step 3: Retrieving a transactionId
+## Retrieve a transactionId
 
 Initialize the Inline Mode with your merchantId and specify which DOM element containers should be used to inject the iframes:
 
@@ -88,34 +95,42 @@ Inline.on("success", function(data) {
 });
 ```
 
-## Step 4: Using the transactionId to obtain tokens
+## Obtain tokens
 
-Once you've transmitted the transactionId \(step 3\) to your server \(together with the the rest of your form\) you can execute a server to server [Token API]() request to get the tokens for card number and CVV code:
+Once you've transmitted the transactionId to your server \(together with the the rest of your form\) you can execute a server to server GET Token request to get tokens for card number and CVV code:
 
+{% code-tabs %}
+{% code-tabs-item title="Example: Basic usage" %}
 ```bash
-$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \
-       -u 'merchantId:password'
+$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \ 
+        -u 'merchantId:password'
 ```
+{% endcode-tabs-item %}
 
-The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com) under _UPP Administartion &gt; Security &gt; Server-to-Server services security_. A sample response from the request above looks like:
-
-```javascript
+{% code-tabs-item title="Response" %}
+```bash
 {
   "aliasCC" : "424242SKMPRI4242",
   "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
-Please also have a look at [Styling](initialization-and-styling.md), [Events](events.md) and [Token API]() references.
+Please also have a look at [Styling](initialization-and-styling.md), [Events](events.md) and [Token API](tokenapi.md) references.
 
-> ### Congrats, Level 2 completed: Your site is out of PCI scope!
->
-> You have securely captured sensitive card data on your website without sensitive data touching your servers. **Your systems never record, transmit or store real credit card data, only the token.** **Thus, you are out of PCI scope.** Move on and learn how you can use stored card data. Please continue to [**Step 3**](../../use-stored-cards/).
->
-> #### Questions?
->
-> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
->
-> Phone: +41 44 256 81 91  
-> Email: [support@pci-proxy.com](mailto:support@pci-proxy.com)
+## Examples
+
+{% embed data="{\"url\":\"https://codepen.io/pciproxy/full/VXELBZ\",\"type\":\"rich\",\"title\":\"PCI Proxy Inline Mode Sample\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/i.cdpn.io/1889199.VXELBZ.small.46c6ddbe-9001-47b2-97c5-22c3134bc8d2.png\",\"width\":384,\"height\":225,\"aspectRatio\":0.5859375},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/pciproxy/embed/preview/VXELBZ?height=300&slug-hash=VXELBZ&default-tabs=html,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\"https://codepen.io/pciproxy/embed/preview/VXELBZ?height=300&amp;slug-hash=VXELBZ&amp;default-tabs=html,result&amp;host=https://codepen.io&amp;embed-version=2\\" style=\\"border: 0; width: 100%; height: 300px;\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null},\"caption\":\"Inline Mode Payment Form Sample\"}" %}
+
+
+
+{% hint style="info" %}
+#### Questions?
+
+Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+
+Phone: +41 44 256 81 91  
+Email: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
+{% endhint %}
 
