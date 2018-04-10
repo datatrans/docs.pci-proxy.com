@@ -1,6 +1,8 @@
-# Sandbox Account
+---
+description: All relevant information to your Sandbox account.
+---
 
-Please find here all relevant information to your Sandbox account.
+# Sandbox Account
 
 ## Sandbox Endpoints
 
