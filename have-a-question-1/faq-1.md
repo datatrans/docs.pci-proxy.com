@@ -36,11 +36,15 @@ No. The Attestations of Compliance \(AoC\) is the only official document recogni
 
 Global Registry of PCI compliant service providers:
 
-* [http://www.visa.com/splisting/searchGrsp.do](http://www.visa.com/splisting/searchGrsp.do)
-* [https://www.visaeurope.com/receiving-payments/security/downloads-and-resources](https://www.visaeurope.com/receiving-payments/security/downloads-and-resources)
-* [https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html](https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html)
-* [https://de.pcisecuritystandards.org/document\_library](https://de.pcisecuritystandards.org/document_library)
-* [https://www.pcisecuritystandards.org/faqs](https://www.pcisecuritystandards.org/faqs)
+
+
+{% embed data="{\"url\":\"https://www.visaeurope.com/receiving-payments/security/downloads-and-resources\",\"type\":\"link\",\"title\":\"\r\n\tDownloads & resources\r\n\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.visaeurope.com/favicon.ico\",\"aspectRatio\":0},\"caption\":\"VISA Europe Member Agent Weblisting \(e.g. search for \\"Datatrans\\"\)\"}" %}
+
+{% embed data="{\"url\":\"https://www.pcisecuritystandards.org/faqs\",\"type\":\"link\",\"title\":\"Official PCI Security Standards Council Site - Verify PCI Compliance, Download Data Security and Credit Card Security Standards\",\"description\":\"If you are a merchant of any size accepting credit cards, you must be in compliance with PCI Security Council standards. This site provides: credit card data security standards documents, PCIcompliant software and hardware, qualified security assessors, technical support, merchant guides and more.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.pcisecuritystandards.org/touch-icon-ipad-retina.png\",\"width\":152,\"height\":152,\"aspectRatio\":1},\"caption\":\"PCI Council - FAQs\"}" %}
+
+{% embed data="{\"url\":\"https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html\",\"type\":\"link\",\"title\":\"Things Merchants Need to Know \| Process Payment Data & Secured Transactions \| Mastercard\",\"description\":\"Key information for merchants on storing, processing and transmitting Mastercard data securely\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.mastercard.us/etc/clientlibs/mastercard\_com/images/favicon.ico\",\"aspectRatio\":0}}" %}
+
+{% embed data="{\"url\":\"https://www.pcisecuritystandards.org/document\_library\",\"type\":\"link\",\"title\":\"Official PCI Security Standards Council Site - Verify PCI Compliance, Download Data Security and Credit Card Security Standards\",\"description\":\"If you are a merchant of any size accepting credit cards, you must be in compliance with PCI Security Council standards. This site provides: credit card data security standards documents, PCIcompliant software and hardware, qualified security assessors, technical support, merchant guides and more.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.pcisecuritystandards.org/touch-icon-ipad-retina.png\",\"width\":152,\"height\":152,\"aspectRatio\":1},\"caption\":\"PCI Council - Document Library \(find SAQs & PCI DSS specs\)\"}" %}
 
 
 
