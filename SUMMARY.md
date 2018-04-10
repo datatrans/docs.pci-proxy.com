@@ -20,7 +20,7 @@
 
 ## Guides
 
-* [Booking Provider Portal](have-a-question/booking-provider-portal.md)
+* [Booking.com IP Whitelist](have-a-question/booking-provider-portal.md)
 
 ## Have a Question?
 
