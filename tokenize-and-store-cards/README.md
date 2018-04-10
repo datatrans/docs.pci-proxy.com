@@ -10,11 +10,11 @@ In general, you have different inbound channels where you receive sensitive card
 
 The three main sources of credit card data are:
 
-| [**Website**](website-tokenization/) \(IBE\) | [**Webservice**](filter-payloads.md) \(eg. Booking.com\) | [**Native App**](../pci-proxy/resources/xml-alias-gateway.md) \(iOS / Android\) |
+| [**Website**](website-tokenization/) \(IBE\) | [**Webservice**](filter-payloads.md) \(eg. Booking.com\) | [**Native App**](../resources/xml-alias-gateway.md) \(iOS / Android\) |
 | :--- | :--- | :--- |
 | ![](../.gitbook/assets/website.png) | ![](../.gitbook/assets/webservice.png) | ![](../.gitbook/assets/app.png) |
 | Your customers enter their credit card data on a form within your website. | You receive a request from a remote server including credit card data in the payload. | Your customers enter their credit card data on a form within your native app. |
-| [Inline Mode](website-tokenization/) seamlessly tokenizes sensitive data within your web app. | [PUSH & PULL Proxy](filter-payloads.md) tokenizes on the fly sensitive data within your web services. | [XML Alias Gateway](../pci-proxy/resources/xml-alias-gateway.md) tokenizes sensitive data within your mobile app. |
+| [Inline Mode](website-tokenization/) seamlessly tokenizes sensitive data within your web app. | [PUSH & PULL Proxy](filter-payloads.md) tokenizes on the fly sensitive data within your web services. | [XML Alias Gateway](../resources/xml-alias-gateway.md) tokenizes sensitive data within your mobile app. |
 
 {% hint style="success" %}
 **With all described methods, sensitive card data never touch your servers**.

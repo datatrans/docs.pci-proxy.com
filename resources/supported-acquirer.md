@@ -1,6 +1,6 @@
 # Supported Acquirer
 
-If you want to** **[**charge credit cards**](../../use-stored-cards/charge.md)** **and make a transaction against our payment gateway, you need an acceptance contract with an acquirer.
+If you want to** **[**charge credit cards**](../use-stored-cards/charge.md)** **and make a transaction against our payment gateway, you need an acceptance contract with an acquirer.
 
 As an independent payment service provider, we support a variety of international acquiring partners. Independency can be of great importance for you. You can easily switch between different acquirers without any technical obstacles or extra development, you have more negotiating power and through the split-up you act more independent.
 

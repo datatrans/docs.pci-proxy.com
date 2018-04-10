@@ -16,7 +16,7 @@ PCI Proxy provides you two different ways forwarding data to a Receiver.
 {% hint style="warning" %}
 **Your requests are populated with sensitive card data after they leave your systems to keep you out of PCI scope.**
 
-Using Receivers not listed on [supported Receivers \(Gateways\)](../../pci-proxy/resources/supported-receivers.md) requires a valid AOC \(Attestation of Compliance\) and either a letter of Acknowledgment or an extract of the terms and conditions which proves the PCI DSS compliance of the Receiver. 
+Using Receivers not listed on [supported Receivers \(Gateways\)](../../resources/supported-receivers.md) requires a valid AOC \(Attestation of Compliance\) and either a letter of Acknowledgment or an extract of the terms and conditions which proves the PCI DSS compliance of the Receiver. 
 {% endhint %}
 
 
