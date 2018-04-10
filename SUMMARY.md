@@ -11,7 +11,7 @@
   * [E-Mail](tokenize-and-store-cards/e-mail.md)
 * [Use stored cards](use-stored-cards/README.md)
   * [Forward](use-stored-cards/forward/README.md)
-    * [API](use-stored-cards/forward/api.md)
+    * [HTTPS](use-stored-cards/forward/api.md)
     * [SFTP](use-stored-cards/forward/sftp.md)
   * [Show](use-stored-cards/show.md)
   * [Charge](use-stored-cards/charge.md)

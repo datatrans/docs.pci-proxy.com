@@ -1,4 +1,4 @@
-# API
+# HTTPS
 
 ## 1. Add Receiver to your account
 
