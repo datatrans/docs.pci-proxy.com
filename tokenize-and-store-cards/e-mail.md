@@ -10,58 +10,6 @@ Our PayByEmailService allows you to generate Pay-by-Email payment links.
 
 ## Generate payment links
 
-{% api-method method="post" host="" path="" %}
-{% api-method-summary %}
-XML\_PayByEmail
-{% endapi-method-summary %}
-
-{% api-method-description %}
-PayByEmailService allows you to generate Pay-by-Email payment links.
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-body-parameters %}
-{% api-method-parameter name="merchantId" type="number" required=true %}
-Unique merchant identifier \(allocated at signup\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="language" type="string" required=false %}
-Define language in which payment page will be opened
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="" type="string" required=false %}
-kjhkh
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="duedate" type="string" required=false %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter type="number" name="merchantId" %}
-Unique Merchant Identifier \(allocated by Datatrans at merchant registration process\)
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```javascript
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
 | **PayByEmailService Endpoint:** |
 | --- |
 | [https://pay.sandbox.datatrans.com/upp/jsp/XML\_PayByEmail](https://pay.sandbox.datatrans.com/upp/jsp/XML_PayByEmail) |
