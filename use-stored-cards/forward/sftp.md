@@ -22,8 +22,8 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 2. **Use PCI Proxy Endpoint as HOST with following paramters merchantId , sign , url , password and define type with BTA or TAMARA**
 3. **Add required X-CC HTTP header and POST data to your request**
 
-```text
-$curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX&type=BTA'
+```bash
+curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX&type=BTA'
     -X POST                                                     // Request Method POST
 
     -H "X-CC-Authorization: xxxxxx"                             // Basic-Auth
@@ -41,8 +41,8 @@ The service responds based on the _accept header_: Supported are_text/plain, app
 3. **Add required X-CC HTTP to your request**
 4. **Add required POST data: merchantID, sign, url, file password and type**
 
-```text
-$curl https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft                           // HOST: PCI Proxy Endpoint
+```bash
+curl https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft                           // HOST: PCI Proxy Endpoint
     -X POST                                                                                // Request Method POST
     -H "X-CC-Accept: text/plain"                                                           // NEW HEADER: Please choose text/plain
     -H "X-CC-Cache-Control: no-cache"                                                      // NEW HEADER: Please choose no-cache
