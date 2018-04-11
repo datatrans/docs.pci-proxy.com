@@ -69,7 +69,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | Required parameter | Description | Example Value |
 | :--- | :--- | :--- |
 | merchantId | Your Merchant ID | 1000011011 |
-| sign | Configured Security Sign \(see [Step 1\)](../../setup.md) | 130709090849785405 |
+| sign | Configured Security Sign \(see [Step 1\)](../../setup/) | 130709090849785405 |
 | url | Your SFTP endpoint | url=sftp%test%xxx.txt |
 | file | The file you want to upload | some+file+content |
 | password | Your password | asdfölksdjfasjdh |

@@ -28,7 +28,7 @@ PCI Proxy supports all major credit card brands:
 
 PCI Proxy can be integrated by following these four steps to achieve PCI compliance:
 
-{% page-ref page="setup.md" %}
+{% page-ref page="setup/" %}
 
 {% page-ref page="tokenize-and-store-cards/" %}
 

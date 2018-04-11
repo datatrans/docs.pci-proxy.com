@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Getting Started](README.md)
-* [Setup](setup.md)
+* [Setup](setup/README.md)
+  * [Sandbox Account](setup/sandbox-account.md)
 * [Tokenize & store cards](tokenize-and-store-cards/README.md)
   * [Filter Proxy](tokenize-and-store-cards/filter-payloads.md)
   * [Inline Mode](tokenize-and-store-cards/website-tokenization/README.md)
@@ -18,7 +19,6 @@
   * [Check](use-stored-cards/check.md)
 * [Go Live](go-live.md)
 * [Resources](resources/README.md)
-  * [Sandbox Account](resources/sandbox-account.md)
   * [Full API Reference](resources/full-api-reference.md)
   * [Request Types](resources/request-types.md)
   * [IP Whitelisting](resources/ip-whitelisting.md)

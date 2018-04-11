@@ -14,7 +14,7 @@ Follow these steps to create your Sandbox account:
 2. After a short internal confirmation, you will receive your preliminary Sandbox credentials.
 3. [**Log in**](https://admin.sandbox.datatrans.com/) with your credentials and follow instructions to create your own password.
 
-> Note you receive** two separate merchant IDs** when using [_Website Tokenization_](tokenize-and-store-cards/website-tokenization/) and [_Filter Payloads_](tokenize-and-store-cards/filter-payloads.md).
+> Note you receive** two separate merchant IDs** when using [_Website Tokenization_](../tokenize-and-store-cards/website-tokenization/) and [_Filter Payloads_](../tokenize-and-store-cards/filter-payloads.md).
 
 ## 2. Setup Sandbox Account
 
@@ -30,7 +30,7 @@ You will need this information for different tokenization and detokenization API
 5. Click _Update_.  
 
 
-   ![Create Security Sign via https://pilot.datatrans.biz/](.gitbook/assets/2018-04-04-16.35.20.gif)
+   ![Create Security Sign via https://pilot.datatrans.biz/](../.gitbook/assets/2018-04-04-16.35.20.gif)
 
 ### Create Salt Value
 
@@ -42,7 +42,7 @@ You will need this information for different tokenization and detokenization API
 
 
 
-   ![Create Salt Value via https://pilot.datatrans.biz/](.gitbook/assets/2018-04-04-16.38.06.gif)
+   ![Create Salt Value via https://pilot.datatrans.biz/](../.gitbook/assets/2018-04-04-16.38.06.gif)
 
 {% hint style="success" %}
 ### Great, setup completed!
@@ -51,7 +51,7 @@ You have successfully signed up and setup your Sandbox account.
 Next up, learn how to securely tokenize and store cards without ever touching your systems:
 {% endhint %}
 
-{% page-ref page="tokenize-and-store-cards/" %}
+{% page-ref page="../tokenize-and-store-cards/" %}
 
 {% hint style="info" %}
 **Questions?**
