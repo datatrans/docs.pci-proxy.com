@@ -30,7 +30,7 @@ description: All relevant information to your Sandbox account.
 {% endtab %}
 {% endtabs %}
 
-### Frontend APIs
+### Browser APIs
 
 {% tabs %}
 {% tab title="Inline Mode" %}
