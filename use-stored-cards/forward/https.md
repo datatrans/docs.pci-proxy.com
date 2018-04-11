@@ -51,7 +51,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 | **PCI Proxy PUSH Endpoint:** |
 | :--- |
-| [https://sandbox.pci-proxy.com/v1/push/](https://sandbox.pci-proxy.com/v1/push/) {UNIQUE-RECEIVER-KEY} |
+| [https://sandbox.pci-proxy.com/v1/push/](https://sandbox.pci-proxy.com/v1/push/){UNIQUE-RECEIVER-KEY} |
 
 Contrary to the PULL integration, you usually don't have much influence on how the request is started or don't want to force the Receiver to change the integration. Therefore, we use a different approach for PUSH Receiver.
 
