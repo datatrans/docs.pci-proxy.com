@@ -12,7 +12,7 @@ Our PayByEmailService allows you to generate Pay-by-Email payment links.
 
 | **PayByEmailService Endpoint:** |
 | --- |
-| [https://pay.sandbox.datatrans.com/upp/jsp/XML\_PayByEmail](https://pay.sandbox.datatrans.com/upp/jsp/XML_PayByEmail) |
+| [https://api.sandbox.datatrans.com/upp/jsp/XML\_PayByEmail](https://api.sandbox.datatrans.com/upp/jsp/XML_PayByEmail) |
 
 **Just send the following payload to our PayByEmailService Endpoint:**
 
