@@ -10,8 +10,8 @@ Simply send a zero-amount authorization request against our XML gateway endpoint
 
 Send a zero-amount authorization request to Datatrans' XML Gateway Endpoint by using the following call:
 
-```javascript
-$ curl "https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp"         // HOST: XML Gateway Endpoint
+```bash
+curl "https://pilot.datatrans.biz/upp/jsp/XML_authorize.jsp"         // HOST: XML Gateway Endpoint
         -H "Content-Type: application/xml"                             // Content-Type: application/xml
 
         -d '<?xml version="1.0" encoding="UTF-8" ?>                    // We expect an XML formatted message       
@@ -48,7 +48,6 @@ The zero-amount authorization request needs to be sent as an XML formatted messa
 | `aliasCC` | AN20 | Token for credit card |
 | `expm` | MM | Expiration month |
 | `expy` | YY | Expiration year |
-|  |  |  |
 
 | Optional Input Parameter | Type | Description |
 | --- | --- | --- |
@@ -58,7 +57,7 @@ The zero-amount authorization request needs to be sent as an XML formatted messa
 
 Example of successful card check:
 
-```javascript
+```markup
 <?xml version=”1.0” encoding=”UTF-8”?> 
     <authorizationService version=”3”> 
         <body merchantId=”1000011011” status=”accepted”> 
