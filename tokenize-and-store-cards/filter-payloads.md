@@ -110,31 +110,31 @@ curl -X POST \
 ```markup
 <?xml version="1.0" encoding="UTF-8"?>
 <reservations>
-<reservation>
-  <booked_at>2016-06-01T11:57:22+00:00</booked_at>
-  <commissionamount>21.09</commissionamount>
-  <currencycode>EUR</currencycode>
-  <customer>
-    <address>Vista 2, 3º izq</address>
-    <cc_cvc>xC80dmLNReahfVnMNeW6DHt_</cc_cvc>
-    <cc_expiration_date>07/2018</cc_expiration_date>
-    <cc_name>John Doe</cc_name>
-    <cc_number>424242SKMPRI4242</cc_number>
-    <cc_type>Visa</cc_type>
-    <city>Madrid</city>
-    <company />
-    <countrycode>es</countrycode>
-    <dc_issue_number />
-    <dc_start_date />
-    <email>guest01@guest.booking.com</email>
-    <first_name>Juan</first_name>
-    <last_name>Valdez</last_name>
-    <remarks>Booker is travelling for business...</remarks>
-    <telephone>666 428 664</telephone>
-    <zip>28004</zip>
-  </customer>
-  <!-- remaining response has been truncated for better visability -->
-</reservation>
+  <reservation>
+    <booked_at>2016-06-01T11:57:22+00:00</booked_at>
+    <commissionamount>21.09</commissionamount>
+    <currencycode>EUR</currencycode>
+    <customer>
+      <address>Vista 2, 3º izq</address>
+      <cc_cvc>xC80dmLNReahfVnMNeW6DHt_</cc_cvc>
+      <cc_expiration_date>07/2018</cc_expiration_date>
+      <cc_name>John Doe</cc_name>
+      <cc_number>424242SKMPRI4242</cc_number>
+      <cc_type>Visa</cc_type>
+      <city>Madrid</city>
+      <company />
+      <countrycode>es</countrycode>
+      <dc_issue_number />
+      <dc_start_date />
+      <email>guest01@guest.booking.com</email>
+      <first_name>Juan</first_name>
+      <last_name>Valdez</last_name>
+      <remarks>Booker is travelling for business...</remarks>
+      <telephone>666 428 664</telephone>
+      <zip>28004</zip>
+    </customer>
+    <!-- remaining response has been truncated for better visability -->
+  </reservation>
 </reservations>
 ```
 {% endcode-tabs-item %}
