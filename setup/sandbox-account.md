@@ -18,7 +18,7 @@ description: All relevant information to your Sandbox account.
 {% endtab %}
 
 {% tab title="TokenAPI" %}
-[https://pay.sandbox.datatrans.com/upp/payment/tokenize ](https://pay.sandbox.datatrans.com/upp/payment/tokenize )
+[https://api.sandbox.datatrans.com/upp/services/v1/inline/token](https://api.sandbox.datatrans.com/upp/services/v1/inline/token)
 {% endtab %}
 
 {% tab title="AliasGateway" %}
