@@ -105,7 +105,7 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 {% endcode-tabs-item %}
 
 {% code-tabs-item title="Response" %}
-```bash
+```javascript
 {
   "aliasCC" : "424242SKMPRI4242",
   "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
