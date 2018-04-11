@@ -39,7 +39,7 @@ In the example above the CVV code for the payment method \(VIS\) is mandatory. T
 Open the following URL with parameters:
 
 ```javascript
-https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp            // HOST: Payment Page Endpoint
+https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp        // HOST: Payment Page Endpoint
                 ?theme=DT2015                                
                 &merchantId=1100004624                       // Merchant ID you received at adding a Acquirer
                 &amount=1337                                 // Specify the amount you want to authorize
@@ -58,8 +58,8 @@ https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp            // HOST: Paymen
 
 Send an XML request to Datatrans' XML Gateway Endpoint by using the following call:
 
-```javascript
-$ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp"         // HOST: XML Gateway Endpoint
+```bash
+curl "https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp"         // HOST: XML Gateway Endpoint
         -H "Content-Type: application/xml"                             // Content-Type: application/xml
 
         -d '<?xml version="1.0" encoding="UTF-8" ?>                    // We expect an XML formatted message       
@@ -120,7 +120,7 @@ If the authorization was successful, you will additionally receive the following
 
 Example of successful authorization response:
 
-```javascript
+```markup
 <?xml version=”1.0” encoding=”UTF-8”?> 
     <authorizationService version=”2”> 
         <body merchantId=”1000011011” status=”accepted”> 
@@ -165,7 +165,7 @@ If the authorization failed, you will additionally receive the following error p
 
 Example of failed authorization response:
 
-```javascript
+```markup
 <?xml version=”1.0” encoding=”UTF-8”?> 
     <authorizationService version=”2”> 
         <body merchantId=”1000011011” status=”accepted”> 
@@ -181,8 +181,7 @@ Example of failed authorization response:
                     </uppCustomerDetails> 
                     <sign>30916165706580013</sign> 
                     <reqtype>NOA</reqtype> 
-                </request> 
-
+                </request>
                 <error>
                     <errorCode>1403</errorCode>
                     <errorMessage>declined</errorMessage>
