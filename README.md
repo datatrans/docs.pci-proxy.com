@@ -34,8 +34,6 @@ PCI Proxy can be integrated by following these four steps to achieve PCI complia
 
 {% page-ref page="use-stored-cards/" %}
 
-{% page-ref page="go-live.md" %}
-
 {% hint style="info" %}
 **Questions?**
 

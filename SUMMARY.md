@@ -17,7 +17,6 @@
   * [Show](use-stored-cards/show.md)
   * [Charge](use-stored-cards/charge.md)
   * [Check](use-stored-cards/check.md)
-* [Go Live](go-live.md)
 * [Resources](resources/README.md)
   * [Full API Reference](resources/full-api-reference.md)
   * [Request Types](resources/request-types.md)
