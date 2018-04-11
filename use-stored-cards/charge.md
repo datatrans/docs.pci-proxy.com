@@ -6,7 +6,7 @@ description: Authorize and/or settle a stored credit card.
 
 Lets assume you want to authorize or settle an amount on the payment data that you have collected earlier.
 
-You can simply `send an XML request with a token to charge the stored card.`
+You can simply send an XML request with a token to charge the stored card.
 
 > _For this feature, you need an existing acquiring contract. Please see our list of _[_**Supported Acquirer**_](../resources/supported-acquirer.md)_._
 
