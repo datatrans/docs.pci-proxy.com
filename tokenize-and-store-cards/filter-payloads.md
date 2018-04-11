@@ -72,7 +72,7 @@ Response will contain tokenized credit card data.
             <cc_number>424242SKMPRI4242</cc_number>
             <cc_type>Visa</cc_type>
         </customer>
-        <truncated>...for better visability</truncated>
+        <truncated>...for better visibility</truncated>
     </reservation>   
 </reservations>
 ```
