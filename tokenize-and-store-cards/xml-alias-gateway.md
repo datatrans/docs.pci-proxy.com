@@ -1,10 +1,14 @@
-# XML Alias Gateway
+---
+description: Tokenize credit card data directly via API.
+---
 
-Let us assume you want to create a token for a credit card number via web service.
+# Alias Gateway
 
-`By using our XML Alias Gateway`, you can easily convert a credit card number \(cardno\) into a token \(alias\).
+The Alias Gateway allows you to pass credit card data directly to us to create tokens via server-to-server API. This can be interesting if you have existing credit card data stored somewhere else and want to store it within the PCI Proxy vault now. 
 
-> **Attention:** This XML Alias Gateway is only for PCI DSS certified companies as you get in contact with full credit card numbers.
+{% hint style="danger" %}
+We strongly discourage passing credit card data directly to our Alias Gateway as it means your systems get in contact with full credit card numbers. Please use the [Filter Proxy](filter-payloads.md), [Inline Mode](website-tokenization/) or [Pay by Email](e-mail.md) to reduce your PCI scope to a minimum.
+{% endhint %}
 
 ## How to start
 
