@@ -42,13 +42,3 @@ No. The Attestations of Compliance \(AoC\) is the only official document recogni
 
 {% embed data="{\"url\":\"https://www.visaeurope.com/receiving-payments/security/downloads-and-resources\",\"type\":\"link\",\"title\":\"\r\n\tDownloads & resources\r\n\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.visaeurope.com/favicon.ico\",\"aspectRatio\":0},\"caption\":\"Visa PCI-compliant Service Provider List \(e.g. search for \\"Datatrans\\"\)\"}" %}
 
-
-
-
-
-
-
-
-
-
-
