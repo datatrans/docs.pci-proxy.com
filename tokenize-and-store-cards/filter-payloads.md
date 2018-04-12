@@ -173,7 +173,7 @@ Your partner can simply push its request to the `uniquePushKey` endpoint.
 {% endapi-method %}
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](../setup/sandbox-account.md) are allowed.
+In test mode, only [test credit cards](../setup/sandbox-account.md#test-card-numbers) are allowed.
 {% endhint %}
 
 ### Examples
