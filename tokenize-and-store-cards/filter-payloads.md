@@ -189,6 +189,8 @@ Redirect requests coming from a Channel with a single step:
 If Channel sends a request to Channel-specific `PCI Proxy PUSH Endpoint` , PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
 {% endhint %}
 
+## Next up
+
 {% page-ref page="../use-stored-cards/" %}
 
 
