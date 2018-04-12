@@ -68,7 +68,7 @@ For every request you make against our APIs, we ask for your security sign. It i
 
 We have a set of test credit card numbers that you can use in our sandbox environment to test your integration. Limit and 3D support is only needed for transactions and not for tokenization.
 
-| Brand | Code | PAN | Token | Expiry | CVV | Limit\* | 3D |
+| Brand | Code | PAN | Token | Expiry | CVV | Limit | 3D |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | ![](../.gitbook/assets/logo_visa%20%281%29.png) | VIS | 4242424242424242 | 424242SKMPRI4242 | 12/2018 | 123 | yes | No |
 | ![](../.gitbook/assets/logo_visa%20%282%29.png) | VIS | 4900000000000086 | 490000VUFMRQ0086 | 12/2018 | 123 | No | Yes |
