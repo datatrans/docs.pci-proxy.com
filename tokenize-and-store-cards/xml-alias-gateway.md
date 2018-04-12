@@ -117,6 +117,8 @@ Invalid value passed for one of the attributes \(e.g. merchantId\).
 | --- | --- |
 
 
+### Examples
+
 {% code-tabs %}
 {% code-tabs-item title="Example Request" %}
 ```markup
@@ -226,7 +228,7 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
 In test mode, only [test credit cards](../setup/sandbox-account.md) are allowed.
 {% endhint %}
 
-## Possible error cases
+### Error cases
 
 | errorCode | errorMessage | Explanation |
 | --- | --- | --- |
