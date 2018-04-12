@@ -23,7 +23,7 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 3. **Add required X-CC HTTP header and POST data to your request**
 
 ```bash
-curl 'https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX&type=BTA'
+curl 'https://sandbox.pci-proxy.com/v1/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX&type=BTA'
     -X POST                                                     // Request Method POST
 
     -H "X-CC-Authorization: xxxxxx"                             // Basic-Auth
@@ -42,7 +42,7 @@ The service responds based on the _accept header_: Supported are_text/plain, app
 4. **Add required POST data: merchantID, sign, url, file password and type**
 
 ```bash
-curl https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft                           // HOST: PCI Proxy Endpoint
+curl https://sandbox.pci-proxy.com/v1/ft                           // HOST: PCI Proxy Endpoint
     -X POST                                                                                // Request Method POST
     -H "X-CC-Accept: text/plain"                                                           // NEW HEADER: Please choose text/plain
     -H "X-CC-Cache-Control: no-cache"                                                      // NEW HEADER: Please choose no-cache
@@ -64,7 +64,7 @@ _Note: In test mode, only test credit cards are allowed!_
 
 | **PCI Proxy SFTP Endpoint:** |
 | :--- |
-| [https://api.sandbox.datatrans.com/upp/services/v1/proxy/ft](https://github.com/dtrx/pci-proxy/tree/64fd0c927de7d841f405bce49bdcf6db31c16124/%60https:/api.sandbox.datatrans.com/upp/services/v1/proxy/ft/README.md) |
+| https://sandbox.pci-proxy.com/v1/ft |
 
 | Required parameter | Description | Example Value |
 | :--- | :--- | :--- |
