@@ -70,9 +70,11 @@ You receive a temporary payment link
 {% endapi-method-spec %}
 {% endapi-method %}
 
+### Examples
+
 {% code-tabs %}
 {% code-tabs-item title="Example Request" %}
-```markup
+```bash
 curl "https://api.sandbox.datatrans.com/upp/jsp/XML_PayByEmail" \
   -H "Content-Type: text/xml" \
   -d '<?xml version="1.0" encoding="UTF-8"?>
