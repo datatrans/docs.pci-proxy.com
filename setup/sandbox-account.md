@@ -101,9 +101,9 @@ Full credit card information cannot be used in the sandbox.
 
 ## Slack Developer Chat
 
-Chat with our developers if you need support relating to your sandbox account. Just drop us a line at [setup@pci-proxy.com](mailto:setup@pci-proxy.com) with your name and email address and we will invite you.
+Chat with our developers if you need support relating to your sandbox account or PCI Proxy integration. Just drop us a line at [setup@pci-proxy.com](mailto:setup@pci-proxy.com) with your name and email address and we will invite you.
 
 ## Migrate payment data
 
-If you have credit card data that is currently stored somewhere else and would like to migrate them to the PCI Proxy vault, you can either use the self-managed migration option [XML Alias Gateway](../tokenize-and-store-cards/xml-alias-gateway.md) or [contact us](../have-a-question-1/contact-us.md) for a manuel one-time import of large chunks of credit card data.
+If you have credit card data that is currently stored somewhere else and would like to migrate them to the PCI Proxy vault, you can either use the self-managed migration option [Vault \(alias gateway\)](../tokenize-and-store-cards/xml-alias-gateway.md) or [contact us](../have-a-question-1/contact-us.md) for a manual one-time import of large chunks of credit card data.
 
