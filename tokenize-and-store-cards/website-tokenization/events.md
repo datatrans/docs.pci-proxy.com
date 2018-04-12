@@ -1,5 +1,5 @@
 ---
-description: Return events for Inline Mode
+description: Listen on events for Inline Mode
 ---
 
 # Events

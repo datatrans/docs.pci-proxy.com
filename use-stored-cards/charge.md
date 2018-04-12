@@ -6,7 +6,7 @@ description: Authorize and/or settle a stored credit card.
 
 Lets assume you want to authorize or settle an amount on the payment data that you have collected earlier.
 
-You can simply send an XML request with a token to charge the stored card.
+You can simply `send an XML request with a token to charge the stored card.`
 
 > _For this feature, you need an existing acquiring contract. Please see our list of _[_**Supported Acquirer**_](../resources/supported-acquirer.md)_._
 
@@ -39,7 +39,7 @@ In the example above the CVV code for the payment method \(VIS\) is mandatory. T
 Open the following URL with parameters:
 
 ```javascript
-https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp        // HOST: Payment Page Endpoint
+https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp            // HOST: Payment Page Endpoint
                 ?theme=DT2015                                
                 &merchantId=1100004624                       // Merchant ID you received at adding a Acquirer
                 &amount=1337                                 // Specify the amount you want to authorize
@@ -58,8 +58,8 @@ https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp        // HOST: Payment Pa
 
 Send an XML request to Datatrans' XML Gateway Endpoint by using the following call:
 
-```bash
-curl "https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp"         // HOST: XML Gateway Endpoint
+```javascript
+$ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp"         // HOST: XML Gateway Endpoint
         -H "Content-Type: application/xml"                             // Content-Type: application/xml
 
         -d '<?xml version="1.0" encoding="UTF-8" ?>                    // We expect an XML formatted message       
@@ -120,7 +120,7 @@ If the authorization was successful, you will additionally receive the following
 
 Example of successful authorization response:
 
-```markup
+```javascript
 <?xml version=”1.0” encoding=”UTF-8”?> 
     <authorizationService version=”2”> 
         <body merchantId=”1000011011” status=”accepted”> 
@@ -165,7 +165,7 @@ If the authorization failed, you will additionally receive the following error p
 
 Example of failed authorization response:
 
-```markup
+```javascript
 <?xml version=”1.0” encoding=”UTF-8”?> 
     <authorizationService version=”2”> 
         <body merchantId=”1000011011” status=”accepted”> 
@@ -181,7 +181,8 @@ Example of failed authorization response:
                     </uppCustomerDetails> 
                     <sign>30916165706580013</sign> 
                     <reqtype>NOA</reqtype> 
-                </request>
+                </request> 
+
                 <error>
                     <errorCode>1403</errorCode>
                     <errorMessage>declined</errorMessage>

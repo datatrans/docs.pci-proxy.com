@@ -2,7 +2,7 @@
 description: Securely collect and tokenize card data on your website.
 ---
 
-# Inline Mode
+# Capture \(iframes\)
 
 The Inline Mode allows you to securely collect card data by injecting iframes to your DOM. A separate iframe for both, card number and CVV code is used. Thereby, sensitive data never touches your server and allows you to capture all other related card data such as cardholder name, expiry date, etc. directly by yourself.
 
@@ -12,9 +12,12 @@ The Inline Mode allows you to securely collect card data by injecting iframes to
 
 Browser compatibility for the Inline Mode:
 
-| Internet Explorer | Firefox | Chrome | Safari | iOS Safari | Android |
-| --- | --- |
-| &gt;=11 | &gt;=30 | &gt;=32 | &gt;=7 | &gt;=6 | &gt;=5 |
+* Internet Explorer &gt;= 11
+* Firefox &gt;= 30
+* Chrome &gt;= 32
+* Safari &gt;= 7
+* iOS Safari &gt;= 6
+* Android &gt;= 5
 
 ## 1. Setup Inline Mode
 
@@ -97,7 +100,7 @@ Inline.on("success", function(data) {
 Once you've transmitted the transactionId to your server \(together with the the rest of your form\) you can execute a server to server GET Token request to get tokens for card number and CVV code:
 
 {% code-tabs %}
-{% code-tabs-item title="Example: Basic usage" %}
+{% code-tabs-item title="Example: Request" %}
 ```bash
 $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \ 
         -u 'merchantId:password'
@@ -105,7 +108,7 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 {% endcode-tabs-item %}
 
 {% code-tabs-item title="Response" %}
-```javascript
+```bash
 {
   "aliasCC" : "424242SKMPRI4242",
   "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
@@ -119,8 +122,6 @@ Please also have a look at [Styling](initialization-and-styling.md), [Events](ev
 ## Examples
 
 {% embed data="{\"url\":\"https://codepen.io/pciproxy/full/VXELBZ\",\"type\":\"rich\",\"title\":\"PCI Proxy Inline Mode Sample\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/i.cdpn.io/1889199.VXELBZ.small.46c6ddbe-9001-47b2-97c5-22c3134bc8d2.png\",\"width\":384,\"height\":225,\"aspectRatio\":0.5859375},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/pciproxy/embed/preview/VXELBZ?height=300&slug-hash=VXELBZ&default-tabs=html,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\"https://codepen.io/pciproxy/embed/preview/VXELBZ?height=300&amp;slug-hash=VXELBZ&amp;default-tabs=html,result&amp;host=https://codepen.io&amp;embed-version=2\\" style=\\"border: 0; width: 100%; height: 300px;\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null},\"caption\":\"Inline Mode Payment Form Sample\"}" %}
-
-
 
 {% hint style="info" %}
 #### Questions?

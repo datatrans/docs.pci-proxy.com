@@ -2,7 +2,7 @@
 description: Tokenize and store cards with our Tokenization APIs
 ---
 
-# Tokenize & store cards
+# Collect & store cards
 
 In general, you have different inbound channels where you receive sensitive card data from customers or partners. In order to avoid sensitive card data touching your systems, you pick the relevant source of credit card data and implement the respective PCI Proxy API.
 

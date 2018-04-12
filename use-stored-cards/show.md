@@ -1,6 +1,6 @@
 # Show
 
-PCI Proxy enables you to see the original credit card number of a stored credit card. Basically, it is a web interface that can convert a token back into its original credit card number.
+PCI Proxy enables you to see the original credit card number of a stored credit card. Basically, it is `a web interface that can convert a token back into its original credit card number`.
 
 **Consider a business that needs this ability:**  
 _You are a travel technology company providing hotels with software to manage their reservations. Authorized hotel employees need to retrieve single credit cards from reservations to book a no-show fee with their POS terminal if a guest does not show up._
