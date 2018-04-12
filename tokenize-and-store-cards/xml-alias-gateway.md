@@ -120,22 +120,23 @@ Invalid value passed for one of the attributes \(e.g. merchantId\).
 {% code-tabs %}
 {% code-tabs-item title="Example Request" %}
 ```markup
-curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Content-Type: text/xml" -d '
-<?xml version="1.0" encoding="UTF-8"?>
- <aliasCCService version="1">
-   <body merchantId="1000011011">
-     <alias>
-        <request>
-            <cardno>375811111111115</cardno>
-        </request>
-     </alias>
-     <alias>
-        <request>
-            <cvv>123</cvv>
-        </request>
-     </alias>
-   </body>
- </aliasCCService>
+curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
+  -H "Content-Type: text/xml" \
+  -d '<?xml version="1.0" encoding="UTF-8"?>
+       <aliasCCService version="1">
+         <body merchantId="1000011011">
+           <alias>
+              <request>
+                  <cardno>375811111111115</cardno>
+              </request>
+           </alias>
+           <alias>
+              <request>
+                  <cvv>123</cvv>
+              </request>
+           </alias>
+         </body>
+       </aliasCCService>'
 ```
 {% endcode-tabs-item %}
 
@@ -170,22 +171,23 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H
 
 {% code-tabs-item title="Bad Request Error Case" %}
 ```markup
-curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" -X POST -H "Content-Type: text/xml" -d '
-<?xml version="1.0" encoding="UTF-8"?>
- <aliasCCService version="1">
-   <body merchantId="1000011011">
-     <alias>
-        <request>
-            <cardno>000</cardno>
-        </request>
-     </alias>
-     <alias>
-        <request>
-            <cvv>a</cvv>
-        </request>
-     </alias>
-   </body>
- </aliasCCService>'
+curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
+  -H "Content-Type: text/xml" \
+  -d '<?xml version="1.0" encoding="UTF-8"?>
+       <aliasCCService version="1">
+         <body merchantId="1000011011">
+           <alias>
+              <request>
+                  <cardno>000</cardno>
+              </request>
+           </alias>
+           <alias>
+              <request>
+                  <cvv>a</cvv>
+              </request>
+           </alias>
+         </body>
+       </aliasCCService>'
 ```
 {% endcode-tabs-item %}
 
