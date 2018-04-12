@@ -26,6 +26,12 @@ PCI Proxy supports all major credit card brands:
 
 ## Getting Started
 
+1. [**Sign up**](https://www.pci-proxy.com/pci-proxy/contact/) for a free 30-day trial account \(no billing information required\).
+2. After a short internal confirmation, you will receive your preliminary Sandbox credentials.
+3. [**Log in**](https://admin.sandbox.datatrans.com/) with your credentials and follow instructions to create your own password.
+
+Play with our Sandbox environment to test PCI Proxy thoroughly. The Sandbox environment is a self-contained testing environment, identical to our productive environment.
+
 PCI Proxy can be integrated by following these four steps to achieve PCI compliance:
 
 {% page-ref page="setup/" %}
