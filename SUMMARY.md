@@ -2,7 +2,7 @@
 
 * [Getting Started](README.md)
 * [Setup](setup/README.md)
-  * [Sandbox Account](setup/sandbox-account.md)
+  * [Sandbox account](setup/sandbox-account.md)
   * [IP Whitelisting](setup/ip-whitelisting.md)
 * [Collect & store cards](tokenize-and-store-cards/README.md)
   * [Filter \(payloads\)](tokenize-and-store-cards/filter-payloads.md)
