@@ -7,7 +7,7 @@ description: Callback function to listen in on events for Inline Mode
 Use the `Inline.on(...)` callback function to subscribe to one or more of the `ready`, `change`, `error` or `validate` events.
 
 {% tabs %}
-{% tab title="ready" %}
+{% tab title="on ready" %}
 The ready event will be emitted once the iframes are loaded.
 
 ```javascript
@@ -21,7 +21,7 @@ Inline.on("ready", function() {
 ```
 {% endtab %}
 
-{% tab title="validate" %}
+{% tab title="on validate" %}
 The validate event will be emitted once the form was submitted with `Inline.submit();`
 
 ```javascript
@@ -51,7 +51,7 @@ Where the `event` callback object has the following structure:
 ```
 {% endtab %}
 
-{% tab title="success" %}
+{% tab title="on success" %}
 The success event will be emitted if the tokenization was successful.
 
 ```javascript
@@ -81,7 +81,7 @@ Where the `event` callback object has the following structure:
 ```
 {% endtab %}
 
-{% tab title="change" %}
+{% tab title="on change" %}
 The `change` event will be emitted whenever one of the following events are getting triggered:
 
 * `onkeyup`
@@ -121,7 +121,7 @@ Where the `event` callback object has the following structure:
 ```
 {% endtab %}
 
-{% tab title="error" %}
+{% tab title="on error" %}
 The error event will be emitted if there was an error after calling `Inline.initTokenize(...)`.  
 Possible scenarios are:
 
@@ -138,4 +138,6 @@ Inline.on("error", function(data) {
 ```
 {% endtab %}
 {% endtabs %}
+
+
 
