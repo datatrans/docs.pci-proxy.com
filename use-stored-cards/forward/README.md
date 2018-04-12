@@ -14,9 +14,7 @@ PCI Proxy supports various communication methods to forward sensitive card data 
 
 {% page-ref page="sftp.md" %}
 
-
-
-{% hint style="warning" %}
+{% hint style="success" %}
 **Your requests are populated with sensitive card data after they leave your systems to keep you out of PCI scope.**
 
 Using Receivers not listed on [supported Receivers \(Gateways\)](../../resources/supported-receivers.md) requires a valid AOC \(Attestation of Compliance\) and either a letter of Acknowledgment or an extract of the terms and conditions which proves the PCI DSS compliance of the Receiver. 
