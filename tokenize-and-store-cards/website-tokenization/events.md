@@ -123,6 +123,7 @@ Where the `event` callback object has the following structure:
 
 {% tab title="on error" %}
 The error event will be emitted if there was an error after calling `Inline.initTokenize(...)`.  
+  
 Possible scenarios are:
 
 * Wrong merchantId configured in `Inline.init(...);`
