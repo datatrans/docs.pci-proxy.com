@@ -4,7 +4,7 @@ description: Sign up and setup your sandbox account.
 
 # Setup
 
-Before going live, use our Sandbox environment to test it thoroughly. The Sandbox environment is a self-contained testing environment, identical to our productive environment.
+Play with our Sandbox environment to test PCI Proxy thoroughly. The Sandbox environment is a self-contained testing environment, identical to our productive environment.
 
 ## 1. Create Sandbox Account
 
@@ -14,7 +14,7 @@ Follow these steps to create your Sandbox account:
 2. After a short internal confirmation, you will receive your preliminary Sandbox credentials.
 3. [**Log in**](https://admin.sandbox.datatrans.com/) with your credentials and follow instructions to create your own password.
 
-> Note you receive** two separate merchant IDs** when using [_Website Tokenization_](../tokenize-and-store-cards/website-tokenization/) and [_Filter Payloads_](../tokenize-and-store-cards/filter-payloads.md).
+> Note you receive** two separate merchant IDs** when _Website Tokenization_ and [_Filter Payloads_](../tokenize-and-store-cards/filter-payloads.md).
 
 ## 2. Setup Sandbox Account
 
