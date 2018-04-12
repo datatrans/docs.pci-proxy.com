@@ -8,6 +8,14 @@ PCI Proxy allows you to keep your existing business processes as before. As we c
 
 With the following methods you can use stored card data:
 
+{% page-ref page="forward/" %}
+
+> Pass stored card data on to any PCI-compliant Receiver.
+
+{% page-ref page="show.md" %}
+
+> Let authorized users manually de-tokenize stored card to see it.
+
 {% page-ref page="charge.md" %}
 
 > Use [Datatrans](https://www.datatrans.ch/en) payment gateway to charge or validate a stored card.
@@ -16,11 +24,5 @@ With the following methods you can use stored card data:
 
 > Check if a tokenized card is still a valid credit card.
 
-{% page-ref page="forward/" %}
 
-> Pass stored card data on to any PCI-compliant Receiver.
-
-{% page-ref page="show.md" %}
-
-> Let authorized users manually de-tokenize stored card to see it.
 
