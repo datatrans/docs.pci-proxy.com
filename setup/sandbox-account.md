@@ -86,6 +86,8 @@ We have a set of test credit card numbers that you can use in our sandbox enviro
 | ![](../.gitbook/assets/logo_jcb.png) | JCB | 3569990010030400 | 356999PUCUIV0400 | 12/2018 | 123 | No | No |
 | ![](../.gitbook/assets/logo_elo%20%281%29.png) | ELO | 6550000000000001 | 655000BFQHZD0001 | 12/2018 | 123 | - | - |
 | ![](../.gitbook/assets/logo_elo.png) | ELO | 6362970000457013 | 636297KMDXHG7013 | 12/2018 | 123 | - | - |
+| ![](../.gitbook/assets/logo_cup%20%281%29.png) | CUP | 6222821234560017 | 622282XGRFXB0017 | 12/2018 | - | No | Yes |
+| ![](../.gitbook/assets/logo_cup.png) | CUP | 6223164991230014 | 622316XWWQYN0014 | 12/2018 | - | No | No |
 
 {% hint style="info" %}
 Full credit card information cannot be used in the sandbox.
