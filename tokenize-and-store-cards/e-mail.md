@@ -105,5 +105,9 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_PayByEmail" \
 In test mode, only [test credit cards](../setup/sandbox-account.md) are allowed.
 {% endhint %}
 
+## Next up
+
+{% page-ref page="../use-stored-cards/" %}
+
 
 
