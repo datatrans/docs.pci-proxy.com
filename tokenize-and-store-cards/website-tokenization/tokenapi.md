@@ -73,13 +73,11 @@ Invalid username:password
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-
 {% hint style="info" %}
 The service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
 {% endhint %}
 
-
+### Examples
 
 {% code-tabs %}
 {% code-tabs-item title="Example: Basic usage" %}
@@ -99,8 +97,6 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-
-
 {% code-tabs %}
 {% code-tabs-item title="Example: returnPaymentMethod=true returning paymentMethod" %}
 ```bash
@@ -119,8 +115,6 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
-
-
 
 {% code-tabs %}
 {% code-tabs-item title="Example: mandatoryAliasCVV=true w/ transactionId that has no CVV token" %}
