@@ -1,13 +1,13 @@
 ---
-description: Listen on events for Inline Mode
+description: Callback function to listen in on events for Inline Mode
 ---
 
 # Events
 
 Use the `Inline.on(...)` callback function to subscribe to one or more of the `ready`, `change`, `error` or `validate` events.
 
-## On `ready` event
-
+{% tabs %}
+{% tab title="ready" %}
 The ready event will be emitted once the iframes are loaded.
 
 ```javascript
@@ -19,9 +19,9 @@ Inline.on("ready", function() {
  Inline.setPlaceholder("cvv", "CVV");
 });
 ```
+{% endtab %}
 
-## On `validate` event
-
+{% tab title="validate" %}
 The validate event will be emitted once the form was submitted with `Inline.submit();`
 
 ```javascript
@@ -49,9 +49,9 @@ Where the `event` callback object has the following structure:
   "hasErrors": true // indicates if one of the fields has valid=false
 }
 ```
+{% endtab %}
 
-## On `success` event
-
+{% tab title="success" %}
 The success event will be emitted if the tokenization was successful.
 
 ```javascript
@@ -79,9 +79,9 @@ Where the `event` callback object has the following structure:
   }
 }
 ```
+{% endtab %}
 
-## On `change` event
-
+{% tab title="change" %}
 The `change` event will be emitted whenever one of the following events are getting triggered:
 
 * `onkeyup`
@@ -119,9 +119,9 @@ Where the `event` callback object has the following structure:
   }
 }
 ```
+{% endtab %}
 
-## On `error` event
-
+{% tab title="error" %}
 The error event will be emitted if there was an error after calling `Inline.initTokenize(...)`.  
 Possible scenarios are:
 
@@ -136,4 +136,6 @@ Inline.on("error", function(data) {
   // something bad happened
 });
 ```
+{% endtab %}
+{% endtabs %}
 

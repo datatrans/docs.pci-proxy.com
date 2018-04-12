@@ -125,6 +125,10 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 
 {% embed data="{\"url\":\"https://codepen.io/pciproxy/full/VXELBZ\",\"type\":\"rich\",\"title\":\"PCI Proxy Inline Mode Sample\",\"icon\":{\"type\":\"icon\",\"url\":\"https://codepen.io/favicons/favicon-192x192.png\",\"width\":192,\"height\":192,\"aspectRatio\":1},\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://s3-us-west-2.amazonaws.com/i.cdpn.io/1889199.VXELBZ.small.46c6ddbe-9001-47b2-97c5-22c3134bc8d2.png\",\"width\":384,\"height\":225,\"aspectRatio\":0.5859375},\"embed\":{\"type\":\"app\",\"url\":\"https://codepen.io/pciproxy/embed/preview/VXELBZ?height=300&slug-hash=VXELBZ&default-tabs=html,result&host=https://codepen.io&embed-version=2\",\"html\":\"<iframe src=\\"https://codepen.io/pciproxy/embed/preview/VXELBZ?height=300&amp;slug-hash=VXELBZ&amp;default-tabs=html,result&amp;host=https://codepen.io&amp;embed-version=2\\" style=\\"border: 0; width: 100%; height: 300px;\\" allowfullscreen></iframe>\",\"height\":300,\"aspectRatio\":null},\"caption\":\"Inline Mode Payment Form Sample\"}" %}
 
+{% hint style="warning" %}
+In test mode, only [test credit cards](../../setup/sandbox-account.md#test-card-numbers) are allowed.
+{% endhint %}
+
 Please also have a look at [Styling](initialization-and-styling.md), [Events](events.md) and [Token API](tokenapi.md) references.
 
 ## Next up
