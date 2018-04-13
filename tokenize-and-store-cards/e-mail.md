@@ -18,6 +18,13 @@ Th PayByEmail service generates a temporary payment link.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==  
+see 
+
+[Setup](../setup/)
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="Content-Type" type="string" required=false %}
 API consumes application/xml
 {% endapi-method-parameter %}
@@ -33,15 +40,15 @@ Language in which payment page is shown \(e.g. en\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currrency" type="string" required=false %}
-Currency in which amount is shown \(e.g. eur\)
+Transaction currency – ISO character code \(EUR, etc.\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="amount" type="string" required=false %}
-Transaction amount in cents \(e.g. 123.50 = 12350\)
+Transaction amount in smallest unit \(e.g. 123.50 = 12350\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="refno" type="string" required=false %}
-Your reference number \(defined by you - AN18\)
+Your unique reference number \(defined by you - AN18\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="duedate" type="string" required=false %}

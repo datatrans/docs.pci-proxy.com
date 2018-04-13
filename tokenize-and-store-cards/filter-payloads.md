@@ -42,7 +42,7 @@ PULL method
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="X-CC-MERCHANT-ID" type="string" required=true %}
-Your merchant id \(e.g. 1000011011\)
+Your unique account id at PCI Proxy \(e.g. 1000011011\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="X-CC-SIGN" type="string" required=true %}

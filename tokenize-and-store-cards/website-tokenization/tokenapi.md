@@ -17,7 +17,10 @@ This endpoint returns credit card number token and CVV token for transactionId.
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
+Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==  
+see 
+
+[Setup](../../setup/)
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
