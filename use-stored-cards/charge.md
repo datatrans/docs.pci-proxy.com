@@ -4,21 +4,7 @@ description: Check or charge a stored credit card.
 
 # Authorize
 
-You can simply send an XML request with a token to check, reserve an amount, or charge a stored card.
-
-{% hint style="warning" %}
-_For this feature, you need an existing acquiring contract. Please see our _[_**Supported Acquirer**_](../resources/supported-acquirer.md)_._
-{% endhint %}
-
-## 1. Add acquirer to your account
-
-| You can choose from a list of [**Supported Acquirer**](../resources/supported-acquirer.md) and contact us at [setup@pci-proxy.com](mailto:setup@pci-proxy.com) |
-| :--- |
-
-
-## 2. Authorize a stored card
-
-When you authorize a stored credit card, you can choose between different process options:
+You can simply send an XML request with a token to **check**, **reserve** an amount, or **charge** a stored card. When you authorize a stored credit card, you can choose between different process options:
 
 {% tabs %}
 {% tab title="Check validity" %}
@@ -39,6 +25,18 @@ When you [**charge a stored card**](charge.md#examples), the authorization and s
 {% hint style="success" %}
 Stored cards can be used multiple times for **recurring transactions** or **One-Click payments**. 
 {% endhint %}
+
+## 1. Add acquirer to your account
+
+| You can choose from a list of [**Supported Acquirer**](../resources/supported-acquirer.md) and contact us at [setup@pci-proxy.com](mailto:setup@pci-proxy.com) |
+| :--- |
+
+
+{% hint style="warning" %}
+For this feature, you need an existing acquiring contract.
+{% endhint %}
+
+## 2. Authorize a stored card
 
 {% api-method method="post" host="https://pilot.datatrans.biz" path="/upp/jsp/XML\_authorize.jsp" %}
 {% api-method-summary %}
