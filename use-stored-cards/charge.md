@@ -18,7 +18,7 @@ _For this feature, you need an existing acquiring contract. Please see our _[_**
 
 ## 2. Authorize a stored card
 
-When authorizing a stored credit card, you can choose between different methods:
+When you authorize a stored credit card, you can choose between different process options:
 
 {% tabs %}
 {% tab title="Check validity" %}
