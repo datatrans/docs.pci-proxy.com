@@ -16,7 +16,7 @@ With the following methods you can use stored card data:
 
 > Let authorized users manually de-tokenize stored card to see it.
 
-{% page-ref page="charge.md" %}
+{% page-ref page="authorize.md" %}
 
 > Use [Datatrans](https://www.datatrans.ch/en) payment gateway to charge or validate a stored card.
 

@@ -8,17 +8,17 @@ You can simply send an XML request with a token to **check**, **reserve** an amo
 
 {% tabs %}
 {% tab title="Check validity" %}
-When you [**check a stored card**](charge.md#examples), we run your query against the Visa & Mastercard network to check if the card is still valid. The authorization does not appear on the customer statement but still gives you the ability to test the validity of a stored credit card.
+When you [**check a stored card**](authorize.md#examples), we run your query against the Visa & Mastercard network to check if the card is still valid. The authorization does not appear on the customer statement but still gives you the ability to test the validity of a stored credit card.
 {% endtab %}
 
 {% tab title="Reserve an amount" %}
-When you [**reserve an amount**](charge.md#examples) on a stored card, the monthly allowance of the cardholder is reduced by the authorised amount, no matter whether the transaction will be settled later or not. The authorised amount is reserved for the merchant and should be settled within the period agreed with the acquirer. The issuer returns an authorisation code which serves as the reference of the authorisation. Once a transaction has been successfully authorised it can be settled.
+When you [**reserve an amount**](authorize.md#examples) on a stored card, the monthly allowance of the cardholder is reduced by the authorised amount, no matter whether the transaction will be settled later or not. The authorised amount is reserved for the merchant and should be settled within the period agreed with the acquirer. The issuer returns an authorisation code which serves as the reference of the authorisation. Once a transaction has been successfully authorised it can be settled.
 
 **Important:** the cardholder will not be charged without settlement. Authorisation and settlement can also be processed in one single step \(see Charge amount\).
 {% endtab %}
 
 {% tab title="Charge cardholder" %}
-When you [**charge a stored card**](charge.md#examples), the authorization and settlement will be processed in one single step. The settlement is often also referred to as “capture” or “clearing”. Once you sent a charge request, the authorized amount is reduced from the monthly allowance of the cardholder and will be automatically settled, which means that the cardholder will be actually charged.
+When you [**charge a stored card**](authorize.md#examples), the authorization and settlement will be processed in one single step. The settlement is often also referred to as “capture” or “clearing”. Once you sent a charge request, the authorized amount is reduced from the monthly allowance of the cardholder and will be automatically settled, which means that the cardholder will be actually charged.
 {% endtab %}
 {% endtabs %}
 
