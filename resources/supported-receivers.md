@@ -54,6 +54,7 @@
 | [SaferPay](https://www.six-payment-services.com/en/site/e-commerce/home.html) | PULL |
 | [Sagepay](http://www.sagepay.co.uk/) | PULL |
 | [Sipay](http://www.sipay.es/en/) | PUSH |
+| [Spreedly](https://www.spreedly.com/) | PULL |
 | [Six Payment Services](https://www.six-payment-services.com/en/home.html) | PULL |
 | [Stripe](https://stripe.com/de) | PULL |
 | [Virtual Merchant](https://www.myvirtualmerchant.com/VirtualMerchant/) | PULL |
