@@ -11,7 +11,7 @@
     * [Events](tokenize-and-store-cards/website-tokenization/events.md)
     * [Token API](tokenize-and-store-cards/website-tokenization/tokenapi.md)
   * [Capture \(email\)](tokenize-and-store-cards/e-mail.md)
-  * [Vault \(alias gateway\)](tokenize-and-store-cards/xml-alias-gateway.md)
+  * [Vault \(alias gateway\)](tokenize-and-store-cards/vault.md)
 * [Use stored cards](use-stored-cards/README.md)
   * [Forward](use-stored-cards/forward/README.md)
     * [HTTPS](use-stored-cards/forward/https.md)
