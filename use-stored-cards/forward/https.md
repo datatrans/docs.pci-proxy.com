@@ -6,7 +6,7 @@ description: Distribute stored payment data to any PCI-compliant API endpoint.
 
 ## 1. Add Receiver
 
-Before you can forward stored card data to a remote server you have to add the payload to your account. You can either pick from our list of [supported Receivers \(Gateways\)](../../resources/supported-receivers.md) or add new ones:
+Before you can forward stored card data to a remote server you have to add the remote server as a Receiver to your account. You can either pick from our list of [supported Receivers](../../resources/supported-receivers.md) or add new ones:
 
 | Click to [**Add Receivers**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) |
 | :--- |
