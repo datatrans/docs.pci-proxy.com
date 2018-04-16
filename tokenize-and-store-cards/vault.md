@@ -23,8 +23,7 @@ The XML Alias Gateway converts credit card data into tokens. The service allows 
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
-Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==  
-\(see Setup\)
+Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Content-Type" type="string" required=false %}
