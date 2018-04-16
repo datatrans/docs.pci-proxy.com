@@ -106,13 +106,13 @@ Once you've transmitted the transactionId to your server \(together with the the
 {% code-tabs %}
 {% code-tabs-item title="Example: Request" %}
 ```bash
-$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \ 
-        -u 'merchantId:password'
+curl https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=180416140429310027 
+    -u 'merchantId:password'
 ```
 {% endcode-tabs-item %}
 
 {% code-tabs-item title="Response" %}
-```bash
+```javascript
 {
   "aliasCC" : "424242SKMPRI4242",
   "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
