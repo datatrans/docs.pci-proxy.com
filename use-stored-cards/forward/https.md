@@ -1,6 +1,10 @@
+---
+description: Distribute stored payment data to any PCI-compliant API endpoint.
+---
+
 # HTTPS
 
-## 1. Add Receiver to your account
+## 1. Add Receiver
 
 Adding Receivers is easy. You can either pick from our list of [supported Receivers \(Gateways\)](../../resources/supported-receivers.md) or add new ones:
 

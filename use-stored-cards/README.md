@@ -18,9 +18,7 @@ With the following methods you can use stored card data:
 
 {% page-ref page="authorize.md" %}
 
-> Use [Datatrans](https://www.datatrans.ch/en) payment gateway to charge or validate a stored card.
-
-> Check if a tokenized card is still a valid credit card.
+> Use [Datatrans](https://www.datatrans.ch/en) payment gateway to charge or validate \(check\) a stored card.
 
 
 
