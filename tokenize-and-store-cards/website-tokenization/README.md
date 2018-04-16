@@ -54,12 +54,12 @@ In order for the Inline Mode to insert the card number and CVV iframes at the ri
         <div>
             <label for="card-number-placeholder">Card Number</label>
             <!-- card number container -->
-            <div id="card-number-placeholder" style="width: 250px; height: 38px;"></div>
+            <div id="card-number-placeholder" style="width: 250px;"></div>
         </div>
         <div>
             <label for="cvv-placeholder">Cvv</label>
             <!-- cvv container -->
-            <div id="cvv-placeholder" style="width: 90px; height: 38px;"></div>
+            <div id="cvv-placeholder" style="width: 90px;"></div>
         </div>
 
         <button type="button" id="go">Get Token!</button>
