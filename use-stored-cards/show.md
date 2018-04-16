@@ -31,7 +31,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 
 **3. Embed NoShow link from the response into your application**
 
-```text
+```javascript
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <response>
   <url>https://api.sandbox.datatrans.com/upp/noshow?token=27cfba38-a606-49c0-9f03-c3bc6d580a66</url>
@@ -39,17 +39,13 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 </response>
 ```
 
-**4. Once the user clicks on the link an iFrame opens where the user has to enter a six digit code which will be sent automatically by email to **
+**4. Once the user clicks on the link an email will be sent to  `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually. **
 
-`userEmail`
-
-![](../.gitbook/assets/unbenannt.JPG)
-
-5.
+**5. Subsequently the new device has been authorized the user may enter a four digit security code in the opened iFrame to retrieve plain text credit card number. **
 
 Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
-**5. Optional: Add JavaScript callbacks/hooks**
+**6. Optional: Add JavaScript callbacks/hooks**
 
 ```javascript
 // Use attached Javascript callsbacks/hooks file to see which events are getting emitted to the parent frame.
