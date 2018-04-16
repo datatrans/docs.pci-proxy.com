@@ -6,11 +6,11 @@ description: Distribute stored payment data to any PCI-compliant API endpoint.
 
 ## 1. Add Receiver
 
-Adding Receivers is easy. You can either pick from our list of [supported Receivers \(Gateways\)](../../resources/supported-receivers.md) or add new ones:
+Before you can forward stored card data to a remote server you have to add the payload to your account. You can either pick from our list of [supported Receivers \(Gateways\)](../../resources/supported-receivers.md) or add new ones:
 
 | Click to [**Add Receivers**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) |
 | :--- |
-| _Learn more about _[_**Request Types**_](../../resources/request-types.md)_._ |
+
 
 ## 2a. Redirect a PULL Receiver through PCI Proxy
 
