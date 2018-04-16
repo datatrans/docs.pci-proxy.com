@@ -12,7 +12,7 @@ All happens before sensitive card data ever touches your servers to reduce your 
 
 ## 1. Add Channels
 
-Before you can filter payloads from a remote server you have to add the payload as a Channel to your account. You can either pick from our list of [supported Channels](../resources/supported-channels.md) or add new ones:
+Before you can filter payloads from a remote server you have to add the remote server as a Channel to your account. You can either pick from our list of [supported Channels](../resources/supported-channels.md) or add new ones:
 
 | Click to [**Add Channels**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-channel.html) |
 | :--- |
