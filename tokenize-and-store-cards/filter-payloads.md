@@ -12,11 +12,11 @@ All happens before sensitive card data ever touches your servers to reduce your 
 
 ## 1. Add Channels
 
-Adding Channels is easy. Before you can start to filter payloads you have to You can either pick from our list of [supported Channels](../resources/supported-channels.md) or add new ones:
+Before you can filter payloads from a remote server you have to add the payload as a Channel to your account. You can either pick from our list of [supported Channels](../resources/supported-channels.md) or add new ones:
 
 | Click to [**Add Channels**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-channel.html) |
 | :--- |
-| _Learn more about _[_**Request Types**_](../resources/request-types.md)_._ |
+
 
 ## 2. Select filter method
 
@@ -92,9 +92,7 @@ Once a PULL Channel is added to your merchantId, simply redirect requests to it 
 {% code-tabs %}
 {% code-tabs-item title="Pull reservations from Booking.com" %}
 ```bash
-curl -X POST \
-  https://sandbox.pci-proxy.com/v1/pull \
-  -H 'Content-Type: application/xml' \
+curl https://sandbox.pci-proxy.com/v1/pull \
   -H 'X-CC-MERCHANT-ID: merchantId' \
   -H 'X-CC-SIGN: securitysign' \
   -H 'X-CC-URL: https://secure-supply-xml.booking.com/hotels/xml/reservations' \
@@ -141,7 +139,7 @@ curl -X POST \
 {% endcode-tabs %}
 
 {% hint style="success" %}
-The response from Booking.com was automatically filtered for credit card data. Located card data is now stored in our vaults in Switzerland while card tokens have been inserted into the payload.
+The response from Booking.com is automatically filtered for credit card data. Located card data is now stored in our vaults in Switzerland while card tokens have been inserted into the payload.
 {% endhint %}
 
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/push:uniquePushKey" %}
