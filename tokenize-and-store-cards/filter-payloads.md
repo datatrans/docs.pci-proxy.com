@@ -24,7 +24,7 @@ PCI Proxy supports two different filter methods [`/v1/pull`](filter-payloads.md#
 
 Collecting card data from a Channel via web service can work in two ways. In general, either you perform a pull request to receive card data from the Channel or a Channel starts a push request to send you card data. PCI Proxy can extract sensitive data in both operations.
 
-| `/v1/pull` method | `/v1/push` method |
+| [**`/v1/pull`**](filter-payloads.md#pull-method)  | [**`/v1/push`**](filter-payloads.md#push-method)  |
 | --- | --- | --- |
 | You start the request. | The Channel starts the request. |
 | ![](../.gitbook/assets/channel_pull_status_quo_color%20%281%29.png) | ![](../.gitbook/assets/channel_push_status_quo_color.png) |
@@ -188,16 +188,16 @@ In test mode, only [test credit cards](../setup/sandbox-account.md#test-card-num
 
 ### Examples
 
-When you [**add a PUSH Channel**](filter-payloads.md#1-add-channel-to-your-account) to your account, you receive a `{uniquePushKey}` for each Channel that is set up. Together with our PCI Proxy PUSH service URL, it results in a `PCI Proxy PUSH Endpoint` that is specific to that Channel. Now, redirect requests coming from a Channel with a single step:
+When you [**add a PUSH Channel**](filter-payloads.md#1-add-channel-to-your-account) to your account, you receive a `{uniquePushKey}` for each Channel that is set up. Together with our PCI Proxy PUSH service URL, it results in a `unique PCI Proxy Endpoint` that is specific to that Channel. Now, redirect requests coming from a Channel with a single step:
 
-1. **Change endpoint at Channel from `Your API Endpoint` to `unique PCI Proxy PUSH Endpoint`**
+1. **Change endpoint at Channel from `Your API Endpoint` to `unique PCI Proxy Endpoint`**
 
 {% hint style="info" %}
 If needed, whitelist [IP addresses](../setup/ip-whitelisting.md) of PCI Proxy at Channel.
 {% endhint %}
 
 {% hint style="success" %}
-If Channel sends a request to Channel-specific `PCI Proxy PUSH Endpoint` , PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
+If Channel sends a request to its `unique PCI Proxy Endpoint`, PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
 {% endhint %}
 
 ## Next up
