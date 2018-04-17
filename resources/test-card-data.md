@@ -31,7 +31,7 @@ Full credit card information cannot be used in the sandbox.
 | ![](../.gitbook/assets/logo_cup%20%281%29.png) | CUP | 6222821234560017 | 622282XGRFXB0017 | 12/2018 | - | No | Yes |
 | ![](../.gitbook/assets/logo_cup.png) | CUP | 6223164991230014 | 622316XWWQYN0014 | 12/2018 | - | No | No |
 
-| [**Create CVV Token** ](https://pilot.datatrans.biz/upp/jsp/upStart.jsp?uppAliasOnly=yes&merchantId=1000011011&amount=1000&currency=CHF&refno=800381&sign=30916165706580013&paymentmethod=VIS&aliasCC=70119122433810042&expm=12&expy=18&cvv=123)for CVV code 123 |
+| [**Create single-use CVV Token** ](https://pilot.datatrans.biz/upp/jsp/upStart.jsp?uppAliasOnly=yes&merchantId=1000011011&amount=1000&currency=CHF&refno=800381&sign=30916165706580013&paymentmethod=VIS&aliasCC=70119122433810042&expm=12&expy=18&cvv=123)for CVV code 123 |
 | --- |
 
 
