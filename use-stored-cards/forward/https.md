@@ -12,6 +12,67 @@ Before you can forward stored card data to a remote server you have to add the r
 | :--- |
 
 
+## 2. Select forward method
+
+PCI Proxy supports 2 forwarding methods `/v1/pull/` and `/v1/push/` to suit all your needs.
+
+Forwarding card data to a remote server via HTTPS can work in two ways. In general, either you perform a pull request to forward card data to the Receiver or a Receiver starts a push request to receive card data from you in the response. PCI Proxy can populate both operations with sensitive data.
+
+| `/v1/pull/` | `/v1/push/` |
+| --- | --- | --- |
+| You start the request. | The Receiver starts the request. |
+| ![](../../.gitbook/assets/receiver_pull_pciproxy_color.png) | ![](../../.gitbook/assets/receiver_push_pciproxy_color.png) |
+
+
+
+{% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
+{% api-method-summary %}
+PULL method
+{% endapi-method-summary %}
+
+{% api-method-description %}
+`/v1/pull` method allows you to send a request via PCI Proxy to a Receiver API endpoint. When the request arrives at PCI Proxy, your payload is instantly filtered for tokens, all tokens will be detokenized and your payload is populated with sensitive card data before it arrives at the Receiver. Thereby, your Receiver obtains full credit card data. Just add the following header params to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be kept and routed through PCI Proxy without modification.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="X-CC-MERCHANT-ID" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="X-CC-MERCHANT-ID" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+
 ## 2a. Redirect a PULL Receiver through PCI Proxy
 
 | **PCI Proxy PULL Endpoint:** |

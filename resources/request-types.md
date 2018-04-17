@@ -51,7 +51,7 @@ You will use the _Receiver PULL Proxy_ when **you start the request with card da
 
 | PULL Receiver Process Flow w/o PCI Proxy | PULL Receiver Process Flow w/ PCI Proxy |
 | :--- | :--- |
-| ![](../.gitbook/assets/receiver_pull_status_quo_color.png) | ![](../.gitbook/assets/receiver_pull_pciproxy_color.png) |
+| ![](../.gitbook/assets/receiver_pull_status_quo_color.png) | ![](../.gitbook/assets/receiver_pull_pciproxy_color%20%281%29.png) |
 | 1. **You start **_**RQ with card data**_ against Receiver API. | 1. **You start**_** RQ with token**_ against PCIP Endpoint. |
 | _- You touch sensitive card data -&gt; PCI scope. -_ | _**- You are out of PCI scope -**_ |
 | 2. Receiver returns _RS_ to You. | 2. PCI Proxy de-tokenizes and populates_ RQ with card data._ |
@@ -66,7 +66,7 @@ You will use the _Receiver PUSH Proxy_ when **your partner start the request and
 
 | PUSH Receiver Process Flow w/o PCI Proxy | PUSH Receiver Process Flow w/ PCI Proxy |
 | :--- | :--- |
-| ![](../.gitbook/assets/receiver_push_status_quo_color.png) | ![](../.gitbook/assets/receiver_push_pciproxy_color.png) |
+| ![](../.gitbook/assets/receiver_push_status_quo_color.png) | ![](../.gitbook/assets/receiver_push_pciproxy_color%20%281%29.png) |
 | 1. **Receiver starts **_**RQ**_ against Your API. | 1. **Receiver starts **_**RQ**_ against PCIP Endpoint. |
 | 2. You return _**RS with card data**_ to Receiver. | 2. PCI Proxy forwards _RQ_ to Your API. |
 | _- You touch sensitive card data -&gt; PCI scope. -_ | 3. You return _**RS**_** **_**with token**_** **to PCI Proxy. |
