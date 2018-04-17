@@ -20,9 +20,7 @@ Th PayByEmail service generates a temporary payment link.
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=true %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==  
-see 
-
-[Setup](../setup/)
+see Setup
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Content-Type" type="string" required=false %}
@@ -111,7 +109,7 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_PayByEmail" \
 {% endcode-tabs %}
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](../setup/sandbox-account.md) are allowed.
+In test mode, only [test credit cards](../test-card-data.md) are allowed.
 {% endhint %}
 
 ## Next up
