@@ -87,8 +87,6 @@ In test mode, only [test credit cards](../setup/sandbox-account.md#test-card-num
 
 ### Process Flow
 
-
-
 ![Process Flow with PCI Proxy](../.gitbook/assets/channel_pull_pciproxy_color.png)
 
 ### Examples
@@ -159,7 +157,11 @@ PUSH method
 
 {% api-method-spec %}
 {% api-method-request %}
-Your partner can simply push its request to the `uniquePushKey` endpoint. 
+{% api-method-path-parameters %}
+{% api-method-parameter name="uniquePushKey" type="string" required=false %}
+Your partner can simply push its request to the `uniquePushKey` endpoint.
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -182,18 +184,17 @@ In test mode, only [test credit cards](../setup/sandbox-account.md#test-card-num
 
 ### Process Flow
 
-
-
 ![Process Flow with PCI Proxy](../.gitbook/assets/channel_push_pciproxy_color%20%282%29.png)
 
 ### Examples
 
-When you [**add a PUSH Channel**](filter-payloads.md#1-add-channel-to-your-account) to your account, you receive a `{uniquePushKey}` for each Channel that is set up. Together with our PCI Proxy PUSH service URL, it results in a `PCI Proxy PUSH Endpoint` that is specific to that Channel:
+When you [**add a PUSH Channel**](filter-payloads.md#1-add-channel-to-your-account) to your account, you receive a `{uniquePushKey}` for each Channel that is set up. Together with our PCI Proxy PUSH service URL, it results in a `PCI Proxy PUSH Endpoint` that is specific to that Channel. Now, redirect requests coming from a Channel with a single step:
 
-Redirect requests coming from a Channel with a single step:
+1. **Change endpoint at Channel from `Your API Endpoint` to `unique PCI Proxy PUSH Endpoint`**
 
-1. **Change API endpoint at Channel from `Your API Endpoint` to specific `PCI Proxy PUSH Endpoint`**
-2. **Whitelist **[**IP addresses**](../setup/ip-whitelisting.md)** from PCI Proxy at Channel, if needed.**
+{% hint style="info" %}
+If needed, whitelist [IP addresses](../setup/ip-whitelisting.md) of PCI Proxy at Channel.
+{% endhint %}
 
 {% hint style="success" %}
 If Channel sends a request to Channel-specific `PCI Proxy PUSH Endpoint` , PCI Proxy recognizes the Channel and connects it to your account. The request from Channel will now automatically be filtered for credit card data. Located card data will be instantly stored in our vaults in Switzerland while we insert the tokenized card data in the request and forward it to `Your API Endpoint`.
