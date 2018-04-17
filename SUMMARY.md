@@ -24,6 +24,7 @@
   * [Supported Acquirer](resources/supported-acquirer.md)
   * [Supported Channels](resources/supported-channels.md)
   * [Supported Receivers](resources/supported-receivers.md)
+  * [Test card data](resources/test-card-data.md)
 
 ## Guides
 
