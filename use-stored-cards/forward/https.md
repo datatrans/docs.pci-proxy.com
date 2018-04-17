@@ -21,9 +21,7 @@ Forwarding card data to a remote server via HTTPS can work in two ways. In gener
 | `/v1/pull/` | `/v1/push/` |
 | --- | --- | --- |
 | You start the request. | The Receiver starts the request. |
-| ![](../../.gitbook/assets/receiver_pull_pciproxy_color.png) | ![](../../.gitbook/assets/receiver_push_pciproxy_color.png) |
-
-
+| ![](../../.gitbook/assets/receiver_pull_status_quo_color%20%281%29.png) | ![](../../.gitbook/assets/receiver_push_status_quo_color.png) |
 
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
 {% api-method-summary %}
@@ -68,6 +66,10 @@ API endpoint \(https://api.channel.com/\)
 {% hint style="warning" %}
 In test mode, only [test credit cards](https://docs.pci-proxy.com/setup/sandbox-account#test-card-numbers) are allowed.
 {% endhint %}
+
+### Process Flow
+
+![Process Flow with PCI Proxy](../../.gitbook/assets/receiver_pull_pciproxy_color%20%281%29.png)
 
 ### Examples
 
@@ -167,6 +169,12 @@ Your partner can simply push its request to the `uniquePushKey` endpoint.
 {% hint style="warning" %}
 In test mode, only [test credit cards](https://docs.pci-proxy.com/setup/sandbox-account#test-card-numbers) are allowed.
 {% endhint %}
+
+### Process Flow
+
+
+
+![Process Flow with PCI Proxy](../../.gitbook/assets/receiver_push_pciproxy_color.png)
 
 ### Examples
 
