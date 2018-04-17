@@ -14,7 +14,7 @@ Before you can forward stored card data to a remote server you have to add the r
 
 ## 2. Select forward method
 
-PCI Proxy supports 2 forwarding methods [`/v1/pull/`](https.md#pull-method) and [`/v1/push/`](https.md#push-method) to suit all your needs.
+PCI Proxy supports two forwarding methods [`/v1/pull/`](https.md#pull-method) and [`/v1/push/`](https.md#push-method) to suit all your needs.
 
 Forwarding card data to a remote server via HTTPS can work in two ways. In general, either you perform a pull request to forward card data to the Receiver or a Receiver starts a push request to receive card data from you in the response. PCI Proxy can populate both operations with sensitive data.
 
