@@ -170,17 +170,13 @@ In test mode, only [test credit cards](https://docs.pci-proxy.com/setup/sandbox-
 
 ### Process Flow
 
-
-
 ![Process Flow with PCI Proxy](../../.gitbook/assets/receiver_push_pciproxy_color.png)
 
 ### Examples
 
-When you [add a PUSH Receiver](https.md#1.-add-receiver) to your account, you receive a `{uniquePushKey}` for each Receiver that is set up. Together with our PCI Proxy PUSH service URL, it results in a `PCI Proxy PUSH Endpoint` that is specific to that Receiver:
+When you [add a PUSH Receiver](https.md#1.-add-receiver) to your account, you receive a `{uniquePushKey}` for each Receiver that is set up. Together with our PCI Proxy PUSH service URL, it results in a `unique PCI Proxy Endpoint` that is specific to that Receiver. Now, redirect requests coming from a Receiver with a single step:
 
-Redirect requests coming from a Receiver with a single step:
-
-1. **Change API endpoint at Receiver from `Your API Endpoint` to `unique PCI Proxy Endpoint`.**
+1. **Change endpoint at Receiver from `Your API Endpoint` to `unique PCI Proxy Endpoint`**
 
 {% hint style="info" %}
 If needed, whitelist [IP addresses](../../setup/ip-whitelisting.md) of PCI Proxy at Receiver.
