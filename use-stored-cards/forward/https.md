@@ -52,11 +52,11 @@ API endpoint \(https://api.channel.com/\)
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Response depends on Receiver API.
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+<!-- remote server response - see example below -->
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -153,11 +153,11 @@ Your partner can simply push its request to the `uniquePushKey` endpoint.
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Response depends on your API. 
 {% endapi-method-response-example-description %}
 
 ```
-
+<!-- your response - tokens will be detokenized and card data forwarded -->
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
