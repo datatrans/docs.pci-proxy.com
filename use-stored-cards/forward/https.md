@@ -132,8 +132,6 @@ curl https://sandbox.pci-proxy.com/v1/pull \
 Your request is automatically filtered for tokens. Located tokens are detokenized and your payload is populated with full card data before it arrives at the Receiver endpoint. Thereby, the Receiver API endpoint obtains full credit card data.
 {% endhint %}
 
-
-
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/push:uniquePushKey" %}
 {% api-method-summary %}
 PUSH method
