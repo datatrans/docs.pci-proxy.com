@@ -27,7 +27,7 @@ Collecting card data from a Channel via web service can work in two ways. In gen
 | `/v1/pull` method | `/v1/push` method |
 | --- | --- | --- |
 | You start the request. | The Channel starts the request. |
-| ![](../.gitbook/assets/channel_pull_pciproxy_color%20%281%29.png) | ![](../.gitbook/assets/channel_push_pciproxy_color.png) |
+| ![](../.gitbook/assets/channel_pull_status_quo_color%20%281%29.png) | ![](../.gitbook/assets/channel_push_status_quo_color.png) |
 
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
 {% api-method-summary %}
@@ -84,6 +84,12 @@ Response will contain tokenized credit card data.
 {% hint style="warning" %}
 In test mode, only [test credit cards](../setup/sandbox-account.md#test-card-numbers) are allowed.
 {% endhint %}
+
+### Process Flow
+
+
+
+![Process Flow with PCI Proxy](../.gitbook/assets/channel_pull_pciproxy_color.png)
 
 ### Examples
 
@@ -173,6 +179,12 @@ Your partner can simply push its request to the `uniquePushKey` endpoint.
 {% hint style="warning" %}
 In test mode, only [test credit cards](../setup/sandbox-account.md#test-card-numbers) are allowed.
 {% endhint %}
+
+### Process Flow
+
+
+
+![Process Flow with PCI Proxy](../.gitbook/assets/channel_push_pciproxy_color%20%282%29.png)
 
 ### Examples
 
