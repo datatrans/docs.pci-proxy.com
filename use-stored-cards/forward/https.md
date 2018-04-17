@@ -190,5 +190,3 @@ If needed, whitelist [IP addresses](../../setup/ip-whitelisting.md) of PCI Proxy
 As the request is routed via PCI Proxy, the response payload is automatically filtered for tokens. Located tokens are detokenized and your response payload is populated with full card data before it arrives at the Receiver endpoint. Thereby, the Receiver API endpoint obtains full credit card data.
 {% endhint %}
 
-## Great job**: You have successfully integrated PCI Proxy! **
-
