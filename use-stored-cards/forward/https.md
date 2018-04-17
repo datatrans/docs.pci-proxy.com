@@ -156,7 +156,7 @@ Your partner can simply push its request to the `uniquePushKey` endpoint.
 Response depends on your API. 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 <!-- your response - tokens will be detokenized and card data forwarded -->
 ```
 {% endapi-method-response-example %}
