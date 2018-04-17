@@ -229,7 +229,7 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
 {% endcode-tabs %}
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](../setup/sandbox-account.md) are allowed.
+In test mode, only [test credit cards](../test-card-data.md) are allowed.
 {% endhint %}
 
 ### Error cases
