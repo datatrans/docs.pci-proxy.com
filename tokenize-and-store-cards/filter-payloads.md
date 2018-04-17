@@ -20,7 +20,7 @@ Before you can filter payloads from a remote server you have to add the remote s
 
 ## 2. Select filter method
 
-PCI Proxy supports two different filter methods `/v1/pull` and `/v1/push` to suit all your needs. 
+PCI Proxy supports two different filter methods [`/v1/pull`](filter-payloads.md#pull-method) and [`/v1/push`](filter-payloads.md#push-method) to suit all your needs. 
 
 Collecting card data from a Channel via web service can work in two ways. In general, either you perform a pull request to receive card data from the Channel or a Channel starts a push request to send you card data. PCI Proxy can extract sensitive data in both operations.
 
