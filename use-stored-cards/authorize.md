@@ -52,9 +52,7 @@ The AUTH method allows you to authorize a stored credit card.
 {% api-method-headers %}
 {% api-method-parameter name="Authentication" type="string" required=false %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==  
-see 
-
-[Setup](../setup/)
+see Setup
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Content-Type" type="string" required=false %}
@@ -101,9 +99,7 @@ Customer’s IP address \(source IP used by cardholder\)
 
 {% api-method-parameter name="sign" type="string" required=false %}
 Your security sign  
-see 
-
-[Setup](../setup/#create-security-sign)
+see Setup
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="reqtype" type="string" required=false %}
@@ -189,6 +185,10 @@ Successful authorization response
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% hint style="warning" %}
+In test mode, only [test credit cards](../test-card-data.md) are allowed.
+{% endhint %}
 
 ### Examples
 
@@ -539,4 +539,6 @@ If the authorization failed, you will additionally receive the following error p
 | `errrorDetail` |  | Description of error detail |
 | `uppTransactionId` | N18 | Unique transaction identifier assigned by Datatrans |
 | `acqErrorCode` | AN7 | Error code returned by the acquirer |
+
+
 
