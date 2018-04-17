@@ -18,13 +18,13 @@
     * [SFTP](use-stored-cards/forward/sftp.md)
   * [Show](use-stored-cards/show.md)
   * [Authorize](use-stored-cards/authorize.md)
+* [Test card data](test-card-data.md)
 * [Resources](resources/README.md)
   * [Full API Reference](resources/full-api-reference.md)
   * [Request Types](resources/request-types.md)
   * [Supported Acquirer](resources/supported-acquirer.md)
   * [Supported Channels](resources/supported-channels.md)
   * [Supported Receivers](resources/supported-receivers.md)
-  * [Test card data](resources/test-card-data.md)
 
 ## Guides
 
