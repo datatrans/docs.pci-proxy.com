@@ -64,7 +64,7 @@ Response depends on Receiver API.
 {% endapi-method %}
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](https://docs.pci-proxy.com/setup/sandbox-account#test-card-numbers) are allowed.
+In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 {% endhint %}
 
 ### Process Flow
@@ -165,7 +165,7 @@ Response depends on your API.
 {% endapi-method %}
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](https://docs.pci-proxy.com/setup/sandbox-account#test-card-numbers) are allowed.
+In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 {% endhint %}
 
 ### Process Flow
