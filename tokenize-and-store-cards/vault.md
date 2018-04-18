@@ -247,5 +247,9 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed.
 | 2022 | invalid value | Invalid value passed for an attribute. \(e.g. `merchantId`\) |
 | -889 | CC-alias error | Input paramter\(s\) missing. For example `<cardno>` |
 
+## Next up
+
+{% page-ref page="../use-stored-cards/" %}
+
 
 
