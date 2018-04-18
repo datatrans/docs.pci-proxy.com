@@ -12,9 +12,7 @@ Before we get started, take a minute and let us introduce you to the magic of [*
 PCI Proxy is a tokenization service that reduces your PCI scope in a simple and secure way.
 {% endhint %}
 
-PCI Proxy let you **instantly collect and store credit card data **without touching your servers. Once stored and tokenized, you can simply **use tokens to validate, charge, display, or forward** stored card data.
-
-* [**Explore PCI Proxy Features**](https://www.pci-proxy.com/pci-proxy/features/)
+PCI Proxy let you **instantly **[**collect and store**](tokenize-and-store-cards/)** credit card data **without touching your servers. Once stored and tokenized, you can simply [**use tokens**](use-stored-cards/)** to check, charge, show, or forward** stored card data.
 
 Our **customer base** spans across different industries and business types. All of them have specific needs and processes in place. PCI Proxy is build with flexibility in mind to accommodate those needs at best.
 
@@ -22,7 +20,7 @@ PCI Proxy is a battle-tested tokenization as a service solution that is powered 
 
 PCI Proxy supports all major credit card brands:
 
-![](.gitbook/assets/card-brands.png)
+![Missing a brand? Contact us.](.gitbook/assets/card-brands.png)
 
 ## Getting Started
 
