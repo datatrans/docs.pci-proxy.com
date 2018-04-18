@@ -101,7 +101,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
 | `language` \(optional\) | The language code in which the no-show page should be displayed | en |
 
-### Sign
+### SHA.256 Security Sign
 
 **Generate NoShow-specific SHA.256 Security Sign with salt value, merchantId, aliasCC \(token\) and userEmail**
 
@@ -111,10 +111,10 @@ merchantId  = 1100005007                                                        
 aliasCC     = 424242SKMPRI4242                                                         // CC token to be de-tokenized
 userEmail   = james.bond@yourcompany.com                                               // Email address of NoShow-User
 
-→ String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 3 values
-
-SHA.256(salt+merchantId+aliasCC+userEmail                                               // Use SHA.256 Hash Converter
-→ Sign: 428dd59d048d78144a0def92a27b934f7bb39138161baf482ae2deb95c1741f5                // Security Sign for NoShow.jsp
+→ String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 4 values
+          james.bond@yourcompany.com 
+SHA.256(salt+merchantId+aliasCC+userEmail)                                             // Use SHA.256 Hash Converter
+→ Sign: f641a6a3de574bd4b7609320e9a4fb1ed11364f136908822ff6a8e3b6b1bca1f               // Security Sign for NoShow.jsp
 ```
 
 _The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
