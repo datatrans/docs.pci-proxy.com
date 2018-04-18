@@ -22,17 +22,13 @@ PCI Proxy is a battle-tested tokenization as a service solution that is powered 
 
 PCI Proxy supports all major credit card brands:
 
-![](.gitbook/assets/card-brands.jpg)
+![](.gitbook/assets/card-brands.png)
 
 ## Getting Started
 
-1. [**Sign up**](https://www.pci-proxy.com/pci-proxy/contact/) for a free 30-day trial account \(no billing information required\).
-2. After a short internal confirmation, you will receive your preliminary Sandbox credentials.
-3. [**Log in**](https://admin.sandbox.datatrans.com/) with your credentials and follow instructions to create your own password.
+[**Sign up**](https://www.pci-proxy.com/pci-proxy/contact/) for a free 30-day trial account \(no billing information required\).
 
-Play with our Sandbox environment to test PCI Proxy thoroughly. The Sandbox environment is a self-contained testing environment, identical to our productive environment.
-
-PCI Proxy can be integrated by following these four steps to achieve PCI compliance:
+PCI Proxy can be integrated by following these steps to achieve PCI compliance:
 
 {% page-ref page="setup/" %}
 
