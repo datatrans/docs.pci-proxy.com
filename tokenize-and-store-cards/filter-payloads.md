@@ -27,7 +27,7 @@ Collecting card data from a Channel via web service can work in two ways. In gen
 | [**`/v1/pull`**](filter-payloads.md#pull-method)  | [**`/v1/push`**](filter-payloads.md#push-method)  |
 | --- | --- | --- |
 | You start the request. | The Channel starts the request. |
-| ![](../.gitbook/assets/channel_pull_status_quo_color%20%281%29.png) | ![](../.gitbook/assets/channel_push_status_quo_color.png) |
+| ![](../.gitbook/assets/channel_pull_status_quo_color%20%285%29.png) | ![](../.gitbook/assets/channel_push_status_quo_color.png) |
 
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
 {% api-method-summary %}
@@ -87,7 +87,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed.
 
 ### Process Flow
 
-![Process Flow with PCI Proxy](../.gitbook/assets/channel_pull_pciproxy_color.png)
+![Process Flow with PCI Proxy](../.gitbook/assets/channel_pull_pciproxy_color%20%281%29.png)
 
 ### Examples
 
@@ -184,7 +184,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed.
 
 ### Process Flow
 
-![Process Flow with PCI Proxy](../.gitbook/assets/channel_push_pciproxy_color%20%282%29.png)
+![Process Flow with PCI Proxy](../.gitbook/assets/channel_push_pciproxy_color%20%283%29.png)
 
 ### Examples
 

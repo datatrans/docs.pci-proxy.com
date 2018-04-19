@@ -1,78 +1,82 @@
+---
+description: Learn about PUSH & PULL Proxies.
+---
+
 # Request Types
 
-In general, you either **PULL** a request or a partner **PUSH**es data to your server. No matter if sensitive card data are in the request or response. PCI Proxy can extract and populate sensitive data in all operations.
+In general, either **you start a request** \(`PULL`\) or a **remote server starts a request **\(`PUSH`\). Depening on where to find sensitive data \(request/response\), PCI Proxy extracts or populates sensitive data on the fly. 
 
-Please see a list of supported channels and their respective channel type: [Supported Channels](supported-channels.md).
+## Receive from Channel
 
-Please see a list of supported Receivers \(Gateways\) and their respective Receiver type: [Supported Receivers \(Gateways\)](supported-receivers.md).
+Receiving card data from a remote server \(Channel\) can work in two ways. In general, either you perform a [**`/v1/pull/`**](../tokenize-and-store-cards/filter-payloads.md#pull-method) request to receive card data from the Channel or the Channel starts a [**`/v1/push/`**](../tokenize-and-store-cards/filter-payloads.md#push-method) request with card data. PCI Proxy can tokenize and store sensitive data on both operations.
 
-## Collect from Channel
+{% tabs %}
+{% tab title="PULL without PCI Proxy" %}
+![](../.gitbook/assets/channel_pull_status_quo_color.png)
 
-Collecting card data from a Channel via web service can work in two ways. In general, you either perform a pull request to receive card data from the Channel or a Channel starts the request with card data. PCI Proxy can populate sensitive data in both.
+1. You start a request against Channel API endpoint.
+2. Channel returns **response with card data** to you.
+{% endtab %}
 
-### PULL Channel
+{% tab title="PULL via PCI Proxy" %}
+![](../.gitbook/assets/channel_pull_pciproxy_color%20%282%29.png)
 
-You will use the _Channel PULL Proxy_ when **you start the request and receive card data in the response**.
+1. [**You start a request**](../tokenize-and-store-cards/filter-payloads.md#pull-method) against PCI Proxy endpoint.
+2. PCI Proxy forward request to Channel API endpoint.
+3. Channel returns response with card data to PCI Proxy.
+4. PCI Proxy scans response and tokenizes card data.
+5. PCI Proxy forward **response with tokens** to you.
+{% endtab %}
 
-| PULL Channel Process Flow w/o PCI Proxy | PULL Channel Process Flow w/ PCI Proxy |
-| :--- | :--- |
-| ![](../.gitbook/assets/channel_pull_status_quo_color.png) | ![](../.gitbook/assets/channel_pull_pciproxy_color%20%281%29.png) |
-| 1. **You start **_**RQ**_ against Channel API. | 1. **You start**_** RQ**_ against PCIP Endpoint. |
-| 2. Channel sends _**RS**_** **_**with card data**_ to You. | 2. PCI Proxy forwards _RQ_ to _Channel API_. |
-| _- You receive sensitive card data -&gt; PCI scope. -_ | 3. Channel sends _RS_ _with card data_ to _PCI Proxy_. |
-|  | 4. PCI Proxy scans _RS_ and tokenizes card data. |
-|  | 5. PCI Proxy forwards _**RS**_** **_**with token**_ to You. |
-|  | _**- You are out of PCI scope -**_ |
+{% tab title="PUSH without PCI Proxy" %}
+![](../.gitbook/assets/channel_push_status_quo_color%20%281%29.png)
 
-RQ = Request; RS = Response; PCIP = PCI Proxy API
+1. Channel starts a **request with card data** to your API endpoint \(you are in PCI scope\).
+{% endtab %}
 
-### PUSH Channel
+{% tab title="PUSH via PCI Proxy" %}
+![](../.gitbook/assets/channel_push_pciproxy_color%20%282%29.png)
 
-You will use the _Channel PUSH Proxy_ when **your partner starts the request with card data**.
-
-| PUSH Channel Process Flow w/o PCI Proxy | PUSH Channel Process Flow w/ PCI Proxy |
-| :--- | :--- |
-| ![](../.gitbook/assets/channel_push_status_quo_color%20%281%29.png) | ![](../.gitbook/assets/channel_push_pciproxy_color%20%281%29.png) |
-| 1. **Channel starts **_**RQ with card data**_ against Your API. | 1. _**Channel starts RQ**_** **_**with card data**_ against PCIP Endpoint. |
-| _- You receive sensitive card data -&gt; PCI scope. -_ | 2. PCI Proxy scans _RQ_ and tokenizes card data. |
-| 2. You return _RS_ to Channel. | 3. PCI Proxy forwards _**RS with token**_ to Your API. |
-|  | _**- You are out of PCI scope -**_ |
-|  | 4. You return _RS_ via PCI Proxy to Channel. |
-
-RQ = Request; RS = Response; PCIP = PCI Proxy API
+1. [**Channel starts request**](../tokenize-and-store-cards/filter-payloads.md#push-method) with card data to PCI Proxy endpoint.
+2. PCI Proxy scans request and tokenizes card data.
+3. PCI Proxy forwards **request with tokens** to your API endpoint \(you are out of PCI scope\).
+{% endtab %}
+{% endtabs %}
 
 ## Forward to Receiver
 
-Forwarding card data to a Receiver via web service can work in two ways. In general, you either perform a pull request to forward card data to a Receiver or a Receiver starts the request to ask for card data. PCI Proxy can populate sensitive data in both.
+Forwarding card data to a remote server \(Receiver\) can work in two ways. In general, either you perform a [**`/v1/pull/`**](../use-stored-cards/forward/https.md#pull-method) request to forward card data to a Receiver or the Receiver starts a [**`/v1/push/`**](../use-stored-cards/forward/https.md#push-method) request to ask for card data. PCI Proxy can populate sensitive data on both operations.
 
-### PULL Receiver
+{% tabs %}
+{% tab title="PULL without PCI Proxy" %}
+![](../.gitbook/assets/receiver_pull_status_quo_color%20%281%29.png)
 
-You will use the _Receiver PULL Proxy_ when **you start the request with card data**.
+1. You start **request with card data** to Receiver API endpoint.
+{% endtab %}
 
-| PULL Receiver Process Flow w/o PCI Proxy | PULL Receiver Process Flow w/ PCI Proxy |
-| :--- | :--- |
-| ![](../.gitbook/assets/receiver_pull_status_quo_color.png) | ![](../.gitbook/assets/receiver_pull_pciproxy_color%20%283%29.png) |
-| 1. **You start **_**RQ with card data**_ against Receiver API. | 1. **You start**_** RQ with token**_ against PCIP Endpoint. |
-| _- You touch sensitive card data -&gt; PCI scope. -_ | _**- You are out of PCI scope -**_ |
-| 2. Receiver returns _RS_ to You. | 2. PCI Proxy de-tokenizes and populates_ RQ with card data._ |
-|  | 3. PCI Proxy forwards _**RQ with card data**_ to Receiver. |
-|  | 4. Receiver returns RS to You. |
+{% tab title="PULL via PCI Proxy " %}
+![](../.gitbook/assets/receiver_pull_pciproxy_color%20%283%29.png)
 
-RQ = Request; RS = Response; PCIP = PCI Proxy API
+1. [**You start a request with token**](../use-stored-cards/forward/https.md#pull-method) to PCI Proxy endpoint.
+2. PCI Proxy detokenizes and populates request with card data.
+3. PCI Proxy forwards **request with card data** to Receiver. 
+{% endtab %}
 
-### PUSH Receiver
+{% tab title="PUSH without PCI Proxy" %}
+![](../.gitbook/assets/receiver_push_status_quo_color%20%282%29.png)
 
-You will use the _Receiver PUSH Proxy_ when **your partner start the request and you return card data in the response**.
+1. Receiver starts a request to your API endpoint.
+2. You return **response with card data** to Receiver.
+{% endtab %}
 
-| PUSH Receiver Process Flow w/o PCI Proxy | PUSH Receiver Process Flow w/ PCI Proxy |
-| :--- | :--- |
-| ![](../.gitbook/assets/receiver_push_status_quo_color%20%281%29.png) | ![](../.gitbook/assets/receiver_push_pciproxy_color%20%282%29.png) |
-| 1. **Receiver starts **_**RQ**_ against Your API. | 1. **Receiver starts **_**RQ**_ against PCIP Endpoint. |
-| 2. You return _**RS with card data**_ to Receiver. | 2. PCI Proxy forwards _RQ_ to Your API. |
-| _- You touch sensitive card data -&gt; PCI scope. -_ | 3. You return _**RS**_** **_**with token**_** **to PCI Proxy. |
-|  | _**- You are out of PCI scope -**_ |
-|  | 4. PCI Proxy de-tokenizes and populates _RS with card data_. |
-|  | 5. PCI Proxy forwards \_**RS with card data** \_to Receiver. |
+{% tab title="PUSH via PCI Proxy" %}
+![](../.gitbook/assets/receiver_push_pciproxy_color%20%283%29.png)
 
-RQ = Request; RS = Response; PCIP = PCI Proxy API
+1. [**Receiver starts request**](../use-stored-cards/forward/https.md#push-method) to PCI Proxy endpoint.
+2. PCI Proxy forwards request to your API endpoint.
+3. You return a response with token to PCI Proxy.
+4. PCI Proxy detokenizes and populates response with card data.
+5. PCI Proxy forwards **response with card data** to Receiver.
+{% endtab %}
+{% endtabs %}
 

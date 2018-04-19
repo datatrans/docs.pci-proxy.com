@@ -21,7 +21,7 @@ Forwarding card data to a remote server via HTTPS can work in two ways. In gener
 | [**`/v1/pull/`**](https.md#pull-method) | [**`/v1/push/`**](https.md#push-method) |
 | --- | --- | --- |
 | You start the request. | The Receiver starts the request. |
-| ![](../../.gitbook/assets/receiver_pull_status_quo_color%20%281%29.png) | ![](../../.gitbook/assets/receiver_push_status_quo_color.png) |
+| ![](../../.gitbook/assets/receiver_pull_status_quo_color%20%282%29.png) | ![](../../.gitbook/assets/receiver_push_status_quo_color.png) |
 
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
 {% api-method-summary %}
