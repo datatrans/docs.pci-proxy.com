@@ -73,7 +73,7 @@ In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 
 ## 3. Retrieve a transactionId
 
-Initialize the Inline Mode with your merchantId and specify which DOM element containers should be used to inject the iframes:
+Initialize the Inline Mode with your `merchantId` and specify which DOM element containers should be used to inject the iframes:
 
 ```javascript
 Inline.initTokenize( "1100007006", {
@@ -101,7 +101,7 @@ Inline.on("success", function(data) {
 
 ## 4. Obtain tokens
 
-Once you've transmitted the transactionId to your server \(together with the the rest of your form\) you can execute a server to server GET Token request to get tokens for card number and CVV code:
+Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you can execute a server to server [`GET Token`](tokenapi.md) request to get tokens for card number and CVV code:
 
 {% code-tabs %}
 {% code-tabs-item title="Example: Request" %}
