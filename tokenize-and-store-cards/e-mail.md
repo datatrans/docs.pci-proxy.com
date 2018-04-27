@@ -6,7 +6,7 @@ description: Securely collect card data via a temporary payment link.
 
 PayByEmail allows you to capture credit card data directly through a payment link that is sent via email. Just generate a temporary payment link and copy it into your email. Your customers can click on the link and our payment page is opened. They can choose their preferred payment method and pay directly.
 
-{% api-method method="post" host="https://pay.sandbox.datatrans.com" path="/upp/jsp/XML\_PayByEmail" %}
+{% api-method method="post" host="https://api.sandbox.datatrans.com" path="/upp/jsp/XML\_PayByEmail" %}
 {% api-method-summary %}
 PayByEmail
 {% endapi-method-summary %}
