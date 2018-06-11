@@ -4,7 +4,7 @@ description: Learn about PUSH & PULL Proxies.
 
 # Request Types
 
-In general, either **you start a request** \(`PULL`\) or a **remote server starts a request **\(`PUSH`\). Depening on where to find sensitive data \(request/response\), PCI Proxy extracts or populates sensitive data on the fly. 
+In general, either **you start a request** \(`PULL`\) or a **remote server starts a request** \(`PUSH`\). Depening on where to find sensitive data \(request/response\), PCI Proxy extracts or populates sensitive data on the fly. 
 
 ## Receive from Channel
 

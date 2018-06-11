@@ -4,7 +4,7 @@
 
 Adding a SFTP-Receiver is easy. You can either pick from our list of supported SFTP-Receivers or add new ones:
 
-| Click to Add** **[**SFTP-Receivers**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) |
+| Click to Add ****[**SFTP-Receivers**](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) |
 | :--- |
 
 
@@ -32,7 +32,7 @@ curl 'https://sandbox.pci-proxy.com/v1/ft?merchantId=XXX&sign=XXX&url=sftp://use
     -d '0000080915K...'                                         // define the content
 ```
 
-The service responds based on the _accept header_: Supported are_text/plain, application/json _\(default\) and _application/xml_
+The service responds based on the _accept header_: Supported are_text/plain, application/json_ \(default\) and _application/xml_
 
 ### 3b. Use x-www-form-url encoded
 
@@ -75,9 +75,9 @@ _Note: In test mode, only test credit cards are allowed!_
 | password | Your password | asdfölksdjfasjdh |
 | type | Filetype, choose between BTA or TAMARA | BTA or TAMARA |
 
-> ## Great job**: You have successfully integrated PCI Proxy! **
+> ## Great job**: You have successfully integrated PCI Proxy!** 
 >
-> You have securely forwarded sensitive card data without ever touching your servers. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **
+> You have securely forwarded sensitive card data without ever touching your servers. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope.** 
 >
 > Enjoy PCI compliance in a risk-free environment. Keep in mind that you can use stored data as often as you need it.
 >

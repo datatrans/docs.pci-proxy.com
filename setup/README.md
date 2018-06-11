@@ -16,7 +16,7 @@ The [Filter Proxy](../tokenize-and-store-cards/filter-payloads.md), [Forward Pro
 
 1. Click _UPP Administration_ tab.
 2. Click _Security_ sub-tab.
-3. In the listing of _Transaction security _click the second radio button.
+3. In the listing of _Transaction security_ click the second radio button.
 4. Click _Generate new sign._
 5. Click _Update_.  
 

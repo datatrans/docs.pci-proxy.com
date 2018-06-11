@@ -14,7 +14,7 @@ _Note: Even though the interface is served by PCI Proxy, your PCI scope can exte
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
 1. **Let us know your IP address for whitelisting**
-2. **Use **`PCI Proxy NoShow Endpoint`** as **`Host`** with following parameter **`merchantId`**, **`aliasCC`**, **`userName`**, **`userEmail`**, **[`sign`](show.md#sign) **and** `language` _**to retrieve NoShow link**_
+2. **Use** `PCI Proxy NoShow Endpoint` **as** `Host` **with following parameter** `merchantId`**,** `aliasCC`**,** `userName`**,** `userEmail`**,** [`sign`](show.md#sha-256-security-sign) **and** `language` _**to retrieve NoShow link**_
 
 ```javascript
 curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
@@ -39,9 +39,9 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 </response>
 ```
 
-**4. Once the user clicks on the link an email will be sent to  `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually. **
+**4. Once the user clicks on the link an email will be sent to  `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually.** 
 
-**5. Subsequently the new device has been authorized the user may enter a four digit security code in the opened iFrame to retrieve plain text credit card number. **
+**5. Subsequently the new device has been authorized the user may enter a four digit security code in the opened iFrame to retrieve plain text credit card number.** 
 
 Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
@@ -81,13 +81,13 @@ else
 */
 ```
 
-**6. Ensure **[**PCI-compliant user management**](show.md#pci-dss-compliant-user-management)
+**6. Ensure** [**PCI-compliant user management**](show.md#pci-dss-compliant-user-management)
 
 _Note: In test mode, only test credit cards are allowed!_
 
 ### Reference
 
-| PCI Proxy NoShow Endpoint** \(Sandbox\):** |
+| PCI Proxy NoShow Endpoint **\(Sandbox\):** |
 | :--- |
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
@@ -127,7 +127,7 @@ Using our _NoShow.jsp_ script requires you to handle your user management in a P
 
 **Unique User IDs**
 
-Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. **Shared user logins are not allowed. **
+Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. **Shared user logins are not allowed.** 
 
 ### Password Policy
 
@@ -141,9 +141,9 @@ In general, the following password rules have to be observed:
 * After 15 minutes of inactivity, the password must be entered to reactivate the terminal / session.
 * The maximum session time after which the user must log in again must not exceed 200 minutes.
 
-> ### Great job**: You have successfully integrated PCI Proxy! **
+> ### Great job**: You have successfully integrated PCI Proxy!** 
 >
-> You have securely retrieved a stored credit card without ever touching your servers. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **
+> You have securely retrieved a stored credit card without ever touching your servers. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope.** 
 >
 > Enjoy PCI compliance in a risk-free environment. Keep in mind that you can use stored data as often as you need it.
 >

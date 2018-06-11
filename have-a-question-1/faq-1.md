@@ -21,7 +21,7 @@ Our pricing model is based on actual performance we deliver to you. Unlike other
 | **Masked Credit Card Token** \(Example: _1234 56AB CDEF 3456_\) |
 | --- | --- | --- | --- |
 | The format consists of the first 6 digits of the real credit card number, the actual BIN Range \(Bank Identification Number\), followed by the token in form of 6 upper-case letters. The Masked Credit Card Alias ends with the last 4 digits of the actual credit card number. |
-| **Full Substitution Token **\(Example:_1198182968382186732_\) |
+| **Full Substitution Token** \(Example:_1198182968382186732_\) |
 | 19 digits substitute for full tokenization of credit card number. |
 
 ## Why do I have to provide the PCI DSS Attestation of Compliance \(AoC\) if I want to pass stored card data on to a 3rd party?
@@ -52,7 +52,7 @@ Yes, PCI Proxy works closely with PCI-accredited Qualified Security Assessors \(
 
 {% embed data="{\"url\":\"https://www.pcisecuritystandards.org/document\_library\",\"type\":\"link\",\"title\":\"Official PCI Security Standards Council Site - Verify PCI Compliance, Download Data Security and Credit Card Security Standards\",\"description\":\"If you are a merchant of any size accepting credit cards, you must be in compliance with PCI Security Council standards. This site provides: credit card data security standards documents, PCIcompliant software and hardware, qualified security assessors, technical support, merchant guides and more.\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.pcisecuritystandards.org/touch-icon-ipad-retina.png\",\"width\":152,\"height\":152,\"aspectRatio\":1},\"caption\":\"PCI Council - Document Library \(find SAQs & PCI DSS specs\)\"}" %}
 
-{% embed data="{\"url\":\"https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html\",\"type\":\"link\",\"title\":\"Things Merchants Need to Know \| Process Payment Data & Secured Transactions \| Mastercard\",\"description\":\"Key information for merchants on storing, processing and transmitting Mastercard data securely\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.mastercard.us/etc/clientlibs/mastercard\_com/images/favicon.ico\",\"aspectRatio\":0},\"caption\":\"Mastercard PCI-compliant Service Provider List \(e.g. search for \\"Datatrans\\"\)\"}" %}
+{% embed data="{\"url\":\"https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html\",\"type\":\"link\",\"title\":\"Things Merchants Need to Know \| Process Payment Data & Secured Transactions \| Mastercard\",\"description\":\"Key information for merchants on storing, processing and transmitting Mastercard data securely\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.mastercard.us/etc/clientlibs/mastercard\_com/images/favicon.ico\",\"aspectRatio\":0},\"caption\":\"Mastercard PCI-compliant Service Provider List \(e.g. search for \\\"Datatrans\\\"\)\"}" %}
 
-{% embed data="{\"url\":\"https://www.visaeurope.com/receiving-payments/security/downloads-and-resources\",\"type\":\"link\",\"title\":\"\r\n\tDownloads & resources\r\n\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.visaeurope.com/favicon.ico\",\"aspectRatio\":0},\"caption\":\"Visa PCI-compliant Service Provider List \(e.g. search for \\"Datatrans\\"\)\"}" %}
+{% embed data="{\"url\":\"https://www.visaeurope.com/receiving-payments/security/downloads-and-resources\",\"type\":\"link\",\"title\":\"\\r\\n\\tDownloads & resources\\r\\n\",\"icon\":{\"type\":\"icon\",\"url\":\"https://www.visaeurope.com/favicon.ico\",\"aspectRatio\":0},\"caption\":\"Visa PCI-compliant Service Provider List \(e.g. search for \\\"Datatrans\\\"\)\"}" %}
 
