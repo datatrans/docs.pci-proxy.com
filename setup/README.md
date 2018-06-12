@@ -16,9 +16,8 @@ The [Filter Proxy](../tokenize-and-store-cards/filter-payloads.md), [Forward Pro
 
 1. Click _UPP Administration_ tab.
 2. Click _Security_ sub-tab.
-3. In the listing of _Transaction security_ click the second radio button.
-4. Click _Generate new sign._
-5. Click _Update_.  
+3. Click _Generate new sign._
+4. Click _Update_.  
 
 
    ![Create Security Sign via https://pilot.datatrans.biz/](../.gitbook/assets/2018-04-04-16.35.20.gif)
