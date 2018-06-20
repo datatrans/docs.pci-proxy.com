@@ -114,7 +114,7 @@ userEmail   = james.bond@yourcompany.com                                        
 → String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 4 values
           james.bond@yourcompany.com 
 SHA.256(salt+merchantId+aliasCC+userEmail)                                             // Use SHA.256 Hash Converter
-→ SHASign: f641a6a3de574bd4b7609320e9a4fb1ed11364f136908822ff6a8e3b6b1bca1f               // Security Sign for NoShow.jsp
+→ SHASign: f641a6a3de574bd4b7609320e9a4fb1ed11364f136908822ff6a8e3b6b1bca1f            // Security Sign for NoShow.jsp
 ```
 
 _The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
