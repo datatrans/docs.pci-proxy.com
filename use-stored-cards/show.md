@@ -14,7 +14,7 @@ _Note: Even though the interface is served by PCI Proxy, your PCI scope can exte
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
 1. **Let us know your IP address for whitelisting**
-2. **Use** `PCI Proxy NoShow Endpoint` **as** `Host` **with following parameter** `merchantId`**,** `aliasCC`**,** `userName`**,** `userEmail`**,** [`sign`](show.md#sha-256-security-sign) **and** `language` _**to retrieve NoShow link**_
+2. **Use** `PCI Proxy NoShow Endpoint` **as** `Host` **with following parameter** `merchantId`**,** `aliasCC`**,** `userName`**,** `userEmail`**,** [`SHASign`](show.md#sha-256-security-sign) **and** `language` _**to retrieve NoShow link**_
 
 ```javascript
 curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
@@ -24,7 +24,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
         <aliasCC>424242SKMPRI4242</aliasCC>
         <userName>bond</userName>
         <userEmail>james.bond@yourcompany.com</userEmail>
-        <sign>d17ead827458e3532fd868b3b110671586b7e7ee0db106d5ae94e85ca93782ab</sign>
+        <SHASign>d17ead827458e3532fd868b3b110671586b7e7ee0db106d5ae94e85ca93782ab</SHASign>
         <language>en</language>
      </request>'
 ```
@@ -98,7 +98,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | `aliasCVV` \(optional\) | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
 | `username` \(optional\) | [Unique userID](show.md#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond |
 | `userEmail` | Email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
-| `sign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
+| `SHAsign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
 | `language` \(optional\) | The language code in which the no-show page should be displayed | en |
 
 ### SHA.256 Security Sign
@@ -114,7 +114,7 @@ userEmail   = james.bond@yourcompany.com                                        
 → String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 4 values
           james.bond@yourcompany.com 
 SHA.256(salt+merchantId+aliasCC+userEmail)                                             // Use SHA.256 Hash Converter
-→ Sign: f641a6a3de574bd4b7609320e9a4fb1ed11364f136908822ff6a8e3b6b1bca1f               // Security Sign for NoShow.jsp
+→ SHASign: f641a6a3de574bd4b7609320e9a4fb1ed11364f136908822ff6a8e3b6b1bca1f               // Security Sign for NoShow.jsp
 ```
 
 _The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
