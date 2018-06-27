@@ -16,7 +16,9 @@ _Note: Even though the interface is served by PCI Proxy, your PCI scope can exte
 1. **Let us know your IP address for whitelisting**
 2. **Use** `PCI Proxy NoShow Endpoint` **as** `Host` **with following parameter** `merchantId`**,** `aliasCC`**,** `userName`**,** `userEmail`**,** [`SHASign`](show.md#sha-256-security-sign) **and** `language` _**to retrieve NoShow link**_
 
-```javascript
+{% tabs %}
+{% tab title="application/xml" %}
+```markup
 curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
   -H 'content-type: application/xml' \
   -d '<request>
@@ -28,6 +30,21 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
         <language>en</language>
      </request>'
 ```
+{% endtab %}
+
+{% tab title="application/json" %}
+```javascript
+curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
+  -H 'content-type: application/json' \
+  -d '{
+    "merchantId": "1000011011",
+    "aliasCC": "70119122433810042",
+    "SHASign": "d17ead827458e3532fd868b3b110671586b7e7ee0db106d5ae94e85ca93782ab",
+    "userEmail": "email@example.com"
+   }'
+```
+{% endtab %}
+{% endtabs %}
 
 **3. Embed NoShow link from the response into your application**
 
