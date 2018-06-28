@@ -48,13 +48,26 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 
 **3. Embed NoShow link from the response into your application**
 
-```javascript
+{% tabs %}
+{% tab title="application/xml" %}
+```markup
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <response>
   <url>https://api.sandbox.datatrans.com/upp/noshow?token=27cfba38-a606-49c0-9f03-c3bc6d580a66</url>
   <errorCode>0</errorCode>
 </response>
 ```
+{% endtab %}
+
+{% tab title="application/json" %}
+```javascript
+{
+    "url": "https://api.sandbox.datatrans.com/upp/noshow?token=2555559e-63d8-4c26-8799-0e9d64601037",
+    "errorCode": 0
+}
+```
+{% endtab %}
+{% endtabs %}
 
 **4. Once the user clicks on the link an email will be sent to  `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually.** 
 
