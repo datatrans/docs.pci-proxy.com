@@ -7,14 +7,67 @@ _You are a travel technology company providing hotels with software to manage th
 
 _Note: Even though the interface is served by PCI Proxy, your PCI scope can extend._
 
-## Show a credit card number via NoShow.jsp
+{% api-method method="post" host="https://api.sandbox.datatrans.com/upp/services/v1/noshow/init" path="" %}
+{% api-method-summary %}
+NoShow.jsp
+{% endapi-method-summary %}
 
-| PCI Proxy NoShow Endpoint |
-| :--- |
-| [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
+{% api-method-description %}
+**1. Please let us know your IP address for whitelisting   
+  
+2. Build the request to retrieve the NoShow link:** 
+{% endapi-method-description %}
 
-1. **Let us know your IP address for whitelisting**
-2. **Use** `PCI Proxy NoShow Endpoint` **as** `Host` **with following parameter** `merchantId`**,** `aliasCC`**,** `userName`**,** `userEmail`**,** [`SHASign`](show.md#sha-256-security-sign) **and** `language` _**to retrieve NoShow link**_
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="content-type" type="string" required=true %}
+define if it's a XML or JSON request
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+Your unique account id at PCI Proxy \(e.g. 1000011011\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="aliasCC" type="string" required=true %}
+Creditcard Token \(e.g. 424242SKMPRI4242\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="userName" type="string" required=false %}
+Unique userName \(only needed when no userEmail is given\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="userEmail" type="string" required=true %}
+Unique email-address where the link should be sent to
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="SHASign" type="string" required=true %}
+Your security SHAsign
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Response will contain NoShow link
+{% endapi-method-response-example-description %}
+
+```
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+  <url>https://api.sandbox.datatrans.com/upp/noshow?token=27cfba38-a606-49c0-9f03-c3bc6d580a66</url>
+  <errorCode>0</errorCode>
+</response>
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+### Examples
 
 {% tabs %}
 {% tab title="application/xml" %}
@@ -93,45 +146,11 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 
 Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
-**6. Optional: Add JavaScript callbacks/hooks**
-
-```javascript
-// Use attached Javascript callsbacks/hooks file to see which events are getting emitted to the parent frame.
-// Bind an event listener to the parent frame to listen for those events:
-
-function messageReceived(message) {
-  console.log(message.data);
-}
-
-if(window.addEventListener)
-  window.addEventListener("message",messageReceived);
-else
-if(window.attachEvent)
-  window.attachEvent("message",messageReceived);
-else
-  console.log("Could not listen.")
-
-/*
-    Possible event messages:
-    {type: 'error',     reason: 'wrong request'}        Invalid merchant id, alias or sign
-    {type: 'error',     reason: 'service not allowed'}  Merchant not configured
-    {type: 'error',     reason: 'fraud check 3082'}     Declined by fraud check
-    {type: 'error',     reason: 'system error'}         System error
-    {type: 'error',     reason: 'invalid sign'}         Invalid sign
-    {type: 'error',     reason: 'time expired'}         The user did not enter the chaptcha in less than 90 seconds
-    {type: 'error',     reason: 'wrong captcha'}        The entered captcha was wrong
-    {type: 'error',     reason: 'invalid card'}         Wrong card number
-    {type: 'error',     reason: 'velocity checker'}     Declined by velocity checker
-    {type: 'error',     reason: 'wrong alias'}          Wrong alias
-    {type: 'waiting',   reason: 'captcha'}              The page is waiting for user input of captcha
-    {type: 'success',   reason: 'CC'}                   The card number was successfully displayed
-    {type: 'success',   reason: 'CVV'}                  The CVV code was successfully displayed
-*/
-```
-
 **6. Ensure** [**PCI-compliant user management**](show.md#pci-dss-compliant-user-management)
 
-_Note: In test mode, only test credit cards are allowed!_
+{% hint style="info" %}
+In test mode, only [test credit cards](../test-card-data.md) are allowed!
+{% endhint %}
 
 ### Reference
 
@@ -168,6 +187,42 @@ SHA.256(salt+merchantId+aliasCC+userEmail)                                      
 _The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
 
 Example: [NoShow sign calculation](file:///C:/Users/beda.schumacher/Downloads/no-show-sign-calculation%20%282%29.html)
+
+### **Optional: Add JavaScript callbacks/hooks**
+
+```text
+// Use attached Javascript callsbacks/hooks file to see which events are getting emitted to the parent frame.
+// Bind an event listener to the parent frame to listen for those events:
+
+function messageReceived(message) {
+  console.log(message.data);
+}
+
+if(window.addEventListener)
+  window.addEventListener("message",messageReceived);
+else
+if(window.attachEvent)
+  window.attachEvent("message",messageReceived);
+else
+  console.log("Could not listen.")
+
+/*
+    Possible event messages:
+    {type: 'error',     reason: 'wrong request'}        Invalid merchant id, alias or sign
+    {type: 'error',     reason: 'service not allowed'}  Merchant not configured
+    {type: 'error',     reason: 'fraud check 3082'}     Declined by fraud check
+    {type: 'error',     reason: 'system error'}         System error
+    {type: 'error',     reason: 'invalid sign'}         Invalid sign
+    {type: 'error',     reason: 'time expired'}         The user did not enter the chaptcha in less than 90 seconds
+    {type: 'error',     reason: 'wrong captcha'}        The entered captcha was wrong
+    {type: 'error',     reason: 'invalid card'}         Wrong card number
+    {type: 'error',     reason: 'velocity checker'}     Declined by velocity checker
+    {type: 'error',     reason: 'wrong alias'}          Wrong alias
+    {type: 'waiting',   reason: 'captcha'}              The page is waiting for user input of captcha
+    {type: 'success',   reason: 'CC'}                   The card number was successfully displayed
+    {type: 'success',   reason: 'CVV'}                  The CVV code was successfully displayed
+*/
+```
 
 ### PCI DSS Compliant User Management
 
