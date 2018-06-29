@@ -7,7 +7,7 @@ _You are a travel technology company providing hotels with software to manage th
 
 _Note: Even though the interface is served by PCI Proxy, your PCI scope can extend._
 
-{% api-method method="post" host="https://api.sandbox.datatrans.com/upp/services/v1/noshow/init" path="" %}
+{% api-method method="post" host="https://api.sandbox.datatrans.com/" path="upp/services/v1/noshow/init" %}
 {% api-method-summary %}
 NoShow.jsp
 {% endapi-method-summary %}
