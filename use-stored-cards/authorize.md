@@ -241,8 +241,6 @@ curl https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
         <authorizationCode>912491270</authorizationCode>
         <acqAuthorizationCode>155912</acqAuthorizationCode>
         <maskedCC>424242xxxxxx4242</maskedCC>
-        <cardnumber>4242424242424242</cardnumber>
-        <returnCustomerCountry>CHE</returnCustomerCountry>
       </response>
     </transaction>
   </body>
