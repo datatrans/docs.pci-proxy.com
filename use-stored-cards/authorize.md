@@ -38,7 +38,7 @@ For this feature, you need an existing acquiring contract.
 
 ## 2. Authorize a stored card
 
-{% api-method method="post" host="https://pilot.datatrans.biz" path="/upp/jsp/XML\_authorize.jsp" %}
+{% api-method method="post" host="https://api.sandbox.datatrans.com" path="/upp/jsp/XML\_authorize.jsp" %}
 {% api-method-summary %}
 AUTH method
 {% endapi-method-summary %}
