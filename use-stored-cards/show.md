@@ -22,7 +22,7 @@ NoShow.jsp
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="content-type" type="string" required=true %}
-define if it's a XML or JSON request
+API consumes application/xml or application/json
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
@@ -36,7 +36,7 @@ Creditcard Token \(e.g. 424242SKMPRI4242\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="userName" type="string" required=false %}
-Unique userName \(only needed when no userEmail is given\)
+Unique userName \(only required when no userEmail is given\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="userEmail" type="string" required=true %}
@@ -165,7 +165,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed!
 | `aliasCVV` \(optional\) | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
 | `username` \(optional\) | [Unique userID](show.md#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond |
 | `userEmail` | Email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
-| `SHAsign` | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
+| [`SHAsign`](show.md#sha-256-security-sign) | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
 | `language` \(optional\) | The language code in which the no-show page should be displayed | en |
 
 ### SHA.256 Security Sign
