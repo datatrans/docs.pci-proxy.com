@@ -20,16 +20,13 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 
 1. **Put token instead of sensitive card data into your request**
 2. **Use PCI Proxy Endpoint as HOST with following paramters merchantId , sign , url , password and define type with BTA or TAMARA**
-3. **Add required X-CC HTTP header and POST data to your request**
+3. **Add required HTTP headers and POST data to your request**
 
 ```bash
 curl 'https://sandbox.pci-proxy.com/v1/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX&type=BTA'
-    -X POST                                                     // Request Method POST
-
-    -H "X-CC-Authorization: xxxxxx"                             // Basic-Auth
-    -H "X-CC-Cache-Control: no-cache"                           // Cache-Control
-    -H "X-CC-Content-Type: text/plain; charset=UTF-8"           // Accepted: 'text/plan'; 'application/json'; 'application/xml'
-    -d '0000080915K...'                                         // define the content
+    -X POST                                                // Request Method POST
+    -H "Content-Type: text/plain; charset=UTF-8"           // Accepted: 'text/plan'; 'application/json'; 'application/xml'
+    -d '0000080915K...'                                    // define the content
 ```
 
 The service responds based on the _accept header_: Supported are_text/plain, application/json_ \(default\) and _application/xml_
@@ -38,15 +35,14 @@ The service responds based on the _accept header_: Supported are_text/plain, app
 
 1. **Put token instead of sensitive card data into your request**
 2. **Use PCI Proxy Endpoint as HOST**
-3. **Add required X-CC HTTP to your request**
+3. **Add required HTTP headers to your request**
 4. **Add required POST data: merchantID, sign, url, file password and type**
 
 ```bash
 curl https://sandbox.pci-proxy.com/v1/ft                           // HOST: PCI Proxy Endpoint
     -X POST                                                                                // Request Method POST
-    -H "X-CC-Accept: text/plain"                                                           // NEW HEADER: Please choose text/plain
-    -H "X-CC-Cache-Control: no-cache"                                                      // NEW HEADER: Please choose no-cache
-    -H "X-CC-Content-Type: application/x-www-form-urlencoded; charset=UTF-8"               // NEW HEADER: application/x-www-form-urlencoded; charset=UTF-8
+    -H "Accept: text/plain"                                                           // NEW HEADER: Please choose text/plain
+    -H "Content-Type: application/x-www-form-urlencoded; charset=UTF-8"               // NEW HEADER: application/x-www-form-urlencoded; charset=UTF-8
 
     -d 'merchantId=1000011011                                                              // Merchant ID you received during Signup
     &sign=30916165706580013                                                                // Security Sign you created in Step 1 
