@@ -1,7 +1,3 @@
----
-description: Use our test cards on sandbox.
----
-
 # Test card data
 
 We have a set of test credit card numbers that you can use in our sandbox environment to test your integration. Limit and 3D support is only needed for transactions and not for tokenization.

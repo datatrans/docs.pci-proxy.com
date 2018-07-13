@@ -1,7 +1,3 @@
----
-description: Check or charge a stored credit card.
----
-
 # Authorize
 
 You can simply send an XML request with a token to **check**, **reserve** an amount, or **charge** a stored card. When you authorize a stored credit card, you can choose between different process options:

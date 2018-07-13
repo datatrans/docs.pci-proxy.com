@@ -1,14 +1,10 @@
----
-description: Learn about PUSH & PULL Proxies.
----
-
 # Request Types
 
 In general, either **you start a request** \(`PULL`\) or a **remote server starts a request** \(`PUSH`\). Depening on where to find sensitive data \(request/response\), PCI Proxy extracts or populates sensitive data on the fly. 
 
 ## Receive from Channel
 
-Receiving card data from a remote server \(Channel\) can work in two ways. In general, either you perform a [**`/v1/pull/`**](../tokenize-and-store-cards/filter-payloads.md#pull-method) request to receive card data from the Channel or the Channel starts a [**`/v1/push/`**](../tokenize-and-store-cards/filter-payloads.md#push-method) request with card data. PCI Proxy can tokenize and store sensitive data on both operations.
+Receiving card data from a remote server \(Channel\) can work in two ways. In general, either you perform a [**`/v1/pull/`**](../collect-and-store-cards/filter-payloads.md#pull-method) request to receive card data from the Channel or the Channel starts a [**`/v1/push/`**](../collect-and-store-cards/filter-payloads.md#push-method) request with card data. PCI Proxy can tokenize and store sensitive data on both operations.
 
 {% tabs %}
 {% tab title="PULL without PCI Proxy" %}
@@ -21,7 +17,7 @@ Receiving card data from a remote server \(Channel\) can work in two ways. In ge
 {% tab title="PULL via PCI Proxy" %}
 ![](../.gitbook/assets/channel_pull_pciproxy_color%20%282%29.png)
 
-1. [**You start a request**](../tokenize-and-store-cards/filter-payloads.md#pull-method) against PCI Proxy endpoint.
+1. [**You start a request**](../collect-and-store-cards/filter-payloads.md#pull-method) against PCI Proxy endpoint.
 2. PCI Proxy forward request to Channel API endpoint.
 3. Channel returns response with card data to PCI Proxy.
 4. PCI Proxy scans response and tokenizes card data.
@@ -37,7 +33,7 @@ Receiving card data from a remote server \(Channel\) can work in two ways. In ge
 {% tab title="PUSH via PCI Proxy" %}
 ![](../.gitbook/assets/channel_push_pciproxy_color%20%282%29.png)
 
-1. [**Channel starts request**](../tokenize-and-store-cards/filter-payloads.md#push-method) with card data to PCI Proxy endpoint.
+1. [**Channel starts request**](../collect-and-store-cards/filter-payloads.md#push-method) with card data to PCI Proxy endpoint.
 2. PCI Proxy scans request and tokenizes card data.
 3. PCI Proxy forwards **request with tokens** to your API endpoint \(you are out of PCI scope\).
 {% endtab %}

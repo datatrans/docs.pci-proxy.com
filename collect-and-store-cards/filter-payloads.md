@@ -1,7 +1,3 @@
----
-description: Securely filter (extract and tokenize) card data on incoming payloads.
----
-
 # Filter \(payloads\)
 
 Simply redirect requests containing sensitive card data through PCI Proxy to avoid sensitive data hitting your servers. PCI Proxy automatically scans requests for sensitive card data. Located card data is instantly collected, tokenized and stored in our secure vaults in Switzerland. A reference number \(token\) is issued that substitutes the sensitive data in the request or response. All other headers and payload always remains the same.

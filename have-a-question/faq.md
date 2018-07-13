@@ -1,7 +1,3 @@
----
-description: Frequently Asked Questions
----
-
 # FAQ
 
 ## How does PCI Proxy reduce my PCI DSS scope?

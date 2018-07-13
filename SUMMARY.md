@@ -4,13 +4,13 @@
 * [Setup](setup/README.md)
   * [Sandbox account](setup/sandbox-account.md)
   * [IP whitelisting](setup/ip-whitelisting.md)
-* [Collect & store cards](tokenize-and-store-cards/README.md)
-  * [Filter \(payloads\)](tokenize-and-store-cards/filter-payloads.md)
-  * [Capture \(iframes\)](tokenize-and-store-cards/website-tokenization/README.md)
-    * [Initialization and Styling](tokenize-and-store-cards/website-tokenization/initialization-and-styling.md)
-    * [Events](tokenize-and-store-cards/website-tokenization/events.md)
-    * [Token API](tokenize-and-store-cards/website-tokenization/tokenapi.md)
-  * [Vault \(alias gateway\)](tokenize-and-store-cards/vault.md)
+* [Collect & store cards](collect-and-store-cards/README.md)
+  * [Filter \(payloads\)](collect-and-store-cards/filter-payloads.md)
+  * [Capture \(iframes\)](collect-and-store-cards/capture-iframes/README.md)
+    * [Initialization and Styling](collect-and-store-cards/capture-iframes/initialization-and-styling.md)
+    * [Events](collect-and-store-cards/capture-iframes/events.md)
+    * [Token API](collect-and-store-cards/capture-iframes/token-api.md)
+  * [Vault \(alias gateway\)](collect-and-store-cards/vault-alias-gateway.md)
 * [Use stored cards](use-stored-cards/README.md)
   * [Forward](use-stored-cards/forward/README.md)
     * [HTTPS](use-stored-cards/forward/https.md)
@@ -27,10 +27,10 @@
 
 ## Guides
 
-* [Booking.com IP Whitelist](have-a-question/booking-provider-portal.md)
+* [Booking.com IP Whitelist](guides/booking.com-ip-whitelist.md)
 
 ## Have a Question?
 
-* [FAQ](have-a-question-1/faq-1.md)
-* [Contact us](have-a-question-1/contact-us.md)
+* [FAQ](have-a-question/faq.md)
+* [Contact us](have-a-question/contact-us.md)
 

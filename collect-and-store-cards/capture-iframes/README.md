@@ -1,7 +1,3 @@
----
-description: Securely collect and tokenize card data on your website.
----
-
 # Capture \(iframes\)
 
 The Inline Mode allows you to securely collect card data by injecting iframes to your DOM. A separate iframe for both, card number and CVV code is used. Thereby, sensitive data never touches your server and allows you to capture all other related card data such as cardholder name, expiry date, etc. directly by yourself.
@@ -104,7 +100,7 @@ Inline.on("success", function(data) {
 
 ## 4. Obtain tokens
 
-Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you can execute a server to server [`GET Token`](tokenapi.md) request to get tokens for card number and CVV code:
+Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you can execute a server to server [`GET Token`](token-api.md) request to get tokens for card number and CVV code:
 
 {% code-tabs %}
 {% code-tabs-item title="Example: Request" %}
@@ -132,7 +128,7 @@ curl https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionI
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 {% endhint %}
 
-Please also have a look at [Styling](initialization-and-styling.md), [Events](events.md) and [Token API](tokenapi.md) references.
+Please also have a look at [Styling](initialization-and-styling.md), [Events](events.md) and [Token API](token-api.md) references.
 
 ## Next up
 

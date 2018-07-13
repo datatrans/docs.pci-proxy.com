@@ -1,7 +1,3 @@
----
-description: Distribute stored payment data to any PCI-compliant API endpoint.
----
-
 # HTTPS
 
 ## 1. Add Receiver

@@ -1,7 +1,3 @@
----
-description: Callback function to listen in on events for Inline Mode
----
-
 # Events
 
 Use the `Inline.on(...)` callback function to subscribe to one or more of the `ready`, `change`, `error` or `validate` events.
