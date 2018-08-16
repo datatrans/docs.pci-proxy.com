@@ -15,7 +15,7 @@ PCI Proxy supports two forwarding methods [`/v1/pull/`](https.md#pull-method) an
 Forwarding card data to a remote server via HTTPS can work in two ways. In general, either you perform a pull request to forward card data to the Receiver or a Receiver starts a push request to receive card data from you in the response. PCI Proxy can populate both operations with sensitive data.
 
 | [**`/v1/pull/`**](https.md#pull-method) | [**`/v1/push/`**](https.md#push-method) |
-| --- | --- | --- |
+| :--- | :--- |
 | You start the request. | The Receiver starts the request. |
 | ![](../../.gitbook/assets/receiver_pull_status_quo_color%20%282%29.png) | ![](../../.gitbook/assets/receiver_push_status_quo_color.png) |
 

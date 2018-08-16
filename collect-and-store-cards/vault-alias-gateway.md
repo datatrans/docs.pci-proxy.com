@@ -18,7 +18,7 @@ The XML Alias Gateway converts credit card data into tokens. The service allows 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 {% endapi-method-parameter %}
 
@@ -114,7 +114,7 @@ Invalid value passed for one of the attributes \(e.g. merchantId\).
 {% endapi-method %}
 
 | XSD schema | [https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd](https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd) |
-| --- | --- |
+| :--- | :--- |
 
 
 {% hint style="info" %}
@@ -234,7 +234,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed.
 ### Error cases
 
 | errorCode | errorMessage | Explanation |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | 1004 | CC number not valid | Luhn check failed |
 | 2000 | access denied | XML alias service not enabled by Datatrans |
 | 2001 | no input document | Request body does not contain XML payload |

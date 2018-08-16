@@ -15,7 +15,7 @@ Our pricing model is based on actual performance we deliver to you. Unlike other
 ## What token formats does PCI Proxy support?
 
 | **Masked Credit Card Token** \(Example: _1234 56AB CDEF 3456_\) |
-| --- | --- | --- | --- |
+| :--- |
 | The format consists of the first 6 digits of the real credit card number, the actual BIN Range \(Bank Identification Number\), followed by the token in form of 6 upper-case letters. The Masked Credit Card Alias ends with the last 4 digits of the actual credit card number. |
 | **Full Substitution Token** \(Example:_1198182968382186732_\) |
 | 19 digits substitute for full tokenization of credit card number. |

@@ -516,7 +516,7 @@ curl https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
 If the authorization was successful, you will additionally receive the following parameter:
 
 | Parameter | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `responseCode` | N2 | 01 or 02 for a successful transaction |
 | `responseMessage` |  | Authorisation response message text |
 | `uppTransactionId` | N18 | Unique transaction identifier assigned by Datatrans |
@@ -527,7 +527,7 @@ If the authorization was successful, you will additionally receive the following
 If the authorization failed, you will additionally receive the following error parameter:
 
 | Parameter | Type | Description |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `errorCode` | N7 | Error code, please refer to the [Technical Implementation Guide](https://pilot.datatrans.biz/showcase/doc/Technical_Implementation_Guide.pdf) for the response code list |
 | `errorMessage` |  | Error text |
 | `errrorDetail` |  | Description of error detail |

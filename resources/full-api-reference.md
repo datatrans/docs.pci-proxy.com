@@ -5,13 +5,13 @@
 The parameters will be sent as HTTP headers.
 
 | **PCI Proxy PULL Endpoint:** |
-| --- |
+| :--- |
 | [https://sandbox.pci-proxy.com/v1/pull/](https://sandbox.pci-proxy.com/v1/pull/) |
 
 * **Mandatory input parameters:**
 
 | HTTP header | Description | Example value |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `X-CC-URL` | Specifies the target URL that will be called | [https://api.thirdparty.com/](https://api.thirdparty.com/) |
 | `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011 |
 | `X-CC-SIGN` | Configured security sign | 130709090849785405 |
@@ -19,7 +19,7 @@ The parameters will be sent as HTTP headers.
 * **Optional input paramter:**
 
 | HTTP Header | Description | Example value |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | `X-CC-TRUST-CERT` | If target URL server has invalid certificate, this parameter can be used to ignore the certificate. Useful for tests when implementing partners use self signed certificates on URLs simulating 3rd parties. Header should be avoided \(not sent\) in production environments! | yes/no/true/false/on/off |
 | `X-CC-ITEM` | Xpath expression pointing to “record” | /reservations/reservation |
 | `X-CC-NUMBER` | XPath expression relative to “record” to locate card number | customer/cc\_number |
@@ -46,7 +46,7 @@ curl https://sandbox.pci-proxy.com/v1/pull \
 In turn, the proxy will return HTTP headers:
 
 | HTTP Header | Description |
-| --- | --- |
+| :--- | :--- |
 | `X-CC-ERROR-CODE` | Returned by the proxy in case of error only. See the error table below. |
 | `X-CC-ERROR` | Returned by the proxy in case of error only. See the error table below. |
 | `X-CC-MATCHES` | Returned by the proxy in case of success. The value represents the number of total \(card to alias / alias to card\) replacements that were made. |
@@ -58,7 +58,7 @@ In turn, the proxy will return HTTP headers:
 If the proxy is able to parse and correctly match the replacement targets, but an error occurs during the tokenization or detokenization, the match will be replaced with the following possible constants \(length 16\):
 
 | Possible Constants | Error message \(X-CC-ERROR\) | Cause/explanation |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | 0000000000000000 | Invalid card number | The card number was matched but was invalid. |
 | 0000000000000001 | Internal error | The card number was matched, but internal error occurred during transformation to alias. |
 
@@ -69,7 +69,7 @@ For instance: If a channel response contains three card numbers and one of them 
 Error cases \(returned with headers X-CC-ERROR-CODE and X-CC-ERROR\):
 
 | Error code | Error message | Cause/explanation |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | 1 | Missing header: `<HEADER-NAME>` | Missing required header in request. |
 | 2 | Invalid merchantId | Merchant not found, disabled or not properly configured. Please contact Datatrans support. |
 | 3 | Target host not allowed: `X-CC-URL` | The target URL is not allowed. Please contact Datatrans Support. |

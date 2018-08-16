@@ -7,7 +7,7 @@ As an independent payment service provider, we support a variety of internationa
 The following acquirers are some of our directly integrated and fully supported partners:
 
 | Acquirer Switzerland | Acquirer Europe | Acquirer International |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | SIX Payment Services AG | European Merchant Services EMS | Wirecard |
 | Swisscard AECS AG | SIX Payment Services \(Europe\) SA | Cardnet Merchant Services \(Lloyds\) |
 | PostFinance | Nets Holding A/S | Nets Holding A/S |

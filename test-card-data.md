@@ -28,11 +28,11 @@ Full credit card information cannot be used in the sandbox.
 | ![](.gitbook/assets/logo_cup.png) | CUP | 6223164991230014 | 622316XWWQYN0014 | 12/2021 | - | No | No |
 
 | [**Create CVV Token** ](https://pilot.datatrans.biz/upp/jsp/upStart.jsp?uppAliasOnly=yes&merchantId=1000011011&amount=1000&currency=CHF&refno=800381&sign=30916165706580013&paymentmethod=VIS&aliasCC=70119122433810042&expm=12&expy=18&cvv=123)for CVV code 123 |
-| --- | --- |
+| :--- |
 | CVV tokens \(`aliasCVV`\) will be deleted after they have been initially used. Once you have used a CVV token for [Forward](use-stored-cards/forward/), [Show](use-stored-cards/show.md), or [Authorize](use-stored-cards/authorize.md), the CVV token expires 30 minutes thereafter. The link above generates fresh CVV tokens for your testing purposes.  |
 
 | \*Limit \(Amount / amount range\) | Error message |
-| --- | --- | --- | --- |
+| :--- | :--- |
 | &lt;= 90.-- | Transaction authorized |
 | &gt; 90.-- and &lt;= 100.-- | Transaction declined \(i.e. insufficient limit, bad expiry date\) |
 | &gt; 110.-- | Card blocked \(lost or stolen\) |

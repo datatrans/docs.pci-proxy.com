@@ -21,7 +21,7 @@ PCI Proxy supports two different filter methods [`/v1/pull`](filter-payloads.md#
 Collecting card data from a Channel via web service can work in two ways. In general, either you perform a pull request to receive card data from the Channel or a Channel starts a push request to send you card data. PCI Proxy can extract sensitive data in both operations.
 
 | [**`/v1/pull`**](filter-payloads.md#pull-method)  | [**`/v1/push`**](filter-payloads.md#push-method)  |
-| --- | --- | --- |
+| :--- | :--- |
 | You start the request. | The Channel starts the request. |
 | ![](../.gitbook/assets/channel_pull_status_quo_color%20%285%29.png) | ![](../.gitbook/assets/channel_push_status_quo_color.png) |
 

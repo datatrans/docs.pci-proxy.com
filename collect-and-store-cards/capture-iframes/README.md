@@ -9,7 +9,7 @@ The Inline Mode allows you to securely collect card data by injecting iframes to
 Browser compatibility for the Inline Mode:
 
 | **Browser** | **Version** |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- |
 | Chrome \| Chrome Mobile | &gt;=28 \| &gt;=28 |
 | Firefox \| Firefox Mobile | &gt;=31 \| &gt;=31 |
 | Internet Explorer \| Internet Explorer Mobile | &gt;=9 \| &gt;= 9 |

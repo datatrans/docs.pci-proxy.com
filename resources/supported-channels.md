@@ -3,7 +3,7 @@
 For [collecting credit cards via webservice \(XML/SOAP\)](https://github.com/dtrx/pci-proxy/tree/64fd0c927de7d841f405bce49bdcf6db31c16124/webservice.html) we already support a variety of channel APIs:
 
 | Channel | Type |
-| --- | --- |
+| :--- | :--- |
 | [Agoda](https://www.agoda.com) | PULL |
 | [Amadeus](http://www.amadeus.com/) | PUSH |
 | [Atrapalo](https://www.atrapalo.com/) | PULL |
