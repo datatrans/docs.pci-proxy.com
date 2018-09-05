@@ -80,9 +80,10 @@ Where the `event` callback object has the following structure:
 {% tab title="on change" %}
 The `change` event will be emitted whenever one of the following events are getting triggered:
 
-* `onkeyup`
-* `onkeydown`
-* `onblur`
+* `focus`
+* `blur`
+* `keyUp`
+* `keyDown`
 * `touchstart`
 * `touchmovetouchend`
 * `touchcancel`
