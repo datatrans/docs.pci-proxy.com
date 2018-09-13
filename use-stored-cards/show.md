@@ -186,7 +186,7 @@ SHA.256(salt+merchantId+aliasCC+userEmail)                                      
 
 _The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
 
-Example: [NoShow sign calculation](file:///C:/Users/beda.schumacher/Downloads/no-show-sign-calculation%20%282%29.html)
+Example: [NoShow sign calculation](https://datatrans.github.io/docs.pci-proxy.com/no-show.html)
 
 ### **Optional: Add JavaScript callbacks/hooks**
 
