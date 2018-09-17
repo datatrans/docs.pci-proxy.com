@@ -19,7 +19,7 @@
         <style>
             textarea, dt { font-family: Consolas, Courier, monospace}
         </style>
-      
+
         <script type="text/javascript">
             var envPresets = {
                 "pilot": {
@@ -58,7 +58,7 @@
               var aliasCC = document.getElementById('aliasCC').value;
               var aliasCVV = document.getElementById('aliasCVV').value;
               var userEmail = document.getElementById('userEmail').value;
-              var sign = CryptoJS.SHA256(salt+merchantId+aliasCC);
+              var sign = CryptoJS.SHA256(salt+merchantId+aliasCC+userEmail);
 
 
               document.getElementById('sign').value = sign;
