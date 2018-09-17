@@ -142,7 +142,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 
 **4. Once the user clicks on the link an email will be sent to  `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually.** 
 
-**5. Subsequently the new device has been authorized the user may enter a four digit security code in the opened iFrame to retrieve plain text credit card number.** 
+**5. Subsequently the new device has been authorized the user and may enter a four digit security code in the opened iFrame to retrieve plain text credit card number.** 
 
 Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
