@@ -93,7 +93,7 @@ Expiration year \(YY\)
 Customer’s IP address \(source IP used by cardholder\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="sign" type="string" required=false %}
+{% api-method-parameter name="sign" type="string" required=true %}
 Your security sign  
 see Setup
 {% endapi-method-parameter %}
