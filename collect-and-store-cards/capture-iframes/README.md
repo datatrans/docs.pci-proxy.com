@@ -137,7 +137,7 @@ curl https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionI
 
 ## Examples
 
-{% embed url="https://codepen.io/pciproxy/full/VXELBZ" caption="Inline Mode Payment Form Sample" %}
+{% embed url="https://codepen.io/pciproxy/full/VXELBZ" caption="Secure Fields Payment form sample" %}
 
 {% hint style="warning" %}
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
