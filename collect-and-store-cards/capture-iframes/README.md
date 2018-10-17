@@ -70,7 +70,7 @@ In order for Secure Fields to insert card number and CVV iframes at the right pl
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 {% endhint %}
 
-## 3. Retrieve a transactionId
+## 3. Retrieve a Transaction ID
 
 Start with creating a new Secure Fields instance:
 
@@ -137,7 +137,7 @@ curl https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionI
 
 ## Examples
 
-{% embed url="https://codepen.io/pciproxy/full/VXELBZ" caption="Secure Fields Payment form sample" %}
+{% embed url="https://codepen.io/pciproxy/pen/ZqrrYZ" caption="PCI Proxy Secure Fields Example" %}
 
 {% hint style="warning" %}
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
