@@ -72,7 +72,7 @@ In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 
 ## 3. Retrieve a transactionId
 
-First, create a new Secure Fields instance:
+Start with creating a new Secure Fields instance:
 
 ```javascript
 var secureFields = new SecureFields();
