@@ -1,30 +1,30 @@
 # Events
 
-Use the `Inline.on(...)` callback function to subscribe to one or more of the `ready`, `change`, `error` or `validate` events.
+Use the `secureFields.on(...)` callback function to subscribe to one or more of the `ready`, `change`, `error` or `validate` events.
 
 {% tabs %}
 {% tab title="on ready" %}
 The ready event will be emitted once the iframes are loaded.
 
 ```javascript
-Inline.on("ready", function() { 
+secureFields.on("ready", function() { 
  // setting a placholder for the cardNumber field
- Inline.setPlaceholder("cardNumber", "Card number");
+ secureFields.setPlaceholder("cardNumber", "Card number");
 
  // setting a placeholder for the CVV field
- Inline.setPlaceholder("cvv", "CVV");
+ secureFields.setPlaceholder("cvv", "CVV");
 });
 ```
 {% endtab %}
 
 {% tab title="on validate" %}
-The validate event will be emitted once the form was submitted with `Inline.submit();`
+The validate event will be emitted once the form was submitted with `secureFields.submit();`
 
 ```javascript
-Inline.on("validate", function(event) {
+secureFields.on("validate", function(event) {
   // put a red border around the fields if they are not valid
-  Inline.setStyle("cardNumber.invalid","border: 1px solid #f00");
-  Inline.setStyle("cvv.invalid","border: 1px solid #f00");
+  secureFields.setStyle("cardNumber.invalid","border: 1px solid #f00");
+  secureFields.setStyle("cvv.invalid","border: 1px solid #f00");
 });
 ```
 
@@ -51,7 +51,7 @@ Where the `event` callback object has the following structure:
 The success event will be emitted if the tokenization was successful.
 
 ```javascript
-Inline.on("success", function(data) {
+secureFields.on("success", function(data) {
   if(data.transactionId) {
     // send data.transactionId and the
     // rest of the form to your server
@@ -90,7 +90,7 @@ The `change` event will be emitted whenever one of the following events are gett
 * `touchforcechange`
 
 ```javascript
-Inline.on("change", function(event) {
+secureFields.on("change", function(event) {
   // some fancy stuff
 });
 ```
@@ -119,18 +119,18 @@ Where the `event` callback object has the following structure:
 {% endtab %}
 
 {% tab title="on error" %}
-The error event will be emitted if there was an error after calling `Inline.initTokenize(...)`.  
+The error event will be emitted if there was an error after calling `secureFields.initTokenize(...)`.  
   
 Possible scenarios are:
 
-* Wrong merchantId configured in `Inline.init(...);`
+* Wrong merchantId configured in `secureFields.initTokenize(...);`
 * Wrong name of card number, CVV fields
 * Wrong merchantId configuration on Datatrans side
 
 Those errors should only occur during development/testing.
 
 ```javascript
-Inline.on("error", function(data) {
+secureFields.on("error", function(data) {
   // something bad happened
 });
 ```

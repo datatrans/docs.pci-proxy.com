@@ -29,8 +29,8 @@
 ### Browser APIs
 
 {% tabs %}
-{% tab title="Inline Mode" %}
-[https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js](https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js)
+{% tab title="Secure Fields" %}
+[https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-1.0.0.js](https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-1.0.0.js)
 {% endtab %}
 
 {% tab title="Payment Page" %}

@@ -1,6 +1,6 @@
 # Initialization and Styling
 
-Using Inline Mode leaves you complete control over the styling of your payment form. The card number and CVV fields can be styled individually.
+Using Secure Fields leaves you complete control over the styling of your payment form. The card number and CVV fields can be styled individually.
 
 ```javascript
 var styles = {
@@ -34,16 +34,16 @@ var styles = {
     '*:hover': 'border: 1px solid #66AFE9',
     '*::placeholder': 'color: #999999',
     '*:-ms-input-placeholder': 'color: #999999' // thanks MS :( 
-}; 
+};
 
-Inline.initTokenize(
-     ":your-merchant-id",
+secureFields.initTokenize(
+     "your-merchant-id",
      {
          cardNumber: "cardNumberPlaceholder",
          cvv: "cvvPlaceholder"
      },{            
          styles: styles,
-         focus: "cardNumber" // or Inline.focus("cardNumber");
+         focus: "cardNumber" // or secureFields.focus("cardNumber");
      }
  );
 ```
@@ -54,15 +54,15 @@ The individual fields can also be styled dynamically:
 
 ```javascript
 // the card number field
-Inline.setStyle("cardNumber", "border: 1px solid #ccc");
+secureFields.setStyle("cardNumber", "border: 1px solid #ccc");
 
 // the CVV field
-Inline.setStyle("cvv", "border: 1px solid #ccc")
+secureFields.setStyle("cvv", "border: 1px solid #ccc")
 ```
 
 ## Toggled classes
 
-The inline mode automatically toggles CSS classes on the input fields based on various user input. Use `"cardNumber.valid:hover": "background-color: green;"` for example to apply different style based classes.
+Secure Fields automatically toggle CSS classes on the input fields based on various user input. Use `"cardNumber.valid:hover": "background-color: green;"` for example to apply different style based classes.
 
 | Class name | Description |
 | :--- | :--- |
@@ -80,7 +80,7 @@ The `initTokenize` function allows to set the input type, placeholder value and 
 * The placeholder value will be `enter your cvv`
 
 ```javascript
-Inline.initTokenize(
+secureFields.initTokenize(
     merchantId,
     {
         cardNumber: "cardNumberPlaceholder",
@@ -101,7 +101,7 @@ Inline.initTokenize(
 By default all credit cards available in your merchant setup will be accepted. Use the `paymentMethods` option if there's a need to accept only a subset of card `types`.
 
 ```javascript
-Inline.initTokenize(
+secureFields.initTokenize(
     merchantId,
     {
         cardNumber: "cardNumberPlaceholder",
@@ -131,21 +131,20 @@ Parameter values for “paymentmethod”:
 Web fonts are supported via the standard `@font-face` CSS rule. Because of security concerns it is not permitted to link external resources. So, in order to get custom fonts, you need to:
 
 * Contact [setup@pci-proxy.com](mailto:setup@pci-proxy.com) and provide the font files \(woff, woof2, ttf etc\). The files will be uploaded into your merchant id hosted files space.
-* Reference the font files, by name \(no path\) in the styles section of the `Inline.initTokenize` call:
+* Reference the font files, by name \(no path\) in the styles section of the `initTokenize` call:
 
 ```javascript
 var styles = {
-            // setting the font-family to both fields
-            "*": "font-family: Metamorphous;",
-
-            "@font-face": {
-                "*": {
-                    fontFamily: "Metamorphous",
-                    fontStyle: "normal",
-                    fontWeight: 400,
-                    src: "url('metamorphous.woff2') format('woff2')"
-                }
-            }
+    // setting the font-family to both fields
+    "*": "font-family: Metamorphous;",
+    "@font-face": {
+        "*": {
+            fontFamily: "Metamorphous",
+            fontStyle: "normal",
+            fontWeight: 400,
+            src: "url('metamorphous.woff2') format('woff2')"
+        }        
+    }
 }
 ```
 

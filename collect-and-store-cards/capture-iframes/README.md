@@ -1,12 +1,12 @@
 # Capture \(iframes\)
 
-The Inline Mode allows you to securely collect card data by injecting iframes to your DOM. A separate iframe for both, card number and CVV code is used. Thereby, sensitive data never touches your server and allows you to capture all other related card data such as cardholder name, expiry date, etc. directly by yourself.
+Secure Fields allow you to securely collect card data by injecting iframes to your DOM. A separate iframe for both, card number and CVV code is used. Thereby, sensitive data never touches your server and allows you to capture all other related card data such as cardholder name, expiry date, etc. directly by yourself.
 
 {% hint style="success" %}
-**The Inline Mode qualifies you for SAQ A.**
+**Secure Fields qualify you for SAQ A.**
 {% endhint %}
 
-Browser compatibility for the Inline Mode:
+Browser compatibility for Secure Fields:
 
 | **Browser** | **Version** |
 | :--- | :--- |
@@ -18,20 +18,20 @@ Browser compatibility for the Inline Mode:
 | Blackberry Browser | &gt;=8 |
 | Android Browser | &gt;=4 |
 
-## 1. Setup Inline Mode
+## 1. Setup Secure Fields
 
 To get started include the following script on your page. 
 
 {% code-tabs %}
 {% code-tabs-item title="Inline Mode Script" %}
 ```javascript
-<script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.js"></script>
+<script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-1.0.0.js"></script>
 ```
 {% endcode-tabs-item %}
 
 {% code-tabs-item title="Minified Version" %}
 ```javascript
-<script src="https://pay.sandbox.datatrans.com/upp/payment/js/datatrans-inline-1.0.0.min.js"></script>
+<script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-1.0.0.min.js"></script>
 ```
 {% endcode-tabs-item %}
 {% endcode-tabs %}
@@ -42,7 +42,7 @@ Please make sure to always load it directly from [https://pay.sandbox.datatrans.
 
 ## 2. Create payment form
 
-In order for the Inline Mode to insert the card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are:
+In order for Secure Fields to insert card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are:
 
 * `card-number-placeholder`
 * `cvv-placeholder`
@@ -72,30 +72,45 @@ In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 
 ## 3. Retrieve a transactionId
 
-Initialize the Inline Mode with your `merchantId` and specify which DOM element containers should be used to inject the iframes:
+First, create a new Secure Fields instance:
 
 ```javascript
-Inline.initTokenize( "1100007006", {
+var secureFields = new SecureFields();
+
+// Multiple instances might be created and used independently:
+// e.g. var secureFields2 = new SecureFields();
+```
+
+Initialize it with your `merchantId` and specify which DOM element containers should be used to inject the iframes:
+
+```javascript
+secureFields.initTokenize( "1100007006", {
   cardNumber: "card-number-placeholder", 
   cvv: "cvv-placeholder"                
 });
 ```
 
-Afterwards you submit the form and listen for the success event:
+Afterwards submit the form and listen for the success event:
 
 ```javascript
 $(function() {
   $("#go").click( function() {
-    Inline.submit(); // submit the "form"
+    secureFields.submit(); // submit the "form"
   })
 });
 
-Inline.on("success", function(data) {
+secureFields.on("success", function(data) {
   if(data.transactionId) {
     // transmit data.transactionId and the rest
     // of the form to your server    
   }
 });
+```
+
+Instances can be destroyed if no longer used:
+
+```javascript
+secureFields.destroy();
 ```
 
 ## 4. Obtain tokens

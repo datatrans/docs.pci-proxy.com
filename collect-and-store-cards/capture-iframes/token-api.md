@@ -20,7 +20,7 @@ see Setup
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="transactionId" type="number" required=true %}
-The transaction id obtained via the `Inline.submit()` operation.
+The transaction id obtained via the `secureFields.submit()` operation.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="returnPaymentMethod" type="boolean" %}
