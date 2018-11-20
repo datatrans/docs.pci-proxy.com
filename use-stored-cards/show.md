@@ -36,7 +36,7 @@ Creditcard Token \(e.g. 424242SKMPRI4242\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="userName" type="string" required=false %}
-Unique userName \(only required when no userEmail is given\)
+Unique userName \(only required when no unique userEmail is given\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="userEmail" type="string" required=true %}
