@@ -135,7 +135,7 @@ curl https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionI
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Please refer to [Token API](token-api.md) to see how to get the password. 
 {% endhint %}
 
