@@ -17,14 +17,14 @@ We will support you with the integration of 3D Secure 2, whilst trying to keep y
   
 Please bear in mind that this guidance is based on our knowledge and best practices within payment industry and therefore still beeing under development. If you have any specific use-cases or questions please send us a message.
 
-contact@pci-proxy.com
+[contact@pci-proxy.com](mailto:%20contact@pci-proxy.com)
 {% endhint %}
 
 ## Integrations
 
-To apply merchant initiated transactions \(MIT\) you need to authenticate the cardholder on the very first saving of the credit card. We therefore adapt our APIs to mark payments as merchant initiated transactions collected through your frontend. 
+To apply merchant initiated transactions \(MIT\) you need to authenticate the cardholder on the very first saving of the credit card. We therefore adapt our APIs to mark payments as merchant initiated transactions collected through your frontend. Based on the  result of the 3D secure authentication process the transaction can go through either a frictionless or challenge flow. 
 
-As well we are extending the [charge API](../use-stored-cards/authorize.md) to authorise payment requests using authentication data from a third-party 3D Secure 2 provider.
+As well we are extending the [charge API](../use-stored-cards/authorize.md) to authorise payment requests using authentication data received from a third-party 3D Secure 2 provider.
 
 | API | Status |
 | :--- | :--- |
