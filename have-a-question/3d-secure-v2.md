@@ -30,6 +30,7 @@ As well we are extending the [charge API](../use-stored-cards/authorize.md) to a
 | :--- | :--- |
 | [SecureFields](../collect-and-store-cards/capture-iframes/) \(Frontend\) | Under development |
 | [Charge ](../use-stored-cards/authorize.md)\(Server-to-Server\) | Under development |
+| SDKs for Android / iOS | Coming soon |
 | [Filter](../collect-and-store-cards/filter-payloads.md) | Supported  |
 | [Forward](../use-stored-cards/forward/) | Supported |
 
