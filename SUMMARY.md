@@ -31,7 +31,8 @@
 
 ## Have a Question?
 
-* [3D Secure v2](have-a-question/3d-secure-v2.md)
+* [3D Secure v2](have-a-question/3d-secure-v2/README.md)
+  * [Integrations](have-a-question/3d-secure-v2/integrations.md)
 * [FAQ](have-a-question/faq.md)
 * [Contact us](have-a-question/contact-us.md)
 

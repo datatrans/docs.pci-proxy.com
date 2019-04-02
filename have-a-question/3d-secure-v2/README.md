@@ -20,19 +20,18 @@ Please bear in mind that this guidance is based on our knowledge and best practi
 [contact@pci-proxy.com](mailto:%20contact@pci-proxy.com)
 {% endhint %}
 
-## Integrations
+## Who is affected by Strong Customer Authentication?
 
-To apply merchant initiated transactions \(MIT\) you need to authenticate the cardholder on the very first saving of the credit card. We therefore adapt our APIs to mark payments as merchant initiated transactions collected through your frontend. Based on the  result of the 3D secure authentication process the transaction can go through either a frictionless or challenge flow. 
+In general every entity that accepts customer-initiated only payments within [European Economic Area](https://en.wikipedia.org/wiki/European_Economic_Area) \(EEA\) is enforced to apply strong customer authentication. In more detail it's relevant where the Issuer or Acquirer is located. The location of the cardholder and merchant is not relevant in terms of "two-leg" transactions. 
 
-As well we are extending the [charge API](../use-stored-cards/authorize.md) to authorise payment requests using authentication data received from a third-party 3D Secure 2 provider.
+## Exemption \(Merchant-initiated-transactions\) 
 
-| API | Status |
-| :--- | :--- |
-| [SecureFields](../collect-and-store-cards/capture-iframes/) \(Frontend\) | Under development |
-| [Charge ](../use-stored-cards/authorize.md)\(Server-to-Server\) | Under development |
-| SDKs for Android / iOS | Coming soon |
-| [Filter](../collect-and-store-cards/filter-payloads.md) | Supported  |
-| [Forward](../use-stored-cards/forward/) | Supported |
+Under the SCA regulation, there are some exemptions which can be applied. One of them is to flag transactions as merchant-initiated transactions \(MIT\). Thereby many use-cases require merchants to initiate a payment on behalf of the cardholder when the cardholder is not available to perform the authentication. 
+
+This exemptions can only be given by the merchants acquirer or issuer. If the issuer or acquirer does not agree with the exemption request, MIT flagged transactions may be declined.   
+Furthermore you have to inform the cardholder about MIT on behalf of the cardholder. 
+
+If you succesfully applied for a MIT exemption please move on with integrating new 3Dv2 suppported APIs [here](integrations.md). 
 
 ## Goal
 
