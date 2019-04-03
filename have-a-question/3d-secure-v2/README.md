@@ -22,7 +22,7 @@ Please bear in mind that this guidance is based on our knowledge and best practi
 
 ## Who is affected by Strong Customer Authentication?
 
-In general every entity that accepts customer-initiated only payments within [European Economic Area](https://en.wikipedia.org/wiki/European_Economic_Area) \(EEA\) is enforced to apply strong customer authentication. In more detail it's relevant where the Issuer or Acquirer is located. The location of the cardholder and merchant is not relevant in terms of "two-leg" transactions. 
+Entities in the European Economic Area \(EEA\) that accept online card payments will be affected by Strong Customer Authentication. This regulation applies to transactions where both the entities and the cardholder’s bank are located in the EEA.
 
 ## Exemption \(Merchant-initiated-transactions\) 
 
