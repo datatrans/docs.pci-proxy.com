@@ -40,7 +40,7 @@ secureFields.initTokenize(
      "your-merchant-id",
      {
          cardNumber: "cardNumberPlaceholder",
-         cvv: "cvvPlaceholder"
+         cvv: "cvvPlaceholder",
      },{            
          styles: styles,
          focus: "cardNumber" // or secureFields.focus("cardNumber");
@@ -73,11 +73,12 @@ Secure Fields automatically toggle CSS classes on the input fields based on vari
 
 ## Advanced initialization
 
-The `initTokenize` function allows to set the input type, placeholder value and which field to be focused right from the beginning. The \(random\) example from below ensures the following:
+The `initTokenize` function allows to set the input type, placeholder value and which field to be focused right from the beginning. In addition it is possible to set an `aria-label`. The \(random\) example from below ensures the following:
 
 * The CVV field gets initial focus
 * The CVV field's input type gets set to `tel`
 * The placeholder value will be `enter your cvv`
+* The CVV field input will have `aria-label="cvv aria label"`
 
 ```javascript
 secureFields.initTokenize(
@@ -87,7 +88,8 @@ secureFields.initTokenize(
         cvv:  {
             placeholderElementId: "cvvPlaceholder",
             inputType: "tel",
-            placeholder: "enter your cvv"
+            placeholder: "enter your cvv",
+            ariaLabel: "cvv aria label"
         }
     },{        
         styles: styles,
