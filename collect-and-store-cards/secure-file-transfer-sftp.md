@@ -6,7 +6,7 @@ description: >-
 
 # Secure File Transfer \(SFTP\)
 
-PCI Proxy allows you to securely transmit files containing sensitive cardholder data between Customer, Datatrans and third party server. Business could for example run some batch processes for reconciliation, payment or card update use-cases with non-compliant third party provider. 
+PCI Proxy allows you to securely transmit files containing sensitive cardholder data between Customer, Datatrans and third party server. Business could for example run some batch processes for reconciliation, payment \(e.g. HOT files\) or card update use-cases with non-compliant third party provider. 
 
 ## Process flow
 
