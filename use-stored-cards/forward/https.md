@@ -1,4 +1,4 @@
-# HTTPS
+# HTTPS to HTTPS
 
 ## 1. Add Receiver
 

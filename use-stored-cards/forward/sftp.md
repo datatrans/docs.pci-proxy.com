@@ -1,4 +1,4 @@
-# SFTP
+# HTTPS  to SFTP
 
 ## 1. Add SFTP-Receiver to your account
 
