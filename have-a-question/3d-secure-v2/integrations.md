@@ -7,6 +7,7 @@ As well we are extending the [charge API](../../use-stored-cards/authorize.md) t
 | API | Status |
 | :--- | :--- |
 | [SecureFields](../../collect-and-store-cards/capture-iframes/) \(Frontend\) | 🚧 Under development |
+| Webservice \(Server-to-Server\) | 🚧 Under development |
 | [Charge ](../../use-stored-cards/authorize.md)\(Server-to-Server\) | 🚧 Under development |
 | Mobile SDK \(Android / iOS\) | 🚧 Coming soon |
 | [Filter](../../collect-and-store-cards/filter-payloads.md) \(Server-to-Server\) | ✅ Supported  |
