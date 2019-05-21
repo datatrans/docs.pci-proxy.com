@@ -28,7 +28,11 @@
 
 ## Guides
 
-* [Booking.com IP Whitelist](guides/booking.com-ip-whitelist.md)
+* [3D Secure 1/2](guides/3d-secure-v1-v2/README.md)
+  * [SecureFields](guides/3d-secure-v1-v2/securefields-1/README.md)
+    * [Initialization and Styling](guides/3d-secure-v1-v2/securefields-1/events.md)
+    * [Events](guides/3d-secure-v1-v2/securefields-1/untitled.md)
+* [Testing 3D secure](guides/testing-3d-secure.md)
 
 ## Have a Question?
 
@@ -36,4 +40,5 @@
   * [Integrations](have-a-question/3d-secure-v2/integrations.md)
 * [FAQ](have-a-question/faq.md)
 * [Contact us](have-a-question/contact-us.md)
+* [Booking.com IP Whitelist](have-a-question/booking.com-ip-whitelist.md)
 
