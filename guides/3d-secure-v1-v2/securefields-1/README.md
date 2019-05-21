@@ -4,7 +4,7 @@ description: >-
   frontend.
 ---
 
-# SecureFields
+# SecureFields \(beta\)
 
 ## Before you start
 
@@ -16,7 +16,7 @@ description: >-
 * Let us know your acquirer 3D Secure information to enroll your MID
 * Use our whitelabel 3D Secure data \(VISA and MC only currently\)
 
-## Step 1: Inititial Server-to-Server call
+## Step 1: Initial Server-to-Server call
 
 {% api-method method="post" host="https://api.sandbox.datatrans.com" path="/v1/transactions/secureFields" %}
 {% api-method-summary %}
