@@ -91,7 +91,7 @@ Amount must be at least in the currency's smallest unit.
 {% endapi-method %}
 
 {% hint style="info" %}
- Refer to the official EMVCo 3D specification 2.2.0 for parameter requirements sent in the `card` object. [https://www.emvco.com/emv-technologies/3d-secure/](https://www.emvco.com/emv-technologies/3d-secure/)
+ Refer to the official EMVCo 3D specification 2.1.0 for parameter requirements sent in the `card` object. [https://www.emvco.com/emv-technologies/3d-secure/](https://www.emvco.com/emv-technologies/3d-secure/)
 {% endhint %}
 
 #### The transactionId returned in the response of the init call
