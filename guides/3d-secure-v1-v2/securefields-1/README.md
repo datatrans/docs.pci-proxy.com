@@ -1,20 +1,25 @@
 ---
 description: >-
-  Use SecureFields integration for tokenisation and authentication only in your
+  Use Secure Fields integration for Tokenisation and Authentication Only in your
   frontend.
 ---
 
-# SecureFields \(beta\)
+# Secure Fields 3D \(beta\)
 
 ## Before you start
 
-1. Sign up for an PCI Proxy sandbox account at [https://www.pci-proxy.com/pci-proxy/contact/](https://www.pci-proxy.com/pci-proxy/contact/)
-2. This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
-3. Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md)
-4. Decide how you want to enroll your merchantID \(MID\) for 3D Secure 1 and 2 flow. Following two options are provided:
+1. [**Sign up**](https://www.pci-proxy.com/pci-proxy/contact/) for a free PCI Proxy sandbox account.
 
-* Let us know your acquirer 3D Secure information to enroll your MID
-* Use our whitelabel 3D Secure data \(VISA and MC only currently\)
+{% hint style="info" %}
+* This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+* Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md).
+{% endhint %}
+
+{% hint style="warning" %}
+**3D Secure Enrollment Requirements**
+
+Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). If you don't have your own acquiring contract, please contact us to use our generic 3D Secure contract \(currently VISA and Mastercard only\).
+{% endhint %}
 
 ## Step 1: Initial Server-to-Server call
 
