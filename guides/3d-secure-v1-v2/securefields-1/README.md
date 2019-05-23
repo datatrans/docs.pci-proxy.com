@@ -6,7 +6,20 @@ description: >-
 
 # SecureFields 3D \(beta\)
 
+## Before you start
+
 1. [**Sign up**](https://www.pci-proxy.com/pci-proxy/contact/) for a free PCI Proxy sandbox account.
+
+{% hint style="info" %}
+* This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+* Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md).
+{% endhint %}
+
+{% hint style="warning" %}
+**3D Secure Enrollment Requirements**
+
+Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). If you don't have your own acquiring contract, please contact us to use our generic 3D Secure contract \(currently VISA and Mastercard only\).
+{% endhint %}
 
 ## Step 1: Initial Server-to-Server call
 
@@ -81,32 +94,6 @@ Amount must be at least in the currency's smallest unit.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-{% hint style="info" %}
-* This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
-* Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md).
-{% endhint %}
-
-{% hint style="warning" %}
-**3D Secure Enrollment Requirements**
-
-Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). If you don't have your own acquiring contract, please contact us to use our generic 3D Secure contract \(currently VISA and Mastercard only\).
-{% endhint %}
-
-## Before you start
-
-1. [**Sign up**](https://www.pci-proxy.com/pci-proxy/contact/) for a free PCI Proxy sandbox account.
-
-{% hint style="info" %}
-* This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
-* Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md).
-{% endhint %}
-
-{% hint style="warning" %}
-**3D Secure Enrollment Requirements**
-
-Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). If you don't have your own acquiring contract, please contact us to use our generic 3D Secure contract \(currently VISA and Mastercard only\).
-{% endhint %}
 
 {% hint style="info" %}
  Refer to the official EMVCo 3D specification 2.1.0 for parameter requirements sent in the `card` object. [https://www.emvco.com/emv-technologies/3d-secure/](https://www.emvco.com/emv-technologies/3d-secure/)
@@ -353,6 +340,8 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
 {% endcode-tabs %}
 
 ## Step 7: Forward 3D data
+
+Received `"3D"` object contains parameters with the result of the 3D-Secure process and can be fowarded to 3rd party payment gateway. If you decide to use Datatrans payment gateway please continue with our [Authorize](../../../use-stored-cards/authorize.md) API.
 
 ## Examples
 
