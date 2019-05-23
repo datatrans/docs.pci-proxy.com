@@ -29,9 +29,10 @@
 ## Guides
 
 * [3D Secure 1/2](guides/3d-secure-v1-v2/README.md)
-  * [Secure Fields 3D \(beta\)](guides/3d-secure-v1-v2/securefields-1/README.md)
+  * [SecureFields 3D \(beta\)](guides/3d-secure-v1-v2/securefields-1/README.md)
     * [Initialization and Styling](guides/3d-secure-v1-v2/securefields-1/events.md)
     * [Events](guides/3d-secure-v1-v2/securefields-1/untitled.md)
+  * [API 3D \(beta\)](guides/3d-secure-v1-v2/api-beta.md)
 * [Testing 3D secure](guides/testing-3d-secure.md)
 
 ## Have a Question?

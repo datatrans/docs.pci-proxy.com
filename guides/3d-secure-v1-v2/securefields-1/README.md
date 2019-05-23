@@ -4,22 +4,9 @@ description: >-
   frontend.
 ---
 
-# Secure Fields 3D \(beta\)
-
-## Before you start
+# SecureFields 3D \(beta\)
 
 1. [**Sign up**](https://www.pci-proxy.com/pci-proxy/contact/) for a free PCI Proxy sandbox account.
-
-{% hint style="info" %}
-* This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
-* Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md).
-{% endhint %}
-
-{% hint style="warning" %}
-**3D Secure Enrollment Requirements**
-
-Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). If you don't have your own acquiring contract, please contact us to use our generic 3D Secure contract \(currently VISA and Mastercard only\).
-{% endhint %}
 
 ## Step 1: Initial Server-to-Server call
 
@@ -94,6 +81,32 @@ Amount must be at least in the currency's smallest unit.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% hint style="info" %}
+* This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+* Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md).
+{% endhint %}
+
+{% hint style="warning" %}
+**3D Secure Enrollment Requirements**
+
+Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). If you don't have your own acquiring contract, please contact us to use our generic 3D Secure contract \(currently VISA and Mastercard only\).
+{% endhint %}
+
+## Before you start
+
+1. [**Sign up**](https://www.pci-proxy.com/pci-proxy/contact/) for a free PCI Proxy sandbox account.
+
+{% hint style="info" %}
+* This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+* Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md).
+{% endhint %}
+
+{% hint style="warning" %}
+**3D Secure Enrollment Requirements**
+
+Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). If you don't have your own acquiring contract, please contact us to use our generic 3D Secure contract \(currently VISA and Mastercard only\).
+{% endhint %}
 
 {% hint style="info" %}
  Refer to the official EMVCo 3D specification 2.1.0 for parameter requirements sent in the `card` object. [https://www.emvco.com/emv-technologies/3d-secure/](https://www.emvco.com/emv-technologies/3d-secure/)
@@ -257,7 +270,7 @@ secureFields.on("success", function(data) {
 
 The `success` event returns a `redirect` attribute which contains the 3D URL. To present a challenge flow, redirect the card holder to this URL to trigger 3D authentication process. Once the card holder completed the 3D process, he will be redirected to the `returnUrl` passed to the `/v1/transactions/secureFields` API. 
 
-## Step 6: Obtain 3D paramters and tokens
+## Step 6: Obtain 3D parameters and tokens
 
 {% api-method method="get" host="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}" %}
 {% api-method-summary %}
@@ -265,7 +278,7 @@ Status API
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Obtain 3D parameters, credit card and cvv token by executing a server to server call with the transactionId received in step 1 
+Obtain 3D parameters, credit card and cvv token by executing a server to server call with the `transactionId` received in step 1 
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -279,7 +292,7 @@ see Setup
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="transactionId" type="string" required=true %}
-The transactionId obtained via /v1/transactions/secureFields call
+The `transactionId` obtained via initial`/v1/transactions/secureFields` call
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -341,10 +354,10 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
 
 ## Step 7: Forward 3D data
 
-Received `"3D"` data then can be fowarded to 3rd party payment gateway or if you decide to use Datatrans payment gateway please continue with our [Authorize](../../../use-stored-cards/authorize.md) API.
-
 ## Examples
 
 Find a working sample here \(change transactionId all the time\):   
 [https://github.com/datatrans/secure-fields-sample/blob/secure-fields-init-with-transactionId/index.html](https://github.com/datatrans/secure-fields-sample/blob/secure-fields-init-with-transactionId/index.html)
+
+Received `"3D"` object contains parameters with the result of the 3D-Secure process and can be fowarded to 3rd party payment gateway. If you decide to use Datatrans payment gateway please continue with our [Authorize](../../../use-stored-cards/authorize.md) API.
 

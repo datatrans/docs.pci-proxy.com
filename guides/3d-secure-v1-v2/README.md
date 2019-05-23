@@ -12,9 +12,17 @@ A 3D Secure transaction can go either through a challenge or a frictionless flow
 
 If you decide to do _Authorisation_ with Datatrans payment gateway please continue with sending payment request to our [Authorize](../../use-stored-cards/authorize.md) API. 
 
-{% hint style="info" %}
+{% hint style="success" %}
 **Using Secure Fields qualifies you for SAQ A.**
 {% endhint %}
 
 If your business is located outside the European Economic Area \(EEA\) or if you don't need to apply 3D Secure process for another reason please go with our default [Secure Fields ](../../collect-and-store-cards/capture-iframes/)implementation. 
+
+{% hint style="info" %}
+You are a PCI Level 1 compliant company, running a native mobile application or simply want to separate card capturing and authentication flow? 
+
+That's solved as well. Just have a look at our [Server-to-Server based approach](api-beta.md). 
+{% endhint %}
+
+
 
