@@ -141,8 +141,10 @@ curl -X POST \
     "option": {
         "authenticationOnly": true
     },
-        "redirect": {
-    	"successUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp"
+    "redirect": {
+    	"successUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp",
+        "cancelUrl": "https://pay.sandbox.datatrans.com/upp/merchant/cancelPage.jsp",
+        "errorlUrl": "https://pay.sandbox.datatrans.com/upp/merchant/errorPage.jsp"
     }
 }'
 ```
@@ -166,8 +168,10 @@ curl -X POST \
     "option": {
         "authenticationOnly": true
     },
-        "redirect": {
-    	"successUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp"
+    "redirect": {
+    	"successUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp",
+        "cancelUrl": "https://pay.sandbox.datatrans.com/upp/merchant/cancelPage.jsp",
+        "errorlUrl": "https://pay.sandbox.datatrans.com/upp/merchant/errorPage.jsp"
     }
 }'
 ```
