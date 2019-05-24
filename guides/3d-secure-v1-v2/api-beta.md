@@ -1,7 +1,7 @@
 ---
 description: >-
-  Use server-to-server based authenticate only integration to receive 3D
-  authentification data.
+  Use server-to-server based Authentication only integration to receive 3D
+  authentication data.
 ---
 
 # API 3D \(beta\)
@@ -47,7 +47,7 @@ API consumes application/json; charset=UTF-8
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="amount" type="integer" required=true %}
-1000
+The amount of the transaction in the currency's smallest unit. For example use 1000 for CHF 10.00
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
@@ -63,16 +63,16 @@ It should be unique each transaction
 card object must contain following parameters below
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="alias" type="integer" required=true %}
+{% api-method-parameter name="number" type="integer" required=true %}
 Plain text cardnumber or masked PCI Proxy token
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="expiryMonth" type="string" required=true %}
-2 characters
+Expiry month of the card \(2 characters\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="expiryYear" type="string" required=true %}
-2 characters 
+Expiry year of the card  \(2 characters\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="3D" type="object" required=true %}
@@ -123,7 +123,7 @@ Refer to the official EMVCo 3D specification 2.1.0 for parameter requirements se
 #### Examples
 
 {% code-tabs %}
-{% code-tabs-item title="Request" %}
+{% code-tabs-item title="Request with plain text cardnumber" %}
 ```java
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions \
@@ -133,7 +133,32 @@ curl -X POST \
     "currency": "CHF",
     "refno": "NIJ3OSelzyqp",
     "card": {
-        "alias": "5200000000000080", 
+        "number": "5200000000000080", 
+        "expiryMonth": "12",
+        "expiryYear": "21"
+        "3D": {...}
+    },
+    "option": {
+        "authenticationOnly": true
+    },
+        "redirect": {
+    	"successUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp"
+    }
+}'
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="Request with masked token" %}
+```java
+curl -X POST \
+  https://api.sandbox.datatrans.com/v1/transactions \
+  -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT,Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
+  -d '{
+    "amount": 1000,
+    "currency": "CHF",
+    "refno": "NIJ3OSelzyqp",
+    "card": {
+        "alias": "520000RIVWAS0080", 
         "expiryMonth": "12",
         "expiryYear": "21"
         "3D": {...}
@@ -162,7 +187,7 @@ curl -X POST \
 
 ## Step 2: Display a 3D secure challenge
 
-In the body of the response you receive the `transactionID` and in the location header the `3D-redirect`URL. Redirect the cardholder to this URL to trigger 3D-Secure process. Once the card holder completed the 3D process, he will be redirected to the `successUrl` passed to the `v1/transactions` API. 
+In the body of the response you receive the `transactionID` and in the location header the `3D-redirect`URL. Redirect the cardholder to this URL to trigger the 3D-Secure process. Once the card holder completed the 3D-Secure process, he will be redirected to the `successUrl` passed to the `v1/transactions` API. 
 
 ## Step 3: Obtain 3D parameters
 
@@ -292,5 +317,5 @@ curl -X GET \
 
 ## Step 4: Forward 3D data
 
-Received `"3D"` object contains parameters with the result of the 3D-Secure process and can be fowarded to 3rd party payment gateway. If you decide to use Datatrans payment gateway please continue with our [Authorize](../../use-stored-cards/authorize.md) API.
+The received `"3D"` object contains parameters with the result of the 3D-Secure process and can be fowarded to 3rd party payment gateways. If you decide to use Datatrans payment gateway please continue with our [Authorize](../../use-stored-cards/authorize.md) API.
 

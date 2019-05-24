@@ -1,6 +1,6 @@
 ---
 description: >-
-  Use Secure Fields integration for Tokenisation and Authentication Only in your
+  Use Secure Fields integration for Tokenisation and Authentication only in your
   frontend.
 ---
 
