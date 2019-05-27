@@ -47,52 +47,61 @@ API consumes application/json; charset=UTF-8
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="amount" type="integer" required=true %}
-The amount of the transaction in the currency's smallest unit. For example use 1000 for CHF 10.00
+Transaction amount in the currency's smallest unit. For example use 1000 for EUR 10.00
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
-3 letter ISO-4217 character code. For example `CHF` or `EUR`
+3 letter ISO-4217 character code. For example `EUR` or `USD`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="refno" type="string" required=true %}
 \[1..20\] characters  
-It should be unique each transaction 
+It should be unique each transaction
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="card" type="object" required=true %}
 card object must contain following parameters below
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="number" type="integer" required=true %}
-Plain text cardnumber or masked PCI Proxy token
+{% api-method-parameter name="number" type="string" required=true %}
+Plain text card number or PCI Proxy token
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="expiryMonth" type="string" required=true %}
-Expiry month of the card \(2 characters\)
+Expiry month of card \(2 characters\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="expiryYear" type="string" required=true %}
-Expiry year of the card  \(2 characters\)
+Expiry year of card \(2 characters\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="3D" type="object" required=true %}
-3D object for additional 3D v2 parameters
+{% api-method-parameter name="3D" type="object" required=false %}
+3D object for optional 3D v2 parameters  
+See hint box for additional information.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="option" type="object" required=true %}
-option object must contain following paramter below
+{% api-method-parameter name="option" type="string" required=true %}
+option object must contain following parameters below
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="authenticateOnly" type="boolean" required=true %}
+{% api-method-parameter name="authenticationOnly" type="boolean" required=true %}
 true
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="redirect" type="object" required=true %}
-redirect object must contain following parameter below
+redirect object must contain following parameters below
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="successUrl" type="string" required=true %}
-Your 3D process return URL
+Url where cardholder will be redirect in case of successful 3D process
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="cancelUrl" type="string" required=true %}
+Url where cardholder will be redirected in case cancled 3D process
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="errorUrl" type="string" required=true %}
+Url where cardholder will be redirected in case of an error in 3D process
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -105,7 +114,7 @@ Your 3D process return URL
 
 ```java
 {
-    "transactionId": "190522135046172715",
+    "transactionId": "190527154549809618",
     "3D": {
         "enrolled": true
     }
@@ -130,13 +139,31 @@ curl -X POST \
   -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT,Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
   -d '{
     "amount": 1000,
-    "currency": "CHF",
+    "currency": "EUR",
     "refno": "NIJ3OSelzyqp",
     "card": {
         "number": "5200000000000080", 
         "expiryMonth": "12",
         "expiryYear": "21"
-        "3D": {...}
+        "3D": {
+            "deviceChannel": "02",
+            "messageCategory": "01",
+            "threeDSCompInd": "Y",
+            "threeDSRequestor": {},
+            "threeDSServerTransID": "df4b3490-db44-4a88-9619-ab173ff76fbe",
+            "cardholderAccount": {},
+            "cardholder": {},
+            "relaxRegionalValidationRules": false,
+            "purchase": {},
+            "acquirer": {},
+            "merchant": {},
+            "broadInfo": {},
+            "deviceRenderOptions": {},
+            "messageExtension": [],
+            "browserInformation": {},
+            "threeRIInd": "02",
+            "sdkInformation": {}
+            }
     },
     "option": {
         "authenticationOnly": true
@@ -157,13 +184,31 @@ curl -X POST \
   -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT,Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
   -d '{
     "amount": 1000,
-    "currency": "CHF",
+    "currency": "EUR",
     "refno": "NIJ3OSelzyqp",
     "card": {
         "alias": "520000RIVWAS0080", 
         "expiryMonth": "12",
         "expiryYear": "21"
-        "3D": {...}
+        "3D": {
+            "deviceChannel": "02",
+            "messageCategory": "01",
+            "threeDSCompInd": "Y",
+            "threeDSRequestor": {},
+            "threeDSServerTransID": "df4b3490-db44-4a88-9619-ab173ff76fbe",
+            "cardholderAccount": {},
+            "cardholder": {},
+            "relaxRegionalValidationRules": false,
+            "purchase": {},
+            "acquirer": {},
+            "merchant": {},
+            "broadInfo": {},
+            "deviceRenderOptions": {},
+            "messageExtension": [],
+            "browserInformation": {},
+            "threeRIInd": "02",
+            "sdkInformation": {}
+            }
     },
     "option": {
         "authenticationOnly": true
@@ -179,11 +224,15 @@ curl -X POST \
 
 {% code-tabs-item title="Response" %}
 ```java
+Response headers:
+Location: https://pay.sandbox.datatrans.com/v1/start/190527154549809618
+
+Response body:
 {
-    "transactionId": "190522135046172715",
-    "3D": {
-        "enrolled": true
-    }
+  "transactionId" : "190527154549809618",
+  "3D" : {
+    "enrolled" : true
+  }
 }
 ```
 {% endcode-tabs-item %}
@@ -231,7 +280,7 @@ transactionId obtained via `/v1/transactions`
     "transactionId": "190522141403888597",
     "type": "payment",
     "status": "authenticated",
-    "currency": "CHF",
+    "currency": "EUR",
     "refno": "NIJ3OSelzyqp",
     "paymentMethod": "ECA",
     "detail": {
@@ -273,7 +322,7 @@ transactionId obtained via `/v1/transactions`
 {% code-tabs-item title="Request" %}
 ```java
 curl -X GET \
-  https://api.sandbox.datatrans.com/v1/transactions/190522141403888597 \
+  https://api.sandbox.datatrans.com/v1/transactions/190527154549809618 \
   -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
 
 ```
@@ -282,10 +331,10 @@ curl -X GET \
 {% code-tabs-item title="Response" %}
 ```java
 {
-    "transactionId": "190522141403888597",
+    "transactionId": "190527154549809618",
     "type": "payment",
     "status": "authenticated",
-    "currency": "CHF",
+    "currency": "EUR",
     "refno": "NIJ3OSelzyqp",
     "paymentMethod": "ECA",
     "detail": {
