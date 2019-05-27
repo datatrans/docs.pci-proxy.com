@@ -348,5 +348,3 @@ Received `"3D"` object contains parameters with the result of the 3D-Secure proc
 Find a working sample here \(change transactionId all the time\):   
 [https://github.com/datatrans/secure-fields-sample/blob/secure-fields-init-with-transactionId/index.html](https://github.com/datatrans/secure-fields-sample/blob/secure-fields-init-with-transactionId/index.html)
 
-Received `"3D"` object contains parameters with the result of the 3D-Secure process and can be fowarded to 3rd party payment gateway. If you decide to use Datatrans payment gateway please continue with our [Authorize](../../../use-stored-cards/authorize.md) API.
-
