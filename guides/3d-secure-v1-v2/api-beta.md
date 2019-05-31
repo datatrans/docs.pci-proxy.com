@@ -171,7 +171,7 @@ curl -X POST \
     "redirect": {
     	"successUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp",
         "cancelUrl": "https://pay.sandbox.datatrans.com/upp/merchant/cancelPage.jsp",
-        "errorlUrl": "https://pay.sandbox.datatrans.com/upp/merchant/errorPage.jsp"
+        "errorUrl": "https://pay.sandbox.datatrans.com/upp/merchant/errorPage.jsp"
     }
 }'
 ```
