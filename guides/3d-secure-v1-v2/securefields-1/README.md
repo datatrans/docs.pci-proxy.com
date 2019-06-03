@@ -47,7 +47,7 @@ API consumes application/json; charset=UTF-8
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="amount" type="integer" required=true %}
-10
+Transaction amount in the currency's smalles unit. For example use 1000 for EU 10.00
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
@@ -341,7 +341,7 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
 
 ## Step 7: Forward 3D data
 
-Received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateway. If you decide to use Datatrans payment gateway please continue with our [Authorize](../../../use-stored-cards/authorize.md) API.
+Received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateway. If you decide to use Datatrans payment gateway please continue with our [Authorize](../authorize.md) API.
 
 ## Examples
 

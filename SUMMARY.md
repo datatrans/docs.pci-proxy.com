@@ -33,6 +33,7 @@
     * [Initialization and Styling](guides/3d-secure-v1-v2/securefields-1/events.md)
     * [Events](guides/3d-secure-v1-v2/securefields-1/untitled.md)
   * [API 3D \(beta\)](guides/3d-secure-v1-v2/api-beta.md)
+  * [Authorize](guides/3d-secure-v1-v2/authorize.md)
 * [Testing 3D secure](guides/testing-3d-secure.md)
 
 ## Have a Question?
