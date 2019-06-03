@@ -1,5 +1,5 @@
 ---
-description: Authorize transactions which area alrady authenticated.
+description: Authorize transactions which are alrady authenticated.
 ---
 
 # Authorize
