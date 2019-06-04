@@ -7,7 +7,7 @@ As well we are extending the [charge API](../../use-stored-cards/authorize.md) t
 | API | Status |
 | :--- | :--- |
 | [SecureFields](../../guides/3d-secure-v1-v2/securefields-1/) \(Frontend\) | ✅ Supported  |
-| Webservice \(Server-to-Server\) | 🚧 Under development |
+| [API 3D](../../guides/3d-secure-v1-v2/api-beta.md) \(Server-to-Server\) | ✅ Supported  |
 | [Charge ](../../use-stored-cards/authorize.md)\(Server-to-Server\) | 🚧 Under development |
 | Mobile SDK \(Android / iOS\) | 🚧 Coming soon |
 | [Filter](../../collect-and-store-cards/filter-payloads.md) \(Server-to-Server\) | ✅ Supported  |
