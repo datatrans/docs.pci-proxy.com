@@ -4,6 +4,37 @@ description: Specific PSD/SCA FAQ. Will be updated continuously
 
 # FAQ
 
+## Who is affected by Strong Customer Authentication?
+
+### In scope
+
+Merchants in the European Economic Area \(EEA\) that accept online card payments will be affected by Strong Customer Authentication. This regulation applies to transactions where both the merchant and the merchant's acquirer are are located in the EEA.
+
+### Out of scope
+
+#### One leg out
+
+A merchant does not fall within the scope of PSD2 and SCA if either of the following two criteria is met:
+
+* It does not conduct business in the EEA OR does not offer goods and services to consumers that are based in the EU/EEA **OR**
+* It does not use an EEA-based acquirer
+
+{% hint style="warning" %}
+#### Strongly recommended
+
+However, we strongly recommend to all merchants offering goods and services to consumers in the EU/EEA to meet the PSD2 requirements for SCA regardless of their location.
+{% endhint %}
+
+#### Merchant initiated transactions \(MIT\)
+
+PSD2 and SCA do not regulate merchant initiated transactions, therefore it is regarded as out of scope. Nevertheless SCA has to be applied to the intial merchant initiated transaction.
+
+Please bear in mind that the agreement between merchant and cardholder to setup subsequent merchant initiated transactions requires SCA.
+
+#### Mail and telephone order \(MoTo\)
+
+As MoTo transactions are triggered by agents on behalf of the cardholder, it is not a cardholder initiated transaction and therefore out of scope.
+
 ## **Expiration date of authentication data**
 
 * **Visa** Merchants are liable for fraud on reauthorisations including a CAVV that is over 90 days old under the Visa rules, however, the CAVV can still be used as evidence that SCA was performed. VACCs over a year old will fail validation by Visa and will be flagged accordingly.  Source: Visa PSD2 SCA Implementation Guide, Paragraph 4.6.2.3.1.
