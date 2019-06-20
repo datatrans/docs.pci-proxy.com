@@ -14,6 +14,14 @@ Before you can filter payloads from a remote server you have to add the remote s
 | :--- |
 
 
+{% hint style="warning" %}
+Please note the allowed TCP ports for endpoints:
+
+**Sandbox** Port `80` and `443`
+
+**Production** Port `443`
+{% endhint %}
+
 ## 2. Select filter method
 
 PCI Proxy supports two different filter methods [`/v1/pull`](filter-payloads.md#pull-method) and [`/v1/push`](filter-payloads.md#push-method) to suit all your needs. 
