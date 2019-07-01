@@ -25,7 +25,7 @@ To get started include the following script on your page.
 {% code-tabs %}
 {% code-tabs-item title="Inline Mode Script" %}
 ```javascript
-<script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-1.0.0.js"></script>
+<script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.js"></script>
 ```
 {% endcode-tabs-item %}
 
