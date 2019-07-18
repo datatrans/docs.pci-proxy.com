@@ -237,10 +237,11 @@ Afterwards add parameter `expm` and `expy` , submit the form and listen for the 
 ```java
 $(function() {
   $("#go").click( function() {
-    secureFields.submit(); // submit the "form"
-    expm: 12,
-    expy: 21
-  })
+      secureFields.submit({ // submit the "form"
+        expm: 12,
+        expy: 21
+      });
+   });
 });
 
 secureFields.on("success", function(data) {
