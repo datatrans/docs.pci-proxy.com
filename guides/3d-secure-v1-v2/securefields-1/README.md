@@ -116,7 +116,7 @@ curl -v -u 1100018081:2fgVhQOYZK0io9ct 'https://api.sandbox.datatrans.com/v1/tra
     -H 'Content-Type: application/json; charset=UTF-8' \
     -d '{
     "amount" : 1000,
-    "currency" : "CHF",
+    "currency" : "EUR",
     "returnUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp",
     "card": {
         "3D": {
