@@ -288,12 +288,43 @@ The `transactionId` obtained via initial`/v1/transactions/secureFields` call
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Returns Creditcard and CVV code tokens as well as the "3D" object
 {% endapi-method-response-example-description %}
 
+{% code-tabs %}
+{% code-tabs-item title="Example response" %}
+```java
+{
+    "transactionId": "190520111958152753",
+    "type": "payment",
+    "status": "authenticated",
+    "currency": "CHF",
+    "refno": "N/A",
+    "paymentMethod": "ECA",
+    "detail": {
+        "authorize": {
+            "amount": 10
+        }
+    },
+    "card": {
+        "alias": "520000RIVWAS0080",
+        "masked": "520000xxxxxx0080",
+        "aliasCVV":"WWguOT-vQKybTMo1CALTjjwZ",
+        "expiryMonth": "12",
+        "expiryYear": "21",
+        "3D": {
+            "eci": "02",
+            "xid": "MDAxOTA1MjAxMTE5NTgxNTI3NTM=",
+            "cavv": "OTkxOTA1MjAxMTIxMDU2MTI4NzM=",
+            "threeDSVersion": "1.0.2",
+            "directoryResponse": "Y",
+            "authenticationResponse": "A"
+        }
+    }
+}
 ```
-
-```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -323,9 +354,11 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
         }
     },
     "card": {
-        "aliasCC": "520000RIVWAS0080",
+        "alias": "520000RIVWAS0080",
         "masked": "520000xxxxxx0080",
         "aliasCVV":"WWguOT-vQKybTMo1CALTjjwZ",
+        "expiryMonth": "12",
+        "expiryYear": "21",
         "3D": {
             "eci": "02",
             "xid": "MDAxOTA1MjAxMTE5NTgxNTI3NTM=",
