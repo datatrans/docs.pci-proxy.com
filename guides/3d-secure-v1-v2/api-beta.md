@@ -47,7 +47,7 @@ API consumes application/json; charset=UTF-8
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="amount" type="integer" required=true %}
-Transaction amount in the currency's smallest unit. For example use 1000 for EUR 10.00
+Transaction in the currency's smallets unit. For example use 1000 for EUR 10.00
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
@@ -57,6 +57,11 @@ Transaction amount in the currency's smallest unit. For example use 1000 for EUR
 {% api-method-parameter name="refno" type="string" required=true %}
 \[1..20\] characters  
 It should be unique each transaction
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="paymentMethods" type="array" required=true %}
+An array of payment method shortnames  
+Items Enum: `"AMX"` `"DIN"` `"ECA"` `"INT"` `"KLN"` `"MPW"` `"MYO"` `"VIS"`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="card" type="object" required=true %}
