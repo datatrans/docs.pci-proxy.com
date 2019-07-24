@@ -345,12 +345,12 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
     "transactionId": "190520111958152753",
     "type": "payment",
     "status": "authenticated",
-    "currency": "CHF",
+    "currency": "EUR",
     "refno": "N/A",
     "paymentMethod": "ECA",
     "detail": {
         "authorize": {
-            "amount": 10
+            "amount": 1000
         }
     },
     "card": {

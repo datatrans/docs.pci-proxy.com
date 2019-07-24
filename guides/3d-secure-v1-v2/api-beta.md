@@ -77,7 +77,7 @@ Expiry year of card \(2 characters\)
 
 {% api-method-parameter name="3D" type="object" required=false %}
 3D object for optional 3D v2 parameters  
-See hint box for additional information.
+See hint box below for additional information.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="option" type="string" required=true %}
@@ -141,6 +141,7 @@ curl -X POST \
     "amount": 1000,
     "currency": "EUR",
     "refno": "NIJ3OSelzyqp",
+    "paymentMethods": ["ECA"],
     "card": {
         "number": "5200000000000080", 
         "expiryMonth": "12",
@@ -186,6 +187,7 @@ curl -X POST \
     "amount": 1000,
     "currency": "EUR",
     "refno": "NIJ3OSelzyqp",
+    "paymentMethods": ["ECA"],
     "card": {
         "alias": "520000RIVWAS0080", 
         "expiryMonth": "12",
