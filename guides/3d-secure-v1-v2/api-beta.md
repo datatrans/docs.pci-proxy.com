@@ -112,7 +112,7 @@ Url where cardholder will be redirected in case of an error in 3D process
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=200 %}
+{% api-method-response-example httpCode=201 %}
 {% api-method-response-example-description %}
 
 {% endapi-method-response-example-description %}
