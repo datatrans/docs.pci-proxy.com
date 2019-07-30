@@ -195,6 +195,7 @@ curl -X POST \
     "paymentMethods": ["ECA"],
     "card": {
         "alias": "520000RIVWAS0080", 
+        "aliasCVV": "YahfrXdEQT67X1u7Og49rg2e",
         "expiryMonth": "12",
         "expiryYear": "21"
         "3D": {
