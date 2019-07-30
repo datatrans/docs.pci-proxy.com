@@ -148,7 +148,8 @@ curl -X POST \
     "refno": "NIJ3OSelzyqp",
     "paymentMethods": ["ECA"],
     "card": {
-        "number": "5200000000000080", 
+        "number": "5200000000000080",
+        "cvv": "123", 
         "expiryMonth": "12",
         "expiryYear": "21"
         "3D": {
