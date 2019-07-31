@@ -151,7 +151,7 @@ curl -X POST \
         "number": "5200000000000080",
         "cvv": "123", 
         "expiryMonth": "12",
-        "expiryYear": "21"
+        "expiryYear": "21",
         "3D": {
             "deviceChannel": "02",
             "messageCategory": "01",
@@ -198,7 +198,7 @@ curl -X POST \
         "alias": "520000RIVWAS0080", 
         "aliasCVV": "YahfrXdEQT67X1u7Og49rg2e",
         "expiryMonth": "12",
-        "expiryYear": "21"
+        "expiryYear": "21",
         "3D": {
             "deviceChannel": "02",
             "messageCategory": "01",
