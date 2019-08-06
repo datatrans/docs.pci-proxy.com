@@ -1,155 +1,141 @@
-# Initialization and Styling
+# Events
 
-Using Secure Fields leaves you complete control over the styling of your payment form. The card number and CVV fields can be styled individually.
+Use the `secureFields.on(...)` callback function to subscribe to one or more of the `ready`, `change`, `error` or `validate` events.
 
-```java
-var styles = {
-    // set style to all elements, JSON accepted too
-    "*": "border: 2px solid black; background-color: blue; padding: .65em .5em",
+{% tabs %}
+{% tab title="on ready" %}
+The ready event will be emitted once the iframes are loaded.
 
-    // or with JSON
-    //'*': {
-    //    border: '2px solid black',
-    //    padding: '.65em .5em'       
-    //    backgroundColor: 'blue',  // background-color
-    //    backgroundImage: 'none',  // background-image
-    //    boxSizing: 'border-box',  // box-sizing
-    //    WebkitBoxShadow: 'none',  // -webkit-box-shadow
-    //    WebkitAppearance: 'none'  // -webkit-appearance
-    //}
+```javascript
+secureFields.on("ready", function() { 
+ // setting a placholder for the cardNumber field
+ secureFields.setPlaceholder("cardNumber", "Card number");
 
-    // ::hover on all elements
-    "*::hover": "-webkit-box-shadow: none; -ms-box-shadow: none; -moz-appearance: none; ",
+ // setting a placeholder for the CVV field
+ secureFields.setPlaceholder("cvv", "CVV");
+});
+```
+{% endtab %}
 
-    // set style to one of the elements
-    cardNumber: "font-weight: bold;",
-    cvv: "color: green;",
+{% tab title="on validate" %}
+The validate event will be emitted once the form was submitted with `secureFields.submit();`
 
-    // setting style based on CSS classes (see 'Toggled classes')
-    "cardNumber.valid:hover": "background-color: green;",
-    "cardNumber.invalid:hover": "background-color: red;",    
-
-    // pseudoselectors
-    '*:focus': 'border: 1px solid #66AFE9',
-    '*:hover': 'border: 1px solid #66AFE9',
-    '*::placeholder': 'color: #999999',
-    '*:-ms-input-placeholder': 'color: #999999' // thanks MS :( 
-};
-
-secureFields.init(
-     "your-merchant-id",
-     {
-         cardNumber: "cardNumberPlaceholder",
-         cvv: "cvvPlaceholder",
-     },{            
-         styles: styles,
-         focus: "cardNumber" // or secureFields.focus("cardNumber");
-     }
- );
+```javascript
+secureFields.on("validate", function(event) {
+  // put a red border around the fields if they are not valid
+  secureFields.setStyle("cardNumber.invalid","border: 1px solid #f00");
+  secureFields.setStyle("cvv.invalid","border: 1px solid #f00");
+});
 ```
 
-## Dynamic styling <a id="dynamic-styling"></a>
+Where the `event` callback object has the following structure:
 
-The individual fields can also be styled dynamically:
-
-```java
-// the card number field
-secureFields.setStyle("cardNumber", "border: 1px solid #ccc");
-
-// the CVV field
-secureFields.setStyle("cvv", "border: 1px solid #ccc")
-```
-
-## Toggled classes <a id="toggled-classes"></a>
-
-Secure Fields automatically toggle CSS classes on the input fields based on various user input. Use `"cardNumber.valid:hover": "background-color: green;"` for example to apply different style based classes.
-
-| Class name | Description |
-| :--- | :--- |
-| `valid` | When the field contains valid input. |
-| `invalid` | When the field contains invalid input. For example a wrong card number or CVV Code. |
-| `empty` | When the field is empty. |
-| `identified` | When a supported brand \(for example Visa or Mastercard\) was detected when typing in the card number field. |
-
-## Advanced initialization <a id="advanced-initialization"></a>
-
-The `secureFields.init` function allows to set the input type, placeholder value and which field to be focused right from the beginning. In addition it is possible to set an `aria-label`. The \(random\) example from below ensures the following:
-
-* The CVV field gets initial focus
-* The CVV field's input type gets set to `tel`
-* The placeholder value will be `enter your cvv`
-* The CVV field input will have `aria-label="cvv aria label"`
-
-```java
-secureFields.init(
-    merchantId,
-    {
-        cardNumber: "cardNumberPlaceholder",
-        cvv:  {
-            placeholderElementId: "cvvPlaceholder",
-            inputType: "tel",
-            placeholder: "enter your cvv",
-            ariaLabel: "cvv aria label"
-        }
-    },{        
-        styles: styles,
-        focus: "cvv"
+```javascript
+{
+  "fields": {
+    "cardNumber": {
+      "length": 0,
+      "valid": false
+    },
+    "cvv": {
+      "length": 3,
+      "valid": true
     }
-);       
-```
-
-## Setting up payment methods <a id="setting-up-payment-methods"></a>
-
-By default all credit cards available in your merchant setup will be accepted. Use the `paymentMethods` option if there's a need to accept only a subset of card `types`.
-
-```java
-secureFields.init(
-    merchantId,
-    {
-        cardNumber: "cardNumberPlaceholder",
-        cvv:  "cvvPlaceholder"
-    },{        
-        styles: styles,
-        paymentMethods: ["ECA", "VIS"]  // allowing Mastercard and Visa only
-    }
-);
-```
-
-Parameter values for “paymentmethod”:
-
-| Card Type | paymentmethod |
-| :--- | :--- |
-| Visa | `VIS` |
-| MasterCard | `ECA` |
-| AMEX | `AMX` |
-| Diners | `DIN` |
-| Discover | `DIS` |
-| JCB | `JCB` |
-| ELO | `ELO` |
-| China UnionPay | `CUP` |
-
-## Web fonts <a id="web-fonts"></a>
-
-Web fonts are supported via the standard `@font-face` CSS rule. Because of security concerns it is not permitted to link external resources. So, in order to get custom fonts, you need to:
-
-* Contact [setup@pci-proxy.com](mailto:setup@pci-proxy.com) and provide the font files \(woff, woof2, ttf etc\). The files will be uploaded into your merchant id hosted files space.
-* Reference the font files, by name \(no path\) in the styles section of the `secureFields.init` call:
-
-```java
-var styles = {
-    // setting the font-family to both fields
-    "*": "font-family: Metamorphous;",
-    "@font-face": {
-        "*": {
-            fontFamily: "Metamorphous",
-            fontStyle: "normal",
-            fontWeight: 400,
-            src: "url('metamorphous.woff2') format('woff2')"
-        }        
-    }
+  },
+  "hasErrors": true // indicates if one of the fields has valid=false
 }
 ```
+{% endtab %}
 
-[  
-](https://docs.pci-proxy.com/collect-and-store-cards/capture-iframes)
+{% tab title="on success" %}
+The success event will be emitted if the tokenization was successful.
+
+```javascript
+secureFields.on("success", function(data) {
+  if(data.transactionId) {
+    // send data.transactionId and the
+    // rest of the form to your server
+  }
+});
+```
+
+Where the `event` callback object has the following structure:
+
+```javascript
+{
+  "result":"success",
+  "transactionId":"180403204621339015",
+  "cardInfo":
+  {
+    "brand":"VISA DEBIT",
+    "issuer":"Some Bank",
+    "type":"debit", // debit or credit
+    "distinction":"unknown", // consumer or corporate
+    "country":"US"
+  }
+}
+```
+{% endtab %}
+
+{% tab title="on change" %}
+The `change` event will be emitted whenever one of the following events are getting triggered:
+
+* `focus`
+* `blur`
+* `keyUp`
+* `keyDown`
+* `touchstart`
+* `touchmovetouchend`
+* `touchcancel`
+* `touchforcechange`
+
+```javascript
+secureFields.on("change", function(event) {
+  // some fancy stuff
+});
+```
+
+Where the `event` callback object has the following structure:
+
+```javascript
+{
+  "fields": {
+    "cardNumber": {
+      "length": 0,
+      "valid": false
+    },
+    "cvv": {
+      "length": 0,
+      "valid": false
+    }
+  },
+  "hasErrors": true,
+  "event": {
+    "field": "cardNumber",  // the affected input field
+    "type": "blur"          // the original event
+  }
+}
+```
+{% endtab %}
+
+{% tab title="on error" %}
+The error event will be emitted if there was an error after calling `secureFields.initTokenize(...)`.  
+  
+Possible scenarios are:
+
+* Wrong merchantId configured in `secureFields.initTokenize(...);`
+* Wrong name of card number, CVV fields
+* Wrong merchantId configuration on Datatrans side
+
+Those errors should only occur during development/testing.
+
+```javascript
+secureFields.on("error", function(data) {
+  // something bad happened
+});
+```
+{% endtab %}
+{% endtabs %}
+
+
 
