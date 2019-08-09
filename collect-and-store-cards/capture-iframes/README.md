@@ -141,12 +141,12 @@ Please refer to [Token API](token-api.md) to see how to get the password.
 
 ## Examples
 
-{% embed url="https://codepen.io/pciproxy/pen/ZqrrYZ" caption="PCI Proxy Secure Fields Example" %}
-
-### Advanced example with card detection
+Advanced example with card detection
 
 GitHub repository: [https://github.com/datatrans/secure-fields-sample](https://github.com/datatrans/secure-fields-sample)  
 Demo: [https://datatrans.github.io/secure-fields-sample/](https://datatrans.github.io/secure-fields-sample/)
+
+An example of how to implement this behaviour in modern web applications can be found [here](https://github.com/datatrans/secure-fields-sample/tree/master/react-example)
 
 {% hint style="warning" %}
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
