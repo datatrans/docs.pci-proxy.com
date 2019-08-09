@@ -140,53 +140,50 @@ To reserve an amount, simply send an authorization request with an amount \(`amo
 {% code-tabs %}
 {% code-tabs-item title="Reserve" %}
 ```bash
-curl https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
--H "Content-Type: application/xml" \
--d '<?xml version="1.0" encoding="UTF-8" ?>
-           <authorizationService version="2">
-               <body merchantId="1000011011">
-                   <transaction refno="123abc">
-                       <request>
-                           <amount>1000</amount>
-                           <currency>CHF</currency>
-                           <aliasCC>424242SKMPRI4242</aliasCC>
-                           <expm>12</expm>
-                           <expy>18</expy>
-                           <sign>30916165706580013</sign>
-                       </request>
-                   </transaction>
-               </body>
-           </authorizationService>'
+curl -X POST \
+  https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
+  -H 'Authorization: Basic MTEwMDAxNzc4OTpueG9ndnJPdGJScFhIUTFB' \
+  -d '<authorizationService version="4">
+   <body merchantId="1100017789">
+     <transaction refno="bsc-test">
+       <request>
+         <amount>1000</amount>
+         <currency>EUR</currency>
+         <aliasCC>520000RIVWAS0080</aliasCC>
+         <expm>12</expm>
+         <expy>21</expy>
+         <aliasCVV>PxZw66K5Ssq3RKZWL_JHLOTO</aliasCVV>
+         <parameters_3d>
+           <eci>02</eci>
+           <xid>MDAxOTA4MDkxNjMzMDkzNTUwMDQ=</xid>
+           <cavv>OTkxOTA4MDkxNjMzMTYwNTUwMzY=</cavv>
+           <enrolled>Y</enrolled>
+           <status_3d>Y</status_3d>
+           <version_3d>2.1.0</version_3d>
+         </parameters_3d>
+         <sign>190411090116949280</sign>
+       </request>
+     </transaction>
+   </body>
+ </authorizationService>'
 ```
 {% endcode-tabs-item %}
 
 {% code-tabs-item title="Response \(successful\)" %}
 ```markup
-<?xml version='1.0' encoding='UTF-8'?>
-<authorizationService version='2'>
-  <body merchantId='1000011011' status='accepted'>
-    <transaction refno='123abc' trxStatus='response'>
-      <request>
-        <amount>1000</amount>
-        <currency>CHF</currency>
-        <aliasCC>424242SKMPRI4242</aliasCC>
-        <expm>12</expm>
-        <expy>18</expy>
-        <sign>30916165706580013</sign>
-        <reqtype>NOA</reqtype>
-      </request>
-      <response>
-        <responseCode>01</responseCode>
-        <responseMessage>Authorized</responseMessage>
-        <uppTransactionId>180413160435542994</uppTransactionId>
-        <authorizationCode>435582995</authorizationCode>
-        <acqAuthorizationCode>160435</acqAuthorizationCode>
-        <maskedCC>424242xxxxxx4242</maskedCC>
-        <cardnumber>4242424242424242</cardnumber>
-        <returnCustomerCountry>CHE</returnCustomerCountry>
-      </response>
-    </transaction>
-  </body>
+<authorizationService version='4'>
+    <body merchantId='1100017789' status='accepted'>
+        <transaction refno='bsc-test' trxStatus='response'>
+            <response>
+                <responseCode>01</responseCode>
+                <responseMessage>Authorized</responseMessage>
+                <uppTransactionId>190809164624026430</uppTransactionId>
+                <authorizationCode>624066431</authorizationCode>
+                <acqAuthorizationCode>164624</acqAuthorizationCode>
+                <maskedCC>520000xxxxxx0080</maskedCC>
+            </response>
+        </transaction>
+    </body>
 </authorizationService>
 ```
 {% endcode-tabs-item %}
