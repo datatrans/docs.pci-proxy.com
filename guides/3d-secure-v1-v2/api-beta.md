@@ -364,12 +364,13 @@ curl -X GET \
     "card": {
         "masked": "520000xxxxxx0080",
         "3D": {
-            "eci": "02",
-            "xid": "MDAxOTA1MjIxNDE0MDM4ODg1OTc=",
-            "cavv": "OTkxOTA1MjIxNDE0MjMwMjg2Mjc=",
-            "threeDSVersion": "1.0.2",
-            "directoryResponse": "Y",
-            "authenticationResponse": "Y"
+          "eci": "02",
+          "xid": "MDAxOTA4MDkxNjMzMDkzNTUwMDQ=",
+          "cavv": "OTkxOTA4MDkxNjMzMTYwNTUwMzY=",
+          "threeDSVersion": "1.0.2",
+          "cavvAlgorithm": "1",
+          "directoryResponse": "Y",
+          "authenticationResponse": "Y"
         }
     }
 }

@@ -360,12 +360,13 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
         "expiryMonth": "12",
         "expiryYear": "21",
         "3D": {
-            "eci": "02",
-            "xid": "MDAxOTA1MjAxMTE5NTgxNTI3NTM=",
-            "cavv": "OTkxOTA1MjAxMTIxMDU2MTI4NzM=",
-            "threeDSVersion": "1.0.2",
-            "directoryResponse": "Y",
-            "authenticationResponse": "A"
+          "eci": "02",
+          "xid": "MDAxOTA4MDkxNjMzMDkzNTUwMDQ=",
+          "cavv": "OTkxOTA4MDkxNjMzMTYwNTUwMzY=",
+          "threeDSVersion": "1.0.2",
+          "cavvAlgorithm": "1",
+          "directoryResponse": "Y",
+          "authenticationResponse": "Y"
         }
     }
 }
