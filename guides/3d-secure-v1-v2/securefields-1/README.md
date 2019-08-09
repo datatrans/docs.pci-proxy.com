@@ -382,8 +382,8 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
 | `cavvAlgorithm` | Only required for 3D Secure 1 |
 | `cavv` | `authenticationValue` |
 | `threeDSVersion` | `messageVersion` |
-| `directoryResponse` | `transStatus` |
-| `authenticationResponse` | `transStatus` |
+| `directoryResponse` | `transStatus` \(after ARes\) |
+| `authenticationResponse` | `transStatus` \(after RReq\) |
 
 ## Step 7: Forward 3D data
 

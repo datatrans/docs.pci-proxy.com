@@ -386,8 +386,8 @@ curl -X GET \
 | `cavvAlgorithm` | Only required for 3D Secure 1 |
 | `cavv` | `authenticationValue` |
 | `threeDSVersion` | `messageVersion` |
-| `directoryResponse` | `transStatus` |
-| `authenticationResponse` | `transStatus` |
+| `directoryResponse` | `transStatus` \(after ARes\) |
+| `authenticationResponse` | `transStatus` \(after RReq\) |
 
 ## Step 4: Forward 3D data
 
