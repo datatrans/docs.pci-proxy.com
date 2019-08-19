@@ -18,7 +18,7 @@ description: >-
 {% hint style="warning" %}
 **3D Secure Enrollment Requirements**
 
-Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). If you don't have your own acquiring contract, please contact us to use our generic 3D Secure contract \(currently VISA and Mastercard only\).
+Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). 
 {% endhint %}
 
 ## Step 1: Initial Server-to-Server call
