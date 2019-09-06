@@ -24,7 +24,10 @@ Short: 12/21
 
 #### Password for challenge flow
 
-For text challenges in a browser-based integration use **1234**
+Use following OTP password codes to determine the result of a 3D v2 enrolled card.
+
+4000 = authenticated  
+4009 = declined
 
 
 
