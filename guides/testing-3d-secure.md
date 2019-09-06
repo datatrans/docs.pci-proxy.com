@@ -14,6 +14,7 @@ Use the following Datatrans test card data to test through 3D Secure 1 and 2 tra
 | Visa | 4000001000000018 | 400000JCLJDP0018 | 123 | 3D v2 - frictionless authenticated |
 | Visa | 4000001000000042 | 400000JMMJHM0042 | 123 | 3D v2 - challenge declined |
 | Visa | 4000001000000026 | 400000RQFEJQ0026 | 123 | 3D v2 - challenge authenticated |
+| AMEX | 375000000000007 | 375000XQJTGJ007 | 1234 | 3D v1 - challenge authenticated |
 
 #### Expiration date
 

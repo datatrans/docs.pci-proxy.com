@@ -234,11 +234,11 @@ curl -X POST \
 {% code-tabs-item title="Response" %}
 ```java
 Response headers:
-Location: https://pay.sandbox.datatrans.com/v1/start/190527154549809618
+Location: https://pay.sandbox.datatrans.com/v1/start/190906151210861442
 
 Response body:
 {
-  "transactionId" : "190527154549809618",
+  "transactionId" : "190906151210861442",
   "3D" : {
     "enrolled" : true
   }
@@ -331,7 +331,7 @@ transactionId obtained via `/v1/transactions`
 {% code-tabs-item title="Request" %}
 ```java
 curl -X GET \
-  https://api.sandbox.datatrans.com/v1/transactions/190527154549809618 \
+  https://api.sandbox.datatrans.com/v1/transactions/190906151210861442 \
   -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
 
 ```
@@ -340,39 +340,56 @@ curl -X GET \
 {% code-tabs-item title="Response" %}
 ```java
 {
-    "transactionId": "190527154549809618",
-    "type": "payment",
-    "status": "authenticated",
-    "currency": "EUR",
-    "refno": "NIJ3OSelzyqp",
-    "paymentMethod": "ECA",
-    "detail": {
-        "authorize": {
-            "amount": 1000
-        }
-    },
-    "history": [
-        {
-            "action": "init",
-            "amount": 1000,
-            "source": "api",
-            "date": "2019-05-22T12:14:04.385+00:00",
-            "success": true,
-            "ip": "77.109.165.195"
-        }
-    ],
-    "card": {
-        "masked": "520000xxxxxx0080",
-        "3D": {
-          "eci": "02",
-          "xid": "MDAxOTA4MDkxNjMzMDkzNTUwMDQ=",
-          "cavv": "OTkxOTA4MDkxNjMzMTYwNTUwMzY=",
-          "threeDSVersion": "1.0.2",
-          "cavvAlgorithm": "1",
-          "directoryResponse": "Y",
-          "authenticationResponse": "Y"
-        }
+  "transactionId": "190906151210861442",
+  "type": "payment",
+  "status": "authenticated",
+  "currency": "EUR",
+  "refno": "EVO-1564475113071",
+  "paymentMethod": "ECA",
+  "detail": {
+    "authorize": {
+      "amount": 1000
     }
+  },
+  "history": [
+    {
+      "action": "init",
+      "amount": 1000,
+      "source": "api",
+      "date": "2019-09-06T13:12:11.915+00:00",
+      "success": true,
+      "ip": "77.109.165.195"
+    },
+    {
+      "action": "authenticate",
+      "amount": 1000,
+      "source": "web",
+      "date": "2019-09-06T13:12:21.915+00:00",
+      "success": true,
+      "ip": "77.109.165.195"
+    }
+  ],
+  "card": {
+    "masked": "520000xxxxxx0080",
+    "expiryMonth": "12",
+    "expiryYear": "21",
+    "info": {
+      "brand": "MCI CREDIT",
+      "type": "credit",
+      "usage": "consumer",
+      "country": "MY",
+      "issuer": "DATATRANS"
+    },
+    "3D": {
+      "eci": "02",
+      "xid": "MDAxOTA5MDYxNTEyMTA4NjE0NDI=",
+      "cavv": "OTkxOTA5MDYxNTEyMjE3NTE0NjA=",
+      "threeDSVersion": "1.0.2",
+      "cavvAlgorithm": "1",
+      "directoryResponse": "Y",
+      "authenticationResponse": "Y"
+    }
+  }
 }
 ```
 {% endcode-tabs-item %}
