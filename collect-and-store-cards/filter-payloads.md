@@ -150,7 +150,7 @@ curl https://sandbox.pci-proxy.com/v1/pull \
 The response from Booking.com is automatically filtered for credit card data. Located card data is now stored in our vaults in Switzerland while card tokens have been inserted into the payload.
 {% endhint %}
 
-{% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/push:uniquePushKey" %}
+{% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/push/uniquePushKey" %}
 {% api-method-summary %}
 PUSH method
 {% endapi-method-summary %}
