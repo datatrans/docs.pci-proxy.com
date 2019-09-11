@@ -112,17 +112,32 @@ Url where cardholder will be redirected in case of an error in 3D process
 {% endapi-method-request %}
 
 {% api-method-response %}
-{% api-method-response-example httpCode=201 %}
+{% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+If card is 3D enrolled
 {% endapi-method-response-example-description %}
 
-```java
+```javascript
 {
     "transactionId": "190527154549809618",
     "3D": {
         "enrolled": true
     }
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=201 %}
+{% api-method-response-example-description %}
+If card is not 3D enrolled
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+  "transactionId": "190911134600593525",
+  "3D": {
+    "enrolled": false
+  }
 }
 ```
 {% endapi-method-response-example %}
