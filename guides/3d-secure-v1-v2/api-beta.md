@@ -412,17 +412,57 @@ curl -X GET \
 
 #### 3-object field name mapping  
 
-| Datatrans  | EMVCo |
-| :--- | :--- |
-| `eci` | `eci` |
-| `xid` | `dsTransId` |
-| `cavvAlgorithm` | Only required for 3D Secure 1 |
-| `cavv` | `authenticationValue` |
-| `threeDSVersion` | `messageVersion` |
-| `directoryResponse` | `transStatus` \(after ARes\) |
-| `authenticationResponse` | `transStatus` \(after RReq\) |
-
-## Step 4: Forward 3D data
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Datatrans</th>
+      <th style="text-align:left">EMVCo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>eci</code>
+      </td>
+      <td style="text-align:left"><code>eci</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>xid</code>
+      </td>
+      <td style="text-align:left">
+        <p><code>dsTransId</code> (3Dv2)</p>
+        <p><code>xid</code> (3Dv1)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>cavvAlgorithm</code>
+      </td>
+      <td style="text-align:left">Only required for 3D Secure 1</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>cavv</code>
+      </td>
+      <td style="text-align:left"><code>authenticationValue</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>threeDSVersion</code>
+      </td>
+      <td style="text-align:left"><code>messageVersion</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>directoryResponse</code>
+      </td>
+      <td style="text-align:left"><code>transStatus </code>(after ARes)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>authenticationResponse</code>
+      </td>
+      <td style="text-align:left"><code>transStatus </code>(after RReq)</td>
+    </tr>
+  </tbody>
+</table>## Step 4: Forward 3D data
 
 The received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateways. If you decide to use Datatrans payment gateway please continue with our [Authorize](authorize.md) API.
 
