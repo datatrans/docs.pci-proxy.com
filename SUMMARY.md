@@ -28,7 +28,7 @@
 
 ## Guides
 
-* [3D Secure 1/2](guides/3d-secure-v1-v2/README.md)
+* [3D Secure v1 / v2](guides/3d-secure-v1-v2/README.md)
   * [SecureFields 3D \(beta\)](guides/3d-secure-v1-v2/securefields-1/README.md)
     * [Initialization and Styling](guides/3d-secure-v1-v2/securefields-1/initialization-and-styling.md)
     * [Events](guides/3d-secure-v1-v2/securefields-1/events.md)

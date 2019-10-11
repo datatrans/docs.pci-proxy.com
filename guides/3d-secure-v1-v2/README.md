@@ -2,7 +2,7 @@
 description: Use PCI Proxy as a standalone authentication service for 3D Secure v1 and v2.
 ---
 
-# 3D Secure 1/2
+# 3D Secure v1 / v2
 
 Secure Fields _Authentication Only_ integration allows you to securely collect sensitive card data \(card number and CVV code\) by injecting iframes to your DOM and perform an _Authentication Only_ call to validate a cardholder via 3D Secure v1 and v2. Decoupling _Authentication_ from _Authorization_ enables you to forward 3D data to an independent 3rd party payment provider. 
 
