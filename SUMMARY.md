@@ -34,7 +34,7 @@
     * [Events](guides/3d-secure-v1-v2/securefields-1/events.md)
   * [API 3D \(beta\)](guides/3d-secure-v1-v2/api-beta.md)
   * [Authorize](guides/3d-secure-v1-v2/authorize.md)
-* [Testing 3D secure](guides/testing-3d-secure.md)
+* [Testing 3D Secure](guides/testing-3d-secure.md)
 * [FAQ](guides/faq.md)
 
 ## Have a Question?

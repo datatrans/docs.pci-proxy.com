@@ -1,6 +1,6 @@
-# Testing 3D secure
+# Testing 3D Secure
 
-Use the following Datatrans test card data to test through 3D Secure 1 and 2 transactions:
+Use the following Datatrans test card data to test through 3D Secure v1 and v2 transactions:
 
 | Type | Number | Token | CVV | Scenario |
 | :--- | :--- | :--- | :--- | :--- |
