@@ -12,7 +12,7 @@ description: >-
 
 {% hint style="info" %}
 * This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
-* Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md).
+* Make sure to use our 3D Secure enabled test credit cards [here](../testing-3d-secure.md).
 {% endhint %}
 
 {% hint style="warning" %}

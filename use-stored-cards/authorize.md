@@ -1,12 +1,8 @@
-# Authorize
+# Charge
 
-You can simply send an XML request with a token to **check**, **reserve** an amount, or **charge** a stored card. When you authorize a stored credit card, you can choose between different process options:
+You can simply send an XML request with a token to **reserve** an amount or **charge** a stored card. When you authorize a stored credit card, you can choose between different process options:
 
 {% tabs %}
-{% tab title="Check validity" %}
-When you [**check a stored card**](authorize.md#examples), we run your query against the Visa & Mastercard network to check if the card is still valid. The authorization does not appear on the customer statement but still gives you the ability to test the validity of a stored credit card.
-{% endtab %}
-
 {% tab title="Reserve an amount" %}
 When you [**reserve an amount**](authorize.md#examples) on a stored card, the monthly allowance of the cardholder is reduced by the authorised amount, no matter whether the transaction will be settled later or not. The authorised amount is reserved for the merchant and should be settled within the period agreed with the acquirer. The issuer returns an authorisation code which serves as the reference of the authorisation. Once a transaction has been successfully authorised it can be settled.
 
@@ -189,92 +185,6 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed.
 ### Examples
 
 {% tabs %}
-{% tab title="Check validity \(zeroAuth\)" %}
-To check a stored card, simply send an authorization request with `amount=0`:
-
-{% code-tabs %}
-{% code-tabs-item title="Check" %}
-```bash
-curl https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
--H "Content-Type: application/xml" \
--d '<?xml version="1.0" encoding="UTF-8" ?>
-           <authorizationService version="2">
-               <body merchantId="1000011011">
-                   <transaction refno="123abc">
-                       <request>
-                           <amount>0</amount>
-                           <currency>CHF</currency>
-                           <aliasCC>424242SKMPRI4242</aliasCC>
-                           <expm>12</expm>
-                           <expy>18</expy>
-                           <sign>30916165706580013</sign>
-                       </request>
-                   </transaction>
-               </body>
-           </authorizationService>'
-```
-{% endcode-tabs-item %}
-
-{% code-tabs-item title="Response \(card valid\)" %}
-```markup
-<?xml version='1.0' encoding='UTF-8'?>
-<authorizationService version='2'>
-  <body merchantId='1000011011' status='accepted'>
-    <transaction refno='123abc' trxStatus='response'>
-      <request>
-        <amount>0</amount>
-        <currency>CHF</currency>
-        <aliasCC>424242SKMPRI4242</aliasCC>
-        <expm>12</expm>
-        <expy>18</expy>
-        <sign>30916165706580013</sign>
-        <reqtype>NOA</reqtype>
-      </request>
-      <response>
-        <responseCode>01</responseCode>
-        <responseMessage>Authorized</responseMessage>
-        <uppTransactionId>180413155912441269</uppTransactionId>
-        <authorizationCode>912491270</authorizationCode>
-        <acqAuthorizationCode>155912</acqAuthorizationCode>
-        <maskedCC>424242xxxxxx4242</maskedCC>
-      </response>
-    </transaction>
-  </body>
-</authorizationService>%
-```
-{% endcode-tabs-item %}
-
-{% code-tabs-item title="Response \(card not valid\)" %}
-```markup
-<?xml version='1.0' encoding='UTF-8'?>
-<authorizationService version='2'>
-  <body merchantId='1000011011' status='accepted'>
-    <transaction refno='123abc' trxStatus='error'>
-      <request>
-        <amount>9100</amount>
-        <currency>CHF</currency>
-        <aliasCC>424242SKMPRI4242</aliasCC>
-        <expm>12</expm>
-        <expy>18</expy>
-        <sign>30916165706580013</sign>
-        <reqtype>NOA</reqtype>
-      </request>
-      <error>
-        <errorCode>1403</errorCode>
-        <errorMessage>declined</errorMessage>
-        <errorDetail>Declined</errorDetail>
-        <uppTransactionId>180413160820154027</uppTransactionId>
-        <acqErrorCode>50</acqErrorCode>
-        <returnCustomerCountry>CHE</returnCustomerCountry>
-      </error>
-    </transaction>
-  </body>
-</authorizationService>
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-{% endtab %}
-
 {% tab title="Reserve amount \(authorize\)" %}
 To reserve an amount, simply send an authorization request with an amount \(`amount=1000`\):
 

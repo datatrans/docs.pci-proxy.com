@@ -8,12 +8,12 @@ If you processed authentication only through either [Secure Fields](securefields
 
 {% hint style="info" %}
 * This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
-* Make sure to use our 3D Secure enabled test credit cards [here](../testing-3d-secure.md).
+* Make sure to use our 3D Secure enabled test credit cards [here](testing-3d-secure.md).
 {% endhint %}
 
 ### 1. Add acquirer to your account
 
-| You can choose from a list of [**Supported Acquirer**](../../resources/supported-acquirer.md) and contact us at [setup@pci-proxy.com](mailto:setup@pci-proxy.com) |
+| You can choose from a list of [**Supported Acquirer**](../resources/supported-acquirer.md) and contact us at [setup@pci-proxy.com](mailto:setup@pci-proxy.com) |
 | :--- |
 
 
@@ -128,7 +128,7 @@ Transaction successfully authorized
 {% endapi-method %}
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](../../test-card-data.md) are allowed.
+In test mode, only [test credit cards](../test-card-data.md) are allowed.
 {% endhint %}
 
 ### Examples
