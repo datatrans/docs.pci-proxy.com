@@ -148,7 +148,6 @@ curl -X POST \
     "message": "expired card"
   },
   "transactionId": "191016104534077141",
-  "card": {}
 }
 ```
 {% endcode-tabs-item %}
