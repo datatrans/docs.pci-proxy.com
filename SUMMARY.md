@@ -18,7 +18,7 @@
     * [HTTPS  to SFTP](use-stored-cards/forward/sftp.md)
   * [Show](use-stored-cards/show.md)
   * [Check](use-stored-cards/check.md)
-  * [Charge](use-stored-cards/authorize.md)
+  * [Authorize/Settle](use-stored-cards/authorize.md)
 * [Resources](resources/README.md)
   * [Full API Reference](resources/full-api-reference.md)
   * [Request Types](resources/request-types.md)

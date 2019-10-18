@@ -1,4 +1,4 @@
-# Charge
+# Authorize/Settle
 
 You can simply send an XML request with a token to **reserve** an amount or **charge** a stored card. When you authorize a stored credit card, you can choose between different process options:
 

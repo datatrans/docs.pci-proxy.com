@@ -52,6 +52,7 @@ In turn, the proxy will return HTTP headers:
 | `X-CC-MATCHES` | Returned by the proxy in case of success. The value represents the number of total \(card to alias / alias to card\) replacements that were made. |
 | `X-CC-MATCHES-CA` | Returned number of card to alias replacements. |
 | `X-CC-MATCHES-AC` | Returned number of alias to card replacements. |
+| `X-CUSTOM-MATCHES` | Returned by the proxy in case of a successful replacement. The value represents the number of total \(custom value to token / token to custom value \) replacements that were made.  |
 
 ### Special error case:
 
