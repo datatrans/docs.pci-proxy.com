@@ -6,7 +6,7 @@ Using this API allows you to simply send a json request with a token to just **r
 {% tab title="Reserve an amount" %}
 When you [**reserve an amount**](./#examples) on a stored card, the monthly allowance of the cardholder is reduced by the authorised amount, no matter whether the transaction will be settled later or not. The authorised amount is reserved for the merchant and should be settled within the period agreed with the acquirer. The issuer returns an authorisation code which serves as the reference of the authorisation. Once a transaction has been successfully authorised it can be settled.
 
-**Important:** the cardholder will not be charged without settlement. Authorisation and settlement can also be processed in one single step \(see Charge amount\). Please continue [here ](defered-settlement.md)with deferred settlement API if you just authorized the transaction.
+**Important:** the cardholder will not be charged without settlement. Authorisation and settlement can also be processed in one single step. Please continue [here ](defered-settlement.md)with deferred settlement API if you just authorized the transaction.
 {% endtab %}
 
 {% tab title="Charge cardholder" %}
