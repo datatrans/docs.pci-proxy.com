@@ -29,7 +29,7 @@ Full credit card information cannot be used in the sandbox.
 
 | [**Create CVV Token** ](https://sandbox.pci-proxy.com/v1/push/push-tester?cvv=123)for CVV code 123 |
 | :--- |
-| CVV tokens \(`aliasCVV`\) will be deleted after they have been initially used. Once you have used a CVV token for [Forward](use-stored-cards/forward/), [Show](use-stored-cards/show.md), or [Authorize](use-stored-cards/authorize/), the CVV token expires 30 minutes thereafter. The link above generates fresh CVV tokens for your testing purposes.  |
+| CVV tokens \(`aliasCVV`\) will be deleted after they have been initially used. Once you have used a CVV token for [Forward](use-stored-cards/forward/), [Show](use-stored-cards/show.md), or [Authorize](use-stored-cards/authorize-settle/), the CVV token expires 30 minutes thereafter. The link above generates fresh CVV tokens for your testing purposes.  |
 
 | \*Limit \(Amount / amount range\) | Error message |
 | :--- | :--- |
