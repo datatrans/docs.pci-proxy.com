@@ -8,7 +8,7 @@ You will need this information for different tokenization and detokenization API
 
 ## Create Security Sign
 
-The [Filter Proxy](../collect-and-store-cards/filter-payloads.md), [Forward Proxy](../use-stored-cards/forward/https.md) and [Charge API](../use-stored-cards/authorize.md) need a static sign. You send it as `X-CC-SIGN` in the http header. When you sign up for the sandbox account, we set the `X-CC-SIGN` for you. You can change it any time in our [Web Administration Tool](https://admin.sandbox.datatrans.com/):
+The [Filter Proxy](../collect-and-store-cards/filter-payloads.md), [Forward Proxy](../use-stored-cards/forward/https.md) and [Charge API](../use-stored-cards/authorize/) need a static sign. You send it as `X-CC-SIGN` in the http header. When you sign up for the sandbox account, we set the `X-CC-SIGN` for you. You can change it any time in our [Web Administration Tool](https://admin.sandbox.datatrans.com/):
 
 1. Click _UPP Administration_ tab.
 2. Click _Security_ sub-tab.
