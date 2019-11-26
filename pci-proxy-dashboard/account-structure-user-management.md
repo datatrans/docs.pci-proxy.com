@@ -12,7 +12,7 @@ This company account is called **Contract** and can hold, based on your subscrip
   
 User can be assigned either on **Contract** or **Project** level. Please refer to User management to learn more about the roles and permissions.   
 
-**Create new a Project**  
+**Create a new Project**  
 Within the Scale and Enterprise subscription plan you're allowed to create multiple Projects**.** 
 
 1\) Navigate to the top left corner and open the drop down menu.  
@@ -28,7 +28,7 @@ To switch to one specific dashboard simply press the Switch to project button be
 
 ## User management
 
-Navigate to the **Users** menu within the **Contract section** to find the user managment.  
+Navigate to the **Users** menu within the **Contract section** to find the user management.  
   
 As the creator of the sandbox account you are automatically assigned with admin permissions for the overall contract. As an admin you are allowed to invite new users to either Contracts or Projects. For each new user you can assign various roles and access rights to them.   
   
