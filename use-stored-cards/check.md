@@ -12,7 +12,7 @@ Thereby we run a zero amount call against the Visa, MasterCard and AMEX network 
 {% endhint %}
 
 {% hint style="warning" %}
-The service requires HTTP Basic Authentication.  Provide your `merchantId` as the basic authentication username value. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../pci-proxy-dashboard/api-authentication-data.md) for more information. 
 {% endhint %}
 
 ## 1. Activate credit card check feature
@@ -109,8 +109,8 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed.
 
 ### Examples
 
-{% code-tabs %}
-{% code-tabs-item title="Request" %}
+{% tabs %}
+{% tab title="Request" %}
 ```javascript
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions/validate \
@@ -126,9 +126,9 @@ curl -X POST \
     }
 }'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response Success" %}
+{% tab title="Response Success" %}
 ```javascript
 {
   "transactionId": "191016104224286267",
@@ -138,9 +138,9 @@ curl -X POST \
   }
 }
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response error " %}
+{% tab title="Response error " %}
 ```javascript
 {
   "error": {
@@ -150,8 +150,8 @@ curl -X POST \
   "transactionId": "191016104534077141",
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### Error table
 

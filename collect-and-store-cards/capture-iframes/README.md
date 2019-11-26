@@ -22,19 +22,19 @@ Browser compatibility for Secure Fields:
 
 To get started include the following script on your page. 
 
-{% code-tabs %}
-{% code-tabs-item title="Inline Mode Script" %}
+{% tabs %}
+{% tab title="Inline Mode Script" %}
 ```javascript
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.js"></script>
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Minified Version" %}
+{% tab title="Minified Version" %}
 ```javascript
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-1.0.0.min.js"></script>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 Please make sure to always load it directly from [https://pay.sandbox.datatrans.com](https://pay.sandbox.datatrans.com)
@@ -117,23 +117,23 @@ secureFields.destroy();
 
 Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you can execute a server to server [`GET Token`](token-api.md) request to get tokens for card number and CVV code:
 
-{% code-tabs %}
-{% code-tabs-item title="Example: Request" %}
+{% tabs %}
+{% tab title="Example: Request" %}
 ```bash
 curl https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=180416140429310027 
     -u 'merchantId:password'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response" %}
+{% tab title="Response" %}
 ```javascript
 {
   "aliasCC" : "424242SKMPRI4242",
   "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 Please refer to [Token API](token-api.md) to see how to get the password. 

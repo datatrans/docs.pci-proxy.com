@@ -79,8 +79,8 @@ Invalid request
 
 ### Example
 
-{% code-tabs %}
-{% code-tabs-item title="Request" %}
+{% tabs %}
+{% tab title="Request" %}
 ```bash
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions/191023125905647521/settle \
@@ -92,15 +92,15 @@ curl -X POST \
     "refno": "49raer8TC"
 }'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response \(success\)" %}
+{% tab title="Response \(success\)" %}
 ```bash
 204 Transaction successfully settled
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response \(error\)" %}
+{% tab title="Response \(error\)" %}
 ```bash
 {
   "error": {
@@ -109,8 +109,8 @@ curl -X POST \
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ### Error table
 

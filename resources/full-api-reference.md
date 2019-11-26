@@ -13,7 +13,7 @@ The parameters will be sent as HTTP headers.
 | HTTP header | Description | Example value |
 | :--- | :--- | :--- |
 | `X-CC-URL` | Specifies the target URL that will be called | [https://api.thirdparty.com/](https://api.thirdparty.com/) |
-| `X-CC-MERCHANT-ID` | Your merchant ID | 1000011011 |
+| `pci-proxy-api-key` | Configured API key | MxdPtKaeDLfkhK7rdz4nmmx5dg10ufRR |
 | `X-CC-SIGN` | Configured security sign | 130709090849785405 |
 
 * **Optional input paramter:**
@@ -29,7 +29,7 @@ The parameters will be sent as HTTP headers.
 ```markup
 curl https://sandbox.pci-proxy.com/v1/pull \
 -H "Content-Type: text/xml" \
--H "X-CC-SIGN: 30916165706580013" \
+-H "pci-proxy-api-key: ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg" \
 -H "X-CC-MERCHANT-ID: 1000011011" \
 -H "X-CC-URL: https://pciproxy.mockable.io/secure-supply-xml-booking-com" \
 -d '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>

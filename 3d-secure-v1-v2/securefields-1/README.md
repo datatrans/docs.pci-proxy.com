@@ -109,8 +109,8 @@ Amount must be at least in the currency's smallest unit.
 
 #### Examples
 
-{% code-tabs %}
-{% code-tabs-item title="Request" %}
+{% tabs %}
+{% tab title="Request" %}
 ```java
 curl -v -u 1100018081:2fgVhQOYZK0io9ct 'https://api.sandbox.datatrans.com/v1/transactions/secureFields' \
     -H 'Content-Type: application/json; charset=UTF-8' \
@@ -141,34 +141,34 @@ curl -v -u 1100018081:2fgVhQOYZK0io9ct 'https://api.sandbox.datatrans.com/v1/tra
         }
   }'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response" %}
+{% tab title="Response" %}
 ```java
 {
   "transactionId" : "190510170631533875"
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ## Step 2: Setup SecureFields
 
 To get started include the following script on your page.
 
-{% code-tabs %}
-{% code-tabs-item title="SecureFields Script" %}
+{% tabs %}
+{% tab title="SecureFields Script" %}
 ```markup
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.js"></script>
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Minified version" %}
+{% tab title="Minified version" %}
 ```markup
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.min.js"></script>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 Please make sure to always load it directly from [https://pay.sandbox.datatrans.com](https://pay.sandbox.datatrans.com)
@@ -291,8 +291,7 @@ The `transactionId` obtained via initial`/v1/transactions/secureFields` call
 Returns Creditcard and CVV code tokens as well as the "3D" object
 {% endapi-method-response-example-description %}
 
-{% code-tabs %}
-{% code-tabs-item title="Example response" %}
+{% code title="Example response" %}
 ```java
 {
     "transactionId": "190520111958152753",
@@ -323,8 +322,7 @@ Returns Creditcard and CVV code tokens as well as the "3D" object
     }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
@@ -332,14 +330,14 @@ Returns Creditcard and CVV code tokens as well as the "3D" object
 
 #### Examples
 
-{% code-tabs %}
-{% code-tabs-item title="Request" %}
+{% tabs %}
+{% tab title="Request" %}
 ```java
 curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transactions/190510164649321735
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response" %}
+{% tab title="Response" %}
 ```java
 {
     "transactionId": "190520111958152753",
@@ -371,8 +369,8 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
     }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### 3-object field name mapping  
 

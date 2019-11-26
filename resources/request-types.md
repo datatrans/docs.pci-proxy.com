@@ -4,7 +4,7 @@ In general, either **you start a request** \(`PULL`\) or a **remote server start
 
 ## Receive from Channel
 
-Receiving card data from a remote server \(Channel\) can work in two ways. In general, either you perform a [**`/v1/pull/`**](../collect-and-store-cards/filter-payloads.md#pull-method) request to receive card data from the Channel or the Channel starts a [**`/v1/push/`**](../collect-and-store-cards/filter-payloads.md#push-method) request with card data. PCI Proxy can tokenize and store sensitive data on both operations.
+Receiving card data from a remote server \(Channel\) can work in two ways. In general, either you perform a [**`/v1/pull/`**](../collect-and-store-cards/filter-payloads/#pull-method) request to receive card data from the Channel or the Channel starts a [**`/v1/push/`**](../collect-and-store-cards/filter-payloads/#push-method) request with card data. PCI Proxy can tokenize and store sensitive data on both operations.
 
 {% tabs %}
 {% tab title="PULL without PCI Proxy" %}
@@ -17,7 +17,7 @@ Receiving card data from a remote server \(Channel\) can work in two ways. In ge
 {% tab title="PULL via PCI Proxy" %}
 ![](../.gitbook/assets/channel_pull_pciproxy_color%20%282%29.png)
 
-1. [**You start a request**](../collect-and-store-cards/filter-payloads.md#pull-method) against PCI Proxy endpoint.
+1. [**You start a request**](../collect-and-store-cards/filter-payloads/#pull-method) against PCI Proxy endpoint.
 2. PCI Proxy forward request to Channel API endpoint.
 3. Channel returns response with card data to PCI Proxy.
 4. PCI Proxy scans response and tokenizes card data.
@@ -33,7 +33,7 @@ Receiving card data from a remote server \(Channel\) can work in two ways. In ge
 {% tab title="PUSH via PCI Proxy" %}
 ![](../.gitbook/assets/channel_push_pciproxy_color%20%282%29.png)
 
-1. [**Channel starts request**](../collect-and-store-cards/filter-payloads.md#push-method) with card data to PCI Proxy endpoint.
+1. [**Channel starts request**](../collect-and-store-cards/filter-payloads/#push-method) with card data to PCI Proxy endpoint.
 2. PCI Proxy scans request and tokenizes card data.
 3. PCI Proxy forwards **request with tokens** to your API endpoint \(you are out of PCI scope\).
 {% endtab %}
@@ -41,7 +41,7 @@ Receiving card data from a remote server \(Channel\) can work in two ways. In ge
 
 ## Forward to Receiver
 
-Forwarding card data to a remote server \(Receiver\) can work in two ways. In general, either you perform a [**`/v1/pull/`**](../use-stored-cards/forward/https.md#pull-method) request to forward card data to a Receiver or the Receiver starts a [**`/v1/push/`**](../use-stored-cards/forward/https.md#push-method) request to ask for card data. PCI Proxy can populate sensitive data on both operations.
+Forwarding card data to a remote server \(Receiver\) can work in two ways. In general, either you perform a [**`/v1/pull/`**](../use-stored-cards/forward/https/#pull-method) request to forward card data to a Receiver or the Receiver starts a [**`/v1/push/`**](../use-stored-cards/forward/https/#push-method) request to ask for card data. PCI Proxy can populate sensitive data on both operations.
 
 {% tabs %}
 {% tab title="PULL without PCI Proxy" %}
@@ -53,7 +53,7 @@ Forwarding card data to a remote server \(Receiver\) can work in two ways. In ge
 {% tab title="PULL via PCI Proxy " %}
 ![](../.gitbook/assets/receiver_pull_pciproxy_color%20%283%29.png)
 
-1. [**You start a request with token**](../use-stored-cards/forward/https.md#pull-method) to PCI Proxy endpoint.
+1. [**You start a request with token**](../use-stored-cards/forward/https/#pull-method) to PCI Proxy endpoint.
 2. PCI Proxy detokenizes and populates request with card data.
 3. PCI Proxy forwards **request with card data** to Receiver. 
 {% endtab %}
@@ -68,7 +68,7 @@ Forwarding card data to a remote server \(Receiver\) can work in two ways. In ge
 {% tab title="PUSH via PCI Proxy" %}
 ![](../.gitbook/assets/receiver_push_pciproxy_color%20%283%29.png)
 
-1. [**Receiver starts request**](../use-stored-cards/forward/https.md#push-method) to PCI Proxy endpoint.
+1. [**Receiver starts request**](../use-stored-cards/forward/https/#push-method) to PCI Proxy endpoint.
 2. PCI Proxy forwards request to your API endpoint.
 3. You return a response with token to PCI Proxy.
 4. PCI Proxy detokenizes and populates response with card data.

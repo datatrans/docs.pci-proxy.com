@@ -1,4 +1,8 @@
-# Getting Started
+---
+description: Learn how to integrate with PCI Proxy
+---
+
+# Overview
 
 ## Overview
 
@@ -20,11 +24,11 @@ PCI Proxy supports all major credit card brands:
 
 ## Getting Started
 
-[**Sign up**](https://www.pci-proxy.com/pci-proxy/contact/) for a free 30-day trial account \(no billing information required\).
+\*\*\*\*[**Sign up**](https://dashboard-pciproxy.com/signup) for a free 30-day trial account \(no billing information required\).
 
 PCI Proxy can be integrated by following these steps to achieve PCI compliance:
 
-{% page-ref page="setup/" %}
+{% page-ref page="setup.md" %}
 
 {% page-ref page="collect-and-store-cards/" %}
 
@@ -36,7 +40,7 @@ PCI Proxy can be integrated by following these steps to achieve PCI compliance:
 Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
 
 Phone: +41 44 256 81 91  
-Email: [support@pci-proxy.com](mailto:support@pci-proxy.com)
+Email: [contact@pci-proxy.com](mailto:contact@pci-proxy.com)   
 {% endhint %}
 
 

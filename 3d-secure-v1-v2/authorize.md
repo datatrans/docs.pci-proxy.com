@@ -137,8 +137,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed.
 {% tab title="Reserve amount \(authorize\)" %}
 To reserve an amount, simply send an authorization request with an amount \(`amount=1000`\):
 
-{% code-tabs %}
-{% code-tabs-item title="Reserve" %}
+{% code title="Reserve" %}
 ```bash
 curl -X POST \
   https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
@@ -167,9 +166,9 @@ curl -X POST \
    </body>
  </authorizationService>'
 ```
-{% endcode-tabs-item %}
+{% endcode %}
 
-{% code-tabs-item title="Response \(successful\)" %}
+{% code title="Response \(successful\)" %}
 ```markup
 <authorizationService version='4'>
     <body merchantId='1100017789' status='accepted'>
@@ -186,9 +185,9 @@ curl -X POST \
     </body>
 </authorizationService>
 ```
-{% endcode-tabs-item %}
+{% endcode %}
 
-{% code-tabs-item title="Response \(insufficient limit\)" %}
+{% code title="Response \(insufficient limit\)" %}
 ```markup
 <?xml version='1.0' encoding='UTF-8'?>
 <authorizationService version='2'>
@@ -215,9 +214,9 @@ curl -X POST \
   </body>
 </authorizationService>
 ```
-{% endcode-tabs-item %}
+{% endcode %}
 
-{% code-tabs-item title="Response \(card blocked\)" %}
+{% code title="Response \(card blocked\)" %}
 ```markup
 <?xml version='1.0' encoding='UTF-8'?>
 <authorizationService version='2'>
@@ -244,15 +243,13 @@ curl -X POST \
   </body>
 </authorizationService>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 
 {% tab title="Charge amount \(auth+settle\)" %}
 To charge a stored card, simply send an authorization request with `reqtype=CAA`:
 
-{% code-tabs %}
-{% code-tabs-item title="Charge" %}
+{% code title="Charge" %}
 ```bash
 curl https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
 -H "Content-Type: application/xml" \
@@ -273,9 +270,9 @@ curl https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
                </body>
            </authorizationService>'
 ```
-{% endcode-tabs-item %}
+{% endcode %}
 
-{% code-tabs-item title="Response \(successful\)" %}
+{% code title="Response \(successful\)" %}
 ```markup
 <?xml version='1.0' encoding='UTF-8'?>
 <authorizationService version='2'>
@@ -304,9 +301,9 @@ curl https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
   </body>
 </authorizationService>% 
 ```
-{% endcode-tabs-item %}
+{% endcode %}
 
-{% code-tabs-item title="Response \(insufficient limit\)" %}
+{% code title="Response \(insufficient limit\)" %}
 ```markup
 <?xml version='1.0' encoding='UTF-8'?>
 <authorizationService version='2'>
@@ -333,9 +330,9 @@ curl https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
   </body>
 </authorizationService>
 ```
-{% endcode-tabs-item %}
+{% endcode %}
 
-{% code-tabs-item title="Response \(card blocked\)" %}
+{% code title="Response \(card blocked\)" %}
 ```markup
 <?xml version='1.0' encoding='UTF-8'?>
 <authorizationService version='2'>
@@ -362,8 +359,7 @@ curl https://api.sandbox.datatrans.com/upp/jsp/XML_authorize.jsp \
   </body>
 </authorizationService>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 

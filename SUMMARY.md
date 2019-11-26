@@ -1,11 +1,11 @@
 # Table of contents
 
-* [Getting Started](README.md)
-* [Setup](setup/README.md)
-  * [Sandbox account](setup/sandbox-account.md)
-  * [IP whitelisting](setup/ip-whitelisting.md)
+* [Overview](README.md)
+* [Get started with PCI Proxy](setup.md)
 * [Collect & store cards](collect-and-store-cards/README.md)
-  * [Filter \(webservice\)](collect-and-store-cards/filter-payloads.md)
+  * [Filter \(webservice\)](collect-and-store-cards/filter-payloads/README.md)
+    * [PULL method](collect-and-store-cards/filter-payloads/pull-method.md)
+    * [PUSH method](collect-and-store-cards/filter-payloads/push-method.md)
   * [Secure Fields \(iframes\)](collect-and-store-cards/capture-iframes/README.md)
     * [Initialization and Styling](collect-and-store-cards/capture-iframes/initialization-and-styling.md)
     * [Events](collect-and-store-cards/capture-iframes/events.md)
@@ -14,7 +14,9 @@
   * [Secure File Transfer \(SFTP\)](collect-and-store-cards/secure-file-transfer-sftp.md)
 * [Use stored cards](use-stored-cards/README.md)
   * [Forward](use-stored-cards/forward/README.md)
-    * [HTTPS to HTTPS](use-stored-cards/forward/https.md)
+    * [HTTPS to HTTPS](use-stored-cards/forward/https/README.md)
+      * [PULL Method](use-stored-cards/forward/https/pull-method.md)
+      * [PUSH Method](use-stored-cards/forward/https/push-method.md)
     * [HTTPS  to SFTP](use-stored-cards/forward/sftp.md)
   * [Show](use-stored-cards/show.md)
   * [Check](use-stored-cards/check.md)
@@ -23,9 +25,8 @@
 * [Resources](resources/README.md)
   * [Full API Reference](resources/full-api-reference.md)
   * [Request Types](resources/request-types.md)
+  * [IP whitelisting](resources/ip-whitelisting.md)
   * [Supported Acquirer](resources/supported-acquirer.md)
-  * [Supported Channels](resources/supported-channels.md)
-  * [Supported Receivers](resources/supported-receivers.md)
 * [3D Secure v1 / v2](3d-secure-v1-v2/README.md)
   * [SecureFields 3D \(beta\)](3d-secure-v1-v2/securefields-1/README.md)
     * [Initialization and Styling](3d-secure-v1-v2/securefields-1/initialization-and-styling.md)
@@ -37,6 +38,13 @@
 * [Test card data](test-card-data.md)
 
 ## Guides
+
+* [PCI Proxy Dashboard](pci-proxy-dashboard/README.md)
+  * [Account structure / User management](pci-proxy-dashboard/account-structure-user-management.md)
+  * [Add integrations](pci-proxy-dashboard/add-integrations.md)
+  * [API Authentication data](pci-proxy-dashboard/api-authentication-data.md)
+  * [API endpoints](pci-proxy-dashboard/api-endpoints.md)
+  * [Setup payment method](pci-proxy-dashboard/setup-payment-method.md)
 
 ## Have a Question?
 

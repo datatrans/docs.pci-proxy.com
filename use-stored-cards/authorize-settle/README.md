@@ -31,7 +31,7 @@ For this feature, you need an existing acquiring contract.
 ## 2. Authorize a stored card
 
 {% hint style="warning" %}
-The service requires HTTP Basic Authentication.  Provide your `merchantId` as the basic authentication username value. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../pci-proxy-dashboard/api-authentication-data.md) for more information. 
 {% endhint %}
 
 {% api-method method="post" host="https://api.sandbox.datatrans.com" path="/v1/transactions/authorize" %}
@@ -139,8 +139,7 @@ In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 
 {% tabs %}
 {% tab title="Reserve amount \(authorize\)" %}
-{% code-tabs %}
-{% code-tabs-item title="Request" %}
+{% code title="Request" %}
 ```bash
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions/authorize \
@@ -157,9 +156,9 @@ curl -X POST \
     }
 }
 ```
-{% endcode-tabs-item %}
+{% endcode %}
 
-{% code-tabs-item title="Response \(successful\)" %}
+{% code title="Response \(successful\)" %}
 ```bash
 {
   "transactionId": "191023111742635093",
@@ -169,13 +168,11 @@ curl -X POST \
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 
 {% tab title="Charge amount \(auth+settle\)" %}
-{% code-tabs %}
-{% code-tabs-item title="Charge" %}
+{% code title="Charge" %}
 ```bash
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions/authorize \
@@ -193,9 +190,9 @@ curl -X POST \
     }
 }
 ```
-{% endcode-tabs-item %}
+{% endcode %}
 
-{% code-tabs-item title="Response \(successful\)" %}
+{% code title="Response \(successful\)" %}
 ```bash
 {
   "transactionId": "191023113146339569",
@@ -205,8 +202,7 @@ curl -X POST \
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 

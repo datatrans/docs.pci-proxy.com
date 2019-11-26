@@ -3,7 +3,7 @@
 The Alias Gateway allows you to pass credit card data directly to the PCI Proxy vault to create tokens. This can be interesting if you want to migrate existing credit card data that is currently stored somewhere else to store it within the PCI Proxy vault. 
 
 {% hint style="danger" %}
-We strongly discourage passing credit card data directly to our Alias Gateway as it means your systems get in contact with full credit card numbers. Please use the [Filter Proxy](filter-payloads.md) or [Secure Fields](capture-iframes/) to reduce your PCI scope to a minimum.
+We strongly discourage passing credit card data directly to our Alias Gateway as it means your systems get in contact with full credit card numbers. Please use the [Filter Proxy](filter-payloads/) or [Secure Fields](capture-iframes/) to reduce your PCI scope to a minimum.
 {% endhint %}
 
 {% api-method method="post" host="https://api.sandbox.datatrans.com/" path="upp/jsp/XML\_AliasGateway.jsp" %}
@@ -117,14 +117,14 @@ Invalid value passed for one of the attributes \(e.g. merchantId\).
 | :--- | :--- |
 
 
-{% hint style="info" %}
-The service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+{% hint style="warning" %}
+The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../pci-proxy-dashboard/api-authentication-data.md) for more information. 
 {% endhint %}
 
 ### Examples
 
-{% code-tabs %}
-{% code-tabs-item title="Example Request" %}
+{% tabs %}
+{% tab title="Example Request" %}
 ```markup
 curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
   -H "Content-Type: text/xml" \
@@ -144,9 +144,9 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
          </body>
        </aliasCCService>'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Example Response" %}
+{% tab title="Example Response" %}
 ```markup
 <?xml version='1.0' encoding='UTF-8'?>
 <aliasCCService version="1">
@@ -172,9 +172,9 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
     </body>
 </aliasCCService>
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Bad Request Error Case" %}
+{% tab title="Bad Request Error Case" %}
 ```markup
 curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
   -H "Content-Type: text/xml" \
@@ -194,9 +194,9 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
          </body>
        </aliasCCService>'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Error Case Response" %}
+{% tab title="Error Case Response" %}
 ```markup
 <?xml version='1.0' encoding='UTF-8'?>
 <aliasCCService version="1">
@@ -224,8 +224,8 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
     </body>
 </aliasCCService>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 In test mode, only [test credit cards](../test-card-data.md) are allowed.

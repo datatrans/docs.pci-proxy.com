@@ -71,8 +71,7 @@ Response will contain NoShow link
 
 {% tabs %}
 {% tab title="application/xml" %}
-{% code-tabs %}
-{% code-tabs-item title="Request" %}
+{% code title="Request" %}
 ```markup
 curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
   -H 'content-type: application/xml' \
@@ -85,13 +84,11 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
         <language>en</language>
      </request>'
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 
 {% tab title="application/json" %}
-{% code-tabs %}
-{% code-tabs-item title="Request" %}
+{% code title="Request" %}
 ```javascript
 curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
   -H 'content-type: application/json' \
@@ -104,8 +101,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
     "language": "en",
    }'
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -113,8 +109,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 
 {% tabs %}
 {% tab title="application/xml" %}
-{% code-tabs %}
-{% code-tabs-item title="Response" %}
+{% code title="Response" %}
 ```markup
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <response>
@@ -122,21 +117,18 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
   <errorCode>0</errorCode>
 </response>
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 
 {% tab title="application/json" %}
-{% code-tabs %}
-{% code-tabs-item title="Response" %}
+{% code title="Response" %}
 ```javascript
 {
     "url": "https://api.sandbox.datatrans.com/upp/noshow?token=2555559e-63d8-4c26-8799-0e9d64601037",
     "errorCode": 0
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endcode %}
 {% endtab %}
 {% endtabs %}
 
@@ -184,7 +176,7 @@ SHA.256(salt+merchantId+aliasCC+userEmail)                                      
 → SHASign: f641a6a3de574bd4b7609320e9a4fb1ed11364f136908822ff6a8e3b6b1bca1f            // Security Sign for NoShow.jsp
 ```
 
-_The „**salt**“ value has to be generated in the Datatrans web administration tool \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) under “UPP Administration” -&gt; “Security” -&gt; “Other Services”._
+_The „**salt**“ value has to be generated in the PCI Proxy dashboard \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) within the Developers - API Keys menu. Please refer to_ [_API Authentication data_](../pci-proxy-dashboard/api-authentication-data.md) _for more information._ 
 
 Example: [NoShow sign calculation](https://datatrans.github.io/docs.pci-proxy.com/no-show.html)
 

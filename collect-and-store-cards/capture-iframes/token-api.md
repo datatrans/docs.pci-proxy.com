@@ -1,7 +1,7 @@
 # Token API
 
 {% hint style="warning" %}
-The service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../pci-proxy-dashboard/api-authentication-data.md) for more information. 
 {% endhint %}
 
 {% api-method method="get" host="https://api.sandbox.datatrans.com/upp/services" path="/v1/inline/token" %}
@@ -76,33 +76,33 @@ Invalid username:password
 
 ### Examples
 
-{% code-tabs %}
-{% code-tabs-item title="Example: Basic usage" %}
+{% tabs %}
+{% tab title="Example: Basic usage" %}
 ```bash
 $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \ 
         -u 'merchantId:password'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response" %}
+{% tab title="Response" %}
 ```bash
 {
   "aliasCC" : "424242SKMPRI4242",
   "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="Example: returnPaymentMethod=true returning paymentMethod" %}
+{% tabs %}
+{% tab title="Example: returnPaymentMethod=true returning paymentMethod" %}
 ```bash
 $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571&returnPaymentMethod=true" \
        -u 'merchantId:password'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response" %}
+{% tab title="Response" %}
 ```bash
 {
     "aliasCC": "424242SKMPRI4242",
@@ -110,24 +110,24 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
     "paymentMethod": "VIS"
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
-{% code-tabs %}
-{% code-tabs-item title="Example: mandatoryAliasCVV=true w/ transactionId that has no CVV token" %}
+{% tabs %}
+{% tab title="Example: mandatoryAliasCVV=true w/ transactionId that has no CVV token" %}
 ```bash
 $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170822090245534063&mandatoryAliasCVV=true" \
        -u 'merchantId:password'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response" %}
+{% tab title="Response" %}
 ```bash
 400 Bad Request
 Tokenization with CVV not found
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 
 

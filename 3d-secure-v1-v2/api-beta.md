@@ -151,8 +151,8 @@ Refer to the official EMVCo 3D specification 2.1.0 for parameter requirements se
 
 #### Examples
 
-{% code-tabs %}
-{% code-tabs-item title="Request with plain text cardnumber" %}
+{% tabs %}
+{% tab title="Request with plain text cardnumber" %}
 ```java
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions \
@@ -197,9 +197,9 @@ curl -X POST \
     }
 }'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Request with masked token" %}
+{% tab title="Request with masked token" %}
 ```java
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions \
@@ -244,9 +244,9 @@ curl -X POST \
     }
 }'
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response" %}
+{% tab title="Response" %}
 ```java
 Response headers:
 Location: https://pay.sandbox.datatrans.com/v1/start/190906151210861442
@@ -259,8 +259,8 @@ Response body:
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 ## Step 2: Display a 3D secure challenge
 
@@ -342,17 +342,17 @@ transactionId obtained via `/v1/transactions`
 
 #### Examples
 
-{% code-tabs %}
-{% code-tabs-item title="Request" %}
+{% tabs %}
+{% tab title="Request" %}
 ```java
 curl -X GET \
   https://api.sandbox.datatrans.com/v1/transactions/190906151210861442 \
   -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
 
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Response" %}
+{% tab title="Response" %}
 ```java
 {
   "transactionId": "190906151210861442",
@@ -407,8 +407,8 @@ curl -X GET \
   }
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
 #### 3-object field name mapping  
 
