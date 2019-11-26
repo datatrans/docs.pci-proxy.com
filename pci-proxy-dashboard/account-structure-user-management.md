@@ -10,7 +10,7 @@ With PCI Proxy you have one single company account \(legal entity\) and one sing
   
 This company account is called **Contract** and can hold, based on your subscription plan,  one to several sub-accounts \(**Projects**\). Each **Contract** must contain at least one legally authorized user. Furthermore the invoice is always issued at **Contract** level.   
   
-User can be assigned eithe ron **Contract** or **Project** level. Please refer to User manamgent to learn more about the roles and permissions.   
+User can be assigned either on **Contract** or **Project** level. Please refer to User management to learn more about the roles and permissions.   
 
 **Create new a Project**  
 Within the Scale and Enterprise subscription plan you're allowed to create multiple Projects**.** 
