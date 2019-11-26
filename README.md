@@ -24,7 +24,7 @@ PCI Proxy supports all major credit card brands:
 
 ## Getting Started
 
-\*\*\*\*[**Sign up**](https://dashboard-pciproxy.com/signup) for a free 30-day trial account \(no billing information required\).
+\*\*\*\*[**Sign up**](https://dashboard.pci-proxy.com/signup) for a free 30-day trial account \(no billing information required\).
 
 PCI Proxy can be integrated by following these steps to achieve PCI compliance:
 
