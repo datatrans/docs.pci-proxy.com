@@ -4,7 +4,7 @@ description: Learn how to setup your sandbox account and activating it for produ
 
 # Get started with PCI Proxy
 
-Follow these step-by-step guide to setup your sandbox account and to setup your account production ready by yourself within minutes. For more detailed information about the dashboard feature ready our [Guides section](pci-proxy-dashboard/).   
+Follow these step-by-step guide to setup your sandbox account and to setup your account production ready by yourself within minutes. For more detailed information about the dashboard feature read our [Guides section](pci-proxy-dashboard/).   
   
 Drop us a message at [contact@pci-proxy.com](mailto:contact@pci-proxy.com) if you need any further help or advice in terms of setting up your account. 
 
@@ -43,7 +43,7 @@ Learn more about [adding existing or new integrations to your project](pci-proxy
 
 ## 3. Going live
 
-Once everything has been testet properly on sandbox environment you can activate your account for production environment by yourself within minutes. 
+Once everything has been tested properly on sandbox environment you can activate your account for production environment by yourself within minutes. 
 
 {% hint style="info" %}
 Activating your account for production starts the billing process. 
@@ -58,7 +58,7 @@ Follow below steps to to activate your account for production.
 5\) A confirmation email with the contract overview will be sent to the admin contact
 
 {% hint style="warning" %}
-As we take security seriously it might be possible that we will contact you and request for more information and verification data after go live. 
+It might be possible that we will contact you and request for more information and verification data after go live. 
 {% endhint %}
 
 ## 4. Configure your live account
