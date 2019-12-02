@@ -1,5 +1,7 @@
 # Supported Receivers
 
+
+
 | 3rd Party - Receiver | Web Service Type \(XML/SOAP/JSON\) |
 | :--- | :--- |
 | [Amadeus](http://www.amadeus.com/) | PUSH |
@@ -66,5 +68,8 @@
 | American Express | BTA |
 | Airplus | TAMARA |
 
-We are adding more third party APIs and payment gateways. Let us know if one is missing: [setup@pci-proxy.com](mailto:setup@pci-proxy.com)
+{% hint style="info" %}
+Do you miss a channel? Simply add it in our [dashboard](https://dashboard.pci-proxy.com/signup).   
+Please refer to [Add integrations](../pci-proxy-dashboard/add-integrations.md) for more information. 
+{% endhint %}
 

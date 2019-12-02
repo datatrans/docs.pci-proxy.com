@@ -47,5 +47,8 @@ For [collecting credit cards via webservice \(XML/SOAP\)](https://github.com/dtr
 | [Voila](https://www.voilahotels.com/) | PUSH |
 | [WuBook](http://en.wubook.net/) | PULL |
 
-We are adding more channels. Let us know if a channel is missing: [Adding Channel](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-channel.html)
+{% hint style="info" %}
+Do you miss a channel? Simply add it in our [dashboard](https://dashboard.pci-proxy.com/signup).   
+Please refer to [Add integrations](../pci-proxy-dashboard/add-integrations.md) for more information. 
+{% endhint %}
 
