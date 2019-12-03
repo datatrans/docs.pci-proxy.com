@@ -23,7 +23,6 @@
   * [Authorize/Settle](use-stored-cards/authorize-settle/README.md)
     * [Defered settlement](use-stored-cards/authorize-settle/defered-settlement.md)
 * [Resources](resources/README.md)
-  * [Untitled](resources/untitled.md)
   * [Full API Reference](resources/full-api-reference.md)
   * [Request Types](resources/request-types.md)
   * [IP whitelisting](resources/ip-whitelisting.md)
