@@ -21,6 +21,6 @@ Please follow below steps to to activate your account for production.
 4\) A confirmation email with the contract overview will be sent to the admin contact
 
 {% hint style="warning" %}
-It might be possible that we will contact you and request for more information and verification data after go live. 
+It might be possible that we will contact you and request for more information and verification data after going live. 
 {% endhint %}
 

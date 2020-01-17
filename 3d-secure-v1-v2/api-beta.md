@@ -8,7 +8,7 @@ description: >-
 
 ## Before you start
 
-1. [**Sign up**](https://dashboard-pciproxy.com/signup) for a free PCI Proxy sandbox account.
+1. \*\*\*\*[**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
 
 {% hint style="info" %}
 * This service requires basic authentication. Please refer to [Authentification](../pci-proxy-dashboard/api-authentication-data.md) to retrieve required crendetials. 
