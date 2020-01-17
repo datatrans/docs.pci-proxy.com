@@ -41,7 +41,7 @@ As a next step setup the integrations for the outbound traffic if needed.
 Learn more about [adding existing or new integrations to your project](pci-proxy-dashboard/add-integrations.md)
 {% endhint %}
 
-## 3. Going live
+## 3. [Going live](pci-proxy-dashboard/get-production-ready.md)
 
 Once everything has been tested properly on sandbox environment you can activate your account for production environment by yourself within minutes. 
 
@@ -52,10 +52,9 @@ Activating your account for production starts the billing process.
 Follow below steps to to activate your account for production.  
   
 1\) Click the **Environment** switcher in the Project section  
-2\) A hint will be prompted to enable the production mode. Click on the **Enable production mode** button  
-3\) Select your subscription plan, complete all required data and press submit   
-4\) Choose your prefered payment method and finally enable your account for production  
-5\) A confirmation email with the contract overview will be sent to the admin contact
+2\) Select your subscription plan, complete all required data and press Continue  
+3\) Choose your prefered payment method and finally enable your account for production  
+4\) A confirmation email with the contract overview will be sent to the admin contact
 
 {% hint style="warning" %}
 It might be possible that we will contact you and request for more information and verification data after go live. 

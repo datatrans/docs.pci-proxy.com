@@ -42,10 +42,11 @@
 ## Guides
 
 * [PCI Proxy Dashboard](pci-proxy-dashboard/README.md)
+  * [Get production ready](pci-proxy-dashboard/get-production-ready.md)
   * [Account structure / User management](pci-proxy-dashboard/account-structure-user-management.md)
-  * [Add integrations](pci-proxy-dashboard/add-integrations.md)
+  * [Add Integrations](pci-proxy-dashboard/add-integrations.md)
   * [API Authentication data](pci-proxy-dashboard/api-authentication-data.md)
-  * [API endpoints](pci-proxy-dashboard/api-endpoints.md)
+  * [API Endpoints](pci-proxy-dashboard/api-endpoints.md)
   * [Setup payment method](pci-proxy-dashboard/setup-payment-method.md)
 
 ## Have a Question?

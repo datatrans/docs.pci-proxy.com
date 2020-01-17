@@ -8,10 +8,10 @@ description: >-
 
 ## Before you start
 
-1. [**Sign up**](https://www.pci-proxy.com/pci-proxy/contact/) for a free PCI Proxy sandbox account.
+1. [**Sign up**](https://dashboard-pciproxy.com/signup) for a free PCI Proxy sandbox account.
 
 {% hint style="info" %}
-* This service requires basic authentication. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+* This service requires basic authentication. Please refer to [Authentification](../pci-proxy-dashboard/api-authentication-data.md) to retrieve required crendetials. 
 * Make sure to use our 3D Secure enabled test credit cards [here](testing-3d-secure.md).
 {% endhint %}
 

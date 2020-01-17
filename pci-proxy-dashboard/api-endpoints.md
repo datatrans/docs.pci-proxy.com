@@ -2,7 +2,7 @@
 description: Read how to access the PCI Proxy API endpoints.
 ---
 
-# API endpoints
+# API Endpoints
 
 To access the PCI Proxy sandbox API endpoints please follow these steps: 
 
