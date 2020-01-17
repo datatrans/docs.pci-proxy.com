@@ -42,7 +42,7 @@
 ## Guides
 
 * [PCI Proxy Dashboard](pci-proxy-dashboard/README.md)
-  * [Get production ready](pci-proxy-dashboard/get-production-ready.md)
+  * [Get production ready / Go-live](pci-proxy-dashboard/get-production-ready.md)
   * [Account structure / User management](pci-proxy-dashboard/account-structure-user-management.md)
   * [Add Integrations](pci-proxy-dashboard/add-integrations.md)
   * [API Authentication data](pci-proxy-dashboard/api-authentication-data.md)
