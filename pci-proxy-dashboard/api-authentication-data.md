@@ -4,7 +4,7 @@ description: Access PCI Proxy API authentication data
 
 # API Authentication data
 
-The PCI Proxy APIs requires different authentication methods depending on the used API. See and overview below which authentication method should be applied to protect your requests.   
+The PCI Proxy APIs requires different authentication methods depending on the used API. See an overview below which authentication method should be applied to protect your requests.   
   
 Simply navigate to the **Developers** menu in the **Project section** to reveal and setup the API Keys and passwords for your project. 
 
