@@ -13,9 +13,9 @@ NoShow.jsp
 {% endapi-method-summary %}
 
 {% api-method-description %}
-**1. Please let us know your IP address for whitelisting   
+1. Let us know your IP address for whitelisting   
   
-2. Build the request to retrieve the NoShow link:** 
+2. Build the request to retrieve the NoShow link: ****
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -105,7 +105,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 {% endtab %}
 {% endtabs %}
 
-**3. Embed NoShow link from the response into your application**
+3. Embed NoShow link from the response into your application
 
 {% tabs %}
 {% tab title="application/xml" %}
@@ -132,13 +132,13 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 {% endtab %}
 {% endtabs %}
 
-**4. Once the user clicks on the link an email will be sent to  `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually.** 
+4. Once the user clicks on the link an email will be sent to  `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually. 
 
-**5. Subsequently the new device has been authorized the user and may enter a four digit security code in the opened iFrame to retrieve plain text credit card number.** 
+5. Subsequently the new device has been authorized the user and may enter a four digit security code in the opened iFrame to retrieve plain text credit card number. 
 
 Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
-**6. Ensure** [**PCI-compliant user management**](show.md#pci-dss-compliant-user-management)
+6. Ensure [PCI-compliant user management](show.md#pci-dss-compliant-user-management)
 
 {% hint style="info" %}
 In test mode, only [test credit cards](../test-card-data.md) are allowed!
@@ -162,7 +162,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed!
 
 ### SHA.256 Security Sign
 
-**Generate NoShow-specific SHA.256 Security Sign with salt value, merchantId, aliasCC \(token\) and userEmail**
+Generate NoShow-specific SHA.256 Security Sign with salt value, merchantId, aliasCC \(token\) and userEmail
 
 ```javascript
 salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
@@ -176,7 +176,7 @@ SHA.256(salt+merchantId+aliasCC+userEmail)                                      
 → SHASign: f641a6a3de574bd4b7609320e9a4fb1ed11364f136908822ff6a8e3b6b1bca1f            // Security Sign for NoShow.jsp
 ```
 
-_The „**salt**“ value has to be generated in the PCI Proxy dashboard \(_[https://admin.sandbox.datatrans.com](https://admin.sandbox.datatrans.com)_\) within the Developers - API Keys menu. Please refer to_ [_API Authentication data_](../pci-proxy-dashboard/api-authentication-data.md) _for more information._ 
+_The `salt` value can be accessed in the PCI Proxy dashboard \(_[_https://dashboard.pci-proxy.com/login_](https://dashboard.pci-proxy.com/login)_\) within the Developers - API Keys menu. Please refer to_ [_API Authentication data_](../pci-proxy-dashboard/api-authentication-data.md) _for more information._ 
 
 Example: [NoShow sign calculation](https://datatrans.github.io/docs.pci-proxy.com/no-show.html)
 
