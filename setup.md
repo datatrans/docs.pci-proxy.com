@@ -49,7 +49,7 @@ Once everything has been tested properly on sandbox environment you can activate
 Activating your account for production starts the billing process. 
 {% endhint %}
 
-Follow below steps to to activate your account for production.  
+Follow below steps to activate your account for production.  
   
 1\) Click the **Environment** switcher in the left hand side menu bar  
 2\) Select your subscription plan, complete all required data and press Continue  
