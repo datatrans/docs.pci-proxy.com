@@ -157,7 +157,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed!
 | `aliasCVV` \(optional\) | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
 | `username` \(optional\) | [Unique userID](show.md#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond |
 | `userEmail` | Email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
-| [`SHAsign`](show.md#sha-256-security-sign) | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
+| [`SHASign`](show.md#sha-256-security-sign) | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
 | `language` \(optional\) | The language code in which the no-show page should be displayed | en |
 
 ### SHA.256 Security Sign
