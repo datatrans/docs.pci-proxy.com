@@ -16,14 +16,6 @@ The parameters will be sent as HTTP headers.
 | `pci-proxy-api-key` | Configured API key | MxdPtKaeDLfkhK7rdz4nmmx5dg10ufRR |
 | `X-CC-SIGN` | Configured security sign | 130709090849785405 |
 
-* **Optional input paramter:**
-
-| HTTP Header | Description | Example value |
-| :--- | :--- | :--- |
-| `X-CC-TRUST-CERT` | If target URL server has invalid certificate, this parameter can be used to ignore the certificate. Useful for tests when implementing partners use self signed certificates on URLs simulating 3rd parties. Header should be avoided \(not sent\) in production environments! | yes/no/true/false/on/off |
-| `X-CC-ITEM` | Xpath expression pointing to “record” | /reservations/reservation |
-| `X-CC-NUMBER` | XPath expression relative to “record” to locate card number | customer/cc\_number |
-
 * **Example POST:**
 
 ```markup
@@ -77,7 +69,6 @@ Error cases \(returned with headers X-CC-ERROR-CODE and X-CC-ERROR\):
 | 4 | Invalid merchant setup - security sign was not defined | Merchant did not define the security sign. |
 | 5 | Invalid sign | The provided `X-CC-SIGN` is wrong. |
 | 6 | Invalid proxy type: `<PROXY_TYPE_NAME>` | The provided merchant/url headers did not match to a valid known proxy type. Please contact Datatrans Support. |
-| 7 | Invalid XPath: `<X-CC-ITEM>` or `<X-CC-NUMBER>` | Invalid XPath expression in request. |
 | 50 | Missing parameter: `<PARAMETER-NAME>` | PUSH request parameter missing. |
 | 100 | Unsupported method: `<METHOD-NAME>` | Unsupported HTTP method |
 | 200 | Could not apply xPath on xml response: `<XPATH-EXPRESSION>` | There was an error applying the xpath expression |
