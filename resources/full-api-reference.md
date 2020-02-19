@@ -6,13 +6,13 @@ The parameters will be sent as HTTP headers.
 
 | **PCI Proxy PULL Endpoint:** |
 | :--- |
-| [https://sandbox.pci-proxy.com/v1/pull/](https://sandbox.pci-proxy.com/v1/pull/) |
+| https://sandbox.pci-proxy.com/v1/pull |
 
 * **Mandatory input parameters:**
 
 | HTTP header | Description | Example value |
 | :--- | :--- | :--- |
-| `X-CC-URL` | Specifies the target URL that will be called | [https://api.thirdparty.com/](https://api.thirdparty.com/) |
+| `X-CC-URL` | Specifies the target URL that will be called | https://api.thirdparty.com |
 | `pci-proxy-api-key` | Configured API key | MxdPtKaeDLfkhK7rdz4nmmx5dg10ufRR |
 | `X-CC-SIGN` | Configured security sign | 130709090849785405 |
 
