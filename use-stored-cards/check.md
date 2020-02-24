@@ -44,7 +44,7 @@ application/json; charset=UTF-8
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="currency" type="string" required=true %}
-3 letter ISO-4217 character code. For VISA and MC cards use `CHF` and for AMEX cards use `EUR`
+3 letter ISO-4217 character code. For **VISA** and **MC** cards use `CHF`, `USD` or `EUR` and for **AMEX** cards use `EUR`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="refno" type="string" required=true %}
