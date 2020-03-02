@@ -9,7 +9,7 @@ _Note: Even though the interface is served by PCI Proxy, your PCI scope can exte
 
 {% api-method method="post" host="https://api.sandbox.datatrans.com/" path="upp/services/v1/noshow/init" %}
 {% api-method-summary %}
-NoShow.jsp
+Init call
 {% endapi-method-summary %}
 
 {% api-method-description %}
