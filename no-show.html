@@ -69,7 +69,7 @@
                         "        <merchantId>" + merchantId + "</merchantId>\n" +
                         "        <aliasCC>" + aliasCC + "</aliasCC>\n" +
  (aliasCVV.length > 0 ? "        <aliasCVV>" + aliasCVV + "</aliasCVV>\n" : "") +
-                        "        <sign>" + sign + "</sign>\n" +
+                        "        <SHASign>" + sign + "</SHAsign>\n" +
 (userEmail.length > 0 ? "        <userEmail>" + userEmail + "</userEmail>\n" : "") +
                         "     </request>'";
 
@@ -154,8 +154,8 @@
                             </button>
                         </div>
                     </div>
-                    <p class="help-block">You can get the Salt value from: Webadmin --> UPP Administration --> Security -->
-                        Other services</p>
+                    <p class="help-block">You can access the Salt value in our Dashboard --> Developers menu --> API Keys -->
+                        Reveal credentials</p>
                 </div>
             </div>
 
@@ -167,7 +167,7 @@
                 </div>
 
                 <div class="col-xs-9">
-                    <label for="sign">sign</label>
+                    <label for="sign">SHAsign</label>
                     <input type="text" class="form-control" id="sign" name="sign" placeholder="sign" value=""
                         readonly="readonly">
                     <p class="help-block">Click the 'Calculate sign' button above!</p>
@@ -176,7 +176,7 @@
 
             <div class="form-group row">
                 <div class="col-xs-3">
-                    <label for="aliasCVV">aliasCVV</label>
+                    <label for="aliasCVV">aliasCVV (optional)</label>
                     <input type="text" class="form-control" id="aliasCVV" name="aliasCVV" placeholder="aliasCVV">
                     <p class="help-block">Create a fresh aliasCVV <a target="_blank"
                         href="https://pay.sandbox.datatrans.com/upp/jsp/upStart.jsp?uppAliasOnly=yes&merchantId=1000011011&amount=1000&currency=CHF&refno=800381&sign=30916165706580013&paymentmethod=VIS&aliasCC=70119122433810042&expm=12&expy=21&cvv=123">here.</a>
