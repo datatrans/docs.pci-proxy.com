@@ -23,7 +23,7 @@ Browser compatibility for Secure Fields:
 To get started include the following script on your page. 
 
 {% tabs %}
-{% tab title="Inline Mode Script" %}
+{% tab title="Secure Fields Script" %}
 ```javascript
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.js"></script>
 ```
@@ -31,7 +31,7 @@ To get started include the following script on your page.
 
 {% tab title="Minified Version" %}
 ```javascript
-<script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-1.0.0.min.js"></script>
+<script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.min.js"></script>
 ```
 {% endtab %}
 {% endtabs %}
@@ -128,8 +128,9 @@ curl https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionI
 {% tab title="Response" %}
 ```javascript
 {
-  "aliasCC" : "424242SKMPRI4242",
-  "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
+  "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
+  "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
+  "maskedCard": "424242xxxxxx4242"
 }
 ```
 {% endtab %}

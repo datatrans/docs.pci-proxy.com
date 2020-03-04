@@ -77,7 +77,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
   -H 'content-type: application/xml' \
   -d '<request>
         <merchantId>1000011011</merchantId>
-        <aliasCC>424242SKMPRI4242</aliasCC>
+        <aliasCC>AAABcHxr-sDssdexyrAAAfyXWIgaAF40</aliasCC>
         <userName>bond</userName>
         <userEmail>james.bond@yourcompany.com</userEmail>
         <SHASign>d17ead827458e3532fd868b3b110671586b7e7ee0db106d5ae94e85ca93782ab</SHASign>
@@ -94,7 +94,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
   -H 'content-type: application/json' \
   -d '{
     "merchantId": "1000011011",
-    "aliasCC": "70119122433810042",
+    "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
     "userName": "bond",
     "userEmail": "email@example.com",
     "SHASign": "d17ead827458e3532fd868b3b110671586b7e7ee0db106d5ae94e85ca93782ab",
@@ -153,7 +153,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed!
 | Parameter | Description | Example value |
 | :--- | :--- | :--- |
 | `merchantId` | Your merchant ID | 1000011011 |
-| `aliasCC` | Token you received when you collected the credit card | 424242SKMPRI4242 |
+| `aliasCC` | Token you received when you collected the credit card | AAABcHxr-SDssdexrAAAfyXWIgaAF40 |
 | `aliasCVV` \(optional\) | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
 | `userName` \(optional\) | [Unique userID](show.md#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond |
 | `userEmail` | Email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
@@ -167,7 +167,7 @@ Generate NoShow-specific SHA.256 Security Sign with salt value, merchantId, alia
 ```javascript
 salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
 merchantId  = 1100005007                                                               // Your Merchant ID
-aliasCC     = 424242SKMPRI4242                                                         // CC token to be de-tokenized
+aliasCC     = AAABcHxr-sDssdexyrAAAfyXWIgaAF40                                         // CC token to be de-tokenized
 userEmail   = james.bond@yourcompany.com                                               // Email address of NoShow-User
 
 → String: V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs1100005007424242SKMPRI4242 // Concatenate all 4 values

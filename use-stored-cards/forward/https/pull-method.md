@@ -69,10 +69,10 @@ Once a PULL Receiver is added to your merchantId, simply redirect requests to it
 ```bash
 curl https://sandbox.pci-proxy.com/v1/pull \
  -H 'X-CC-MERCHANT-ID: 1000011011' \
- -H 'X-CC-SIGN: 30916165706580013' \
+ -H 'pci-proxy-api-key: api-key' \
  -H 'X-CC-URL: https://api.stripe.com/v1/tokens' \
  -u sk_test_BQokikJOvBiI2HlWgH4olfQ2: \
- -d 'card[number]=424242SKMPRI4242' \
+ -d 'card[number]=AAABcHxr-sDssdexyrAAAfyXWIgaAF40' \
  -d 'card[exp_month]=12' \
  -d 'card[exp_year]=2018'
 ```

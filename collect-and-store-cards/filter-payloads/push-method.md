@@ -12,7 +12,7 @@ PUSH method
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="uniquePushKey" type="string" required=false %}
+{% api-method-parameter name="uniquePushKey" type="string" required=true %}
 Your `uniquePushKey` can be accessed by clicking on the Settings of the Integration you added in the dashboard.  
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
@@ -21,7 +21,7 @@ Your `uniquePushKey` can be accessed by clicking on the Settings of the Integrat
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Request with tokenized card number and cvv code
 {% endapi-method-response-example-description %}
 
 ```javascript
@@ -31,6 +31,10 @@ Your `uniquePushKey` can be accessed by clicking on the Settings of the Integrat
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% hint style="info" %}
+Masked cardnumber will be returned in the response as HTTP header`pci-proxy-masked-aliases AAABcHxr-sDssdexyrAAAfyXWIgaAF40=424242xxxxxx4242`
+{% endhint %}
 
 {% hint style="warning" %}
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.

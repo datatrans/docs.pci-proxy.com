@@ -120,7 +120,7 @@ curl -X POST \
     "currency": "CHF",
     "refno": "vptJ07xyr",
     "card": {
-        "alias": "424242SKMPRI4242",
+        "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
         "expiryMonth": "12",
         "expiryYear": "21"
     }

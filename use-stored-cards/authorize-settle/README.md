@@ -150,7 +150,7 @@ curl -X POST \
     "refno": "vptJ07xyr",
     "amount": 1000,
     "card": {
-        "alias": "424242SKMPRI4242",
+        "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
         "expiryMonth": "12",
         "expiryYear": "21"
     }
@@ -184,7 +184,7 @@ curl -X POST \
     "amount": 1000,
     "autoSettle": "true",
     "card": {
-        "alias": "424242SKMPRI4242",
+        "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
         "expiryMonth": "12",
         "expiryYear": "21"
     }

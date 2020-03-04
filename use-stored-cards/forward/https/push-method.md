@@ -16,7 +16,7 @@ PUSH method
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="uniquePushKey" type="string" required=false %}
+{% api-method-parameter name="uniquePushKey" type="string" required=true %}
 Your `uniquePushKey` can be accessed by clicking in the Settings of the Integration you added in the dashboard. 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}

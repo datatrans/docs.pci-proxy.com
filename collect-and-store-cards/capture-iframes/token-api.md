@@ -45,8 +45,9 @@ Tokens successfully retrieved.
 
 ```bash
 {
-  "aliasCC" : "424242SKMPRI4242",
-  "aliasCVV" : "rBC5XHRRRKeq2gTfDTVP1rCA"
+  "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
+  "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
+  "maskedCard": "424242xxxxxx4242"
 }
 ```
 {% endapi-method-response-example %}
@@ -87,8 +88,9 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 {% tab title="Response" %}
 ```bash
 {
-  "aliasCC" : "424242SKMPRI4242",
-  "aliasCVV" : "gOnsckLxRMO67W_Wz89RYFyW"
+  "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
+  "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
+  "maskedCard": "424242xxxxxx4242"
 }
 ```
 {% endtab %}
@@ -105,9 +107,10 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 {% tab title="Response" %}
 ```bash
 {
-    "aliasCC": "424242SKMPRI4242",
-    "aliasCVV": "4F1zjRYITiW8JrqgNxE5o4cM",
-    "paymentMethod": "VIS"
+  "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
+  "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
+  "paymentMethod": "VIS",
+  "maskedCard": "424242xxxxxx4242"
 }
 ```
 {% endtab %}

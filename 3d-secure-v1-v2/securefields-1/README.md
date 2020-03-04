@@ -352,7 +352,7 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
         }
     },
     "card": {
-        "alias": "520000RIVWAS0080",
+        "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
         "masked": "520000xxxxxx0080",
         "aliasCVV":"WWguOT-vQKybTMo1CALTjjwZ",
         "expiryMonth": "12",

@@ -40,7 +40,7 @@ Response will contain tokenized credit card data.
             <cc_cvc>xC80dmLNReahfVnMNeW6DHt_</cc_cvc>
             <cc_expiration_date>07/2018</cc_expiration_date>
             <cc_name>John Doe</cc_name>
-            <cc_number>424242SKMPRI4242</cc_number>
+            <cc_number>AAABcHxr-sDssdexyrAAAfyXWIgaAF40</cc_number>
             <cc_type>Visa</cc_type>
         </customer>
         <truncated>...for better visability</truncated>
@@ -51,6 +51,10 @@ Response will contain tokenized credit card data.
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% hint style="info" %}
+Masked card number will be returned in the response as HTTP header`pci-proxy-masked-aliases AAABcHxr-sDssdexyrAAAfyXWIgaAF40=424242xxxxxx4242`
+{% endhint %}
 
 {% hint style="warning" %}
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
@@ -92,7 +96,7 @@ curl https://sandbox.pci-proxy.com/v1/pull \
     <cc_cvc>xC80dmLNReahfVnMNeW6DHt_</cc_cvc>
     <cc_expiration_date>07/2018</cc_expiration_date>
     <cc_name>John Doe</cc_name>
-    <cc_number>424242SKMPRI4242</cc_number>
+    <cc_number>AAABcHxr-sDssdexyrAAAfyXWIgaAF40</cc_number>
     <cc_type>Visa</cc_type>
     <city>Madrid</city>
     <company />
