@@ -6,26 +6,26 @@ We have a set of test credit card numbers that you can use in our sandbox enviro
 Full credit card information cannot be used in the sandbox.
 {% endhint %}
 
-| Brand | Code | PAN | Token | Expiry | CVV | Limit | 3D |
+| Brand | Code | PAN | Token \(generic "unique" token\) | Expiry | CVV | Limit | 3D |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| ![](.gitbook/assets/logo_visa%20%281%29.png) | VIS | 4242424242424242 | 424242SKMPRI4242 | 12/2021 | 123 | yes | No |
-| ![](.gitbook/assets/logo_visa%20%282%29.png) | VIS | 4900000000000086 | 490000VUFMRQ0086 | 12/2021 | 123 | No | Yes |
-| ![](.gitbook/assets/logo_visa.png) | VIS | 4900000000000003 | 490000PVCGFB0003 | 12/2021 | 123 | No | Yes |
-| ![](.gitbook/assets/logo_mastercard.png) | ECA | 5404000000000001 | 540400FEQOYX0001 | 12/2021 | 123 | Yes | Yes |
-| ![](.gitbook/assets/logo_mastercard%20%281%29.png) | ECA | 5200000000000007 | 520000ZOGGIP0007 | 12/2021 | 123 | No | No |
-| ![](.gitbook/assets/logo_mastercard%20%282%29.png) | ECA | 5200000000000080 | 520000RIVWAS0080 | 12/2021 | 123 | No | Yes |
-| ![](.gitbook/assets/logo_amex.png) | AMX | 375811111111115 | 375811OMTYEE115 | 12/2021 | 1234 | Yes | No |
-| ![](.gitbook/assets/logo_amex%20%281%29.png) | AMX | 375000000000007 | 375000ARZULD007 | 12/2021 | 1234 | No | Yes |
-| ![](.gitbook/assets/logo_amex%20%282%29.png) | AMX | 375811111111123 | 375811MGVGZR123 | 12/2021 | 1234 | No | No |
-| ![](.gitbook/assets/logo_diners.png) | DIN | 36168002586009 | 361680IYUAUR09 | 12/2021 | 123 | Yes | - |
-| ![](.gitbook/assets/logo_diners%20%281%29.png) | DIN | 36167719110012 | 361677GQVJHV12 | 12/2021 | 123 | No | - |
-| ![](.gitbook/assets/logo_discover.png) | DIS | 6011000000000004 | 601100EQYBBH0004 | 06/2021 | 123 | - | - |
-| ![](.gitbook/assets/logo_jcb%20%281%29.png) | JCB | 3569990010030442 | 356999BIUWJW0442 | 12/2021 | 123 | Yes | - |
-| ![](.gitbook/assets/logo_jcb.png) | JCB | 3569990010030400 | 356999PUCUIV0400 | 12/2021 | 123 | No | No |
-| ![](.gitbook/assets/logo_elo%20%281%29.png) | ELO | 6550000000000001 | 655000BFQHZD0001 | 12/2018 | 123 | - | - |
-| ![](.gitbook/assets/logo_elo.png) | ELO | 6362970000457013 | 636297KMDXHG7013 | 12/2018 | 123 | - | - |
-| ![](.gitbook/assets/logo_cup%20%281%29.png) | CUP | 6222821234560017 | 622282XGRFXB0017 | 12/2021 | - | No | Yes |
-| ![](.gitbook/assets/logo_cup.png) | CUP | 6223164991230014 | 622316XWWQYN0014 | 12/2021 | - | No | No |
+| ![](.gitbook/assets/logo_visa%20%281%29.png) | VIS | 4242424242424242 | AAABcH0Bq92s3kgAESIAAbGj5NIsAHWC | 12/2021 | 123 | yes | No |
+| ![](.gitbook/assets/logo_visa%20%282%29.png) | VIS | 4900000000000086 | AAABcH0BrE-s3kgAESIAAWdCRyMPAGvp | 12/2021 | 123 | No | Yes |
+| ![](.gitbook/assets/logo_visa.png) | VIS | 4900000000000003 | AAABcH0BrFms3kgAESIAAfHfAmyjACIJ | 12/2021 | 123 | No | Yes |
+| ![](.gitbook/assets/logo_mastercard.png) | ECA | 5404000000000001 | AAABcH0BrGOs3kgAESIAAc6gFVXTAGTv | 12/2021 | 123 | Yes | Yes |
+| ![](.gitbook/assets/logo_mastercard%20%281%29.png) | ECA | 5200000000000007 | AAABcH0BrG2s3kgAESIAAbmn7rNZAC1l | 12/2021 | 123 | No | No |
+| ![](.gitbook/assets/logo_mastercard%20%282%29.png) | ECA | 5200000000000080 | AAABcH0BrHes3kgAESIAAYJ5A6WzAFsz | 12/2021 | 123 | No | Yes |
+| ![](.gitbook/assets/logo_amex.png) | AMX | 375811111111115 | AAABcH0BrICs3kgAESIAAQ33vcLxADJm | 12/2021 | 1234 | Yes | No |
+| ![](.gitbook/assets/logo_amex%20%281%29.png) | AMX | 375000000000007 | AAABcH0BrIms3kgAESIAAVp8kILAAAka | 12/2021 | 1234 | No | Yes |
+| ![](.gitbook/assets/logo_amex%20%282%29.png) | AMX | 375811111111123 | AAABcH0BrJ6s3kgAESIAAR0FRZnvADsW | 12/2021 | 1234 | No | No |
+| ![](.gitbook/assets/logo_diners.png) | DIN | 36168002586009 | AAABcH0BrKis3kgAESIAARz0vKeyAJP1 | 12/2021 | 123 | Yes | - |
+| ![](.gitbook/assets/logo_diners%20%281%29.png) | DIN | 36167719110012 | AAABcH0BrLKs3kgAESIAAeXMwAnVALLl | 12/2021 | 123 | No | - |
+| ![](.gitbook/assets/logo_discover.png) | DIS | 6011000000000004 | AAABcH0BrLys3kgAESIAASKNHo0kAGkv | 06/2021 | 123 | - | - |
+| ![](.gitbook/assets/logo_jcb%20%281%29.png) | JCB | 3569990010030442 | AAABcH0BrMas3kgAESIAAQ4E6D72AL1p | 12/2021 | 123 | Yes | - |
+| ![](.gitbook/assets/logo_jcb.png) | JCB | 3569990010030400 | AAABcH0BrM6s3kgAESIAATeCFGr8AHNk | 12/2021 | 123 | No | No |
+| ![](.gitbook/assets/logo_elo%20%281%29.png) | ELO | 6550000000000001 | AAABcH0BrNes3kgAESIAAZlN82oMAH2p | 12/2018 | 123 | - | - |
+| ![](.gitbook/assets/logo_elo.png) | ELO | 6362970000457013 | AAABcH0BrOKs3kgAESIAAVLzQBQNADfQ | 12/2018 | 123 | - | - |
+| ![](.gitbook/assets/logo_cup%20%281%29.png) | CUP | 6222821234560017 | AAABcH0BrOys3kgAESIAAbnkTiwZAKFg | 12/2021 | - | No | Yes |
+| ![](.gitbook/assets/logo_cup.png) | CUP | 6223164991230014 | AAABcH0BrPWs3kgAESIAASDQEWOHACL7 | 12/2021 | - | No | No |
 
 | [**Create CVV Token** ](https://sandbox.pci-proxy.com/v1/push/push-tester?cvv=123)for CVV code 123 |
 | :--- |
