@@ -10,21 +10,7 @@ With PCI Proxy you have one single company account \(legal entity\) and one sing
   
 This company account is called **Contract** and can hold, based on your subscription plan,  one to several sub-accounts \(**Projects**\). Each **Contract** must contain at least one legally authorized user. Furthermore the invoice is always issued at **Contract** level.   
   
-User can be assigned either on **Contract** or **Project** level. Please refer to User management to learn more about the roles and permissions.   
-
-**Create a new Project**  
-Within the Scale and Enterprise subscription plan you're allowed to create multiple Projects**.** 
-
-1\) Navigate to the top left corner and open the drop down menu.  
-2\) Click on the plus button to create a new Project  
-3\) Enter a name for the new Project  
-4\) Continue with setting up new integrations
-
-**Project overview / Switching between Projects**  
-  
-Navigate to the **Projects** menu in the Contract section to get an overview about all your projects. The graphs here show the volume cumulated over all Projects.   
-  
-To switch to one specific dashboard simply press the Switch to project button below the Workspace title or navigate to the top left drop down menu - open it and choose the desired Project. 
+User can be assigned either on **Contract** or **Project** level. Please refer to User management guide below to learn more about the roles and permissions.   
 
 ## User management
 

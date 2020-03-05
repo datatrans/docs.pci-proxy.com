@@ -2,7 +2,7 @@
 description: Learn how to add existing or missing integrations to your project.
 ---
 
-# Add Integrations
+# Add/Create Integrations
 
 Before you can filter payloads from a remote server you have to add the remote server as an integration to your account. PCI Proxy provides you with over 400 preconfigured integrations to partner across all industries. In case you're missing one, add it within minutes by providing us with payload samples and related endpoints. 
 

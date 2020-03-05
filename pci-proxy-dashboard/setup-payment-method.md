@@ -13,3 +13,11 @@ How to change to my payment method?
 3. Select the **Credit Card** button and complete the form
 4. Once done your card will be charged automatically after due payment term
 
+{% hint style="info" %}
+PCI Proxy supports following payment methods: `Visa`, `MasterCard` and `AMEX` 
+{% endhint %}
+
+\`\`
+
+
+
