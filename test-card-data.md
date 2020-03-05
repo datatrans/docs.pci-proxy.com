@@ -3,7 +3,7 @@
 We have a set of test credit card numbers that you can use in our sandbox environment to test your integration. Limit and 3D support is only needed for transactions and not for tokenization.
 
 {% hint style="warning" %}
-Full credit card information cannot be used in the sandbox.
+Productive credit card information cannot be used in the sandbox.
 {% endhint %}
 
 | Brand | Code | PAN | Token \(generic "unique" token\) | Expiry | CVV | Limit | 3D |
