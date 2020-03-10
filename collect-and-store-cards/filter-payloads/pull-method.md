@@ -17,7 +17,7 @@ Your unique account id at PCI Proxy \(e.g. 1000011011\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="pci-proxy-api-key" type="string" required=true %}
-Your api key \(ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg\)
+Your API Key \(ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="X-CC-URL" type="string" required=true %}
@@ -73,7 +73,7 @@ Once a PULL Channel is added to your merchantId, simply redirect requests to it 
 ```bash
 curl https://sandbox.pci-proxy.com/v1/pull \
   -H 'X-CC-MERCHANT-ID: merchantId' \
-  -H 'pci-proxy-api-key: api-key' \
+  -H 'pci-proxy-api-key: MfJag98oHh0rCiSXc8g3mCsqP8wrSer7' \
   -H 'X-CC-URL: https://secure-supply-xml.booking.com/hotels/xml/reservations' \
   -d '<?xml version="1.0" encoding="UTF-8"?>
         <request>
