@@ -13,8 +13,10 @@ The productive authentication data can be accessed once you activated your accou
 {% endhint %}
 
   
-PULL/PUSH Proxy API requries `pci-proxy-api-key` sent as a HTTP header.   
-  
+PULL/PUSH Proxy API requries `pci-proxy-api-key` sent as a HTTP header. 
+
+![pci-proxy-api-key](../.gitbook/assets/image.png)
+
 All other APIs requires HTTP Basic Authentication.  Provide your `merchantId` as the basic authentication username value and the API Password as password.   
   
 Create a base64 encoded value of merchantId and password \(most HTTP clients are able to handle the base64 encoding automatically\) and submit the Authorization header with each request. For example:
