@@ -1,11 +1,10 @@
 # Show
 
-PCI Proxy enables you to see the original credit card number of a stored credit card. Basically, it is `a web interface that can convert a token back into its original credit card number`.
+The PCI Proxy Show API enables you to see the original credit card number of a stored credit card. Basically it is a web interface that can convert a token back into its original credit card number.
 
-**Consider a business that needs this ability:**  
-_You are a travel technology company providing hotels with software to manage their reservations. Authorized hotel employees need to retrieve single credit cards from reservations to book a no-show fee with their POS terminal if a guest does not show up._
-
-_Note: Even though the interface is served by PCI Proxy, your PCI scope can extend._
+{% hint style="danger" %}
+_Even though the interface is served by PCI Proxy, your PCI scope can extend. Therefore it's **mandatory** to implement according_ [_PCI DSS  user management_ ](show.md#pci-dss-compliant-user-management)_and_ [_password policy_ ](show.md#password-policy)\_\_
+{% endhint %}
 
 {% api-method method="post" host="https://api.sandbox.datatrans.com/" path="upp/services/v1/noshow/init" %}
 {% api-method-summary %}
@@ -28,11 +27,11 @@ API consumes application/xml or application/json
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="merchantId" type="string" required=true %}
-Your unique account id at PCI Proxy \(e.g. 1000011011\)
+Your unique account id at PCI Proxy \(e.g. 1100011011\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="aliasCC" type="string" required=true %}
-Creditcard Token \(e.g. 424242SKMPRI4242\)
+Creditcard Token \(e.g. AAABcHxr-sDssdexyrAAAfyXWIgaAF40
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="userName" type="string" required=false %}
@@ -40,11 +39,15 @@ Unique userName \(only required when no unique userEmail is given\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="userEmail" type="string" required=true %}
-Unique email-address where the link should be sent to
+**Unique** email-address where the link should be sent to
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="SHASign" type="string" required=true %}
-Your security SHAsign
+Your security SHASign \(see below how to calculate SHASign value\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="language" type="string" required=false %}
+Currently supported languages: `en`, `de`, `it`, `fr`, `es`, `ru`
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -156,9 +159,9 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed!
 | `aliasCC` | Token you received when you collected the credit card | AAABcHxr-SDssdexrAAAfyXWIgaAF40 |
 | `aliasCVV` \(optional\) | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
 | `userName` \(optional\) | [Unique userID](show.md#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond |
-| `userEmail` | Email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
+| `userEmail` | **Unique** email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
 | [`SHASign`](show.md#sha-256-security-sign) | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
-| `language` \(optional\) | The language code in which the no-show page should be displayed | en |
+| `language` \(optional\) | The language code in which the no-show page should be displayed | `en`, `de`, `fr`, `it`, `es`, `ru` |
 
 ### SHA.256 Security Sign
 
