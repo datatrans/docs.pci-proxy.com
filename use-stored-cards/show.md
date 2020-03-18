@@ -2,8 +2,8 @@
 
 The PCI Proxy Show API enables you to see the original credit card number of a stored credit card. Basically it is a web interface that can convert a token back into its original credit card number.
 
-{% hint style="danger" %}
-_Even though the interface is served by PCI Proxy, your PCI scope can extend. Therefore it's **mandatory** to implement according_ [_PCI DSS  user management_ ](show.md#pci-dss-compliant-user-management)_and_ [_password policy_ ](show.md#password-policy)\_\_
+{% hint style="success" %}
+Even though the interface is served by PCI Proxy, your PCI scope can extend. Therefore it's **mandatory** to implement according [PCI DSS  user management ](show.md#pci-dss-compliant-user-management)and [password policy ](show.md#password-policy)
 {% endhint %}
 
 {% api-method method="post" host="https://api.sandbox.datatrans.com/" path="upp/services/v1/noshow/init" %}

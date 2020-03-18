@@ -13,7 +13,7 @@ PCI Proxy supports various communication methods to forward sensitive card data 
 {% hint style="success" %}
 **Your requests are populated with sensitive card data after they leave your systems to keep you out of PCI scope.**
 
-Using Receivers not listed on [supported Receivers \(Gateways\)]() requires a valid AOC \(Attestation of Compliance\) and either a letter of Acknowledgment or an extract of the terms and conditions which proves the PCI DSS compliance of the Receiver. 
+Using Receivers not already listed in the Dashboard [Integrations ](../../pci-proxy-dashboard/add-integrations.md)overview must be PCI DSS compliant. Thus, a valid AOC is required to configure a new requested 3rd party which receives sensitive credit card data. 
 {% endhint %}
 
 
