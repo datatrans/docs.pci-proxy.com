@@ -4,48 +4,56 @@ For [collecting credit cards via webservice \(XML/SOAP\)](https://github.com/dtr
 
 | Channel | Type |
 | :--- | :--- |
-| [Agoda](https://www.agoda.com) | PULL |
-| [Amadeus](http://www.amadeus.com/) | PUSH |
-| [Atrapalo](https://www.atrapalo.com/) | PULL |
-| [Availpro](http://site.availpro.com/) | PUSH |
-| [Booking](https://www.booking.com/) | PULL |
-| [Booking OTA](https://www.booking.com/) | PULL |
-| [Booking Expert](http://www.bookingexpert.it/) | PULL |
-| [Budgetplaces](http://www.budgetplaces.com/) | PULL |
-| [Ctrip](http://english.ctrip.com/) | PULL |
-| [Cubilis](http://www.cubilis.com/) | PULL |
-| [Despegar](http://www.us.despegar.com/) | PULL |
-| [Expedia](https://www.expedia.com) | PULL/PUSH |
-| [Expedia EAN](http://www.ean.com/) | PULL |
-| [Fastbooking](http://www.fastbooking.com/products/) | PULL |
-| [HomeAway](https://www.homeaway.com/) | PUSH |
-| [Hotelbeds](https://www.hotelbeds.com/home) | PULL |
-| [Hotelbonanza](https://www.hotelbonanza.com/) | PULL/PUSH |
-| [Hoteliers](https://www.hoteliers.com) | PUSH |
-| [Hotelpartner / Yieldagent](http://www.hotelpartner-ym.com/de/) | PULL |
-| [Hotelreservation](https://www.hotelreservation.com/) | PULL |
-| [HotelREZ](https://www.hotelrez.net/) | PULL |
-| [Hotels.nl](http://www.hotels.nl/) | PULL |
-| [Hotelscombined](https://www.hotelscombined.com) | PUSH |
-| [Hotusa Hotels](http://www.hotusa.com/) | PULL |
-| [Initalia](http://www.initalia.it/) | PULL |
-| [Lastminute](http://www.lastminute.com/) | PULL |
-| [Laterooms](http://www.laterooms.com/) | PUSH |
-| [Mirai](https://es.mirai.com/) | PULL |
-| [Opentravel](http://opentravel.com/) | PULL |
-| [Orbitz](https://www.orbitz.com/) | PULL |
-| [Pegasus](http://www.pegasus.io/) | PUSH |
-| [Reconline](https://www.reconline.com/) | PULL |
-| [Rental United](http://rentalsunited.com) | PULL |
-| [Siteminder PMS](http://www.siteminder.com) | PULL |
-| [Travelport \(Galileo\)](https://www.travelport.com) | PULL |
-| [TravelRepublic](https://www.travelrepublic.co.uk/) | PULL |
-| [Tripadvisor](http://developer-tripadvisor.com/connectivity-solutions/instant-booking-api/documentation/booking_submit/) | PUSH |
-| [Trivago](https://www.trivago.com/) | PUSH |
-| [Trust International](https://www.sabrehospitality.com/trust-now-sabre/) | PULL |
-| [Vioma](https://www.vioma.de/) | PULL |
-| [Voila](https://www.voilahotels.com/) | PUSH |
-| [WuBook](http://en.wubook.net/) | PULL |
+| [Acomodeo](https://www.acomodeo.com/) | `pull / push` |
+| [Agoda](https://www.agoda.com) | `pull / push` |
+| [Airplus](https://www.airplus.com/corporate/en/start-page.html) | `pull / push` |
+| [Amadeus](http://www.amadeus.com/) | `pull / push` |
+| [Apaleo](https://apaleo.com/) | `pull / push` |
+| [Atrapalo](https://www.atrapalo.com/) | `pull / push` |
+| [Availpro](http://site.availpro.com/) | `pull / push` |
+| Book on Google | `pull / push` |
+| [Booking](https://www.booking.com/) | `pull / push` |
+| [Booking OTA](https://www.booking.com/) | `pull / push` |
+| [Booking Expert](http://www.bookingexpert.it/) | `pull / push` |
+| [Budgetplaces](http://www.budgetplaces.com/) | `pull / push` |
+| [Ctrip](http://english.ctrip.com/) | `pull / push` |
+| [Cubilis](http://www.cubilis.com/) | `pull / push` |
+| [Cytric](https://www.cytric.net/de/) | `pull / push` |
+| [Despegar](http://www.us.despegar.com/) | `pull / push` |
+| [Dingus](https://www.dingus.es/) | `pull / push` |
+| [Europcar](https://www.europcar.com/) | `pull / push` |
+| [Expedia](https://www.expedia.com) | `pull / push` |
+| [Expedia EAN](http://www.ean.com/) | `pull / push` |
+| [Fastbooking](http://www.fastbooking.com/products/) | `pull / push` |
+| [HomeAway](https://www.homeaway.com/) | `pull / push` |
+| [Hostelworld](https://www.hostelworld.com/) | `pull / push` |
+| [Hotelbeds](https://www.hotelbeds.com/home) | `pull / push` |
+| [Hotelbonanza](https://www.hotelbonanza.com/) | `pull / push` |
+| [Hoteliers](https://www.hoteliers.com) | `pull / push` |
+| [Hotelpartner / Yieldagent](http://www.hotelpartner-ym.com/de/) | `pull / push` |
+| [Hotelreservation](https://www.hotelreservation.com/) | `pull / push` |
+| [HotelREZ](https://www.hotelrez.net/) | `pull / push` |
+| [Hotels.nl](http://www.hotels.nl/) | `pull / push` |
+| [Hotelscombined](https://www.hotelscombined.com) | `pull / push` |
+| [HRS](https://www.hrs.com/) | `pull / push` |
+| [Lastminute](http://www.lastminute.com/) | `pull / push` |
+| [Laterooms](http://www.laterooms.com/) | `pull / push` |
+| [Mews](https://www.mews.com/) | `pull / push` |
+| [Mirai](https://es.mirai.com/) | `pull / push` |
+| [Opentravel](http://opentravel.com/) | `pull / push` |
+| [Orbitz](https://www.orbitz.com/) | `pull / push` |
+| [Pegasus](http://www.pegasus.io/) | `pull / push` |
+| [Rental United](http://rentalsunited.com) | `pull / push` |
+| [Sabre](https://www.sabre.com/) | `pull / push` |
+| [Siteminder PMS](http://www.siteminder.com) | `pull / push` |
+| [Travelport \(Galileo\)](https://www.travelport.com) | `pull / push` |
+| [TravelRepublic](https://www.travelrepublic.co.uk/) | `pull / push` |
+| [Tripadvisor](http://developer-tripadvisor.com/connectivity-solutions/instant-booking-api/documentation/booking_submit/) | `pull / push` |
+| [Trivago](https://www.trivago.com/) | `pull / push` |
+| [Trust International](https://www.sabrehospitality.com/trust-now-sabre/) | `pull / push` |
+| [Vioma](https://www.vioma.de/) | `pull / push` |
+| [Voila](https://www.voilahotels.com/) | `pull / push` |
+| [WuBook](http://en.wubook.net/) | `pull / push` |
 
 {% hint style="info" %}
 Do you miss a channel? Simply add it in our [dashboard](https://dashboard.pci-proxy.com/signup).   
