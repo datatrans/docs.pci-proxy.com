@@ -34,13 +34,13 @@ All Level 2 third party receiver must complete an annual self-assessment with Se
 
 2\)  To obtain an additional measure of assurance, obtain a written and signed acknowledgement about  the responsibility for the security of cardholder data with your third party receiver. Please contact your account manager at PCI Proxy for an example **Letter of Acknowledgment**. 
 
-3\)  Provide a copy of all documents to AOC to [contact@pci-proxy.com](mailto:contact@pci-proxy.com) 
+3\)  Provide a copy of all documents to [contact@pci-proxy.com](mailto:contact@pci-proxy.com) 
 
 4\)  You will be notified once the AOC is approved \(this normally takes 1-3 working days\).
-
-## 
 
 {% hint style="info" %}
 Please keep in mind that the only documentation recognized for PCI DSS validation are the official documents from the PCI SSC website. Any other form of certificate or documentation issued for the purposes of illustrating compliance to PCI DSS or any other PCI standard are not authorized or validated, and their use is not acceptable for evidencing compliance. The use of certificates or other non-authorized documentation to validate PCI DSS Requirement 12.8 and/or Requirement 12.9 is also not acceptable.
 {% endhint %}
+
+
 
