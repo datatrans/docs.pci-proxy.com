@@ -18,7 +18,7 @@ Before you can filter payloads from a remote server you have to add the remote s
 2\) Press **Request new Integration** button and complete the form  
 3\) You get notified once the requested integration is ready to be installed on your Project
 
-![Requesting a missing Integration](../.gitbook/assets/2020-01-31-10_13_12-integrations-pci-proxy.png)
+![Requesting a missing Integration](../../.gitbook/assets/2020-01-31-10_13_12-integrations-pci-proxy.png)
 
 
 

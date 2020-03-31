@@ -8,5 +8,5 @@ The [PCI Proxy dashboard](https://dashboard.pci-proxy.com) enables you to config
   
 In the following sections you can learn more about the dashboard. 
 
-![The PCI Proxy Dashboard](../.gitbook/assets/dashboard-overview.PNG)
+![The PCI Proxy Dashboard](../../.gitbook/assets/dashboard-overview.PNG)
 

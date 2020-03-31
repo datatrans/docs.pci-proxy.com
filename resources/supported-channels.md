@@ -57,6 +57,6 @@ For [collecting credit cards via webservice \(XML/SOAP\)](https://github.com/dtr
 
 {% hint style="info" %}
 Do you miss a channel? Simply add it in our [dashboard](https://dashboard.pci-proxy.com/signup).   
-Please refer to [Add integrations](../pci-proxy-dashboard/add-integrations.md) for more information. 
+Please refer to [Add integrations](../guides/pci-proxy-dashboard/add-integrations.md) for more information. 
 {% endhint %}
 

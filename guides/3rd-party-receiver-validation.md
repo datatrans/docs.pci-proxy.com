@@ -12,31 +12,31 @@ Stores, processes, or transmits **less** than 300,000 credit card transactions a
 {% endtab %}
 {% endtabs %}
 
-## **Validation for Level 1 Service Providers \(Onsite-Assessment\)**
+## **Validation for Level 1 Service Providers \(onsite-assessment\)**
 
 {% hint style="info" %}
 All Level 1 third party receiver must complete an annual onsite assessment conducted by a PCI SSC certified Qualified Security Assessor \(QSA\) or Internal Security Assessor \(ISA\). Therefore, please obtain the document stated below:
 {% endhint %}
 
-1\)  Request a signed copy of the Attestation of Compliance \(AOC\) for **Onsite Assessments.**
+1\)  Request a signed copy of the Attestation of Compliance \(AOC\) for **onsite assessments.**
 
 2\)  Provide a copy of the AOC to [contact@pci-proxy.com](mailto:contact@pci-proxy.com)
 
-3\)  You will be notified once the AOC is approved \(this normally takes 1-2 working days\)
+3\)  You will be notified once the AOC is approved \(takes1 up to 3 working days\).
 
-## **Validation for Level 2 Service Providers \(Self-Assessment\)**
+## **Validation for Level 2 Service Providers \(self-assessment\)**
 
 {% hint style="info" %}
-All Level 2 third party receiver must complete an annual self-assessment with Self-Assessment Questionnaire D. Therefore, please obtain the documents stated below:
+All Level 2 third party receiver must complete an annual self-assessment with self-assessment Questionnaire D. Therefore, please obtain the documents stated below:
 {% endhint %}
 
-1\)  Request a signed copy ****of the Attestation of Compliance \(AOC\) for **Self-Assessment Questionnaire D**.
+1\)  Request a signed copy ****of the Attestation of Compliance \(AOC\) for **self-assessment Questionnaire D**.
 
 2\)  To obtain an additional measure of assurance, obtain a written and signed acknowledgement about  the responsibility for the security of cardholder data with your third party receiver. Please contact your account manager at PCI Proxy for an example **Letter of Acknowledgment**. 
 
 3\)  Provide a copy of all documents to [contact@pci-proxy.com](mailto:contact@pci-proxy.com) 
 
-4\)  You will be notified once the AOC is approved \(this normally takes 1-3 working days\).
+4\)  You will be notified once the AOC is approved \(takes1 up to 3 working days\).
 
 {% hint style="info" %}
 Please keep in mind that the only documentation recognized for PCI DSS validation are the official documents from the PCI SSC website. Any other form of certificate or documentation issued for the purposes of illustrating compliance to PCI DSS or any other PCI standard are not authorized or validated, and their use is not acceptable for evidencing compliance. The use of certificates or other non-authorized documentation to validate PCI DSS Requirement 12.8 and/or Requirement 12.9 is also not acceptable.

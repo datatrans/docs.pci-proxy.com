@@ -4,7 +4,7 @@ description: Learn how to setup your sandbox account and activating it for produ
 
 # Get started with PCI Proxy
 
-Follow these step-by-step guide to setup your sandbox account and to setup your account production ready by yourself within minutes. For more detailed information about the dashboard feature read our [Guides section](pci-proxy-dashboard/).   
+Follow these step-by-step guide to setup your sandbox account and to setup your account production ready by yourself within minutes. For more detailed information about the dashboard feature read our [Guides section](guides/pci-proxy-dashboard/).   
   
 Drop us a message at [contact@pci-proxy.com](mailto:contact@pci-proxy.com) if you need any further help or advice in terms of setting up your account. 
 
@@ -15,13 +15,13 @@ Sign up here [https://dashboard-pciproxy.com/signup](https://dashboard.pci-proxy
 You will be logged in with admin user rights when signing up. Create additional users and share with your team members as needed. 
 
 {% hint style="info" %}
-Learn more about [Account structure and User management](pci-proxy-dashboard/account-structure-user-management.md)
+Learn more about [Account structure and User management](guides/pci-proxy-dashboard/account-structure-user-management.md)
 {% endhint %}
 
 ## 2. Configure your test account 
 
-1\) Configure sandbox API authentication data. Refer to [Authentification ](pci-proxy-dashboard/api-authentication-data.md)for more information.   
-2\) Access sandbox API endpoints. Refer to [API endpoints](pci-proxy-dashboard/api-endpoints.md)[ ](pci-proxy-dashboard/api-authentication-data.md)for more information.   
+1\) Configure sandbox API authentication data. Refer to [Authentification ](guides/pci-proxy-dashboard/api-authentication-data.md)for more information.   
+2\) Access sandbox API endpoints. Refer to [API endpoints](guides/pci-proxy-dashboard/api-endpoints.md)[ ](guides/pci-proxy-dashboard/api-authentication-data.md)for more information.   
 3\) Choose an [integration method](collect-and-store-cards/) for inbound traffic and build the request as documented for each API.  
   
 1\) [Webrequests \(Filter API\)](collect-and-store-cards/filter-payloads/)  
@@ -38,10 +38,10 @@ As a next step setup the integrations for the outbound traffic if needed.
 
 
 {% hint style="info" %}
-Learn more about [adding existing or new integrations to your project](pci-proxy-dashboard/add-integrations.md)
+Learn more about [adding existing or new integrations to your project](guides/pci-proxy-dashboard/add-integrations.md)
 {% endhint %}
 
-## 3. [Going live](pci-proxy-dashboard/get-production-ready.md)
+## 3. [Going live](guides/pci-proxy-dashboard/get-production-ready.md)
 
 Once everything has been tested properly on sandbox environment you can activate your account for production environment by yourself within minutes. 
 
@@ -66,8 +66,8 @@ After you successfully completed the going live process prepare your productive 
 
 1\) Clone the integrations you setup on test environment.   
 Switch back to test environment - navigate to Integrations menu - click on Settings of the desired Integration - press the **Clone to production button** on the bottom status bar.   
-2\) Setup productive API authentication data. Refer to [Authentification ](pci-proxy-dashboard/api-authentication-data.md)for more information.   
-3\) Build the request and route them through productive PCI Proxy endpoints. Refer to [API endpoints](pci-proxy-dashboard/api-endpoints.md)[ ](pci-proxy-dashboard/api-authentication-data.md)for more information. 
+2\) Setup productive API authentication data. Refer to [Authentification ](guides/pci-proxy-dashboard/api-authentication-data.md)for more information.   
+3\) Build the request and route them through productive PCI Proxy endpoints. Refer to [API endpoints](guides/pci-proxy-dashboard/api-endpoints.md)[ ](guides/pci-proxy-dashboard/api-authentication-data.md)for more information. 
 
 ## Next up
 

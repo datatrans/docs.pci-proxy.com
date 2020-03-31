@@ -1,7 +1,7 @@
 # Token API
 
 {% hint style="warning" %}
-The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../pci-proxy-dashboard/api-authentication-data.md) for more information. 
+The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md) for more information. 
 {% endhint %}
 
 {% api-method method="get" host="https://api.sandbox.datatrans.com/upp/services" path="/v1/inline/token" %}

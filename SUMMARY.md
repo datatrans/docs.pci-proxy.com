@@ -41,16 +41,16 @@
 
 ## Guides
 
+* [PCI Proxy Dashboard](guides/pci-proxy-dashboard/README.md)
+  * [Get production ready / Go-live](guides/pci-proxy-dashboard/get-production-ready.md)
+  * [Account structure / User management](guides/pci-proxy-dashboard/account-structure-user-management.md)
+  * [Create/Delete new Projects](guides/pci-proxy-dashboard/create-delete-new-projects.md)
+  * [Cancel your Contract](guides/pci-proxy-dashboard/cancel-your-contract.md)
+  * [Add/Create Integrations](guides/pci-proxy-dashboard/add-integrations.md)
+  * [API Authentication data](guides/pci-proxy-dashboard/api-authentication-data.md)
+  * [API Endpoints](guides/pci-proxy-dashboard/api-endpoints.md)
+  * [Setup payment method](guides/pci-proxy-dashboard/setup-payment-method.md)
 * [3rd-Party Receiver Validation](guides/3rd-party-receiver-validation.md)
-* [PCI Proxy Dashboard](pci-proxy-dashboard/README.md)
-  * [Get production ready / Go-live](pci-proxy-dashboard/get-production-ready.md)
-  * [Account structure / User management](pci-proxy-dashboard/account-structure-user-management.md)
-  * [Create/Delete new Projects](pci-proxy-dashboard/create-delete-new-projects.md)
-  * [Cancel your Contract](pci-proxy-dashboard/cancel-your-contract.md)
-  * [Add/Create Integrations](pci-proxy-dashboard/add-integrations.md)
-  * [API Authentication data](pci-proxy-dashboard/api-authentication-data.md)
-  * [API Endpoints](pci-proxy-dashboard/api-endpoints.md)
-  * [Setup payment method](pci-proxy-dashboard/setup-payment-method.md)
 
 ## Have a Question?
 

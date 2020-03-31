@@ -13,7 +13,7 @@ Please follow below steps to to activate your account for production.
 1\) Press the **Environment** switcher in the left hand side menu bar  
 
 
-![Environemt switcher](../.gitbook/assets/environment-switcher.png)
+![Environemt switcher](../../.gitbook/assets/environment-switcher.png)
 
   
 2\) Select your subscription plan, complete all required data and press submit   

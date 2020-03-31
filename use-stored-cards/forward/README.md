@@ -13,7 +13,7 @@ PCI Proxy supports various communication methods to forward sensitive card data 
 {% hint style="success" %}
 **Your requests are populated with sensitive card data after they leave your systems to keep you out of PCI scope.**
 
-Using Receivers not already listed in the Dashboard [Integrations ](../../pci-proxy-dashboard/add-integrations.md)overview must be PCI DSS compliant. Thus, a valid AOC is required to configure a new requested 3rd party which receives sensitive credit card data. 
+Using Receivers not already listed in the Dashboard [Integrations ](../../guides/pci-proxy-dashboard/add-integrations.md)overview must be PCI DSS compliant. Thus, a valid AOC is required to configure a new requested 3rd party which receives sensitive credit card data. Please refer to [3rd-Party Receiver Validation](../../guides/3rd-party-receiver-validation.md) guideline for more details. 
 {% endhint %}
 
 
