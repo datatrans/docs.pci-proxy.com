@@ -41,6 +41,7 @@
 
 ## Guides
 
+* [3rd-Party Receiver Validation](guides/3rd-party-receiver-validation.md)
 * [PCI Proxy Dashboard](pci-proxy-dashboard/README.md)
   * [Get production ready / Go-live](pci-proxy-dashboard/get-production-ready.md)
   * [Account structure / User management](pci-proxy-dashboard/account-structure-user-management.md)
