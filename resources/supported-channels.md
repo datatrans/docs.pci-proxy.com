@@ -11,7 +11,7 @@ For [collecting credit cards via webservice \(XML/SOAP\)](https://github.com/dtr
 | [Apaleo](https://apaleo.com/) | `pull / push` |
 | [Atrapalo](https://www.atrapalo.com/) | `pull / push` |
 | [Availpro](http://site.availpro.com/) | `pull / push` |
-| Book on Google | `pull / push` |
+| [Book on Google](https://www.google.com/travel/hotels) | `pull / push` |
 | [Booking](https://www.booking.com/) | `pull / push` |
 | [Booking OTA](https://www.booking.com/) | `pull / push` |
 | [Booking Expert](http://www.bookingexpert.it/) | `pull / push` |
