@@ -117,7 +117,7 @@ curl -X POST \
   -H 'Authorization: Basic MTAwMDAwMTExMTpwWUU4bFE2TlBiM2thRXpR' \
   -H 'Content-Type: application/json; charset=UTF-8' \
   -d '{
-    "currency": "CHF",
+    "currency": "EUR",
     "refno": "vptJ07xyr",
     "card": {
         "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
