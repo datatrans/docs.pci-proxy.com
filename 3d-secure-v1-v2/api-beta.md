@@ -61,7 +61,7 @@ It should be unique each transaction
 
 {% api-method-parameter name="paymentMethods" type="array" required=true %}
 An array of payment method shortnames  
-Items Enum: `"AMX"` `"DIN"` `"ECA"` `"INT"` `"KLN"` `"MPW"` `"MYO"` `"VIS"`
+Items Enum: `"AMX"` `"CUP"` `"ECA"` `"DIN"` `"DIS"` `"JCB"` `"VIS"`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="card" type="object" required=true %}
