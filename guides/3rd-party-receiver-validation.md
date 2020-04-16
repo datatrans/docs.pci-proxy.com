@@ -22,7 +22,7 @@ All Level 1 third party receiver must complete an annual onsite assessment condu
 
 2\)  Provide a copy of the AOC to [contact@pci-proxy.com](mailto:contact@pci-proxy.com)
 
-3\)  You will be notified once the AOC is approved \(takes1 up to 3 working days\).
+3\)  You will be notified once the AOC is approved.
 
 ## **Validation for Level 2 Service Providers \(self-assessment\)**
 
@@ -36,7 +36,7 @@ All Level 2 third party receiver must complete an annual self-assessment with se
 
 3\)  Provide a copy of all documents to [contact@pci-proxy.com](mailto:contact@pci-proxy.com) 
 
-4\)  You will be notified once the AOC is approved \(takes1 up to 3 working days\).
+4\)  You will be notified once the AOC is approved.
 
 {% hint style="info" %}
 Please keep in mind that the only documentation recognized for PCI DSS validation are the official documents from the PCI SSC website. Any other form of certificate or documentation issued for the purposes of illustrating compliance to PCI DSS or any other PCI standard are not authorized or validated, and their use is not acceptable for evidencing compliance. The use of certificates or other non-authorized documentation to validate PCI DSS Requirement 12.8 and/or Requirement 12.9 is also not acceptable.
