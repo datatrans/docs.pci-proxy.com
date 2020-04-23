@@ -2,10 +2,6 @@
 
 The Alias Gateway allows you to pass credit card data directly to the PCI Proxy vault to create tokens. This can be interesting if you want to migrate existing credit card data that is currently stored somewhere else to store it within the PCI Proxy vault. 
 
-{% hint style="danger" %}
-We strongly discourage passing credit card data directly to our Alias Gateway as it means your systems get in contact with full credit card numbers. Please use the [Filter Proxy](filter-payloads/) or [Secure Fields](capture-iframes/) to reduce your PCI scope to a minimum.
-{% endhint %}
-
 {% api-method method="post" host="https://api.sandbox.datatrans.com/" path="upp/jsp/XML\_AliasGateway.jsp" %}
 {% api-method-summary %}
 XML Alias Gateway
