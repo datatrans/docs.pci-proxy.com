@@ -1,5 +1,5 @@
 ---
-description: Simply go-live withing seconds
+description: Simply go-live within seconds
 ---
 
 # Get production ready / Go-live
@@ -13,12 +13,12 @@ Please follow below steps to to activate your account for production.
 1\) Press the **Environment** switcher in the left hand side menu bar  
 
 
-![Environemt switcher](../../.gitbook/assets/environment-switcher.png)
+![Environment switcher](../../.gitbook/assets/environment-switcher.png)
 
   
 2\) Select your subscription plan, complete all required data and press submit   
 3\) Choose your prefered payment method and finally enable your account for production  
-4\) A confirmation email with the contract overview will be sent to the admin contact
+4\) A confirmation email with a subscripion overview will be sent to the admin contact
 
 {% hint style="warning" %}
 It might be possible that we will contact you and request for more information and verification data after going live. 
