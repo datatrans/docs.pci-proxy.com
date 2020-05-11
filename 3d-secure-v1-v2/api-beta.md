@@ -152,8 +152,8 @@ Refer to the official EMVCo 3D specification 2.1.0 for parameter requirements se
 #### Examples
 
 {% tabs %}
-{% tab title="Request with plain text cardnumber" %}
-```java
+{% tab title="Request with masked token" %}
+```javascript
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions \
   -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT,Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
@@ -163,8 +163,7 @@ curl -X POST \
     "refno": "NIJ3OSelzyqp",
     "paymentMethods": ["ECA"],
     "card": {
-        "number": "5200000000000080",
-        "cvv": "123", 
+        "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40", 
         "expiryMonth": "12",
         "expiryYear": "21",
         "3D": {
@@ -199,7 +198,7 @@ curl -X POST \
 ```
 {% endtab %}
 
-{% tab title="Request with masked token" %}
+{% tab title="Request with plain text cardnumber" %}
 ```java
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions \
@@ -210,8 +209,8 @@ curl -X POST \
     "refno": "NIJ3OSelzyqp",
     "paymentMethods": ["ECA"],
     "card": {
-        "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40", 
-        "aliasCVV": "YahfrXdEQT67X1u7Og49rg2e",
+        "number": "5200000000000080",
+        "cvv": "123", 
         "expiryMonth": "12",
         "expiryYear": "21",
         "3D": {
