@@ -190,7 +190,7 @@ curl -X POST \
         "authenticationOnly": true
     },
     "redirect": {
-    	"successUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp",
+    	  "successUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp",
         "cancelUrl": "https://pay.sandbox.datatrans.com/upp/merchant/cancelPage.jsp",
         "errorUrl": "https://pay.sandbox.datatrans.com/upp/merchant/errorPage.jsp"
     }
