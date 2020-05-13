@@ -45,7 +45,7 @@
   * [Get production ready / Go-live](guides/pci-proxy-dashboard/get-production-ready.md)
   * [Account structure / User management](guides/pci-proxy-dashboard/account-structure-user-management.md)
   * [Create/Delete new Projects](guides/pci-proxy-dashboard/create-delete-new-projects.md)
-  * [Cancel your Contract](guides/pci-proxy-dashboard/cancel-your-contract.md)
+  * [Terminate your contract](guides/pci-proxy-dashboard/terminate-your-contract.md)
   * [Add/Create Integrations](guides/pci-proxy-dashboard/add-integrations.md)
   * [API Authentication data](guides/pci-proxy-dashboard/api-authentication-data.md)
   * [API Endpoints](guides/pci-proxy-dashboard/api-endpoints.md)
