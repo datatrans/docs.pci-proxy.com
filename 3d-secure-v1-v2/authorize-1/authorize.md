@@ -6,7 +6,7 @@ description: >-
 
 # Authorize an authenticated transaction
 
-If you processed authentication only through either [Secure Fields](../authentication-only/securefields-1/) or [3D API](../authentication-only/securefields-1/api-beta.md), this API can be called to authorize the amount against your acquiring contract. 
+If you processed authentication only through either [Secure Fields](../authentication-only/securefields-1/) or [3D API](../authentication-only/api-beta.md), this API can be called to authorize the amount against your acquiring contract. 
 
 {% hint style="warning" %}
 * The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md) for more information. 

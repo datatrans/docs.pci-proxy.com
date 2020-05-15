@@ -21,7 +21,7 @@ If your business is located outside the European Economic Area \(EEA\) or if you
 {% hint style="info" %}
 You are a PCI Level 1 compliant company, running a native mobile application or simply want to separate card capturing and authentication flow? 
 
-That's solved as well. Just have a look at our [Server-to-Server based approach](authentication-only/securefields-1/api-beta.md). 
+That's solved as well. Just have a look at our [Server-to-Server based approach](authentication-only/api-beta.md). 
 {% endhint %}
 
 
