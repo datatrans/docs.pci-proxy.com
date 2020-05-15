@@ -426,7 +426,7 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
   </tbody>
 </table>## Step 7: Forward 3D data
 
-Received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateway. If you decide to use Datatrans payment gateway please continue with our [Authorize](../authorize.md) API.
+Received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateway. If you decide to use Datatrans payment gateway please continue with our [Authorize](../authorize-1/authorize.md) API.
 
 ## Examples
 

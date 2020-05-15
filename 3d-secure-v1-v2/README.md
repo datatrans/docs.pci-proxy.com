@@ -10,7 +10,7 @@ Secure Fields _Authentication Only_ integration allows you to securely collect s
 A 3D Secure transaction can go either through a challenge or a frictionless flow. In case the issuer does not support 3D Secure 2 we automatically apply a fallback to 3D Secure 1.
 {% endhint %}
 
-If you decide to do _Authorisation_ with Datatrans payment gateway please continue with sending payment request to our [Authorize](authorize.md) API after authentication is finished. 
+If you decide to do _Authorisation_ with Datatrans payment gateway please continue with sending payment request to our [Authorize](authorize-1/authorize.md) API after authentication is finished. 
 
 {% hint style="success" %}
 **Using Secure Fields qualifies you for SAQ A.**
