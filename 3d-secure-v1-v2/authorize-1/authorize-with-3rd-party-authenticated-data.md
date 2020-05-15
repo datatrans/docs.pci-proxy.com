@@ -28,11 +28,17 @@ Stored cards can be used multiple times for **recurring transactions** or **One-
 
 To authorizea 3D Secure 1 authenticated payment, you need the following data:
 
-* `authenticationResponse`:  Transaction status after `RReq` \(Challenge flow\) received from your 3D provider
-* `directoryResponse`:  Transaction status after `ARes` received from your 3D provider
+* `authenticationResponse`:  Transaction status after `paResponse`\(Challenge flow\) received from your 3D provider
+* `directoryResponse`:  Transaction status after `VERes` received from your 3D provider
 * `cavv`: The authentication value for the 3D Secure authentication session. The returned value is a base64-encoded 20-byte array.
 * `threeDSVersion`3D-Secure version
 * `xid`: The transaction identifier assigned by the Directory Server \(base64 encoded, 20 bytes in a decoded form\).
+* `eci`: The electronic commerce indicator.
+
+**For 3D Secure 2 following data are required**
+
+* `cavv`: The `authenticationValue` from your 3D Secure 2 provider.
+* `dsTransID`: The unique transaction identifier assigned by the DS to identify a single transaction.
 * `eci`: The electronic commerce indicator.
 
 ## 2. Authorize a stored card

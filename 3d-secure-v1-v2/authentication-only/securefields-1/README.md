@@ -4,7 +4,7 @@ description: >-
   frontend.
 ---
 
-# SecureFields 3D \(beta\)
+# SecureFields 3D
 
 ## Before you start
 

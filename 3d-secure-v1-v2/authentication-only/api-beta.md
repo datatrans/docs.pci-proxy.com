@@ -4,7 +4,7 @@ description: >-
   authentication data.
 ---
 
-# API 3D \(beta\)
+# API 3D
 
 ## Before you start
 
