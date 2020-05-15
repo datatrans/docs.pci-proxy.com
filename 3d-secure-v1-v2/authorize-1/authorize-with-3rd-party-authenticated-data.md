@@ -31,14 +31,8 @@ To authorizea 3D Secure 1 authenticated payment, you need the following data:
 * `authenticationResponse`: From the `paResponse` from the issuer's Access Control System.
 * `directoryResponse`: The enrollment response from the `VERes` message from the Directory Server.
 * `cavv`: The authentication value for the 3D Secure authentication session. The returned value is a base64-encoded 20-byte array.
-* `cavvAlgorithm`: The CAVV Algorithmn used during the authentication.
+* `threeDSVersion`3D-Secure version
 * `xid`: The transaction identifier assigned by the Directory Server \(base64 encoded, 20 bytes in a decoded form\).
-* `eci`: The electronic commerce indicator.
-
-To authorize a 3D Secure 2 authenticated payment, you need the following data:
-
-* `authenticationValue`: The value for the 3D Secure 2 authentication session. The returned value is a Base64-encoded 20-byte array.
-* `dsTransID`: The unique transaction identifier assigned by the DS to identify a single transaction.
 * `eci`: The electronic commerce indicator.
 
 ## 2. Authorize a stored card
