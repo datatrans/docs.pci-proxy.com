@@ -11,8 +11,8 @@ description: >-
 1. \*\*\*\*[**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
 
 {% hint style="info" %}
-* This service requires basic authentication. Please refer to [Authentification](../guides/pci-proxy-dashboard/api-authentication-data.md) to retrieve required crendetials. 
-* Make sure to use our 3D Secure enabled test credit cards [here](testing-3d-secure.md).
+* This service requires basic authentication. Please refer to [Authentification](../../../guides/pci-proxy-dashboard/api-authentication-data.md) to retrieve required crendetials. 
+* Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md).
 {% endhint %}
 
 {% hint style="warning" %}
@@ -469,5 +469,5 @@ curl -X GET \
   </tbody>
 </table>## Step 4: Forward 3D data
 
-The received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateways. If you decide to use Datatrans payment gateway please continue with our [Authorize](authorize-1/authorize.md) API.
+The received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateways. If you decide to use Datatrans payment gateway please continue with our [Authorize](../../authorize-1/authorize.md) API.
 
