@@ -86,12 +86,13 @@ To reserve an amount, simply send an authorization request with an amount \(`amo
 
 {% code title="Reserve" %}
 ```javascript
-curl -i -X POST https://api.sandbox.datatrans.com/v1/transactions/200427133705358516/authorize \
-	-u '1000001112:pYE8lQ6NPb3kaEzQ' \
-	-H 'Content-Type: application/json; charset=UTF-8' \
-	-d '{
-    "amount": 1000,
-    "refno": "IZZC7CPiL"
+curl -L -X POST 'https://api.sandbox.datatrans.com/v1/transactions/200515165904788120/authorize' \
+-H 'Content-Type: application/json; charset=UTF-8' \
+-H 'Authorization: Basic MTEwMDAyMzc1NTpxWE5WczE4NVpYdWVSMGZV' \
+-H 'Content-Type: text/plain' \
+-d'{
+    "amount": "1000",
+    "refno": "3Dv2-Test"
 }'
 ```
 {% endcode %}
@@ -99,7 +100,7 @@ curl -i -X POST https://api.sandbox.datatrans.com/v1/transactions/20042713370535
 {% code title="Response \(successful\)" %}
 ```javascript
 {
-  "acquirerAuthorizationCode": "133707"
+  "acquirerAuthorizationCode": "133808"
 }
 ```
 {% endcode %}
