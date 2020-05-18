@@ -149,31 +149,32 @@ Successful authorization response
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 {% endhint %}
 
-### Examples
+### Examples \(3D v1\)
 
 {% tabs %}
-{% tab title="Reserve amount \(authorize\)" %}
+{% tab title="Authorize amount \(authorize & settle\)" %}
 {% code title="Request" %}
 ```javascript
 curl -L -X POST 'https://api.sandbox.datatrans.com/v1/transactions/authorize' \
 -H 'Content-Type: application/json; charset=UTF-8' \
 -H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr' \
 -H 'Content-Type: text/plain' \
-  -d '{
+-d'{
     "currency": "EUR",
-    "refno": "EVO-1564475113071",
+    "refno": "3Dv2-Test",
     "amount": 1000,
     "card": {
         "alias": "AAABchiPFXnssdexyrAAAYStQsjpANlH",
         "expiryMonth": "12",
         "expiryYear": "21",
-        "3D" : {
-    		    "eci" : "05",
-    		    "xid" : "64e920e1-6b0e-48af-b792-6608b385032d",
-    		    "cavv" : "MTIzNDU2Nzg5MDA5ODc2NTQzMjE=",
-    		    "threeDSVersion" : "2.1.0",
-    		    "directoryResponse" : "C",
-    		    "authenticationResponse" : "Y"
+    	  "3D": {
+    		    "eci": "02",
+    		    "xid": "MDAyMDA1MTgxMDA4NDE2OTExMjI=",
+    		    "cavv": "OTkyMDA1MTgxMDA4NTY1NjExMzg=",
+    		    "threeDSVersion": "1.0.2",
+    		    "cavvAlgorithm": "1",
+    		    "directoryResponse": "Y",
+    		    "authenticationResponse": "Y"
     		    }
     	}
 }'
@@ -181,54 +182,12 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/transactions/authorize' \
 {% endcode %}
 
 {% code title="Response \(successful\)" %}
-```bash
+```javascript
 {
-  "transactionId": "200515154553959676",
-  "acquirerAuthorizationCode": "154554",
+  "transactionId": "200518101037811359",
+  "acquirerAuthorizationCode": "101037",
   "card": {
     "masked": "510000xxxxxx0022"
-  }
-}
-```
-{% endcode %}
-{% endtab %}
-
-{% tab title="Charge amount \(auth+settle\)" %}
-{% code title="Charge" %}
-```javascript
-curl -L -X POST 'https://api.sandbox.datatrans.com/v1/transactions/authorize' \
--H 'Content-Type: application/json; charset=UTF-8' \
--H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr' \
--H 'Content-Type: text/plain' \
-  -d '{
-    "currency": "EUR",
-    "refno": "EVO-1564475113071",
-    "amount": 1000
-    "autoSettle": "true",
-    "card": {
-        "alias": "AAABchiPFXnssdexyrAAAYStQsjpANlH",
-        "expiryMonth": "12",
-        "expiryYear": "21",
-        "3D" : {
-    		    "eci" : "05",
-    		    "xid" : "64e920e1-6b0e-48af-b792-6608b385032d",
-    		    "cavv" : "MTIzNDU2Nzg5MDA5ODc2NTQzMjE=",
-    		    "threeDSVersion" : "2.1.0",
-    		    "directoryResponse" : "C",
-    		    "authenticationResponse" : "Y"
-    		    }
-    	}
-}'
-```
-{% endcode %}
-
-{% code title="Response \(successful\)" %}
-```javascript
-{
-  "transactionId": "191023113146339569",
-  "acquirerAuthorizationCode": "113146",
-  "card": {
-    "masked": "424242xxxxxx4242"
   }
 }
 ```
