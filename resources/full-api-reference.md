@@ -67,7 +67,7 @@ Error cases \(returned with headers X-CC-ERROR-CODE and X-CC-ERROR\):
 | 2 | Invalid merchantId | Merchant not found, disabled or not properly configured. Please contact Datatrans support. |
 | 3 | Target host not allowed: `X-CC-URL` | The target URL is not allowed. Please contact Datatrans Support. |
 | 4 | Invalid merchant setup - security sign was not defined | Merchant did not define the security sign. |
-| 5 | Invalid sign | The provided `X-CC-SIGN` is wrong. |
+| 5 | Invalid authentication \(api-key or sign\) | Either `pci-proxy-api-key` or `sign` value is wrong.  |
 | 6 | Invalid proxy type: `<PROXY_TYPE_NAME>` | The provided merchant/url headers did not match to a valid known proxy type. Please contact Datatrans Support. |
 | 50 | Missing parameter: `<PARAMETER-NAME>` | PUSH request parameter missing. |
 | 100 | Unsupported method: `<METHOD-NAME>` | Unsupported HTTP method |
