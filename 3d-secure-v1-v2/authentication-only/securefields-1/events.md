@@ -119,8 +119,8 @@ Where the `event` callback object has the following structure:
 {% endtab %}
 
 {% tab title="on error" %}
-The error event will be emitted if there was an error after calling `secureFields.initTokenize(...)`.  
-  
+The error event will be emitted if there was an error after calling `secureFields.initTokenize(...)`.
+
 Possible scenarios are:
 
 * Wrong merchantId configured in `secureFields.initTokenize(...);`
@@ -136,6 +136,4 @@ secureFields.on("error", function(data) {
 ```
 {% endtab %}
 {% endtabs %}
-
-
 

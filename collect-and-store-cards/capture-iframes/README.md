@@ -145,7 +145,9 @@ Please refer to [Token API](token-api.md) to see how to get the password.
 Advanced example with card detection
 
 GitHub repository: [https://github.com/datatrans/secure-fields-sample](https://github.com/datatrans/secure-fields-sample)  
-Demo: [https://datatrans.github.io/secure-fields-sample/](https://datatrans.github.io/secure-fields-sample/)
+  
+Demo Basic: [https://datatrans.github.io/secure-fields-sample/](https://datatrans.github.io/secure-fields-sample/index.html)  
+Demo with horizontal fields: [https://datatrans.github.io/secure-fields-sample/inline-example.html](https://datatrans.github.io/secure-fields-sample/inline-example.html)
 
 An example of how to implement this behaviour in modern web applications can be found [here](https://github.com/datatrans/secure-fields-sample/tree/master/react-example)
 
