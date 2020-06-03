@@ -467,7 +467,9 @@ curl -X GET \
       <td style="text-align:left"><code>transStatus </code>(after RReq)</td>
     </tr>
   </tbody>
-</table>## Step 4: Forward 3D data
+</table>
+
+## Step 4: Forward 3D data
 
 The received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateways. If you decide to use Datatrans payment gateway please continue with our [Authorize](../authorize-1/authorize.md) API.
 

@@ -30,7 +30,7 @@ All Level 1 third party receiver must complete an annual onsite assessment condu
 All Level 2 third party receiver must complete an annual self-assessment with self-assessment Questionnaire D. Therefore, please obtain the documents stated below:
 {% endhint %}
 
-1\)  Request a signed copy ****of the Attestation of Compliance \(AOC\) for **self-assessment Questionnaire D**.
+1\)  Request a signed copy ****of the Attestation of Compliance \(AOC\) for **Self-Assessment Questionnaire D**.
 
 2\)  To obtain an additional measure of assurance, obtain a written and signed acknowledgement about  the responsibility for the security of cardholder data with your third party receiver. Please contact your account manager at PCI Proxy for an example **Letter of Acknowledgment**. 
 
