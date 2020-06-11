@@ -152,7 +152,8 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
                 <cardno>375811111111115</cardno>
             </request>
             <response>
-                <aliasCC>375811OMTYEE115</aliasCC>
+                <aliasCC>AAABcqOEyhvssdexyrAAAVYhoiJyALi2</aliasCC>
+                <cardno>375811111111115</cardno>
                 <maskedCC>375811xxxxx1115</maskedCC>
             </response>
         </alias>
