@@ -32,7 +32,7 @@ All Level 2 third party receiver must complete an annual self-assessment with se
 
 1\)  Request a signed copy ****of the Attestation of Compliance \(AOC\) for **Self-Assessment Questionnaire D**.
 
-2\)  To obtain an additional measure of assurance, obtain a written and signed acknowledgement about  the responsibility for the security of cardholder data with your third party receiver. Please contact your account manager at PCI Proxy for an example **Letter of Acknowledgment**. 
+2\)  To obtain an additional measure of assurance, obtain a written and signed acknowledgement about  the responsibility for the security of cardholder data with your third party receiver. Please contact your account manager at PCI Proxy for an example **Letter of Acknowledgment** \(PCI DSS requirement 12.8.2 and 12.9\).
 
 3\)  Provide a copy of all documents to [contact@pci-proxy.com](mailto:contact@pci-proxy.com) 
 
