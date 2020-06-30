@@ -4,8 +4,6 @@
 
 PCI Proxy SFTP service currently supports filetypes `BTA`, `TAMARA`, `DINERS MINERVA` , `DAT`or `TACS`
 
-Add integrations to your account
-
 Before you can send request to a PCI compliant 3rd party you have to add the SFTP server as an integration to your account. 
 
 1\) Navigate to the **Integrations** menu in the Project section and type in the name of the integration  
@@ -15,18 +13,14 @@ Before you can send request to a PCI compliant 3rd party you have to add the SFT
 Continue here if you miss an integration, if the payload or an endpoint doesn't match your requirements.
 
 1\) Navigate to the **Integrations** menu in the Project section and type in the name of the integration  
-2\) Press **Request new Integration** button and complete the form  
+2\) Press **Request new Integration** button and complete the form \(please add the source IP of the new Receiver in the comment field\)  
 3\) You get notified once the requested integration is ready for you
 
-## 2. Firewall changes
-
-Adding new SFTP-Reicever requires changes on our firewall. Please complete the form [here](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) to let us know concerned IP-addresses.
-
-## 3. Redirect a SFTP-Receiver through PCI Proxy
+## 2. Redirect a SFTP-Receiver through PCI Proxy
 
 If you have added a SFTP-Receiver to your account, you can easily redirect requests to that SFTP-Receiver via the PCI Proxy. Requests can be sent as follows:
 
-### 3a. Use simple Post
+### 2a. Use simple Post
 
 1. Put token instead of sensitive card data into your request
 2. Use PCI Proxy Endpoint as HOST with following paramters merchantId , sign , url , password and define type with BTA, TAMARA or TACS
@@ -41,7 +35,7 @@ curl 'https://sandbox.pci-proxy.com/v1/ft?merchantId=XXX&sign=XXX&url=sftp://use
 
 The service responds based on the _accept header_: Supported are_text/plain, application/json_ \(default\) and _application/xml_
 
-### 3b. Use x-www-form-url encoded
+### 2b. Use x-www-form-url encoded
 
 1. Put token instead of sensitive card data into your request
 2. Use PCI Proxy Endpoint as HOST
