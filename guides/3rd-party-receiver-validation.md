@@ -15,7 +15,7 @@ Stores, processes, or transmits **less** than 300,000 credit card transactions a
 ## **Validation for Level 1 Service Providers \(onsite-assessment\)**
 
 {% hint style="info" %}
-All Level 1 third party receiver must complete an annual onsite assessment conducted by a PCI SSC certified Qualified Security Assessor \(QSA\) or Internal Security Assessor \(ISA\). Therefore, please obtain the document stated below:
+All Level 1 third party receiver must complete an annual onsite assessment conducted by a PCI SSC certified [Qualified Security Assessor \(QSA\)](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors) or Internal Security Assessor \(ISA\). Therefore, please obtain the document stated below:
 {% endhint %}
 
 1\)  Request a signed copy of the Attestation of Compliance \(AOC\) for **onsite assessments.**
