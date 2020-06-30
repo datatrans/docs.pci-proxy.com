@@ -1,4 +1,4 @@
-# 3rd-Party Receiver Validation
+# Receiver PCI DSS compliance validation
 
 PCI Proxy’s Forward API allows you to distribute and share credit card tokens freely across PCI compliant level 1 and level 2 third-party service providers \(Receivers\). In order to ensure that you only share tokens with compliant and trustworthy receivers, we have to validate the compliance status of the respectively third-party receiver to ensure continued protection of your customers credit card data.
 
@@ -39,7 +39,7 @@ All Level 2 third party receiver must complete an annual self-assessment with se
 4\)  You will be notified once the AOC is approved.
 
 {% hint style="info" %}
-Please keep in mind that the only documentation recognized for PCI DSS validation are the official documents from the PCI SSC website. Any other form of certificate or documentation issued for the purposes of illustrating compliance to PCI DSS or any other PCI standard are not authorized or validated, and their use is not acceptable for evidencing compliance. The use of certificates or other non-authorized documentation to validate PCI DSS Requirement 12.8 and/or Requirement 12.9 is also not acceptable.
+Please note that the only documentation recognized for PCI DSS validation are the official documents from the PCI SSC website. Any other form of certificate or documentation issued for the purposes of illustrating compliance to PCI DSS or any other PCI standard are not authorized or validated, and their use is not acceptable for evidencing compliance. The use of certificates or other non-authorized documentation to validate PCI DSS Requirement 12.8 and/or Requirement 12.9 is also not acceptable.
 {% endhint %}
 
 

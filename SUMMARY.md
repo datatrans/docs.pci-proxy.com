@@ -53,7 +53,7 @@
   * [API Authentication data](guides/pci-proxy-dashboard/api-authentication-data.md)
   * [API Endpoints](guides/pci-proxy-dashboard/api-endpoints.md)
   * [Setup payment method](guides/pci-proxy-dashboard/setup-payment-method.md)
-* [3rd-Party Receiver Validation](guides/3rd-party-receiver-validation.md)
+* [Receiver PCI DSS compliance validation](guides/3rd-party-receiver-validation.md)
 
 ## Have a Question?
 
