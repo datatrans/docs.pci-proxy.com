@@ -2,13 +2,21 @@
 
 ## 1. Add SFTP-Receiver to your account
 
-PCI Proxy SFTP service currently supports filetypes BTA, TAMARA or TACS
+PCI Proxy SFTP service currently supports filetypes `BTA`, `TAMARA`, `DINERS MINERVA` , `DAT`or `TACS`
 
-Adding a SFTP-Receiver is easy. You can either pick from our list of supported SFTP-Receivers or add new ones:
+Add integrations to your account
 
-| Click to [Add ](https://admin.sandbox.datatrans.com/showcase/pci-proxy/add-receiver.html) |
-| :--- |
+Before you can send request to a PCI compliant 3rd party you have to add the SFTP server as an integration to your account. 
 
+1\) Navigate to the **Integrations** menu in the Project section and type in the name of the integration  
+2\) Check the endpoint of the integrationd and press **Install**  
+3\) Check if the payload fits your example and press again **Install** to activate the integration
+
+Continue here if you miss an integration, if the payload or an endpoint doesn't match your requirements.
+
+1\) Navigate to the **Integrations** menu in the Project section and type in the name of the integration  
+2\) Press **Request new Integration** button and complete the form  
+3\) You get notified once the requested integration is ready for you
 
 ## 2. Firewall changes
 
@@ -20,9 +28,9 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 
 ### 3a. Use simple Post
 
-1. **Put token instead of sensitive card data into your request**
-2. **Use PCI Proxy Endpoint as HOST with following paramters merchantId , sign , url , password and define type with BTA, TAMARA or TACS**
-3. **Add required HTTP headers and POST data to your request**
+1. Put token instead of sensitive card data into your request
+2. Use PCI Proxy Endpoint as HOST with following paramters merchantId , sign , url , password and define type with BTA, TAMARA or TACS
+3. Add required HTTP headers and POST data to your request
 
 ```bash
 curl 'https://sandbox.pci-proxy.com/v1/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX&type=BTA'
@@ -35,10 +43,10 @@ The service responds based on the _accept header_: Supported are_text/plain, app
 
 ### 3b. Use x-www-form-url encoded
 
-1. **Put token instead of sensitive card data into your request**
-2. **Use PCI Proxy Endpoint as HOST**
-3. **Add required HTTP headers to your request**
-4. **Add required POST data: merchantID, sign, url, file password and type**
+1. Put token instead of sensitive card data into your request
+2. Use PCI Proxy Endpoint as HOST
+3. Add required HTTP headers to your request
+4. Add required POST data: merchantID, sign, url, file password and type
 
 ```bash
 curl https://sandbox.pci-proxy.com/v1/ft                                                   // HOST: PCI Proxy Endpoint
@@ -71,7 +79,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | url | Your SFTP endpoint | url=sftp%test%xxx.txt |
 | file | The file you want to upload | some+file+content |
 | password | Your password | asdfölksdjfasjdh |
-| type | Filetype of transmitted request | BTA, TAMARA or TACS |
+| type | Filetype of transmitted request | `BTA`, `TAMARA` or `TACS` |
 
 > ## Great job**: You have successfully integrated PCI Proxy!**
 >
