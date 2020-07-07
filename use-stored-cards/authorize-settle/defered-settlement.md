@@ -3,7 +3,7 @@
 The Settlement request is often also referred to as “Capture” or “Clearing”. It can be used for the settlement of previously authorized transactions. The `transactionId` is needed to settle an authorization. Note: This API call is not needed if `"autoSettle": true` was used when [initializing a transaction](./).
 
 {% hint style="warning" %}
-The service requires HTTP Basic Authentication.  Provide your `merchantId` as the basic authentication username value. The password can be found in the [Web Admin Tool](https://admin.sandbox.datatrans.com/) under _UPP Administration &gt; Security &gt; Server-to-Server services security_.
+The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md) for more information. 
 {% endhint %}
 
 {% api-method method="post" host="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}/settle" %}
