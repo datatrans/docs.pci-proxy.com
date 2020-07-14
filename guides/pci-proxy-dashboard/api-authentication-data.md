@@ -13,7 +13,7 @@ The productive authentication data can be accessed once you activated your accou
 {% endhint %}
 
   
-**PULL/PUSH Proxy API** requries `pci-proxy-api-key` sent as a HTTP header. 
+**PULL/PUSH Proxy API** requires `pci-proxy-api-key` sent as a HTTP header. 
 
 ![pci-proxy-api-key](../../.gitbook/assets/image%20%281%29.png)
 

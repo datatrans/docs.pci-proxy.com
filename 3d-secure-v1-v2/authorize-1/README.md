@@ -11,7 +11,7 @@ An authenticated payment transaction can be authorized and settled by the follow
 
 ### Before you start
 
-Submitting authorization requests to both APIs requries an active acquiring and Datatrans PCI Proxy processing contract. 
+Submitting authorization requests to both APIs requires an active acquiring and Datatrans PCI Proxy processing contract. 
 
 | You can choose from a list of [**Supported Acquirer**](../../resources/supported-acquirer.md) or contact us at [contact@pci-proxy.com](mailto:contact@pci-proxy.com) |
 | :--- |

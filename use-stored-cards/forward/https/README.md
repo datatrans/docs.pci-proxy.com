@@ -2,10 +2,10 @@
 
 ## 1. Add integrations to your account
 
-Before you can send request to a PCI compliant 3rd party you have to add the remote server as an integration to your accoun. 
+Before you can send request to a PCI compliant 3rd party you have to add the remote server as an integration to your account. 
 
 1\) Navigate to the **Integrations** menu in the Project section and type in the name of the integration  
-2\) Check the endpoint of the integrationd and press **Install**  
+2\) Check the endpoint of the integration and press **Install**  
 3\) Check if the payload fits your example and press again **Install** to activate the integration
 
 Continue here if you miss an integration, if the payload or an endpoint doesn't match your requirements.

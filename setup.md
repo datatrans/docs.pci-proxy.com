@@ -4,7 +4,7 @@ description: Learn how to setup your sandbox account and activating it for produ
 
 # Get started with PCI Proxy
 
-Follow these step-by-step guide to setup your sandbox account and to setup your account production ready by yourself within minutes. For more detailed information about the dashboard feature read our [Guides section](guides/pci-proxy-dashboard/).   
+Follow this step-by-step guide to setup your sandbox account and to setup your account production ready by yourself within minutes. For more detailed information about the dashboard feature read our [Guides section](guides/pci-proxy-dashboard/).   
   
 Drop us a message at [contact@pci-proxy.com](mailto:contact@pci-proxy.com) if you need any further help or advice in terms of setting up your account. 
 

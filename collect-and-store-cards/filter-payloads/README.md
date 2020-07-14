@@ -11,7 +11,7 @@ All happens before sensitive card data ever touches your servers to reduce your 
 Before you can filter payloads from a remote server you have to add the remote server as an integration to your account:
 
 1\) Navigate to the **Integrations** menu in the Project section and type in the name of the integration  
-2\) Check the endpoint of the integrationd and press **Install**  
+2\) Check the endpoint of the integration and press **Install**  
 3\) Check if the payload fits your example and press again **Install** to activate the integration
 
 Continue here if you miss an integration, if the payload or an endpoint doesn't match your requirements.

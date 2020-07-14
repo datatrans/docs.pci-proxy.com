@@ -1,6 +1,6 @@
 # Terminate your contract
 
-The Administrator of a contract is allowed to cancel the subscription for PCI Proxy services according the Terms & Conditions mentiond in the contract. 
+The Administrator of a contract is allowed to cancel the subscription for PCI Proxy services according the Terms & Conditions mentioned in the contract. 
 
 **Close Contract**
 
