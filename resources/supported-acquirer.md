@@ -19,5 +19,5 @@ The following acquirers are some of our directly integrated and fully supported 
 | - | card complete Service Bank AG | Elavon Merchant Services |
 |  |  | EVO Payments International GmbH |
 
-To have a full view on our partner network, please visit [our website](https://www.datatrans.ch/en/e-payment/methods-of-payment-international/credit-cards).
+To have a full view on our partner network, please visit [our website](https://www.datatrans.ch/en/features/payment-methods/).
 
