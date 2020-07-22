@@ -10,7 +10,7 @@ The parameters will be sent as HTTP headers.
 
 * **Mandatory input parameters:**
 
-| HTTP header                      | Description | Example value |
+| HTTP Header                      | Description | Example value |
 | :--- | :--- | :--- |
 | `X-CC-URL` | Specifies the target URL that will be called | https://api.thirdparty.com |
 | `pci-proxy-api-key` | Configured API key | MxdPtKaeDLfkhK7rdz4nmmx5dg10ufRR |
