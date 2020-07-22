@@ -1,19 +1,25 @@
-# PULL method
+# PULL Method
+
+### Process flow
+
+Pull method allows you to send a request via PCI Proxy to a Channel API endpoint to receive a response where the payload is filtered for credit card data and automatically tokenized. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be kept and routed through PCI Proxy without modification.
+
+![Process Flow with PCI Proxy](../../.gitbook/assets/channel_pull_pciproxy_color%20%285%29.png)
 
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
 {% api-method-summary %}
-PULL method
+PULL method - API request
 {% endapi-method-summary %}
 
 {% api-method-description %}
-`/v1/pull` method allows you to send a request via PCI Proxy to a Channel API endpoint to receive a response where the payload is filtered for credit card data and automatically tokenized. Just add the following header params to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be kept and routed through PCI Proxy without modification.  
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="X-CC-MERCHANT-ID" type="string" required=true %}
-Your unique account id at PCI Proxy \(e.g. 1000011011\)
+Your unique merchant id at PCI Proxy \(e.g. 1000011011\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="pci-proxy-api-key" type="string" required=true %}
@@ -33,6 +39,7 @@ Response will contain tokenized credit card data.
 {% endapi-method-response-example-description %}
 
 ```markup
+
 <?xml version="1.0" encoding="UTF-8"?>
 <reservations>
     <reservation>
@@ -59,10 +66,6 @@ Masked card number will be returned in the response as HTTP header`pci-proxy-mas
 {% hint style="warning" %}
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 {% endhint %}
-
-### Process Flow
-
-![Process Flow with PCI Proxy](../../.gitbook/assets/channel_pull_pciproxy_color%20%281%29.png)
 
 ### Examples
 

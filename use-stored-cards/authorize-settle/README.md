@@ -36,7 +36,7 @@ The service requires HTTP basic authentication. The required credentials can be 
 
 {% api-method method="post" host="https://api.sandbox.datatrans.com" path="/v1/transactions/authorize" %}
 {% api-method-summary %}
-AUTH method
+AUTHORIZE method
 {% endapi-method-summary %}
 
 {% api-method-description %}

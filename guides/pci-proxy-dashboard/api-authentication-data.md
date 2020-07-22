@@ -19,7 +19,7 @@ The productive authentication data can be accessed once you activated your accou
 
 **All other APIs requires HTTP Basic Authentication**. Provide your `merchantId` as the basic authentication username value and the `API Password` as password. 
 
-![API Username and API Password](../../.gitbook/assets/image%20%283%29.png)
+![](../../.gitbook/assets/2020-07-21-15_43_25-window.png)
 
 Create a base64 encoded value of merchantId and password \(most HTTP clients are able to handle the base64 encoding automatically\) and submit the Authorization header with each request. For example:
 

@@ -1,12 +1,20 @@
-# PUSH method
+# PUSH Method
+
+### Process flow
+
+Push method allows you to receive already tokenized card data on a uniquePushKey endpoint. Your partners can push requests to this unique PCI Proxy endpoint containing credit card data in its payload. Hence, it is routed via PCI Proxy, the payload is filtered for credit card data and automatically tokenized. All other headers and payload will be kept and routed through PCI Proxy without modification.
+
+
+
+![Process Flow with PCI Proxy](../../.gitbook/assets/channel_push_pciproxy_color%20%284%29.png)
 
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/push/uniquePushKey" %}
 {% api-method-summary %}
-PUSH method
+PUSH method - API request
 {% endapi-method-summary %}
 
 {% api-method-description %}
-`/v1/push` method allows you to receive already tokenized card data on a `uniquePushKey` endpoint. Your partners can push requests to this unique PCI Proxy endpoint containing credit card data in its payload. Hence, it is routed via PCI Proxy, the payload is filtered for credit card data and automatically tokenized. All other headers and payload will be kept and routed through PCI Proxy without modification.
+\`\`
 {% endapi-method-description %}
 
 {% api-method-spec %}

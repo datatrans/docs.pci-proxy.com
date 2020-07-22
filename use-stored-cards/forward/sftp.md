@@ -22,7 +22,7 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 
 ### 2a. Use simple Post
 
-1. Put token instead of sensitive card data into your request
+1. Replace sensitive card data with the token into your request
 2. Use PCI Proxy Endpoint as HOST with following paramters merchantId , sign , url , password and define type with BTA, TAMARA or TACS
 3. Add required HTTP headers and POST data to your request
 
@@ -86,5 +86,5 @@ _Note: In test mode, only test credit cards are allowed!_
 > Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
 >
 > Phone: +41 44 256 81 91  
-> Email: [support@pci-proxy.com](mailto:support@pci-proxy.com)
+> Email: [contact@pci-proxy.com](mailto:support@pci-proxy.com)
 

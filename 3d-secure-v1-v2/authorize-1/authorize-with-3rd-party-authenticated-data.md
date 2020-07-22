@@ -26,7 +26,7 @@ Stored cards can be used multiple times for **recurring transactions** or **One-
 
 ## 1. Get authentication data
 
-To authorizea 3D Secure 1 authenticated payment, you need the following data:
+To authorize a 3D Secure 1 authenticated payment, you need the following data:
 
 * `authenticationResponse`:  Transaction status after `paResponse`\(Challenge flow\) received from your 3D provider
 * `directoryResponse`:  Transaction status after `VERes` received from your 3D provider
