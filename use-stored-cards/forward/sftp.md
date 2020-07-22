@@ -4,7 +4,7 @@
 
 PCI Proxy SFTP service currently supports the following filetypes `BTA`, `TAMARA`, `DINERSMINERVA`, `TACS`, `TAED`, `VISAIBERIA` or `VISABBVA`.
 
-Before you can send request to a PCI compliant 3rd party you have to add the SFTP server as an integration to your account. 
+Before you can send a request to a PCI compliant 3rd party you have to add the SFTP server as an integration to your account. 
 
 1\) Navigate to the **Integrations** menu in the Project section and type in the name of the integration  
 2\) Check the endpoint of the integration and press **Install**  
