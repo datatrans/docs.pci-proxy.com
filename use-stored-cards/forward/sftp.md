@@ -22,7 +22,7 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 
 ### 2a. Use simple Post
 
-1. Replace sensitive card data with the token into your request
+1. Replace sensitive card data with the token in your request
 2. Use PCI Proxy Endpoint as HOST with following parameters `merchantId`, `sign`, `url`, `password`and define `type`with `BTA`, `TAMARA`, `DINERSMINERVA`, `TACS`, `TAED`, `VISAIBERIA` or `VISABBVA`
 3. Add required HTTP headers and POST data to your request
 
