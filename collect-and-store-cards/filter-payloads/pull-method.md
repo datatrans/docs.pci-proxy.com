@@ -18,7 +18,7 @@ PULL method - API request
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="X-CC-MERCHANT-ID" type="string" required=true %}
+{% api-method-parameter name="x-cc-merchant-id" type="string" required=true %}
 Your unique merchant id at PCI Proxy \(e.g. 1000011011\)
 {% endapi-method-parameter %}
 
