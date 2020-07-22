@@ -12,9 +12,9 @@ The parameters will be sent as HTTP headers.
 
 | HTTP Header                      | Description | Example value |
 | :--- | :--- | :--- |
-| `X-CC-URL` | Specifies the target URL that will be called | https://api.thirdparty.com |
+| `x-cc-merchant-id` | Your unique merchant id at PCI Proxy  | 1000011011 |
 | `pci-proxy-api-key` | Configured API key | MxdPtKaeDLfkhK7rdz4nmmx5dg10ufRR |
-| `X-CC-SIGN` | Configured security sign | 130709090849785405 |
+| `x-cc-url` | API endpoint | https://api.channel.com/ |
 
 * **Example POST:**
 
