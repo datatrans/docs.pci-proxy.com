@@ -48,7 +48,7 @@ Response depends on your API.
 In test mode, only [test credit cards](../../../test-card-data.md) are allowed.
 {% endhint %}
 
-### Examples
+### Example
 
 When you [add a PUSH Receiver](../../../guides/pci-proxy-dashboard/add-integrations.md) to your account, you receive a `{uniquePushKey}` for each Receiver that is set up. Together with our PCI Proxy PUSH service URL, it results in a `unique PCI Proxy Endpoint` that is specific to that Receiver. Now, redirect requests coming from a Receiver with a single step:
 

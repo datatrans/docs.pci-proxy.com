@@ -52,7 +52,7 @@ In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 
 ![Process Flow with PCI Proxy](../../.gitbook/assets/channel_push_pciproxy_color%20%283%29.png)
 
-### Examples
+### Example
 
 When you [**add a PUSH Integration**](../../guides/pci-proxy-dashboard/add-integrations.md) ****to your account, you receive a `{uniquePushKey}` for each Channel that is set up. Together with our PCI Proxy PUSH service URL, it results in a `unique PCI Proxy Endpoint` that is specific to that Channel. Now, redirect requests coming from a Channel with a single step:
 
