@@ -2,9 +2,9 @@
 
 ### Process flow
 
-Pull method allows you to send a request via PCI Proxy to a Channel API endpoint to receive a response where the payload is filtered for credit card data and automatically tokenized. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be kept and routed through PCI Proxy without modification.
+Pull method allows you to send a request via PCI Proxy to a Receiver API endpoint. Your payload will be filtered for tokens which will be automatically detokenized, and sent further to the Receiver API endpoint. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be kept and routed through PCI Proxy without modification.
 
-![Process Flow with PCI Proxy](../../../.gitbook/assets/channel_pull_pciproxy_color-1-.png)
+![Process Flow with PCI Proxy](../../../.gitbook/assets/receiver_pull_pciproxy_color%20%283%29.png)
 
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
 {% api-method-summary %}
