@@ -14,7 +14,7 @@ Continue here if you miss an integration, if the payload or an endpoint doesn't 
 
 1\) Navigate to the **Integrations** menu in the Project section and type in the name of the integration  
 2\) Press **Request new Integration** button and complete the form \(please add the source IP of the new Receiver in the comment field\)  
-3\) You get notified once the requested integration is ready for you
+3\) You will get notified once the requested integration is ready for you
 
 ## 2. Redirect a SFTP-Receiver through PCI Proxy
 
