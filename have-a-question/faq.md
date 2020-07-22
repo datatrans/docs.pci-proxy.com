@@ -8,9 +8,9 @@ The key for merchants and service providers wishing to reduce their PCI DSS scop
 
 PCI Proxy automatically collects, stores, and tokenizes all PCI DSS relevant card data. Currently, we support all major brands and additional virtual cards such as Visa, Mastercard, American Express, Diners, Discover, JCB, ELO, Maestro, Expedia Virtual Cards, Booking.com Virtual Cards, AirPlus, etc. Do you need additional brands to be tokenized? [Contact us](https://www.pci-proxy.com/pci-proxy/contact/).
 
-## How are the cost of using PCI Proxy?
+## What are the costs of using PCI Proxy?
 
-Our pricing model is based on actual performance we deliver to you. Unlike others, we don't charge you for storing credit cards as we understand that you often have no influence on the duration of storage. Instead, our flexible plans are grouped in volume tiers to keep you from surprise fees. You only pay for exactly what you need. All plans include free setup and use of channels and APIs and fast and reliable tokenization of credit card data off the shelf.
+Our pricing model is based on actual performance we deliver to you. Unlike others, we don't charge you for storing credit cards as we understand that you often have no influence on the duration of storage. Instead, you only pay for exactly what you need. All plans include free setup and use of channels and APIs and fast and reliable tokenization of credit card data off the shelf.
 
 ## What token formats does PCI Proxy support?
 
