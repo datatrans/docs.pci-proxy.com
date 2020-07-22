@@ -14,7 +14,7 @@ Push method allows you to receive a request via PCI Proxy on a `uniquePushKey` e
 
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/push/uniquePushKey" %}
 {% api-method-summary %}
-PUSH method
+PUSH method - API request
 {% endapi-method-summary %}
 
 {% api-method-description %}
