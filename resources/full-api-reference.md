@@ -22,8 +22,8 @@ The parameters will be sent as HTTP headers.
 curl https://sandbox.pci-proxy.com/v1/pull \
 -H "Content-Type: text/xml" \
 -H "pci-proxy-api-key: ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg" \
--H "X-CC-MERCHANT-ID: 1000011011" \
--H "X-CC-URL: https://pciproxy.mockable.io/secure-supply-xml-booking-com" \
+-H "x-cc-merchant-id: 1000011011" \
+-H "x-cc-url: https://pciproxy.mockable.io/secure-supply-xml-booking-com" \
 -d '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
       <request>
           <username>pci-proxy</username>

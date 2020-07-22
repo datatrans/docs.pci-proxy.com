@@ -75,9 +75,9 @@ Once a PULL Channel is added to your merchantId, simply redirect requests to it 
 {% tab title="Pull reservations from Booking.com" %}
 ```bash
 curl https://sandbox.pci-proxy.com/v1/pull \
-  -H 'X-CC-MERCHANT-ID: merchantId' \
+  -H 'x-cc-merchant-id: merchantId' \
   -H 'pci-proxy-api-key: MfJag98oHh0rCiSXc8g3mCsqP8wrSer7' \
-  -H 'X-CC-URL: https://secure-supply-xml.booking.com/hotels/xml/reservations' \
+  -H 'x-cc-url: https://secure-supply-xml.booking.com/hotels/xml/reservations' \
   -d '<?xml version="1.0" encoding="UTF-8"?>
         <request>
           <username>providermachinelogin</username>

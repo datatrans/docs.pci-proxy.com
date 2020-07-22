@@ -72,9 +72,9 @@ Once a PULL Receiver is added to your merchantId, simply redirect requests to it
 {% tab title="Forward to Stripe" %}
 ```bash
 curl https://sandbox.pci-proxy.com/v1/pull \
- -H 'X-CC-MERCHANT-ID: 1000011011' \
+ -H 'x-cc-merchant-id: 1000011011' \
  -H 'pci-proxy-api-key: api-key' \
- -H 'X-CC-URL: https://api.stripe.com/v1/tokens' \
+ -H 'x-cc-url: https://api.stripe.com/v1/tokens' \
  -u sk_test_BQokikJOvBiI2HlWgH4olfQ2: \
  -d 'card[number]=AAABcHxr-sDssdexyrAAAfyXWIgaAF40' \
  -d 'card[exp_month]=12' \
