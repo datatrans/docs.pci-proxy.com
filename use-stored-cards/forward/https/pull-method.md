@@ -4,8 +4,6 @@
 
 Pull method allows you to send a request via PCI Proxy to a Channel API endpoint to receive a response where the payload is filtered for credit card data and automatically tokenized. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be kept and routed through PCI Proxy without modification.
 
-
-
 ![Process Flow with PCI Proxy](../../../.gitbook/assets/channel_pull_pciproxy_color-1-.png)
 
 {% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
@@ -25,7 +23,7 @@ Your unique merchant id at PCI Proxy \(e.g. 1000011011\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="pci-proxy-api-key" type="string" required=true %}
-Your api key \(ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg\)
+Your API key \(ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="x-cc-url" type="string" required=true %}
