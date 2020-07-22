@@ -11,7 +11,7 @@ description: >-
 1. \*\*\*\*[**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
 
 {% hint style="info" %}
-* This service requires basic authentication. Please refer to [Authentification](../../guides/pci-proxy-dashboard/api-authentication-data.md) to retrieve required crendetials. 
+* This service requires basic authentication. Please refer to [Authentication](../../guides/pci-proxy-dashboard/api-authentication-data.md) to retrieve required crendetials. 
 * Make sure to use our 3D Secure enabled test credit cards [here](../testing-3d-secure.md).
 {% endhint %}
 

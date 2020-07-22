@@ -66,7 +66,7 @@ After you successfully completed the going live process prepare your productive 
 
 1\) Clone the integrations you setup on test environment.   
 Switch back to test environment - navigate to Integrations menu - click on Settings of the desired Integration - press the **Clone to production button** on the bottom status bar.   
-2\) Setup productive API authentication data. Refer to [Authentification ](guides/pci-proxy-dashboard/api-authentication-data.md)for more information.   
+2\) Setup productive API authentication data. Refer to [Authentication ](guides/pci-proxy-dashboard/api-authentication-data.md)for more information.   
 3\) Build the request and route them through productive PCI Proxy endpoints. Refer to [API endpoints](guides/pci-proxy-dashboard/api-endpoints.md)[ ](guides/pci-proxy-dashboard/api-authentication-data.md)for more information. 
 
 ## Next up
