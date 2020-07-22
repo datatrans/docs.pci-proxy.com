@@ -24,7 +24,7 @@ Stored cards can be used multiple times for **recurring transactions** or **One-
 For this feature, you need an existing acquiring contract.
 {% endhint %}
 
-| You can choose from a list of [**Supported Acquirer**](../../resources/supported-acquirer.md) and contact us at [setup@pci-proxy.com](mailto:setup@pci-proxy.com) |  |
+| You can choose from a list of [**Supported Acquirer**](../../resources/supported-acquirer.md) and contact us at [contact@pci-proxy.com](mailto:contact@pci-proxy.com) |  |
 | :--- | :--- |
 
 
@@ -70,7 +70,7 @@ The amount of the transaction in the currency's smallest unit. For example use 1
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="autoSettle" type="boolean" required=false %}
-Wheter to automatically settle the transaction after an authorization or not. Default is `false`. 
+Whether to automatically settle the transaction after an authorization or not. Default is `false`. 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="card" type="object" required=true %}
@@ -90,7 +90,7 @@ The expiry year of the token \(2 characters\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="3D" type="object" required=false %}
-If 3D authentication data is available, the 3D object can be used to send the relevant 3D paramters. 
+If 3D authentication data is available, the 3D object can be used to send the relevant 3D parameters. 
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
