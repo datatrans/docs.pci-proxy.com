@@ -54,7 +54,7 @@ Yes, PCI Proxy works closely with PCI-accredited Qualified Security Assessors \(
 
 {% embed url="https://www.pcisecuritystandards.org/document\_library" caption="PCI Council - Document Library \(find SAQs & PCI DSS specs\)" %}
 
-{% embed url="https://www.mastercard.us/en-us/merchants/safety-security/security-recommendations/merchants-need-to-know.html" caption="Mastercard PCI-compliant Service Provider List \(e.g. search for \"Datatrans\"\)" %}
+{% embed url="https://www.mastercard.us/content/mccom/en-us/merchants/safety-security/security-recommendations/service-providers-need-to-know.html/" caption="Mastercard PCI-compliant Service Provider List \(e.g. search for \"Datatrans\"\)" %}
 
-{% embed url="https://www.visaeurope.com/receiving-payments/security/downloads-and-resources" caption="Visa PCI-compliant Service Provider List \(e.g. search for \"Datatrans\"\)" %}
+{% embed url="https://www.visa.com/splisting/searchGrsp.do" caption="Visa PCI-compliant Service Provider List \(e.g. search for \"Datatrans\"\)" %}
 
