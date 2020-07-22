@@ -10,7 +10,7 @@ Activating your account for production starts the billing process.
 
 Please follow below steps to to activate your account for production.  
   
-1\) Press the **Environment** switcher in the left hand side menu bar  
+1\) Press the **Environment** switcher in the left hand side menu  
 
 
 ![Environment switcher](../../.gitbook/assets/environment-switcher.png)

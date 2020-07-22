@@ -20,7 +20,7 @@ Learn more about [Account structure and User management](guides/pci-proxy-dashbo
 
 ## 2. Configure your test account 
 
-1\) Configure sandbox API authentication data. Refer to [Authentification ](guides/pci-proxy-dashboard/api-authentication-data.md)for more information.   
+1\) Configure sandbox API authentication data. Refer to [Authentication ](guides/pci-proxy-dashboard/api-authentication-data.md)for more information.   
 2\) Access sandbox API endpoints. Refer to [API endpoints](guides/pci-proxy-dashboard/api-endpoints.md)[ ](guides/pci-proxy-dashboard/api-authentication-data.md)for more information.   
 3\) Choose an [integration method](collect-and-store-cards/) for inbound traffic and build the request as documented for each API.  
   
@@ -41,7 +41,7 @@ As a next step setup the integrations for the outbound traffic if needed.
 Learn more about [adding existing or new integrations to your project](guides/pci-proxy-dashboard/add-integrations.md)
 {% endhint %}
 
-## 3. [Going live](guides/pci-proxy-dashboard/get-production-ready.md)
+## 3. Going live
 
 Once everything has been tested properly on sandbox environment you can activate your account for production environment by yourself within minutes. 
 
@@ -51,9 +51,9 @@ Activating your account for production starts the billing process.
 
 Follow below steps to activate your account for production.  
   
-1\) Click the **Environment** switcher in the left hand side menu bar  
+1\) Click the **Environment** switcher in the left hand side menu  
 2\) Select your subscription plan, complete all required data and press Continue  
-3\) Choose your prefered payment method and finally enable your account for production  
+3\) Choose your preferred payment method and finally enable your account for production  
 4\) A confirmation email with the contract overview will be sent to the admin contact
 
 {% hint style="warning" %}
