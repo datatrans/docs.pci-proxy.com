@@ -2,12 +2,12 @@
 
 ## 1. Add SFTP-Receiver to your account
 
-PCI Proxy SFTP service currently supports filetypes `BTA`, `TAMARA`, `DINERS MINERVA` , `DAT`or `TACS`
+PCI Proxy SFTP service currently supports filetypes `BTA`, `TAMARA`, `DINERSMINERVA`, `TACS`, `TAED`, `VISAIBERIA` or `VISABBVA`.
 
 Before you can send request to a PCI compliant 3rd party you have to add the SFTP server as an integration to your account. 
 
 1\) Navigate to the **Integrations** menu in the Project section and type in the name of the integration  
-2\) Check the endpoint of the integrationd and press **Install**  
+2\) Check the endpoint of the integration and press **Install**  
 3\) Check if the payload fits your example and press again **Install** to activate the integration
 
 Continue here if you miss an integration, if the payload or an endpoint doesn't match your requirements.
@@ -23,7 +23,7 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 ### 2a. Use simple Post
 
 1. Replace sensitive card data with the token into your request
-2. Use PCI Proxy Endpoint as HOST with following paramters merchantId , sign , url , password and define type with BTA, TAMARA or TACS
+2. Use PCI Proxy Endpoint as HOST with following parameters `merchantId`, `sign`, `url`, `password`and define `type`with `BTA`, `TAMARA`, `DINERSMINERVA`, `TACS`, `TAED`, `VISAIBERIA` or `VISABBVA`
 3. Add required HTTP headers and POST data to your request
 
 ```bash
@@ -33,11 +33,11 @@ curl 'https://sandbox.pci-proxy.com/v1/ft?merchantId=XXX&sign=XXX&url=sftp://use
     -d '0000080915K...'                                    // define the content
 ```
 
-The service responds based on the _accept header_: Supported are_text/plain, application/json_ \(default\) and _application/xml_
+The service responds based on the _Accept header_: Supported are _text/plain, application/json_ \(default\) and _application/xml_
 
 ### 2b. Use x-www-form-url encoded
 
-1. Put token instead of sensitive card data into your request
+1. Replace sensitive card data with the token in your request
 2. Use PCI Proxy Endpoint as HOST
 3. Add required HTTP headers to your request
 4. Add required POST data: merchantID, sign, url, file password and type
@@ -53,7 +53,7 @@ curl https://sandbox.pci-proxy.com/v1/ft                                        
     &url=sftp%3A%2F%2Fint-tests%40127.0.0.1%2Ffolder%2Ftest.txt                            // SFTP Endpoint
     &file=SOME+FILE+CONTENT                                                                // Your File
     &password=XXX                                                                          // Your password
-    &type=BTA                                                                              // BTA, TAMARA or TACS' 
+    &type=BTA                                                                              // BTA, TAMARA, DINERSMINERVA, TACS, TAED, VISAIBERIA or VISABBVA' 
 ```
 
 You have securely forwarded sensitive card data without ever touching your servers. Your request had been populated with sensitive card data while it was routed through PCI Proxy. Thereby, your Receiver obtained full credit card data.
@@ -73,7 +73,7 @@ _Note: In test mode, only test credit cards are allowed!_
 | url | Your SFTP endpoint | url=sftp%test%xxx.txt |
 | file | The file you want to upload | some+file+content |
 | password | Your password | asdfölksdjfasjdh |
-| type | Filetype of transmitted request | `BTA`, `TAMARA` or `TACS` |
+| type | Filetype of transmitted request | `BTA`, `TAMARA`, `DINERSMINERVA`, `TACS`, `TAED`, `VISAIBERIA` or `VISABBVA` |
 
 > ## Great job**: You have successfully integrated PCI Proxy!**
 >
