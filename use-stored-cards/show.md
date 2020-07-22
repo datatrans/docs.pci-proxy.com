@@ -3,7 +3,7 @@
 The PCI Proxy Show API enables you to see the original credit card number of a stored credit card. Basically it is a web interface that can convert a token back into its original credit card number.
 
 {% hint style="success" %}
-Even though the interface is served by PCI Proxy, your PCI scope can extend. Therefore it's **mandatory** to implement according [PCI DSS  user management ](show.md#pci-dss-compliant-user-management)and [password policy ](show.md#password-policy)
+Even though the interface is served by PCI Proxy, your PCI scope can extend. Therefore it's **mandatory** to implement according [PCI DSS user management ](show.md#pci-dss-compliant-user-management)and [password policy ](show.md#password-policy)
 {% endhint %}
 
 {% api-method method="post" host="https://api.sandbox.datatrans.com/" path="upp/services/v1/noshow/init" %}
@@ -27,7 +27,7 @@ API consumes application/xml or application/json
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="merchantId" type="string" required=true %}
-Your unique account id at PCI Proxy \(e.g. 1100011011\)
+Your unique merchant id at PCI Proxy \(e.g. 1100011011\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="aliasCC" type="string" required=true %}
@@ -135,9 +135,9 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 {% endtab %}
 {% endtabs %}
 
-4. Once the user clicks on the link an email will be sent to  `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually. 
+4. Once the user clicks on the link an email will be sent to `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually. 
 
-5. Subsequently the new device has been authorized the user and may enter a four digit security code in the opened iFrame to retrieve plain text credit card number. 
+5. Subsequently the new device has been authorized and the user may enter a four digit security code in the opened iFrame to retrieve plain text credit card number. 
 
 Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
@@ -223,7 +223,7 @@ else
 
 Using our _NoShow.jsp_ script requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find a comprehensive overview for a PCI DSS compliant user management. For a more detailed version on PCI DSS user management please see the official PCI DSS documents \(Requirement 8\) [PCI DSS - Requirements and Security Assessment Procedures](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2.pdf?agreement=true&time=1476177008560).
 
-#### **Unique User IDs**
+### **Unique User IDs**
 
 Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. **Shared user logins are not allowed.** 
 
