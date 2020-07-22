@@ -67,7 +67,7 @@ Masked card number will be returned in the response as HTTP header`pci-proxy-mas
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 {% endhint %}
 
-### Examples
+### Example
 
 Once a PULL Channel is added to your merchantId, simply redirect requests to it via the PCI Proxy:
 
