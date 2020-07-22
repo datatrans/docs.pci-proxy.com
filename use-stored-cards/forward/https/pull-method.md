@@ -20,7 +20,7 @@ PULL method - API request
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="X-CC-MERCHANT-ID" type="string" required=true %}
+{% api-method-parameter name="x-cc-merchant-id" type="string" required=true %}
 Your unique merchant id at PCI Proxy \(e.g. 1000011011\)
 {% endapi-method-parameter %}
 
@@ -28,7 +28,7 @@ Your unique merchant id at PCI Proxy \(e.g. 1000011011\)
 Your api key \(ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="X-CC-URL" type="string" required=true %}
+{% api-method-parameter name="x-cc-url" type="string" required=true %}
 API endpoint \(https://api.channel.com/\)
 {% endapi-method-parameter %}
 {% endapi-method-headers %}

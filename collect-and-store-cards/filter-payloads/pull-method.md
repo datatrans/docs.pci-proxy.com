@@ -26,7 +26,7 @@ Your unique merchant id at PCI Proxy \(e.g. 1000011011\)
 Your API Key \(ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="X-CC-URL" type="string" required=true %}
+{% api-method-parameter name="x-cc-url" type="string" required=true %}
 API endpoint \(https://api.channel.com/\)
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
