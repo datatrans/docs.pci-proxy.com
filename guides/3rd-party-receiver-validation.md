@@ -94,7 +94,9 @@ Please note that the only documentation recognized for PCI DSS validation are th
     </tr>
     <tr>
       <td style="text-align:left">ISA</td>
-      <td style="text-align:left">Internal Security Assessor</td>
+      <td style="text-align:left">Internal Security Assessor - professionals of qualifying organizations
+        which received PCI DSS training and certification that will improve the
+        organization&apos;s understanding of the PCI DSS</td>
       <td style="text-align:left"><a href="https://www.pcisecuritystandards.org/assessors_and_solutions/internal_security_assessors">Verify an ISA Employee</a>
       </td>
     </tr>
