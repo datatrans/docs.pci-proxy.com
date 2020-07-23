@@ -2,7 +2,7 @@
 
 The Payment Card Industry Data Security Standard is a set of security standards designed to ensure that all companies that **accept**, **process**, **store** or **transmit** credit card information maintain a secure environment. The PCI DSS applies to any organization, regardless of size or number of transactions, that accepts, transmits or stores any cardholder data, such as payment processors, acquirers, issuers, and service providers.
 
-PCI Proxy’s Forward API allows you to distribute and share credit card data freely across PCI compliant level 1 and level 2 third-party service providers \(Receivers\). In order to ensure that you only share credit card data with compliant and trustworthy receivers, we have to validate the compliance status of the respectively third-party receiver to ensure continued protection of your customers credit card data.
+**PCI Proxy’s Forward API** allows you to distribute and share credit card data freely across PCI compliant level 1 and level 2 third-party service providers \(Receivers\). In order to ensure that you only share credit card data with compliant and trustworthy receivers, we have to validate the compliance status of the respectively third-party receiver to ensure continued protection of your customers credit card data.
 
 {% tabs %}
 {% tab title="PCI DSS Level 1 Service Provider \(Onsite-Assessment\)" %}
