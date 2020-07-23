@@ -58,7 +58,7 @@ Please note that the only documentation recognized for PCI DSS validation are th
     <tr>
       <td style="text-align:left">PCI SSC</td>
       <td style="text-align:left">Payment Card Industry Security Standards Council</td>
-      <td style="text-align:left"><a href="https://www.pcisecuritystandards.org/">https://www.pcisecuritystandards.org</a>
+      <td style="text-align:left"><a href="https://www.pcisecuritystandards.org/">PCI Security Standards</a>
       </td>
     </tr>
     <tr>
@@ -70,7 +70,7 @@ Please note that the only documentation recognized for PCI DSS validation are th
     <tr>
       <td style="text-align:left">AOC</td>
       <td style="text-align:left">Attestation of Compliance</td>
-      <td style="text-align:left"><a href="https://www.pcisecuritystandards.org/documents/PCI-DSS-v3_2_1-AOC-ServiceProviders.docx?agreement=true&amp;time=1595506976845">PCI DSS v3.2.1-AOC-ServiceProviders.docx</a>
+      <td style="text-align:left">AOC for onsite assessments: <a href="https://www.pcisecuritystandards.org/documents/PCI-DSS-v3_2_1-AOC-ServiceProviders.docx?agreement=true&amp;time=1595506976845">PCI DSS v3.2.1-AOC-ServiceProviders.docx</a>
       </td>
     </tr>
     <tr>
