@@ -37,7 +37,7 @@ curl https://sandbox.pci-proxy.com/v1/pull \
 
 In turn, the proxy will return HTTP headers:
 
-| HTTP Header                                        | Description |
+| HTTP Header                                   | Description |
 | :--- | :--- |
 | `X-CC-ERROR-CODE` | Returned by the proxy in case of error only. See the error table below. |
 | `X-CC-ERROR` | Returned by the proxy in case of error only. See the error table below. |
