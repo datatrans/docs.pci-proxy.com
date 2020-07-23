@@ -50,7 +50,7 @@ In turn, the proxy will return HTTP headers:
 
 If the proxy is able to parse and correctly match the replacement targets, but an error occurs during the tokenization or detokenization, the match will be replaced with the following possible constants \(length 16\):
 
-| Possible Constants | Error message \(X-CC-ERROR\) | Cause/explanation |
+| Possible Constants | Error message      \(X-CC-ERROR\) | Cause/explanation |
 | :--- | :--- | :--- |
 | 0000000000000000 | Invalid card number | The card number was matched but was invalid. |
 | 0000000000000001 | Internal error | The card number was matched, but internal error occurred during transformation to alias. |
