@@ -1,6 +1,6 @@
 # Receiver PCI DSS compliance validation
 
-PCI Proxy’s Forward API allows you to distribute and share credit card tokens freely across PCI compliant level 1 and level 2 third-party service providers \(Receivers\). In order to ensure that you only share tokens with compliant and trustworthy receivers, we have to validate the compliance status of the respectively third-party receiver to ensure continued protection of your customers credit card data.
+PCI Proxy’s Forward API allows you to distribute and share credit card data freely across PCI compliant level 1 and level 2 third-party service providers \(Receivers\). In order to ensure that you only share credit card data with compliant and trustworthy receivers, we have to validate the compliance status of the respectively third-party receiver to ensure continued protection of your customers credit card data.
 
 {% tabs %}
 {% tab title="PCI DSS Level 1 Service Provider \(Onsite-Assessment\)" %}
