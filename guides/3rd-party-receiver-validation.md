@@ -70,7 +70,7 @@ Please note that the only documentation recognized for PCI DSS validation are th
     <tr>
       <td style="text-align:left">AOC</td>
       <td style="text-align:left">Attestation of Compliance</td>
-      <td style="text-align:left">AOC for onsite assessments: <a href="https://www.pcisecuritystandards.org/documents/PCI-DSS-v3_2_1-AOC-ServiceProviders.docx?agreement=true&amp;time=1595506976845">PCI DSS v3.2.1-AOC-ServiceProviders.docx</a>
+      <td style="text-align:left">AOC for onsite assessments: <a href="https://www.pcisecuritystandards.org/documents/PCI-DSS-v3_2_1-AOC-ServiceProviders.docx?agreement=true&amp;time=1595506976845">AOC-ServiceProviders.docx</a>
       </td>
     </tr>
     <tr>
