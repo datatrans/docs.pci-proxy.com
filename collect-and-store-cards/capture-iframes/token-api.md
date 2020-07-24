@@ -1,3 +1,9 @@
+---
+description: >-
+  Call the server to Server Token API with a transactionId to retrieve tokenized
+  card number and CVV code.
+---
+
 # Token API
 
 {% hint style="warning" %}

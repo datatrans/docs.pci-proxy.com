@@ -137,7 +137,8 @@ curl https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionI
 {% endtabs %}
 
 {% hint style="warning" %}
-Please refer to [Token API](token-api.md) to see how to get the password. 
+Please note that this is a server to server API and can not be called from the browser directly.    
+ For more details please refer to [Token API](token-api.md) to see how to get the password. 
 {% endhint %}
 
 ## Examples
