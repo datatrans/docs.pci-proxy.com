@@ -138,5 +138,9 @@ Tokenization with CVV not found
 {% endtab %}
 {% endtabs %}
 
+### Error table 
 
+| Error message | Cause / Explanation |
+| :--- | :--- |
+| Tokenization expired | The `transactionId` has expired. Please note that it is valid for 30 minutes only.  |
 
