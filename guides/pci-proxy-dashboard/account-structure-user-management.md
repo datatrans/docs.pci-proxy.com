@@ -24,7 +24,7 @@ Have a look at below mentioned table for detailed user roles.
 
 | Role | Permission |
 | :--- | :--- |
-| Administrator | Full access to contract and all projects. Manage users and edit roles. |
+| Administrator | Full access to contract and project menus. Manage users and edit roles. |
 | Write | Access and modify contract related data |
 | Read-only | Access to contract related data |
 | None | No access rights to contract \(enabled by default\) |
