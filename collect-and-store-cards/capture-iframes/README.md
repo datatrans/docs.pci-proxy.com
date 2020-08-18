@@ -115,18 +115,73 @@ secureFields.destroy();
 
 ## 4. Obtain tokens
 
-Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you can execute a server to server [`GET Token`](token-api.md) request to get tokens for card number and CVV code:
+Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you have to execute a **server to server** `GET Token` request to retrieve the tokenized card number and the tokenized CVV code.
+
+{% hint style="danger" %}
+This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
+
+Please note that this is a **server to server** API call and cannot be called from the browser directly.
+{% endhint %}
+
+{% api-method method="get" host="https://api.sandbox.datatrans.com/upp/services" path="/v1/inline/token" %}
+{% api-method-summary %}
+Token
+{% endapi-method-summary %}
+
+{% api-method-description %}
+This endpoint returns the credit card number token and the CVV token corresponding to the `transactionId`.  
+Please note that this is a **server to server** API call and cannot be called from the browser directly.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="transactionId" type="number" required=true %}
+The transaction id obtained via the `secureFields.submit()` operation.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="returnPaymentMethod" type="boolean" %}
+Instructs the API to additionally return the payment method used with this transaction.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="mandatoryAliasCVV" type="boolean" %}
+Whether the cake should be gluten-free or not.
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+### Token API calls examples
 
 {% tabs %}
-{% tab title="Example: Request" %}
+{% tab title="Example: Basic usage" %}
 ```bash
-curl https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=180416140429310027 
-    -u 'merchantId:password'
+$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \ 
+        -u 'merchantId:password'
 ```
 {% endtab %}
 
 {% tab title="Response" %}
-```javascript
+```bash
 {
   "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
   "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
@@ -136,10 +191,47 @@ curl https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionI
 {% endtab %}
 {% endtabs %}
 
-{% hint style="warning" %}
-Please note that this is a server to server API and can not be called from the browser directly.    
- For more details please refer to [Token API](token-api.md) to see how to get the password. 
-{% endhint %}
+{% tabs %}
+{% tab title="Example: returnPaymentMethod=true returning paymentMethod" %}
+```bash
+$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571&returnPaymentMethod=true" \
+       -u 'merchantId:password'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```bash
+{
+  "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
+  "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
+  "paymentMethod": "VIS",
+  "maskedCard": "424242xxxxxx4242"
+}
+```
+{% endtab %}
+{% endtabs %}
+
+{% tabs %}
+{% tab title="Example: mandatoryAliasCVV=true w/ transactionId that has no CVV token" %}
+```bash
+$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170822090245534063&mandatoryAliasCVV=true" \
+       -u 'merchantId:password'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```bash
+400 Bad Request
+Tokenization with CVV not found
+```
+{% endtab %}
+{% endtabs %}
+
+### Error table 
+
+| Error message | Cause / Explanation |
+| :--- | :--- |
+| Tokenization expired | The `transactionId` has expired. Please note that it is valid for 30 minutes only. |
 
 ## Examples
 
