@@ -179,7 +179,7 @@ SHA.256(salt+merchantId+aliasCC+userEmail)                                      
 → SHASign: f641a6a3de574bd4b7609320e9a4fb1ed11364f136908822ff6a8e3b6b1bca1f            // Security Sign for NoShow.jsp
 ```
 
-_The `salt` value can be accessed in the PCI Proxy dashboard \(_[_https://dashboard.pci-proxy.com/login_](https://dashboard.pci-proxy.com/login)_\) within the Developers - API Keys menu. Please refer to_ [_API Authentication data_](../guides/pci-proxy-dashboard/api-authentication-data.md) _for more information._ 
+_The `salt` value can be accessed in the PCI Proxy dashboard \(_[_https://dashboard.pci-proxy.com/login_](https://dashboard.pci-proxy.com/login)_\) within the Developers - API Keys section._ 
 
 Example: [NoShow sign calculation](https://datatrans.github.io/docs.pci-proxy.com/no-show.html)
 

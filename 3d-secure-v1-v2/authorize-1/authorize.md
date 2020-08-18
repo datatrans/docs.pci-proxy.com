@@ -9,7 +9,7 @@ description: >-
 If you processed authentication only through either [Secure Fields](../authentication-only/securefields-1/) or [3D API](../authentication-only/api-beta.md), this API can be called to authorize the amount against your acquiring contract. 
 
 {% hint style="warning" %}
-* The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md) for more information. 
+* The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
 * Make sure to use our 3D Secure enabled test credit cards [here](../testing-3d-secure.md).
 {% endhint %}
 

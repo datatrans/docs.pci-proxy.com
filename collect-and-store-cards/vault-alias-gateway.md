@@ -114,7 +114,7 @@ Invalid value passed for one of the attributes \(e.g. merchantId\).
 
 
 {% hint style="warning" %}
-The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../guides/pci-proxy-dashboard/api-authentication-data.md) for more information. 
+The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
 {% endhint %}
 
 ### Examples
