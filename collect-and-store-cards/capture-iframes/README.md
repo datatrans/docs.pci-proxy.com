@@ -247,7 +247,7 @@ An example of how to implement this behaviour in modern web applications can be 
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 {% endhint %}
 
-Please also have a look at [Styling](initialization-and-styling.md), [Events](events.md) and [Token API](token-api.md) references.
+Please also have a look at [Styling](initialization-and-styling.md), [Events](events.md) and [Token API]() references.
 
 ## Next up
 

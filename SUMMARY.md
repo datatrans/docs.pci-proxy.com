@@ -9,7 +9,6 @@
   * [Secure Fields \(iframes\)](collect-and-store-cards/capture-iframes/README.md)
     * [Initialization and Styling](collect-and-store-cards/capture-iframes/initialization-and-styling.md)
     * [Events](collect-and-store-cards/capture-iframes/events.md)
-    * [Token API](collect-and-store-cards/capture-iframes/token-api.md)
   * [Vault \(alias gateway\)](collect-and-store-cards/vault-alias-gateway.md)
   * [Secure File Transfer \(SFTP\)](collect-and-store-cards/secure-file-transfer-sftp.md)
 * [Use stored cards](use-stored-cards/README.md)
