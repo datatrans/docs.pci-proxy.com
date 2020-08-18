@@ -46,7 +46,23 @@ In turn, the proxy will return HTTP headers:
 | `X-CC-MATCHES-AC` | Returned number of alias to card replacements. |
 | `X-CUSTOM-MATCHES` | Returned by the proxy in case of a successful replacement. The value represents the number of total \(custom value to token / token to custom value\) replacements that were made.  |
 
-### Special error case:
+### Push Request
+
+PCI Proxy forwards the following HTTP headers to your endpoint: 
+
+| HTTP Header                              | Description |
+| :--- | :--- |
+| `X-CC-ERROR-CODE` | Returned by the proxy in case of error only. See the error table below. |
+| `X-CC-ERROR` | Returned by the proxy in case of error only. See the error table below. |
+| `X-CC-MATCHES` | Returned by the proxy in case of success. The value represents the number of total \(card to alias / alias to card\) replacements that were made. |
+| `X-CC-MATCHES-CA` | Returned number of card to alias replacements. |
+| `X-CC-MATCHES-AC` | Returned number of alias to card replacements. |
+| `X-CVV-MATCHES` | Returned number of cvv to alias replacements.  |
+| `X-CUSTOM-MATCHES` | Returned by the proxy in case of a successful replacement. The value represents the number of total \(custom value to token / token to custom value\) replacements that were made.  |
+| `Pci-Proxy-Masked-Aliases` | Masked card alias format will be returned |
+| `X-CC-FORWARDED-FOR` | Returns the IP address of the origin caller of the Push integration.  |
+
+### Special error case
 
 If the proxy is able to parse and correctly match the replacement targets, but an error occurs during the tokenization or detokenization, the match will be replaced with the following possible constants \(length 16\):
 
