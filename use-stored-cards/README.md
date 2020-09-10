@@ -12,6 +12,10 @@ With the following methods you can use stored card data:
 
 > Let authorized users manually de-tokenize stored card to see it.
 
+{% page-ref page="check.md" %}
+
+> Use this API to validate an existing Token against the VISA, MasterCard and AMEX network
+
 {% page-ref page="authorize-settle/" %}
 
 > Use [Datatrans](https://www.datatrans.ch/en) payment gateway to charge or validate \(check\) a stored card.
