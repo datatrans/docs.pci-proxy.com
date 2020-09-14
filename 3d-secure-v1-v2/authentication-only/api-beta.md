@@ -102,7 +102,7 @@ Url where cardholder will be redirect in case of successful 3D process
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="cancelUrl" type="string" required=true %}
-Url where cardholder will be redirected in case cancled 3D process
+Url where cardholder will be redirected in case of  canceled 3D process
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="errorUrl" type="string" required=true %}
