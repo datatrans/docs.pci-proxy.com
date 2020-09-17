@@ -21,6 +21,7 @@
   * [Check](use-stored-cards/check.md)
   * [Authorize/Settle](use-stored-cards/authorize-settle/README.md)
     * [Defered settlement](use-stored-cards/authorize-settle/defered-settlement.md)
+  * [Manage](use-stored-cards/manage.md)
 * [3D Secure v1 / v2](3d-secure-v1-v2/README.md)
   * [Authentication only](3d-secure-v1-v2/authentication-only/README.md)
     * [SecureFields 3D](3d-secure-v1-v2/authentication-only/securefields-1/README.md)
