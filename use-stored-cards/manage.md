@@ -1,5 +1,5 @@
 ---
-description: Use the following apis to manage your tokens.
+description: Use the following apis to manage your tokens stored in our vault
 ---
 
 # Manage

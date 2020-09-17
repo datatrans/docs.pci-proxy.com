@@ -6,11 +6,11 @@ With the following methods you can use stored card data:
 
 {% page-ref page="forward/" %}
 
-> Pass stored card data on to any PCI-compliant Receiver.
+> Pass stored card data on to any PCI-compliant Receiver
 
 {% page-ref page="show.md" %}
 
-> Let authorized users manually de-tokenize stored card to see it.
+> Let authorized users manually de-tokenize stored card to see it
 
 {% page-ref page="check.md" %}
 
@@ -18,9 +18,9 @@ With the following methods you can use stored card data:
 
 {% page-ref page="authorize-settle/" %}
 
-> Use [Datatrans](https://www.datatrans.ch/en) payment gateway to charge or validate \(check\) a stored card.
+> Use [Datatrans](https://www.datatrans.ch/en) payment gateway to charge or validate \(check\) a stored card
 
 {% page-ref page="manage.md" %}
 
-> Use the manage api to have full control over your tokens.
+> Use the manage api to have full control over your tokens stored in our vault
 
