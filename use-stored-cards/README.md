@@ -20,5 +20,7 @@ With the following methods you can use stored card data:
 
 > Use [Datatrans](https://www.datatrans.ch/en) payment gateway to charge or validate \(check\) a stored card.
 
+{% page-ref page="manage.md" %}
 
+> Use the manage api to have full control over your tokens.
 
