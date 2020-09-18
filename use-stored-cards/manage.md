@@ -116,7 +116,7 @@ Alias which should be deleted
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="" type="string" required=true %}
+{% api-method-parameter name="Content-Type" type="string" required=true %}
 application/json; charset=UTF-8
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
