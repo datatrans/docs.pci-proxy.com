@@ -22,5 +22,5 @@ With the following methods you can use stored card data:
 
 {% page-ref page="manage.md" %}
 
-> Use the manage api to have full control over your tokens stored in our vault
+> Get full control and interact with your tokens stored in our vault
 

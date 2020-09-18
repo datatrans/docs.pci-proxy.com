@@ -1,12 +1,12 @@
 ---
-description: Use the following apis to manage your tokens stored in our vault
+description: Get full control and interact with your tokens stored in our vault
 ---
 
 # Manage
 
 {% hint style="danger" %}
-Please note that the token management api is only working with the latest alias v2 format.   
-Reach out to your PCI Proxy contact if you don't know which alias format you are using. 
+Please note that the token management API is only working with the latest alias v2 format.   
+Reach out to your PCI Proxy contact if you are not sure which alias format you are using. 
 {% endhint %}
 
 {% hint style="info" %}
