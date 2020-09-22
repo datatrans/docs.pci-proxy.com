@@ -4,13 +4,13 @@ description: Learn how to setup your sandbox account and activating it for produ
 
 # Get started with PCI Proxy
 
-Follow this step-by-step guide to setup your sandbox account and to setup your account production ready by yourself within minutes. For more detailed information about the dashboard feature read our [Guides section](guides/pci-proxy-dashboard/).   
+Follow this step-by-step guide to setup your sandbox account and to setup your account production ready by yourself within minutes.   
   
-Drop us a message at [contact@pci-proxy.com](mailto:contact@pci-proxy.com) if you need any further help or advice in terms of setting up your account. 
+Drop us a line at [contact@pci-proxy.com](mailto:contact@pci-proxy.com) if you need any further help or advice in terms of setting up your account. 
 
 ## 1. Create a test account
 
-Sign up here [https://dashboard.pci-proxy.com/signup](https://dashboard.pci-proxy.com/signup) and complete the form to get a free 30-day trial account.   
+Sign up here [https://dashboard.pci-proxy.com/signup](https://dashboard.pci-proxy.com/signup) and complete the form to get a free trial account.   
   
 You will be logged in with admin user rights when signing up. Create additional users and share with your team members as needed. 
 
