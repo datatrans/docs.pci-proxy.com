@@ -37,6 +37,7 @@
   * [Full API Reference](resources/full-api-reference.md)
   * [Request Types](resources/request-types.md)
   * [IP whitelisting](resources/ip-whitelisting.md)
+  * [Token format](resources/token-format.md)
   * [Supported Acquirer](resources/supported-acquirer.md)
   * [Supported Channels](resources/supported-channels.md)
   * [Supported Receivers](resources/supported-receivers.md)

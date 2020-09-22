@@ -14,17 +14,17 @@ Our pricing model is based on actual performance we deliver to you. Unlike other
 
 ## What token formats does PCI Proxy support?
 
+**Alias 2.0** \(Example: _AAABcH0Bq92s3kgAESIAAbGj5NIsAHWC\)_ 
+
+This format consists of 32 digits, letters and - symbol, for full tokenization of the credit card number
+
 **Masked Credit Card Token** \(Example: _1234 56AB CDEF 3456\)_
 
 This format consists of the first 6 digits of the real credit card number, the actual BIN Range \(Bank Identification Number\), followed by the token in form of 6 upper-case letters. The Masked Credit Card Token ends with the last 4 digits of the actual credit card number.
 
 **Full Substitution Token** \(Example:_1198182968382186732_\)
 
-This format consists of 19 digits.
-
-**Alias 2.0**
-
-This format consists of 32 digits, letters and - symbol, for full tokenization of the credit card number
+This format consists of 19 numeric digits.
 
 ## Why do I have to provide the PCI DSS Attestation of Compliance \(AoC\) if I want to pass stored card data on to a 3rd party?
 
