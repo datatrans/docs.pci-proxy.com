@@ -10,6 +10,6 @@ To access the PCI Proxy sandbox API endpoints please follow these steps:
 2. Navigate to to **Developers** - **API Endpoints** menu withing the **Project section**. 
 
 {% hint style="info" %}
-The productive authentication data can be accessed once you activated your account for production. 
+The productive API endpoints can be accessed once you activated your account for production. 
 {% endhint %}
 
