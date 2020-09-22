@@ -14,7 +14,7 @@ PCI Proxy supports the following token format:
 | Masked Card Number | _424242XXXXXX4242_ | AN20 | Masked card number is returned with all APIs.  |
 
 {% hint style="warning" %}
-Although all formats are supported and compliant according PCI DSS we highly recommend to use `Alias 2.0` format to run certain operations. Please refer to [Convert API](../use-stored-cards/) if you want to migrate from a legacy to the new format. 
+Although all formats are supported and compliant according PCI DSS we highly recommend to use `Alias 2.0` format to run certain operations. Please refer to [Convert API](https://docs.pci-proxy.com/use-stored-cards/manage) if you want to migrate from a legacy to the new format. 
 {% endhint %}
 
 
