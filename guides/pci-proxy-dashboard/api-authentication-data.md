@@ -4,7 +4,7 @@ description: Access PCI Proxy API authentication data
 
 # API Authentication data
 
-The PCI Proxy APIs require different authentication methods depending on the used API: 
+The PCI Proxy APIs require different authentication methods depending on the called API: 
 
 * \*\*\*\*[**API Key**](api-authentication-data.md#api-key) - is used **only** for the following endpoints:
   * https://sandbox.pci-proxy.com/v1/pull
@@ -19,9 +19,10 @@ The productive authentication data can be accessed once you activated your accou
 
 ## API Key
 
-Use your **API Key** as the value for the **`pci-proxy-api-key`** HTTP header to send **PULL/PUSH** requests. 
+Use your API key as the value for the `pci-proxy-api-key` HTTP header to send **PULL/PUSH** requests.   
+It is possible to create and name multiple API keys each project. 
 
-You will find this value under Developers menu item in the Project section in [PCI Proxy Dashboard](https://dashboard.pci-proxy.com/):
+You can access the API key menu within the Developers menu item in the Project section in [PCI Proxy Dashboard](https://dashboard.pci-proxy.com/):
 
 ![API Keys in PCI Proxy Dashboard](../../.gitbook/assets/image%20%281%29.png)
 
@@ -29,10 +30,10 @@ You will find this value under Developers menu item in the Project section in [P
 
 Generate the Basic Authentication HTTP header using: 
 
-* **`API Username`** as the basic authentication username value 
-* **`API Password`** as the basic authentication password value
+* `API Username / Merchant ID` as the basic authentication username value 
+* `API Password` as the basic authentication password value
 
-You will find this values under Developers menu item in the Project section in [PCI Proxy Dashboard](https://dashboard.pci-proxy.com/).
+You can access those values within the Developers menu item in the Project section in [PCI Proxy Dashboard](https://dashboard.pci-proxy.com/).
 
 ![API Username &amp; API Password in PCI Proxy Dashboard](../../.gitbook/assets/2020-07-21-15_43_25-window.png)
 
