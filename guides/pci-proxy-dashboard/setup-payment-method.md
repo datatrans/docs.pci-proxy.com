@@ -4,7 +4,7 @@ description: Setup your prefered payment method
 
 # Setup payment method
 
-The PCI Proxy dashboard allows you to choose between **bank transfer** and **credit card** as a payment method whereas bank transfer is the default payment method. 
+Choose between **bank transfer** and **credit card** as a payment method whereas bank transfer is the default payment method. 
 
 How to change to my payment method? 
 
