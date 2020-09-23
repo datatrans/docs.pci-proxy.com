@@ -6,7 +6,7 @@ description: Learn how to setup your sandbox account and activating it for produ
 
 Follow this step-by-step guide to setup your sandbox account and to setup your account production ready by yourself within minutes.   
   
-Drop us a line at [contact@pci-proxy.com](mailto:contact@pci-proxy.com) if you need any further help or advice in terms of setting up your account. 
+Drop us a line at [support@pci-proxy.com](mailto:support@pci-proxy.com) if you need any further help or advice in terms of setting up your account. 
 
 ## 1. Create a test account
 
