@@ -37,7 +37,7 @@ curl https://sandbox.pci-proxy.com/v1/pull \
 
 In turn, the proxy will return HTTP headers:
 
-| HTTP Header                                                                               | Description |
+| HTTP Header                                                                          | Description |
 | :--- | :--- |
 | `x-cc-error-code` | Returned by the proxy in case of error only. See the error table below. |
 | `x-cc-errror` | Returned by the proxy in case of error only. See the error table below. |
@@ -52,7 +52,7 @@ In turn, the proxy will return HTTP headers:
 
 PCI Proxy forwards the following HTTP headers to your endpoint: 
 
-| HTTP Header                                                                                 | Description |
+| HTTP Header                                                                            | Description |
 | :--- | :--- |
 | `x-cc-error-code` | Returned by the proxy in case of error only. See the error table below. |
 | `x-cc-errror` | Returned by the proxy in case of error only. See the error table below. |
