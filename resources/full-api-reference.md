@@ -37,30 +37,33 @@ curl https://sandbox.pci-proxy.com/v1/pull \
 
 In turn, the proxy will return HTTP headers:
 
-| HTTP Header                              | Description |
+| HTTP Header                                                                                  | Description |
 | :--- | :--- |
-| `X-CC-ERROR-CODE` | Returned by the proxy in case of error only. See the error table below. |
-| `X-CC-ERROR` | Returned by the proxy in case of error only. See the error table below. |
-| `X-CC-MATCHES` | Returned by the proxy in case of success. The value represents the number of total \(card to alias / alias to card\) replacements that were made. |
-| `X-CC-MATCHES-CA` | Returned number of card to alias replacements. |
-| `X-CC-MATCHES-AC` | Returned number of alias to card replacements. |
-| `X-CUSTOM-MATCHES` | Returned by the proxy in case of a successful replacement. The value represents the number of total \(custom value to token / token to custom value\) replacements that were made.  |
+| `x-cc-error-code` | Returned by the proxy in case of error only. See the error table below. |
+| `x-cc-errror` | Returned by the proxy in case of error only. See the error table below. |
+| `x-cc-matches` | Returned by the proxy in case of success. The value represents the number of total \(card to alias / alias to card\) replacements that were made. |
+| `x-cc-matches-ca` | Returned number of card to alias replacements. |
+| `x-cc-matches-ac` | Returned number of alias to card replacements. |
+| `x-cvv-matches` | Returned number of cvv to alias replacements.  |
+| `x-custom-matches` | Returned by the proxy in case of a successful replacement. The value represents the number of total \(custom value to token / token to custom value\) replacements that were made.  |
+| `x-cc-proxy-action-id` | Unique request identifier. |
 
 ### Push Request
 
 PCI Proxy forwards the following HTTP headers to your endpoint: 
 
-| HTTP Header                              | Description |
+| HTTP Header                                                                                    | Description |
 | :--- | :--- |
-| `X-CC-ERROR-CODE` | Returned by the proxy in case of error only. See the error table below. |
-| `X-CC-ERROR` | Returned by the proxy in case of error only. See the error table below. |
-| `X-CC-MATCHES` | Returned by the proxy in case of success. The value represents the number of total \(card to alias / alias to card\) replacements that were made. |
-| `X-CC-MATCHES-CA` | Returned number of card to alias replacements. |
-| `X-CC-MATCHES-AC` | Returned number of alias to card replacements. |
-| `X-CVV-MATCHES` | Returned number of cvv to alias replacements.  |
-| `X-CUSTOM-MATCHES` | Returned by the proxy in case of a successful replacement. The value represents the number of total \(custom value to token / token to custom value\) replacements that were made.  |
-| `Pci-Proxy-Masked-Aliases` | Masked card alias format will be returned |
-| `X-CC-FORWARDED-FOR` | Returns the IP address of the origin caller of the Push integration.  |
+| `x-cc-error-code` | Returned by the proxy in case of error only. See the error table below. |
+| `x-cc-errror` | Returned by the proxy in case of error only. See the error table below. |
+| `x-cc-matches` | Returned by the proxy in case of success. The value represents the number of total \(card to alias / alias to card\) replacements that were made. |
+| `x-cc-matches-ca` | Returned number of card to alias replacements. |
+| `x-cc-matches-ac` | Returned number of alias to card replacements. |
+| `x-cvv-matches` | Returned number of cvv to alias replacements.  |
+| `x-custom-matches` | Returned by the proxy in case of a successful replacement. The value represents the number of total \(custom value to token / token to custom value\) replacements that were made.  |
+| `pci-proxy-masked-aliases` | Masked card alias format will be returned |
+| `x-cc-forwarded-for` | Returns the IP address of the origin caller of the Push integration.  |
+| `x-cc-proxy-action-id` | Unique request identifier. |
 
 ### Special error case
 
