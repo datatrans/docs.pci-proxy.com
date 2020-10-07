@@ -18,7 +18,7 @@ description: >-
 {% hint style="warning" %}
 **3D Secure Enrollment Requirements**
 
-Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). 
+Secure Fields 3D requires a 3D Secure enrolled acquiring contract. Either deposited on your merchantID or sent dynamically in the initial request to `/v1/transactions`
 {% endhint %}
 
 ## Step 1: Initial Server-to-Server call
@@ -172,25 +172,19 @@ curl -X POST \
         "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40", 
         "expiryMonth": "12",
         "expiryYear": "21",
-        "3D": {
-            "deviceChannel": "02",
-            "messageCategory": "01",
-            "threeDSCompInd": "Y",
-            "threeDSRequestor": {},
-            "threeDSServerTransID": "df4b3490-db44-4a88-9619-ab173ff76fbe",
-            "cardholderAccount": {},
-            "cardholder": {},
-            "relaxRegionalValidationRules": false,
-            "purchase": {},
-            "acquirer": {},
-            "merchant": {},
-            "broadInfo": {},
-            "deviceRenderOptions": {},
-            "messageExtension": [],
-            "browserInformation": {},
-            "threeRIInd": "02",
-            "sdkInformation": {}
+         "3D": {
+            "acquirer": {
+                "acquirerMerchantId": "1354656",
+                "acquirerBin": "9854128"
+            },
+            "merchant": {
+                "mcc": "4722",
+                "merchantCountryCode": "756",
+                "merchantName": "Datatrans AG",
+                "threeDSRequestorId": "OTA",
+                "threeDSRequestorName": "Datatrans AG"
             }
+        }
     },
     "option": {
         "authenticationOnly": true

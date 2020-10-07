@@ -11,14 +11,14 @@ description: >-
 1. \*\*\*\*[**Sign up** ](https://dashboard.pci-proxy.com/signup)for a free PCI Proxy sandbox account.
 
 {% hint style="info" %}
-* This service requires basic authentication. Please refer to [Authentication](../../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) to retrieve required crendetials. 
+* This service requires basic authentication. Please refer to [Authentication](../../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) to retrieve required credentials. 
 * Make sure to use our 3D Secure enabled test credit cards [here](../../testing-3d-secure.md).
 {% endhint %}
 
 {% hint style="warning" %}
 **3D Secure Enrollment Requirements**
 
-Secure Fields 3D requires a 3D Secure enrolled acquiring contract that needs to be activated on your account \(`merchantId`\). 
+Secure Fields 3D requires a 3D Secure enrolled acquiring contract. Either deposited on your merchantID or sent dynamically in the request to `/v1/transactions/secureFields`
 {% endhint %}
 
 ## Step 1: Initial Server-to-Server call
@@ -119,26 +119,20 @@ curl -v -u 1100018081:2fgVhQOYZK0io9ct 'https://api.sandbox.datatrans.com/v1/tra
     "currency" : "EUR",
     "returnUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp",
     "card": {
-        "3D": {
-            "deviceChannel": "02",
-            "messageCategory": "01",
-            "threeDSCompInd": "Y",
-            "threeDSRequestor": {},
-            "threeDSServerTransID": "df4b3490-db44-4a88-9619-ab173ff76fbe",
-            "cardholderAccount": {},
-            "cardholder": {},
-            "relaxRegionalValidationRules": false,
-            "purchase": {},
-            "acquirer": {},
-            "merchant": {},
-            "broadInfo": {},
-            "deviceRenderOptions": {},
-            "messageExtension": [],
-            "browserInformation": {},
-            "threeRIInd": "02",
-            "sdkInformation": {}
+         "3D": {
+            "acquirer": {
+                "acquirerMerchantId": "1354656",
+                "acquirerBin": "9854128"
+            },
+            "merchant": {
+                "mcc": "4722",
+                "merchantCountryCode": "756",
+                "merchantName": "Datatrans AG",
+                "threeDSRequestorId": "OTA",
+                "threeDSRequestorName": "Datatrans AG"
             }
         }
+    }
   }'
 ```
 {% endtab %}
