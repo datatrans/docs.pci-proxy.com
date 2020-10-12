@@ -179,10 +179,7 @@ curl -X POST \
             },
             "merchant": {
                 "mcc": "4722",
-                "merchantCountryCode": "756",
-                "merchantName": "Datatrans AG",
-                "threeDSRequestorId": "OTA",
-                "threeDSRequestorName": "Datatrans AG"
+                "merchantName": "Example Travel Ltd."
             }
         }
     },
@@ -260,6 +257,53 @@ Response body:
 ```
 {% endtab %}
 {% endtabs %}
+
+#### 3D-Secure Acquirer related data
+
+To use the Authentication only API you need to get the following information from your acquirer as they are part of the 3D Secure 2 enrolment process between your acquirer and card schemes.
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">Name</th>
+      <th style="text-align:left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><code>acquirerMerchantId</code>
+      </td>
+      <td style="text-align:left">
+        <p>Acquirer Merchant ID</p>
+        <p>Acquirer-assigned Merchant identifier</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>acquirerBin</code>
+      </td>
+      <td style="text-align:left">
+        <p>Acquirer BIN</p>
+        <p>Acquiring institution identification code</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>mcc</code>
+      </td>
+      <td style="text-align:left">
+        <p>Merchant Category Code</p>
+        <p>Describes the Merchant&#x2019;s type of business, product or service.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>merchantName</code>
+      </td>
+      <td style="text-align:left">
+        <p>Merchant Name</p>
+        <p>Name which will be displayed on the ACS page.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Step 2: Display a 3D secure challenge
 

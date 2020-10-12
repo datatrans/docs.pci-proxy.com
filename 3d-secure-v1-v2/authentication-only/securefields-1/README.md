@@ -126,7 +126,7 @@ curl -v -u 1100018081:2fgVhQOYZK0io9ct 'https://api.sandbox.datatrans.com/v1/tra
             },
             "merchant": {
                 "mcc": "4722",
-                "merchantName": "Example Travel Ltd.",
+                "merchantName": "Example Travel Ltd."
             }
         }
     }
