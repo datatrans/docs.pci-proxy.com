@@ -15,7 +15,7 @@ Due to logging of sensitive cardholder data the Traffic Inspector is currently a
 
 To activate the record function choose an integration assigned to your account and hit the Start recording button.
 
-![](../../.gitbook/assets/image%20%284%29.png)
+![How to activate traffic logging](../../.gitbook/assets/image%20%2816%29.png)
 
 ### Get an overview about logged requests 
 
@@ -23,11 +23,11 @@ Once you sent data to the PCI Proxy API wait until the record has been loaded in
 
 You can have multiple activated sessions \(integrations\). Choose the sessions you want to view data in the top right menu by simply clicking on it. 
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![Request overview](../../.gitbook/assets/image%20%2817%29.png)
 
 ### View detailed request data
 
 To access the entire stream of a request simply click on the record you want to view. Once done you can view request specific data of the payload like HTTP properties, multiple Headers and the Body of the request and response.  All those information are grouped as a stream. From the very beginning of the request until the end you see all performed operations including internal PCI Proxy application processing time. 
 
-![](../../.gitbook/assets/image%20%2811%29.png)
+![Request data](../../.gitbook/assets/image%20%2815%29.png)
 
