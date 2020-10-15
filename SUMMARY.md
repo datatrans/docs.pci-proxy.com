@@ -51,6 +51,7 @@
   * [Add/Create Integrations](guides/pci-proxy-dashboard/add-integrations.md)
   * [API Endpoints](guides/pci-proxy-dashboard/api-endpoints.md)
   * [API Authentication data](guides/pci-proxy-dashboard/api-authentication-data.md)
+  * [Traffic Inspector](guides/pci-proxy-dashboard/traffic-inspector.md)
   * [Setup payment method](guides/pci-proxy-dashboard/setup-payment-method.md)
   * [Get production ready / Go-live](guides/pci-proxy-dashboard/get-production-ready.md)
   * [Terminate your contract](guides/pci-proxy-dashboard/terminate-your-contract.md)
