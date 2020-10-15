@@ -39,6 +39,8 @@ Don't hesitate to talk to us via email, phone, or Slack. We love to help you wit
 
 Phone: +41 44 256 81 91  
 Email: [contact@pci-proxy.com](mailto:contact@pci-proxy.com)   
+
+ [PCI Proxy - powered by Datatrans AG](https://www.datatrans.com/)
 {% endhint %}
 
 
