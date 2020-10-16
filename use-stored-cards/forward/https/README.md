@@ -33,5 +33,5 @@ Forwarding card data to a remote server via HTTPS can work in two ways. In gener
 | You start the request. | The Receiver starts the request. |
 | ![](../../../.gitbook/assets/receiver_pull_status_quo_color%20%282%29.png) | ![](../../../.gitbook/assets/receiver_push_status_quo_color.png) |
 
-## 3. [Continue with PULL method  ](../../../collect-and-store-cards/filter-payloads/pull-method.md)       [Continue with PUSH method](../../../collect-and-store-cards/filter-payloads/push-method.md)
+## 3. [Continue with PULL method](pull-method.md)          [Continue with PUSH method](push-method.md)
 
