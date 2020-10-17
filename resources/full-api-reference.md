@@ -101,3 +101,36 @@ Error cases \(returned with headers X-CC-ERROR-CODE and X-CC-ERROR\):
 | 800 | Connection error | Proxy could not connect to 3rd party / error that cause no response \(read timeout or DNS error\). Proxy returns HTTP status 504 \(Gateway Timeout\) and an empty response. |
 | 900 | Proxy error | Uncategorized system error |
 
+## Status check
+
+Please use the following endpoints for status/health checks:
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">
+        <p></p>
+        <p></p>
+      </th>
+      <th style="text-align:left">Sandbox environment</th>
+      <th style="text-align:left">Production environment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">Filter APIs</td>
+      <td style="text-align:left"><a href="https://sandbox.pci-proxy.com/health">https://sandbox.pci-proxy.com/health</a>
+      </td>
+      <td style="text-align:left"><a href="https://api.pci-proxy.com/health">https://api.pci-proxy.com/health</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">Show API, Secure Fields</td>
+      <td style="text-align:left"><a href="https://pay.sandbox.datatrans.com/upp/jsonp-health-check?callback=foo">https://pay.sandbox.datatrans.com/upp/jsonp-health-check?callback=foo</a>
+      </td>
+      <td style="text-align:left"><a href="https://pay.datatrans.com/upp/jsonp-health-check?callback=foo">https://pay.datatrans.com/upp/jsonp-health-check?callback=foo</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
