@@ -410,7 +410,7 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
 {% endtab %}
 {% endtabs %}
 
-#### 3-object field name mapping  
+#### 3D object field name mapping  
 
 <table>
   <thead>
@@ -463,6 +463,27 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
     </tr>
   </tbody>
 </table>
+
+#### Directory Response \(Transaction status after `ARes`\)
+
+| Value | 3Dv1 | 3Dv2 |
+| :--- | :--- | :--- |
+| Y | enrolled | authenticated |
+| N | not enrolled | authentication failed |
+| U | not available | not available |
+| C |  | challenge needed |
+| R |  | rejected |
+
+#### Authentication Response \(Transaction status after `RReq` \(Challenge flow\)\)
+
+| Value  | 3Dv1 | 3Dv2 |
+| :--- | :--- | :--- |
+| Y | authenticated | authenticated |
+| N | authentication failed | authentication failed |
+| U | not available | not available |
+| A | authentication attempt | authentication attempt |
+| C | process incomplete | process incomplete |
+| D | not enrolled |  |
 
 ## Step 7: Forward 3D data
 

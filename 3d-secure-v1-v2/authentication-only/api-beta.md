@@ -507,6 +507,27 @@ curl -X GET \
   </tbody>
 </table>
 
+#### Directory Response \(Transaction status after `ARes`\)
+
+| Value | 3Dv1 | 3Dv2 |
+| :--- | :--- | :--- |
+| Y | enrolled | authenticated |
+| N | not enrolled | authentication failed |
+| U | not available | not available |
+| C |  | challenge needed |
+| R |  | rejected |
+
+#### Authentication Response \(Transaction status after `RReq` \(Challenge flow\)\)
+
+| Value  | 3Dv1 | 3Dv2 |
+| :--- | :--- | :--- |
+| Y | authenticated | authenticated |
+| N | authentication failed | authentication failed |
+| U | not available | not available |
+| A | authentication attempt | authentication attempt |
+| C | process incomplete | process incomplete |
+| D | not enrolled |  |
+
 ## Step 4: Forward 3D data
 
 The received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateways. If you decide to use Datatrans payment gateway please continue with our [Authorize](../authorize-1/authorize.md) API.
