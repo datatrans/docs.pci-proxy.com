@@ -232,6 +232,7 @@ Tokenization with CVV not found
 | Error message | Cause / Explanation |
 | :--- | :--- |
 | Tokenization expired | The `transactionId` has expired. Please note that it is valid for 30 minutes only. |
+| Tokenization not found | The merchant id used for the transaction id creation does not match the merchant id used for the GET Token call. |
 
 ## Examples
 
