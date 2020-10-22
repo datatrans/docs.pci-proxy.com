@@ -38,7 +38,7 @@
   * [Request Types](resources/request-types.md)
   * [Token format](resources/token-format.md)
   * [IP whitelisting](resources/ip-whitelisting.md)
-  * [White label PCI Proxy](resources/domain-white-label-process.md)
+  * [Custom domain](resources/domain-white-label-process.md)
   * [Supported Acquirer](resources/supported-acquirer.md)
   * [Supported Channels](resources/supported-channels.md)
   * [Supported Receivers](resources/supported-receivers.md)

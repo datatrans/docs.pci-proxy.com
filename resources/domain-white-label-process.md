@@ -1,4 +1,4 @@
-# White label PCI Proxy
+# Custom domain
 
 The White label PCI Proxy functionality allows you to use your very own domain name or subdomain instead of our PCI Proxy URL, while still being out of PCI DSS scope. 
 
