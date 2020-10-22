@@ -16,13 +16,11 @@ Once we will have all the above information, we will order the SSL certificate f
 
 After the certificate is issued, we will provide you with the CNAME value, we will activate our server configuration and then we will verify together that everything works as expected.
 
-## Renewal
-
-Given the fact that starting from the end of August 2020, trusted SSL certificates are no longer available for validity periods longer than 1 year, we will renew the certificates issued by Digicert and you will be in contact with our system engineers for this process.
-
-
-
 {% hint style="info" %}
 We can start the white labeling process after the contract is signed and the production environment is activated from our side. 
 {% endhint %}
+
+## Renewal
+
+Given the fact that starting from the end of August 2020, trusted SSL certificates are no longer available for validity periods longer than 1 year, we will renew the certificates issued by Digicert and you will be in contact with our system engineers for this process.
 
