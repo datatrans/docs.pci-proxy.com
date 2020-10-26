@@ -58,7 +58,7 @@ Transaction amount in the currency's smalles unit. For example use 1000 for EU 1
 Your 3D process return URL
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="card" type="object" required=false %}
+{% api-method-parameter name="3D" type="object" required=false %}
 Object used for additional 3D v2 parameters
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -118,16 +118,14 @@ curl -v -u 1100018081:2fgVhQOYZK0io9ct 'https://api.sandbox.datatrans.com/v1/tra
     "amount" : 1000,
     "currency" : "EUR",
     "returnUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp",
-    "card": {
-         "3D": {
-            "acquirer": {
-                "acquirerMerchantId": "1354656",
-                "acquirerBin": "9854128"
-            },
-            "merchant": {
-                "mcc": "4722",
-                "merchantName": "Example Travel Ltd."
-            }
+    "3D": {
+        "acquirer": {
+            "acquirerMerchantId": "1354656",
+            "acquirerBin": "9854128"
+        },
+        "merchant": {
+            "mcc": "4722",
+            "merchantName": "Example Travel Ltd."
         }
     }
   }'
