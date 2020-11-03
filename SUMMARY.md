@@ -27,7 +27,7 @@
     * [SecureFields 3D](3d-secure-v1-v2/authentication-only/securefields-1/README.md)
       * [Initialization and Styling](3d-secure-v1-v2/authentication-only/securefields-1/initialization-and-styling.md)
       * [Events](3d-secure-v1-v2/authentication-only/securefields-1/events.md)
-    * [API 3D](3d-secure-v1-v2/authentication-only/api-beta.md)
+    * [API 3D](3d-secure-v1-v2/authentication-only/api-3d.md)
   * [Authorize](3d-secure-v1-v2/authorize-1/README.md)
     * [Authorize an authenticated transaction](3d-secure-v1-v2/authorize-1/authorize.md)
     * [Authorize with 3rd party authenticated data](3d-secure-v1-v2/authorize-1/authorize-with-3rd-party-authenticated-data.md)
