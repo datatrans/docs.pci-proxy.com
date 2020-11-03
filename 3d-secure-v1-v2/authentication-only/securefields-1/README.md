@@ -342,7 +342,7 @@ Returns Creditcard and CVV code tokens as well as the "3D" object
         }
     },
     "card": {
-        "alias": "520000RIVWAS0080",
+        "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
         "masked": "520000xxxxxx0080",
         "aliasCVV":"WWguOT-vQKybTMo1CALTjjwZ",
         "expiryMonth": "12",
