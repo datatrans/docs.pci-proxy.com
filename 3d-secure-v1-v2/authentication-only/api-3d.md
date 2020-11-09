@@ -223,11 +223,11 @@ curl -X POST \
             "acquirer": {
             		"acquirerMerchantId": "1234567",
             		"acquirerBin": "9876543"
-            	},
+            },
             "merchant": {
             		"mcc": "4722",
             		"merchantName": "Example Travel Ltd."
-            	}
+            }
             "broadInfo": {},
             "deviceRenderOptions": {},
             "messageExtension": [],
