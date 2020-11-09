@@ -11,7 +11,7 @@ description: >-
 1. \*\*\*\*[**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
 
 {% hint style="info" %}
-* This service requires basic authentication. Please refer to [Authentication](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) to retrieve required crendetials. 
+* This service requires basic authentication. Please refer to [Authentication](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) to retrieve required credentials. 
 * Make sure to use our 3D Secure enabled test credit cards [here](../testing-3d-secure.md).
 {% endhint %}
 
@@ -199,7 +199,7 @@ curl -X POST \
 ```java
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions \
-  -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT,Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
+  -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
   -d '{
     "amount": 1000,
     "currency": "EUR",
