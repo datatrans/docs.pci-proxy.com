@@ -264,6 +264,12 @@ Response body:
 {% endtab %}
 {% endtabs %}
 
+#### 
+
+{% hint style="info" %}
+Please let us know if you need to make requests with plain text card number so we can configure your account accordingly.
+{% endhint %}
+
 #### 3D-Secure Acquirer related data
 
 To use the Authentication only API you need to get the following information from your acquirer as they are part of the 3D Secure 2 enrolment process between your acquirer and card schemes.
