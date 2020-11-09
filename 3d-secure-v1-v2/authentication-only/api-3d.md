@@ -158,7 +158,7 @@ Refer to the official EMVCo 3D specification 2.1.0 for parameter requirements se
 #### Examples
 
 {% tabs %}
-{% tab title="Request with masked token" %}
+{% tab title="Request with token" %}
 ```javascript
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions \
