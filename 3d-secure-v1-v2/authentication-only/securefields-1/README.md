@@ -18,7 +18,7 @@ description: >-
 {% hint style="warning" %}
 **3D Secure Enrollment Requirements**
 
-Secure Fields 3D requires a 3D Secure enrolled acquiring contract for each card brand. Those 3D acquiring data needs to be sent in the intial call to `/v1/transactions/secureFields` 
+Secure Fields 3D requires a 3D Secure enrolled acquiring contract for each card brand. Those 3D acquiring data needs to be sent in the initial call to `/v1/transactions/secureFields` 
 {% endhint %}
 
 ## Step 1: Initial Server-to-Server call
