@@ -18,7 +18,7 @@ description: >-
 {% hint style="warning" %}
 **3D Secure Enrollment Requirements**
 
-Secure Fields 3D requires a 3D Secure enrolled acquiring contract. Either deposited on your merchantID or sent dynamically in the request to `/v1/transactions/secureFields`
+Secure Fields 3D requires a 3D Secure enrolled acquiring contract for each card brand. Those 3D acquiring data needs to be sent in the intial call to `/v1/transactions/secureFields` 
 {% endhint %}
 
 ## Step 1: Initial Server-to-Server call
@@ -58,8 +58,8 @@ Transaction amount in the currency's smallest unit. For example use 1000 for EU 
 Your 3D process return URL
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="3D" type="object" required=false %}
-Object used for additional 3D v2 parameters
+{% api-method-parameter name="VIS" type="object" required=true %}
+Object used 3D acquiring contract data
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -118,16 +118,43 @@ curl -v -u 1100018081:2fgVhQOYZK0io9ct 'https://api.sandbox.datatrans.com/v1/tra
     "amount" : 1000,
     "currency" : "EUR",
     "returnUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp",
-    "3D": {
-        "acquirer": {
-            "acquirerMerchantId": "1354656",
-            "acquirerBin": "9854128"
-        },
-        "merchant": {
-            "mcc": "4722",
-            "merchantName": "Example Travel Ltd."
+    "VIS": {
+        "3D": {          
+            "acquirer": {
+                "acquirerBin": "658942",
+                "acquirerMerchantId": "XCGHPB1U0ZIK459"
+            },
+            "merchant": {
+                "mcc": "4722",
+                "merchantName": "Test-OTA"
+            }
+        }
+    },
+    "ECA": {
+        "3D": {         
+            "acquirer": {
+                "acquirerBin": "357941",
+                "acquirerMerchantId": "XLKDPB1U0ZIK658"
+            },
+            "merchant": {
+                "mcc": "4722",
+                "merchantName": "Test-OTA"
+            }
+        }
+    }.
+   "AMX": {
+        "3D": {         
+            "acquirer": {
+                "acquirerBin": "",
+                "acquirerMerchantId": "9999999999"
+            },
+            "merchant": {
+                "mcc": "4722",
+                "merchantName": "Test-OTA"
+            }
         }
     }
+ }
   }'
 ```
 {% endtab %}
