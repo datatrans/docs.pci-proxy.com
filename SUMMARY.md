@@ -25,6 +25,7 @@
 * [3D Secure v1 / v2](3d-secure-v1-v2/README.md)
   * [Authentication only](3d-secure-v1-v2/authentication-only/README.md)
     * [SecureFields 3D](3d-secure-v1-v2/authentication-only/securefields-1/README.md)
+      * [Update a transaction](3d-secure-v1-v2/authentication-only/securefields-1/update-a-transaction.md)
       * [Initialization and Styling](3d-secure-v1-v2/authentication-only/securefields-1/initialization-and-styling.md)
       * [Events](3d-secure-v1-v2/authentication-only/securefields-1/events.md)
     * [API 3D](3d-secure-v1-v2/authentication-only/api-3d.md)
