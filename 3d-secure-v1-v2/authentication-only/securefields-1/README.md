@@ -51,7 +51,7 @@ Transaction amount in the currency's smallest unit. For example use 1000 for EU 
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
-3 letter ISO-4217 character. For example CHF or USD
+3 letter ISO-4217 character. For example `EUR` or `USD`
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="returnUrl" type="string" required=true %}
@@ -59,7 +59,15 @@ Your 3D process return URL
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="VIS" type="object" required=true %}
-Object used 3D acquiring contract data
+Object used for VISA 3D acquiring data
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="ECA" type="object" required=true %}
+Object used for Mastercard 3D acquring data
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="AMX" type="object" required=true %}
+Object used for AMEX 3D acquiring data
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
