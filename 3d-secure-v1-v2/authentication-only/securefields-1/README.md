@@ -46,16 +46,20 @@ API consumes application/json; charset=UTF-8
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="amount" type="integer" required=true %}
+{% api-method-parameter name="amount" type="integer" required=false %}
 Transaction amount in the currency's smallest unit. For example use 1000 for EU 10.00
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
-3 letter ISO-4217 character. For example `EUR` or `USD`
+3 letter ISO-4217 character. For example EUR or USD
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="returnUrl" type="string" required=true %}
 Your 3D process return URL
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="AMX" type="object" required=true %}
+Object used for AMEX 3D acquiring data
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="VIS" type="object" required=true %}
@@ -63,11 +67,11 @@ Object used for VISA 3D acquiring data
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="ECA" type="object" required=true %}
-Object used for Mastercard 3D acquring data
+Object used for Mastercard 3D acquiring data
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="AMX" type="object" required=true %}
-Object used for AMEX 3D acquiring data
+{% api-method-parameter name="3D" type="object" required=false %}
+Object used for additional 3D v2 parameters
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
