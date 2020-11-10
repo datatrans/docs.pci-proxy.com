@@ -37,7 +37,7 @@ Initial Server-to-Server call to retrieve transactionId and submit optional 3D p
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==  
-see Setup
+see API Authentication data
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Content-Type" type="string" required=true %}
@@ -120,8 +120,9 @@ Amount must be at least in the currency's smallest unit.
 {% tabs %}
 {% tab title="Request" %}
 ```java
-curl -v -u 1100018081:2fgVhQOYZK0io9ct 'https://api.sandbox.datatrans.com/v1/transactions/secureFields' \
-    -H 'Content-Type: application/json; charset=UTF-8' \
+curl -L -X POST 'https://api.sandbox.datatrans.com/v1/transactions/secureFields' \
+-H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr' \
+-H 'Content-Type: application/json' \
     -d '{
     "amount" : 1000,
     "currency" : "EUR",
@@ -162,8 +163,7 @@ curl -v -u 1100018081:2fgVhQOYZK0io9ct 'https://api.sandbox.datatrans.com/v1/tra
             }
         }
     }
- }
-  }'
+ }' 
 ```
 {% endtab %}
 
