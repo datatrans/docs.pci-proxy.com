@@ -104,7 +104,7 @@ Amount must be at least in the currency's smallest unit.
 {% endapi-method %}
 
 {% hint style="info" %}
- Refer to the official EMVCo 3D specification 2.1.0 for parameter requirements sent in the `3D` object. [https://www.emvco.com/emv-technologies/3d-secure/](https://www.emvco.com/emv-technologies/3d-secure/)
+3D Secure 2 allows you send additional, optional data to ensure increased acceptance and frictionless rate at the issuer. Please refer to the official EMVCo 3D specification 2.1.0 for parameter requirements sent in the card brands object. [https://www.emvco.com/emv-technologies/3d-secure/](https://www.emvco.com/emv-technologies/3d-secure/) or contact us for more information. 
 {% endhint %}
 
 #### The transactionId returned in the response of the init call
@@ -222,6 +222,10 @@ To use the Authentication only API you need to get the following information fro
     </tr>
   </tbody>
 </table>
+
+{% hint style="warning" %}
+Above mentioned data are only required for Visa and Mastercard. If you need to authenticate AMEX as well please contact us. 
+{% endhint %}
 
 ## Step 2: Setup SecureFields
 
