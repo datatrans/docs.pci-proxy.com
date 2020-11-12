@@ -69,10 +69,6 @@ Object used for VISA 3D acquiring data
 {% api-method-parameter name="ECA" type="object" required=true %}
 Object used for Mastercard 3D acquiring data
 {% endapi-method-parameter %}
-
-{% api-method-parameter name="3D" type="object" required=false %}
-Object used for additional 3D v2 parameters
-{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
