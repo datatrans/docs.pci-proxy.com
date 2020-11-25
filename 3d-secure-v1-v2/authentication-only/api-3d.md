@@ -522,6 +522,7 @@ curl -X GET \
 | U | not available | not available |
 | C |  | challenge needed |
 | R |  | rejected |
+| A |  | authentication attempt |
 
 #### Authentication Response \(Transaction status after `RReq` \(Challenge flow\)\)
 

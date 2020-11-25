@@ -510,6 +510,7 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
 | U | not available | not available |
 | C |  | challenge needed |
 | R |  | rejected |
+| A |  | authentication attempt |
 
 #### Authentication Response \(Transaction status after `RReq` \(Challenge flow\)\)
 
