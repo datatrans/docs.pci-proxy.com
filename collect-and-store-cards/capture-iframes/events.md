@@ -70,7 +70,7 @@ Where the `event` callback object has the following structure:
     "brand": "VISA DEBIT",
     "issuer": "Some Bank",
     "type": "debit", // debit or credit
-    "distinction": "unknown", // consumer, corporate or unknown
+    "usage": "unknown", // consumer, corporate or unknown
     "country": "US" // 2 letter ISO 3166-1 alpha-2 country code
   }
 }
