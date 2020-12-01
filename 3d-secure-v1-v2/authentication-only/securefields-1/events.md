@@ -47,36 +47,6 @@ Where the `event` callback object has the following structure:
 ```
 {% endtab %}
 
-{% tab title="on success" %}
-The success event will be emitted if the tokenization was successful.
-
-```javascript
-secureFields.on("success", function(data) {
-  if(data.transactionId) {
-    // send data.transactionId and the
-    // rest of the form to your server
-  }
-});
-```
-
-Where the `event` callback object has the following structure:
-
-```javascript
-{
-  "result":"success",
-  "transactionId":"180403204621339015",
-  "cardInfo":
-  {
-    "brand":"VISA DEBIT",
-    "issuer":"Some Bank",
-    "type":"debit", // debit or credit
-    "usage":"unknown", // consumer or corporate
-    "country":"US"
-  }
-}
-```
-{% endtab %}
-
 {% tab title="on change" %}
 The `change` event will be emitted whenever one of the following events are getting triggered:
 
@@ -118,6 +88,65 @@ Where the `event` callback object has the following structure:
 ```
 {% endtab %}
 
+{% tab title="on cardInfo" %}
+The `cardInfo` event will be emitted when`secureFields.getCardInfo()`is called.
+
+```javascript
+secureFields.on("cardInfo", function(event) {
+  // call backend, decide surcharges ;)
+});
+```
+
+```text
+{
+	"event": "cardInfo",
+	"data": {
+		"cardInfo": {
+			"brand": "VISA CREDIT",
+			"type": "credit",
+			"usage": "consumer",
+			"country": "GB",
+			"issuer": "DATATRANS"
+		},
+		"maskedCard": "424242xxxxxx4242",
+		"paymentMethod": "VIS"
+	}
+}
+```
+
+Calling `secureFields.getCardInfo(callback)` is the alternative way to obtain the information about the entered card by having the given callback function receive it rather than waiting for an event.
+{% endtab %}
+
+{% tab title="on success" %}
+The success event will be emitted if the tokenization was successful.
+
+```javascript
+secureFields.on("success", function(data) {
+  if(data.transactionId) {
+    // send data.transactionId and the
+    // rest of the form to your server
+  }
+});
+```
+
+Where the `event` callback object has the following structure:
+
+```javascript
+{
+  "result":"success",
+  "transactionId":"180403204621339015",
+  "cardInfo":
+  {
+    "brand":"VISA DEBIT",
+    "issuer":"Some Bank",
+    "type":"debit", // debit or credit
+    "usage":"unknown", // consumer or corporate
+    "country":"US"
+  }
+}
+```
+{% endtab %}
+
 {% tab title="on error" %}
 The error event will be emitted if there was an error after calling `secureFields.initTokenize(...)`.
 
@@ -136,4 +165,6 @@ secureFields.on("error", function(data) {
 ```
 {% endtab %}
 {% endtabs %}
+
+
 
