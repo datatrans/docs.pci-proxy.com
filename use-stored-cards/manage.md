@@ -13,6 +13,107 @@ Reach out to your PCI Proxy contact if you are not sure which alias format you a
 The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
 {% endhint %}
 
+{% api-method method="get" host="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" %}
+{% api-method-summary %}
+STATUS
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Request detailed information about a token.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="alias" type="string" required=true %}
+Alias 2.0 format
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Content-Type" type="string" required=true %}
+application/json; charset=UTF-8==
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Status successfully returned
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    "alias": "AAABdJHo4KrssdexyrAAAcue_ojoACUc",
+    "type": "CARD",
+    "masked": "424242xxxxxx4242",
+    "dateCreated": "2020-09-15T13:17:00.000+00:00",
+    "card": {
+        "cardInfo": {
+            "brand": "VISA CREDIT",
+            "type": "credit",
+            "usage": "consumer",
+            "country": "GB",
+            "issuer": "DATATRANS"
+        }
+    }
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+Invalid request
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+  "error": {
+    "code": "ALIAS_NOT_FOUND"
+  }
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+#### Examples
+
+{% tabs %}
+{% tab title="Request" %}
+```javascript
+curl -L -X GET 'https://api.sandbox.datatrans.com/v1/aliases/AAABdJHo4KrssdexyrAAAcue_ojoACUc' \
+-H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```javascript
+{
+    "alias": "AAABdJHo4KrssdexyrAAAcue_ojoACUc",
+    "type": "CARD",
+    "masked": "424242xxxxxx4242",
+    "dateCreated": "2020-09-15T13:17:00.000+00:00",
+    "card": {
+        "cardInfo": {
+            "brand": "VISA CREDIT",
+            "type": "credit",
+            "usage": "consumer",
+            "country": "GB",
+            "issuer": "DATATRANS"
+        }
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
 {% api-method method="post" host="https://api.sandbox.datatrans.com" path="/v1/aliases" %}
 {% api-method-summary %}
 CONVERT
