@@ -97,7 +97,7 @@ secureFields.on("cardInfo", function(event) {
 });
 ```
 
-```text
+```javascript
 {
 	"event": "cardInfo",
 	"data": {
