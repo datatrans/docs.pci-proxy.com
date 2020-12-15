@@ -16,7 +16,7 @@ Our pricing model is based on actual performance we deliver to you. Unlike other
 
 **Alias 2.0** \(Example: _AAABcH0Bq92s3kgAESIAAbGj5NIsAHWC\)_ 
 
-This format consists of 32 digits, letters and - symbol, for full tokenization of the credit card number
+This format consists of 32 digits, letters, dash and underline, for full tokenization of the credit card number
 
 **Masked Credit Card Token** \(Example: _1234 56AB CDEF 3456\)_
 
