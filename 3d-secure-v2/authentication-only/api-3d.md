@@ -29,7 +29,7 @@ Init call
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Initial Server-to-Server call to retrieve transactionId and submit 3D Secure v1 and v2 parameters. 
+Initial Server-to-Server call to retrieve transactionId and submit 3D Secure v2 parameters. 
 {% endapi-method-description %}
 
 {% api-method-spec %}
