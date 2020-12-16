@@ -149,7 +149,7 @@ Successful authorization response
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 {% endhint %}
 
-### Examples \(3D v1\)
+### Examples
 
 {% tabs %}
 {% tab title="Authorize amount \(authorize & settle\)" %}
@@ -169,9 +169,9 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/transactions/authorize' \
         "expiryYear": "21",
     	  "3D": {
     		    "eci": "02",
-    		    "xid": "MDAyMDA1MTgxMDA4NDE2OTExMjI=",
+    		    "xid": "7f86bbd0-23d3-4d54-b561-1dfc47a48bc7",
     		    "cavv": "OTkyMDA1MTgxMDA4NTY1NjExMzg=",
-    		    "threeDSVersion": "1.0.2",
+    		    "threeDSVersion": "2.1.0",
     		    "cavvAlgorithm": "1",
     		    "directoryResponse": "Y",
     		    "authenticationResponse": "Y"
