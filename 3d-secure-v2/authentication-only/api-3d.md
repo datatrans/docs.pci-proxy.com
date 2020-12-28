@@ -515,25 +515,25 @@ curl -X GET \
 
 #### Directory Response \(Transaction status after `ARes`\)
 
-| Value | 3Dv1 | 3Dv2 |
-| :--- | :--- | :--- |
-| Y | enrolled | authenticated |
-| N | not enrolled | authentication failed |
-| U | not available | not available |
-| C |  | challenge needed |
-| R |  | rejected |
-| A |  | authentication attempt |
+| Value | 3Dv2 |
+| :--- | :--- |
+| Y | authenticated |
+| N | authentication failed |
+| U | not available |
+| C | challenge needed |
+| R | rejected |
+| A | authentication attempt |
 
 #### Authentication Response \(Transaction status after `RReq` \(Challenge flow\)\)
 
-| Value  | 3Dv1 | 3Dv2 |
-| :--- | :--- | :--- |
-| Y | authenticated | authenticated |
-| N | authentication failed | authentication failed |
-| U | not available | not available |
-| A | authentication attempt | authentication attempt |
-| C | process incomplete | process incomplete |
-| D | not enrolled |  |
+| Value  | 3Dv2 |
+| :--- | :--- |
+| Y | authenticated |
+| N | authentication failed |
+| U | not available |
+| A | authentication attempt |
+| C | process incomplete |
+| D |  |
 
 ## Step 4: Forward 3D data
 
