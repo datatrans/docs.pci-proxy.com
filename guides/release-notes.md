@@ -12,7 +12,7 @@ We have added a new feature to monitor and debug traffic in real time. Learn mor
 
 **Improvement - Usage statistics** 
 
-We have improved the usage statistics in the PCI Proxy Dashboard. It allows you to filter usage each single integration assigned on your account. 
+We have improved the usage statistics in the PCI Proxy Dashboard. It allows you to filter usage each single integration assigned to your project on Contract level. 
 
 ## November 2020
 
