@@ -58,6 +58,7 @@
   * [Get production ready / Go-live](guides/pci-proxy-dashboard/get-production-ready.md)
   * [Terminate your contract](guides/pci-proxy-dashboard/terminate-your-contract.md)
 * [Receiver PCI DSS compliance validation](guides/3rd-party-receiver-validation.md)
+* [Release notes](guides/release-notes.md)
 
 ## Have a Question?
 
