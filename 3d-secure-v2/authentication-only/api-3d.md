@@ -11,14 +11,14 @@ description: >-
 1. \*\*\*\*[**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
 
 {% hint style="info" %}
-* This service requires basic authentication. Please refer to [Authentication](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) to retrieve required credentials. 
+* This service requires basic authentication. Please refer to [Authentication](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) to retrieve the required credentials. 
 * Make sure to use our 3D Secure enabled test credit cards [here](../testing-3d-secure.md).
 {% endhint %}
 
 {% hint style="warning" %}
 **3D Secure Enrollment Requirements**
 
-Secure Fields 3D requires a 3D Secure enrolled acquiring contract. Either deposited on your merchantID or sent dynamically in the initial request to `/v1/transactions`
+Secure Fields 3D requires a 3D Secure enrolled acquiring contract. Those 3D acquiring data has to be sent dynamically in the initial request to `/v1/transactions`
 {% endhint %}
 
 ## Step 1: Initial Server-to-Server call
@@ -80,13 +80,13 @@ Expiry month of card \(2 characters\)
 Expiry year of card \(2 characters\)
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="3D" type="object" required=false %}
-3D object for optional 3D v2 parameters  
-See hint box below for additional information.
+{% api-method-parameter name="3D" type="object" required=true %}
+3D object for the 3D v2 parameters  
+See the hint box below for additional information.
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="option" type="string" required=true %}
-option object must contain following parameters below
+option object must contain the following parameters below
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="authenticationOnly" type="boolean" required=true %}
