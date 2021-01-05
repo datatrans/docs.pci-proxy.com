@@ -156,8 +156,6 @@ Possible scenarios are:
 * Wrong name of card number, CVV fields
 * Wrong merchantId configuration on Datatrans side
 
-Those errors should only occur during development/testing.
-
 ```javascript
 secureFields.on("error", function(data) {
   // something bad happened
