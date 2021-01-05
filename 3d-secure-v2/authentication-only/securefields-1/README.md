@@ -29,7 +29,7 @@ Init call
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Initial Server-to-Server call to retrieve transactionId and submit optional 3D parameters. 
+Initial Server-to-Server call to retrieve the transactionId and submit the optional 3D parameters. 
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -251,7 +251,7 @@ Please make sure to always load it directly from [https://pay.sandbox.datatrans.
 
 ## Step 3: Create payment form 
 
-In order for Secure Fields to insert card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are:
+In order for Secure Fields to insert the card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are:
 
 * `card-number-placeholder`
 * `cvv-placeholder`
@@ -331,7 +331,7 @@ secureFields.on("success", function(data) {
 
 ## Step 5: Display a 3D secure challenge
 
-The `success` event returns a `redirect` attribute which contains the 3D URL. To present a challenge flow, redirect the card holder to this URL to trigger 3D authentication process. Once the card holder completed the 3D process, he will be redirected to the `returnUrl` passed to the `/v1/transactions/secureFields` API. 
+The `success` event returns a `redirect` attribute which contains the 3D URL. To present a challenge flow, redirect the card holder to this URL to trigger the 3D authentication process. Once the card holder completed the 3D process, he will be redirected to the `returnUrl` passed to the `/v1/transactions/secureFields` API. 
 
 ## Step 6: Obtain 3D parameters and tokens
 
@@ -341,7 +341,7 @@ Status API
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Obtain 3D parameters, credit card and cvv token by executing a server to server call with the `transactionId` received in step 1 
+Obtain the 3D parameters, credit card and cvv tokens by executing a server to server call with the `transactionId` received in step 1.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -528,6 +528,6 @@ Received `"3D"` object contains parameters with the result of the 3D-Secure proc
 
 ## Examples
 
-Find a working sample here \(change transactionId all the time\):   
+Find a working sample here \(change the transactionId all the time\):   
 [https://github.com/datatrans/secure-fields-sample/blob/secure-fields-init-with-transactionId/index.html](https://github.com/datatrans/secure-fields-sample/blob/secure-fields-init-with-transactionId/index.html)
 
