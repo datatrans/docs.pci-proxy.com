@@ -264,6 +264,10 @@ Response body:
 {% endtab %}
 {% endtabs %}
 
+{% hint style="info" %}
+If the initial server to server call failed, you will receive one of these [error codes](../initialization-errors.md).
+{% endhint %}
+
 #### 3D-Secure Acquirer related data
 
 To use the Authentication only API you need to get the following information from your acquirer as they are part of the 3D Secure 2 enrolment process between your acquirer and card schemes.
