@@ -396,7 +396,8 @@ Returns Creditcard and CVV code tokens as well as the "3D" object
             "cavv": "OTkxOTA1MjAxMTIxMDU2MTI4NzM=",
             "threeDSVersion": "1.0.2",
             "directoryResponse": "Y",
-            "authenticationResponse": "A"
+            "authenticationResponse": "A",
+            "cardHolderInfo": "Detailed issuer notification if available"
         }
     }
 }

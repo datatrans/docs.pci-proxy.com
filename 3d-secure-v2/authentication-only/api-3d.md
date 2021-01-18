@@ -455,7 +455,8 @@ curl -X GET \
       "threeDSVersion": "1.0.2",
       "cavvAlgorithm": "1",
       "directoryResponse": "Y",
-      "authenticationResponse": "Y"
+      "authenticationResponse": "Y",
+      "cardHolderInfo": "Detailed issuer notification if available"
     }
   }
 }
