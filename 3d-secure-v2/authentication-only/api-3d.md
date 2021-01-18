@@ -538,7 +538,6 @@ curl -X GET \
 | U | not available |
 | A | authentication attempt |
 | C | process incomplete |
-| D |  |
 
 ## Step 4: Forward 3D data
 
