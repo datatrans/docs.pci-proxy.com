@@ -4,6 +4,14 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 # Release notes
 
+## January 2021
+
+**New parameter available - GET Status API**
+
+We have added a new parameter `cardHolderInfo` in the response of the `/v1/transactions/{transactionId}` API request which returns the following information: 
+
+_Text provided by the ACS/Issuer to Cardholder during a Frictionless transaction that was not authenticated by the ACS. The Issuer can optionally provide information to Cardholder. For example, “Additional authentication is needed for this transaction, please contact \(Issuer Name\) at xxx-xxx-xxxx.”_
+
 ## December 2020
 
 #### New feature - Traffic inspector 
