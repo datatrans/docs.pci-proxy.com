@@ -36,6 +36,7 @@
   * [FAQ](3d-secure-v2/faq.md)
   * [Testing 3D Secure](3d-secure-v2/testing-3d-secure.md)
   * [Errors](3d-secure-v2/initialization-errors.md)
+  * [Glossary](3d-secure-v2/glossary.md)
 * [Resources](resources/README.md)
   * [Full API Reference](resources/full-api-reference.md)
   * [Request Types](resources/request-types.md)

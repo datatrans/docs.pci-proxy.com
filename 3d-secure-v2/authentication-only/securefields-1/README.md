@@ -107,15 +107,7 @@ Amount must be at least in the currency's smallest unit.
 3D Secure 2 allows you send additional, optional data to ensure increased acceptance and frictionless rate at the issuer. Please refer to the official EMVCo 3D specification 2.1.0 for parameter requirements sent in the card brands object. [https://www.emvco.com/emv-technologies/3d-secure/](https://www.emvco.com/emv-technologies/3d-secure/) or contact us for more information. 
 {% endhint %}
 
-#### The transactionId returned in the response of the init call
-
-```java
-{
-    "transactionId": "190520110934541218",
-}
-```
-
-#### Examples
+#### Example
 
 {% tabs %}
 {% tab title="Request" %}
@@ -196,32 +188,37 @@ To use the Authentication only API you need to get the following information fro
       <td style="text-align:left"><code>acquirerMerchantId</code>
       </td>
       <td style="text-align:left">
-        <p>Acquirer Merchant ID</p>
-        <p>Acquirer-assigned Merchant identifier</p>
+        <p>Acquirer Merchant ID - Acquirer-assigned Merchant identifier. This may
+          be the same value that is used in authorisation requests sent on behalf
+          of the 3DS Requestor and is represented in ISO 8583 formatting requirements.</p>
+        <p>Length: Variable, maximum 35 characters</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>acquirerBin</code>
       </td>
       <td style="text-align:left">
-        <p>Acquirer BIN</p>
-        <p>Acquiring institution identification code</p>
+        <p>Acquirer BIN - Acquiring institution identification code as assigned by
+          the DS receiving the AReq message.</p>
+        <p>Length: Variable, maximum 11 characters.</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>mcc</code>
       </td>
       <td style="text-align:left">
-        <p>Merchant Category Code</p>
-        <p>Describes the Merchant&#x2019;s type of business, product or service.</p>
+        <p>Merchant Category Code - DS-specific code describing the Merchant&#x2019;s
+          type of business, product or service.</p>
+        <p>Length: 4 characters</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left"><code>merchantName</code>
       </td>
       <td style="text-align:left">
-        <p>Merchant Name</p>
-        <p>Name which will be displayed on the ACS page.</p>
+        <p>Merchant Name - Merchant name assigned by the Acquirer or Payment System,
+          name which will be displayed on the ACS page.</p>
+        <p>Length: Variable, maximum 40 characters</p>
       </td>
     </tr>
   </tbody>
@@ -335,9 +332,11 @@ secureFields.on("success", function(data) {
 
 ## Step 5: Display a 3D secure challenge
 
-The `success` event returns a `redirect` attribute which contains the 3D URL. To present a challenge flow, redirect the card holder to this URL to trigger the 3D authentication process. Once the card holder completed the 3D process, he will be redirected to the `returnUrl` passed to the `/v1/transactions/secureFields` API. 
+The `success` event returns a `redirect` attribute which contains the 3D URL. Redirect the card holder to this URL to trigger the 3D authentication process. Once the card holder completed the 3D process, the browser will be redirected to the `returnUrl` passed to the `/v1/transactions/secureFields` API. 
 
-## Step 6: Obtain 3D parameters and tokens
+It is recommended to do the redirect to the 3D URL in the `_top` window. It is not guaranteed that the various 3D ACS pages allow being iFramed or are displayed properly in an iFrame.
+
+### Step 6: Obtain 3D parameters and tokens
 
 {% api-method method="get" host="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}" %}
 {% api-method-summary %}
@@ -390,6 +389,13 @@ Returns Creditcard and CVV code tokens as well as the "3D" object
         "aliasCVV":"WWguOT-vQKybTMo1CALTjjwZ",
         "expiryMonth": "12",
         "expiryYear": "21",
+        "info": {
+            "brand": "MASTERCARD",
+            "type": "credit",
+            "usage": "consumer",
+            "country": "RO",
+            "issuer": "DATATRANS"
+        },
         "3D": {
             "eci": "02",
             "xid": "MDAxOTA1MjAxMTE5NTgxNTI3NTM=",
