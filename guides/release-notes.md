@@ -6,6 +6,10 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 ## January 2021
 
+#### Dashboard - Security improvement
+
+We take security seriously and will check your login password against previously exposed in data breaches by using [https://haveibeenpwned.com/](https://haveibeenpwned.com/) 
+
 **New parameter available - GET Status API**
 
 We have added a new parameter `cardHolderInfo` in the response of the `/v1/transactions/{transactionId}` API request which returns the following information: 
