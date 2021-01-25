@@ -8,7 +8,7 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 #### Dashboard - Security improvement
 
-We take security seriously and will check your login password against previously exposed in data breaches by using [https://haveibeenpwned.com/](https://haveibeenpwned.com/) 
+We take security seriously and will check your login password against previously exposed data breaches by using [https://haveibeenpwned.com/](https://haveibeenpwned.com/) 
 
 **New parameter available - GET Status API**
 
