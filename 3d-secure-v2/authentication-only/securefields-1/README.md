@@ -368,7 +368,7 @@ The `transactionId` obtained via initial`/v1/transactions/secureFields` call
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Returns Creditcard and CVV code tokens as well as the "3D" object
+Returns the credit card and CVV code tokens as well as the "3D" object
 {% endapi-method-response-example-description %}
 
 {% code title="Example response" %}
@@ -446,6 +446,13 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
         "aliasCVV":"WWguOT-vQKybTMo1CALTjjwZ",
         "expiryMonth": "12",
         "expiryYear": "21",
+        "info": {
+            "brand": "MASTERCARD",
+            "type": "credit",
+            "usage": "consumer",
+            "country": "RO",
+            "issuer": "DATATRANS"
+        },
         "3D": {
           "eci": "02",
           "xid": "MDAxOTA4MDkxNjMzMDkzNTUwMDQ=",
@@ -453,7 +460,9 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
           "threeDSVersion": "1.0.2",
           "cavvAlgorithm": "1",
           "directoryResponse": "Y",
-          "authenticationResponse": "Y"
+          "authenticationResponse": "Y",
+          "cardHolderInfo": "Detailed issuer notification if available",
+          "threeDSTransactionId": "8558c931-277b-4240-adfc-443cbd61a2c0"
         }
     }
 }
