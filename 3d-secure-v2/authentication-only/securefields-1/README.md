@@ -332,9 +332,11 @@ secureFields.on("success", function(data) {
 
 ## Step 5: Display a 3D secure challenge
 
-The `success` event returns a `redirect` attribute which contains the 3D URL. Redirect the card holder to this URL to trigger the 3D authentication process. Once the card holder completed the 3D process, the browser will be redirected to the `returnUrl` passed to the `/v1/transactions/secureFields` API. 
+The `success` event returns a `redirect` attribute which contains the 3D URL if a challenge is required. Redirect the card holder to this URL to trigger the 3D authentication process. 
 
 It is recommended to do the redirect to the 3D URL in the `_top` window. It is not guaranteed that the various 3D ACS pages allow being iFramed or are displayed properly in an iFrame.
+
+Once the card holder completed the 3D process, the browser will be redirected to the `returnUrl` passed to the `/v1/transactions/secureFields` API, with a POST request containing the variables `upptransactionId` and `status_3d` .
 
 ### Step 6: Obtain 3D parameters and tokens
 
