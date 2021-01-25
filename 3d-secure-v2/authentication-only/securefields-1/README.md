@@ -388,7 +388,7 @@ Returns Creditcard and CVV code tokens as well as the "3D" object
     "card": {
         "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
         "masked": "520000xxxxxx0080",
-        "aliasCVV":"WWguOT-vQKybTMo1CALTjjwZ",
+        "aliasCVV": "WWguOT-vQKybTMo1CALTjjwZ",
         "expiryMonth": "12",
         "expiryYear": "21",
         "info": {
