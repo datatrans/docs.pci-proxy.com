@@ -405,7 +405,8 @@ Returns Creditcard and CVV code tokens as well as the "3D" object
             "threeDSVersion": "1.0.2",
             "directoryResponse": "Y",
             "authenticationResponse": "A",
-            "cardHolderInfo": "Detailed issuer notification if available"
+            "cardHolderInfo": "Detailed issuer notification if available",
+            "threeDSTransactionId": "8558c931-277b-4240-adfc-443cbd61a2c0"
         }
     }
 }
