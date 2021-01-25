@@ -471,13 +471,19 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><code>eci</code>
+      <td style="text-align:left">
+        <p><code>eci - string, 2 characters</code>
+        </p>
+        <p>The Electronic Commerce Indicator</p>
       </td>
       <td style="text-align:left"><code>eci</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>xid</code>
+      <td style="text-align:left">
+        <p><code>xid - string</code>
+        </p>
+        <p>The transaction ID returned by the directory server</p>
       </td>
       <td style="text-align:left">
         <p><code>dsTransId</code> (3Dv2)</p>
@@ -485,31 +491,77 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>cavvAlgorithm</code>
+      <td style="text-align:left">
+        <p><code>cavvAlgorithm - string</code>
+        </p>
+        <p>The 3D algorithm</p>
       </td>
       <td style="text-align:left">Only required for 3D Secure 1</td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>cavv</code>
+      <td style="text-align:left">
+        <p><code>cavv - string</code>
+        </p>
+        <p>The Cardholder Authentication Verification Value</p>
       </td>
       <td style="text-align:left"><code>authenticationValue</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>threeDSVersion</code>
+      <td style="text-align:left">
+        <p><code>threeDSVersion - string</code>
+        </p>
+        <p>The 3D version</p>
       </td>
       <td style="text-align:left"><code>messageVersion</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>directoryResponse</code>
+      <td style="text-align:left">
+        <p><code>directoryResponse - string, 1 character</code> 
+        </p>
+        <p>Transaction status after <code>ARes </code>
+        </p>
       </td>
-      <td style="text-align:left"><code>transStatus </code>(after ARes)</td>
+      <td style="text-align:left">
+        <p><code>transStatus </code>
+        </p>
+        <p>(after ARes)</p>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:left"><code>authenticationResponse</code>
+      <td style="text-align:left">
+        <p><code>authenticationResponse - string, 1 character</code> 
+        </p>
+        <p>Transaction status after <code>RReq</code> 
+        </p>
       </td>
-      <td style="text-align:left"><code>transStatus </code>(after RReq)</td>
+      <td style="text-align:left">
+        <p><code>transStatus </code>
+        </p>
+        <p>(after RReq)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><code>threeDSTransactionId - string</code>
+        </p>
+        <p>Universally unique transaction identifier assigned by the 3DS Server to
+          identify a single transaction.</p>
+      </td>
+      <td style="text-align:left"><code>threeDSTransactionId</code>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">
+        <p><code>cardHolderInfo</code>
+        </p>
+        <p>Text provided by the ACS/Issuer to Cardholder during a Frictionless transaction
+          that was not authenticated by the ACS. The Issuer can optionally provide
+          information to Cardholder. For example, &#x201C;<em>Additional authentication is needed for this transaction, please contact (Issuer Name) at xxx-xxx-xxxx.</em>&#x201D;</p>
+      </td>
+      <td style="text-align:left"><code>cardholderInfo</code>
+      </td>
     </tr>
   </tbody>
 </table>
