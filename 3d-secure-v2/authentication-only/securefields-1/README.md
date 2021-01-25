@@ -188,9 +188,10 @@ To use the Authentication only API you need to get the following information fro
       <td style="text-align:left"><code>acquirerMerchantId</code>
       </td>
       <td style="text-align:left">
-        <p>Acquirer Merchant ID - Acquirer-assigned Merchant identifier. This may
-          be the same value that is used in authorisation requests sent on behalf
-          of the 3DS Requestor and is represented in ISO 8583 formatting requirements.</p>
+        <p>Acquirer Merchant ID - Acquirer-assigned Merchant identifier.</p>
+        <p>This may be the same value that is used in authorisation requests sent
+          on behalf of the 3DS Requestor and is represented in ISO 8583 formatting
+          requirements.</p>
         <p>Length: Variable, maximum 35 characters</p>
       </td>
     </tr>
@@ -208,7 +209,8 @@ To use the Authentication only API you need to get the following information fro
       </td>
       <td style="text-align:left">
         <p>Merchant Category Code - DS-specific code describing the Merchant&#x2019;s
-          type of business, product or service.</p>
+          type of business, product or service. The four-digit MCC registered with
+          the schemes for the same <code>acquirerMerchantID</code> sent in the request.</p>
         <p>Length: 4 characters</p>
       </td>
     </tr>
@@ -216,8 +218,9 @@ To use the Authentication only API you need to get the following information fro
       <td style="text-align:left"><code>merchantName</code>
       </td>
       <td style="text-align:left">
-        <p>Merchant Name - Merchant name assigned by the Acquirer or Payment System,
-          name which will be displayed on the ACS page.</p>
+        <p>Merchant Name - Merchant name assigned by the Acquirer or Payment System;
+          it is the merchant name that the issuer presents to the cardholder if they
+          get a challenge.</p>
         <p>Length: Variable, maximum 40 characters</p>
       </td>
     </tr>
