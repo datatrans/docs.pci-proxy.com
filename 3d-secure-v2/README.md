@@ -16,7 +16,7 @@ If you decide to do Authorization with Datatrans payment gateway please continue
 **Using Secure Fields qualifies you for SAQ A.**
 {% endhint %}
 
-If your business is located outside the European Economic Area \(EEA\) or if you don't need to apply 3D Secure process for another reason please go with our default [Secure Fields ](../collect-and-store-cards/capture-iframes/)implementation. 
+If your business is located outside the European Economic Area \(EEA\) or if you don't need to apply 3D Secure process for another reason please go with our default [Secure Fields](authentication-only/securefields-1/) implementation. 
 
 {% hint style="info" %}
 You are a PCI Level 1 compliant company, running a native mobile application or simply want to separate card capturing and authentication flow? 
