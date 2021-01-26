@@ -341,7 +341,7 @@ It is recommended to do the redirect to the 3D URL in the `_top` window. It is n
 
 Once the card holder completed the 3D process, the browser will be redirected to the `returnUrl` passed to the `/v1/transactions/secureFields` API, with a POST request containing the variables `upptransactionId` and `status_3d` .
 
-### Step 6: Obtain 3D parameters and tokens
+## Step 6: Obtain 3D parameters and tokens
 
 {% api-method method="get" host="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}" %}
 {% api-method-summary %}
