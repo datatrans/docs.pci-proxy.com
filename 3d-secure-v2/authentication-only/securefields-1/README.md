@@ -566,7 +566,7 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
     </tr>
     <tr>
       <td style="text-align:left">
-        <p><code>cardHolderInfo</code>
+        <p><code>cardHolderInfo - string</code>
         </p>
         <p>Text provided by the ACS/Issuer to Cardholder during a Frictionless transaction
           that was not authenticated by the ACS. The Issuer can optionally provide
