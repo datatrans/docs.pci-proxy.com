@@ -403,11 +403,11 @@ Returns the credit card and CVV code tokens as well as the "3D" object
         },
         "3D": {
             "eci": "02",
-            "xid": "MDAxOTA1MjAxMTE5NTgxNTI3NTM=",
+            "xid": "1f88043a-7d5c-431b-be5d-bfebd6088992",
             "cavv": "OTkxOTA1MjAxMTIxMDU2MTI4NzM=",
-            "threeDSVersion": "1.0.2",
+            "threeDSVersion": "2.1.0",
             "directoryResponse": "Y",
-            "authenticationResponse": "A",
+            "authenticationResponse": "Y",
             "cardHolderInfo": "Detailed issuer notification if available",
             "threeDSTransactionId": "8558c931-277b-4240-adfc-443cbd61a2c0"
         }
@@ -458,10 +458,9 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
         },
         "3D": {
           "eci": "02",
-          "xid": "MDAxOTA4MDkxNjMzMDkzNTUwMDQ=",
+          "xid": "1f88043a-7d5c-431b-be5d-bfebd6088992",
           "cavv": "OTkxOTA4MDkxNjMzMTYwNTUwMzY=",
-          "threeDSVersion": "1.0.2",
-          "cavvAlgorithm": "1",
+          "threeDSVersion": "2.1.0",          
           "directoryResponse": "Y",
           "authenticationResponse": "Y",
           "cardHolderInfo": "Detailed issuer notification if available",
