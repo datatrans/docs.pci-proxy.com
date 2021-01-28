@@ -24,5 +24,7 @@ You are a PCI Level 1 compliant company, running a native mobile application or 
 That's solved as well. Just have a look at our [Server-to-Server based approach](authentication-only/api-3d.md). 
 {% endhint %}
 
+### Dynamic 3D Secure 
 
+Our product Dynamic 3D Secure takes care of applying 3D Secure authentication only if your client's card issuer is from an EEA country. Based on the card number, we are able to identify if this is the case or not. While this product may reduce friction during checkouts, especially for countries where 3D Secure is not as dominant as it is in EEA countries, the liability shift protection will be completely missing for such transactions. We do recommend to enforce 3D Secure whenever possible. To activate Dynamic 3D Secure, please get in touch with your account manager at Datatrans or send us a message by using our [contact form](https://www.pci-proxy.com/pci-proxy/contact/).
 
