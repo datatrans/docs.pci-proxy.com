@@ -46,6 +46,8 @@ A 3-D Secure flow that involves Cardholder interaction
 
 A process by which an Issuer, or a processor on the Issuer's behalf, approves a transaction for payment.
 
+
+
 ### 3DS Messages
 
 #### Authentication Request Message \(AReq\)
@@ -64,15 +66,13 @@ An EMV 3-D Secure message sent by the 3DS SDK or 3DS Server where additional inf
 
 The ACS response to the CReq message. It can indicate the result of the Cardholder authentication or, in the case of an App-based model, also signal that further Cardholder interaction is required to complete the authentication.
 
-#### Results Request \(RReq\) Message
+#### Results Request Message \(RReq\)
 
 The RReq message communicates the results of the authentication or verification. The message is sent by the ACS through the DS to the 3DS Server. There is only one RReq message per AReq message. The RReq message is not present in a Frictionless transaction.
 
-#### Results Response \(RRes\) Message
+#### Results Response Message \(RRes\)
 
 Message sent by the 3DS Server to the ACS via the DS to acknowledge receipt of the Results Request message. This message is not part of the 3-D Secure authentication message flow.
-
-#### 
 
 ### Authentication Flows
 
