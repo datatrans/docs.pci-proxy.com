@@ -561,8 +561,7 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
         <p>Universally unique transaction identifier assigned by the 3DS Server to
           identify a single transaction.</p>
       </td>
-      <td style="text-align:left"><code>threeDSTransactionId</code>
-      </td>
+      <td style="text-align:left">threeDSServerTransID</td>
     </tr>
     <tr>
       <td style="text-align:left">
