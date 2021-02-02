@@ -110,7 +110,7 @@ The cardholder initiates a transaction and provides the information necessary fo
 7. **ACS through DS to 3DS Server**—The ACS sends an RReq message that can include the Authentication Value \(AV\) to the DS, which then routes the message to the appropriate 3DS Server using the 3DS Server URL received from the AReq message.
 8. **3DS Server through DS to ACS**—The 3DS Server receives an RReq message and in response, returns an RRes message to the DS, which then routes the message to the ACS.
 
-## 3-D Secure Data Elements
+## 3DS Data Elements
 
 #### acquirerBIN - Acquirer BIN
 
