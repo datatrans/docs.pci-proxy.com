@@ -142,16 +142,20 @@ Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="transactionId" type="number" required=true %}
-The transaction id obtained via the `secureFields.submit()` operation.
+{% api-method-parameter name="transactionId" type="integer" required=true %}
+The transactionId obtained via the `secureFields.submit()`operation.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="returnPaymentMethod" type="boolean" %}
-Instructs the API to additionally return the payment method used with this transaction.
+{% api-method-parameter name="returnPaymentMethod" type="boolean" required=false %}
+Returns payment method used with transaction.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="mandatoryAliasCVV" type="boolean" %}
-Whether the cake should be gluten-free or not.
+{% api-method-parameter name="mandatoryAliasCVV" type="boolean" required=false %}
+Wheter the case should be gluten-free or not.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="returnCardInfo" type="boolean" %}
+Returns cardInfo object
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
