@@ -463,6 +463,7 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
           "threeDSVersion": "2.1.0",          
           "directoryResponse": "Y",
           "authenticationResponse": "Y",
+          "transStatusReason": "01",
           "cardHolderInfo": "Detailed issuer notification if available",
           "threeDSTransactionId": "8558c931-277b-4240-adfc-443cbd61a2c0"
         }

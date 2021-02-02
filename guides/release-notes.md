@@ -4,15 +4,29 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 # Release notes
 
+## February 2021
+
+#### New API parameter - GET Status API
+
+We are now returning `transStatusReason` object from the get [GET Status API](../3d-secure-v2/authentication-only/securefields-1/#status-api)
+
+#### New API parameter - GET Token API
+
+We are now returning `CardInfo` object from the [GET Token API](../collect-and-store-cards/capture-iframes/#token)
+
+#### New API parameter - PATCH API
+
+It's now possible to update the `currency` with the [PATCH API](../3d-secure-v2/authentication-only/securefields-1/update-a-transaction.md)
+
 ## January 2021
 
 #### Dashboard - Security improvement
 
 We take security seriously and will check your login password against previously exposed data breaches by using [https://haveibeenpwned.com/](https://haveibeenpwned.com/) 
 
-**New parameter available - GET Status API**
+**New API paramater - GET Status API**
 
-We have added a new parameter `cardHolderInfo` in the response of the 3D Status API \(`/v1/transactions/{transactionId}` \) API request.  
+We are now returning `cardHolderInfo` object from the [GET Status API](../3d-secure-v2/authentication-only/securefields-1/#status-api)
 
 ## December 2020
 

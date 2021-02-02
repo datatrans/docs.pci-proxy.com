@@ -227,6 +227,32 @@ Tokenization with CVV not found
 {% endtab %}
 {% endtabs %}
 
+{% tabs %}
+{% tab title="Example: returnCardInfo=true returning CardInfo " %}
+```javascript
+curl -L -X GET 'https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=210202095141262032&returnCardInfo=true' \
+-H 'merchantId:password'
+```
+{% endtab %}
+
+{% tab title="Response" %}
+```javascript
+{
+    "aliasCC": "AAABd2HwtlfssdexyrAAAZ8vac-LANUg",
+    "aliasCVV": "YLU0YKVBSWekjPd6mzuzASZN",
+    "maskedCard": "424242xxxxxx4242",
+    "cardInfo": {
+        "brand": "VISA CREDIT",
+        "type": "credit",
+        "usage": "consumer",
+        "country": "GB",
+        "issuer": "DATATRANS"
+    }
+}
+```
+{% endtab %}
+{% endtabs %}
+
 ### Error table 
 
 | Error message | Cause / Explanation |

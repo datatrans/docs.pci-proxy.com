@@ -1,7 +1,7 @@
 ---
 description: >-
-  Use the Patch transaction API to update the amount for an already initialized
-  transaction.
+  Use the Patch transaction API to update the amount or currency for an already
+  initialized transaction.
 ---
 
 # Update a transaction
@@ -16,7 +16,7 @@ Transaction
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Update the amount or currency of an already initialized transaction. 
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -38,8 +38,12 @@ application/json; charset=UTF-8
 {% endapi-method-headers %}
 
 {% api-method-body-parameters %}
-{% api-method-parameter name="amount" type="number" required=true %}
+{% api-method-parameter name="amount" type="integer" required=false %}
 The new amount in the currency's smallest unit. For example use 1000 for EUR 10.00
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="currency" type="integer" required=false %}
+Three letter ISO-4217 character code. For example `GBP`
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
@@ -47,7 +51,7 @@ The new amount in the currency's smallest unit. For example use 1000 for EUR 10.
 {% api-method-response %}
 {% api-method-response-example httpCode=204 %}
 {% api-method-response-example-description %}
-
+Amount or currency successfully updated
 {% endapi-method-response-example-description %}
 
 ```
@@ -55,9 +59,24 @@ The new amount in the currency's smallest unit. For example use 1000 for EUR 10.
 ```
 {% endapi-method-response-example %}
 
+{% api-method-response-example httpCode=400 %}
+{% api-method-response-example-description %}
+Invalid property
+{% endapi-method-response-example-description %}
+
+```javascript
+{
+    "error": {
+        "code": "INVALID_PROPERTY",
+        "message": "update at least one property (e.g. amount or currency)"
+    }
+}
+```
+{% endapi-method-response-example %}
+
 {% api-method-response-example httpCode=404 %}
 {% api-method-response-example-description %}
-
+Transaction not found
 {% endapi-method-response-example-description %}
 
 ```
@@ -78,10 +97,11 @@ The new amount in the currency's smallest unit. For example use 1000 for EUR 10.
 {% tab title="Request" %}
 ```java
 curl -L -X PATCH 'https://api.sandbox.datatrans.com/v1/transactions/secureFields/201110094904976728' \
--H 'Authorization: Basic MTEwMDAyNjUyfDrtSwty5fdstEtodDZpQU1O' \
+-H 'merchantId:password' \
 -H 'Content-Type: application/json; charset=UTF-8' \
 --data-raw '{
-    "amount":5000
+    "amount": 5000,
+    "currency": "GBP"
 }'
 ```
 {% endtab %}
