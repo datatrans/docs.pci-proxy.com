@@ -33,7 +33,6 @@
   * [Authorize](3d-secure-v2/authorize-1/README.md)
     * [Authorize an authenticated transaction](3d-secure-v2/authorize-1/authorize.md)
     * [Authorize with 3rd party authenticated data](3d-secure-v2/authorize-1/authorize-with-3rd-party-authenticated-data.md)
-  * [FAQ](3d-secure-v2/faq.md)
   * [Testing 3D Secure](3d-secure-v2/testing-3d-secure.md)
   * [Errors](3d-secure-v2/initialization-errors.md)
   * [3DS Terminology](3d-secure-v2/3ds-terminology.md)
