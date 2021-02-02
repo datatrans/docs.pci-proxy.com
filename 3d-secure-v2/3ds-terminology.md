@@ -48,7 +48,7 @@ A process by which an Issuer, or a processor on the Issuer's behalf, approves a 
 
 
 
-### 3DS Messages
+## 3DS Messages
 
 #### Authentication Request Message \(AReq\)
 
@@ -74,7 +74,7 @@ The RReq message communicates the results of the authentication or verification.
 
 Message sent by the 3DS Server to the ACS via the DS to acknowledge receipt of the Results Request message. This message is not part of the 3-D Secure authentication message flow.
 
-### Authentication Flows
+## Authentication Flows
 
 #### Frictionless Flow
 
