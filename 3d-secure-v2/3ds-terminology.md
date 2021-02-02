@@ -196,14 +196,49 @@ Text provided by the ACS/Issuer to Cardholder during a Frictionless or Decoupled
 * Data Type: String 
 * Note: If field is populated this information is required to be conveyed to the cardholder by the merchant.
 
-#### ECI - Electronic Commerce Indicator
+#### transStatusReason - Transaction Status Reason
+
+Provides information on why the Transaction Status field has the specified value.
+
+* Length: 2 characters
+* Data Type: String
+* Values accepted:
+  * 01 = Card authentication failed 
+  * 02 = Unknown Device 
+  * 03 = Unsupported Device 
+  * 04 = Exceeds authentication frequency limit 
+  * 05 = Expired card 
+  * 06 = Invalid card number 
+  * 07 = Invalid transaction 
+  * 08 = No Card record 
+  * 09 = Security failure 
+  * 10 = Stolen card 
+  * 11 = Suspected fraud 
+  * 12 = Transaction not permitted to cardholder 
+  * 13 = Cardholder not enrolled in service 
+  * 14 = Transaction timed out at the ACS 
+  * 15 = Low confidence 
+  * 16 = Medium confidence 
+  * 17 = High confidence 
+  * 18 = Very High confidence 
+  * 19 = Exceeds ACS maximum challenges 
+  * 20 = Non-Payment transaction not supported 
+  * 21 = 3RI transaction not supported 
+  * 22 = ACS technical issue 
+  * 23 = Decoupled Authentication required by ACS but not requested by 3DS Requestor 
+  * 24 = 3DS Requestor Decoupled Max Expiry Time exceeded 
+  * 25 = Decoupled Authentication was provided insufficient time to authenticate cardholder. ACS will not make attempt 
+  * 26 = Authentication attempted but not performed by the cardholder 
+  * 27–79 = Reserved for EMVCo future use \(values invalid until defined by EMVCo\) 
+  * 80–99 = Reserved for DS use 
+
+#### eci- Electronic Commerce Indicator
 
 The Electronic Commerce Indicator is a Payment System-specific value provided by the ACS or DS to indicate the results of the attempt to authenticate the Cardholder.
 
 * Length: 2 characters 
 * Data Type: String
 
-  
 Possible value returned by [Visa](https://usa.visa.com/dam/VCOM/download/merchants/verified-by-visa-acquirer-merchant-implementation-guide.pdf), American Express and its interpretation:
 
 * **ECI 05:** 3DS authentication was successful; transactions are secured by 3DS.
@@ -215,10 +250,4 @@ Possible value returned by [MasterCard](https://www.mastercard.us/content/dam/mc
 * **ECI 02:** 3DS authentication is successful; both card and Issuing Bank are secured by 3DS.
 * **ECI 01:** 3DS authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS, or cardholder ran out of time to authorize.
 * **ECI 00:** 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.
-
-#### 
-
-
-
-#### 
 

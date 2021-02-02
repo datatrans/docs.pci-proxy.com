@@ -480,100 +480,89 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
     <tr>
       <th style="text-align:left">Datatrans</th>
       <th style="text-align:left">EMVCo</th>
+      <th style="text-align:left">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">
-        <p><code>eci - string, 2 characters</code>
-        </p>
-        <p>The Electronic Commerce Indicator</p>
-      </td>
       <td style="text-align:left"><code>eci</code>
       </td>
+      <td style="text-align:left"><a href="../../3ds-terminology.md#eci-electronic-commerce-indicator">eci</a>
+      </td>
+      <td style="text-align:left">The Electronic Commerce Indicator</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>xid - string</code>
-        </p>
-        <p>The transaction ID returned by the directory server</p>
+      <td style="text-align:left"><code>xid</code>
       </td>
       <td style="text-align:left">
-        <p><code>dsTransId</code> (3Dv2)</p>
-        <p><code>xid</code> (3Dv1)</p>
+        <p><a href="../../3ds-terminology.md#dstransid-ds-transaction-id">dsTransId</a> (3Dv2)</p>
+        <p>xid (3Dv1)</p>
       </td>
+      <td style="text-align:left">The transaction ID returned by the directory server</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>cavvAlgorithm - string</code>
-        </p>
-        <p>The 3D algorithm</p>
+      <td style="text-align:left"><code>cavvAlgorithm</code>
       </td>
       <td style="text-align:left">Only required for 3D Secure 1</td>
+      <td style="text-align:left">The 3D algorithm</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>cavv - string</code>
-        </p>
-        <p>The Cardholder Authentication Verification Value</p>
+      <td style="text-align:left"><code>cavv</code>
       </td>
-      <td style="text-align:left"><code>authenticationValue</code>
+      <td style="text-align:left"><a href="../../3ds-terminology.md#authenticationvalue-authentication-value">authenticationValue</a>
       </td>
+      <td style="text-align:left">The Cardholder Authentication Verification Value</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>threeDSVersion - string</code>
-        </p>
-        <p>The 3D version</p>
+      <td style="text-align:left"><code>threeDSVersion</code> 
       </td>
-      <td style="text-align:left"><code>messageVersion</code>
+      <td style="text-align:left"><a href="../../3ds-terminology.md#messageversion-message-version-number">messageVersion</a>
       </td>
+      <td style="text-align:left">The 3D version</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>directoryResponse - string, 1 character</code> 
-        </p>
-        <p>Transaction status after <code>ARes </code>
-        </p>
+      <td style="text-align:left"><code>directoryResponse </code>
       </td>
       <td style="text-align:left">
-        <p><code>transStatus </code>
+        <p><a href="../../3ds-terminology.md#transstatus-transaction-status">transStatus</a> 
         </p>
         <p>(after ARes)</p>
       </td>
+      <td style="text-align:left">Transaction status after <code>ARes </code>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>authenticationResponse - string, 1 character</code> 
-        </p>
-        <p>Transaction status after <code>RReq</code> 
-        </p>
+      <td style="text-align:left"><code>authenticationResponse</code>
       </td>
       <td style="text-align:left">
-        <p><code>transStatus </code>
+        <p><a href="../../3ds-terminology.md#transstatus-transaction-status">transStatus </a>
         </p>
         <p>(after RReq)</p>
       </td>
+      <td style="text-align:left">Transaction status after <code>RReq</code> 
+      </td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>threeDSTransactionId - string</code>
-        </p>
-        <p>Universally unique transaction identifier assigned by the 3DS Server to
-          identify a single transaction.</p>
+      <td style="text-align:left"><code>threeDSTransactionId</code>
       </td>
-      <td style="text-align:left">threeDSServerTransID</td>
+      <td style="text-align:left"><a href="../../3ds-terminology.md#threedsservertransid-3ds-server-transaction-id">threeDSServerTransID</a>
+      </td>
+      <td style="text-align:left">Universally unique transaction identifier.</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p><code>cardHolderInfo - string</code>
-        </p>
-        <p>Text provided by the ACS/Issuer to Cardholder during a Frictionless transaction
-          that was not authenticated by the ACS. The Issuer can optionally provide
-          information to Cardholder. For example, &#x201C;<em>Additional authentication is needed for this transaction, please contact (Issuer Name) at xxx-xxx-xxxx.</em>&#x201D;</p>
+      <td style="text-align:left"><code>cardHolderInfo</code>
       </td>
-      <td style="text-align:left"><code>cardholderInfo</code>
+      <td style="text-align:left"><a href="../../3ds-terminology.md#cardholderinfo-cardholder-information-text">cardholderInfo</a>
       </td>
+      <td style="text-align:left">Text provided by the ACS/Issuer to Cardholder</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><code>transStatusReason</code>
+      </td>
+      <td style="text-align:left"><a href="../../3ds-terminology.md#transstatusreason-transaction-status-reason">transStatusReason</a>
+      </td>
+      <td style="text-align:left">Provides information on why the Transaction Status field has the specified
+        value.</td>
     </tr>
   </tbody>
 </table>
