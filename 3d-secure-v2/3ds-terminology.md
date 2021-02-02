@@ -251,3 +251,7 @@ Possible value returned by [MasterCard](https://www.mastercard.us/content/dam/mc
 * **ECI 01:** 3DS authentication was attempted but was not or could not be completed; possible reasons being either the card or its Issuing Bank has yet to participate in 3DS, or cardholder ran out of time to authorize.
 * **ECI 00:** 3DS authentication is either failed or could not be attempted; possible reasons being both card and Issuing Bank are not secured by 3DS, technical errors, or improper configuration.
 
+{% hint style="info" %}
+Source: The official EMVCo 3D specification 2.2.0 [https://www.emvco.com/emv-technologies/3d-secure/](https://www.emvco.com/emv-technologies/3d-secure/)
+{% endhint %}
+
