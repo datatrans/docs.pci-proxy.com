@@ -6,6 +6,10 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 ## February 2021
 
+#### Dashboard - Enhanced usage statistics
+
+We have improved the usage statistics overview. You can now filter usage across all available sources. 
+
 #### New API parameter - GET Status API
 
 We are now returning `transStatusReason` object from the get [GET Status API](../3d-secure-v2/authentication-only/securefields-1/#status-api)
