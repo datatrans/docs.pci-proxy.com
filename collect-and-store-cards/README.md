@@ -2,17 +2,28 @@
 
 In general, you have different inbound channels where you receive sensitive card data from customers or partners. In order to avoid sensitive card data touching your systems, choose your source of credit card data and implement the respective PCI Proxy API.
 
-## Choose source of card data and integrate PCI Proxy API
+With the following methods you can use collect & store cards:
 
-{% hint style="success" %}
-**With all described methods, sensitive card data never touch your servers**.
-{% endhint %}
+{% page-ref page="filter-payloads/" %}
 
-| [**Website**](capture-iframes/) \(IBE\) | [**Remote Server**](filter-payloads/) \(Webservice\) | [**Native App**](vault-alias-gateway.md) \(iOS / Android\) |
-| :--- | :--- | :--- |
-| ![](../.gitbook/assets/website.png) | ![](../.gitbook/assets/webservice.png) | ![](../.gitbook/assets/app.png) |
-| Your customers enter their credit card data on a form within your website. | You receive a request from a remote server including credit card data in the payload. | Your customers enter their credit card data on a form within your native app. |
-| [Secure Fields](capture-iframes/) seamlessly tokenizes sensitive data within your web app. | [Filter Proxy](filter-payloads/) tokenizes sensitive data on the fly within your web services. | [Vault \(alias gateway\)](vault-alias-gateway.md) tokenizes sensitive data within your mobile app. |
+> Collect and tokenize payment data on incoming data streams
 
+{% page-ref page="capture-iframes/" %}
 
+> Customizable iframes to collect and tokenize payment data
+
+{% page-ref page="mobile-sdk-beta.md" %}
+
+> Collect and tokenize payment data with PCI Proxy from inside your native apps
+
+{% page-ref page="vault-alias-gateway.md" %}
+
+> Pass sensitive pamyent data directly to the PCI Proxy vault to create tokens
+
+{% page-ref page="secure-file-transfer-sftp.md" %}
+
+> Transmit and tokenize sensitive payment data via SFTP
+
+[  
+](https://docs.pci-proxy.com/collect-and-store-cards/secure-file-transfer-sftp)
 
