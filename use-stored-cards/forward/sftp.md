@@ -2,7 +2,7 @@
 
 ## 1. Add SFTP-Receiver to your account
 
-PCI Proxy SFTP service currently supports the following filetypes `BTA`, `TAMARA`, `DINERSMINERVA`, `TACS`, `TAED`, `VISAIBERIA` or `VISABBVA`.
+PCI Proxy SFTP service currently supports the following filetypes `BTA`, `TAMARA`, `DINERSMINERVA`, `TACS`, `MASTERCARDTAED`, `VISAIBERIA` or `VISABBVA`.
 
 Before you can send a request to a PCI compliant 3rd party you have to add the SFTP server as an integration to your account. 
 
@@ -23,7 +23,7 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 ### 2a. Use simple Post
 
 1. Replace sensitive card data with the token in your request
-2. Use PCI Proxy Endpoint as HOST with following parameters `merchantId`, `sign`, `url`, `password`and define `type`with `BTA`, `TAMARA`, `DINERSMINERVA`, `TACS`, `TAED`, `VISAIBERIA` or `VISABBVA`
+2. Use PCI Proxy Endpoint as HOST with following parameters `merchantId`, `sign`, `url`, `password`and define `type`with `BTA`, `TAMARA`, `DINERSMINERVA`, `TACS`, `MASTERCARDTAED`, `VISAIBERIA` or `VISABBVA`
 3. Add required HTTP headers and POST data to your request
 
 ```bash
