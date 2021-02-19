@@ -80,13 +80,11 @@ Message sent by the 3DS Server to the ACS via the DS to acknowledge receipt of t
 
 The Frictionless Flow initiates a 3-D Secure authentication flow and consists of an AReq message and an ARes message. The Frictionless Flow does not require further Cardholder interaction to achieve a successful authentication and complete the 3-D Secure authentication process. Frictionless flow allows the issuer to approve a transaction without cardholder interaction based on risk-based-authentication performed in the ACS. 
 
-![Image from EMVCo\_3DS\_Spec\_v220](../.gitbook/assets/3ds-2-frictionless-flow.png)
-
 The frictionless flow comprises these following steps:
 
 The cardholder initiates a transaction and provides the necessary information for the authentication.
 
-1. Within the **3DS Requestor Environment**, the necessary 3-D Secure information is gathered and provided to the 3DS Server for inclusion in the AReq message.
+1. Within the 3DS Requestor Environment, the necessary 3-D Secure information is gathered and provided to the 3DS Server for inclusion in the AReq message.
 2. **3DS Server through DS to ACS**—Using the information provided by the Cardholder and data gathered within the 3DS Requestor Environment, the 3DS Server creates and sends an AReq message to the DS, which then forwards the message to the appropriate ACS.
 3. **ACS through DS to 3DS Server**—In response to the AReq message, the ACS returns an ARes message to the DS, which then forwards the message to the initiating 3DS Server. Before returning the response, the ACS evaluates the data provided in the AReq message. In a Frictionless Flow, the ACS determines that further Cardholder interaction is not required to complete the authentication.
 4. **3DS Requestor Environment**—The 3DS Server communicates the result of the ARes message to the 3DS Requestor Environment which then informs the Cardholder.
@@ -95,13 +93,11 @@ The cardholder initiates a transaction and provides the necessary information fo
 
 If the ACS determines that further Cardholder interaction is required to complete the authentication, the Frictionless Flow transitions into the Challenge Flow. For example, a challenge may be necessary because the transaction is deemed high-risk, is above certain thresholds, or requires a higher level of authentication due to country mandates \(or regulations\). 3DS Requestors decide whether to proceed with the challenge, or to terminate the 3-D Secure authentication process.
 
-![Image from EMVCo\_3DS\_Spec\_v220](../.gitbook/assets/image%20%2818%29.png)
-
 The challenge flow comprises the following steps:
 
 The cardholder initiates a transaction and provides the information necessary for the authentication.
 
-1. Within the **3DS Requestor Environment**, the necessary 3-D Secure information is gathered and provided to the 3DS Server for inclusion in the AReq message.
+1. Within the 3DS Requestor Environment, the necessary 3-D Secure information is gathered and provided to the 3DS Server for inclusion in the AReq message.
 2. **3DS Server through DS to ACS**—Using the information provided by the Cardholder and data gathered within the 3DS Requestor Environment, the 3DS Server creates and sends an AReq message to the DS, which then forwards the message to the appropriate ACS.
 3. **ACS through DS to 3DS Server**—In response to the AReq message, the ACS returns an ARes message to the DS, which then forwards the message to the initiating 3DS Server. Before returning the response, the ACS evaluates the data provided in the AReq message. The ARes message indicates that further Cardholder interaction is required to complete the authentication.
 4. **3DS Requestor Environment**—The 3DS Server communicates the result of the ARes message to the 3DS Requestor Environment; further Cardholder interaction is required to complete the authentication.
