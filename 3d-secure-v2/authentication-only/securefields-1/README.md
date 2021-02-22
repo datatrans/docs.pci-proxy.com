@@ -142,7 +142,7 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/transactions/secureFields'
                 "merchantName": "Test-OTA"
             }
         }
-    }.
+    },
    "AMX": {
         "3D": {         
             "acquirer": {
