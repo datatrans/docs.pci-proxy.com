@@ -210,16 +210,7 @@ curl -X POST \
         "cvv": "123", 
         "expiryMonth": "12",
         "expiryYear": "21",
-        "3D": {
-            "deviceChannel": "02",
-            "messageCategory": "01",
-            "threeDSCompInd": "Y",
-            "threeDSRequestor": {},
-            "threeDSServerTransID": "df4b3490-db44-4a88-9619-ab173ff76fbe",
-            "cardholderAccount": {},
-            "cardholder": {},
-            "relaxRegionalValidationRules": false,
-            "purchase": {},
+        "3D": {            
             "acquirer": {
             		"acquirerMerchantId": "1234567",
             		"acquirerBin": "9876543"
@@ -228,21 +219,15 @@ curl -X POST \
             		"mcc": "4722",
             		"merchantName": "Example Travel Ltd."
             }
-            "broadInfo": {},
-            "deviceRenderOptions": {},
-            "messageExtension": [],
-            "browserInformation": {},
-            "threeRIInd": "02",
-            "sdkInformation": {}
-            }
+        }
     },
     "option": {
         "authenticationOnly": true
     },
     "redirect": {
     	"successUrl": "https://pay.sandbox.datatrans.com/upp/merchant/successPage.jsp",
-        "cancelUrl": "https://pay.sandbox.datatrans.com/upp/merchant/cancelPage.jsp",
-        "errorUrl": "https://pay.sandbox.datatrans.com/upp/merchant/errorPage.jsp"
+      "cancelUrl": "https://pay.sandbox.datatrans.com/upp/merchant/cancelPage.jsp",
+      "errorUrl": "https://pay.sandbox.datatrans.com/upp/merchant/errorPage.jsp"
     }
 }'
 ```
@@ -263,6 +248,10 @@ Response body:
 ```
 {% endtab %}
 {% endtabs %}
+
+{% hint style="info" %}
+To send additional 3D parameters, please check the `card.3D` object here: [https://api-reference.datatrans.ch/\#operation/init](https://api-reference.datatrans.ch/#operation/init)
+{% endhint %}
 
 {% hint style="info" %}
 If the initial server to server call failed, you will receive one of these [error codes](../initialization-errors.md).
