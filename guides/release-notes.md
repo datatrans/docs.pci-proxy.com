@@ -4,6 +4,12 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 # Release notes
 
+## March 2021
+
+#### Dashboard - USD pricing 
+
+We have added USD on our pricing page.
+
 ## February 2021
 
 #### Dashboard - Enhanced usage statistics
