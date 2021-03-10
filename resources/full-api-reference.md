@@ -40,7 +40,7 @@ In turn, the proxy will return HTTP headers:
 | HTTP Header                                     | Description |
 | :--- | :--- |
 | `x-cc-error-code` | Returned by the proxy in case of error only. See the error table below. |
-| `x-cc-errror` | Returned by the proxy in case of error only. See the error table below. |
+| `x-cc-error` | Returned by the proxy in case of error only. See the error table below. |
 | `x-cc-matches` | Returned by the proxy in case of success. The value represents the number of total \(card to alias / alias to card\) replacements that were made. |
 | `x-cc-matches-ca` | Returned number of card to alias replacements. |
 | `x-cc-matches-ac` | Returned number of alias to card replacements. |
