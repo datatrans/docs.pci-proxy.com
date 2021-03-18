@@ -24,7 +24,7 @@ Stored cards can be used multiple times for **recurring transactions** or **One-
 For this feature, you need an existing acquiring contract.
 {% endhint %}
 
-| You can choose from a list of [**Supported Acquirer**](../../resources/supported-acquirer.md) and contact us at [contact@pci-proxy.com](mailto:contact@pci-proxy.com) |  |
+| You can choose from a list of [**Supported Acquirer**](../../resources/supported-acquirer.md) and contact us at [support@pci-proxy.com](mailto:support@pci-proxy.com) |  |
 | :--- | :--- |
 
 

@@ -132,7 +132,7 @@ Parameter values for “paymentmethod”:
 
 Web fonts are supported via the standard `@font-face` CSS rule. Because of security concerns it is not permitted to link external resources. So, in order to get custom fonts, you need to:
 
-* Contact [setup@pci-proxy.com](mailto:setup@pci-proxy.com) and provide the font files \(woff, woof2, ttf etc\). The files will be uploaded into your merchant id hosted files space.
+* Contact [support@pci-proxy.com](mailto:support@pci-proxy.com) and provide the font files \(woff, woof2, ttf etc\). The files will be uploaded into your merchant id hosted files space.
 * Reference the font files, by name \(no path\) in the styles section of the `initTokenize` call:
 
 ```javascript
