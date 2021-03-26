@@ -101,9 +101,9 @@ Error cases \(returned with headers X-CC-ERROR-CODE and X-CC-ERROR\):
 | 800 | Connection error | Proxy could not connect to 3rd party / error that cause no response \(read timeout or DNS error\). Proxy returns HTTP status 504 \(Gateway Timeout\) and an empty response. |
 | 900 | Proxy error | Uncategorized system error |
 
-## Status check
+## Status / Health Check
 
-Please use the following endpoints for status/health checks:
+Please use the following endpoints for status/health checks. Please bear in mind that third-party systems are not included in this check. If our platform is operational we will return a status 200 and the string `ok`.
 
 <table>
   <thead>
@@ -112,8 +112,8 @@ Please use the following endpoints for status/health checks:
         <p></p>
         <p></p>
       </th>
-      <th style="text-align:left">Sandbox environment</th>
-      <th style="text-align:left">Production environment</th>
+      <th style="text-align:left">Sandbox</th>
+      <th style="text-align:left">Production</th>
     </tr>
   </thead>
   <tbody>
@@ -129,6 +129,13 @@ Please use the following endpoints for status/health checks:
       <td style="text-align:left"><a href="https://pay.sandbox.datatrans.com/upp/jsonp-health-check?callback=foo">https://pay.sandbox.datatrans.com/upp/jsonp-health-check?callback=foo</a>
       </td>
       <td style="text-align:left"><a href="https://pay.datatrans.com/upp/jsonp-health-check?callback=foo">https://pay.datatrans.com/upp/jsonp-health-check?callback=foo</a>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">3D API</td>
+      <td style="text-align:left"><a href="https://api.sandbox.datatrans.com/upp/check">https://api.sandbox.datatrans.com/upp/check</a>
+      </td>
+      <td style="text-align:left"><a href="https://api.datatrans.com/upp/check">https://api.datatrans.com/upp/check</a>
       </td>
     </tr>
   </tbody>
