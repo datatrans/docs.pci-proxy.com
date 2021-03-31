@@ -148,11 +148,11 @@ Where the `event` callback object has the following structure:
 {% endtab %}
 
 {% tab title="on error" %}
-The error event will be emitted if there was an error after calling `secureFields.initTokenize(...)`.
+The error event will be emitted if there was an error after calling `secureFields.init(...)`.
 
 Possible scenarios are:
 
-* Wrong merchantId configured in `secureFields.initTokenize(...);`
+* Wrong merchantId configured in `secureFields.init(...);`
 * Wrong name of card number, CVV fields
 * Wrong merchantId configuration on Datatrans side
 
