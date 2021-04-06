@@ -7,13 +7,16 @@
 | [Amadeus](https://amadeus.com) | `pull / push` |
 | [Availpro](http://site.availpro.com/) | `pull / push` |
 | [Booking](https://www.booking.com/) | `pull / push` |
+| [Car Rental Gateway](https://www.carrentalgateway.com/) | `pull` |
 | [Cubilis](http://www.cubilis.com/) | `pull / push` |
 | [DHISCO](http://www.dhisco.com/) | `pull / push` |
 | [Dingus](https://www.dingus-services.com/en/) | `pull / push` |
+| [Emerging Travel Group](https://www.emergingtravel.com/) | `pull` |
 | [eRevMax Technologies \(RateTiger\)](http://www.erevmax.com/) | `pull / push` |
 | [Expedia](https://www.expedia.com/) | `pull / push` |
 | [Guestline](https://www.guestline.com/) | `pull / push` |
 | [HanseMerkur](https://www.hansemerkur.de/) | `pull / push` |
+| [Hastings Hotels](https://www.hastingshotels.com/) | `pull` |
 | [HotelPartner](http://www.hotelpartner-ym.com/en/) | `pull / push` |
 | [Hotel-Spider](http://www.hotel-spider.com/en/) | `pull / push` |
 | [Opera](https://www.oracle.com/industries/hospitality/products/opera-cloud-services.html) | `pull / push` |
@@ -26,15 +29,31 @@
 | [Sabre \(Synxis\)](https://reservations.synxis.com/) | `pull / push` |
 | [Siteminder Siteconnect ](http://www.siteminder.com/) | `pull / push` |
 | [Tesipro](http://tesipro.com/) | `pull / push` |
+| [Tokeet](https://www.tokeet.com/) | `pull` |
+| [Track](https://trackhs.com/) | `pull` |
 | [Tradyso / Idiso](https://www.idiso.com/de/index.html) | `pull / push` |
 | [Traffics](http://www.traffics.travel/) | `pull / push` |
+| [Transavia](https://www.transavia.com/) | `pull` |
+| [TravelClick](https://www.travelclick.com/) | `pull` |
+| [Travelfusion](https://travelfusion.com/) | `pull` |
 | [Travelport \(Galileo\)](https://www.travelport.com) | `pull / push` |
+| [TravelStaytion](https://www.travelstaytion.com/) | `pull` |
 | [Traveltainment](http://www.traveltainment.de/) | `pull / push` |
+| [Travelup](https://www.travelup.com/) | `pull` |
+| [Traveluro](https://www.traveluro.com/) | `pull` |
+| [Trekkpay](https://www.trekksoft.com/) | `pull` |
 | [TripAuthority](http://www.alliancereservations.com/xml-web-services.html) | `pull / push` |
 | [TrustInternational / Sabre](http://www.trustinternational.com/) | `pull / push` |
+| [UBIO](https://automation.cloud/) | `pull` |
 | [Vertical Booking](https://www.verticalbooking.com/en/index.html?force_language=1) | `pull / push` |
+| [Vioma](https://www.vioma.de/) | `pull` |
+| [Virgin Atlantic](https://www.virginatlantic.com/) | `pull` |
+| [Vueling](https://www.vueling.com/) | `pull` |
+| [Webhotelier](https://www.webhotelier.net/) | `pull` |
 | [Winchester Hotel](http://www.thewinchesterhotel.co.uk/) | `pull / push` |
+| [Wubook](https://en.wubook.net/) | `pull` |
 | [Yieldplanet](https://www.yieldplanet.com/) | `pull / push` |
+| [your.rentals](https://your.rentals/) | `pull` |
 
 | Payment Gateway - Receiver | Type |
 | :--- | :--- |
