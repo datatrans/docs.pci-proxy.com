@@ -1,6 +1,6 @@
 # Secure Fields \(iframes\)
 
-Secure Fields allow you to securely collect card data by injecting iframes to your DOM. A separate iframe for both, card number and CVV code is used. Thereby, sensitive data never touches your server and allows you to capture all other related card data such as cardholder name, expiry date, etc. directly by yourself.
+Secure Fields allow you to securely collect card or IBAN data by injecting iframes to your DOM. A separate iframe for all sensitive values is used. Thereby, the data never touches your server and allows you to capture all other related card and IBAN data such as cardholder name, expiry date, etc. directly by yourself.
 
 {% hint style="success" %}
 **Using Secure Fields qualifies you for SAQ A.**
@@ -42,11 +42,19 @@ Please make sure to always load it directly from [https://pay.sandbox.datatrans.
 
 ## 2. Create payment form
 
-In order for Secure Fields to insert card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are:
+In order for Secure Fields to insert card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are
 
 * `card-number-placeholder`
 * `cvv-placeholder`
 
+For the IBAN, Account number and Branch code example they are
+
+* `iban-placeholder`
+* `account-number-placeholder`
+* `branch-number-placeholder`
+
+{% tabs %}
+{% tab title="Card number / CVV" %}
 ```markup
 <form>
     <div>
@@ -65,9 +73,37 @@ In order for Secure Fields to insert card number and CVV iframes at the right pl
     </div>
 </form>
 ```
+{% endtab %}
+
+{% tab title="IBAN / Account number / Branch code" %}
+```javascript
+<form>
+    <div>
+        <div>
+            <label for="iban-placeholder">IBAN</label>
+            <!-- IBAN container -->
+            <div id="iban-placeholder" style="width: 250px;"></div>
+        </div>
+        <div>
+            <label for="account-number-placeholder">account number</label>
+            <!-- account number container -->
+            <div id="account-number-placeholder" style="width: 90px;"></div>
+        </div>
+        <div>
+            <label for="branch-code-placeholder">branch code</label>
+            <!-- branch code container -->
+            <div id="branch-code-placeholder" style="width: 90px;"></div>
+        </div>
+
+        <button type="button" id="go">Get Token!</button>
+    </div>
+</form>
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](../../test-card-data.md) are allowed.
+In test mode, only [test credentials](../../test-card-data.md) are allowed.
 {% endhint %}
 
 ## 3. Retrieve a Transaction ID
@@ -83,12 +119,33 @@ var secureFields = new SecureFields();
 
 Initialize it with your `merchantId` and specify which DOM element containers should be used to inject the iframes:
 
+{% tabs %}
+{% tab title="Card number / CVV" %}
 ```javascript
 secureFields.initTokenize( "1100007006", {
   cardNumber: "card-number-placeholder", 
   cvv: "cvv-placeholder"                
 });
 ```
+{% endtab %}
+
+{% tab title="IBAN" %}
+```javascript
+secureFields.initTokenize( "1100007006", {
+  iban: "iban-placeholder"               
+});
+```
+{% endtab %}
+
+{% tab title="Account number / Branch code" %}
+```javascript
+secureFields.initTokenize( "1100007006", {
+  accountNumber: "account-number-placeholder",
+  branchCode: "branch-code-placeholder"               
+});
+```
+{% endtab %}
+{% endtabs %}
 
 Afterwards submit the form and listen for the success event:
 
@@ -115,12 +172,10 @@ secureFields.destroy();
 
 ## 4. Obtain tokens
 
-Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you have to execute a **server to server** `GET Token` request to retrieve the tokenized card number and the tokenized CVV code.
+Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you have to execute a **server to server** `GET Token` request to retrieve the tokenized card or IBAN values. 
 
 {% hint style="danger" %}
 This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
-
-Please note that this is a **server to server** API call and cannot be called from the browser directly.
 {% endhint %}
 
 {% api-method method="get" host="https://api.sandbox.datatrans.com/upp/services" path="/v1/inline/token" %}
@@ -129,7 +184,7 @@ Token
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint returns the credit card number token and the CVV token corresponding to the `transactionId`.  
+This endpoint returns the tokenized card or IBAN data corresponding to the `transactionId`.  
 Please note that this is a **server to server** API call and cannot be called from the browser directly.
 {% endapi-method-description %}
 
@@ -166,8 +221,12 @@ Returns cardInfo object
 
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+{
+  "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
+  "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
+  "maskedCard": "424242xxxxxx4242"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -177,19 +236,38 @@ Returns cardInfo object
 ### Token API calls examples
 
 {% tabs %}
-{% tab title="Example: Basic usage" %}
+{% tab title="Request" %}
 ```bash
 $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \ 
         -u 'merchantId:password'
 ```
 {% endtab %}
 
-{% tab title="Response" %}
+{% tab title="Response Card" %}
 ```bash
 {
   "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
   "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
   "maskedCard": "424242xxxxxx4242"
+}
+```
+{% endtab %}
+
+{% tab title="Response IBAN" %}
+```javascript
+{
+    "aliasIban": "AAABeKaD2UbssdexyrAAAUN24QvOZg3n",
+    "maskedIban": "DE85xxxxxxxxxxxxxx2345"
+}
+```
+{% endtab %}
+
+{% tab title="Response Account number & Branch code" %}
+```javascript
+{
+    "aliasAccountNumber": "AAABeKahwGDssdexyrAAAV8w_R0dlq9b",
+    "maskedAccountNumber": "xxxx0604",
+    "aliasBranchCode": "AAABeKahwGDssdexyrAAAadGCQEwl6MZ"
 }
 ```
 {% endtab %}
@@ -275,7 +353,7 @@ Demo with floating labels: [https://github.com/datatrans/secure-fields-sample/bl
 An example of how to implement this behaviour in modern web applications can be found [here](https://github.com/datatrans/secure-fields-sample/tree/master/react-example)
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](../../test-card-data.md) are allowed.
+In test mode, only [test credentials](../../test-card-data.md) are allowed.
 {% endhint %}
 
 Please also have a look at [Styling](initialization-and-styling.md) and [Events](events.md) references.

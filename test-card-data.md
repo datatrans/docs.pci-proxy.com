@@ -1,4 +1,4 @@
-# Test card data
+# Test credentials
 
 We have a set of test credit card numbers that you can use in our sandbox environment to test your integration. Limit and 3D support is only needed for transactions and not for tokenization.
 
@@ -37,5 +37,13 @@ Productive credit card information cannot be used in the sandbox.
 | &gt; 90.-- and &lt;= 100.-- | Transaction declined \(i.e. insufficient limit, bad expiry date\) |
 | &gt; 110.-- | Card blocked \(lost or stolen\) |
 
+### IBAN, Account number and Branch code 
 
+Please use the following credentials to test IBAN, Account number and Branch code tokenisation:
+
+| Field | Number |
+| :--- | :--- |
+| IBAN | DE85123456781234512345 |
+| Account Number | 31510604 |
+| Branch code | 100000 |
 
