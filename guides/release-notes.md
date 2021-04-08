@@ -6,7 +6,7 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 ## April 2021
 
-**Secure Fields API - IBAN tokensiation added**
+**Secure Fields API - bank account tokensiation added**
 
 We have added support for tokenizing IBAN, Account Number and Branch code to the [Secure Fields](../collect-and-store-cards/capture-iframes/) integration. 
 
