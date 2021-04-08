@@ -1,6 +1,6 @@
 # Secure Fields \(iframes\)
 
-Secure Fields allow you to securely collect card or IBAN data by injecting iframes to your DOM. A separate iframe for all sensitive values is used. Thereby, the data never touches your server and allows you to capture all other related card and IBAN data such as cardholder name, expiry date, etc. directly by yourself.
+Secure Fields allow you to securely collect credit, debit and virtual cards as well as bank account data by injecting iframes to your DOM. A separate iframe for all sensitive values is used. Thereby, the data never touches your server and allows you to capture all other related payment data such as cardholder name, expiry date, etc. directly by yourself.
 
 {% hint style="success" %}
 **Using Secure Fields qualifies you for SAQ A.**
@@ -47,7 +47,7 @@ In order for Secure Fields to insert card number and CVV iframes at the right pl
 * `card-number-placeholder`
 * `cvv-placeholder`
 
-For the IBAN, Account number and Branch code example they are
+For the bank account example they are
 
 * `iban-placeholder`
 * `account-number-placeholder`
@@ -75,7 +75,7 @@ For the IBAN, Account number and Branch code example they are
 ```
 {% endtab %}
 
-{% tab title="IBAN / Account number / Branch code" %}
+{% tab title="IBAN " %}
 ```javascript
 <form>
     <div>
@@ -84,6 +84,17 @@ For the IBAN, Account number and Branch code example they are
             <!-- IBAN container -->
             <div id="iban-placeholder" style="width: 250px;"></div>
         </div>
+
+        <button type="button" id="go">Get Token!</button>
+    </div>
+</form>
+```
+{% endtab %}
+
+{% tab title="Account number / Branch code" %}
+```javascript
+<form>
+    <div>
         <div>
             <label for="account-number-placeholder">account number</label>
             <!-- account number container -->
