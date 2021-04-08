@@ -183,7 +183,7 @@ secureFields.destroy();
 
 ## 4. Obtain tokens
 
-Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you have to execute a **server to server** `GET Token` request to retrieve the tokenized card or IBAN values. 
+Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you have to execute a **server to server** `GET Token` request to retrieve the tokenized card or bank account values. 
 
 {% hint style="danger" %}
 This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
@@ -195,7 +195,7 @@ Token
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint returns the tokenized card or IBAN data corresponding to the `transactionId`.  
+This endpoint returns the tokenized card or bank account data corresponding to the `transactionId`.  
 Please note that this is a **server to server** API call and cannot be called from the browser directly.
 {% endapi-method-description %}
 
