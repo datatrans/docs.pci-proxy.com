@@ -15,11 +15,11 @@ The service requires HTTP basic authentication. The required credentials can be 
 
 {% api-method method="get" host="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" %}
 {% api-method-summary %}
-STATUS
+Alias Status
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Request detailed information about a token.
+Request detailed information about a Alias
 {% endapi-method-description %}
 
 {% api-method-spec %}
