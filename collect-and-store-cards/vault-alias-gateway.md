@@ -122,14 +122,14 @@ The service requires HTTP basic authentication. The required credentials can be 
 {% tabs %}
 {% tab title="Example Request" %}
 ```markup
-curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
-  -H "Content-Type: text/xml" \
-  -d '<?xml version="1.0" encoding="UTF-8"?>
-       <aliasCCService version="1">
-         <body merchantId="1000011011">
+curl -L -X POST 'https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp' \
+-H 'Content-Type: text/xml' \
+-H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr' \
+--data-raw '       <aliasCCService version="3">
+         <body merchantId="1100017789">
            <alias>
               <request>
-                  <cardno>375811111111115</cardno>
+                  <cardno>4242424242424242</cardno>
               </request>
            </alias>
            <alias>
@@ -144,26 +144,26 @@ curl "https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp" \
 
 {% tab title="Example Response" %}
 ```markup
-<?xml version='1.0' encoding='UTF-8'?>
-<aliasCCService version="1">
-    <body merchantId="1000011011" status="accepted">
-        <alias aliasStatus="response">
+<aliasCCService version='3'>
+    <body merchantId='1100017789' status='accepted'>
+        <alias aliasStatus='response'>
             <request>
-                <cardno>375811111111115</cardno>
+                <cardno>4242424242424242</cardno>
             </request>
             <response>
-                <aliasCC>AAABcqOEyhvssdexyrAAAVYhoiJyALi2</aliasCC>
-                <cardno>375811111111115</cardno>
-                <maskedCC>375811xxxxx1115</maskedCC>
+                <aliasCC>AAABeM8o_izssdexyrAAAS7Q-uDnAMF_</aliasCC>
+                <cardno>4242424242424242</cardno>
+                <maskedCC>424242xxxxxx4242</maskedCC>
+                <fingerprint>F-dV5V8dE0SZLoTurWbq2HZp</fingerprint>
             </response>
         </alias>
-        <alias aliasStatus="response">
+        <alias aliasStatus='response'>
             <request>
                 <cvv>123</cvv>
             </request>
             <response>
-                <aliasCVV>EicQYIP6QA69Or_6DqBOLNQf</aliasCVV>
-                <uppCvvExpiryDate>2017-03-28</uppCvvExpiryDate>
+                <aliasCVV>ybImDdgvT3KGAD0EGZhmRvYq</aliasCVV>
+                <uppCvvExpiryDate>2022-12-05</uppCvvExpiryDate>
             </response>
         </alias>
     </body>

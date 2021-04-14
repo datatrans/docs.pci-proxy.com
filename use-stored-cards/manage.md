@@ -1,5 +1,5 @@
 ---
-description: Get full control and interact with your tokens stored in our vault
+description: Get full control and interact with your tokens (alias) stored in our vault
 ---
 
 # Manage
@@ -15,11 +15,11 @@ The service requires HTTP basic authentication. The required credentials can be 
 
 {% api-method method="get" host="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" %}
 {% api-method-summary %}
-Alias Status
+Alias information
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Request detailed information about a Alias
+Request detailed information about a an alias
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -49,11 +49,14 @@ Status successfully returned
 
 ```javascript
 {
-    "alias": "AAABdJHo4KrssdexyrAAAcue_ojoACUc",
+    "alias": "AAABeM8amw3ssdexyrAAAYwp9fXrAIkp",
+    "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
     "type": "CARD",
     "masked": "424242xxxxxx4242",
-    "dateCreated": "2020-09-15T13:17:00.000+00:00",
+    "dateCreated": "2021-01-14T06:38:50.637+00:00",
     "card": {
+        "expiryMonth": "12",
+        "expiryYear": "21",
         "cardInfo": {
             "brand": "VISA CREDIT",
             "type": "credit",
@@ -88,7 +91,7 @@ Invalid request
 {% tabs %}
 {% tab title="Request" %}
 ```javascript
-curl -L -X GET 'https://api.sandbox.datatrans.com/v1/aliases/AAABdJHo4KrssdexyrAAAcue_ojoACUc' \
+curl -L -X GET 'https://api.sandbox.datatrans.com/v1/aliases/AAABeM8amw3ssdexyrAAAYwp9fXrAIkp' \
 -H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr'
 ```
 {% endtab %}
@@ -96,11 +99,14 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/v1/aliases/AAABdJHo4KrssdexyrA
 {% tab title="Response" %}
 ```javascript
 {
-    "alias": "AAABdJHo4KrssdexyrAAAcue_ojoACUc",
+    "alias": "AAABeM8amw3ssdexyrAAAYwp9fXrAIkp",
+    "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
     "type": "CARD",
     "masked": "424242xxxxxx4242",
-    "dateCreated": "2020-09-15T13:17:00.000+00:00",
+    "dateCreated": "2021-01-14T06:38:50.637+00:00",
     "card": {
+        "expiryMonth": "12",
+        "expiryYear": "21",
         "cardInfo": {
             "brand": "VISA CREDIT",
             "type": "credit",

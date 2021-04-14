@@ -445,6 +445,7 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
     },
     "card": {
         "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
+        "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
         "masked": "520000xxxxxx0080",
         "aliasCVV":"WWguOT-vQKybTMo1CALTjjwZ",
         "expiryMonth": "12",

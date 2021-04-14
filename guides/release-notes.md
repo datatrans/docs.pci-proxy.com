@@ -6,6 +6,10 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 ## April 2021
 
+**Alias 2.0 - Return fingerprint**
+
+We now return return a unique identifier \(fingerprint\) for the Alias 2.0 from all relevant APIs. Learn more about our various token formats [here](../resources/token-format.md). 
+
 **Secure Fields API - bank account tokenisation added**
 
 We have added support for tokenizing IBAN, Account Number and Branch code to the [Secure Fields](../collect-and-store-cards/capture-iframes/) integration. 

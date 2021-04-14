@@ -257,7 +257,8 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 {% tab title="Response Card" %}
 ```bash
 {
-  "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
+  "aliasCC": "AAABeM8yJsbssdexyrAAAXnn_sIdAKe0",
+  "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
   "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
   "maskedCard": "424242xxxxxx4242"
 }
@@ -331,8 +332,9 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/upp/services/v1/inline/token?t
 {% tab title="Response" %}
 ```javascript
 {
-    "aliasCC": "AAABd2HwtlfssdexyrAAAZ8vac-LANUg",
-    "aliasCVV": "YLU0YKVBSWekjPd6mzuzASZN",
+    "aliasCC": "AAABeM8yJsbssdexyrAAAXnn_sIdAKe0",
+    "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
+    "aliasCVV": "ScRuEmNjRJ682mIGKHA9xx_R",
     "maskedCard": "424242xxxxxx4242",
     "cardInfo": {
         "brand": "VISA CREDIT",
