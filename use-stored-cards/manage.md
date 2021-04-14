@@ -19,14 +19,14 @@ Alias information
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Request detailed information about a an alias
+Request detailed information about an alias such as creation date or cardInfo. 
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
 {% api-method-parameter name="alias" type="string" required=true %}
-Alias 2.0 format
+Alias 2.0 format received from a previous inbound channel
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
