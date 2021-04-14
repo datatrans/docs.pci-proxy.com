@@ -8,7 +8,7 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 **Alias 2.0 - Return fingerprint**
 
-We now return return a unique identifier \(fingerprint\) for the Alias 2.0 from all relevant APIs. Learn more about our various token formats [here](../resources/token-format.md). 
+We now return a unique identifier \(fingerprint\) for the Alias 2.0 from all relevant APIs. Learn more about our various token formats [here](../resources/token-format.md). 
 
 **Secure Fields API - bank account tokenisation added**
 
