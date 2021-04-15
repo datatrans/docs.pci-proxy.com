@@ -73,6 +73,23 @@ Response will contain NoShow link
 ### Examples
 
 {% tabs %}
+{% tab title="application/json" %}
+{% code title="Request" %}
+```javascript
+curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
+  -H 'content-type: application/json' \
+  -d '{
+    "merchantId": "1000011011",
+    "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
+    "userName": "bond",
+    "userEmail": "email@example.com",
+    "SHASign": "d17ead827458e3532fd868b3b110671586b7e7ee0db106d5ae94e85ca93782ab",
+    "language": "en"
+   }'
+```
+{% endcode %}
+{% endtab %}
+
 {% tab title="application/xml" %}
 {% code title="Request" %}
 ```markup
@@ -89,28 +106,22 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 ```
 {% endcode %}
 {% endtab %}
-
-{% tab title="application/json" %}
-{% code title="Request" %}
-```javascript
-curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
-  -H 'content-type: application/json' \
-  -d '{
-    "merchantId": "1000011011",
-    "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
-    "userName": "bond",
-    "userEmail": "email@example.com",
-    "SHASign": "d17ead827458e3532fd868b3b110671586b7e7ee0db106d5ae94e85ca93782ab",
-    "language": "en",
-   }'
-```
-{% endcode %}
-{% endtab %}
 {% endtabs %}
 
 3. Embed NoShow link from the response into your application
 
 {% tabs %}
+{% tab title="application/json" %}
+{% code title="Response" %}
+```javascript
+{
+    "url": "https://api.sandbox.datatrans.com/upp/noshow?token=2555559e-63d8-4c26-8799-0e9d64601037",
+    "errorCode": 0
+}
+```
+{% endcode %}
+{% endtab %}
+
 {% tab title="application/xml" %}
 {% code title="Response" %}
 ```markup
@@ -119,17 +130,6 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
   <url>https://api.sandbox.datatrans.com/upp/noshow?token=27cfba38-a606-49c0-9f03-c3bc6d580a66</url>
   <errorCode>0</errorCode>
 </response>
-```
-{% endcode %}
-{% endtab %}
-
-{% tab title="application/json" %}
-{% code title="Response" %}
-```javascript
-{
-    "url": "https://api.sandbox.datatrans.com/upp/noshow?token=2555559e-63d8-4c26-8799-0e9d64601037",
-    "errorCode": 0
-}
 ```
 {% endcode %}
 {% endtab %}
