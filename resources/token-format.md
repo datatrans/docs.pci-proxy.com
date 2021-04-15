@@ -21,10 +21,14 @@ PCI Proxy supports the following token format:
       <td style="text-align:left">AAABcH0Bq92s3kgAESIAAbGj5NIsAHWC</td>
       <td style="text-align:left">AN32</td>
       <td style="text-align:left">
-        <p>This format consists in numbers, letters, dash and underline.</p>
-        <p>When using the Alias 2.0 format we additionally return a parameter <code>fingerprint</code> from
-          our APIs. It helps you for example to identify customers who signed up
-          with the same card number.</p>
+        <p>This format consists in numbers, letters, dash and underline.
+          <br />
+        </p>
+        <p>When using the Alias 2.0 format we additionally return the parameter <code>fingerprint</code> from
+          our APIs. It&apos;s a unique identifier for the underlying card.
+          <br />
+          <br />It helps you for example to identify customers who signed up with the
+          same card number.</p>
       </td>
     </tr>
     <tr>
@@ -34,9 +38,10 @@ PCI Proxy supports the following token format:
       <td style="text-align:left">AN20</td>
       <td style="text-align:left">This format consists of the first 6 digits of the real credit card number,
         the actual BIN Range (Bank Identification Number), followed by the token
-        in form of 6 upper-case letters. The Masked Credit Card Token ends with
-        the last 4 digits of the actual credit card number. Based on card brand
-        the length of the token varies.</td>
+        in form of 6 upper-case letters.
+        <br />The Masked Credit Card Token ends with the last 4 digits of the actual
+        credit card number.
+        <br />Based on card brand the length of the token varies.</td>
     </tr>
     <tr>
       <td style="text-align:left">Full Substitution</td>
