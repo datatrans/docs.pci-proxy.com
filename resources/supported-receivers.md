@@ -50,6 +50,7 @@
 | [Virgin Atlantic](https://www.virginatlantic.com/) | `pull` |
 | [Vueling](https://www.vueling.com/) | `pull` |
 | [Webhotelier](https://www.webhotelier.net/) | `pull` |
+| [WebrezPro](https://www.webrezpro.com/) | `push` |
 | [Winchester Hotel](http://www.thewinchesterhotel.co.uk/) | `pull / push` |
 | [Wubook](https://en.wubook.net/) | `pull` |
 | [Yieldplanet](https://www.yieldplanet.com/) | `pull / push` |
