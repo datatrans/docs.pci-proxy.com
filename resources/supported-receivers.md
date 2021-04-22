@@ -4,11 +4,14 @@
 
 | 3rd-Party Receiver | Type |
 | :--- | :--- |
+| [Acomodeo](https://www.acomodeo.com/) | `push` |
 | [Amadeus](https://amadeus.com) | `pull / push` |
 | [Availpro](http://site.availpro.com/) | `pull / push` |
 | [Booking](https://www.booking.com/) | `pull / push` |
+| [BookingCenter](https://www.bookingcenter.com/) | `push` |
 | [Car Rental Gateway](https://www.carrentalgateway.com/) | `pull` |
 | [Cubilis](http://www.cubilis.com/) | `pull / push` |
+| [D-EDGE](https://www.d-edge.com/) | `pull / push` |
 | [DHISCO](http://www.dhisco.com/) | `pull / push` |
 | [Dingus](https://www.dingus-services.com/en/) | `pull / push` |
 | [Emerging Travel Group](https://www.emergingtravel.com/) | `pull` |
@@ -19,12 +22,20 @@
 | [Hastings Hotels](https://www.hastingshotels.com/) | `pull` |
 | [HotelPartner](http://www.hotelpartner-ym.com/en/) | `pull / push` |
 | [Hotel-Spider](http://www.hotel-spider.com/en/) | `pull / push` |
+| [HotelTime](https://www.hoteltime.com/) | `push` |
+| [Merrion Hotel](https://www.merrionhotel.com/) | `push` |
+| [NH Hotel Group](https://www.nh-hotels.com/) | `push` |
 | [Opera](https://www.oracle.com/industries/hospitality/products/opera-cloud-services.html) | `pull / push` |
+| [Oracle Corporation](https://www.oracle.com/) | `push` |
+| [Parityrate](https://www.parityrate.com/) | `push` |
+| [Parknasilla](https://parknasillaresort.com/) | `push` |
 | [Peakwork](http://www.peakwork.com/) | `pull / push` |
 | [Protel](http://www.protel.net/de/) | `pull / push` |
 | [RateGain](http://rategain.com/) | `pull / push` |
 | [Realex Payments](https://www.realexpayments.com/) | `pull / push` |
 | [Rentals United](https://rentalsunited.com/de/) | `pull / push` |
+| [Roiback](https://www.roiback.com/) | `push` |
+| [Roomcloud](https://www.roomcloud.net/) | `push` |
 | [Sabre Airline Solutions](https://www.sabreairlinesolutions.com/home/) | `pull / push` |
 | [Sabre \(Synxis\)](https://reservations.synxis.com/) | `pull / push` |
 | [Siteminder Siteconnect ](http://www.siteminder.com/) | `pull / push` |
@@ -52,15 +63,19 @@
 | [Webhotelier](https://www.webhotelier.net/) | `pull` |
 | [WebrezPro](https://www.webrezpro.com/) | `push` |
 | [Winchester Hotel](http://www.thewinchesterhotel.co.uk/) | `pull / push` |
+| [WiseCars](https://www.wisecars.com/) | `pull` |
 | [Wubook](https://en.wubook.net/) | `pull` |
 | [Yieldplanet](https://www.yieldplanet.com/) | `pull / push` |
 | [your.rentals](https://your.rentals/) | `pull` |
+| [Zenhotels](https://www.zenhotels.com/) | `pull` |
+| [ZooZ](https://www.zooz.com/) | `pull / push` |
 
 | Payment Gateway - Receiver | Type |
 | :--- | :--- |
 | [Adyen](https://www.adyen.com/) | `pull / push` |
 | [Banorte](https://www.banorte.com/wps/portal/gfb/Home/inicio/!ut/p/a1/hc7LDoIwEAXQb3HBlo5QEN01kPCM-IgRujFgasFUSgDh90XixsTH7O7k3MwgihJEq6wvedaVssrEM1Pz5Gpzy9NtCGMn1IH4W-OwwxsXO8YI0hHAlyHwr39EdCK2Szy8iABi7GpArHWA98ZSA998gR8nAkS5kPn0bkqqXLc4og27sIY16r0Z10XX1e1KAQWGYVC5lFww9Vwo8KlRyLZDyRtE9S2BqyH6iMxmD9c73J8!/dl5/d5/L2dBISEvZ0FBIS9nQSEh/) | `pull / push` |
 | [Braintree](https://www.braintreepayments.com/) | `pull / push` |
+| [BridgePay Baylakes](https://bridgepaynetwork.com/) | `push` |
 | [Cielo](http://www.cielo.com.br/) | `pull / push` |
 | [Centralpay](https://www.centralpay.eu/fr/) | `pull / push` |
 | [Computop](https://www.computop.com/de/) | `pull / push` |
@@ -79,8 +94,8 @@
 | [Stripe](https://stripe.com/de) | `pull / push` |
 | [Virtual Merchant](https://www.myvirtualmerchant.com/VirtualMerchant/) | `pull / push` |
 | [YesPay](http://yespay.co.in/) | `pull / push` |
+| [YapStone](https://www.yapstone.com/) | `pull` |
 | [Worldpay](http://www.worldpay.com/) | `pull / push` |
-| [ZooZ](https://www.zooz.com/) | `pull / push` |
 
 | File-Receiver | Type |
 | :--- | :--- |
