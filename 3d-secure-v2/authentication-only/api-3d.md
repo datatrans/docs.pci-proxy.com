@@ -554,24 +554,24 @@ curl -X GET \
 
 #### Directory Response \(Transaction status after `ARes`\)
 
-| Value | 3Dv2 |
-| :--- | :--- |
-| Y | authenticated |
-| N | authentication failed |
-| U | not available |
-| C | challenge needed |
-| R | rejected |
-| A | authentication attempt |
+| Value | 3Dv2 | Description |
+| :--- | :--- | :--- |
+| Y | authenticated | The card or account was authenticated seamlessly with 3D Secure. No challenge flow will take place. |
+| N | authentication failed | Not authenticated. |
+| U | not available | The authentication or account verification could not be performed. This is usually linked to technical problems. |
+| C | challenge needed | Further cardholder interaction is required to complete the authentication. |
+| R | rejected | Not authenticated because the issuer is rejecting authentication. |
+| A | authentication attempt | Not authenticated, but a proof of authentication attempt was generated. One or more 3D Secure authentication attempts were performed but no authentication or account verification was completed successfully. This serves as a proof that 3D Secure authentication was attempted and may also be returned if a cardholder skips the 3D Secure registration. |
 
 #### Authentication Response \(Transaction status after `RReq` \(Challenge flow\)\)
 
-| Value  | 3Dv2 |
-| :--- | :--- |
-| Y | authenticated |
-| N | authentication failed |
-| U | not available |
-| A | authentication attempt |
-| C | process incomplete |
+| Value  | 3Dv2 | Description |
+| :--- | :--- | :--- |
+| Y | authenticated | The authentication was successful. |
+| N | authentication failed | The authentication or account could not be verified. This will be returned when the authentication fails. |
+| U | not available | The authentication or account verification could not be performed. This is usually linked to technical problems. |
+| A | authentication attempt | Not authenticated, but a proof of authentication attempt was generated. One or more 3D Secure authentication attempts were performed but no authentication or account verification was completed successfully. This serves as a proof that 3D Secure authentication was attempted and may also be returned if a cardholder skips the 3D Secure registration. |
+| C | process incomplete | Further cardholder interaction is required to complete the authentication. The authentication process is incomplete. |
 
 ## Step 4: Forward 3D data
 
