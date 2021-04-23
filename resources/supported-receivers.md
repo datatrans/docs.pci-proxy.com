@@ -39,6 +39,8 @@
 | [Sabre Airline Solutions](https://www.sabreairlinesolutions.com/home/) | `pull / push` |
 | [Sabre \(Synxis\)](https://reservations.synxis.com/) | `pull / push` |
 | [Siteminder Siteconnect ](http://www.siteminder.com/) | `pull / push` |
+| [Streamlinevrs](https://www.streamlinevrs.com/) | `pull` |
+| [Sunnycars](https://www.sunnycars.com/) | `pull` |
 | [Tesipro](http://tesipro.com/) | `pull / push` |
 | [Tokeet](https://www.tokeet.com/) | `pull` |
 | [Track](https://trackhs.com/) | `pull` |
@@ -89,6 +91,9 @@
 | [SaferPay](https://www.six-payment-services.com/en/site/e-commerce/home.html) | `pull / push` |
 | [Sagepay](http://www.sagepay.co.uk/) | `pull / push` |
 | [Sipay](http://www.sipay.es/en/) | `pull / push` |
+| [Slope](https://www.slope.it/) | `pull` |
+| [SnapTravel](https://www.snaptravel.com/) | `pull` |
+| [Southwest Airlines](https://www.southwest.com/) | `pull` |
 | [Spreedly](https://www.spreedly.com/) | `pull / push` |
 | [Six Payment Services](https://www.six-payment-services.com/en/home.html) | `pull / push` |
 | [Stripe](https://stripe.com/de) | `pull / push` |
