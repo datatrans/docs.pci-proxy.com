@@ -24,6 +24,7 @@
 | [Hotel-Spider](http://www.hotel-spider.com/en/) | `pull / push` |
 | [HotelTime](https://www.hoteltime.com/) | `push` |
 | [Merrion Hotel](https://www.merrionhotel.com/) | `push` |
+| [Navitaire](https://www.navitaire.com/) | `pull` |
 | [NH Hotel Group](https://www.nh-hotels.com/) | `push` |
 | [Opera](https://www.oracle.com/industries/hospitality/products/opera-cloud-services.html) | `pull / push` |
 | [Oracle Corporation](https://www.oracle.com/) | `push` |
@@ -33,11 +34,16 @@
 | [Protel](http://www.protel.net/de/) | `pull / push` |
 | [RateGain](http://rategain.com/) | `pull / push` |
 | [Realex Payments](https://www.realexpayments.com/) | `pull / push` |
+| [Redawning](https://www.redawning.com/) | `pull` |
+| [RedSys](http://www.redsys.es/en/) | `pull` |
+| [Rentalcars](https://www.rentalcars.com/) | `pull` |
+| [Rentalcover](https://www.rentalcover.com/en/) | `pull` |
 | [Rentals United](https://rentalsunited.com/de/) | `pull / push` |
 | [Roiback](https://www.roiback.com/) | `push` |
-| [Roomcloud](https://www.roomcloud.net/) | `push` |
+| [Roomcloud](https://www.roomcloud.net/) | `pull / push` |
 | [Sabre Airline Solutions](https://www.sabreairlinesolutions.com/home/) | `pull / push` |
 | [Sabre \(Synxis\)](https://reservations.synxis.com/) | `pull / push` |
+| [Singapore airlines](https://www.singaporeair.com/) | `pull` |
 | [Siteminder Siteconnect ](http://www.siteminder.com/) | `pull / push` |
 | [Streamlinevrs](https://www.streamlinevrs.com/) | `pull` |
 | [Sunnycars](https://www.sunnycars.com/) | `pull` |
@@ -88,6 +94,8 @@
 | [Paybox](http://www1.paybox.com/?lang=en) | `pull / push` |
 | [PayPal3t](https://www.paypal.com/us/webapps/mpp/home) | `pull / push` |
 | [Realex Payments](https://www.realexpayments.com/) | `pull / push` |
+| [S7 Airlines](https://www.s7.ru/) | `pull` |
+| [SafeCharge](https://www.safecharge.com/) | `pull` |
 | [SaferPay](https://www.six-payment-services.com/en/site/e-commerce/home.html) | `pull / push` |
 | [Sagepay](http://www.sagepay.co.uk/) | `pull / push` |
 | [Sipay](http://www.sipay.es/en/) | `pull / push` |
