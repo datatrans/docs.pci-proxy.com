@@ -29,7 +29,7 @@ If you have added a SFTP-Receiver to your account, you can easily redirect reque
 ```bash
 curl 'https://sandbox.pci-proxy.com/v1/ft?merchantId=XXX&sign=XXX&url=sftp://username@127.0.0.1/folder/test-filename.txt&password=XXX&type=BTA'
     -X POST                                                // Request Method POST
-    -H "Content-Type: text/plain; charset=UTF-8"           // Accepted: 'text/plan'; 'application/json'; 'application/xml'
+    -H "Content-Type: text/plain; charset=UTF-8"           // Accepted: 'text/plain'; 'application/json'; 'application/xml'
     -d '0000080915K...'                                    // define the content
 ```
 
