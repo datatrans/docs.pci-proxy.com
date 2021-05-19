@@ -4,6 +4,12 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 # Release notes
 
+## Mai 2021
+
+#### New value added - GET Status API
+
+In addition to `debit` and `credit` the Status API now also returns `prepaid` in the `card.info.type` property.
+
 ## April 2021
 
 **Alias 2.0 - Return fingerprint**
