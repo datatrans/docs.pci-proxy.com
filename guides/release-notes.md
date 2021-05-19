@@ -6,7 +6,7 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 ## Mai 2021
 
-#### New value added - Status API
+#### New value returned - Status API
 
 In addition to `debit` and `credit` the Status API now also returns `prepaid` in the `card.info.type` property.
 
