@@ -19,6 +19,8 @@ Use the following Datatrans test card data to test through 3D Secure v1 and v2 t
 | AMEX | 340000100000040 | 1234 | 3D v2 - challenge declined |
 | AMEX | 340000100000016 | 1234 | 3D v2 - frictionless authenticated |
 | AMEX | 340000100000032 | 1234 | 3D v2 - frictionless declined  |
+| DIN | 30569309025904 | 123 | 3D v2 - challenge authenticated |
+| DIS | 6011000000000004 | 123 | 3D v2 - challenge authenticated |
 
 #### Expiration date
 
