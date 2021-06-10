@@ -10,7 +10,7 @@ With the following methods you can use collect & store cards:
 
 {% page-ref page="capture-iframes/" %}
 
-> Customizable iframes to collect and tokenize payment data
+> Customizable iframes to collect and tokenize payment data in a web browser.
 
 {% page-ref page="mobile-sdk-beta.md" %}
 

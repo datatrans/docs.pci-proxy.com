@@ -4,6 +4,12 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 # Release notes
 
+## June 2021
+
+**New product - mobile SDK \(Android & iOS\)**
+
+Use our mobile libraries for native Android & iOS apps to [tokenize cardholder data](../3d-secure-v2/authentication-only/mobile-sdk-3d.md) and to [process 3D Secure](../3d-secure-v2/authentication-only/mobile-sdk-3d.md).  
+
 ## Mai 2021
 
 #### New value returned - Status API
