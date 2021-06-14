@@ -277,38 +277,44 @@ see setup
 
 ```java
 {
-    "transactionId": "190522141403888597",
+    "transactionId": "210609101239797372",
     "type": "payment",
     "status": "authenticated",
     "currency": "EUR",
-    "refno": "NIJ3OSelzyqp",
+    "refno": "SDK 3D_test",
     "paymentMethod": "ECA",
     "detail": {
         "authorize": {
             "amount": 1000
         }
     },
-    "history": [
-        {
-            "action": "init",
-            "amount": 1000,
-            "source": "api",
-            "date": "2019-05-22T12:14:04.385+00:00",
-            "success": true,
-            "ip": "77.109.165.195"
-        }
-    ],
     "card": {
-        "masked": "520000xxxxxx0080",
+        "alias": "AAABee_Un5_ssdexyrAAAXULTeyzAAe1",
+        "fingerprint": "F-c6FruvXTy36oJPosQUsRCf",
+        "masked": "540400xxxxxx0001",
+        "aliasCVV" : "HemcmX8TTB6Lipr_uF5IwG9M",
+        "expiryMonth": "06",
+        "expiryYear": "25",
         "3D": {
             "eci": "02",
-            "xid": "MDAxOTA1MjIxNDE0MDM4ODg1OTc=",
-            "cavv": "OTkxOTA1MjIxNDE0MjMwMjg2Mjc=",
+            "xid": "MDAyMTA2MDkxMDEyMzk3OTczNzI=",
+            "cavv": "OTkyMTA2MDkxMDEyNDkwOTc0MDY=",
             "threeDSVersion": "1.0.2",
+            "cavvAlgorithm": "1",
             "directoryResponse": "Y",
             "authenticationResponse": "Y"
         }
-    }
+    },
+    "history": [
+        {
+            "action": "authenticate",
+            "amount": 1000,
+            "source": "api",
+            "date": "2021-06-09T08:12:49Z",
+            "success": true,
+            "ip": "178.238.172.18"
+        }
+    ]
 }
 ```
 {% endapi-method-response-example %}
@@ -331,57 +337,44 @@ curl -X GET \
 {% tab title="Response" %}
 ```javascript
 {
-  "transactionId": "190906151210861442",
-  "type": "payment",
-  "status": "authenticated",
-  "currency": "EUR",
-  "refno": "EVO-1564475113071",
-  "paymentMethod": "ECA",
-  "detail": {
-    "authorize": {
-      "amount": 1000
-    }
-  },
-  "history": [
-    {
-      "action": "init",
-      "amount": 1000,
-      "source": "api",
-      "date": "2019-09-06T13:12:11.915+00:00",
-      "success": true,
-      "ip": "77.109.165.195"
+    "transactionId": "210609101239797372",
+    "type": "payment",
+    "status": "authenticated",
+    "currency": "EUR",
+    "refno": "SDK 3D_test",
+    "paymentMethod": "ECA",
+    "detail": {
+        "authorize": {
+            "amount": 1000
+        }
     },
-    {
-      "action": "authenticate",
-      "amount": 1000,
-      "source": "web",
-      "date": "2019-09-06T13:12:21.915+00:00",
-      "success": true,
-      "ip": "77.109.165.195"
-    }
-  ],
-  "card": {
-    "masked": "520000xxxxxx0080",
-    "expiryMonth": "12",
-    "expiryYear": "21",
-    "info": {
-      "brand": "MCI CREDIT",
-      "type": "credit",
-      "usage": "consumer",
-      "country": "MY",
-      "issuer": "DATATRANS"
+    "card": {
+        "alias": "AAABee_Un5_ssdexyrAAAXULTeyzAAe1",
+        "fingerprint": "F-c6FruvXTy36oJPosQUsRCf",
+        "masked": "540400xxxxxx0001",
+        "aliasCVV" : "HemcmX8TTB6Lipr_uF5IwG9M",
+        "expiryMonth": "06",
+        "expiryYear": "25",
+        "3D": {
+            "eci": "02",
+            "xid": "MDAyMTA2MDkxMDEyMzk3OTczNzI=",
+            "cavv": "OTkyMTA2MDkxMDEyNDkwOTc0MDY=",
+            "threeDSVersion": "1.0.2",
+            "cavvAlgorithm": "1",
+            "directoryResponse": "Y",
+            "authenticationResponse": "Y"
+        }
     },
-    "3D": {
-      "eci": "02",
-      "xid": "MDAxOTA5MDYxNTEyMTA4NjE0NDI=",
-      "cavv": "OTkxOTA5MDYxNTEyMjE3NTE0NjA=",
-      "threeDSVersion": "1.0.2",
-      "cavvAlgorithm": "1",
-      "directoryResponse": "Y",
-      "authenticationResponse": "Y",
-      "cardHolderInfo": "Detailed issuer notification if available"
-    }
-  }
+    "history": [
+        {
+            "action": "authenticate",
+            "amount": 1000,
+            "source": "api",
+            "date": "2021-06-09T08:12:49Z",
+            "success": true,
+            "ip": "178.238.172.18"
+        }
+    ]
 }
 ```
 {% endtab %}
