@@ -551,6 +551,8 @@ curl -X GET \
   </tbody>
 </table>
 
+### Directory response & authentication response
+
 We return the directory response for any transaction where a 3D Secure verification can take place and the authentication response for any transaction where a 3D Secure challenge flow was completed. In other words: directoryResponse tells you if a card is enrolled or needs authentication and authenticationResponse returns the challenge flow response.
 
 #### Directory Response \(Transaction status after `ARes`\)
