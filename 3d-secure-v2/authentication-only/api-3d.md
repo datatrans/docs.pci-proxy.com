@@ -539,7 +539,7 @@ curl -X GET \
       </td>
       <td style="text-align:left"><a href="../3ds-terminology.md#cardholderinfo-cardholder-information-text">cardholderInfo</a>
       </td>
-      <td style="text-align:left">Text provided by the ACS/Issuer to Cardholder</td>
+      <td style="text-align:left">Optional message provided by the ACS/Issuer to the Cardholder</td>
     </tr>
     <tr>
       <td style="text-align:left"><code>transStatusReason</code>
