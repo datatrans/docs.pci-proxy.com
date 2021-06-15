@@ -546,11 +546,12 @@ curl -X GET \
       </td>
       <td style="text-align:left"><a href="../3ds-terminology.md#transstatusreason-transaction-status-reason">transStatusReason</a>
       </td>
-      <td style="text-align:left">Provides information on why the Transaction Status field has the specified
-        value.</td>
+      <td style="text-align:left">Provides additional information on the failed 3D authentication</td>
     </tr>
   </tbody>
 </table>
+
+We return the directory response for any transaction where a 3D Secure verification can take place and the authentication response for any transaction where a 3D Secure challenge flow was completed. In other words: directoryResponse tells you if a card is enrolled or needs authentication and authenticationResponse returns the challenge flow response.
 
 #### Directory Response \(Transaction status after `ARes`\)
 
