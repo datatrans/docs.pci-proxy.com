@@ -8,7 +8,7 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 **New integration - mobile SDK \(Android & iOS\)**
 
-Use our mobile libraries for native Android & iOS apps to [tokenize cardholder data](../collect-and-store-cards/mobile-sdk-beta.md) and to [process 3D Secure](../3d-secure-v2/authentication-only/mobile-sdk-3d.md).  
+Use our mobile libraries for native Android & iOS apps to [tokenize cardholder data](../collect-and-store-cards/mobile-sdk.md) and to [process 3D Secure](../3d-secure-v2/authentication-only/mobile-sdk-3d.md).  
 
 ## Mai 2021
 

@@ -12,7 +12,7 @@ With the following methods you can use collect & store cards:
 
 > Customizable iframes to collect and tokenize payment data in a web browser.
 
-{% page-ref page="mobile-sdk-beta.md" %}
+{% page-ref page="mobile-sdk.md" %}
 
 > Collect and tokenize payment data with PCI Proxy from inside your native apps
 
