@@ -13,15 +13,15 @@ As of today, Datatrans/PCI Proxy is a certified Token Requestor Provider for Vis
 Network Tokenisation is a concept introduced by the card schemes such as Visa, Mastercard and AMEX. Based on the technical framework provided by Emvco \([https://www.emvco.com/emv-technologies/payment-tokenisation/](https://www.emvco.com/emv-technologies/payment-tokenisation/)\).  
 Thereby, a Network Token \(also called DPAN\) is a 16 digit Primary Account Number \(PAN\) alternative which is unique per each cardholder as well as per mechant. Like a regular PAN, Network Tokens can be used for completing ecom transactions or sharing them with other partners in the payment eco-system. 
 
-By using PCI Proxy APIs a Network Token will be created immediately once a cardnumber is collect - without any further implementation effort on your side. 
+By using PCI Proxy APIs a Network Token will automatically generated once a cardnumber is collected - without any further implementation effort on your side. 
 
 ### How can my business benefit from Network Tokens? 
 
 Network Tokens offer a wide range of benefits for merchants such as: 
 
 * Account lifecycle management \(Card Updater\)
-  * Pro active updates for credit card credentials
-  * Latest state about credit card \(active, suspended, etc\)
+  * Pro-active updates for credit card credentials
+  * Latest state a about credit card \(active, suspended, etc\)
 * Higher conversion rate
   * Less declines due automatically updated credit card credentials
   * Significantly higher authorisation rate at issuers compared to payments made without Network Tokens
@@ -30,15 +30,15 @@ Network Tokens offer a wide range of benefits for merchants such as:
   * Each token has a one-time cryptogram
 * Card art
   * Get a picture of the card to show in the customer profile
-* Future-proof: Beeing ready for upcoming card services 
+* Future-proof: Being ready for upcoming card services 
   * Push provisioning
-  * Delegathed authentication
+  * Delegated authentication
   * Improved guest check-out
 
 ### Who should use the Network Tokens? 
 
 Merchants and Service Providers across various industries can benefit from Network Tokens.   
-The following use cases are predistined for using Network tokenisation:
+The following use cases are pre-distined for using Network tokenisation:
 
 * Subscription based businesses
 * Recurring businesses
