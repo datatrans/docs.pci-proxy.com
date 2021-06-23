@@ -1,0 +1,54 @@
+---
+description: PCI Proxy Network Tokenisation service
+---
+
+# Network Tokens \(beta\)
+
+Datatrans/PCI Proxy is a certified Token Requestor Provider for Visa \(VTS\) and MasterCard \(MDES\) network tokenisation. AMEX \(AETS\) will be added later this year. PCI Proxy Network Tokenisation service is a beta feature which enables customer to increase their payment success rate and improve their security. 
+
+### **Network Tokens**
+
+Network Tokenisation is a concept introduced by the card schemes such as Visa, Mastercard and AMEX. Based on the technical framework of Emvco \([https://www.emvco.com/emv-technologies/payment-tokenisation/](https://www.emvco.com/emv-technologies/payment-tokenisation/)\).  
+Thereby, a Network Token \(also called DPAN\) is a 16 digit Primary Account Number \(PAN\) alternative which is unique per each cardholder as well as per mechant. Like a regular PAN, Network Tokens can be used for completing ecom transactions or sharing them with other partners in the payment eco-system. 
+
+By using PCI Proxy APIs a Network Token will be created immediately once a cardnumber is collect - without any further implementation effort on your side. 
+
+### How can my business benefit from Network Tokens? 
+
+Network Tokens offer a wide range of benefits for merchants such as: 
+
+* Account lifecycle management \(Card Updater\)
+  * Pro active updates for credit card credentials
+  * Latest state about credit card \(active, suspended, etc\)
+* Higher conversion rate
+  * Less declines due automatically updated credit card credentials
+  * Significantly higher authorisation rate at issuers compared with payment made without Network Tokens
+* Increased security & less fraud 
+  * Strict domain control / Merchant specific tokens
+  * Each token has a one-time cryptogram
+* Card art
+  * Get a picture of the card to show in the customer profile
+* Future-proof: Beeing ready for upcoming card services 
+  * Push provisioning
+  * Delegathed authentication
+  * Improved guest check-out
+
+### Who should use the Network Tokens? 
+
+Merchants and Service Providers across various industries can benefit from Network Tokens.   
+The following use cases are predistined for using Network tokenisation:
+
+* Subscription based businesses
+* Recurring businesses
+* Fintechs
+
+### How to get access to the PCI Proxy Network tokenisation feature? 
+
+Simply [drop us a message](https://www.pci-proxy.com/pci-proxy/contact/) if you're interested in taking advantage of Network Tokens.  
+Our team will reach out to you and let you know how to proceed best.   
+  
+
+
+
+
+
