@@ -34,7 +34,7 @@
   * [Testing 3D Secure](3d-secure-v2/testing-3d-secure.md)
   * [Errors](3d-secure-v2/initialization-errors.md)
   * [3DS Terminology](3d-secure-v2/3ds-terminology.md)
-* [Network Tokens \(beta\)](scheme-tokenisation-beta.md)
+* [Network Tokens \(beta\)](network-tokenisation-beta.md)
 * [Resources](resources/README.md)
   * [Full API Reference](resources/full-api-reference.md)
   * [Request Types](resources/request-types.md)
