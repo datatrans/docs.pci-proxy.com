@@ -84,7 +84,7 @@ API consumes application/json; charset=UTF-8
 Transaction amount in the currency's smallest unit. For example use 1000 for EU 10.00
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="amount" type="string" required=true %}
+{% api-method-parameter name="currency" type="string" required=true %}
 3 letter ISO-4217 character. For example EUR or USD
 {% endapi-method-parameter %}
 
