@@ -22,7 +22,7 @@ Network Tokens offer a wide range of benefits for merchants such as:
   * Latest state about credit card \(active, suspended, etc\)
 * Higher conversion rate
   * Less declines due automatically updated credit card credentials
-  * Significantly higher authorisation rate at issuers compared with payment made without Network Tokens
+  * Significantly higher authorisation rate at issuers compared to payments made without Network Tokens
 * Increased security & less fraud 
   * Strict domain control / Merchant specific tokens
   * Each token has a one-time cryptogram
@@ -45,7 +45,7 @@ The following use cases are predistined for using Network tokenisation:
 ### How to get access to the PCI Proxy Network tokenisation feature? 
 
 Simply [drop us a message](https://www.pci-proxy.com/pci-proxy/contact/) if you're interested in taking advantage of Network Tokens.  
-Our team will reach out to you and let you know how to proceed best.   
+Our team will reach out and find the best way how to proceed together with you.   
   
 
 
