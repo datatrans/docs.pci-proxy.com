@@ -4,7 +4,9 @@ description: PCI Proxy Network Tokenisation service
 
 # Network Tokens \(beta\)
 
-Datatrans/PCI Proxy is a certified Token Requestor Provider for Visa \(VTS\) and MasterCard \(MDES\) network tokenisation. AMEX \(AETS\) will be added later this year. PCI Proxy Network Tokenisation service is a beta feature which enables customer to increase their payment success rate and improve their security. 
+PCI Proxy Network Tokenisation service is a beta feature which enables merchants to increase their payment success rate and improve their security. 
+
+As of today, Datatrans/PCI Proxy is a certified Token Requestor Provider for Visa \(VTS\) and MasterCard \(MDES\) network tokenisation. Support for American Express \(AETS\) will be added later this year. 
 
 ### **Network Tokens**
 
