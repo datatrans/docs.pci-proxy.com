@@ -10,7 +10,7 @@ As of today, Datatrans/PCI Proxy is a certified Token Requestor Provider for Vis
 
 ### **Network Tokens**
 
-Network Tokenisation is a concept introduced by the card schemes such as Visa, Mastercard and AMEX. Based on the technical framework provided by Emvco \([https://www.emvco.com/emv-technologies/payment-tokenisation/](https://www.emvco.com/emv-technologies/payment-tokenisation/)\).  
+Network Tokenisation is a concept introduced by the card schemes such as Visa, Mastercard and AMEX, based on the technical framework provided by Emvco \([https://www.emvco.com/emv-technologies/payment-tokenisation/](https://www.emvco.com/emv-technologies/payment-tokenisation/)\).  
 Thereby, a Network Token \(also called DPAN\) is a 16 digit Primary Account Number \(PAN\) alternative which is unique per each cardholder as well as per mechant. Like a regular PAN, Network Tokens can be used for completing ecom transactions or sharing them with other partners in the payment eco-system. 
 
 By using PCI Proxy APIs a Network Token will be automatically generated once a cardnumber is collected - without any further implementation effort on your side. 
@@ -21,9 +21,9 @@ Network Tokens offer a wide range of benefits for merchants such as:
 
 * Account lifecycle management \(Card Updater\)
   * Pro-active updates for credit card credentials
-  * Latest state a about credit card \(active, suspended, etc\)
+  * Network Token status \(active, suspended, etc\)
 * Higher conversion rate
-  * Less declines due automatically updated credit card credentials
+  * Less declines due to automatically updated credit card credentials
   * Significantly higher authorisation rate at issuers compared to payments made without Network Tokens
 * Increased security & less fraud 
   * Strict domain control / Merchant specific tokens
