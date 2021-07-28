@@ -4,6 +4,12 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 # Release notes
 
+## July 2021
+
+**New process for compliance check of** [**Receivers**](3rd-party-receiver-validation.md)\*\*\*\*
+
+A new, automated process for the compliance renewal of the Receivers has been introduced. 
+
 ## June 2021
 
 **New integration - mobile SDK \(Android & iOS\)**
