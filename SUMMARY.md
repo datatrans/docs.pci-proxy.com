@@ -35,6 +35,7 @@
   * [Errors](3d-secure-v2/initialization-errors.md)
   * [3DS Terminology](3d-secure-v2/3ds-terminology.md)
 * [Network Tokens \(beta\)](network-tokenisation-beta.md)
+* [Document Vault \(beta\)](document-vault-beta.md)
 * [Resources](resources/README.md)
   * [Full API Reference](resources/full-api-reference.md)
   * [Request Types](resources/request-types.md)
