@@ -1,7 +1,7 @@
 # Document Vault \(beta\)
 
 The "Document Vault" allows your customers to upload sensitive images and documents in a PCI DSS and data security compliant environment.   
-Therefor you generate a unique upload link. The link can be presented to the user in your application. It redirects the user to an upload page which is hosted on our servers. Subsequently, the uploaded files can be reviewed in our Dashboard without the need to take care of PCI DSS compliance. 
+Therefore, you generate a unique upload link. The link can be presented to the user in your application. It redirects the user to an upload page which is hosted on our servers. Subsequently, the uploaded files can be reviewed in our Dashboard without the need to take care of PCI DSS compliance. 
 
 To get started, please follow the step-by-step guide below.
 
@@ -89,7 +89,7 @@ curl -L -X POST 'https://dashboard.pci-proxy.com/api/vault/request' \
 {% endtab %}
 {% endtabs %}
 
-## 2. Redirect cardholder 
+## 2. Redirect the cardholder 
 
 Embed the upload link received from the response into your application and redirect the cardholder to it.   
   
@@ -101,7 +101,7 @@ Supported file-types: `image/png`, `image/jpeg`, `image/heic`, `application/pdf`
 
 ## 3. Review uploaded documents
 
-Login to our [dashboard](https://dashboard.pci-proxy.com/login) and navigate to the "Document Vault" menu within the Project section on the lefthand side menu bar. Press the View button to reveal an uploaded document. 
+Login to our [dashboard](https://dashboard.pci-proxy.com/login) and navigate to the "Document Vault" menu within the Project section on the left-hand side menu bar. Press the View button to reveal an uploaded document. 
 
 {% hint style="info" %}
 The "Document Vault" menu requires special user rights with mandatory 2FA enabled.   

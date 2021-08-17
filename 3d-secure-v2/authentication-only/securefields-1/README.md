@@ -47,7 +47,7 @@ API consumes application/json; charset=UTF-8
 
 {% api-method-body-parameters %}
 {% api-method-parameter name="amount" type="integer" required=true %}
-Transaction amount in the currency's smallest unit. For example use 1000 for EU 10.00
+Transaction amount in the currency's smallest unit. For example use 1000 for EUR 10.00
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="currency" type="string" required=true %}
