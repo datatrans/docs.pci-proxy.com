@@ -578,5 +578,5 @@ We return the directory response for any transaction where a 3D Secure verificat
 
 ## Step 4: Forward 3D data
 
-The received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateways. If you decide to use Datatrans payment gateway please continue with our [Authorize]() API.
+The received `"3D"` object contains parameters with the result of the 3D-Secure process and can be forwarded to 3rd party payment gateways. If you decide to use Datatrans payment gateway please continue with our [Authorize API](https://api-reference.datatrans.ch/#operation/authorize).
 
