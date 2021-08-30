@@ -64,7 +64,7 @@ Create a tokenization object with your `merchantId` and `paymentMethodTypes` to 
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-let tokenizationRequest = TokenizationRequest(merchantId: merchantId, paymentMethodTypes: [Visa, MasterCard]) 
+let tokenizationRequest = TokenizationRequest(merchantId: merchantId, paymentMethodTypes: [.Visa, .MasterCard]) 
 tokenizationRequest.delegate = self
 tokenizationRequest.start(presentingController: navigationController)
 ```
