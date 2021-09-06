@@ -4,6 +4,12 @@ description: 'See our latest features, changes and improvements on the PCI Proxy
 
 # Release notes
 
+## September 2021
+
+**Re-design - NoShow authentication email**
+
+We have re-designed the look and feel of the [NoShow authentication](../use-stored-cards/show.md) email. 
+
 ## July 2021
 
 **New process for compliance check of** [**Receivers**](3rd-party-receiver-validation.md)\*\*\*\*
