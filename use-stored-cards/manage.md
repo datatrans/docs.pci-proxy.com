@@ -145,6 +145,14 @@ application/json; charset=UTF-8
 {% api-method-parameter name="legacyAlias" type="string" required=true %}
 Legacy token format \(numeric or masked\)
 {% endapi-method-parameter %}
+
+{% api-method-parameter name="expiryMonth" type="string" required=false %}
+The expiry month of the credit card behind alias \d{2}
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="expiryYear" type="string" required=false %}
+The expiry year of the credit card behind the alias \d{2}
+{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
