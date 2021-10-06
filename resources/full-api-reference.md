@@ -87,7 +87,7 @@ Error cases \(returned with headers X-CC-ERROR-CODE and X-CC-ERROR\):
 | 3 | Target host not allowed: `X-CC-URL` | The target URL is not allowed. Please contact Datatrans Support. |
 | 4 | Invalid merchant setup - security sign was not defined | Merchant did not define the security sign. |
 | 5 | Invalid authentication \(api-key or sign\) | Either `pci-proxy-api-key` or `sign` value is wrong.  |
-| 6 | Invalid proxy type: `<PROXY_TYPE_NAME>` | The provided merchant/url headers did not match to a valid known proxy type. Please contact Datatrans Support. |
+| 9 | Invalid proxy type: `<PROXY_TYPE_NAME>` | The provided merchant/url headers did not match to a valid known proxy type. Please contact Datatrans Support. |
 | 50 | Missing parameter: `<PARAMETER-NAME>` | PUSH request parameter missing. |
 | 100 | Unsupported method: `<METHOD-NAME>` | Unsupported HTTP method |
 | 200 | Could not apply xPath on xml response: `<XPATH-EXPRESSION>` | There was an error applying the xpath expression |
