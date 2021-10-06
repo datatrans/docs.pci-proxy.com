@@ -42,9 +42,9 @@ In turn, the proxy will return HTTP headers:
 | `x-cc-error-code` | Returned by the proxy in case of error only. See the error table below. |
 | `x-cc-error` | Returned by the proxy in case of error only. See the error table below. |
 | `x-cc-matches` | Returned by the proxy in case of success. The value represents the number of total \(card to alias / alias to card\) replacements that were made. |
-| `x-cc-matches-ca` | Returned number of card to alias replacements. |
-| `x-cc-matches-ac` | Returned number of alias to card replacements. |
-| `x-cvv-matches` | Returned number of cvv to alias replacements.  |
+| `x-cc-matches-ca` | The number of card to alias replacements. |
+| `x-cc-matches-ac` | The number of alias to card replacements. |
+| `x-cvv-matches` | The total number of cvv to alias and alias to cvv replacements.   |
 | `x-custom-matches` | Returned by the proxy in case of a successful replacement. The value represents the number of total \(custom value to token / token to custom value\) replacements that were made.  |
 | `x-cc-proxy-action-id` | Unique request identifier. |
 
@@ -57,9 +57,9 @@ PCI Proxy forwards the following HTTP headers to your endpoint:
 | `x-cc-error-code` | Returned by the proxy in case of error only. See the error table below. |
 | `x-cc-error` | Returned by the proxy in case of error only. See the error table below. |
 | `x-cc-matches` | Returned by the proxy in case of success. The value represents the number of total \(card to alias / alias to card\) replacements that were made. |
-| `x-cc-matches-ca` | Returned number of card to alias replacements. |
-| `x-cc-matches-ac` | Returned number of alias to card replacements. |
-| `x-cvv-matches` | Returned number of cvv to alias replacements.  |
+| `x-cc-matches-ca` | The number of card to alias replacements. |
+| `x-cc-matches-ac` | The number of alias to card replacements. |
+| `x-cvv-matches` | The total number of cvv to alias and alias to cvv replacements.  |
 | `x-custom-matches` | Returned by the proxy in case of a successful replacement. The value represents the number of total \(custom value to token / token to custom value\) replacements that were made.  |
 | `pci-proxy-masked-aliases` | Masked card alias format will be returned |
 | `x-cc-forwarded-for` | Returns the IP address of the origin caller of the Push integration.  |
