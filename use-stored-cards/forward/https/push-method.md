@@ -10,39 +10,27 @@ Push method allows you to receive a request via PCI Proxy on a `uniquePushKey` e
 
 
 
-![Process Flow with PCI Proxy](../../../.gitbook/assets/receiver_push_pciproxy_color%20%284%29.png)
+![Process Flow with PCI Proxy](<../../../.gitbook/assets/receiver_push_pciproxy_color (4).png>)
 
-{% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/push/uniquePushKey" %}
-{% api-method-summary %}
-PUSH method - API request
-{% endapi-method-summary %}
+{% swagger baseUrl="https://sandbox.pci-proxy.com" path="/v1/push/uniquePushKey" method="post" summary="PUSH method - API request" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="path" name="uniquePushKey" type="string" %}
+Your 
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="uniquePushKey" type="string" required=true %}
-Your `uniquePushKey` can be accessed by clicking in the Settings of the Integration you added in the dashboard. 
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
+`uniquePushKey`
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Response depends on your API. 
-{% endapi-method-response-example-description %}
+ can be accessed by clicking in the Settings of the Integration you added in the dashboard. 
+{% endswagger-parameter %}
 
+{% swagger-response status="200" description="Response depends on your API. " %}
 ```javascript
 <!-- your response - tokens will be detokenized and card data forwarded -->
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="warning" %}
 In test mode, only [test credit cards](../../../test-card-data.md) are allowed.
@@ -61,4 +49,3 @@ If needed, whitelist [IP addresses](../../../resources/ip-whitelisting.md) of PC
 {% hint style="success" %}
 As the request is routed via PCI Proxy, the response payload is automatically filtered for tokens. Located tokens are detokenized and your response payload is populated with full card data before it arrives at the Receiver endpoint. Thereby, the Receiver API endpoint obtains full credit card data.
 {% endhint %}
-

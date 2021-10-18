@@ -5,7 +5,7 @@ description: Get full control and interact with your tokens (alias) stored in ou
 # Manage
 
 {% hint style="danger" %}
-Please note that the token management API is only working with the latest [Alias 2.0 format](https://docs.pci-proxy.com/resources/token-format).   
+Please note that the token management API is only working with the latest [Alias 2.0 format](https://docs.pci-proxy.com/resources/token-format). \
 Reach out to your PCI Proxy contact if you are not sure which alias format you are using. 
 {% endhint %}
 
@@ -13,40 +13,24 @@ Reach out to your PCI Proxy contact if you are not sure which alias format you a
 The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
 {% endhint %}
 
-{% api-method method="get" host="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" %}
-{% api-method-summary %}
-Alias information
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" method="get" summary="Alias information" %}
+{% swagger-description %}
 Request detailed information about an alias such as creation date or cardInfo. 
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="alias" type="string" required=true %}
+{% swagger-parameter in="path" name="alias" type="string" %}
 Alias 2.0 format received from a previous inbound channel
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Content-Type" type="string" required=true %}
+{% swagger-parameter in="header" name="Content-Type" type="string" %}
 application/json; charset=UTF-8==
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Status successfully returned
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Status successfully returned" %}
 ```javascript
 {
     "alias": "AAABeM8amw3ssdexyrAAAYwp9fXrAIkp",
@@ -67,13 +51,9 @@ Status successfully returned
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Invalid request
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Invalid request" %}
 ```javascript
 {
   "error": {
@@ -81,10 +61,8 @@ Invalid request
   }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 #### Examples
 
@@ -120,60 +98,40 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/v1/aliases/AAABeM8amw3ssdexyrA
 {% endtab %}
 {% endtabs %}
 
-{% api-method method="post" host="https://api.sandbox.datatrans.com" path="/v1/aliases" %}
-{% api-method-summary %}
-CONVERT
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases" method="post" summary="CONVERT" %}
+{% swagger-description %}
+Convert a legacy (numeric or masked format) token to the most recent token format.
+{% endswagger-description %}
 
-{% api-method-description %}
-Convert a legacy \(numeric or masked format\) token to the most recent token format.
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Content-Type" type="string" required=true %}
+{% swagger-parameter in="header" name="Content-Type" type="string" %}
 application/json; charset=UTF-8
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="legacyAlias" type="string" required=true %}
-Legacy token format \(numeric or masked\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="legacyAlias" type="string" %}
+Legacy token format (numeric or masked)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="expiryMonth" type="string" required=false %}
+{% swagger-parameter in="body" name="expiryMonth" type="string" %}
 The expiry month of the credit card behind alias \d{2}
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="expiryYear" type="string" required=false %}
+{% swagger-parameter in="body" name="expiryYear" type="string" %}
 The expiry year of the credit card behind the alias \d{2}
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Returns converted alias v2
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Returns converted alias v2" %}
 ```javascript
 {
   "alias": "AAABdJdXVGPssdexyrAAAbuFU885AFAk"
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Invalid request
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Invalid request" %}
 ```javascript
 {
   "error": {
@@ -181,10 +139,8 @@ Invalid request
   }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 #### Examples
 
@@ -209,50 +165,29 @@ curl -i -X POST https://api.sandbox.datatrans.com/v1/aliases \
 {% endtab %}
 {% endtabs %}
 
-{% api-method method="delete" host="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" %}
-{% api-method-summary %}
-DELETE
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" method="delete" summary="DELETE" %}
+{% swagger-description %}
 Delete a token with immediate effect. The token will no longer be recognized if used later with any API call.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="alias" type="string" required=true %}
+{% swagger-parameter in="path" name="alias" type="string" %}
 Alias which should be deleted
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Content-Type" type="string" required=true %}
+{% swagger-parameter in="header" name="Content-Type" type="string" %}
 application/json; charset=UTF-8
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=204 %}
-{% api-method-response-example-description %}
-Alias successful deleted
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="204" description="Alias successful deleted" %}
 ```
-
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Invalid request
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Invalid request" %}
 ```javascript
 {
   "error": {
@@ -260,10 +195,8 @@ Invalid request
   }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 #### Examples
 
@@ -282,4 +215,3 @@ curl -i -X DELETE https://api.sandbox.datatrans.com/v1/aliases/AAABdJdXjl7ssdexy
 ```
 {% endtab %}
 {% endtabs %}
-

@@ -4,40 +4,26 @@
 
 Pull method allows you to send a request via PCI Proxy to a Receiver API endpoint. Your payload will be filtered for tokens which will be automatically detokenized, and sent further to the Receiver API endpoint. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be kept and routed through PCI Proxy without modification.
 
-![Process Flow with PCI Proxy](../../../.gitbook/assets/receiver_pull_pciproxy_color%20%283%29.png)
+![Process Flow with PCI Proxy](<../../../.gitbook/assets/receiver_pull_pciproxy_color (4).png>)
 
-{% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
-{% api-method-summary %}
-PULL method - API request
-{% endapi-method-summary %}
+{% swagger baseUrl="https://sandbox.pci-proxy.com" path="/v1/pull" method="post" summary="PULL method - API request" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="header" name="x-cc-merchant-id" type="string" %}
+Your unique merchant id at PCI Proxy (e.g. 1000011011)
+{% endswagger-parameter %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="x-cc-merchant-id" type="string" required=true %}
-Your unique merchant id at PCI Proxy \(e.g. 1000011011\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="header" name="pci-proxy-api-key" type="string" %}
+Your API key (ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="pci-proxy-api-key" type="string" required=true %}
-Your API key \(ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="header" name="x-cc-url" type="string" %}
+API endpoint (https://api.channel.com/)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="x-cc-url" type="string" required=true %}
-API endpoint \(https://api.channel.com/\)
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Response will contain tokenized credit card data.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Response will contain tokenized credit card data." %}
 ```markup
 <?xml version="1.0" encoding="UTF-8"?>
 <reservations>
@@ -53,10 +39,8 @@ Response will contain tokenized credit card data.
     </reservation>   
 </reservations>
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="warning" %}
 In test mode, only [test credit cards](../../../test-card-data.md) are allowed.
@@ -122,4 +106,3 @@ curl https://sandbox.pci-proxy.com/v1/pull \
 {% hint style="success" %}
 Your request is automatically filtered for tokens. Located tokens are detokenized and your payload is populated with full card data before it arrives at the Receiver endpoint. Thereby, the Receiver API endpoint obtains full credit card data.
 {% endhint %}
-

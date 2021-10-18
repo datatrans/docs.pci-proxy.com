@@ -1,67 +1,53 @@
-# Document Vault \(beta\)
+# Document Vault (beta)
 
-The "Document Vault" allows your customers to upload sensitive images and documents in a PCI DSS and data security compliant environment.   
+The "Document Vault" allows your customers to upload sensitive images and documents in a PCI DSS and data security compliant environment. \
 Therefore, you generate a unique upload link. The link can be presented to the user in your application. It redirects the user to an upload page which is hosted on our servers. Subsequently, the uploaded files can be reviewed in our Dashboard without the need to take care of PCI DSS compliance. 
 
 To get started, please follow the step-by-step guide below.
 
 ## 1. Request upload link
 
-{% api-method method="post" host="https://dashboard.pci-proxy.com" path="/api/vault/request" %}
-{% api-method-summary %}
-Init call
-{% endapi-method-summary %}
+{% swagger baseUrl="https://dashboard.pci-proxy.com" path="/api/vault/request" method="post" summary="Init call" %}
+{% swagger-description %}
+Call our Init API from 
 
-{% api-method-description %}
-Call our Init API from **your server** to request a unique upload link. 
-{% endapi-method-description %}
+**your server **
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="pci-proxy-api-key" type="string" required=true %}
+to request a unique upload link. 
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="pci-proxy-api-key" type="string" %}
 Your PCI Proxy API Key
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="content-type" type="string" required=true %}
+{% swagger-parameter in="header" name="content-type" type="string" %}
 application/json; charset=UTF-8
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="reference" type="string" required=true %}
+{% swagger-parameter in="body" name="reference" type="string" %}
 Unique reference number each request
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="successUrl" type="string" required=true %}
+{% swagger-parameter in="body" name="successUrl" type="string" %}
 The URL where the cardholder gets redirected to if the upload was successful
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="cancelUrl" type="string" required=true %}
+{% swagger-parameter in="body" name="cancelUrl" type="string" %}
 The URL where the cardholder gets redirected to if the upload process got cancelled 
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="errorUrl" type="string" required=true %}
+{% swagger-parameter in="body" name="errorUrl" type="string" %}
 There URL where the cardholder gets redirected to if the upload process failed
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Success response
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Success response" %}
 ```javascript
 {
     "link": "https://dev-dashboard-pciproxy.datatrans.biz/public/vault/BF33A0C8-F9ED-44AD-B818-015C08D76A44"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Request & Response example
 
@@ -91,8 +77,8 @@ curl -L -X POST 'https://dashboard.pci-proxy.com/api/vault/request' \
 
 ## 2. Redirect the cardholder 
 
-Embed the upload link received from the response into your application and redirect the cardholder to it.   
-  
+Embed the upload link received from the response into your application and redirect the cardholder to it. \
+\
 In case of a successful, cancelled or failed upload the cardholder will be redirected automatically to the URLs specified in the API request above. 
 
 {% hint style="info" %}
@@ -104,9 +90,8 @@ Supported file-types: `image/png`, `image/jpeg`, `image/heic`, `application/pdf`
 Login to our [dashboard](https://dashboard.pci-proxy.com/login) and navigate to the "Document Vault" menu within the Project section on the left-hand side menu bar. Press the View button to reveal an uploaded document. 
 
 {% hint style="info" %}
-The "Document Vault" menu requires special user rights with mandatory 2FA enabled.   
+The "Document Vault" menu requires special user rights with mandatory 2FA enabled. \
 Please contact us to assign such a user role. 
 {% endhint %}
 
-![&quot;Document Vault&quot; menu](.gitbook/assets/document-vault-view.png)
-
+!["Document Vault" menu](<.gitbook/assets/Document Vault view.png>)

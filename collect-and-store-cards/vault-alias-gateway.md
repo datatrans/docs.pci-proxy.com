@@ -1,49 +1,37 @@
-# Vault \(alias gateway\)
+# Vault (alias gateway)
 
 The Alias Gateway allows you to pass credit card data directly to the PCI Proxy vault to create tokens. This can be interesting if you want to migrate existing credit card data that is currently stored somewhere else to store it within the PCI Proxy vault. 
 
-{% api-method method="post" host="https://api.sandbox.datatrans.com/" path="upp/jsp/XML\_AliasGateway.jsp" %}
-{% api-method-summary %}
-XML Alias Gateway
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com/" path="upp/jsp/XML_AliasGateway.jsp" method="post" summary="XML Alias Gateway" %}
+{% swagger-description %}
+The XML Alias Gateway converts credit card data into tokens. The service allows bulk tokenization, allowing multiple 
 
-{% api-method-description %}
-The XML Alias Gateway converts credit card data into tokens. The service allows bulk tokenization, allowing multiple `<alias>` elements, so it is possible to tokenize a card and a cvv at the same time. 
-{% endapi-method-description %}
+`<alias>`
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+ elements, so it is possible to tokenize a card and a cvv at the same time. 
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Content-Type" type="string" required=false %}
+{% swagger-parameter in="header" name="Content-Type" type="string" %}
 API consumes text/xml
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="merchantId" type="string" required=false %}
-Your unique account id at PCI Proxy \(e.g. 1000011011\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="merchantId" type="string" %}
+Your unique account id at PCI Proxy (e.g. 1000011011)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="cardno" type="string" required=false %}
-Credit card number \(PAN\) to be tokenized
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="cardno" type="string" %}
+Credit card number (PAN) to be tokenized
+{% endswagger-parameter %}
 
-{% api-method-parameter name="cvv" type="string" required=false %}
-Security code \(CVV/CVC\) to be tokenized
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="cvv" type="string" %}
+Security code (CVV/CVC) to be tokenized
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-You receive a credit card token \(aliasCC\) and CVV token \(aliasCVV\).
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="You receive a credit card token (aliasCC) and CVV token (aliasCVV)." %}
 ```markup
 <?xml version='1.0' encoding='UTF-8'?>
 <aliasCCService version="1">
@@ -70,13 +58,9 @@ You receive a credit card token \(aliasCC\) and CVV token \(aliasCVV\).
     </body>
 </aliasCCService>
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Invalid value passed for one of the attributes \(e.g. merchantId\).
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Invalid value passed for one of the attributes (e.g. merchantId)." %}
 ```markup
 <?xml version='1.0' encoding='UTF-8'?>
 <aliasCCService version="1">
@@ -104,14 +88,11 @@ Invalid value passed for one of the attributes \(e.g. merchantId\).
     </body>
 </aliasCCService>
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 | XSD schema | [https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd](https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd) |
-| :--- | :--- |
-
+| ---------- | -------------------------------------------------------------------------------------------------------------------- |
 
 {% hint style="warning" %}
 The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
@@ -230,22 +211,22 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed.
 
 ### Error cases
 
-| errorCode | errorMessage | Explanation |
-| :--- | :--- | :--- |
-| 1004 | CC number not valid | Luhn check failed |
-| 2000 | access denied | XML alias service not enabled by Datatrans |
-| 2001 | no input document | Request body does not contain XML payload |
-| 2002 | error building document | Wrong XML payload in request |
-| 2011 | root element invalid | Root element is not `<aliasCCService>` |
-| 2012 | body element missing | `<body>` element in request is missing |
-| 2013 | merchantId missing | `<body>` element does not have a merchantId attribute |
-| 2014 | element missing | Element is missing. For example `<alias>` |
-| 2022 | invalid value | Invalid value passed for an attribute. \(e.g. `merchantId`\) |
-| -889 | CC-alias error | Input paramter\(s\) missing. For example `<cardno>` |
+| errorCode | errorMessage            | Explanation                                                |
+| --------- | ----------------------- | ---------------------------------------------------------- |
+| 1004      | CC number not valid     | Luhn check failed                                          |
+| 2000      | access denied           | XML alias service not enabled by Datatrans                 |
+| 2001      | no input document       | Request body does not contain XML payload                  |
+| 2002      | error building document | Wrong XML payload in request                               |
+| 2011      | root element invalid    | Root element is not `<aliasCCService>`                     |
+| 2012      | body element missing    | `<body>` element in request is missing                     |
+| 2013      | merchantId missing      | `<body>` element does not have a merchantId attribute      |
+| 2014      | element missing         | Element is missing. For example `<alias>`                  |
+| 2022      | invalid value           | Invalid value passed for an attribute. (e.g. `merchantId`) |
+| -889      | CC-alias error          | Input paramter(s) missing. For example `<cardno>`          |
 
 ## Next up
 
-{% page-ref page="../use-stored-cards/" %}
-
-
+{% content-ref url="../use-stored-cards/" %}
+[use-stored-cards](../use-stored-cards/)
+{% endcontent-ref %}
 

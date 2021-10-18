@@ -10,60 +10,43 @@ description: >-
 Call the Patch transaction API endpoint after calling `secureFields.init()` and before calling `secureFields.submit()`.
 {% endhint %}
 
-{% api-method method="patch" host="https://api.sandbox.datatrans.com" path="/v1/transactions/secureFields/{transactionId}" %}
-{% api-method-summary %}
-Transaction
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/secureFields/{transactionId}" method="patch" summary="Transaction" %}
+{% swagger-description %}
 Update the amount or currency of an already initialized transaction. 
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="transactionId" type="string" required=true %}
-The transactionId obtained via initial `/v1/transactions/secureFields` call
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% swagger-parameter in="path" name="transactionId" type="string" %}
+The transactionId obtained via initial 
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+`/v1/transactions/secureFields`
+
+ call
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Basic MTEwMDAyNjUyfDrtSwty5fdstEtodDZpQU1O
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Content-type" type="string" required=true %}
+{% swagger-parameter in="header" name="Content-type" type="string" %}
 application/json; charset=UTF-8
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="amount" type="integer" required=false %}
+{% swagger-parameter in="body" name="amount" type="integer" %}
 The new amount in the currency's smallest unit. For example use 1000 for EUR 10.00
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="integer" required=false %}
-Three letter ISO-4217 character code. For example `GBP`
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="currency" type="integer" %}
+Three letter ISO-4217 character code. For example 
 
-{% api-method-response %}
-{% api-method-response-example httpCode=204 %}
-{% api-method-response-example-description %}
-Amount or currency successfully updated
-{% endapi-method-response-example-description %}
+`GBP`
+{% endswagger-parameter %}
 
+{% swagger-response status="204" description="Amount or currency successfully updated" %}
 ```
-
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Invalid property
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Invalid property" %}
 ```javascript
 {
     "error": {
@@ -72,13 +55,9 @@ Invalid property
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Transaction not found
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="404" description="Transaction not found" %}
 ```
 {
     "error": {
@@ -86,10 +65,8 @@ Transaction not found
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ## Example
 
@@ -112,6 +89,4 @@ curl -L -X PATCH 'https://api.sandbox.datatrans.com/v1/transactions/secureFields
 ```
 {% endtab %}
 {% endtabs %}
-
-
 

@@ -1,4 +1,4 @@
-# Secure Fields \(iframes\)
+# Secure Fields (iframes)
 
 Secure Fields allow you to securely collect credit, debit and virtual cards as well as bank account data by injecting iframes to your DOM. A separate iframe for all sensitive values is used. Thereby, the data never touches your server and allows you to capture all other related payment data such as cardholder name, expiry date, etc. directly by yourself.
 
@@ -8,15 +8,15 @@ Secure Fields allow you to securely collect credit, debit and virtual cards as w
 
 Browser compatibility for Secure Fields:
 
-| **Browser** | **Version** |
-| :--- | :--- |
-| Chrome \| Chrome Mobile | &gt;=28 \| &gt;=28 |
-| Firefox \| Firefox Mobile | &gt;=31 \| &gt;=31 |
-| Internet Explorer \| Internet Explorer Mobile | &gt;=9 \| &gt;= 9 |
-| Safari \| Safari Mobile | &gt;=6 \| &gt;=6 |
-| Opera \| Opera Mobile | &gt;=24 \| &gt;=22 |
-| Blackberry Browser | &gt;=8 |
-| Android Browser | &gt;=4 |
+| **Browser**                                   | **Version**  |
+| --------------------------------------------- | ------------ |
+| Chrome \| Chrome Mobile                       | >=28 \| >=28 |
+| Firefox \| Firefox Mobile                     | >=31 \| >=31 |
+| Internet Explorer \| Internet Explorer Mobile | >=9 \| >= 9  |
+| Safari \| Safari Mobile                       | >=6 \| >=6   |
+| Opera \| Opera Mobile                         | >=24 \| >=22 |
+| Blackberry Browser                            | >=8          |
+| Android Browser                               | >=4          |
 
 ## 1. Setup Secure Fields
 
@@ -183,55 +183,55 @@ secureFields.destroy();
 
 ## 4. Obtain tokens
 
-Once you've transmitted the `transactionId` to your server \(together with the the rest of your form\) you have to execute a **server to server** `GET Token` request to retrieve the tokenized card or bank account values. 
+Once you've transmitted the `transactionId` to your server (together with the the rest of your form) you have to execute a **server to server** `GET Token` request to retrieve the tokenized card or bank account values. 
 
 {% hint style="danger" %}
 This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
 {% endhint %}
 
-{% api-method method="get" host="https://api.sandbox.datatrans.com/upp/services" path="/v1/inline/token" %}
-{% api-method-summary %}
-Token
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com/upp/services" path="/v1/inline/token" method="get" summary="Token" %}
+{% swagger-description %}
+This endpoint returns the tokenized card or bank account data corresponding to the 
 
-{% api-method-description %}
-This endpoint returns the tokenized card or bank account data corresponding to the `transactionId`.  
-Please note that this is a **server to server** API call and cannot be called from the browser directly.
-{% endapi-method-description %}
+`transactionId`
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+.
+
+\
+
+
+Please note that this is a 
+
+**server to server**
+
+ API call and cannot be called from the browser directly.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="transactionId" type="integer" required=true %}
-The transactionId obtained via the `secureFields.submit()`operation.
-{% endapi-method-parameter %}
+{% swagger-parameter in="query" name="transactionId" type="integer" %}
+The transactionId obtained via the 
 
-{% api-method-parameter name="returnPaymentMethod" type="boolean" required=false %}
+`secureFields.submit()`
+
+operation.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="returnPaymentMethod" type="boolean" %}
 Returns payment method used with transaction.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="mandatoryAliasCVV" type="boolean" required=false %}
+{% swagger-parameter in="query" name="mandatoryAliasCVV" type="boolean" %}
 Wheter the case should be gluten-free or not.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="returnCardInfo" type="boolean" %}
+{% swagger-parameter in="query" name="returnCardInfo" type="boolean" %}
 Returns cardInfo object
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
   "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
@@ -239,10 +239,8 @@ Returns cardInfo object
   "maskedCard": "424242xxxxxx4242"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Token API calls examples
 
@@ -350,17 +348,17 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/upp/services/v1/inline/token?t
 
 ### Error table 
 
-| Error message | Cause / Explanation |
-| :--- | :--- |
-| Tokenization expired | The `transactionId` has expired. Please note that it is valid for 30 minutes only. |
+| Error message          | Cause / Explanation                                                                                              |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Tokenization expired   | The `transactionId` has expired. Please note that it is valid for 30 minutes only.                               |
 | Tokenization not found | The merchant id used for the transaction id creation does not match the merchant id used for the GET Token call. |
 
 ## Examples
 
-Please visit our GitHub [repository](https://github.com/datatrans/secure-fields-sample) for additional examples of integration versions:   
-  
-Demo Basic: [https://datatrans.github.io/secure-fields-sample/](https://datatrans.github.io/secure-fields-sample/index.html)  
-Demo with horizontal fields: [https://datatrans.github.io/secure-fields-sample/inline-example.html](https://github.com/datatrans/secure-fields-sample/blob/master/inline-example.html)  
+Please visit our GitHub [repository](https://github.com/datatrans/secure-fields-sample) for additional examples of integration versions: \
+\
+Demo Basic: [https://datatrans.github.io/secure-fields-sample/](https://datatrans.github.io/secure-fields-sample/index.html)\
+Demo with horizontal fields: [https://datatrans.github.io/secure-fields-sample/inline-example.html](https://github.com/datatrans/secure-fields-sample/blob/master/inline-example.html)\
 Demo with floating labels: [https://github.com/datatrans/secure-fields-sample/blob/master/floating-label.html](https://github.com/datatrans/secure-fields-sample/blob/master/floating-label.html)
 
 An example of how to implement this behaviour in modern web applications can be found [here](https://github.com/datatrans/secure-fields-sample/tree/master/react-example)
@@ -373,7 +371,7 @@ Please also have a look at [Styling](initialization-and-styling.md) and [Events]
 
 ## Next up
 
-{% page-ref page="../../use-stored-cards/" %}
-
-
+{% content-ref url="../../use-stored-cards/" %}
+[use-stored-cards](../../use-stored-cards/)
+{% endcontent-ref %}
 

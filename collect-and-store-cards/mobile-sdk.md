@@ -13,7 +13,7 @@ Securely collect sensitive cardholder data such as card number and cvv code in y
 * Dark mode support 
 
 {% hint style="warning" %}
-This section covers credit card number and cvv code tokenization only.   
+This section covers credit card number and cvv code tokenization only. \
 If you need to process 3D-Secure authentication within your SDKs please refer to our [SDK 3D integration](../3d-secure-v2/authentication-only/mobile-sdk-3d.md). 
 {% endhint %}
 
@@ -21,37 +21,10 @@ If you need to process 3D-Secure authentication within your SDKs please refer to
 
 Access the latest version of our SDKs by following the links below and link the latest release to your app projects.
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">OS</th>
-      <th style="text-align:left">Link</th>
-      <th style="text-align:left">Supported version</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">iOS</td>
-      <td style="text-align:left">
-        <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a>
-        </p>
-        <p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/TokenizationRequest.html">Link</a>
-        </p>
-      </td>
-      <td style="text-align:left">11 +</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Android</td>
-      <td style="text-align:left">
-        <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a>
-        </p>
-        <p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html">Link</a>
-        </p>
-      </td>
-      <td style="text-align:left">5.0 +</td>
-    </tr>
-  </tbody>
-</table>
+| OS      | Link                                                                                                                                                                                                                                                                  | Supported version |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/TokenizationRequest.html">Link</a></p>                                                                               | 11 +              |
+| Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html">Link</a></p> | 5.0 +             |
 
 ## 2. Integration
 
@@ -59,7 +32,7 @@ As a next step, continue with the initialization of our iOS or Android SDK.
 
 For iOS, you can add the SDK to your project by adding a new package dependency in Xcode. For Android, you can link the dependency with `implementation 'ch.datatrans:android-sdk:x.x.x'` and the repository with `maven { url "repositoryUrl" }`.
 
-Create a tokenization object with your `merchantId` and `paymentMethodTypes` to start a tokenisation. Below is an example of the suggested minimum options to start a tokenisation with iOS \(Swift\) and Android \(Kotlin, Java\). Please read our detailed classes description for [iOS](https://datatrans.github.io/ios-sdk/Classes/TokenizationRequest.html) and [Android](https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html) to discover more initialization options.
+Create a tokenization object with your `merchantId` and `paymentMethodTypes` to start a tokenisation. Below is an example of the suggested minimum options to start a tokenisation with iOS (Swift) and Android (Kotlin, Java). Please read our detailed classes description for [iOS](https://datatrans.github.io/ios-sdk/Classes/TokenizationRequest.html) and [Android](https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html) to discover more initialization options.
 
 {% tabs %}
 {% tab title="Swift" %}
@@ -106,36 +79,22 @@ To obtain the tokenized values, you first need to submit the `tokenizationId` re
 
 Subsequently call the GET Token API from your **server** together with the `tokenizationId` to obtain a token for the card number and the cvv code. Additionally, the API returns the expiry dates, the fingerprint of the card number as well as the `cardInfo` object. 
 
-{% api-method method="get" host="https://api.sandbox.datatrans.com" path="/v1/tokenizations/{tokenizationId}" %}
-{% api-method-summary %}
-GET Token
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/tokenizations/{tokenizationId}" method="get" summary="GET Token" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="path" name="tokenizationId" type="integer" %}
+`tokenizationId`
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="tokenizationId" type="integer" required=true %}
-`tokenizationId` returned from the library
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+ returned from the library
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="authorization" type="string" %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```javascript
 {
     "alias": "AAABeO_NX9LssdexyrAAAQCsDugEAKc5",
@@ -153,10 +112,8 @@ Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 #### Examples
 
@@ -201,4 +158,3 @@ Our iOS and Android Mobile SDK integrations are currently translated and support
 English `en`German `de`French `fr`Italian `it`
 
 Please get in touch should you need an additional language to be added for your checkout or if you find a translation error.
-

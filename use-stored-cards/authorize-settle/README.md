@@ -1,6 +1,6 @@
 # Authorize/Settle
 
-Using this API allows you to simply send a json request with a token to just **reserve** \(authorize\) or **charge** \(settle\) an amount. 
+Using this API allows you to simply send a json request with a token to just **reserve **(authorize) or **charge **(settle) an amount. 
 
 {% tabs %}
 {% tab title="Reserve an amount" %}
@@ -24,9 +24,8 @@ Stored cards can be used multiple times for **recurring transactions** or **One-
 For this feature, you need an existing acquiring contract.
 {% endhint %}
 
-| You can choose from a list of [**Supported Acquirer**](../../resources/supported-acquirer.md) and contact us at [support@pci-proxy.com](mailto:support@pci-proxy.com) |  |
-| :--- | :--- |
-
+| You can choose from a list of [**Supported Acquirer**](../../resources/supported-acquirer.md) and contact us at [support@pci-proxy.com](mailto:support@pci-proxy.com) |   |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | - |
 
 ## 2. Authorize a stored card
 
@@ -34,73 +33,71 @@ For this feature, you need an existing acquiring contract.
 The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
 {% endhint %}
 
-{% api-method method="post" host="https://api.sandbox.datatrans.com" path="/v1/transactions/authorize" %}
-{% api-method-summary %}
-AUTHORIZE method
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/authorize" method="post" summary="AUTHORIZE method" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==  
+\
+
+
 see Setup
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Content-Type" type="string" required=true %}
+{% swagger-parameter in="header" name="Content-Type" type="string" %}
 application/json; charset=UTF-8
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="currency" type="string" required=true %}
-3 letter ISO-4217 character code. E.g. `EUR` or `USD`
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="currency" type="string" %}
+3 letter ISO-4217 character code. E.g. 
 
-{% api-method-parameter name="refno" type="string" required=true %}
-Your unique reference number \(AN 1..20\)
-{% endapi-method-parameter %}
+`EUR `
 
-{% api-method-parameter name="amount" type="integer" required=true %}
+or 
+
+`USD`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="refno" type="string" %}
+Your unique reference number (AN 1..20)
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="amount" type="integer" %}
 The amount of the transaction in the currency's smallest unit. For example use 1000 for EUR 10.00. 
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="autoSettle" type="boolean" required=false %}
-Whether to automatically settle the transaction after an authorization or not. Default is `false`. 
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="autoSettle" type="boolean" %}
+Whether to automatically settle the transaction after an authorization or not. Default is 
 
-{% api-method-parameter name="card" type="object" required=true %}
+`false`
+
+. 
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="card" type="object" %}
 Card object must contain following parameters below
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="alias" type="string" required=true %}
+{% swagger-parameter in="body" name="alias" type="string" %}
 Token received from a previous PCI Proxy integration
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="expiryMonth" type="string" required=true %}
-The expiry month of the token \(2 characters\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="expiryMonth" type="string" %}
+The expiry month of the token (2 characters)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="expiryYear" type="string" required=true %}
-The expiry year of the token \(2 characters\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="expiryYear" type="string" %}
+The expiry year of the token (2 characters)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="3D" type="object" required=false %}
+{% swagger-parameter in="body" name="3D" type="object" %}
 If 3D authentication data is available, the 3D object can be used to send the relevant 3D parameters. 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Successful authorization response
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Successful authorization response" %}
 ```javascript
 {
   "transactionId": "191023102544373504",
@@ -110,13 +107,10 @@ Successful authorization response
   }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
- Failed authorization response  
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description=" Failed authorization response
+" %}
 ```bash
 {
   "error": {
@@ -126,10 +120,8 @@ Successful authorization response
   "transactionId": "191023112022175523"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="warning" %}
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
@@ -138,7 +130,7 @@ In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 ### Examples
 
 {% tabs %}
-{% tab title="Reserve amount \(authorize\)" %}
+{% tab title="Reserve amount (authorize)" %}
 {% code title="Request" %}
 ```bash
 curl -X POST \
@@ -158,7 +150,7 @@ curl -X POST \
 ```
 {% endcode %}
 
-{% code title="Response \(successful\)" %}
+{% code title="Response (successful)" %}
 ```bash
 {
   "transactionId": "191023111742635093",
@@ -171,7 +163,7 @@ curl -X POST \
 {% endcode %}
 {% endtab %}
 
-{% tab title="Charge amount \(auth+settle\)" %}
+{% tab title="Charge amount (auth+settle)" %}
 {% code title="Charge" %}
 ```bash
 curl -X POST \
@@ -192,7 +184,7 @@ curl -X POST \
 ```
 {% endcode %}
 
-{% code title="Response \(successful\)" %}
+{% code title="Response (successful)" %}
 ```bash
 {
   "transactionId": "191023113146339569",
@@ -212,7 +204,5 @@ If the authorisation failed, you receive one of the of the following error codes
 
 > `"UNKNOWN_ERROR"`, `"UNRECOGNIZED_PROPERTY"`, `"INVALID_PROPERTY"`, `"INVALID_TRANSACTION_STATUS"`, `"TRANSACTION_NOT_FOUND"`, `"INVALID_JSON_PAYLOAD"`, `"UNAUTHORIZED"`, `"EXPIRED_CARD"`, `"INVALID_CARD"`, `"UNSUPPORTED_CARD"`, `"DUPLICATED_REFNO"`, `"DECLINED"`, `"BLOCKED_BY_VELOCITY_CHECKER"`, `"CLIENT_ERROR"` , `"SERVER_ERROR"`
 
-#### 
-
-
+####
 

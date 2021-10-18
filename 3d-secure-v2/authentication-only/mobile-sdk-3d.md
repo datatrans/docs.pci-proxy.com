@@ -21,123 +21,129 @@ Please note that it's currently not possible to use this API while sending the 3
 
 Access the latest version of our SDKs by following the links below and link the latest release to your app projects.
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">OS</th>
-      <th style="text-align:left">Link</th>
-      <th style="text-align:left">Supported version</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">iOS</td>
-      <td style="text-align:left">
-        <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a>
-        </p>
-        <p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/index.html">Link</a>
-        </p>
-      </td>
-      <td style="text-align:left">11 +</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Android</td>
-      <td style="text-align:left">
-        <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a>
-        </p>
-        <p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk">Link</a>
-        </p>
-      </td>
-      <td style="text-align:left">5.0 +</td>
-    </tr>
-  </tbody>
-</table>
+| OS      | Link                                                                                                                                                                                  | Supported version |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/index.html">Link</a></p>                     | 11 +              |
+| Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk">Link</a></p> | 5.0 +             |
 
 ## 1. Initial Server-to-Server call
 
 To start a 3D mobile SDK tokenisation you have to call our init API from your server. The response returns a `mobileToken` which is required to initialise the libraries.
 
-{% api-method method="post" host="https://api.sandbox.datatrans.com" path="/v1/transactions" %}
-{% api-method-summary %}
-Init API
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions" method="post" summary="Init API" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Basic MTAwMDAxMTAxMTpYMWVXNmkjJA== 
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==   
+\
+
+
 see API Authentication data
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Content-Type" type="string" required=true %}
+{% swagger-parameter in="header" name="Content-Type" type="string" %}
 API consumes application/json; charset=UTF-8
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="amount" type="string" required=true %}
+{% swagger-parameter in="body" name="amount" type="string" %}
 Transaction amount in the currency's smallest unit. For example use 1000 for EU 10.00
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="string" required=true %}
+{% swagger-parameter in="body" name="currency" type="string" %}
 3 letter ISO-4217 character. For example EUR or USD
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="refno" type="string" required=true %}
-\[1..20\] characters It should be unique each transaction
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="refno" type="string" %}
+\[1..20] characters It should be unique each transaction
+{% endswagger-parameter %}
 
-{% api-method-parameter name="paymentMethods" type="string" required=true %}
-An array with one element: payment method short name `"AMX"` `"CUP"` `"ECA"` `"DIN"` `"DIS"` `"JCB"` `"VIS"`
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="paymentMethods" type="string" %}
+An array with one element: payment method short name 
 
-{% api-method-parameter name="card" type="object" required=false %}
-`card` object must contain the following parameter below
-{% endapi-method-parameter %}
+`"AMX"`
 
-{% api-method-parameter name="createAliasCVV" type="boolean" required=false %}
+ 
+
+`"CUP"`
+
+ 
+
+`"ECA"`
+
+ 
+
+`"DIN"`
+
+ 
+
+`"DIS"`
+
+ 
+
+`"JCB"`
+
+ 
+
+`"VIS"`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="card" type="object" %}
+`card`
+
+ object must contain the following parameter below
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="createAliasCVV" type="boolean" %}
 Whether a CVV alias should be created or not. If set to true a CVV alias will be created.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="option" type="object" required=true %}
-`option` object must contain the following parameter below
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="option" type="object" %}
+`option`
 
-{% api-method-parameter name="authenticationOnly" type="boolean" required=true %}
-`true`   
+ object must contain the following parameter below
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="authenticationOnly" type="boolean" %}
+`true`
+
+ 
+
+\
+
+
 Indicates that an authentication should be triggered.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="createAlias" type="boolean" required=false %}
-Wheter a card number alias should be created or not.   
- If set to `true` a card number alias will be created.
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="createAlias" type="boolean" %}
+Wheter a card number alias should be created or not. 
 
-{% api-method-parameter name="returnMobileToken" type="boolean" required=true %}
-`true`  
+\
+
+
+ If set to 
+
+`true`
+
+ a card number alias will be created.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="returnMobileToken" type="boolean" %}
+`true`
+
+\
+
+
 Indicates that a mobile token should be created.
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```
-
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% tabs %}
 {% tab title="Request" %}
@@ -175,7 +181,7 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/transactions' \
 
 ## 2. Integrate mobile SDK
 
-Now that you have retrieved a `mobileToken`, you can continue with the initialization of our iOS or Android SDK. Make sure to call the library with your mobile token to start a transaction. Below is an example of the suggested minimum options to start a transaction with iOS \(Swift, Objective-C\) and Android \(Kotlin, Java\). Please read our detailed classes description for [iOS](https://docs.datatrans.ch/docs/mobile-sdk-2) and [Android](https://docs.datatrans.ch/docs/mobile-sdk-2) to discover more initialization options.
+Now that you have retrieved a `mobileToken`, you can continue with the initialization of our iOS or Android SDK. Make sure to call the library with your mobile token to start a transaction. Below is an example of the suggested minimum options to start a transaction with iOS (Swift, Objective-C) and Android (Kotlin, Java). Please read our detailed classes description for [iOS](https://docs.datatrans.ch/docs/mobile-sdk-2) and [Android](https://docs.datatrans.ch/docs/mobile-sdk-2) to discover more initialization options.
 
 {% tabs %}
 {% tab title="Java" %}
@@ -225,7 +231,7 @@ TransactionRegistry.startTransaction(this, transaction)
 
 Once the card details have been collected, the 3D process will be started automatically. If required, the cardholder will be redirected to the website or the banking app of the card issuer to complete a challenge. 
 
-After the transaction has been completed, you can refer to the class `TransactionSuccess` that will return the details of the transaction. If the transaction failed, you will have to refer to the class `transactionError` for further details instead. You may also implement `TransactionDelegate` \(iOS\) and `TransactionListener` \(Android\) to be notified when a transaction is successfully finalized, encounters an error, or canceled by the user. 
+After the transaction has been completed, you can refer to the class `TransactionSuccess` that will return the details of the transaction. If the transaction failed, you will have to refer to the class `transactionError` for further details instead. You may also implement `TransactionDelegate` (iOS) and `TransactionListener` (Android) to be notified when a transaction is successfully finalized, encounters an error, or canceled by the user. 
 
 #### Additional requirement for iOS
 
@@ -244,37 +250,27 @@ To obtain the tokens as well as the authentication result, you first need to sub
 
 Subsequently call the GET Status API from your **server** together with the `transactionId` to obtain a token for the card number and the cvv code. Additionally, the API returns a `3D` object which contains information about the result of the authentication process. 
 
-{% api-method method="get" host="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}" %}
-{% api-method-summary %}
-Status API
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}" method="get" summary="Status API" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="path" name="transactionId" type="integer" %}
+transactionId obtained via 
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="transactionId" type="integer" required=true %}
-transactionId obtained via `/v1/transactions`
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+`/v1/transactions`
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==  
+{% swagger-parameter in="header" name="Authorization" type="string" %}
+Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
+
+\
+
+
 see setup
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```java
 {
     "transactionId": "210609101239797372",
@@ -317,10 +313,8 @@ see setup
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 #### Examples
 
@@ -391,4 +385,3 @@ Our iOS and Android Mobile SDK integrations are currently translated and support
 English `en`German `de`French `fr`Italian `it`
 
 Please get in touch should you need an additional language to be added for your checkout or if you find a translation error.
-

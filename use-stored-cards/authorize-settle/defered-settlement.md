@@ -6,64 +6,47 @@ The Settlement request is often also referred to as “Capture” or “Clearing
 The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
 {% endhint %}
 
-{% api-method method="post" host="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}/settle" %}
-{% api-method-summary %}
-Defered settlement
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}/settle" method="post" summary="Defered settlement" %}
+{% swagger-description %}
 Settle a previously authorized transaction. Settled amount may not exceed initially authorized amount. 
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="transactionId" type="integer" required=true %}
+{% swagger-parameter in="path" name="transactionId" type="integer" %}
 The transactionId received after an authorization
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter in="header" name="Authorization" type="string" %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUklQ==
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Content-Type" type="string" required=true %}
+{% swagger-parameter in="header" name="Content-Type" type="string" %}
 application/json; charset=UTF-8
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="amount" type="integer" required=true %}
+{% swagger-parameter in="body" name="amount" type="integer" %}
 The amount of the transaction in the currency's smallest unit. For example use 1000 for EUR 10.00
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="currency" type="string" required=true %}
-3 letter ISO-4217 character code. E.g. `EUR` or `USD`
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="currency" type="string" %}
+3 letter ISO-4217 character code. E.g. 
 
-{% api-method-parameter name="refno" type="string" required=true %}
+`EUR `
+
+or 
+
+`USD`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="refno" type="string" %}
 The merchants reference number. It should be unique for each transaction. 
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=204 %}
-{% api-method-response-example-description %}
-Transaction successfully settled
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="204" description="Transaction successfully settled" %}
 ```
-
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-Invalid request
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="400" description="Invalid request" %}
 ```bash
 {
   "error": {
@@ -72,10 +55,8 @@ Invalid request
   }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Example
 
@@ -94,13 +75,13 @@ curl -X POST \
 ```
 {% endtab %}
 
-{% tab title="Response \(success\)" %}
+{% tab title="Response (success)" %}
 ```bash
 204 Transaction successfully settled
 ```
 {% endtab %}
 
-{% tab title="Response \(error\)" %}
+{% tab title="Response (error)" %}
 ```bash
 {
   "error": {
@@ -117,4 +98,3 @@ curl -X POST \
 If the settlement failed, you receive one of the of the following error codes. 
 
 > `"UNKNOWN_ERROR"`, `"UNRECOGNIZED_PROPERTY"`, `"INVALID_PROPERTY"`, `"INVALID_TRANSACTION_STATUS"`, `"TRANSACTION_NOT_FOUND"`, `"INVALID_JSON_PAYLOAD"`, `"UNAUTHORIZED"`, `"EXPIRED_CARD"`, `"INVALID_CARD"`, `"UNSUPPORTED_CARD"`, `"DUPLICATED_REFNO"`, `"DECLINED"`, `"BLOCKED_BY_VELOCITY_CHECKER"`, `"CLIENT_ERROR"` , `"SERVER_ERROR"`
-

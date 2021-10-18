@@ -6,58 +6,76 @@ The PCI Proxy Show API enables you to see the original credit card number of a s
 Even though the interface is served by PCI Proxy, your PCI scope can extend. Therefore it's **mandatory** to implement according [PCI DSS user management ](show.md#pci-dss-compliant-user-management)and [password policy ](show.md#password-policy)
 {% endhint %}
 
-{% api-method method="post" host="https://api.sandbox.datatrans.com/" path="upp/services/v1/noshow/init" %}
-{% api-method-summary %}
-Init call
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com/" path="upp/services/v1/noshow/init" method="post" summary="Init call" %}
+{% swagger-description %}
+1\. Let us know your IP address for whitelisting 
 
-{% api-method-description %}
-1. Let us know your IP address for whitelisting   
-  
-2. Build the request to retrieve the NoShow link: ****
-{% endapi-method-description %}
+\
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="content-type" type="string" required=true %}
+
+
+
+\
+
+
+2\. Build the request to retrieve the NoShow link:
+
+** **
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="content-type" type="string" %}
 API consumes application/xml or application/json
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="merchantId" type="string" required=true %}
-Your unique merchant id at PCI Proxy \(e.g. 1100011011\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="merchantId" type="string" %}
+Your unique merchant id at PCI Proxy (e.g. 1100011011)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="aliasCC" type="string" required=true %}
-Creditcard Token \(e.g. AAABcHxr-sDssdexyrAAAfyXWIgaAF40
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="aliasCC" type="string" %}
+Creditcard Token (e.g. AAABcHxr-sDssdexyrAAAfyXWIgaAF40
+{% endswagger-parameter %}
 
-{% api-method-parameter name="userName" type="string" required=false %}
-Unique userName \(only required when no unique userEmail is given\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="userName" type="string" %}
+Unique userName (only required when no unique userEmail is given)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="userEmail" type="string" required=true %}
-**Unique** email-address where the link should be sent to
-{% endapi-method-parameter %}
+{% swagger-parameter in="body" name="userEmail" type="string" %}
+**Unique **
 
-{% api-method-parameter name="SHASign" type="string" required=true %}
-Your security SHASign \(see below how to calculate SHASign value\)
-{% endapi-method-parameter %}
+email-address where the link should be sent to
+{% endswagger-parameter %}
 
-{% api-method-parameter name="language" type="string" required=false %}
-Currently supported languages: `en`, `de`, `it`, `fr`, `es`, `ru`
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="SHASign" type="string" %}
+Your security SHASign (see below how to calculate SHASign value)
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Response will contain NoShow link
-{% endapi-method-response-example-description %}
+{% swagger-parameter in="body" name="language" type="string" %}
+Currently supported languages: 
 
+`en`
+
+, 
+
+`de`
+
+, 
+
+`it`
+
+, 
+
+`fr`
+
+, 
+
+`es`
+
+, 
+
+`ru`
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Response will contain NoShow link" %}
 ```
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <response>
@@ -65,10 +83,8 @@ Response will contain NoShow link
   <errorCode>0</errorCode>
 </response>
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 ### Examples
 
@@ -108,7 +124,7 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 {% endtab %}
 {% endtabs %}
 
-3. Embed NoShow link from the response into your application
+3\. Embed NoShow link from the response into your application
 
 {% tabs %}
 {% tab title="application/json" %}
@@ -135,13 +151,13 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 {% endtab %}
 {% endtabs %}
 
-4. Once the user clicks on the link an email will be sent to `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually. 
+4\. Once the user clicks on the link an email will be sent to `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually. 
 
-5. Subsequently the new device has been authorized and the user may enter a four digit security code in the opened iFrame to retrieve plain text credit card number. 
+5\. Subsequently the new device has been authorized and the user may enter a four digit security code in the opened iFrame to retrieve plain text credit card number. 
 
 Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
-6. Ensure [PCI-compliant user management](show.md#pci-dss-compliant-user-management)
+6\. Ensure [PCI-compliant user management](show.md#pci-dss-compliant-user-management)
 
 {% hint style="info" %}
 In test mode, only [test credit cards](../test-card-data.md) are allowed!
@@ -149,23 +165,23 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed!
 
 ### Reference
 
-| PCI Proxy NoShow Endpoint **\(Sandbox\):** |
-| :--- |
+| PCI Proxy NoShow Endpoint** (Sandbox):**                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------ |
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
-| Parameter | Description | Example value |
-| :--- | :--- | :--- |
-| `merchantId` | Your merchant ID | 1000011011 |
-| `aliasCC` | Token you received when you collected the credit card | AAABcHxr-SDssdexrAAAfyXWIgaAF40 |
-| `aliasCVV` \(optional\) | Token you received when you collected the CVV code | ozjc9rJvShqRkDw3lugOnulq |
-| `userName` \(optional\) | [Unique userID](show.md#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond |
-| `userEmail` | **Unique** email address of authorized employeewho retrieves it | james.bond@yourcompany.com |
-| [`SHASign`](show.md#sha-256-security-sign) | SHA Hash - Hash converted to hexaDecimalString | SHA.256\(salt+merchantId+aliasCC+userEmail\) |
-| `language` \(optional\) | The language code in which the no-show page should be displayed | `en`, `de`, `fr`, `it`, `es`, `ru` |
+| Parameter                                  | Description                                                                              | Example value                              |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------- | ------------------------------------------ |
+| `merchantId`                               | Your merchant ID                                                                         | 1000011011                                 |
+| `aliasCC`                                  | Token you received when you collected the credit card                                    | AAABcHxr-SDssdexrAAAfyXWIgaAF40            |
+| `aliasCVV` (optional)                      | Token you received when you collected the CVV code                                       | ozjc9rJvShqRkDw3lugOnulq                   |
+| `userName` (optional)                      | [Unique userID](show.md#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond                        |
+| `userEmail`                                | **Unique **email address of authorized employeewho retrieves it                          | james.bond@yourcompany.com                 |
+| [`SHASign`](show.md#sha-256-security-sign) | SHA Hash - Hash converted to hexaDecimalString                                           | SHA.256(salt+merchantId+aliasCC+userEmail) |
+| `language` (optional)                      | The language code in which the no-show page should be displayed                          | `en`, `de`, `fr`, `it`, `es`, `ru`         |
 
 ### SHA.256 Security Sign
 
-Generate NoShow-specific SHA.256 Security Sign with salt value, merchantId, aliasCC \(token\) and userEmail
+Generate NoShow-specific SHA.256 Security Sign with salt value, merchantId, aliasCC (token) and userEmail
 
 ```javascript
 salt        = V3hmMm29gD35OVHWDSAYKBIBCRg0znRekNvGbM9d8I4GRgfIcs                       // Setup in Step 1
@@ -179,13 +195,13 @@ SHA.256(salt+merchantId+aliasCC+userEmail)                                      
 → SHASign: f641a6a3de574bd4b7609320e9a4fb1ed11364f136908822ff6a8e3b6b1bca1f            // Security Sign for NoShow.jsp
 ```
 
-_The `salt` value can be accessed in the PCI Proxy dashboard \(_[_https://dashboard.pci-proxy.com/login_](https://dashboard.pci-proxy.com/login)_\) within the Developers - API Keys section._ 
+_The `salt` value can be accessed in the PCI Proxy dashboard (_[_https://dashboard.pci-proxy.com/login_](https://dashboard.pci-proxy.com/login)_) within the Developers - API Keys section. _
 
 Example: [NoShow sign calculation](https://datatrans.github.io/docs.pci-proxy.com/no-show.html)
 
 ### **Optional: Add JavaScript callbacks/hooks**
 
-```text
+```
 // Use attached Javascript callsbacks/hooks file to see which events are getting emitted to the parent frame.
 // Bind an event listener to the parent frame to listen for those events:
 
@@ -221,11 +237,11 @@ else
 
 ### PCI DSS Compliant User Management
 
-Using our _NoShow.jsp_ script requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find a comprehensive overview for a PCI DSS compliant user management. For a more detailed version on PCI DSS user management please see the official PCI DSS documents \(Requirement 8\) [PCI DSS - Requirements and Security Assessment Procedures](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2.pdf?agreement=true&time=1476177008560).
+Using our _NoShow.jsp_ script requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find a comprehensive overview for a PCI DSS compliant user management. For a more detailed version on PCI DSS user management please see the official PCI DSS documents (Requirement 8) [PCI DSS - Requirements and Security Assessment Procedures](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2.pdf?agreement=true\&time=1476177008560).
 
 ### **Unique User IDs**
 
-Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. **Shared user logins are not allowed.** 
+Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. **Shared user logins are not allowed. **
 
 ### Password Policy
 
@@ -239,9 +255,9 @@ In general, the following password rules have to be observed:
 * After 15 minutes of inactivity, the password must be entered to reactivate the terminal / session.
 * The maximum session time after which the user must log in again must not exceed 200 minutes.
 
-> ### Great job**: You have successfully integrated PCI Proxy!** 
+> ### Great job**: You have successfully integrated PCI Proxy! **
 >
-> You have securely retrieved a stored credit card without ever touching your servers. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope.** 
+> You have securely retrieved a stored credit card without ever touching your servers. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **
 >
 > Enjoy PCI compliance in a risk-free environment. Keep in mind that you can use stored data as often as you need it.
 >
@@ -249,6 +265,5 @@ In general, the following password rules have to be observed:
 >
 > Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
 >
-> Phone: +41 44 256 81 91  
+> Phone: +41 44 256 81 91\
 > Email: [contact@pci-proxy.com](mailto:contact@pci-proxy.com)
-

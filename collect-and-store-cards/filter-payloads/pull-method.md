@@ -4,40 +4,26 @@
 
 Pull method allows you to send a request via PCI Proxy to a Channel API endpoint to receive a response where the payload is filtered for credit card data and automatically tokenized. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be kept and routed through PCI Proxy without modification.
 
-![Process Flow with PCI Proxy](../../.gitbook/assets/channel_pull_pciproxy_color%20%285%29.png)
+![Process Flow with PCI Proxy](<../../.gitbook/assets/channel_pull_pciproxy_color (5).png>)
 
-{% api-method method="post" host="https://sandbox.pci-proxy.com" path="/v1/pull" %}
-{% api-method-summary %}
-PULL method - API request
-{% endapi-method-summary %}
+{% swagger baseUrl="https://sandbox.pci-proxy.com" path="/v1/pull" method="post" summary="PULL method - API request" %}
+{% swagger-description %}
 
-{% api-method-description %}
+{% endswagger-description %}
 
-{% endapi-method-description %}
+{% swagger-parameter in="header" name="x-cc-merchant-id" type="string" %}
+Your unique merchant id at PCI Proxy (e.g. 1000011011)
+{% endswagger-parameter %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="x-cc-merchant-id" type="string" required=true %}
-Your unique merchant id at PCI Proxy \(e.g. 1000011011\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="header" name="pci-proxy-api-key" type="string" %}
+Your API Key (ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="pci-proxy-api-key" type="string" required=true %}
-Your API Key \(ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg\)
-{% endapi-method-parameter %}
+{% swagger-parameter in="header" name="x-cc-url" type="string" %}
+API endpoint (https://api.channel.com/)
+{% endswagger-parameter %}
 
-{% api-method-parameter name="x-cc-url" type="string" required=true %}
-API endpoint \(https://api.channel.com/\)
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Response will contain tokenized credit card data.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Response will contain tokenized credit card data." %}
 ```markup
 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -54,10 +40,8 @@ Response will contain tokenized credit card data.
     </reservation>   
 </reservations>
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
 {% hint style="info" %}
 Masked card number will be returned in the response as HTTP header`pci-proxy-masked-aliases AAABcHxr-sDssdexyrAAAfyXWIgaAF40=424242xxxxxx4242`
@@ -123,4 +107,3 @@ curl https://sandbox.pci-proxy.com/v1/pull \
 {% hint style="success" %}
 The response from Booking.com is automatically filtered for credit card data. Located card data is now stored in our vaults in Switzerland while card tokens have been inserted into the payload.
 {% endhint %}
-
