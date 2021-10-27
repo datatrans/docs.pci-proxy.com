@@ -337,8 +337,9 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/upp/services/v1/inline/token?t
 
 ### Error table
 
-| Toke                   |                                                                                                                  |
+| Error message          | Description                                                                                                      |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Error message**      | **Description**                                                                                                  |
 | Tokenization expired   | The `transactionId` has expired. Please note that it is valid for 30 minutes only.                               |
 | Tokenization not found | The merchant id used for the transaction id creation does not match the merchant id used for the GET Token call. |
 
@@ -350,7 +351,7 @@ Demo Basic: [https://datatrans.github.io/secure-fields-sample/](https://datatran
 Demo with horizontal fields: [https://datatrans.github.io/secure-fields-sample/inline-example.html](https://github.com/datatrans/secure-fields-sample/blob/master/inline-example.html)\
 Demo with floating labels: [https://github.com/datatrans/secure-fields-sample/blob/master/floating-label.html](https://github.com/datatrans/secure-fields-sample/blob/master/floating-label.html)
 
-An example of how to implement this behaviour in modern web applications can be found [here](https://github.com/datatrans/secure-fields-sample/tree/master/react-example)
+An example of how to implement this behaviour in modern web applications can be found [here](https://github.com/datatrans/secure-fields-sample/tree/master/react-example).
 
 {% hint style="warning" %}
 In test mode, only [test credentials](../../test-card-data.md) are allowed.
