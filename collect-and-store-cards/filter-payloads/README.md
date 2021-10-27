@@ -29,19 +29,7 @@ Please note the allowed TCP ports for endpoints:
 
 ## 2. Select the filter method
 
-PCI Proxy supports two different filter methods [**`/v1/pull`**](./#pull-method) and [**`/v1/push`**](./#push-method) to suit all your needs.
-
-Collecting card data from a Channel from a web service can work in two ways. In general, either you perform a pull request to receive card data from the Channel or a Channel starts a push request to send you card data. PCI Proxy can extract sensitive data in both operations.
-
-|                                                                        |                                                                        |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| [**`/v1/pull`**](./#pull-method)                                       | [**`/v1/push`**](./#push-method)                                       |
-| You start the request.                                                 | The Channel starts the request.                                        |
-| ![](<../../.gitbook/assets/channel\_pull\_status\_quo\_color (1).png>) | ![](<../../.gitbook/assets/channel\_push\_status\_quo\_color (1).png>) |
-
-
-
-PCI Proxy supports two different filter methods [`/v1/pull`](broken-reference) and [`/v1/push`](broken-reference) to suit all your needs.&#x20;
+PCI Proxy supports two different filter methods [**`/v1/pull`**](./#pull-method) and [**`/v1/push`**](./#push-method) to suit all your needs.&#x20;
 
 Collecting card data from a partner via APIs can work in two ways. In general, either you perform a pull request to receive card data from your partner or a partner starts a push request to send you card data. PCI Proxy can extract sensitive data in both operations.
 
