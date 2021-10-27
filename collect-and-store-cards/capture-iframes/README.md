@@ -1,6 +1,6 @@
 # Secure Fields (iframes)
 
-Secure Fields allow you to securely collect credit, debit and virtual cards as well as bank account data by injecting iframes to your DOM. A separate iframe for all sensitive values is used. Thereby, the data never touches your server and allows you to capture all other related payment data such as cardholder name, expiry date, etc. directly by yourself.
+Secure Fields allow you to securely collect credit, debit and virtual cards as well as bank account data by injecting iframes to your DOM. A separate iframe for all sensitive values is used. Thereby, the data never touches your servers and allows you to capture all other related payment data such as the cardholder name, expiry date, etc. directly by yourself.
 
 {% hint style="success" %}
 **Using Secure Fields qualifies you for SAQ A.**
@@ -20,17 +20,17 @@ Browser compatibility for Secure Fields:
 
 ## 1. Setup Secure Fields
 
-To get started include the following script on your page. 
+To get started include the following script on your page.
 
 {% tabs %}
 {% tab title="Secure Fields Script" %}
-```javascript
+```html
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.js"></script>
 ```
 {% endtab %}
 
 {% tab title="Minified Version" %}
-```javascript
+```html
 <script src="https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.min.js"></script>
 ```
 {% endtab %}
@@ -42,7 +42,7 @@ Please make sure to always load it directly from [https://pay.sandbox.datatrans.
 
 ## 2. Create payment form
 
-In order for Secure Fields to insert card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are
+In order for Secure Fields to insert the card number and CVV iframes at the right place, create empty DOM elements and assign them unique IDs. In the example below those are
 
 * `card-number-placeholder`
 * `cvv-placeholder`
@@ -55,7 +55,7 @@ For the bank account example they are
 
 {% tabs %}
 {% tab title="Card number / CVV" %}
-```markup
+```html
 <form>
     <div>
         <div>
@@ -76,7 +76,7 @@ For the bank account example they are
 {% endtab %}
 
 {% tab title="IBAN " %}
-```javascript
+```html
 <form>
     <div>
         <div>
@@ -92,7 +92,7 @@ For the bank account example they are
 {% endtab %}
 
 {% tab title="Account number / Branch code" %}
-```javascript
+```html
 <form>
     <div>
         <div>
@@ -183,51 +183,40 @@ secureFields.destroy();
 
 ## 4. Obtain tokens
 
-Once you've transmitted the `transactionId` to your server (together with the the rest of your form) you have to execute a **server to server** `GET Token` request to retrieve the tokenized card or bank account values. 
+Once you've transmitted the `transactionId` to your server (together with the the rest of your form) you have to execute a **server to server** `GET Token` request to retrieve the tokenized card or the bank account values.
 
 {% hint style="danger" %}
-This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
+This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sandbox.datatrans.com/upp/services" path="/v1/inline/token" method="get" summary="Token" %}
 {% swagger-description %}
-This endpoint returns the tokenized card or bank account data corresponding to the 
+This endpoint returns the tokenized card or bank account data corresponding to the `transactionId`
 
-`transactionId`
-
-.
-
-\
-
-
-Please note that this is a 
-
-**server to server**
-
- API call and cannot be called from the browser directly.
+Pease note that this is a **server to server **API call and cannot be called from the browser directly.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" %}
+{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="transactionId" type="integer" %}
-The transactionId obtained via the 
+The transactionId obtained via the
 
 `secureFields.submit()`
 
 operation.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="returnPaymentMethod" type="boolean" %}
+{% swagger-parameter in="query" name="returnPaymentMethod" type="boolean" required="false" %}
 Returns payment method used with transaction.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="mandatoryAliasCVV" type="boolean" %}
+{% swagger-parameter in="query" name="mandatoryAliasCVV" type="boolean" required="false" %}
 Wheter the case should be gluten-free or not.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="returnCardInfo" type="boolean" %}
+{% swagger-parameter in="query" name="returnCardInfo" type="boolean" required="false" %}
 Returns cardInfo object
 {% endswagger-parameter %}
 
@@ -264,7 +253,7 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 {% endtab %}
 
 {% tab title="Response IBAN" %}
-```javascript
+```json
 {
     "aliasIban": "AAABeKaD2UbssdexyrAAAUN24QvOZg3n",
     "maskedIban": "DE85xxxxxxxxxxxxxx2345"
@@ -273,7 +262,7 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 {% endtab %}
 
 {% tab title="Response Account number & Branch code" %}
-```javascript
+```json
 {
     "aliasAccountNumber": "AAABeKahwGDssdexyrAAAV8w_R0dlq9b",
     "maskedAccountNumber": "xxxx0604",
@@ -292,7 +281,7 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
 {% endtab %}
 
 {% tab title="Response" %}
-```bash
+```json
 {
   "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
   "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
@@ -328,7 +317,7 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/upp/services/v1/inline/token?t
 {% endtab %}
 
 {% tab title="Response" %}
-```javascript
+```json
 {
     "aliasCC": "AAABeM8yJsbssdexyrAAAXnn_sIdAKe0",
     "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
@@ -346,16 +335,15 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/upp/services/v1/inline/token?t
 {% endtab %}
 {% endtabs %}
 
-### Error table 
+### Error table
 
-| Error message          | Cause / Explanation                                                                                              |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Tokenization expired   | The `transactionId` has expired. Please note that it is valid for 30 minutes only.                               |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Tokenization not found | The merchant id used for the transaction id creation does not match the merchant id used for the GET Token call. |
 
 ## Examples
 
-Please visit our GitHub [repository](https://github.com/datatrans/secure-fields-sample) for additional examples of integration versions: \
+Please visit our GitHub [repository](https://github.com/datatrans/secure-fields-sample) for additional examples of integration versions:\
 \
 Demo Basic: [https://datatrans.github.io/secure-fields-sample/](https://datatrans.github.io/secure-fields-sample/index.html)\
 Demo with horizontal fields: [https://datatrans.github.io/secure-fields-sample/inline-example.html](https://github.com/datatrans/secure-fields-sample/blob/master/inline-example.html)\
@@ -374,4 +362,3 @@ Please also have a look at [Styling](initialization-and-styling.md) and [Events]
 {% content-ref url="../../use-stored-cards/" %}
 [use-stored-cards](../../use-stored-cards/)
 {% endcontent-ref %}
-

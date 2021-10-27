@@ -2,7 +2,7 @@
 
 ### Process flow
 
-The Pull method allows you to send a request via PCI Proxy to a Channel API endpoint to receive a response where the payload is filtered for credit card data and automatically tokenized. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All the other headers, your payload and the HTTP method will be kept and routed through PCI Proxy without modification.
+The Pull method allows you to send a request via PCI Proxy to a Channel API endpoint to receive a response where the payload is filtered for credit card data and automatically tokenized. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All the other headers and your payload will be kept and routed through PCI Proxy without modification.
 
 ![Process Flow with PCI Proxy](<../../.gitbook/assets/channel\_pull\_pciproxy\_color (5).png>)
 
@@ -42,9 +42,11 @@ API endpoint (https://api.channel.com/)
 {% endswagger-response %}
 {% endswagger %}
 
+{% hint style="info" %}
 The masked card number will be returned in the response as a header
 
 `pci-proxy-masked-aliases: AAABcHxr-sDssdexyrAAAfyXWIgaAF40=424242xxxxxx4242`
+{% endhint %}
 
 {% hint style="warning" %}
 In test mode, only [test credit cards](../../test-card-data.md) are allowed.
@@ -96,7 +98,7 @@ curl https://sandbox.pci-proxy.com/v1/pull \
     <telephone>666 428 664</telephone>
     <zip>28004</zip>
   </customer>
-  <!-- the remaining response has been truncated for better visibility -->
+  <!-- remaining response has been truncated for better visability -->
 </reservation>
 </reservations>
 ```
