@@ -35,13 +35,11 @@ Collecting card data from a partner via APIs can work in two ways. In general, e
 
 * ****[**/v1/pull**](broken-reference) - You start the request.
 
-![](<../../.gitbook/assets/pull request (1).svg>)
+![Pull request](<../../.gitbook/assets/Pull request big.svg>)
 
 * ****[**/v1/push**](broken-reference) - Your partner starts the request.
 
-![](<../../.gitbook/assets/push request (1).svg>)
-
-
+![Push request](<../../.gitbook/assets/push request.svg>)
 
 ## 3. [Continue with PULL method ](pull-method.md)
 
