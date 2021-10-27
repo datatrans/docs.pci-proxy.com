@@ -2,30 +2,29 @@
 
 ### Process flow
 
-Pull method allows you to send a request via PCI Proxy to a Channel API endpoint to receive a response where the payload is filtered for credit card data and automatically tokenized. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be kept and routed through PCI Proxy without modification.
+The Pull method allows you to send a request via PCI Proxy to a Channel API endpoint to receive a response where the payload is filtered for credit card data and automatically tokenized. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All the other headers and your payload will be kept and routed through PCI Proxy without modification.
 
-![Process Flow with PCI Proxy](<../../.gitbook/assets/channel_pull_pciproxy_color (5).png>)
+![Process Flow with PCI Proxy](<../../.gitbook/assets/channel\_pull\_pciproxy\_color (5).png>)
 
 {% swagger baseUrl="https://sandbox.pci-proxy.com" path="/v1/pull" method="post" summary="PULL method - API request" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="x-cc-merchant-id" type="string" %}
+{% swagger-parameter in="header" name="x-cc-merchant-id" type="string" required="true" %}
 Your unique merchant id at PCI Proxy (e.g. 1000011011)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="pci-proxy-api-key" type="string" %}
+{% swagger-parameter in="header" name="pci-proxy-api-key" type="string" required="true" %}
 Your API Key (ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="x-cc-url" type="string" %}
+{% swagger-parameter in="header" name="x-cc-url" type="string" required="true" %}
 API endpoint (https://api.channel.com/)
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Response will contain tokenized credit card data." %}
+{% swagger-response status="200" description="The response will contain tokenized credit card data." %}
 ```markup
-
 <?xml version="1.0" encoding="UTF-8"?>
 <reservations>
     <reservation>
@@ -44,7 +43,9 @@ API endpoint (https://api.channel.com/)
 {% endswagger %}
 
 {% hint style="info" %}
-Masked card number will be returned in the response as HTTP header`pci-proxy-masked-aliases AAABcHxr-sDssdexyrAAAfyXWIgaAF40=424242xxxxxx4242`
+The masked card number will be returned in the response as a header
+
+`pci-proxy-masked-aliases: AAABcHxr-sDssdexyrAAAfyXWIgaAF40=424242xxxxxx4242`
 {% endhint %}
 
 {% hint style="warning" %}
@@ -53,7 +54,7 @@ In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 
 ### Example
 
-Once a PULL Channel is added to your merchantId, simply redirect requests to it via the PCI Proxy:
+Once a PULL Channel is added to your project, simply redirect the requests to it via the PCI Proxy:
 
 {% tabs %}
 {% tab title="Pull reservations from Booking.com" %}
