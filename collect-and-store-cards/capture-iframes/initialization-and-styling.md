@@ -41,7 +41,8 @@ secureFields.initTokenize(
      {
          cardNumber: "cardNumberPlaceholder",
          cvv: "cvvPlaceholder",
-     },{            
+     },
+     {            
          styles: styles,
          focus: "cardNumber" // or secureFields.focus("cardNumber");
      }
@@ -64,21 +65,21 @@ secureFields.setStyle("cvv", "border: 1px solid #ccc")
 
 Secure Fields automatically toggle CSS classes on the input fields based on various user input. Use `"cardNumber.valid:hover": "background-color: green;"` for example to apply different style based classes.
 
-| Class name | Description |
-| :--- | :--- |
-| `valid` | When the field contains valid input. |
-| `invalid` | When the field contains invalid input. For example a wrong card number or CVV Code. |
-| `empty` | When the field is empty. |
-| `identified` | When a supported brand \(for example Visa or Mastercard\) was detected when typing in the card number field. |
+| **Class name** | **Description**                                                                                            |
+| -------------- | ---------------------------------------------------------------------------------------------------------- |
+| `valid`        | When the field contains valid input.                                                                       |
+| `invalid`      | When the field contains invalid input. For example a wrong card number or CVV Code.                        |
+| `empty`        | When the field is empty.                                                                                   |
+| `identified`   | When a supported brand (for example Visa or Mastercard) was detected when typing in the card number field. |
 
 ## Advanced initialization
 
-The `initTokenize` function allows to set the input type, placeholder value and which field to be focused right from the beginning. In addition it is possible to set an `aria-label`. The \(random\) example from below ensures the following:
+The `initTokenize` function allows to set the input type, the placeholder value and which field to be focused right from the beginning. In addition it is possible to set an `aria-label`. The (random) example from below ensures the following:
 
 * The CVV field gets initial focus
-* The CVV field's input type gets set to `tel`
-* The placeholder value will be `enter your cvv`
-* The CVV field input will have `aria-label="cvv aria label"`
+* The CVV field's input type is set to `tel`
+* The placeholder value will be "enter your cvv"
+* The CVV field input will have the attribute `aria-label="cvv aria label"`
 
 ```javascript
 secureFields.initTokenize(
@@ -100,7 +101,7 @@ secureFields.initTokenize(
 
 ## Setting up payment methods
 
-By default all credit cards available in your merchant setup will be accepted. Use the `paymentMethods` option if there's a need to accept only a subset of card `types`.
+By default all credit cards available on your merchant setup will be accepted. Use the `paymentMethods` option if there's a need to accept only a subset of card `types`.
 
 ```javascript
 secureFields.initTokenize(
@@ -117,23 +118,23 @@ secureFields.initTokenize(
 
 Parameter values for “paymentmethod”:
 
-| Card Type | paymentmethod |
-| :--- | :--- |
-| Visa | `VIS` |
-| MasterCard | `ECA` |
-| AMEX | `AMX` |
-| Diners | `DIN` |
-| Discover | `DIS` |
-| JCB | `JCB` |
-| ELO | `ELO` |
-| China UnionPay | `CUP` |
+| **Card Type**  | **paymentMethod** |
+| -------------- | ----------------- |
+| Visa           | `VIS`             |
+| MasterCard     | `ECA`             |
+| AMEX           | `AMX`             |
+| Diners         | `DIN`             |
+| Discover       | `DIS`             |
+| JCB            | `JCB`             |
+| ELO            | `ELO`             |
+| China UnionPay | `CUP`             |
 
 ## Web fonts
 
-Web fonts are supported via the standard `@font-face` CSS rule. Because of security concerns it is not permitted to link external resources. So, in order to get custom fonts, you need to:
+Web fonts are supported via the standard `@font-face` CSS rule. Because of security concerns it is not permitted to link external resources. Therefore, in order to get custom fonts, you need to:
 
-* Contact [support@pci-proxy.com](mailto:support@pci-proxy.com) and provide the font files \(woff, woof2, ttf etc\). The files will be uploaded into your merchant id hosted files space.
-* Reference the font files, by name \(no path\) in the styles section of the `initTokenize` call:
+* Contact [support@pci-proxy.com](mailto:support@pci-proxy.com) and provide the font files (woff, woof2, ttf etc). The files will be uploaded into your merchant id hosted files space.
+* Reference the font files, by name (no path) in the styles section of the `initTokenize` call:
 
 ```javascript
 var styles = {
@@ -149,4 +150,3 @@ var styles = {
     }
 }
 ```
-

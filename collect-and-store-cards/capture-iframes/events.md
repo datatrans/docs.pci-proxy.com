@@ -1,9 +1,9 @@
 # Events
 
-Use the `secureFields.on(...)` callback function to subscribe to one or more of the `ready`, `change`, `error` or `validate` events.
+Use the `secureFields.on(...)` callback function to subscribe to one or more of the `ready`, `change`, success, `error, cardInfo` or `validate` events.
 
 {% tabs %}
-{% tab title="on ready" %}
+{% tab title="ready" %}
 The ready event will be emitted once the iframes are loaded.
 
 ```javascript
@@ -17,7 +17,7 @@ secureFields.on("ready", function() {
 ```
 {% endtab %}
 
-{% tab title="on validate" %}
+{% tab title="validate" %}
 The validate event will be emitted once the form was submitted with `secureFields.submit();`
 
 ```javascript
@@ -47,7 +47,7 @@ Where the `event` callback object has the following structure:
 ```
 {% endtab %}
 
-{% tab title="on change" %}
+{% tab title="change" %}
 The `change` event will be emitted whenever one of the following events are getting triggered:
 
 * `focus`
@@ -88,7 +88,7 @@ Where the `event` callback object has the following structure:
 ```
 {% endtab %}
 
-{% tab title="on cardInfo" %}
+{% tab title="cardInfo" %}
 The `cardInfo` event will be emitted when`secureFields.getCardInfo()`is called.
 
 ```javascript
@@ -99,25 +99,25 @@ secureFields.on("cardInfo", function(event) {
 
 ```javascript
 {
-	"event": "cardInfo",
-	"data": {
-		"cardInfo": {
-			"brand": "VISA CREDIT",
-			"type": "credit",
-			"usage": "consumer",
-			"country": "GB",
-			"issuer": "DATATRANS"
-		},
-		"maskedCard": "424242xxxxxx4242",
-		"paymentMethod": "VIS"
-	}
+  "event": "cardInfo",
+  "data": {
+    "cardInfo": {
+      "brand": "VISA CREDIT",
+      "type": "credit",
+      "usage": "consumer",
+      "country": "GB",
+      "issuer": "DATATRANS"
+    },
+    "maskedCard": "424242xxxxxx4242",
+    "paymentMethod": "VIS"
+  }
 }
 ```
 
 Calling `secureFields.getCardInfo(callback)` is the alternative way to obtain the information about the entered card by having the given callback function receive it rather than waiting for an event.
 {% endtab %}
 
-{% tab title="on success" %}
+{% tab title="success" %}
 The success event will be emitted if the tokenization was successful.
 
 ```javascript
@@ -147,7 +147,7 @@ Where the `event` callback object has the following structure:
 ```
 {% endtab %}
 
-{% tab title="on error" %}
+{% tab title="error" %}
 The error event will be emitted if there was an error after calling `secureFields.initTokenize(...)`.\
 \
 Possible scenarios are:
@@ -165,4 +165,3 @@ secureFields.on("error", function(data) {
 ```
 {% endtab %}
 {% endtabs %}
-
