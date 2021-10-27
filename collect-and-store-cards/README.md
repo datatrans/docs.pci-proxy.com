@@ -4,26 +4,35 @@ In general, you have different inbound channels where you receive sensitive card
 
 With the following methods you can use collect & store cards:
 
-{% page-ref page="filter-payloads/" %}
+* **Collect and tokenize payment data on incoming data streams:**
 
-> Collect and tokenize payment data on incoming data streams
+{% content-ref url="filter-payloads/" %}
+[filter-payloads](filter-payloads/)
+{% endcontent-ref %}
 
-{% page-ref page="capture-iframes/" %}
+* **Collect and tokenize payment data in a web browser with customizable iframes:**
 
-> Customizable iframes to collect and tokenize payment data in a web browser.
+{% content-ref url="capture-iframes/" %}
+[capture-iframes](capture-iframes/)
+{% endcontent-ref %}
 
-{% page-ref page="mobile-sdk.md" %}
+* **Collect and tokenize payment data with PCI Proxy from your native apps:**
 
-> Collect and tokenize payment data with PCI Proxy from inside your native apps
+{% content-ref url="mobile-sdk.md" %}
+[mobile-sdk.md](mobile-sdk.md)
+{% endcontent-ref %}
 
-{% page-ref page="vault-alias-gateway.md" %}
+* **Pass sensitive payment data directly to the PCI Proxy vault to create tokens:**
 
-> Pass sensitive pamyent data directly to the PCI Proxy vault to create tokens
+{% content-ref url="vault-alias-gateway.md" %}
+[vault-alias-gateway.md](vault-alias-gateway.md)
+{% endcontent-ref %}
 
-{% page-ref page="secure-file-transfer-sftp.md" %}
+* **Transmit and tokenize sensitive payment data via SFTP:**
 
-> Transmit and tokenize sensitive payment data via SFTP
+{% content-ref url="secure-file-transfer-sftp.md" %}
+[secure-file-transfer-sftp.md](secure-file-transfer-sftp.md)
+{% endcontent-ref %}
 
-[  
+[\
 ](https://docs.pci-proxy.com/collect-and-store-cards/secure-file-transfer-sftp)
-
