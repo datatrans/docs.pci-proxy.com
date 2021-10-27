@@ -3,74 +3,70 @@
 The PCI Proxy Show API enables you to see the original credit card number of a stored credit card. Basically it is a web interface that can convert a token back into its original credit card number.
 
 {% hint style="success" %}
-Even though the interface is served by PCI Proxy, your PCI scope can extend. Therefore it's **mandatory** to implement according [PCI DSS user management ](show.md#pci-dss-compliant-user-management)and [password policy ](show.md#password-policy)
+Even though the interface is served by PCI Proxy, your PCI scope can extend. Therefore it's **mandatory** to implement according [PCI DSS user management ](show.md#pci-dss-compliant-user-management)and [password policy](show.md#password-policy)
 {% endhint %}
 
 {% swagger baseUrl="https://api.sandbox.datatrans.com/" path="upp/services/v1/noshow/init" method="post" summary="Init call" %}
 {% swagger-description %}
-1\. Let us know your IP address for whitelisting 
+1\. Let us know your IP address for whitelisting
 
-\
+\\
 
-
-
-
-\
-
+\\
 
 2\. Build the request to retrieve the NoShow link:
 
-** **
+***
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="content-type" type="string" %}
+{% swagger-parameter in="header" name="content-type" type="string" required="false" %}
 API consumes application/xml or application/json
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="merchantId" type="string" %}
+{% swagger-parameter in="body" name="merchantId" type="string" required="false" %}
 Your unique merchant id at PCI Proxy (e.g. 1100011011)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="aliasCC" type="string" %}
+{% swagger-parameter in="body" name="aliasCC" type="string" required="false" %}
 Creditcard Token (e.g. AAABcHxr-sDssdexyrAAAfyXWIgaAF40
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="userName" type="string" %}
+{% swagger-parameter in="body" name="userName" type="string" required="false" %}
 Unique userName (only required when no unique userEmail is given)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="userEmail" type="string" %}
-**Unique **
+{% swagger-parameter in="body" name="userEmail" type="string" required="false" %}
+\*\*Unique \*\*
 
 email-address where the link should be sent to
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="SHASign" type="string" %}
+{% swagger-parameter in="body" name="SHASign" type="string" required="false" %}
 Your security SHASign (see below how to calculate SHASign value)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="language" type="string" %}
-Currently supported languages: 
+{% swagger-parameter in="body" name="language" type="string" required="false" %}
+Currently supported languages:
 
 `en`
 
-, 
+,
 
 `de`
 
-, 
+,
 
 `it`
 
-, 
+,
 
 `fr`
 
-, 
+,
 
 `es`
 
-, 
+,
 
 `ru`
 {% endswagger-parameter %}
@@ -151,9 +147,9 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 {% endtab %}
 {% endtabs %}
 
-4\. Once the user clicks on the link an email will be sent to `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually. 
+4\. Once the user clicks on the link an email will be sent to `userEmail` where the new device must be authorized either by clicking on the provided link or by entering the activation code manually.
 
-5\. Subsequently the new device has been authorized and the user may enter a four digit security code in the opened iFrame to retrieve plain text credit card number. 
+5\. Subsequently the new device has been authorized and the user may enter a four digit security code in the opened iFrame to retrieve plain text credit card number.
 
 Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
@@ -165,7 +161,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed!
 
 ### Reference
 
-| PCI Proxy NoShow Endpoint** (Sandbox):**                                                                                       |
+| PCI Proxy NoShow Endpoint\*\* (Sandbox):\*\*                                                                                   |
 | ------------------------------------------------------------------------------------------------------------------------------ |
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
@@ -175,7 +171,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed!
 | `aliasCC`                                  | Token you received when you collected the credit card                                    | AAABcHxr-SDssdexrAAAfyXWIgaAF40            |
 | `aliasCVV` (optional)                      | Token you received when you collected the CVV code                                       | ozjc9rJvShqRkDw3lugOnulq                   |
 | `userName` (optional)                      | [Unique userID](show.md#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond                        |
-| `userEmail`                                | **Unique **email address of authorized employeewho retrieves it                          | james.bond@yourcompany.com                 |
+| `userEmail`                                | \*\*Unique \*\*email address of authorized employeewho retrieves it                      | james.bond@yourcompany.com                 |
 | [`SHASign`](show.md#sha-256-security-sign) | SHA Hash - Hash converted to hexaDecimalString                                           | SHA.256(salt+merchantId+aliasCC+userEmail) |
 | `language` (optional)                      | The language code in which the no-show page should be displayed                          | `en`, `de`, `fr`, `it`, `es`, `ru`         |
 
@@ -195,7 +191,7 @@ SHA.256(salt+merchantId+aliasCC+userEmail)                                      
 → SHASign: f641a6a3de574bd4b7609320e9a4fb1ed11364f136908822ff6a8e3b6b1bca1f            // Security Sign for NoShow.jsp
 ```
 
-_The `salt` value can be accessed in the PCI Proxy dashboard (_[_https://dashboard.pci-proxy.com/login_](https://dashboard.pci-proxy.com/login)_) within the Developers - API Keys section. _
+_The `salt` value can be accessed in the PCI Proxy dashboard (_[_https://dashboard.pci-proxy.com/login_](https://dashboard.pci-proxy.com/login)\_) within the Developers - API Keys section. \_
 
 Example: [NoShow sign calculation](https://datatrans.github.io/docs.pci-proxy.com/no-show.html)
 
@@ -237,11 +233,11 @@ else
 
 ### PCI DSS Compliant User Management
 
-Using our _NoShow.jsp_ script requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find a comprehensive overview for a PCI DSS compliant user management. For a more detailed version on PCI DSS user management please see the official PCI DSS documents (Requirement 8) [PCI DSS - Requirements and Security Assessment Procedures](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2.pdf?agreement=true\&time=1476177008560).
+Using our _NoShow.jsp_ script requires you to handle your user management in a PCI DSS compliant way. PCI DSS requires certain user and password policies. Below you will find a comprehensive overview for a PCI DSS compliant user management. For a more detailed version on PCI DSS user management please see the official PCI DSS documents (Requirement 8) [PCI DSS - Requirements and Security Assessment Procedures](https://www.pcisecuritystandards.org/documents/PCI\_DSS\_v3-2.pdf?agreement=true\&time=1476177008560).
 
 ### **Unique User IDs**
 
-Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. **Shared user logins are not allowed. **
+Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. \*\*Shared user logins are not allowed. \*\*
 
 ### Password Policy
 
@@ -255,13 +251,13 @@ In general, the following password rules have to be observed:
 * After 15 minutes of inactivity, the password must be entered to reactivate the terminal / session.
 * The maximum session time after which the user must log in again must not exceed 200 minutes.
 
-> ### Great job**: You have successfully integrated PCI Proxy! **
+> #### Great job\*\*: You have successfully integrated PCI Proxy! \*\*
 >
-> You have securely retrieved a stored credit card without ever touching your servers. **Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. **
+> You have securely retrieved a stored credit card without ever touching your servers. \*\*Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. \*\*
 >
 > Enjoy PCI compliance in a risk-free environment. Keep in mind that you can use stored data as often as you need it.
 >
-> #### Questions?
+> **Questions?**
 >
 > Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
 >
