@@ -54,11 +54,11 @@ In test mode, only [test credit cards](../../test-card-data.md) are allowed.
 
 ### Example
 
-Once a PULL Channel is added to your project, simply redirect the requests to it via the PCI Proxy:
+Once a PULL Channel is added to your project, simply redirect the requests to it via PCI Proxy:
 
 {% tabs %}
 {% tab title="Pull reservations from Booking.com" %}
-```bash
+```shell
 curl https://sandbox.pci-proxy.com/v1/pull \
   -H 'x-cc-merchant-id: merchantId' \
   -H 'pci-proxy-api-key: MfJag98oHh0rCiSXc8g3mCsqP8wrSer7' \
@@ -104,6 +104,8 @@ curl https://sandbox.pci-proxy.com/v1/pull \
 ```
 {% endtab %}
 {% endtabs %}
+
+
 
 {% hint style="success" %}
 The response from Booking.com is automatically filtered for credit card data. Located card data is now stored in our vaults in Switzerland while card tokens have been inserted into the payload.
