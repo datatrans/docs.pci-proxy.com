@@ -6,20 +6,17 @@ The PCI Proxy Show API enables you to see the original credit card number of a s
 Even though the interface is served by PCI Proxy, your PCI scope can extend. Therefore it's **mandatory** to implement according [PCI DSS user management ](show.md#pci-dss-compliant-user-management)and [password policy](show.md#password-policy)
 {% endhint %}
 
+Follow the next steps to build the URL and to retrieve the credit card number:
+
+1. Let us know your IP address for whitelisting
+2. Build the request to retrieve the NoShow link:
+
 {% swagger baseUrl="https://api.sandbox.datatrans.com/" path="upp/services/v1/noshow/init" method="post" summary="Init call" %}
 {% swagger-description %}
-1\. Let us know your IP address for whitelisting
 
-\\
-
-\\
-
-2\. Build the request to retrieve the NoShow link:
-
-***
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="content-type" type="string" required="false" %}
+{% swagger-parameter in="header" name="content-type" type="string" required="true" %}
 API consumes application/xml or application/json
 {% endswagger-parameter %}
 
@@ -27,52 +24,32 @@ API consumes application/xml or application/json
 Your unique merchant id at PCI Proxy (e.g. 1100011011)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="aliasCC" type="string" required="false" %}
-Creditcard Token (e.g. AAABcHxr-sDssdexyrAAAfyXWIgaAF40
+{% swagger-parameter in="body" name="aliasCC" type="string" required="true" %}
+Credit card alias (e.g. AAABcHxr-sDssdexyrAAAfyXWIgaAF40)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="userName" type="string" required="false" %}
 Unique userName (only required when no unique userEmail is given)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="userEmail" type="string" required="false" %}
-\*\*Unique \*\*
+{% swagger-parameter in="body" name="userEmail" type="string" required="true" %}
+**Unique**
 
-email-address where the link should be sent to
+ email-address where the link should be sent to
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="SHASign" type="string" required="false" %}
+{% swagger-parameter in="body" name="SHASign" type="string" required="true" %}
 Your security SHASign (see below how to calculate SHASign value)
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="language" type="string" required="false" %}
-Currently supported languages:
+Currently supported languages: 
 
-`en`
-
-,
-
-`de`
-
-,
-
-`it`
-
-,
-
-`fr`
-
-,
-
-`es`
-
-,
-
-`ru`
+`en, de, it, fr, es, ru`
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="Response will contain NoShow link" %}
-```
+{% swagger-response status="200" description="The response will contain the NoShow link" %}
+```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <response>
   <url>https://api.sandbox.datatrans.com/upp/noshow?token=27cfba38-a606-49c0-9f03-c3bc6d580a66</url>
@@ -153,19 +130,19 @@ curl -X POST https://api.sandbox.datatrans.com/upp/services/v1/noshow/init \
 
 Need more help? Check out our [**NoShow example script**](https://datatrans.github.io/docs.pci-proxy.com/no-show.html).
 
-6\. Ensure [PCI-compliant user management](show.md#pci-dss-compliant-user-management)
+6\. Ensure [PCI-compliant user management](show.md#pci-dss-compliant-user-management).
 
-{% hint style="info" %}
+{% hint style="warning" %}
 In test mode, only [test credit cards](../test-card-data.md) are allowed!
 {% endhint %}
 
 ### Reference
 
-| PCI Proxy NoShow Endpoint\*\* (Sandbox):\*\*                                                                                   |
+| PCI Proxy NoShow sandbox endpoint                                                                                              |
 | ------------------------------------------------------------------------------------------------------------------------------ |
 | [https://api.sandbox.datatrans.com/upp/services/v1/noshow/init](https://api.sandbox.datatrans.com/upp/services/v1/noshow/init) |
 
-| Parameter                                  | Description                                                                              | Example value                              |
+| **Parameter**                              | **Description**                                                                          | **Example value**                          |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------- | ------------------------------------------ |
 | `merchantId`                               | Your merchant ID                                                                         | 1000011011                                 |
 | `aliasCC`                                  | Token you received when you collected the credit card                                    | AAABcHxr-SDssdexrAAAfyXWIgaAF40            |
@@ -237,7 +214,7 @@ Using our _NoShow.jsp_ script requires you to handle your user management in a P
 
 ### **Unique User IDs**
 
-Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. \*\*Shared user logins are not allowed. \*\*
+Every single user having access to the No-Show.jsp needs to have a unique user login to be clearly identified. **Shared user logins are not allowed.**
 
 ### Password Policy
 
