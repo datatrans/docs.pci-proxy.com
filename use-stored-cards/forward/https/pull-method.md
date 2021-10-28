@@ -11,7 +11,7 @@ Pull method allows you to send a request via PCI Proxy to a Receiver API endpoin
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="x-cc-merchant-id" type="string" required="true" %}
+{% swagger-parameter in="header" name="x-cc-merchant-id" type="string" required="false" %}
 Your unique merchant id at PCI Proxy (e.g. 1000011011)
 {% endswagger-parameter %}
 
