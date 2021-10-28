@@ -4,27 +4,27 @@ description: Mobile SDKs for native Android and iOS apps.
 
 # Mobile SDK
 
-Securely collect sensitive cardholder data such as card number and cvv code in your native iOS or Android app with our new mobile SDKs. Completely outsource your tokenisation processes to our libraries and benefit from a simple, fully PCI DSS compliant integration and features such as: 
+Securely collect sensitive cardholder data such as card number and cvv code in your native iOS or Android app with our new mobile SDKs. Completely outsource your tokenisation processes to our libraries and benefit from a simple, fully PCI DSS compliant integration and features such as:
 
 * Smart, secure and state of the art UI components
 * Card brand identification and input validation
 * Card scanner
 * Theme support: Style various items according to your CI
-* Dark mode support 
+* Dark mode support
 
 {% hint style="warning" %}
-This section covers credit card number and cvv code tokenization only. \
-If you need to process 3D-Secure authentication within your SDKs please refer to our [SDK 3D integration](../3d-secure-v2/authentication-only/mobile-sdk-3d.md). 
+This section covers credit card number and cvv code tokenization only.\
+If you need to process 3D-Secure authentication within your SDKs please refer to our [SDK 3D integration](../3d-secure-v2/authentication-only/mobile-sdk-3d.md).
 {% endhint %}
 
 ## 1. Distribution & Download
 
 Access the latest version of our SDKs by following the links below and link the latest release to your app projects.
 
-| OS      | Link                                                                                                                                                                                                                                                                  | Supported version |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/TokenizationRequest.html">Link</a></p>                                                                               | 11 +              |
-| Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html">Link</a></p> | 5.0 +             |
+| **OS**  | **Link**                                                                                                                                                                                                                                                              | **Supported version** |
+| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/TokenizationRequest.html">Link</a></p>                                                                               | 11 +                  |
+| Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html">Link</a></p> | 5.0 +                 |
 
 ## 2. Integration
 
@@ -75,22 +75,22 @@ Value  :  $(PRODUCT_NAME) requires camera access to scan cards.
 
 ## 3. Obtain tokens
 
-To obtain the tokenized values, you first need to submit the `tokenizationId` returned by the SDK to your server. 
+To obtain the tokenized values, you first need to submit the `tokenizationId` returned by the SDK to your server.
 
-Subsequently call the GET Token API from your **server** together with the `tokenizationId` to obtain a token for the card number and the cvv code. Additionally, the API returns the expiry dates, the fingerprint of the card number as well as the `cardInfo` object. 
+Subsequently call the GET Token API from your **server** together with the `tokenizationId` to obtain a token for the card number and the cvv code. Additionally, the API returns the expiry dates, the fingerprint of the card number as well as the `cardInfo` object.
 
 {% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/tokenizations/{tokenizationId}" method="get" summary="GET Token" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="tokenizationId" type="integer" %}
+{% swagger-parameter in="path" name="tokenizationId" type="integer" required="true" %}
 `tokenizationId`
 
- returned from the library
+returned from the library
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="authorization" type="string" %}
+{% swagger-parameter in="header" name="authorization" type="string" required="true" %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 {% endswagger-parameter %}
 
