@@ -87,8 +87,6 @@ Security code (CVV/CVC) to be tokenized
 {% endswagger-response %}
 {% endswagger %}
 
-
-
 The XML Alias Gateway converts credit card data into tokens. The service allows bulk tokenization, allowing multiple  <`alias>`elements, so it is possible to tokenize a card and a cvv at the same time.
 
 XSD Schema: [https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd](https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd)
@@ -105,7 +103,7 @@ The service requires HTTP basic authentication. The required credentials can be 
 curl -L -X POST 'https://api.sandbox.datatrans.com/upp/jsp/XML_AliasGateway.jsp' \
 -H 'Content-Type: text/xml' \
 -H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr' \
---data-raw '       <aliasCCService version="3">
+--data-raw '<aliasCCService version="3">
          <body merchantId="1100017789">
            <alias>
               <request>
