@@ -4,27 +4,27 @@
 
 Pull method allows you to send a request via PCI Proxy to a Receiver API endpoint. Your payload will be filtered for tokens which will be automatically detokenized, and sent further to the Receiver API endpoint. Just add the specified header parameters to your request and redirect your request to the `/v1/pull` endpoint. All other headers and your payload will be kept and routed through PCI Proxy without modification.
 
-![Process Flow with PCI Proxy](<../../../.gitbook/assets/receiver_pull_pciproxy_color (4).png>)
+![Process Flow with PCI Proxy](<../../../.gitbook/assets/receiver\_pull\_pciproxy\_color (4).png>)
 
 {% swagger baseUrl="https://sandbox.pci-proxy.com" path="/v1/pull" method="post" summary="PULL method - API request" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="x-cc-merchant-id" type="string" %}
+{% swagger-parameter in="header" name="x-cc-merchant-id" type="string" required="true" %}
 Your unique merchant id at PCI Proxy (e.g. 1000011011)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="pci-proxy-api-key" type="string" %}
+{% swagger-parameter in="header" name="pci-proxy-api-key" type="string" required="true" %}
 Your API key (ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="x-cc-url" type="string" %}
+{% swagger-parameter in="header" name="x-cc-url" type="string" required="true" %}
 API endpoint (https://api.channel.com/)
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Response will contain tokenized credit card data." %}
-```markup
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <reservations>
     <reservation>
@@ -35,7 +35,7 @@ API endpoint (https://api.channel.com/)
             <cc_number>424242SKMPRI4242</cc_number>
             <cc_type>Visa</cc_type>
         </customer>
-        <truncated>...for better visability</truncated>
+        <truncated>...for better visibility</truncated>
     </reservation>   
 </reservations>
 ```
@@ -65,7 +65,7 @@ curl https://sandbox.pci-proxy.com/v1/pull \
 {% endtab %}
 
 {% tab title="Response" %}
-```markup
+```json
 {
   "id": "tok_1CHoPL2eZvKYlo2Ck6KE483n",
   "object": "token",
