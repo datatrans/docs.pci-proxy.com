@@ -15,11 +15,11 @@ Pull method allows you to send a request via PCI Proxy to a Receiver API endpoin
 Your unique merchant id at PCI Proxy (e.g. 1000011011)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="pci-proxy-api-key" type="string" required="true" %}
+{% swagger-parameter in="header" name="pci-proxy-api-key" type="string" required="false" %}
 Your API key (ynTIoCUuUnlHkbW460eZb0zr4WBL0ntg)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="x-cc-url" type="string" required="true" %}
+{% swagger-parameter in="header" name="x-cc-url" type="string" required="false" %}
 API endpoint (https://api.channel.com/)
 {% endswagger-parameter %}
 
