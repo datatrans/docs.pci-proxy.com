@@ -4,11 +4,7 @@ The Alias Gateway allows you to pass credit card data directly to the PCI Proxy 
 
 {% swagger baseUrl="https://api.sandbox.datatrans.com/" path="upp/jsp/XML_AliasGateway.jsp" method="post" summary="XML Alias Gateway" %}
 {% swagger-description %}
-The XML Alias Gateway converts credit card data into tokens. The service allows bulk tokenization, allowing multiple  <
 
-`alias>`
-
-elements, so it is possible to tokenize a card and a cvv at the same time.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
@@ -93,8 +89,9 @@ Security code (CVV/CVC) to be tokenized
 
 
 
-| XSD schema | [https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd](https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd) |
-| ---------- | -------------------------------------------------------------------------------------------------------------------- |
+The XML Alias Gateway converts credit card data into tokens. The service allows bulk tokenization, allowing multiple  <`alias>`elements, so it is possible to tokenize a card and a cvv at the same time.
+
+XSD Schema: [https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd](https://api.sandbox.datatrans.com/upp/schema/aliasCC.xsd)
 
 {% hint style="warning" %}
 The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information.
