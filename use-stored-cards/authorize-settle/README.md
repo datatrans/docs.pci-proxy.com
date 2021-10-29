@@ -1,6 +1,6 @@
 # Authorize/Settle
 
-Using this API allows you to simply send a json request with a token to just **reserve **(authorize) or **charge **(settle) an amount. 
+Using this API allows you to simply send a json request with a token to just **reserve **(authorize) or **charge **(settle) an amount.
 
 {% tabs %}
 {% tab title="Reserve an amount" %}
@@ -15,7 +15,7 @@ When you [**charge a stored card**](./#examples), the authorization and settleme
 {% endtabs %}
 
 {% hint style="success" %}
-Stored cards can be used multiple times for **recurring transactions** or **One-Click payments**. 
+Stored cards can be used multiple times for **recurring transactions** or **One-Click payments**.
 {% endhint %}
 
 ## 1. Add acquirer to your account
@@ -30,7 +30,7 @@ For this feature, you need an existing acquiring contract.
 ## 2. Authorize a stored card
 
 {% hint style="warning" %}
-The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
+The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information.
 {% endhint %}
 
 {% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/authorize" method="post" summary="AUTHORIZE method" %}
@@ -38,63 +38,62 @@ The service requires HTTP basic authentication. The required credentials can be 
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authentication" type="string" %}
+{% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 
-\
-
+\\
 
 see Setup
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Content-Type" type="string" %}
+{% swagger-parameter in="header" name="Content-Type" type="string" required="false" %}
 application/json; charset=UTF-8
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="currency" type="string" %}
-3 letter ISO-4217 character code. E.g. 
+{% swagger-parameter in="body" name="currency" type="string" required="false" %}
+3 letter ISO-4217 character code. E.g.
 
-`EUR `
+`EUR`
 
-or 
+or
 
 `USD`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="refno" type="string" %}
+{% swagger-parameter in="body" name="refno" type="string" required="false" %}
 Your unique reference number (AN 1..20)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="amount" type="integer" %}
-The amount of the transaction in the currency's smallest unit. For example use 1000 for EUR 10.00. 
+{% swagger-parameter in="body" name="amount" type="integer" required="false" %}
+The amount of the transaction in the currency's smallest unit. For example use 1000 for EUR 10.00.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="autoSettle" type="boolean" %}
-Whether to automatically settle the transaction after an authorization or not. Default is 
+{% swagger-parameter in="body" name="autoSettle" type="boolean" required="false" %}
+Whether to automatically settle the transaction after an authorization or not. Default is
 
 `false`
 
-. 
+.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="card" type="object" %}
+{% swagger-parameter in="body" name="card" type="object" required="false" %}
 Card object must contain following parameters below
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="alias" type="string" %}
+{% swagger-parameter in="body" name="alias" type="string" required="false" %}
 Token received from a previous PCI Proxy integration
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="expiryMonth" type="string" %}
+{% swagger-parameter in="body" name="expiryMonth" type="string" required="false" %}
 The expiry month of the token (2 characters)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="expiryYear" type="string" %}
+{% swagger-parameter in="body" name="expiryYear" type="string" required="false" %}
 The expiry year of the token (2 characters)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="3D" type="object" %}
-If 3D authentication data is available, the 3D object can be used to send the relevant 3D parameters. 
+{% swagger-parameter in="body" name="3D" type="object" required="false" %}
+If 3D authentication data is available, the 3D object can be used to send the relevant 3D parameters.
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Successful authorization response" %}
@@ -105,19 +104,6 @@ If 3D authentication data is available, the 3D object can be used to send the re
   "card": {
     "masked": "424242xxxxxx4242"
   }
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="400" description=" Failed authorization response
-" %}
-```bash
-{
-  "error": {
-    "code": "see table below for detailed error messages",
-    "message": "see table below for detailed error messages"
-  },
-  "transactionId": "191023112022175523"
 }
 ```
 {% endswagger-response %}
@@ -151,7 +137,7 @@ curl -X POST \
 {% endcode %}
 
 {% code title="Response (successful)" %}
-```bash
+```json
 {
   "transactionId": "191023111742635093",
   "acquirerAuthorizationCode": "111742",
@@ -185,7 +171,7 @@ curl -X POST \
 {% endcode %}
 
 {% code title="Response (successful)" %}
-```bash
+```json
 {
   "transactionId": "191023113146339569",
   "acquirerAuthorizationCode": "113146",
@@ -200,9 +186,8 @@ curl -X POST \
 
 ### Error table
 
-If the authorisation failed, you receive one of the of the following error codes. 
+If the authorisation failed, you receive one of the of the following error codes.
 
 > `"UNKNOWN_ERROR"`, `"UNRECOGNIZED_PROPERTY"`, `"INVALID_PROPERTY"`, `"INVALID_TRANSACTION_STATUS"`, `"TRANSACTION_NOT_FOUND"`, `"INVALID_JSON_PAYLOAD"`, `"UNAUTHORIZED"`, `"EXPIRED_CARD"`, `"INVALID_CARD"`, `"UNSUPPORTED_CARD"`, `"DUPLICATED_REFNO"`, `"DECLINED"`, `"BLOCKED_BY_VELOCITY_CHECKER"`, `"CLIENT_ERROR"` , `"SERVER_ERROR"`
 
 ####
-

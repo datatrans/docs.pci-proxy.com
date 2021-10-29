@@ -8,10 +8,10 @@ description: >-
 
 ## Before you start
 
-1. ****[**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
+1. \*\*\*\*[**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
 
 {% hint style="info" %}
-* This service requires basic authentication. Please refer to [Authentication](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) to retrieve the required credentials. 
+* This service requires basic authentication. Please refer to [Authentication](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) to retrieve the required credentials.
 * Make sure to use our 3D Secure enabled test credit cards [here](../testing-3d-secure.md).
 {% endhint %}
 
@@ -25,126 +25,108 @@ Secure Fields 3D requires a 3D Secure enrolled acquiring contract. Those 3D acqu
 
 {% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions" method="post" summary="Init call" %}
 {% swagger-description %}
-Initial Server-to-Server call to retrieve transactionId and submit 3D Secure v2 parameters. 
+Initial Server-to-Server call to retrieve transactionId and submit 3D Secure v2 parameters.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" %}
+{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 
-\
-
+\\
 
 see Setup
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Content-Type" type="string" %}
+{% swagger-parameter in="header" name="Content-Type" type="string" required="false" %}
 API consumes application/json; charset=UTF-8
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="amount" type="integer" %}
+{% swagger-parameter in="body" name="amount" type="integer" required="false" %}
 Transaction in the currency's smallest unit. For example use 1000 for EUR 10.00
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="currency" type="string" %}
-3 letter ISO-4217 character code. For example 
+{% swagger-parameter in="body" name="currency" type="string" required="false" %}
+3 letter ISO-4217 character code. For example
 
-`EUR `
+`EUR`
 
-or 
+or
 
 `USD`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="refno" type="string" %}
+{% swagger-parameter in="body" name="refno" type="string" required="false" %}
 \[1..20] characters
 
-\
-
+\\
 
 It should be unique each transaction
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="paymentMethods" type="array" %}
+{% swagger-parameter in="body" name="paymentMethods" type="array" required="false" %}
 An array with one element: payment method shortname
 
-\
-
-
-
+\\
 
 `"AMX"`
 
- 
-
 `"CUP"`
-
- 
 
 `"ECA"`
 
- 
-
 `"DIN"`
-
- 
 
 `"DIS"`
 
- 
-
 `"JCB"`
-
- 
 
 `"VIS"`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="card" type="object" %}
+{% swagger-parameter in="body" name="card" type="object" required="false" %}
 card object must contain following parameters below
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="number" type="string" %}
+{% swagger-parameter in="body" name="number" type="string" required="false" %}
 Plain text card number or PCI Proxy token
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="expiryMonth" type="string" %}
+{% swagger-parameter in="body" name="expiryMonth" type="string" required="false" %}
 Expiry month of card (2 characters)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="expiryYear" type="string" %}
+{% swagger-parameter in="body" name="expiryYear" type="string" required="false" %}
 Expiry year of card (2 characters)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="3D" type="object" %}
+{% swagger-parameter in="body" name="3D" type="object" required="false" %}
 3D object for the 3D v2 parameters
 
-\
-
+\\
 
 See the hint box below for additional information.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="option" type="string" %}
+{% swagger-parameter in="body" name="option" type="string" required="false" %}
 option object must contain the following parameters below
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="authenticationOnly" type="boolean" %}
+{% swagger-parameter in="body" name="authenticationOnly" type="boolean" required="false" %}
 true
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="redirect" type="object" %}
+{% swagger-parameter in="body" name="redirect" type="object" required="false" %}
 redirect object must contain following parameters below
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="successUrl" type="string" %}
+{% swagger-parameter in="body" name="successUrl" type="string" required="false" %}
 Url where cardholder will be redirect in case of successful 3D process
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="cancelUrl" type="string" %}
-Url where cardholder will be redirected in case of  canceled 3D process
+{% swagger-parameter in="body" name="cancelUrl" type="string" required="false" %}
+Url where cardholder will be redirected in case of canceled 3D process
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="errorUrl" type="string" %}
+{% swagger-parameter in="body" name="errorUrl" type="string" required="false" %}
 Url where cardholder will be redirected in case of an error in 3D process
 {% endswagger-parameter %}
 
@@ -287,39 +269,38 @@ If the initial server to server call failed, you will receive one of these [erro
 
 To use the Authentication only API you need to get the following information from your acquirer as they are part of the 3D Secure 2 enrolment process between your acquirer and card schemes.
 
-| Name                 | Description                                                                                        |
+| **Name**             | **Description**                                                                                    |
 | -------------------- | -------------------------------------------------------------------------------------------------- |
 | `acquirerMerchantId` | <p>Acquirer Merchant ID</p><p>Acquirer-assigned Merchant identifier</p>                            |
 | `acquirerBin`        | <p>Acquirer BIN</p><p>Acquiring institution identification code</p>                                |
 | `mcc`                | <p>Merchant Category Code</p><p>Describes the Merchant’s type of business, product or service.</p> |
-| `merchantName`       | <p>Merchant Name</p><p>Name which will be displayed on the ACS page. </p>                          |
+| `merchantName`       | <p>Merchant Name</p><p>Name which will be displayed on the ACS page.</p>                           |
 
 ## Step 2: Display a 3D secure challenge
 
-In the body of the response you receive the `transactionID` and in the location header the `3D-redirect`URL. Redirect the cardholder to this URL to trigger the 3D-Secure process. Once the card holder completed the 3D-Secure process, he will be redirected to the `successUrl` passed to the `v1/transactions` API. 
+In the body of the response you receive the `transactionID` and in the location header the `3D-redirect`URL. Redirect the cardholder to this URL to trigger the 3D-Secure process. Once the card holder completed the 3D-Secure process, he will be redirected to the `successUrl` passed to the `v1/transactions` API.
 
 ## Step 3: Obtain 3D parameters
 
 {% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}" method="get" summary="Status API" %}
 {% swagger-description %}
-Obtain 3D parameters, credit card and cvv token by executing a server to server call with the 
+Obtain 3D parameters, credit card and cvv token by executing a server to server call with the
 
-`transactionId `
+`transactionId`
 
-received in step 1. 
+received in step 1.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" %}
+{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 
-\
-
+\\
 
 see setup
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="transactionId" type="string" %}
-transactionId obtained via 
+{% swagger-parameter in="query" name="transactionId" type="string" required="false" %}
+transactionId obtained via
 
 `/v1/transactions`
 {% endswagger-parameter %}
@@ -374,7 +355,6 @@ transactionId obtained via
 curl -X GET \
   https://api.sandbox.datatrans.com/v1/transactions/190906151210861442 \
   -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
-
 ```
 {% endtab %}
 
@@ -440,20 +420,20 @@ curl -X GET \
 
 ####
 
-#### 3D object field name mapping  
+#### 3D object field name mapping
 
-| Datatrans                | EMVCo                                                                                                     | Description                                                     |
-| ------------------------ | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| `eci`                    | [eci](../3ds-terminology.md#eci-electronic-commerce-indicator)                                            | The Electronic Commerce Indicator                               |
-| `xid`                    | <p><a href="../3ds-terminology.md#dstransid-ds-transaction-id">dsTransId</a> (3Dv2)</p><p>xid (3Dv1)</p>  | The transaction ID returned by the directory server             |
-| `cavvAlgorithm`          | Only required for 3D Secure 1                                                                             | The 3D algorithm                                                |
-| `cavv`                   | [authenticationValue](../3ds-terminology.md#authenticationvalue-authentication-value)                     | The Cardholder Authentication Verification Value                |
-| `threeDSVersion`         | [messageVersion](../3ds-terminology.md#messageversion-message-version-number)                             | The 3D version                                                  |
-| `directoryResponse `     | <p><a href="../3ds-terminology.md#transstatus-transaction-status">transStatus</a> </p><p>(after ARes)</p> | Transaction status after `ARes `                                |
-| `authenticationResponse` | <p><a href="../3ds-terminology.md#transstatus-transaction-status">transStatus </a></p><p>(after RReq)</p> | Transaction status after `RReq`                                 |
-| `threeDSTransactionId`   | [threeDSServerTransID](../3ds-terminology.md#threedsservertransid-3ds-server-transaction-id)              | Universally unique transaction identifier.                      |
-| `cardHolderInfo`         | [cardholderInfo](../3ds-terminology.md#cardholderinfo-cardholder-information-text)                        | Optional message provided by the ACS/Issuer to the Cardholder   |
-| `transStatusReason`      | [transStatusReason](../3ds-terminology.md#transstatusreason-transaction-status-reason)                    | Provides additional information on the failed 3D authentication |
+| **Datatrans**            | **EMVCo**                                                                                                | **Description**                                                 |
+| ------------------------ | -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
+| `eci`                    | [eci](../3ds-terminology.md#eci-electronic-commerce-indicator)                                           | The Electronic Commerce Indicator                               |
+| `xid`                    | <p><a href="../3ds-terminology.md#dstransid-ds-transaction-id">dsTransId</a> (3Dv2)</p><p>xid (3Dv1)</p> | The transaction ID returned by the directory server             |
+| `cavvAlgorithm`          | Only required for 3D Secure 1                                                                            | The 3D algorithm                                                |
+| `cavv`                   | [authenticationValue](../3ds-terminology.md#authenticationvalue-authentication-value)                    | The Cardholder Authentication Verification Value                |
+| `threeDSVersion`         | [messageVersion](../3ds-terminology.md#messageversion-message-version-number)                            | The 3D version                                                  |
+| `directoryResponse`      | <p><a href="../3ds-terminology.md#transstatus-transaction-status">transStatus</a></p><p>(after ARes)</p> | Transaction status after `ARes`                                 |
+| `authenticationResponse` | <p><a href="../3ds-terminology.md#transstatus-transaction-status">transStatus</a></p><p>(after RReq)</p> | Transaction status after `RReq`                                 |
+| `threeDSTransactionId`   | [threeDSServerTransID](../3ds-terminology.md#threedsservertransid-3ds-server-transaction-id)             | Universally unique transaction identifier.                      |
+| `cardHolderInfo`         | [cardholderInfo](../3ds-terminology.md#cardholderinfo-cardholder-information-text)                       | Optional message provided by the ACS/Issuer to the Cardholder   |
+| `transStatusReason`      | [transStatusReason](../3ds-terminology.md#transstatusreason-transaction-status-reason)                   | Provides additional information on the failed 3D authentication |
 
 ### Directory response & authentication response
 
@@ -461,24 +441,25 @@ We return the directory response for any transaction where a 3D Secure verificat
 
 #### Directory Response (Transaction status after `ARes`)
 
-| Value | 3Dv2                   | Description                                                                                                                                                                                                                                                                                                                           |
-| ----- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Y     | authenticated          | The card or account was authenticated seamlessly with 3D Secure. No challenge flow will take place.                                                                                                                                                                                                                                   |
-| N     | authentication failed  | Not authenticated.                                                                                                                                                                                                                                                                                                                    |
-| U     | not available          | The authentication or account verification could not be performed. This is usually linked to technical problems.                                                                                                                                                                                                                      |
-| C     | challenge needed       | Further cardholder interaction is required to complete the authentication.                                                                                                                                                                                                                                                            |
-| R     | rejected               | Not authenticated because the issuer is rejecting authentication.                                                                                                                                                                                                                                                                     |
-| A     | authentication attempt | A proof of authentication attempt was generated. One or more 3D Secure authentication attempts were performed but no authentication or account verification was completed successfully. This serves as a proof that 3D Secure authentication was attempted and may also be returned if a cardholder skips the 3D Secure registration. |
+| **Value** | **3Dv2**               | **Description**                                                                                                                                                                                                                                                                                                                       |
+| --------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Y         | authenticated          | The card or account was authenticated seamlessly with 3D Secure. No challenge flow will take place.                                                                                                                                                                                                                                   |
+| N         | authentication failed  | Not authenticated.                                                                                                                                                                                                                                                                                                                    |
+| U         | not available          | The authentication or account verification could not be performed. This is usually linked to technical problems.                                                                                                                                                                                                                      |
+| C         | challenge needed       | Further cardholder interaction is required to complete the authentication.                                                                                                                                                                                                                                                            |
+| R         | rejected               | Not authenticated because the issuer is rejecting authentication.                                                                                                                                                                                                                                                                     |
+| A         | authentication attempt | A proof of authentication attempt was generated. One or more 3D Secure authentication attempts were performed but no authentication or account verification was completed successfully. This serves as a proof that 3D Secure authentication was attempted and may also be returned if a cardholder skips the 3D Secure registration. |
 
 #### Authentication Response (Transaction status after `RReq `(Challenge flow))
 
-| Value  | 3Dv2                   | Description                                                                                                                                                                                                                                                                                                                           |
-| ------ | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Y      | authenticated          | The authentication was successful.                                                                                                                                                                                                                                                                                                    |
-| N      | authentication failed  | The authentication or account could not be verified. This will be returned when the authentication fails.                                                                                                                                                                                                                             |
-| U      | not available          | The authentication or account verification could not be performed. This is usually linked to technical problems.                                                                                                                                                                                                                      |
-| A      | authentication attempt | A proof of authentication attempt was generated. One or more 3D Secure authentication attempts were performed but no authentication or account verification was completed successfully. This serves as a proof that 3D Secure authentication was attempted and may also be returned if a cardholder skips the 3D Secure registration. |
-| C      | process incomplete     | Further cardholder interaction is required to complete the authentication. The authentication process is incomplete.                                                                                                                                                                                                                  |
+| Value     | 3Dv2                   | Description                                                                                                                                                                                                                                                                                                                           |
+| --------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Value** | **3Dv2**               | **Description**                                                                                                                                                                                                                                                                                                                       |
+| Y         | authenticated          | The authentication was successful.                                                                                                                                                                                                                                                                                                    |
+| N         | authentication failed  | The authentication or account could not be verified. This will be returned when the authentication fails.                                                                                                                                                                                                                             |
+| U         | not available          | The authentication or account verification could not be performed. This is usually linked to technical problems.                                                                                                                                                                                                                      |
+| A         | authentication attempt | A proof of authentication attempt was generated. One or more 3D Secure authentication attempts were performed but no authentication or account verification was completed successfully. This serves as a proof that 3D Secure authentication was attempted and may also be returned if a cardholder skips the 3D Secure registration. |
+| C         | process incomplete     | Further cardholder interaction is required to complete the authentication. The authentication process is incomplete.                                                                                                                                                                                                                  |
 
 ## Step 4: Forward 3D data
 

@@ -48,7 +48,7 @@ secureFields.init(
  );
 ```
 
-## Dynamic styling <a id="dynamic-styling"></a>
+## Dynamic styling <a href="dynamic-styling" id="dynamic-styling"></a>
 
 The individual fields can also be styled dynamically:
 
@@ -60,20 +60,20 @@ secureFields.setStyle("cardNumber", "border: 1px solid #ccc");
 secureFields.setStyle("cvv", "border: 1px solid #ccc")
 ```
 
-## Toggled classes <a id="toggled-classes"></a>
+## Toggled classes <a href="toggled-classes" id="toggled-classes"></a>
 
 Secure Fields automatically toggle CSS classes on the input fields based on various user input. Use `"cardNumber.valid:hover": "background-color: green;"` for example to apply different style based classes.
 
-| Class name | Description |
-| :--- | :--- |
-| `valid` | When the field contains valid input. |
-| `invalid` | When the field contains invalid input. For example a wrong card number or CVV Code. |
-| `empty` | When the field is empty. |
-| `identified` | When a supported brand \(for example Visa or Mastercard\) was detected when typing in the card number field. |
+| **Class name** | **Description**                                                                                            |
+| -------------- | ---------------------------------------------------------------------------------------------------------- |
+| `valid`        | When the field contains valid input.                                                                       |
+| `invalid`      | When the field contains invalid input. For example a wrong card number or CVV Code.                        |
+| `empty`        | When the field is empty.                                                                                   |
+| `identified`   | When a supported brand (for example Visa or Mastercard) was detected when typing in the card number field. |
 
-## Advanced initialization <a id="advanced-initialization"></a>
+## Advanced initialization <a href="advanced-initialization" id="advanced-initialization"></a>
 
-The `secureFields.init` function allows to set the input type, placeholder value and which field to be focused right from the beginning. In addition it is possible to set an `aria-label`. The \(random\) example from below ensures the following:
+The `secureFields.init` function allows to set the input type, placeholder value and which field to be focused right from the beginning. In addition it is possible to set an `aria-label`. The (random) example from below ensures the following:
 
 * The CVV field gets initial focus
 * The CVV field's input type gets set to `tel`
@@ -98,7 +98,7 @@ secureFields.init(
 );       
 ```
 
-## Setting up payment methods <a id="setting-up-payment-methods"></a>
+## Setting up payment methods <a href="setting-up-payment-methods" id="setting-up-payment-methods"></a>
 
 By default all credit cards available in your merchant setup will be accepted. Use the `paymentMethods` option if there's a need to accept only a subset of card `types`.
 
@@ -117,23 +117,23 @@ secureFields.init(
 
 Parameter values for “paymentmethod”:
 
-| Card Type | paymentmethod |
-| :--- | :--- |
-| Visa | `VIS` |
-| MasterCard | `ECA` |
-| AMEX | `AMX` |
-| Diners | `DIN` |
-| Discover | `DIS` |
-| JCB | `JCB` |
-| ELO | `ELO` |
-| China UnionPay | `CUP` |
+| **Card type**  | **paymentMethod** |
+| -------------- | ----------------- |
+| Visa           | `VIS`             |
+| MasterCard     | `ECA`             |
+| AMEX           | `AMX`             |
+| Diners         | `DIN`             |
+| Discover       | `DIS`             |
+| JCB            | `JCB`             |
+| ELO            | `ELO`             |
+| China UnionPay | `CUP`             |
 
-## Web fonts <a id="web-fonts"></a>
+## Web fonts <a href="web-fonts" id="web-fonts"></a>
 
 Web fonts are supported via the standard `@font-face` CSS rule. Because of security concerns it is not permitted to link external resources. So, in order to get custom fonts, you need to:
 
-* Contact [support@pci-proxy.com](mailto:support@pci-proxy.com) and provide the font files \(woff, woof2, ttf etc\). The files will be uploaded into your merchant id hosted files space.
-* Reference the font files, by name \(no path\) in the styles section of the `secureFields.init` call:
+* Contact [support@pci-proxy.com](mailto:support@pci-proxy.com) and provide the font files (woff, woof2, ttf etc). The files will be uploaded into your merchant id hosted files space.
+* Reference the font files, by name (no path) in the styles section of the `secureFields.init` call:
 
 ```java
 var styles = {
@@ -150,6 +150,5 @@ var styles = {
 }
 ```
 
-[  
+[\
 ](https://docs.pci-proxy.com/collect-and-store-cards/capture-iframes)
-

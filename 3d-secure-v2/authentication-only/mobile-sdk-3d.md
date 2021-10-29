@@ -4,27 +4,28 @@ description: Mobile SDKs 3D for native Android and iOS apps.
 
 # Mobile SDK 3D
 
-Securely collect sensitive cardholder data such as card number and cvv code in your native iOS or Android app with our new mobile SDKs. Completely outsource your tokenisaton processes to our libraries and benefit from a simple, PCI DSS compliant integration and features such as: 
+Securely collect sensitive cardholder data such as card number and cvv code in your native iOS or Android app with our new mobile SDKs. Completely outsource your tokenisaton processes to our libraries and benefit from a simple, PCI DSS compliant integration and features such as:
 
 * 3D Secure / SCA Ready: The SDK takes over the complexity of the 3DS process
 * Smart, secure and state of the art UI components
 * Card brand identification and input validation
 * Card scanner
 * Store payment information for later use and fast checkout. Delegate the token selection to the library
-* Theme support: Style various items according your CI / Dark mode support 
+* Theme support: Style various items according your CI / Dark mode support
 
 {% hint style="warning" %}
-Please note that it's currently not possible to use this API while sending the 3D Acquiring data dynamically. We're expecting to release this feature later this year. 
+Please note that it's currently not possible to use this API while sending the 3D Acquiring data dynamically. We're expecting to release this feature later this year.
 {% endhint %}
 
 ## Distribution & Download
 
 Access the latest version of our SDKs by following the links below and link the latest release to your app projects.
 
-| OS      | Link                                                                                                                                                                                  | Supported version |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/index.html">Link</a></p>                     | 11 +              |
-| Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk">Link</a></p> | 5.0 +             |
+| OS      | Link                                                                                                                                                                                  | Supported version     |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| **OS**  | **Link**                                                                                                                                                                              | **Supported version** |
+| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/index.html">Link</a></p>                     | 11 +                  |
+| Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk">Link</a></p> | 5.0 +                 |
 
 ## 1. Initial Server-to-Server call
 
@@ -35,106 +36,88 @@ To start a 3D mobile SDK tokenisation you have to call our init API from your se
 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" %}
-Basic MTAwMDAxMTAxMTpYMWVXNmkjJA== 
+{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
+Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 
-\
-
+\\
 
 see API Authentication data
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Content-Type" type="string" %}
+{% swagger-parameter in="header" name="Content-Type" type="string" required="false" %}
 API consumes application/json; charset=UTF-8
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="amount" type="string" %}
+{% swagger-parameter in="body" name="amount" type="string" required="false" %}
 Transaction amount in the currency's smallest unit. For example use 1000 for EU 10.00
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="currency" type="string" %}
+{% swagger-parameter in="body" name="currency" type="string" required="false" %}
 3 letter ISO-4217 character. For example EUR or USD
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="refno" type="string" %}
+{% swagger-parameter in="body" name="refno" type="string" required="false" %}
 \[1..20] characters It should be unique each transaction
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="paymentMethods" type="string" %}
-An array with one element: payment method short name 
+{% swagger-parameter in="body" name="paymentMethods" type="string" required="false" %}
+An array with one element: payment method short name
 
 `"AMX"`
 
- 
-
 `"CUP"`
-
- 
 
 `"ECA"`
 
- 
-
 `"DIN"`
-
- 
 
 `"DIS"`
 
- 
-
 `"JCB"`
-
- 
 
 `"VIS"`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="card" type="object" %}
+{% swagger-parameter in="body" name="card" type="object" required="false" %}
 `card`
 
- object must contain the following parameter below
+object must contain the following parameter below
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="createAliasCVV" type="boolean" %}
+{% swagger-parameter in="body" name="createAliasCVV" type="boolean" required="false" %}
 Whether a CVV alias should be created or not. If set to true a CVV alias will be created.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="option" type="object" %}
+{% swagger-parameter in="body" name="option" type="object" required="false" %}
 `option`
 
- object must contain the following parameter below
+object must contain the following parameter below
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="authenticationOnly" type="boolean" %}
+{% swagger-parameter in="body" name="authenticationOnly" type="boolean" required="false" %}
 `true`
 
- 
-
-\
-
+\\
 
 Indicates that an authentication should be triggered.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="createAlias" type="boolean" %}
-Wheter a card number alias should be created or not. 
+{% swagger-parameter in="body" name="createAlias" type="boolean" required="false" %}
+Wheter a card number alias should be created or not.
 
-\
+\\
 
-
- If set to 
+If set to
 
 `true`
 
- a card number alias will be created.
+a card number alias will be created.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="returnMobileToken" type="boolean" %}
+{% swagger-parameter in="body" name="returnMobileToken" type="boolean" required="false" %}
 `true`
 
-\
-
+\\
 
 Indicates that a mobile token should be created.
 {% endswagger-parameter %}
@@ -229,9 +212,9 @@ TransactionRegistry.startTransaction(this, transaction)
 {% endtab %}
 {% endtabs %}
 
-Once the card details have been collected, the 3D process will be started automatically. If required, the cardholder will be redirected to the website or the banking app of the card issuer to complete a challenge. 
+Once the card details have been collected, the 3D process will be started automatically. If required, the cardholder will be redirected to the website or the banking app of the card issuer to complete a challenge.
 
-After the transaction has been completed, you can refer to the class `TransactionSuccess` that will return the details of the transaction. If the transaction failed, you will have to refer to the class `transactionError` for further details instead. You may also implement `TransactionDelegate` (iOS) and `TransactionListener` (Android) to be notified when a transaction is successfully finalized, encounters an error, or canceled by the user. 
+After the transaction has been completed, you can refer to the class `TransactionSuccess` that will return the details of the transaction. If the transaction failed, you will have to refer to the class `transactionError` for further details instead. You may also implement `TransactionDelegate` (iOS) and `TransactionListener` (Android) to be notified when a transaction is successfully finalized, encounters an error, or canceled by the user.
 
 #### Additional requirement for iOS
 
@@ -246,26 +229,25 @@ Value  :  $(PRODUCT_NAME) requires camera access to scan cards.
 
 ## Step 3: Obtain Tokens & 3D parameters
 
-To obtain the tokens as well as the authentication result, you first need to submit the `transactionId` returned by the SDK to your server. 
+To obtain the tokens as well as the authentication result, you first need to submit the `transactionId` returned by the SDK to your server.
 
-Subsequently call the GET Status API from your **server** together with the `transactionId` to obtain a token for the card number and the cvv code. Additionally, the API returns a `3D` object which contains information about the result of the authentication process. 
+Subsequently call the GET Status API from your **server** together with the `transactionId` to obtain a token for the card number and the cvv code. Additionally, the API returns a `3D` object which contains information about the result of the authentication process.
 
 {% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}" method="get" summary="Status API" %}
 {% swagger-description %}
 
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="transactionId" type="integer" %}
-transactionId obtained via 
+{% swagger-parameter in="path" name="transactionId" type="integer" required="false" %}
+transactionId obtained via
 
 `/v1/transactions`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" %}
+{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 
-\
-
+\\
 
 see setup
 {% endswagger-parameter %}
@@ -324,7 +306,6 @@ see setup
 curl -X GET \
   https://api.sandbox.datatrans.com/v1/transactions/190906151210861442 \
   -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
-
 ```
 {% endtab %}
 
