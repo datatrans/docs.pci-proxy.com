@@ -22,7 +22,7 @@ Have a look at below mentioned table for detailed user roles.
 
 **Contract roles**
 
-| **Role**      | **Permission**                                                          |
+| **Role**      | **Permissions**                                                         |
 | ------------- | ----------------------------------------------------------------------- |
 | Administrator | Full access to contract and project menus. Manage users and edit roles. |
 | Write         | Access and modify contract related data                                 |
@@ -31,7 +31,7 @@ Have a look at below mentioned table for detailed user roles.
 
 \*\*Project roles (\*\*Assign users to one or several projects)
 
-| **Role**      | **Permission**                                                |
+| **Role**      | **Permissions**                                               |
 | ------------- | ------------------------------------------------------------- |
 | Administrator | Full access to project. Reading & modifying API keys          |
 | Write         | Access and modify project related data. No access to API Keys |

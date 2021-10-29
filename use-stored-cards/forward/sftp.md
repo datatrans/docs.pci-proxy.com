@@ -65,9 +65,8 @@ _Note: In test mode, only test credit cards are allowed!_
 | -------------------------------------------------------------------------- |
 | [https://sandbox.pci-proxy.com/v1/ft](https://sandbox.pci-proxy.com/v1/ft) |
 
-| Required parameter     | Description                                             | Example Value                                                                |
-| ---------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | **Required parameter** | **Description**                                         | **Example value**                                                            |
+| ---------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | merchantId             | Your Merchant ID                                        | 1000011011                                                                   |
 | sign                   | Configured Security Sign (see [Step 1)](../../setup.md) | 130709090849785405                                                           |
 | url                    | Your SFTP endpoint                                      | url=sftp%test%xxx.txt                                                        |

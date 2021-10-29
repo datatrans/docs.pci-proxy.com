@@ -21,9 +21,8 @@ Please note that it's currently not possible to use this API while sending the 3
 
 Access the latest version of our SDKs by following the links below and link the latest release to your app projects.
 
-| OS      | Link                                                                                                                                                                                  | Supported version     |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
 | **OS**  | **Link**                                                                                                                                                                              | **Supported version** |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
 | iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/index.html">Link</a></p>                     | 11 +                  |
 | Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk">Link</a></p> | 5.0 +                 |
 
