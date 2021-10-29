@@ -13,10 +13,10 @@ The following acquirers are some of our directly integrated and fully supported 
 | PostFinance              | Nets Holding A/S                 | Worldpay                           |
 | Concardis GmbH           | Acceptance                       | American Express Int'l             |
 | BS PAYONE GmbH           | BS PAYONE GmbH                   | AirPlus                            |
-| -                        | Concardis GmbH                   | UATP                               |
-| -                        | Société Générale                 | JP Morgan Chase                    |
-| -                        | Hobex AG                         | Elavon Merchant Services           |
-| -                        | card complete Service Bank AG    | EVO Payments International GmbH    |
+|                          | Concardis GmbH                   | UATP                               |
+|                          | Société Générale                 | JP Morgan Chase                    |
+|                          | Hobex AG                         | Elavon Merchant Services           |
+|                          | card complete Service Bank AG    | EVO Payments International GmbH    |
 |                          | LogPay Financial Services GmbH   |                                    |
 
 To have a full view on our partner network, please visit [our website](https://www.datatrans.ch/en/features/payment-methods/).

@@ -1,12 +1,12 @@
 # Receiver PCI DSS compliance validation
 
-The Payment Card Industry Data Security Standard is a set of security standards designed to ensure that all companies that **accept**, **process**, \*\*store \*\*or \*\*transmit \*\*credit card information maintain a secure environment. The PCI DSS applies to any organization, regardless of size or number of transactions, that accepts, transmits or stores any cardholder data, such as payment processors, acquirers, issuers, and service providers.
+he Payment Card Industry Data Security Standard is a set of security standards designed to ensure that all companies that **accept**, **process**, **store **or **transmit **credit card information maintain a secure environment. The PCI DSS applies to any organization, regardless of size or number of transactions, that accepts, transmits or stores any cardholder data, such as payment processors, acquirers, issuers, and service providers.
 
 **PCI Proxy’s Forward API** allows you to distribute and share credit card data freely across PCI compliant level 1 and level 2 third-party service providers (Receivers). In order to ensure that you only share credit card data with compliant and trustworthy receivers, we have to validate the compliance status of the respectively third-party receiver to ensure continued protection of your customers credit card data.
 
 {% tabs %}
 {% tab title="PCI DSS Level 1 Service Provider (Onsite-Assessment)" %}
-Stores, processes, or transmits \*\*more \*\*than 300,000 credit card transactions annually
+Stores, processes, or transmits **more **than 300,000 credit card transactions annually
 {% endtab %}
 
 {% tab title="PCI DSS Level 2 Service Provider (Self-Assessment)    " %}
@@ -32,9 +32,9 @@ All Level 1 third party receiver must complete an annual onsite assessment condu
 All Level 2 third party receiver must complete an annual self-assessment with Self-Assessment Questionnaire D. Therefore, please obtain the documents stated below:
 {% endhint %}
 
-1\) Request a signed copy\*\* \*\*of the Attestation of Compliance (AOC) for [**Self-Assessment Questionnaire D**](https://www.pcisecuritystandards.org/documents/PCI-DSS-v3\_2\_1-SAQ-D\_ServiceProvider.pdf?agreement=true\&time=1595503662823) Service Provider
+1\) Request a signed copy of the Attestation of Compliance (AOC) for [**Self-Assessment Questionnaire D**](https://www.pcisecuritystandards.org/documents/PCI-DSS-v3\_2\_1-SAQ-D\_ServiceProvider.pdf?agreement=true\&time=1595503662823) Service Provider
 
-2\) To obtain an additional measure of assurance, obtain a written and signed acknowledgement about the responsibility for the security of cardholder data with your third party receiver. Please contact your account manager at PCI Proxy for an example \*\*Letter of Acknowledgment \*\*(PCI DSS requirement 12.8.2 and 12.9).
+2\) To obtain an additional measure of assurance, obtain a written and signed acknowledgement about the responsibility for the security of cardholder data with your third party receiver. Please contact your account manager at PCI Proxy for an example **Letter of Acknowledgment** (PCI DSS requirement 12.8.2 and 12.9).
 
 3\) Provide a copy of all documents to [contact@pci-proxy.com](mailto:contact@pci-proxy.com)
 

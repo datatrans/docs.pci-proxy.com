@@ -47,7 +47,7 @@ Activating your account for production starts the billing process.
 
 Follow the below steps to activate your account for production.
 
-1. Click the \*\*Environment\*\* switcher in the left hand side menu
+1. Click the Environment switcher in the left hand side menu
 2. Select your subscription plan, fill in all the required data and press Continue
 3. Choose your preferred payment method and finally enable your account for production
 4. A confirmation email with the contract overview will be sent to the account admin contact.

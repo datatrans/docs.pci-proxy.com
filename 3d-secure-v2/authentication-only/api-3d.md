@@ -8,7 +8,7 @@ description: >-
 
 ## Before you start
 
-1. \*\*\*\*[**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
+1. [**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
 
 {% hint style="info" %}
 * This service requires basic authentication. Please refer to [Authentication](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) to retrieve the required credentials.
@@ -452,9 +452,8 @@ We return the directory response for any transaction where a 3D Secure verificat
 
 #### Authentication Response (Transaction status after `RReq `(Challenge flow))
 
-| Value     | 3Dv2                   | Description                                                                                                                                                                                                                                                                                                                           |
-| --------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Value** | **3Dv2**               | **Description**                                                                                                                                                                                                                                                                                                                       |
+| --------- | ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Y         | authenticated          | The authentication was successful.                                                                                                                                                                                                                                                                                                    |
 | N         | authentication failed  | The authentication or account could not be verified. This will be returned when the authentication fails.                                                                                                                                                                                                                             |
 | U         | not available          | The authentication or account verification could not be performed. This is usually linked to technical problems.                                                                                                                                                                                                                      |

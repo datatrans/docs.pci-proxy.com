@@ -148,7 +148,7 @@ In test mode, only [test credit cards](../test-card-data.md) are allowed!
 | `aliasCC`                                  | Token you received when you collected the credit card                                    | AAABcHxr-SDssdexrAAAfyXWIgaAF40            |
 | `aliasCVV` (optional)                      | Token you received when you collected the CVV code                                       | ozjc9rJvShqRkDw3lugOnulq                   |
 | `userName` (optional)                      | [Unique userID](show.md#unique-user-ids) or username if parameter `userEmail` is generic | 659751 or JamesBond                        |
-| `userEmail`                                | \*\*Unique \*\*email address of authorized employeewho retrieves it                      | james.bond@yourcompany.com                 |
+| `userEmail`                                | **Unique** email address of authorized employeewho retrieves it                          | james.bond@yourcompany.com                 |
 | [`SHASign`](show.md#sha-256-security-sign) | SHA Hash - Hash converted to hexaDecimalString                                           | SHA.256(salt+merchantId+aliasCC+userEmail) |
 | `language` (optional)                      | The language code in which the no-show page should be displayed                          | `en`, `de`, `fr`, `it`, `es`, `ru`         |
 
@@ -228,15 +228,15 @@ In general, the following password rules have to be observed:
 * After 15 minutes of inactivity, the password must be entered to reactivate the terminal / session.
 * The maximum session time after which the user must log in again must not exceed 200 minutes.
 
-> #### Great job\*\*: You have successfully integrated PCI Proxy! \*\*
->
-> You have securely retrieved a stored credit card without ever touching your servers. \*\*Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope. \*\*
->
-> Enjoy PCI compliance in a risk-free environment. Keep in mind that you can use stored data as often as you need it.
->
-> **Questions?**
->
-> Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
->
-> Phone: +41 44 256 81 91\
-> Email: [contact@pci-proxy.com](mailto:contact@pci-proxy.com)
+#### Great job: You have successfully integrated PCI Proxy!&#x20;
+
+You have securely retrieved a stored credit card without ever touching your servers. Your systems never record, transmit or store real credit card data, only the token. Thus, you are out of PCI scope.&#x20;
+
+Enjoy PCI compliance in a risk-free environment. Keep in mind that you can use stored data as often as you need it.
+
+**Questions?**
+
+Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
+
+Phone: +41 44 256 81 91\
+Email: [contact@pci-proxy.com](mailto:contact@pci-proxy.com)
