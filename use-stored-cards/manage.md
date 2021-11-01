@@ -17,7 +17,7 @@ The service requires HTTP basic authentication. The required credentials can be 
 
 Request detailed information about an alias such as creation date or cardInfo.
 
-{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" method="get" summary="" %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" method="get" summary="Alias information" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -106,7 +106,7 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/v1/aliases/AAABeM8amw3ssdexyrA
 
 Convert a legacy (numeric or masked format) token to the most recent token format.
 
-{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases" method="post" summary="" %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases" method="post" summary="Convert" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -177,7 +177,7 @@ curl -i -X POST https://api.sandbox.datatrans.com/v1/aliases \
 
 Delete a token with immediate effect. The token will no longer be recognized if used later with any API call.
 
-{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" method="delete" summary="" %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" method="delete" summary="Delete" %}
 {% swagger-description %}
 
 {% endswagger-description %}
