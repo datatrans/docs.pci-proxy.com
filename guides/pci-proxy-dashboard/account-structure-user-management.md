@@ -29,7 +29,7 @@ Have a look at below mentioned table for detailed user roles.
 | Read-only     | Access to contract related data                                         |
 | None          | No access rights to contract (enabled by default)                       |
 
-\*\*Project roles (\*\*Assign users to one or several projects)
+**Project roles** - Assign users to one or several projects
 
 | **Role**      | **Permissions**                                               |
 | ------------- | ------------------------------------------------------------- |

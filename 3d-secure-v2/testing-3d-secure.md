@@ -30,7 +30,7 @@ Short: 12/21
 
 #### Password for challenge flow
 
-Use following OTP password codes to determine the result of a 3D v2 enrolled card.
+Use the following OTP password codes to determine the result of a 3D v2 enrolled card.
 
 4444 = authenticated\
 4009 = declined

@@ -23,15 +23,15 @@ Secure Fields 3D requires a 3D Secure enrolled acquiring contract. Those 3D acqu
 
 ## Step 1: Initial Server-to-Server call
 
+Use the initial Server-to-Server call to retrieve a transactionId and submit 3D Secure v2 parameters.
+
 {% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions" method="post" summary="Init call" %}
 {% swagger-description %}
-Initial Server-to-Server call to retrieve transactionId and submit 3D Secure v2 parameters.
+
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
-
-\\
 
 see Setup
 {% endswagger-parameter %}
@@ -47,25 +47,17 @@ Transaction in the currency's smallest unit. For example use 1000 for EUR 10.00
 {% swagger-parameter in="body" name="currency" type="string" required="false" %}
 3 letter ISO-4217 character code. For example
 
-`EUR`
-
-or
-
-`USD`
+`EUR `or `USD`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="refno" type="string" required="false" %}
 \[1..20] characters
-
-\\
 
 It should be unique each transaction
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="paymentMethods" type="array" required="false" %}
 An array with one element: payment method shortname
-
-\\
 
 `"AMX"`
 
@@ -101,8 +93,6 @@ Expiry year of card (2 characters)
 {% swagger-parameter in="body" name="3D" type="object" required="false" %}
 3D object for the 3D v2 parameters
 
-\\
-
 See the hint box below for additional information.
 {% endswagger-parameter %}
 
@@ -119,15 +109,15 @@ redirect object must contain following parameters below
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="successUrl" type="string" required="false" %}
-Url where cardholder will be redirect in case of successful 3D process
+the URL where the cardholder will be redirect in case of successful 3D process
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="cancelUrl" type="string" required="false" %}
-Url where cardholder will be redirected in case of canceled 3D process
+the URL where the cardholder will be redirected in case of canceled 3D process
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="errorUrl" type="string" required="false" %}
-Url where cardholder will be redirected in case of an error in 3D process
+the URL where the cardholder will be redirected in case of an error in 3D process
 {% endswagger-parameter %}
 
 {% swagger-response status="201" description="Returns the transactionId and wheter the card is enrolled for 3D or not. " %}
@@ -278,29 +268,25 @@ To use the Authentication only API you need to get the following information fro
 
 ## Step 2: Display a 3D secure challenge
 
-In the body of the response you receive the `transactionID` and in the location header the `3D-redirect`URL. Redirect the cardholder to this URL to trigger the 3D-Secure process. Once the card holder completed the 3D-Secure process, he will be redirected to the `successUrl` passed to the `v1/transactions` API.
+In the body of the response you receive the `transactionID` and in the location header the `3D-redirect`URL. Redirect the cardholder to this URL to trigger the 3D-Secure process. Once the card holder completed the 3D-Secure process, they will be redirected to the `successUrl` passed to the `v1/transactions` API.
 
 ## Step 3: Obtain 3D parameters
 
+Obtain 3D parameters, credit card and cvv token by executing a server to server call with the `transactionId `received in step 1.
+
 {% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}" method="get" summary="Status API" %}
 {% swagger-description %}
-Obtain 3D parameters, credit card and cvv token by executing a server to server call with the
 
-`transactionId`
-
-received in step 1.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 
-\\
-
 see setup
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="transactionId" type="string" required="false" %}
-transactionId obtained via
+transactionId obtained via 
 
 `/v1/transactions`
 {% endswagger-parameter %}

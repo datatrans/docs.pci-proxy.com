@@ -238,15 +238,13 @@ Subsequently call the GET Status API from your **server** together with the `tra
 {% endswagger-description %}
 
 {% swagger-parameter in="path" name="transactionId" type="integer" required="false" %}
-transactionId obtained via
+transactionId obtained via 
 
 `/v1/transactions`
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
-Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
-
-\\
+Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==&#x20;
 
 see setup
 {% endswagger-parameter %}
@@ -362,6 +360,9 @@ You can style various options in our Mobile SDKs. Refer to the class `ThemeConfi
 
 Our iOS and Android Mobile SDK integrations are currently translated and supported in the following languages:
 
-English `en`German `de`French `fr`Italian `it`
+* English - `en`
+* German - `de`
+* French - `fr`
+* Italian - `it`
 
 Please get in touch should you need an additional language to be added for your checkout or if you find a translation error.
