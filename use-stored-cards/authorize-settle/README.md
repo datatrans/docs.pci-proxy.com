@@ -38,9 +38,7 @@ The service requires HTTP basic authentication. The required credentials can be 
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="false" %}
-Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
-
-\\
+Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==\\
 
 see Setup
 {% endswagger-parameter %}
@@ -50,11 +48,11 @@ application/json; charset=UTF-8
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="currency" type="string" required="false" %}
-3 letter ISO-4217 character code. E.g.
+3 letter ISO-4217 character code. E.g. 
 
-`EUR`
+`EUR `
 
-or
+or 
 
 `USD`
 {% endswagger-parameter %}
@@ -68,7 +66,7 @@ The amount of the transaction in the currency's smallest unit. For example use 1
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="autoSettle" type="boolean" required="false" %}
-Whether to automatically settle the transaction after an authorization or not. Default is
+Whether to automatically settle the transaction after an authorization or not. Default is 
 
 `false`
 

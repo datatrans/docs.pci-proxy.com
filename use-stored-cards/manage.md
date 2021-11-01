@@ -5,28 +5,32 @@ description: Get full control and interact with your tokens (alias) stored in ou
 # Manage
 
 {% hint style="danger" %}
-Please note that the token management API is only working with the latest [Alias 2.0 format](https://docs.pci-proxy.com/resources/token-format). \
-Reach out to your PCI Proxy contact if you are not sure which alias format you are using. 
+Please note that the token management API is only working with the latest [Alias 2.0 format](https://docs.pci-proxy.com/resources/token-format).\
+Reach out to your PCI Proxy contact if you are not sure which alias format you are using.
 {% endhint %}
 
 {% hint style="info" %}
-The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information. 
+The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" method="get" summary="Alias information" %}
+### Alias information
+
+Request detailed information about an alias such as creation date or cardInfo.
+
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" method="get" summary="" %}
 {% swagger-description %}
-Request detailed information about an alias such as creation date or cardInfo. 
+
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="alias" type="string" %}
+{% swagger-parameter in="path" name="alias" type="string" required="false" %}
 Alias 2.0 format received from a previous inbound channel
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" %}
+{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Content-Type" type="string" %}
+{% swagger-parameter in="header" name="Content-Type" type="string" required="false" %}
 application/json; charset=UTF-8==
 {% endswagger-parameter %}
 
@@ -98,29 +102,33 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/v1/aliases/AAABeM8amw3ssdexyrA
 {% endtab %}
 {% endtabs %}
 
-{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases" method="post" summary="CONVERT" %}
-{% swagger-description %}
+### Convert
+
 Convert a legacy (numeric or masked format) token to the most recent token format.
+
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases" method="post" summary="" %}
+{% swagger-description %}
+
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" %}
+{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Content-Type" type="string" %}
+{% swagger-parameter in="header" name="Content-Type" type="string" required="false" %}
 application/json; charset=UTF-8
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="legacyAlias" type="string" %}
+{% swagger-parameter in="body" name="legacyAlias" type="string" required="false" %}
 Legacy token format (numeric or masked)
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="expiryMonth" type="string" %}
-The expiry month of the credit card behind alias \d{2}
+{% swagger-parameter in="body" name="expiryMonth" type="string" required="false" %}
+The expiry month of the credit card behind alias d{2}
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="expiryYear" type="string" %}
-The expiry year of the credit card behind the alias \d{2}
+{% swagger-parameter in="body" name="expiryYear" type="string" required="false" %}
+The expiry year of the credit card behind the alias d{2}
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Returns converted alias v2" %}
@@ -157,7 +165,7 @@ curl -i -X POST https://api.sandbox.datatrans.com/v1/aliases \
 {% endtab %}
 
 {% tab title="Response" %}
-```javascript
+```json
 {
   "alias": "AAABdJdXVGPssdexyrAAAbuFU885AFAk"
 }
@@ -165,20 +173,24 @@ curl -i -X POST https://api.sandbox.datatrans.com/v1/aliases \
 {% endtab %}
 {% endtabs %}
 
-{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" method="delete" summary="DELETE" %}
-{% swagger-description %}
+### Delete
+
 Delete a token with immediate effect. The token will no longer be recognized if used later with any API call.
+
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/aliases/{alias}" method="delete" summary="" %}
+{% swagger-description %}
+
 {% endswagger-description %}
 
-{% swagger-parameter in="path" name="alias" type="string" %}
+{% swagger-parameter in="path" name="alias" type="string" required="false" %}
 Alias which should be deleted
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" %}
+{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
 Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Content-Type" type="string" %}
+{% swagger-parameter in="header" name="Content-Type" type="string" required="false" %}
 application/json; charset=UTF-8
 {% endswagger-parameter %}
 
@@ -205,7 +217,6 @@ application/json; charset=UTF-8
 ```javascript
 curl -i -X DELETE https://api.sandbox.datatrans.com/v1/aliases/AAABdJdXjl7ssdexyrAAAZleH7dSANH- \
 	--user {merchantId}:{password} \
-
 ```
 {% endtab %}
 

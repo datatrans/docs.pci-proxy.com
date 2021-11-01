@@ -23,21 +23,21 @@ Secure Fields 3D requires a 3D Secure enrolled acquiring contract for each card 
 
 ## Step 1: Initial Server-to-Server call
 
+Initial Server-to-Server call to retrieve the transactionId and submit the optional 3D parameters.
+
 {% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/secureFields" method="post" summary="Init call" %}
 {% swagger-description %}
-Initial Server-to-Server call to retrieve the transactionId and submit the optional 3D parameters.
+
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
-Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
-
-\\
+Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==\\
 
 see API Authentication data
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="string" required="false" %}
-API consumes application/json; charset=UTF-8
+the API consumes application/json; charset=UTF-8
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="amount" type="integer" required="false" %}
@@ -197,7 +197,7 @@ In order for Secure Fields to insert the card number and CVV iframes at the righ
 * `card-number-placeholder`
 * `cvv-placeholder`
 
-```java
+```html
 <form>
     <div>
         <div>
@@ -220,7 +220,7 @@ In order for Secure Fields to insert the card number and CVV iframes at the righ
 
 Start with creating a new Secure Fields instance:
 
-```java
+```javascript
 var secureFields = new SecureFields();
 
 // Multiple instances might be created and used independently:
@@ -229,7 +229,7 @@ var secureFields = new SecureFields();
 
 Initialize it with your `transactionId` and specify which DOM element containers should be used to inject the iframes:
 
-```java
+```javascript
     secureFields.init(
       '190520110934541218',
       {
@@ -248,9 +248,9 @@ Initialize it with your `transactionId` and specify which DOM element containers
     );
 ```
 
-Afterwards add parameter `expm` and `expy` , submit the form and listen for the success event:
+Afterwards add the parameters `expm` and `expy` , submit the form and listen for the success event:
 
-```java
+```javascript
 $(function() {
   $("#go").click( function() {
       secureFields.submit({ // submit the "form"
@@ -286,21 +286,19 @@ Obtain the 3D parameters, credit card and cvv tokens by executing a server to se
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
-Basic MTEwMDAwNzAwNjpLNnFYMXUklq==
-
-\\
+Basic MTEwMDAwNzAwNjpLNnFYMXUklq==\\
 
 see Setup
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="transactionId" type="string" required="true" %}
-The
+The 
 
-`transactionId`
+`transactionId `
 
-obtained via initial
+obtained via initial 
 
-`/v1/transactions/secureFields`
+`/v1/transactions/secureFields `
 
 call
 {% endswagger-parameter %}
@@ -360,7 +358,7 @@ curl -u 1100018081:2fgVhQOYZK0io9ct  https://api.sandbox.datatrans.com/v1/transa
 {% endtab %}
 
 {% tab title="Response" %}
-```java
+```json
 {
     "transactionId": "190520111958152753",
     "type": "payment",
