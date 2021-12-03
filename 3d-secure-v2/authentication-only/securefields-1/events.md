@@ -142,7 +142,8 @@ Where the `event` callback object has the following structure:
     "type":"debit", // debit or credit
     "usage":"unknown", // consumer or corporate
     "country":"US"
-  }
+  },
+  "redirect": "https://pay.sandbox.datatrans.com/upp/v1/3D/211203103947925035" // if a challenge is needed
 }
 ```
 {% endtab %}
@@ -163,6 +164,3 @@ secureFields.on("error", function(data) {
 ```
 {% endtab %}
 {% endtabs %}
-
-
-
