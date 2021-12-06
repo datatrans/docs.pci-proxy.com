@@ -24,9 +24,9 @@ Use the following Datatrans test card data to test through 3D Secure v1 and v2 t
 
 #### Expiration date
 
-Month: 12 (December)\
-Year: 21 (2021)\
-Short: 12/21
+Month: 06 (June)\
+Year: 25 (2025)\
+Short: 06/25
 
 #### Password for challenge flow
 
