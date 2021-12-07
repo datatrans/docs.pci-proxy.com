@@ -193,7 +193,7 @@ This service requires HTTP basic authentication. The required credentials can be
 {% swagger-description %}
 This endpoint returns the tokenized card or bank account data corresponding to the `transactionId`
 
-Pease note that this is a **server to server **API call and cannot be called from the browser directly.
+Pease note that this is a **server to server** API call and cannot be called from the browser directly.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
@@ -337,8 +337,9 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/upp/services/v1/inline/token?t
 
 ### Error table
 
-| **Error message**      | **Description**                                                                                                  |
+| Error message          | Description                                                                                                      |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Error message**      | **Description**                                                                                                  |
 | Tokenization expired   | The `transactionId` has expired. Please note that it is valid for 30 minutes only.                               |
 | Tokenization not found | The merchant id used for the transaction id creation does not match the merchant id used for the GET Token call. |
 
