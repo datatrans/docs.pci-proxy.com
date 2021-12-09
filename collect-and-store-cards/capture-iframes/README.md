@@ -337,9 +337,8 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/upp/services/v1/inline/token?t
 
 ### Error table
 
-| Error message          | Description                                                                                                      |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | **Error message**      | **Description**                                                                                                  |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Tokenization expired   | The `transactionId` has expired. Please note that it is valid for 30 minutes only.                               |
 | Tokenization not found | The merchant id used for the transaction id creation does not match the merchant id used for the GET Token call. |
 
