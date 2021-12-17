@@ -58,6 +58,7 @@ The `change` event will be emitted whenever one of the following events are gett
 * `touchmovetouchend`
 * `touchcancel`
 * `touchforcechange`
+* `autocomplete`
 
 ```javascript
 secureFields.on("change", function(event) {
@@ -85,6 +86,56 @@ Where the `event` callback object has the following structure:
     "type": "blur"          // the original event
   }
 }
+```
+
+****
+
+**Browser autofill**
+
+Events of type `autocomplete` are triggered if a user makes use of their browser's integrated credit card autofill feature which typically provides expiry month and year alongside credit card number and cvv. While you should never come in touch with the latter, expiry data can be captured and filled into form fields located on merchant side in order to lower friction for the user during the payment process.
+
+Callback object:
+
+```javascript
+
+
+// expiry month provided via browser autofill
+{
+  // ...
+  "event": {
+    "type": "autocomplete",
+    "field": "expiryMonth",
+    "value": "12"    
+  }
+}
+
+// expiry year provided via browser autofill
+{
+  // ...
+  "event": {
+    "type": "autocomplete",
+    "field": "expiryYear",
+    "value": "2021"    
+  }
+}
+```
+
+Sample code
+
+```javascript
+secureFields.on("change", function(event) {
+  if (event.type === "autocomplete") {
+    if (event.field === "expiryMonth") {
+      console.log(event.value) // "12"
+      return;
+    }
+    
+    if (event.field === "expiryYear") {
+      console.log(event.value) // "2021"
+      return;
+    }
+  }
+});
 ```
 {% endtab %}
 
@@ -164,3 +215,4 @@ secureFields.on("error", function(data) {
 ```
 {% endtab %}
 {% endtabs %}
+
