@@ -58,6 +58,7 @@ The `change` event will be emitted whenever one of the following events are gett
 * `touchmovetouchend`
 * `touchcancel`
 * `touchforcechange`
+* `autocomplete`
 
 ```javascript
 secureFields.on("change", function(event) {
@@ -96,8 +97,6 @@ Events of type `autocomplete` are triggered if a user makes use of their browser
 Callback object:
 
 ```javascript
-
-
 // expiry month provided via browser autofill
 {
   // ...
