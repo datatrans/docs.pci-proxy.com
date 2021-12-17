@@ -96,6 +96,8 @@ Events of type `autocomplete` are triggered if a user makes use of their browser
 Callback object:
 
 ```javascript
+
+
 // expiry month provided via browser autofill
 {
   // ...
