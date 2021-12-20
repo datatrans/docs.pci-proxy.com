@@ -14,7 +14,7 @@ User can be assigned either on **Contract** or **Project** level. Please refer t
 
 ## User management
 
-Navigate to the \*\*Users \*\*menu within the **Contract section** to find the user management.\
+Navigate to the **Users** menu within the **Contract section** to find the user management.\
 \
 As the creator of the sandbox account you are automatically assigned with admin permissions for the overall contract. As an admin you are allowed to invite new users to either Contracts or Projects. For each new user you can assign various roles and access rights to them.\
 \
