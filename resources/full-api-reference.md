@@ -62,6 +62,8 @@ PCI Proxy forwards the following HTTP headers to your endpoint:
 | `x-cc-matches-ca`          | The number of card to alias replacements.                                                                                                                                        |
 | `x-cc-matches-ac`          | The number of alias to card replacements.                                                                                                                                        |
 | `x-cvv-matches`            | The total number of cvv to alias and alias to cvv replacements.                                                                                                                  |
+| `x-cvv-matches-acvv`       | The number of alias to cvv replacements.                                                                                                                                         |
+| `x-cvv-matches-cvva`       | The number of cvv to alias replacements.                                                                                                                                         |
 | `x-custom-matches`         | Returned by the proxy in case of a successful replacement. The value represents the number of total (custom value to token / token to custom value) replacements that were made. |
 | `pci-proxy-masked-aliases` | Masked card alias format will be returned                                                                                                                                        |
 | `x-cc-forwarded-for`       | Returns the IP address of the origin caller of the Push integration.                                                                                                             |
