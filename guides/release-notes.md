@@ -14,6 +14,10 @@ The `GET TOKEN` endpoint has been replaced with a new [TOKEN](../collect-and-sto
 
 We have added Idempotency handling for the [TOKEN API](../collect-and-store-cards/capture-iframes/#4.-obtain-tokens). See the details here [https://docs.pci-proxy.com/resources/idempotency](https://docs.pci-proxy.com/resources/idempotency)
 
+**Secure Fields - Added auto fill support**
+
+We have added support to autofill expiry date and CVV code for the [Secure Fields](../collect-and-store-cards/capture-iframes/) integration.&#x20;
+
 ## September 2021
 
 **Redesign - NoShow authentication email**
