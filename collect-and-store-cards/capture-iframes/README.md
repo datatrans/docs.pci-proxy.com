@@ -183,24 +183,24 @@ secureFields.destroy();
 
 ## 4. Obtain tokens
 
-Once you've transmitted the `transactionId` to your server (together with the the rest of your form) you have to execute a **server to server** `GET Token` request to retrieve the tokenized card or the bank account values.
+Once you've transmitted the `transactionId` to your server (together with the the rest of your form) you have to execute a **server to server** `Token` request to retrieve the tokenized card or the bank account values.
 
 {% hint style="danger" %}
 This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../../guides/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information.
 {% endhint %}
 
-{% swagger baseUrl="https://api.sandbox.datatrans.com/upp/services" path="/v1/inline/token" method="get" summary="Token" %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com/" path="v1/tokenizations/{transactionId}" method="post" summary="Token" %}
 {% swagger-description %}
 This endpoint returns the tokenized card or bank account data corresponding to the `transactionId`
 
 Pease note that this is a **server to server** API call and cannot be called from the browser directly.
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="Authorization" type="string" required="false" %}
+{% swagger-parameter in="header" name="Authorization" type="string" required="true" %}
 Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="transactionId" type="integer" %}
+{% swagger-parameter in="query" name="transactionId" type="integer" required="true" %}
 The transactionId obtained via the
 
 `secureFields.submit()`
@@ -208,16 +208,12 @@ The transactionId obtained via the
 operation.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="returnPaymentMethod" type="boolean" required="false" %}
-Returns payment method used with transaction.
+{% swagger-parameter in="header" name="Content-Type" type="string" required="true" %}
+application/json; charset=UTF-8
 {% endswagger-parameter %}
 
-{% swagger-parameter in="query" name="mandatoryAliasCVV" type="boolean" required="false" %}
-Wheter the case should be gluten-free or not.
-{% endswagger-parameter %}
-
-{% swagger-parameter in="query" name="returnCardInfo" type="boolean" required="false" %}
-Returns cardInfo object
+{% swagger-parameter in="header" name="Idempotency-Key" type="string" %}
+Unique UUID v4 Idempotency-Key
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="" %}
@@ -231,23 +227,33 @@ Returns cardInfo object
 {% endswagger-response %}
 {% endswagger %}
 
-### Token API calls examples
+### Token API  example
 
 {% tabs %}
 {% tab title="Request" %}
-```bash
-$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571" \ 
-        -u 'merchantId:password'
+```javascript
+curl -L -X POST 'https://api.sandbox.datatrans.com/v1/tokenizations/220112095131012129' \
+-H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr' \
+-H 'Content-Type: application/json' \
+-H 'Idempotency-Key: e75d621b-0e56-4b71-b889-1acec3e9d870'
 ```
 {% endtab %}
 
 {% tab title="Response Card" %}
 ```bash
 {
-  "aliasCC": "AAABeM8yJsbssdexyrAAAXnn_sIdAKe0",
-  "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
-  "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
-  "maskedCard": "424242xxxxxx4242"
+    "paymentMethod": "VIS",
+    "alias": "AAABfk18LlrssdexyrAAAQalUKXvAHTw",
+    "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
+    "maskedCard": "424242xxxxxx4242",
+    "aliasCVV": "bkhZUcl_SFSaN8iNoeZTZirR",
+    "cardInfo": {
+        "brand": "VISA CREDIT",
+        "type": "credit",
+        "usage": "consumer",
+        "country": "GB",
+        "issuer": "DATATRANS"
+    }
 }
 ```
 {% endtab %}
@@ -267,69 +273,6 @@ $ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transacti
     "aliasAccountNumber": "AAABeKahwGDssdexyrAAAV8w_R0dlq9b",
     "maskedAccountNumber": "xxxx0604",
     "aliasBranchCode": "AAABeKahwGDssdexyrAAAadGCQEwl6MZ"
-}
-```
-{% endtab %}
-{% endtabs %}
-
-{% tabs %}
-{% tab title="Example: returnPaymentMethod=true returning paymentMethod" %}
-```bash
-$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170419151426624571&returnPaymentMethod=true" \
-       -u 'merchantId:password'
-```
-{% endtab %}
-
-{% tab title="Response" %}
-```json
-{
-  "aliasCC": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
-  "aliasCVV": "mVHJkLRrRX-vb9uUzEM40RUN",
-  "paymentMethod": "VIS",
-  "maskedCard": "424242xxxxxx4242"
-}
-```
-{% endtab %}
-{% endtabs %}
-
-{% tabs %}
-{% tab title="Example: mandatoryAliasCVV=true w/ transactionId that has no CVV token" %}
-```bash
-$ curl "https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=170822090245534063&mandatoryAliasCVV=true" \
-       -u 'merchantId:password'
-```
-{% endtab %}
-
-{% tab title="Response" %}
-```bash
-400 Bad Request
-Tokenization with CVV not found
-```
-{% endtab %}
-{% endtabs %}
-
-{% tabs %}
-{% tab title="Example: returnCardInfo=true returning CardInfo " %}
-```javascript
-curl -L -X GET 'https://api.sandbox.datatrans.com/upp/services/v1/inline/token?transactionId=210202095141262032&returnCardInfo=true' \
--H 'merchantId:password'
-```
-{% endtab %}
-
-{% tab title="Response" %}
-```json
-{
-    "aliasCC": "AAABeM8yJsbssdexyrAAAXnn_sIdAKe0",
-    "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
-    "aliasCVV": "ScRuEmNjRJ682mIGKHA9xx_R",
-    "maskedCard": "424242xxxxxx4242",
-    "cardInfo": {
-        "brand": "VISA CREDIT",
-        "type": "credit",
-        "usage": "consumer",
-        "country": "GB",
-        "issuer": "DATATRANS"
-    }
 }
 ```
 {% endtab %}

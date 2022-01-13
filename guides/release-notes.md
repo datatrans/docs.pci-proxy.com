@@ -4,6 +4,16 @@ description: See our latest features, changes and improvements on the PCI Proxy 
 
 # Release notes
 
+## January 2022
+
+**New TOKEN endpoint**
+
+The `GET TOKEN` endpoint has been replaced with a new [TOKEN](../collect-and-store-cards/capture-iframes/#4.-obtain-tokens) API. ****&#x20;
+
+**Idempotency**
+
+We have added Idempotency handling for the [TOKEN API](../collect-and-store-cards/capture-iframes/#4.-obtain-tokens). See the details here [https://docs.pci-proxy.com/resources/idempotency](https://docs.pci-proxy.com/resources/idempotency)
+
 ## September 2021
 
 **Redesign - NoShow authentication email**
@@ -12,7 +22,7 @@ We have redesigned the look and feel of the [NoShow authentication](../use-store
 
 ## July 2021
 
-**New process for compliance check of **[**Receivers**](3rd-party-receiver-validation.md)
+**New process for compliance check of** [**Receivers**](3rd-party-receiver-validation.md)
 
 A new, automated process for the compliance renewal of the Receivers has been introduced.
 
@@ -78,7 +88,7 @@ We are now returning `cardHolderInfo` object from the [GET Status API](../3d-sec
 
 We have added a new feature to monitor and debug traffic in real time. Learn more about the Traffic Inspector [here](pci-proxy-dashboard/traffic-inspector.md).
 
-\*\*Improvement - Usage statistics \*\*
+**Improvement - Usage statistics**&#x20;
 
 We have improved the usage statistics in the PCI Proxy Dashboard. It allows you to filter usage each single integration assigned to your project on Contract level.
 
