@@ -250,7 +250,7 @@ Subsequently, call the GET Status API from your **server** together with the `tr
 The service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](broken-reference) for more information.&#x20;
 {% endhint %}
 
-{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}" method="get" summary="Status API" %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/transactions/{transactionId}" method="post" summary="Status API" %}
 {% swagger-description %}
 
 {% endswagger-description %}
@@ -311,7 +311,7 @@ Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 {% endswagger-response %}
 {% endswagger %}
 
-#### Examples
+#### Examples&#x20;
 
 {% tabs %}
 {% tab title="Request" %}
