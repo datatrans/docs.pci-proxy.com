@@ -79,7 +79,7 @@ To obtain the tokenized values, you first need to submit the `tokenizationId` re
 
 Subsequently, call the GET Token API from your **server** together with the `tokenizationId` to obtain the tokens for the card number and the CVV code. Additionally, the API returns the expiry dates, the fingerprint of the card number as well as the `cardInfo` object.&#x20;
 
-{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/tokenizations/{tokenizationId}" method="get" summary="GET Token" %}
+{% swagger baseUrl="https://api.sandbox.datatrans.com" path="/v1/tokenizations/{tokenizationId}" method="post" summary="GET Token" %}
 {% swagger-description %}
 The parameters marked with * are mandatory.
 {% endswagger-description %}
@@ -114,7 +114,7 @@ Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 {% endswagger-response %}
 {% endswagger %}
 
-#### Examples
+#### Examples&#x20;
 
 {% tabs %}
 {% tab title="Request" %}
