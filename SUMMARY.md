@@ -57,9 +57,9 @@
 
 ## Resources
 
+* [Release Notes](resources/release-notes.md)
 * [Test credentials](resources/test-credentials.md)
 * [Custom Domain](resources/custom-domain.md)
-* [Release Notes](resources/release-notes.md)
 * [IP Whitelisting](resources/ip-whitelisting.md)
 * [Token Formats](resources/token-formats.md)
 * [Full API Reference](resources/full-api-reference.md)
