@@ -1,42 +1,57 @@
----
-description: Learn how to integrate with PCI Proxy
----
-
 # Overview
 
-## Overview
+Our solution empowers organizations around the globe to build and control their own payment flows while maximizing security, offloading compliance and preventing provider lock-ins. PCI Proxy lets you instantly <mark style="color:blue;">**collect**</mark> and <mark style="color:blue;">**store**</mark> sensitive payment data. Once tokenized, you can simply <mark style="color:blue;">**use**</mark> tokens to process payments across any of your vendors with full flexibility.&#x20;
 
-Before we get started, take a minute and let us introduce you to the magic of [**PCI Proxy**](https://www.pci-proxy.com).
+Read about our integration methods below, then choose the one that best suits your needs.
 
-{% hint style="success" %}
-PCI Proxy is a tokenization service that reduces your PCI scope in a simple and secure way.
-{% endhint %}
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-PCI Proxy let you **instantly **[**collect and store**](collect-and-store-cards/)** credit card data without touching your servers. Once stored and tokenized, you can simply **[**use tokens**](use-stored-cards/)** to check, charge, show, forward or manage** stored card data.
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-Our **customer base** spans across different industries and business types. All of them have specific needs and processes in place. PCI Proxy is build with flexibility in mind to accommodate those needs at best.
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-PCI Proxy supports all major credit card brands:
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
-![Missing a brand? Contact us.](<.gitbook/assets/Card Brands (1).png>)
+## Get Started
 
-## Getting Started
+Follow this step-by-step guide to set up your Sandbox account and get your account production-ready in minutes, everything at your fingertips.&#x20;
 
-PCI Proxy can be integrated by following these steps to achieve PCI compliance:
+#### 1. Create Sandbox Account
 
-{% embed url="https://docs.pci-proxy.com/setup" %}
+Sign up here [https://dashboard.pci-proxy.com/signup](https://dashboard.pci-proxy.com/signup) and complete the form to get a free sandbox account.&#x20;
 
-{% embed url="https://docs.pci-proxy.com/collect-and-store-cards" %}
+#### 2. Configure Sandbox Account
 
-{% embed url="https://docs.pci-proxy.com/use-stored-cards" %}
+* Create additional users and share accounts with your team members as needed.
+* Configure your authentication data. Refer to [Authentication](resources/pci-proxy-dashboard/api-authentication-data.md) for more information.
+* Access your API endpoints. Refer to [API Endpoints](resources/pci-proxy-dashboard/api-endpoints.md)[ ](broken-reference)for more information.
+* Choose a [Collect](broken-reference) method to tokenize payment data and integrate our APIs as documented.
+* Choose a [Use](broken-reference) method to distribute tokens and integrate our APIs as documented.
 
 {% hint style="info" %}
-**Questions?**
-
-Don't hesitate to talk to us via email, phone, or Slack. We love to help you with the integration or other questions around PCI compliance or the PCI Proxy.
-
-Phone: +41 44 256 81 91\
-Email: [support@pci-proxy.com](mailto:%20support@pci-proxy.com)
-
-[**PCI Proxy - powered by Datatrans AG**](https://www.datatrans.com)****
+Learn more about [adding existing or new integrations to your project.](resources/pci-proxy-dashboard/add-integrations.md)
 {% endhint %}
+
+#### 3. Go-Live
+
+Once everything has been tested properly on the sandbox environment, you can activate your account for the production environment by yourself within minutes. Follow the below steps to activate your account for production.
+
+1. Click the Environment switcher in the left-hand side menu
+2. Select your subscription plan, fill in all the required data, and press "Enable production mode".
+3. A confirmation email with the contract overview will be sent to the account admin contact.
+4. Choose your preferred payment method.
+
+![](<.gitbook/assets/goliveppxe (1).gif>)
+
+{% hint style="info" %}
+Please also review our [Get Production Ready](resources/pci-proxy-dashboard/get-production-ready.md) guide.&#x20;
+{% endhint %}
+

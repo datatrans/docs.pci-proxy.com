@@ -4,20 +4,18 @@ To retry identical requests with the same effect without accidentally performing
 
 If your request failed to reach our servers, no idempotent result is saved because no API endpoint processed your request. In such cases, you can simply retry your operation safely. Idempotency keys remain stored for 60 minutes. After 60 minutes have passed, sending the same request together with the previous idempotency key will create a new operation.
 
-Please note that the idempotency key has to be unique for each request and has to be defined by yourself. We recommend assigning a random value as your idempotency key and using UUID v4. Idempotency is only available for `POST` requests.
+Please note that the idempotency key has to be unique for each request and has to be defined by yourself. We recommend assigning a random value as your idempotency key and using UUID v4.&#x20;
 
-Idempotency was implemented according to the ["The Idempotency HTTP Header Field" Internet-Draft](https://tools.ietf.org/id/draft-idempotency-header-01.html)
+Idempotency is only available for `POST` requests.Idempotency was implemented according to the ["The Idempotency HTTP Header Field" Internet-Draft](https://tools.ietf.org/id/draft-idempotency-header-01.html)​​
 
+| Scenario           | Condition                                                                                                                      | Expectation                                                                                             |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- |
+| First time request | Idempotency key has not been seen during the past 60 minutes.Idempotency key has not been seen during the past 60 minutes.     | The request is processed normally.                                                                      |
+| Repeated request   | The request was retried after the first time request completed.The request was retried after the first time request completed. | The response from the first time request will be returned.                                              |
+| Repeated request   | The request was retried before the first time request completed.                                                               | 409 Conflict. It is recommended that clients time their retries using an exponential backoff algorithm. |
+| Repeated request   | The request body is different than the one from the first time request.                                                        | 422 Unprocessable Entity.                                                                               |
 
-
-| Scenario           | Condition                                                               | Expectation                                                                                             |
-| ------------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| First time request | Idempotency key has not been seen during the past 60 minutes.           | The request is processed normally.                                                                      |
-| Repeated request   | The request was retried after the first time request completed.         | The response from the first time request will be returned.                                              |
-| Repeated request   | The request was retried before the first time request completed.        | 409 Conflict. It is recommended that clients time their retries using an exponential backoff algorithm. |
-| Repeated request   | The request body is different than the one from the first time request. | 422 Unprocessable Entity.                                                                               |
-
-### Example
+### Example <a href="#example" id="example"></a>
 
 ```
 curl -L -X POST 'https://api.sandbox.datatrans.com/v1/tokenizations/220112095131012129' \
