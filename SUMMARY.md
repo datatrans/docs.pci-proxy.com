@@ -4,7 +4,7 @@
 
 ## COLLECT
 
-* [Secure fields (JS)](collect/secure-fields-js/README.md)
+* [Secure Fields (JS)](collect/secure-fields-js/README.md)
   * [Initialization and Styling](collect/secure-fields-js/initialization-and-styling.md)
   * [Events](collect/secure-fields-js/events.md)
 * [Mobile SDKs](collect/mobile-sdks.md)
