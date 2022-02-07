@@ -1,6 +1,6 @@
 # Overview
 
-Protect yourself against fraudulent transactions using our unique vendor-independent **3D Secure Authentication-Only** approach. Perform only the 3D Secure authentication with PCI Proxy and share 3DS authentication data with partners and payment gateways for payment authorization at a later stage.
+Protect yourself against fraudulent transactions using our unique vendor-independent <mark style="color:blue;">**3D Secure Authentication-Only**</mark> approach. Perform only the 3D Secure authentication with PCI Proxy and share 3DS authentication data with partners and payment gateways for payment authorization at a later stage.
 
 
 
@@ -33,10 +33,10 @@ Learn about PCI Proxy's integration choices for authenticating transactions:
 
 ## Dynamic 3D Secure
 
-Our product **Dynamic 3D Secure** takes care of applying 3D Secure authentication only if your client's card issuer is from an EEA country. Based on the card number, we are able to identify if this is the case or not. While this product may reduce friction during checkouts, especially for countries where 3D Secure is not as dominant as it is in EEA countries, the liability shift protection will be completely missing for such transactions. We do recommend to enforce 3D Secure whenever possible. To activate Dynamic 3D Secure, please get in touch with your account manager at Datatrans or send us a [message](../help/contact.md).
+Our product <mark style="color:blue;">**Dynamic 3D Secure**</mark> takes care of applying 3D Secure authentication only if your client's card issuer is from an EEA country. Based on the card number, we are able to identify if this is the case or not. While this product may reduce friction during checkouts, especially for countries where 3D Secure is not as dominant as it is in EEA countries, the liability shift protection will be completely missing for such transactions. We do recommend to enforce 3D Secure whenever possible. To activate Dynamic 3D Secure, please get in touch with your account manager at Datatrans or send us a [message](../help/contact.md).
 
 
 
 ## New to 3D Secure?&#x20;
 
-Simply [drop us a message](https://www.pci-proxy.com/pci-proxy/contact/) if you're interested in taking advantage of **Authentication-Only** and our experts will reach out and find the best way how to proceed together with you. Please also check the following terminology page for&#x20;
+Simply [drop us a message](https://www.pci-proxy.com/pci-proxy/contact/) if you're interested in taking advantage of <mark style="color:blue;">**Authentication-Only**</mark> and our experts will reach out and find the best way how to proceed together with you. Please also check the following terminology page for&#x20;
