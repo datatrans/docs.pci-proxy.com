@@ -2,12 +2,12 @@
 description: The only payment form you’ll ever need
 ---
 
-# Secure fields (JS)
+# Secure Fields (JS)
 
 Secure Fields allow you to securely collect credit, debit and virtual cards as well as bank account data by injecting iframes to your DOM. A separate iframe for all sensitive values is used. Thereby, the data never touches your server and allows you to capture all the other related payment data such as cardholder name, expiry date, etc. directly by yourself.
 
 {% hint style="success" %}
-**Using Secure Fields qualifies you for SAQ A.**
+**Using Secure Fields qualifies you for **<mark style="color:blue;">**SAQ A.**</mark>
 {% endhint %}
 
 | Browser                                       | Version      |
