@@ -194,8 +194,8 @@ curl -X POST \
     "paymentMethods": ["ECA"],
     "card": {
         "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40", 
-        "expiryMonth": "12",
-        "expiryYear": "21",
+        "expiryMonth": "06",
+        "expiryYear": "25",
          "3D": {
             "acquirer": {
                 "acquirerMerchantId": "1354656",
