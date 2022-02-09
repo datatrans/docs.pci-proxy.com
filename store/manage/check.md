@@ -6,8 +6,6 @@ description: >-
 
 # Check
 
-
-
 We run a zero amount authorization request against the Visa, Mastercard, and American Express network to check if the card is still valid, not stolen, or expired. The authorization request does not appear on the customer statement but still gives you the ability to test the validity of a stored credit card.
 
 {% hint style="warning" %}
@@ -124,8 +122,8 @@ curl -X POST \
     "refno": "vptJ07xyr",
     "card": {
         "alias": "AAABcHxr-sDssdexyrAAAfyXWIgaAF40",
-        "expiryMonth": "12",
-        "expiryYear": "21"
+        "expiryMonth": "06",
+        "expiryYear": "25"
     }
 }'
 ```
