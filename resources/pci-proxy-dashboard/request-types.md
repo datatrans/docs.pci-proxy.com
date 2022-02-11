@@ -4,7 +4,7 @@ In general, either **you start a request** (`PULL`) or a **remote server starts 
 
 ## Receive from Channel
 
-Receiving card data from a remote server (Channel) can work in two ways. In general, either you perform a [**`/v1/pull/`**](broken-reference) request to receive card data from the Channel or the Channel starts a [**`/v1/push/`**](broken-reference) request with card data. PCI Proxy can tokenize and store sensitive data on both operations.
+Receiving card data from a remote server (Channel) can work in two ways. In general, either you perform a **`/v1/pull/`** request to receive card data from the Channel or the Channel starts a **`/v1/push/`** request with card data. PCI Proxy can tokenize and store sensitive data on both operations.
 
 {% tabs %}
 {% tab title="PULL without PCI Proxy" %}
@@ -47,7 +47,7 @@ Receiving card data from a remote server (Channel) can work in two ways. In gene
 
 ## Forward to Receiver
 
-Forwarding card data to a remote server (Receiver) can work in two ways. In general, either you perform a [**`/v1/pull/`**](broken-reference) request to forward card data to a Receiver or the Receiver starts a [**`/v1/push/`**](broken-reference) request to ask for card data. PCI Proxy can populate sensitive data on both operations.
+Forwarding card data to a remote server (Receiver) can work in two ways. In general, either you perform a **`/v1/pull/`** request to forward card data to a Receiver or the Receiver starts a **`/v1/push/`** request to ask for card data. PCI Proxy can populate sensitive data on both operations.
 
 {% tabs %}
 {% tab title="PULL without PCI Proxy" %}
