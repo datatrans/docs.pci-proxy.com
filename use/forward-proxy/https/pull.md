@@ -43,7 +43,7 @@ API endpoint (https://api.receiver.com/)
 {% endswagger %}
 
 {% hint style="warning" %}
-In test mode, only [test credit cards](broken-reference) are allowed.
+In test mode, only [test credit cards](../../../resources/test-credentials.md) are allowed.
 {% endhint %}
 
 ### Example
