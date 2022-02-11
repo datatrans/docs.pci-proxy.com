@@ -5,7 +5,7 @@ The PCI Proxy APIs require different authentication methods depending on the cal
 * The **​**[**API Key**](api-authentication-data.md#api-key) - is used **only** for the following endpoints:
   * https://sandbox.pci-proxy.com/v1/pull
   * https://sandbox.pci-proxy.com/v1/push/uniquePushKey
-* **​**[**Basic Authentication**](https://docs.pci-proxy.com/guides/pci-proxy-dashboard/api-authentication-data#basic-authentication) - is used for **all the other** endpoints.
+* **​**[**Basic Authentication**](api-authentication-data.md#basic-authentication) - is used for **all the other** endpoints.
 
 See an overview below about which authentication method should be applied to protect your requests.
 
