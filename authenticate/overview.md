@@ -39,4 +39,4 @@ Our product <mark style="color:blue;">**Dynamic 3D Secure**</mark> takes care of
 
 ## New to 3D Secure?&#x20;
 
-Simply [drop us a message](https://www.pci-proxy.com/pci-proxy/contact/) if you're interested in taking advantage of <mark style="color:blue;">**Authentication-Only**</mark> and our experts will reach out and find the best way how to proceed together with you. Please also check the following terminology page for&#x20;
+Simply [drop us a message](../help/contact.md) if you're interested in taking advantage of <mark style="color:blue;">**Authentication-Only**</mark> and our experts will reach out and find the best way how to proceed together with you. Please also check the following terminology page for&#x20;
