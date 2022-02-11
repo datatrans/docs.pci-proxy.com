@@ -19,12 +19,12 @@
 ## AUTHENTICATE
 
 * [Overview](authenticate/overview.md)
+* [3D Secure API](authenticate/3d-secure-api.md)
 * [3D Secure Fields (JS)](authenticate/3d-secure-fields-js/README.md)
   * [Update (Amount, Currency)](authenticate/3d-secure-fields-js/update-amount-currency.md)
   * [Initialization and styling](authenticate/3d-secure-fields-js/initialization-and-styling.md)
   * [Events](authenticate/3d-secure-fields-js/events.md)
 * [3D Secure Mobile SDKs](authenticate/3d-secure-mobile-sdks.md)
-* [3D Secure API](authenticate/3d-secure-api.md)
 * [3D Secure Terminology](authenticate/3d-secure-terminology.md)
 
 ## STORE
