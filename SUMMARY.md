@@ -53,7 +53,7 @@
   * [Supported Acquirers](advanced-features/payment-hub/supported-acquirers.md)
   * [Authorize / Settle](advanced-features/payment-hub/authorize-settle.md)
   * [Deferred Settlement](advanced-features/payment-hub/deferred-settlement.md)
-* [Network Tokenization](advanced-features/network-tokenization.md)
+* [Network Tokenization (beta)](advanced-features/network-tokenization-beta.md)
 
 ## Resources
 
