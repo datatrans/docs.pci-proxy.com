@@ -54,12 +54,12 @@
   * [Authorize / Settle](advanced-features/payment-hub/authorize-settle.md)
   * [Deferred Settlement](advanced-features/payment-hub/deferred-settlement.md)
 * [Network Tokenization (beta)](advanced-features/network-tokenization-beta.md)
+* [Custom Domain](advanced-features/custom-domain.md)
 
 ## Resources
 
 * [Release Notes](resources/release-notes.md)
 * [Test credentials](resources/test-credentials.md)
-* [Custom Domain](resources/custom-domain.md)
 * [IP Whitelisting](resources/ip-whitelisting.md)
 * [Token Formats](resources/token-formats.md)
 * [Full API Reference](resources/full-api-reference.md)
