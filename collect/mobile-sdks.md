@@ -19,20 +19,32 @@ Access the latest version of our SDKs by following the links below and link the 
 
 | OS      | Link                                                                                                                                                                                                                                                                  | Supported version |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/TokenizationRequest.html">Link</a></p>                                                                               | 11 +              |
+| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/PCIPTokenizationRequest.html">Link</a></p>                                                                           | 11 +              |
 | Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html">Link</a></p> | 5.0 +             |
 
 ## 2. Integration
 
 As a next step, continue with the initialization of our iOS or Android SDK.
 
-For iOS, you can add the SDK to your project by adding a new package dependency in Xcode.&#x20;
+For iOS, you can add the SDK to your project by adding a new package dependency in Xcode or via Cocoapods with `pod 'Datatrans'`&#x20;
 
-For Android, you can link the dependency with `implementation 'ch.datatrans:android-sdk:x.x.x'`&#x20;
+For Android projects, you can link the repo and dependencies as demonstrated here:
 
-and the repository with `maven { url "repositoryUrl" }`.
+{% code title="Android implementation" %}
+```java
+repositories {
+	...
+	maven { url 'https://datatrans.jfrog.io/artifactory/mobile-sdk/' }
+}
 
-Create a tokenization object with your `merchantId` and `paymentMethodTypes` to start a tokenisation. Below is an example of the suggested minimum options to start a tokenisation with iOS (Swift) and Android (Kotlin, Java). Please read our detailed classes description for [iOS](https://datatrans.github.io/ios-sdk/Classes/TokenizationRequest.html) and [Android](https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html) to discover more initialization options.
+dependencies {
+	...
+	implementation 'ch.datatrans:android-sdk:1.4.2'
+}
+```
+{% endcode %}
+
+Create a tokenization object with your `merchantId` and `paymentMethodTypes` to start a tokenisation. Below is an example of the suggested minimum options to start a tokenisation with iOS (Swift) and Android (Kotlin, Java). Please read our detailed classes description for [iOS](https://datatrans.github.io/ios-sdk/Classes/PCIPTokenizationRequest.html) and [Android](https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html) to discover more initialization options.
 
 {% tabs %}
 {% tab title="Swift" %}
@@ -119,7 +131,7 @@ Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
 {% tabs %}
 {% tab title="Request" %}
 ```
-curl -L -X GET 'https://api.sandbox.datatrans.com/v1/tokenizations/210329160815401747' \
+curl -L -X POST 'https://api.sandbox.datatrans.com/v1/tokenizations/210329160815401747' \
 -H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr' \
 -H 'Content-Type: application/json'
 ```
