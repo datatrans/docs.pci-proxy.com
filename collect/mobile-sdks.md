@@ -160,7 +160,19 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/tokenizations/210329160815
 
 ## Styling the Theme
 
-You can style various options in our Mobile SDKs. Refer to the class `ThemeConfiguration` to adapt various colours to your corporate identity.
+You can style various colors in our Mobile SDKs to match your corporate identity. Check the graphic below to see what color properties can be defined. \
+On iOS, you can define your preferred colors within the class `ThemeConfiguration`. On Android you can set theming options in your project’s color XML resource file, typically colors.xml. Use the color key names as defined in the table below.
+
+![](../.gitbook/assets/colorslib.jpeg)
+
+| Property               | Description                                                                                                                                                                  | Android              | iOS                         |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | --------------------------- |
+| **Background Color**¹  | Background color of the navigation bars. If this is not specified, the navigation bars will be transparent.                                                                  | `barBackgroundColor` | `dtpl_bar_background_color` |
+| **Bar Link Color**²    | Color of the buttons in the navigation bars. If this is not specified, the color will be the color set in Link Color.                                                        | `barLinkColor`       | `dtpl_bar_link_color`       |
+| **Bar Title Color**³   | Color of the title within the navigation bars. If this is not specified, the color will be the text color. The text color is either white or black and cannot be customized. | `barTitleColor`      | `dtpl_bar_title_color`      |
+| **Button Color**⁴      | Background color of large buttons, such as the Pay button. If this is not specified, the color will be the color set in Link Color.                                          | `buttonColor`        | `dtpl_button_color`         |
+| **Button Text Color**⁵ | Text color of large buttons, such as the Pay button. If this is not specified, the color will be set to white.                                                               | `buttonTextColor`    | `dtpl_button_text_color`    |
+| **Link Color**⁶        | Color of text-only buttons or links and the text cursor. If this is not specified, the link color will be in a blue tone.                                                    | `linkColor`          | `dtpl_link_color`           |
 
 ## Language Support
 
