@@ -127,15 +127,19 @@ Callback object:
 Sample code
 
 ```javascript
-secureFields.on("change", function(event) {
+var expiryMonth, expiryYear;
+
+secureFields.on("change", function(data) {
+  var event = data.event;
+  
   if (event.type === "autocomplete") {
     if (event.field === "expiryMonth") {
-      console.log(event.value) // "12"
+      expiryMonth = event.value; // "12"
       return;
     }
     
     if (event.field === "expiryYear") {
-      console.log(event.value) // "2021"
+      expiryYear = event.value.slice(-2); // "2021" (note: take the last two digits for MM/YY)
       return;
     }
   }
