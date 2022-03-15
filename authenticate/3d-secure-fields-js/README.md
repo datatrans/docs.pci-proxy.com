@@ -183,7 +183,7 @@ To get started include the following script on your page.
 {% endtabs %}
 
 {% hint style="warning" %}
-Please make sure to always load it directly from [https://pay.sandbox.datatrans.com](https://pay.sandbox.datatrans.com)
+Please make sure to always load it directly from [https://pay.sandbox.datatrans.com](https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.js)
 {% endhint %}
 
 ## Step 3: Create the payment form&#x20;
