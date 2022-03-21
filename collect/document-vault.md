@@ -1,16 +1,16 @@
 # Document Vault
 
-The <mark style="color:blue;">**Document Vault**</mark> allows your customers to upload sensitive images and documents in a PCI DSS and data security compliant environment. Therefore, you generate a unique upload link that can be presented to the user in your application. It redirects the user to an upload page which is hosted on our servers. Subsequently, the uploaded files can be reviewed in our Dashboard without the need to take care of PCI DSS compliance.
+The <mark style="color:blue;">**Document Vault**</mark> allows your customers to upload sensitive images and documents in a PCI DSS and data security compliant environment. Therefore, you generate a unique upload link that can be presented to the user in your application. It redirects the user to an upload page which is hosted on our servers. Subsequently, the uploaded files can be reviewed in the Dashboard by applying our approval logic without the need to take care of PCI DSS compliance.
 
 To get started, please follow the step-by-step guide below.
 
 ## 1. Request upload link
 
-Call our Init API from your server to request a unique upload link.
+To start, call our Request API from your server to create an upload link.
 
 {% swagger baseUrl="https://dashboard.pci-proxy.com" path="/api/v1/vault/request" method="post" summary="Request call" %}
 {% swagger-description %}
-Call our Init API from **your server** to request a unique upload link.
+Call our Request API from **your server** to create an upload link.
 
 The parameters marked with \* are mandatory.&#x20;
 {% endswagger-description %}
@@ -108,7 +108,7 @@ curl --location --request POST 'https://dev-dashboard-pciproxy.datatrans.biz/api
 
 ## 2. Redirect the cardholder&#x20;
 
-Embed the upload link received from the response into your application and redirect the cardholder to it. In case of a successful, cancelled, or failed upload the cardholder will be redirected automatically to the URLs specified in the API request above.&#x20;
+Embed the upload link received from the response into your application and redirect the cardholder to it. In case of a successful, cancelled, or failed upload the cardholder will be redirected automatically to the redirect URLs specified in the API request above.&#x20;
 
 {% hint style="info" %}
 Supported file-types: `image/png`, `image/jpeg`, `image/heic`, `application/pdf`
@@ -129,7 +129,7 @@ An overlay with the uploaded document and the data sent in the [API request](doc
 
 ![Document Vault detail view](<../.gitbook/assets/Detail view.png>)
 
-#### Request status
+#### Request status <a href="#request-status" id="request-status"></a>
 
 A Document Vault request can have the following status:
 
@@ -142,5 +142,5 @@ A Document Vault request can have the following status:
 | Rejected           | The document has been rejected.                                   |
 
 {% hint style="info" %}
-To keep your sensitive data secure and to be compliant with PCI DSS we have a retention policy in place. Contact us to learn more about these rules.&#x20;
+To keep your sensitive data secure and to be compliant with PCI DSS we have a retention policy for viewed documents in place. Contact us to learn more about these rules.&#x20;
 {% endhint %}
