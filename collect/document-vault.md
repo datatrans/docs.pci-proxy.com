@@ -8,7 +8,7 @@ To get started, please follow the step-by-step guide below.
 
 Call our Init API from your server to request a unique upload link.
 
-{% swagger baseUrl="https://dashboard.pci-proxy.com" path="/api/vault/request" method="post" summary="Init call" %}
+{% swagger baseUrl="https://dashboard.pci-proxy.com" path="/api/v1/vault/request" method="post" summary="Request call" %}
 {% swagger-description %}
 Call our Init API from **your server** to request a unique upload link.
 
@@ -16,7 +16,11 @@ The parameters marked with \* are mandatory.&#x20;
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="pci-proxy-api-key" type="string" required="true" %}
-Your PCI Proxy API Key
+Your PCI Proxy 
+
+[API Key](../resources/pci-proxy-dashboard/api-authentication-data.md)
+
+
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="content-type" type="string" required="false" %}
@@ -24,7 +28,7 @@ application/json; charset=UTF-8
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="reference" type="string" required="true" %}
-Unique reference number for each request
+Unique reference number to identify your request
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="successUrl" type="string" required="true" %}
@@ -36,11 +40,36 @@ The URL where the cardholder will be redirected to if the upload process got can
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="errorUrl" type="string" required="true" %}
-There URL where the cardholder will be redirected to if the upload process failed
+The URL where the cardholder will be redirected to if the upload process failed
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="" %}
+{% swagger-parameter in="body" name="webhookEndpoint" type="string" %}
+POST URL which will be called after the following actions: 
+
+`Uploaded`
+
+, 
+
+`Viewed`
+
+, 
+
+`Approved`
+
+, 
+
+`Rejected`
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="context" type="object" %}
+Use this object to submit up to 6 additional parameters. They will be displayed in the Dashboard together with the uploaded document. 
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Upload link created" %}
 ```
+{
+    "link": "https://dev-dashboard-pciproxy.datatrans.biz/public/vault/873CD451-8073-487B-8037-02D850D7603D"
+}
 ```
 {% endswagger-response %}
 {% endswagger %}
@@ -50,14 +79,20 @@ There URL where the cardholder will be redirected to if the upload process faile
 {% tabs %}
 {% tab title="Request" %}
 ```javascript
-curl -L -X POST 'https://dashboard.pci-proxy.com/api/vault/request' \
--H 'pci-proxy-api-key: {{API Key}}' \
--H 'content-type: application/json' \
+curl --location --request POST 'https://dev-dashboard-pciproxy.datatrans.biz/api/v1/vault/request' \
+--header 'pci-proxy-api-key: {{API Key}}' \
+--header 'content-type: application/json' \
 --data-raw '{
-    "reference":"tst-210812",
+    "reference":"1337",
     "successUrl":"https://example.org/success",
     "cancelUrl":"https://example.org/cancel",
-    "errorUrl":"https://example.org/error"
+    "errorUrl":"https://example.org/error",
+    "webhookEndpoint":"https://example.org/webhook",
+    "context": {
+        "Test Card":"true", 
+        "FirstName": "Jon",
+        "LastName": "Doe"
+    }
 }'
 ```
 {% endtab %}
@@ -65,7 +100,7 @@ curl -L -X POST 'https://dashboard.pci-proxy.com/api/vault/request' \
 {% tab title="Response" %}
 ```
 {
-    "link": "https://dev-dashboard-pciproxy.datatrans.biz/public/vault/BF33A0C8-F9ED-44AD-B818-015C08D76A44"
+    "link": "https://dev-dashboard-pciproxy.datatrans.biz/public/vault/873CD451-8073-487B-8037-02D850D7603D"
 }
 ```
 {% endtab %}
@@ -79,12 +114,30 @@ Embed the upload link received from the response into your application and redir
 Supported file-types: `image/png`, `image/jpeg`, `image/heic`, `application/pdf`
 {% endhint %}
 
-## 3. Review uploaded documents
+## 3. Access and review requests
 
-Login to our [dashboard](https://dashboard.pci-proxy.com/login) and navigate to the "Document Vault" menu within the Project section on the left-hand side menu bar. Press the View button to reveal an uploaded document.&#x20;
+Login to our [Dashboard](https://dashboard.pci-proxy.com/login) and navigate to the "Document Vault" menu within the Project section on the left-hand side menu bar. You can see all the requested links and the current [status](document-vault.md#undefined) of the request. To reveal an uploaded document please press the View button on the right side.&#x20;
 
 {% hint style="info" %}
-The "Document Vault" menu requires special user rights with mandatory 2FA enabled. Please contact us to assign such a user role.&#x20;
+The Document Vault needs to be activated for you and requires special user rights with mandatory 2FA enabled. Please contact us to assign such a user role.&#x20;
 {% endhint %}
 
-![](<../.gitbook/assets/Document Vault view.png>)
+![Document Vault overview menu](<../.gitbook/assets/Vault overview.png>)
+
+![Document Vault detail view](<../.gitbook/assets/Detail view.png>)
+
+#### Request status
+
+A Document Vault request can have the following status:
+
+| Status             | Describtion                                                       |
+| ------------------ | ----------------------------------------------------------------- |
+| Pending            | A new Upload link has been requested. No further action happened. |
+| Documents provided | A new document has been uploaded.                                 |
+| Viewed             | The document has been viewed. The expiration counter started.     |
+| Approved           | The document has been approved.                                   |
+| Rejected           | The document has been rejected.                                   |
+
+{% hint style="info" %}
+To keep your sensitive data secure and to be compliant with PCI DSS we have a retention policy in place. Contact us to learn more about these rules.&#x20;
+{% endhint %}
