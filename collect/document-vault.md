@@ -116,13 +116,16 @@ Supported file-types: `image/png`, `image/jpeg`, `image/heic`, `application/pdf`
 
 ## 3. Access and review requests
 
-Login to our [Dashboard](https://dashboard.pci-proxy.com/login) and navigate to the "Document Vault" menu within the Project section on the left-hand side menu bar. You can see all the requested links and the current [status](document-vault.md#undefined) of the request. To reveal an uploaded document please press the View button on the right side.&#x20;
+Login to our [Dashboard](https://dashboard.pci-proxy.com/login) and navigate to the "Document Vault" menu within the Project section on the left-hand side menu bar. You can see all the requested links and the current [status](document-vault.md#undefined) of the request.&#x20;
 
 {% hint style="info" %}
 The Document Vault needs to be activated for you and requires special user rights with mandatory 2FA enabled. Please contact us to assign such a user role.&#x20;
 {% endhint %}
 
 ![Document Vault overview menu](<../.gitbook/assets/Vault overview.png>)
+
+To review an uploaded document please press the View button on the right side.\
+An overlay with the uploaded document and the data sent in the [API request](document-vault.md#1.-request-upload-link) will be opened. To approve or reject a document use the buttons on the bottom. Each action will trigger a call to the webhook.&#x20;
 
 ![Document Vault detail view](<../.gitbook/assets/Detail view.png>)
 
