@@ -108,7 +108,8 @@ curl --location --request POST 'https://dev-dashboard-pciproxy.datatrans.biz/api
 
 ## 2. Redirect the cardholder&#x20;
 
-Embed the upload link received from the response into your application and redirect the cardholder to it. In case of a successful, cancelled, or failed upload the cardholder will be redirected automatically to the redirect URLs specified in the API request above.&#x20;
+As a next step, embed the upload link received from the response into your application and redirect the user to it. The link will open an upload page hosted by us. \
+In case of a successful, cancelled, or failed upload the user will be redirected automatically to the URLs specified in the API request above.&#x20;
 
 {% hint style="info" %}
 Supported file-types: `image/png`, `image/jpeg`, `image/heic`, `application/pdf`
