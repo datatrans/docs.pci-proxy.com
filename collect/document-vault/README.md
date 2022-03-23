@@ -44,7 +44,11 @@ The URL where the cardholder will be redirected to if the upload process failed
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="webhookEndpoint" type="string" %}
-POST URL which will be called after the following actions: 
+
+
+[Webhook URL](request-status-and-webhooks.md#2.-webhooks)
+
+ which will be called after the following actions: 
 
 `Uploaded`
 

@@ -8,9 +8,9 @@ In addition, please make sure to meet the following requirements to use the Docu
 * **Access**\
   Please restrict the users who have access to sensitive data to an absolute minimum.&#x20;
 * **Business reason**\
-  To use the Document Vault a clear and transparent document business process is needed and need to be reviewed by the PCI Proxy team.&#x20;
+  To use the Document Vault a clear and transparent documented business process is required, needs to be reviewed and approved by the PCI Proxy team.&#x20;
 * **Unique User Account**\
-  Every users needs its own, dedicated user account. Shared logins are not allowed.&#x20;
+  Every users needs their own, dedicated user account. Shared logins are not allowed.&#x20;
 * **Multifactor authentication** \
   Securing the user account with 2FA is mandatory.&#x20;
 
