@@ -14,7 +14,9 @@
     * [PUSH](collect/filter-proxy/https/push.md)
   * [SFTP](collect/filter-proxy/sftp.md)
 * [Alias Gateway](collect/alias-gateway.md)
-* [Document Vault](collect/document-vault.md)
+* [Document Vault](collect/document-vault/README.md)
+  * [Request Status & Webhooks](collect/document-vault/request-status-and-webhooks.md)
+  * [Security & Retention Policy](collect/document-vault/security-and-retention-policy.md)
 
 ## AUTHENTICATE
 

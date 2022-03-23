@@ -18,7 +18,7 @@ The parameters marked with \* are mandatory.&#x20;
 {% swagger-parameter in="header" name="pci-proxy-api-key" type="string" required="true" %}
 Your PCI Proxy 
 
-[API Key](../resources/pci-proxy-dashboard/api-authentication-data.md)
+[API Key](../../resources/pci-proxy-dashboard/api-authentication-data.md)
 
 
 {% endswagger-parameter %}
@@ -117,31 +117,19 @@ Supported file-types: `image/png`, `image/jpeg`, `image/heic`, `application/pdf`
 
 ## 3. Access and review requests
 
-Login to our [Dashboard](https://dashboard.pci-proxy.com/login) and navigate to the "Document Vault" menu within the Project section on the left-hand side menu bar. You can see all the requested links and the current [status](document-vault.md#undefined) of the request.&#x20;
+Login to our [Dashboard](https://dashboard.pci-proxy.com/login) and navigate to the "Document Vault" menu within the Project section on the left-hand side menu bar. You can see all the requested links and the current [status](request-status-and-webhooks.md#1.-request-status) of the request.&#x20;
 
 {% hint style="info" %}
 The Document Vault needs to be activated for you and requires special user rights with mandatory 2FA enabled. Please contact us to assign such a user role.&#x20;
 {% endhint %}
 
-![Document Vault overview menu](<../.gitbook/assets/Vault overview.png>)
+![Document Vault overview menu](<../../.gitbook/assets/Vault overview.png>)
 
 To review an uploaded document please press the View button on the right side.\
-An overlay with the uploaded document and the data sent in the [API request](document-vault.md#1.-request-upload-link) will be opened. To approve or reject a document use the buttons on the bottom. Each action will trigger a call to the webhook.&#x20;
+An overlay with the uploaded document and the optional data sent in the [API request](./#1.-request-upload-link) will be opened. To approve or reject a document use the buttons on the bottom. Each action will trigger a call to the [webhook](request-status-and-webhooks.md#2.-webhooks).&#x20;
 
-![Document Vault detail view](<../.gitbook/assets/Detail view.png>)
+![Document Vault detail view](<../../.gitbook/assets/Detail view.png>)
 
-#### Request status <a href="#request-status" id="request-status"></a>
-
-A Document Vault request can have the following status:
-
-| Status             | Describtion                                                       |
-| ------------------ | ----------------------------------------------------------------- |
-| Pending            | A new Upload link has been requested. No further action happened. |
-| Documents provided | A new document has been uploaded.                                 |
-| Viewed             | The document has been viewed. The expiration counter started.     |
-| Approved           | The document has been approved.                                   |
-| Rejected           | The document has been rejected.                                   |
-
-{% hint style="info" %}
-To keep your sensitive data secure and to be compliant with PCI DSS we have a retention policy for viewed documents in place. Contact us to learn more about these rules.&#x20;
+{% hint style="danger" %}
+To keep your sensitive data secure and to be compliant with PCI DSS we have a retention policy for viewed documents in place. Learn more about the retention policy [here](security-and-retention-policy.md).&#x20;
 {% endhint %}
