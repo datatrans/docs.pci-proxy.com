@@ -39,7 +39,7 @@ repositories {
 
 dependencies {
 	...
-	implementation 'ch.datatrans:android-sdk:1.4.2'
+	implementation 'ch.datatrans:android-sdk:1.5.1'
 }
 ```
 {% endcode %}
