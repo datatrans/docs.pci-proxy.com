@@ -1,5 +1,11 @@
 # Release Notes
 
+## April 2022
+
+**New product - Document Vault**
+
+We have released the [Document Vault](../collect/document-vault/) - a new tool to collect and review sensitive documents.&#x20;
+
 ## January 2022
 
 **New TOKEN endpoint**
