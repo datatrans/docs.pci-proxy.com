@@ -8,13 +8,13 @@ description: Additional information around the Request Status and the Webhooks
 
 A Document Vault request can have the following status:
 
-| Status             | Describtion                                                       |
-| ------------------ | ----------------------------------------------------------------- |
-| Pending            | A new Upload link has been requested. No further action happened. |
-| Documents provided | A new document has been uploaded.                                 |
-| Viewed             | The document has been viewed. The expiration counter started.     |
-| Approved           | The document has been approved.                                   |
-| Rejected           | The document has been rejected.                                   |
+| Status               | Describtion                                                       |
+| -------------------- | ----------------------------------------------------------------- |
+| `Pending`            | A new Upload link has been requested. No further action happened. |
+| `Documents provided` | A new document has been uploaded.                                 |
+| `Viewed`             | The document has been viewed. The expiration counter started.     |
+| `Approved`           | The document has been approved.                                   |
+| `Rejected`           | The document has been rejected.                                   |
 
 ### 2. Webhooks
 
