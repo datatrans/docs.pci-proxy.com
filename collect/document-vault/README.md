@@ -8,7 +8,7 @@ To get started, please follow the step-by-step guide below.
 
 To start, call our Request API from your server to create an upload link.
 
-{% swagger baseUrl="https://dashboard.pci-proxy.com" path="/api/v1/vault/request" method="post" summary="Request call" %}
+{% swagger baseUrl="https://vault.pci-proxy.com" path="/v1/request" method="post" summary="Request call" %}
 {% swagger-description %}
 Call our Request API from **your server** to create an upload link.
 
@@ -83,7 +83,7 @@ Use this object to submit up to 6 additional parameters. They will be displayed 
 {% tabs %}
 {% tab title="Request" %}
 ```javascript
-curl --location --request POST 'https://dev-dashboard-pciproxy.datatrans.biz/api/v1/vault/request' \
+curl --location --request POST 'https://vault.pci-proxy.com/v1/request' \
 --header 'pci-proxy-api-key: {{API Key}}' \
 --header 'content-type: application/json' \
 --data-raw '{
