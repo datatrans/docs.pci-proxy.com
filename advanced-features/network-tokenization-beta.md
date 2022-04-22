@@ -1,4 +1,4 @@
-# Network Tokenization
+# Network Tokenization (beta)
 
 PCI Proxy Network Tokenisation service is a beta feature that enables merchants to increase their payment success rate and improve their security. As of today, PCI Proxy is a certified Token Requestor Provider for Visa (VTS) and MasterCard (MDES) Network Tokenisation. Support for American Express (AETS) will be added later this year.&#x20;
 
@@ -6,7 +6,7 @@ PCI Proxy Network Tokenisation service is a beta feature that enables merchants 
 
 Network Tokenisation is a concept introduced by the card schemes such as Visa, Mastercard, and AMEX, based on the technical framework provided by [EMVCo](https://www.emvco.com/emv-technologies/payment-tokenisation/).Thereby, a Network Token (also called DPAN) is a 16 digit Primary Account Number (PAN) alternative that is unique per each cardholder as well as per merchant. Like a regular PAN, Network Tokens can be used for completing e-commerce transactions or sharing them with other partners in the payment eco-system.&#x20;
 
-By using PCI Proxy a Network Token will be automatically generated once a card number is collected through one of our [Collect ](broken-reference)interfaces - without any further implementation effort on your side.&#x20;
+By using PCI Proxy a Network Token will be automatically generated once a card number is collected through one of our [Collect](broken-reference) interfaces - without any further implementation effort on your side.&#x20;
 
 ## How can my business benefit from Network Tokens?&#x20;
 
