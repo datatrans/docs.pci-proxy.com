@@ -20,7 +20,7 @@ Basic MTAwMDAxMTAxMTpYMWVXNmkjJA==
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="string" required="true" %}
-application/json; charset=UTF-8==
+application/json; charset=UTF-8
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Status successfully returned" %}
