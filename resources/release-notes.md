@@ -4,7 +4,7 @@
 
 **New feature - Receiver AOC overview**
 
-A new menu has been added to see an overview of your Receiver AOC's.&#x20;
+A new menu menu has been added to the Dashboard to see an overview of your Receiver AOC's.&#x20;
 
 ## April 2022
 
