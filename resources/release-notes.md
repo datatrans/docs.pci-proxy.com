@@ -1,10 +1,10 @@
 # Release Notes
 
-## Mai 2022
+## May 2022
 
 **New feature - Receiver AOC overview**
 
-A new menu menu has been added to the Dashboard to see an overview of your Receiver AOC's.&#x20;
+A new menu has been added to the Dashboard to see an overview of your Receiver AOC's.&#x20;
 
 ## April 2022
 
@@ -44,7 +44,7 @@ A new, automated process for the compliance renewal of the Receivers has been in
 
 Use our mobile libraries for native Android & iOS apps to [tokenize cardholder data](../collect/mobile-sdks.md) and to [process 3D Secure](../authenticate/3d-secure-mobile-sdks.md). &#x20;
 
-## Mai 2021
+## May 2021
 
 #### New Value Returned - Status API
 
