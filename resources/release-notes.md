@@ -1,5 +1,11 @@
 # Release Notes
 
+## Mai 2022
+
+**New feature - Receiver AOC overview**
+
+A new menu has been added to see an overview of your Receiver AOC's.&#x20;
+
 ## April 2022
 
 **New product - Document Vault**
@@ -82,7 +88,7 @@ It's now possible to update the `currency` with the [PATCH API](../authenticate/
 
 #### Dashboard - Security Improvement
 
-We take security seriously and will check your login password against previously exposed data breaches by using [https://haveibeenpwned.com/](https://haveibeenpwned.com)&#x20;
+We take security seriously and will check your login password against previously exposed data breaches by using [https://haveibeenpwned.com/](https://haveibeenpwned.com/)&#x20;
 
 **New API Paramater - Status API**
 
