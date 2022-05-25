@@ -292,8 +292,8 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/tokenizations/220112095131
 Please visit our GitHub [repository](https://github.com/datatrans/secure-fields-sample) for additional examples of integration versions: \
 \
 Demo Basic: [https://datatrans.github.io/secure-fields-sample/](https://datatrans.github.io/secure-fields-sample/index.html)\
-Demo with horizontal fields: [https://datatrans.github.io/secure-fields-sample/inline-example.html](https://github.com/datatrans/secure-fields-sample/blob/master/inline-example.html)\
-Demo with floating labels: [https://github.com/datatrans/secure-fields-sample/blob/master/floating-label.html](https://github.com/datatrans/secure-fields-sample/blob/master/floating-label.html)
+Demo with horizontal fields: [https://datatrans.github.io/secure-fields-sample/pciproxy-examples/inline-example.html](https://datatrans.github.io/secure-fields-sample/pciproxy-examples/inline-example.html)\
+Demo with floating labels: [https://datatrans.github.io/secure-fields-sample/pciproxy-examples/floating-label.html](https://datatrans.github.io/secure-fields-sample/pciproxy-examples/floating-label.html)
 
 An example of how to implement this behaviour in modern web applications can be found [here](https://github.com/datatrans/secure-fields-sample/tree/master/react-example)
 
