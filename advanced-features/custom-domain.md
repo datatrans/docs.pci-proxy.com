@@ -10,7 +10,7 @@ To provide you with the CNAME value, please send an email to [support@pci-proxy.
 * the PCI Proxy URL – which is available after the integration was installed
 * the target URL - where will be your HTTP request forwarded.
 
-Once we will have all the above information, we will order the SSL certificate for you from our partner [Digicert](https://www.digicert.com) and you will have to demonstrate ownership over the domain. You will be assisted by one of our system engineers to validate the domain name by email or by a DNS TXT record and for the whole remaining process.
+Once we will have all the above information, we will order the SSL certificate for you from our partner [Digicert](https://www.digicert.com/) and you will have to demonstrate ownership over the domain. You will be assisted by one of our system engineers to validate the domain name by email or by a DNS TXT record and for the whole remaining process.
 
 After the certificate is issued, we will provide you with the CNAME value, we will activate our server configuration, and then we will verify together that everything works as expected.
 
