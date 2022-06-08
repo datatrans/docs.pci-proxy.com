@@ -102,7 +102,11 @@ card object must contain following parameters below
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="number" type="string" %}
-Plain text card number or PCI Proxy token
+Plain text card number or
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="alias" type="string" %}
+PCI Proxy token
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="expiryMonth" type="string" %}
