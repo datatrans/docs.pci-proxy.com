@@ -19,7 +19,7 @@ Please note that requesting a new TRID might need some time. We currently expect
 
 Token provisioning is the process of requesting that the affected Network issues a token for a specific PAN and for a specific purpose, domain, or device.&#x20;
 
-When the Scheme Token service is activated on your your account - we automatically create a new Scheme Token each time a credit card gets tokenised. As of today the following integration methods support Scheme Tokens provisioning:&#x20;
+When the Scheme Token service is activated on your account - we automatically create a new Scheme Token each time a credit card gets tokenised. As of today the following integration methods support Scheme Tokens provisioning:&#x20;
 
 * [SecureFields](../../collect/secure-fields-js/)
 * [Mobile SDKs](../../collect/mobile-sdks.md)
