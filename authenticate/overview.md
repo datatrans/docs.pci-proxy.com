@@ -6,14 +6,15 @@ Protect yourself against fraudulent transactions using our unique vendor-indepen
 
 PCI Proxy complies with the latest 3D Secure 2 standard from [EMVCo](https://www.linkedin.com/company/emvco/):
 
-| Brand                                                                                     | Code  | Version         |
-| ----------------------------------------------------------------------------------------- | ----- | --------------- |
-| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard           | `ECA` | >3-D Secure 2.0 |
-| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                       | `VIS` | >3-D Secure 2.0 |
-| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express | `AMX` | >3-D Secure 2.0 |
-| <img src="../.gitbook/assets/diners.svg" alt="" data-size="line">Diners Club              | `DIN` | >3-D Secure 2.0 |
-| <img src="../.gitbook/assets/discover.svg" alt="" data-size="line">Discover               | `DIS` | >3-D Secure 2.0 |
-| <img src="../.gitbook/assets/Dankort.png" alt="" data-size="line">Dankort                 | `DNK` | >3-D Secure 2.0 |
+| Brand                                                                                               | Code  | Version        |
+| --------------------------------------------------------------------------------------------------- | ----- | -------------- |
+| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard                     | `ECA` | 3-D Secure 2.2 |
+| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                                 | `VIS` | 3-D Secure 2.2 |
+| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express           | `AMX` | 3-D Secure 2.2 |
+| <img src="../.gitbook/assets/diners.svg" alt="" data-size="line">Diners Club                        | `DIN` | 3-D Secure 2.1 |
+| <img src="../.gitbook/assets/discover.svg" alt="" data-size="line">Discover                         | `DIS` | 3-D Secure 2.1 |
+| <img src="../.gitbook/assets/1200px-China-UnionPay-Logo.svg.png" alt="" data-size="line"> Union Pay | `CUP` | 3-D Secure 2.2 |
+| <img src="../.gitbook/assets/Dankort.png" alt="" data-size="line">Dankort                           | `DNK` | 3-D Secure 2.1 |
 
 ## Integration
 
