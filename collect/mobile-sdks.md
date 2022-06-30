@@ -17,10 +17,10 @@ If you need to process 3D-Secure authentication within your SDKs please refer to
 
 Access the latest version of our SDKs by following the links below and link the latest release to your app projects.
 
-| OS      | Link                                                                                                                                                                                                                                                                  | Supported version |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/PCIPTokenizationRequest.html">Link</a></p>                                                                           | 11 +              |
-| Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html">Link</a></p> | 5.0 +             |
+| OS      | Link                                                                                                                                                                                                                                                                                                                                                          | Supported version |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/PCIPTokenizationRequest.html">Link</a><br>Release notes: <a href="https://github.com/datatrans/ios-sdk/releases/">Link</a></p>                                                                               | 11 +              |
+| Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html">Link</a><br>Release notes: <a href="https://github.com/datatrans/android-sdk/releases/">Link</a></p> | 5.0 +             |
 
 ## 2. Integration
 
