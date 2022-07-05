@@ -17,16 +17,31 @@ If you need to process 3D-Secure authentication within your SDKs please refer to
 
 Access the latest version of our SDKs by following the links below and link the latest release to your app projects.
 
-| OS      | Link                                                                                                                                                                                                                                                                                                                                                          | Supported version |
-| ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
-| iOS     | <p>Github: <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/PCIPTokenizationRequest.html">Link</a><br>Release notes: <a href="https://github.com/datatrans/ios-sdk/releases/">Link</a></p>                                                                               | 11 +              |
-| Android | <p>JFrog Repository: <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p><p>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html">Link</a><br>Release notes: <a href="https://github.com/datatrans/android-sdk/releases/">Link</a></p> | 5.0 +             |
+| OS                                                                                                                                                                                                                        | Link                                                                                                                                                                                                                                                                                                                                                               | Supported version |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
+| <p><img src="https://www.datatrans.ch/media/filer_public/27/69/2769efa5-24be-49a5-adf1-449486ed10c7/apple-logo.svg" alt=""><br><img src="https://img.shields.io/github/v/tag/datatrans/ios-sdk?label=ios-sdk" alt=""></p> | <p>Release notes: <a href="https://github.com/datatrans/ios-sdk/releases/">Link</a><br>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/PCIPTokenizationRequest.html">Link</a><br>Integration Link (Github): <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p></p>                                                             | 11 +              |
+| ![](https://www.datatrans.ch/media/filer\_public/7e/76/7e76be9b-dc33-4551-8911-180db284a7d4/android-logo.svg)![](https://img.shields.io/github/v/tag/datatrans/android-sdk?label=android-sdk)                             | <p>Release notes: <a href="https://github.com/datatrans/android-sdk/releases/">Link</a><br>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html">Link</a><br>Integration Link (JFrog): <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p> | 5.0 +             |
 
 ## 2. Integration
 
 As a next step, continue with the initialization of our iOS or Android SDK.
 
-For iOS, you can add the SDK to your project by adding a new package dependency in Xcode or via Cocoapods with `pod 'Datatrans'`&#x20;
+### iOS
+
+For iOS, you can add the SDK to your project by adding a new Swift package dependency in Xcode and pointing to the github repository `datatrans.github.io/ios-sdk`. By default, enable all packages presented in the package selection. If you are building an App Clip project, you may select only your required packages, which will depend on your payment methods and flows. Please reach out to our support if you are unsure about what packages you required. Besides adding the packages via a Swift package dependency, you can also add the SDK via Cocoapods with `pod 'Datatrans'`.
+
+#### Additional requirement for iOS
+
+For the card scanner to work, a usage description for the camera use will be required in your `.plist` file. If you do not provide a description for the camera use, the app will crash when starting the card scanner.
+
+{% code title=".plist File" %}
+```markup
+Key    :  Privacy - Camera Usage Description   
+Value  :  $(PRODUCT_NAME) requires camera access to scan cards.
+```
+{% endcode %}
+
+### Android
 
 For Android projects, you can link the repo and dependencies as demonstrated here:
 
@@ -39,10 +54,35 @@ repositories {
 
 dependencies {
 	...
-	implementation 'ch.datatrans:android-sdk:2.0.1' // check release notes for latest version
+	implementation 'ch.datatrans:android-sdk:2.0.2' // check release notes for latest version
 }
 ```
 {% endcode %}
+
+If you are building an Instant app, you may exclude specific packages that are not required in your project. This will depend on your tokenisation process, however by default you should be able to exclude all components. Please reach out to our support if you are unsure about what packages you can exclude.
+
+{% code title="Excluding Dependencies" %}
+```java
+dependencies {
+	...
+	implementation ('ch.datatrans:android-sdk:2.0.2') {  // Check release notes for latest version
+		exclude group: 'io.card', module: 'android-sdk'
+	}
+}
+```
+{% endcode %}
+
+The table below lists all the dependencies which can be excluded.
+
+| Feature             | Group                     | Module                 |
+| ------------------- | ------------------------- | ---------------------- |
+| Credit Card Scanner | `io.card`                 | `android-sdk`          |
+| Google Pay          | `com.google.android.gms`  | `play-services-wallet` |
+| PayPal              | `com.paypal.risk`         | `android-magnessdk`    |
+| Samsung Pay         | `com.samsung.android.sdk` | `samsungpay`           |
+| Twint               | `ch.twint.payment`        | `twint-sdk-android`    |
+
+## 3. SDK initialisation&#x20;
 
 Create a tokenization object with your `merchantId` and `paymentMethodTypes` to start a tokenisation. Below is an example of the suggested minimum options to start a tokenisation with iOS (Swift) and Android (Kotlin, Java). Please read our detailed classes description for [iOS](https://datatrans.github.io/ios-sdk/Classes/PCIPTokenizationRequest.html) and [Android](https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html) to discover more initialization options.
 
@@ -74,18 +114,7 @@ TransactionRegistry.INSTANCE.startTokenizationRequest(this, tokenizationRequest)
 
 After the tokenization has been completed, `TokenizationRequestDelegate` will contain the `tokenizationId` and also tell you if a tokenization process was successful, cancelled, or resulted in an error.
 
-#### Additional requirement for iOS
-
-For the card scanner to work, a usage description for the camera use will be required in your `.plist` file. If you do not provide a description for the camera use, the app will crash when starting the card scanner.
-
-{% code title=".plist File" %}
-```markup
-Key    :  Privacy - Camera Usage Description   
-Value  :  $(PRODUCT_NAME) requires camera access to scan cards.
-```
-{% endcode %}
-
-## 3. Obtain tokens
+## 4. Obtain tokens
 
 To obtain the tokenized values, you first need to submit the `tokenizationId` returned by the SDK to your server.&#x20;
 
