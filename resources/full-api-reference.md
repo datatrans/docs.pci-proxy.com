@@ -48,6 +48,7 @@ On the response, PCI Proxy will return these HTTP headers:
 | `x-cvv-matches-acvv`                                                      | The number of alias to cvv replacements.                                                                                                                                         |
 | `x-cvv-matches-cvva`                                                      | The number of cvv to alias replacements.                                                                                                                                         |
 | `x-custom-matches`                                                        | Returned by PCI Proxy in case of a successful replacement. The value represents the number of total (custom value to alias/ alias to custom value) replacements that were made.  |
+| `pci-proxy-masked-aliases`                                                | Contains the masked card alias format (411111ABCDEF1111).                                                                                                                        |
 | `x-cc-proxy-action-id`                                                    | Unique request identifier.                                                                                                                                                       |
 
 ### PUSH Request
