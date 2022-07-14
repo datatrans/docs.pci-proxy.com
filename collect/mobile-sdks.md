@@ -89,7 +89,7 @@ Create a tokenization object with your `merchantId` and `paymentMethodTypes` to 
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-let tokenizationRequest = TokenizationRequest(merchantId: merchantId, paymentMethodTypes: [.Visa, .MasterCard]) 
+let tokenizationRequest = PCIPTokenizationRequest(merchantId: merchantId, paymentMethodTypes: [.Visa, .MasterCard]) 
 tokenizationRequest.delegate = self
 tokenizationRequest.start(presentingController: navigationController)
 ```
@@ -97,7 +97,7 @@ tokenizationRequest.start(presentingController: navigationController)
 
 {% tab title="Kotlin" %}
 ```kotlin
-val tokenizationRequest = TokenizationRequest(merchantId, [VISA, MASTER_CARD])
+val tokenizationRequest = PCIPTokenizationRequest(merchantId, [VISA, MASTER_CARD])
 tokenizationRequest.listener = this
 TransactionRegistry.startTokenizationRequest(this, tokenizationRequest)
 ```
@@ -105,14 +105,14 @@ TransactionRegistry.startTokenizationRequest(this, tokenizationRequest)
 
 {% tab title="Java" %}
 ```java
-TokenizationRequest tokenizationRequest = new TokenizationRequest(merchantId, [VISA, MASTER_CARD]);
+PCIPTokenizationRequest tokenizationRequest = new PCIPTokenizationRequest(merchantId, [VISA, MASTER_CARD]);
 tokenizationRequest.setListener(this);
 TransactionRegistry.INSTANCE.startTokenizationRequest(this, tokenizationRequest);
 ```
 {% endtab %}
 {% endtabs %}
 
-After the tokenization has been completed, `TokenizationRequestDelegate` will contain the `tokenizationId` and also tell you if a tokenization process was successful, cancelled, or resulted in an error.
+After the tokenization has been completed, `PCIPTokenizationRequestDelegate` will contain the `tokenizationId` and also tell you if a tokenization process was successful, cancelled, or resulted in an error.
 
 ## 4. Obtain tokens
 
