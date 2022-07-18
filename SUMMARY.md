@@ -51,10 +51,10 @@
 
 ## Advanced Features
 
-* [Payment Hub](advanced-features/payment-hub/README.md)
-  * [Supported Acquirers](advanced-features/payment-hub/supported-acquirers.md)
-  * [Authorize / Settle](advanced-features/payment-hub/authorize-settle.md)
-  * [Deferred Settlement](advanced-features/payment-hub/deferred-settlement.md)
+* [Payment Orchestration](advanced-features/payment-orchestration/README.md)
+  * [Supported Acquirers](advanced-features/payment-orchestration/supported-acquirers.md)
+  * [Authorize / Settle](advanced-features/payment-orchestration/authorize-settle.md)
+  * [Deferred Settlement](advanced-features/payment-orchestration/deferred-settlement.md)
 * [Network Tokenization (beta)](advanced-features/network-tokenization-beta/README.md)
   * [Process overview](advanced-features/network-tokenization-beta/process-overview.md)
   * [Terminology](advanced-features/network-tokenization-beta/terminology.md)
