@@ -47,7 +47,12 @@
     * [PUSH](use/forward-proxy/https/push.md)
   * [HTTPS to SFTP](use/forward-proxy/https-to-sftp.md)
   * [SFTP](use/forward-proxy/sftp.md)
-* [Show Interface](use/show-interface.md)
+* [Show](use/show/README.md)
+  * [Security and Compliance](use/show/security-and-compliance.md)
+  * [Web](use/show/web/README.md)
+    * [Initialisation and styling](use/show/web/initialisation-and-styling.md)
+    * [Events](use/show/web/events.md)
+  * [Native mobile apps](use/show/native-mobile-apps.md)
 
 ## Advanced Features
 

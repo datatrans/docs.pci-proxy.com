@@ -1,4 +1,14 @@
+---
+description: Timeline of PCI Proxy releases
+---
+
 # Release Notes
+
+## July 2022
+
+**New API - Show API**
+
+We have revamped the Show API to reveal card data in mobile and web apps - see [Show](../use/show/) to learn more.&#x20;
 
 ## May 2022
 
@@ -30,7 +40,7 @@ We have added support to autofill expiry date and CVV code for the [Secure Field
 
 **Redesign - NoShow authentication email**
 
-We have redesigned the look and feel of the [NoShow authentication](../use/show-interface.md) email.
+We have redesigned the look and feel of the [NoShow authentication](broken-reference) email.
 
 ## July 2021
 
