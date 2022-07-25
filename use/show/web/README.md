@@ -13,28 +13,23 @@ Process description of how PCI Proxy Show API works
 1. The backend of your application receives a request to display card data
 2. Check if the cardholder is allowed to see plain text card data
 3. Assemble the request with the card or cvv tokens mapped to the cardholder and submit the request to PCI Proxy
-4. PCI Proxy returns a `transactionId` which is **valid for 30 minutes** and can be **consumed one time** to your backend
+4. PCI Proxy returns a `transactionId` to your backend, **valid for 30 minutes** and can be **consumed one time**
 5. Pass on the `transactionId` to your web application
-6. Load and render the SecureFields.js into your HTML
-7. Inject the SecureFields.js with the `transactionId`
-8. The JavaScript's `SecureFields.init` operation requests the card data
-9. Card data and buttons will be injected into the HTML and can be displayed to the user
+6. Load and render SecureFields.js into your HTML
+7. The JavaScript's `SecureFields.init(transactionId)` operation requests the card data
+8. Card data and buttons will be injected into the HTML and can be displayed to the user
 
 {% hint style="info" %}
-TransactionId's obtained via Show API allow access to sensitive data. Please do not store them anywhere unless absolutely necessary and consume them as soon as possible.&#x20;
+TransactionIDs obtained via Show API allow access to sensitive data. Please do not store them anywhere unless absolutely necessary and consume them as soon as possible.
 {% endhint %}
 
 ### 1. Request access
 
-Before you start with the technical integration, please make sure to request access to the feature. Login to our Dashboard and navigate to the Settings menu in the Project settings.&#x20;
+Before you start with the technical integration, you need to request access to the feature. Log into our Dashboard and navigate to the Settings menu in Project settings.&#x20;
 
 ![Request Show API access within the PCI Proxy Dashboard.](<../../../.gitbook/assets/Request Show access.png>)
 
-Open the form `Request Show API access` , complete the fields and submit it. Our team will review your request and reach out to you once the access is granted or more information are needed.&#x20;
-
-{% hint style="info" %}
-Please note that you need request access for both environments, Sandbox and Production separately.&#x20;
-{% endhint %}
+Click `Request access` in the `Request Show API access` section to open the form. Fill in your data and submit it. Our team will review your request and reach out to you once the access is granted or more information are needed.
 
 ### 2. Obtain a transactionId
 
@@ -88,7 +83,7 @@ PCI Proxy CVV token
 {% tab title="Request" %}
 ```javascript
 curl --location --request POST 'https://api.sandbox.datatrans.com/v1/transactions/secureFields/show'
---header 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr'
+--header 'Authorization: Basic {basicAuth}'
 --header 'Content-Type: application/json'
 --data-raw 
 '{ 
@@ -116,9 +111,9 @@ Consider sending only `alias` or `aliasCVV`, depending on whether you intend to 
 
 Integrate Secure Fields in your frontend application where the card data should be displayed.&#x20;
 
-#### 3.1 Setup SecureFields.js
+#### 3.1 Set up SecureFields.js
 
-To get started include the following script on your page. Make sure to use the latest version.&#x20;
+To get started include the following script on your page.&#x20;
 
 {% tabs %}
 {% tab title="Secure Fields Script" %}
@@ -135,7 +130,7 @@ To get started include the following script on your page. Make sure to use the l
 {% endtabs %}
 
 {% hint style="info" %}
-Please make sure to always load it directly from [https://pay.sandbox.datatrans.com](https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.js)
+Please make sure to always load it directly from [https://pay.sandbox.datatrans.com](https://pay.sandbox.datatrans.com/upp/payment/js/secure-fields-2.0.0.js) for Sandbox and [https://pay.datatrans.com ](https://pay.datatrans.com)for Production environment.&#x20;
 {% endhint %}
 
 #### 3.2 Create the Show form and optional copy-to-clipboard buttons
@@ -174,10 +169,6 @@ In order for Secure Fields to insert the card number and CVV iframes at the righ
 {% endtab %}
 {% endtabs %}
 
-{% hint style="info" %}
-Copying the card data to the clipboard might increase the risk of any abuse for the cardholder. It's more secure when left in the iframes.&#x20;
-{% endhint %}
-
 #### 3.3 Initialize Secure Fields using a transactionId
 
 Create a new Secure Fields instance:
@@ -189,11 +180,11 @@ var secureFields = new SecureFields();
 // e.g. var secureFields2 = new SecureFields();
 ```
 
-Initialize it with a `transactionId` you obtained during [step 2](./#2.-initializing-transactionid) and specify which DOM element containers should be used to inject the iframes:
+Initialize it with a `transactionId` you obtained during [step 2](./#2.-obtain-a-transactionid) and specify which DOM element containers should be used to inject the iframes:
 
 ```java
 secureFields.init(
-  'pY8Pt-lWIpkDECioNQVFJvNifCeM',
+  transactionId,
   {
     cardNumber: {
        placeholderElementId: 'card-number-placeholder',

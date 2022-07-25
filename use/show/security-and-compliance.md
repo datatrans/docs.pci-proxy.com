@@ -14,7 +14,7 @@ As the Show API displays sensitive cardholder data, it should only be used for e
 
 The Show API does not serve any user authentication method nor does it interact with your authentication mechanism. It is therefore extremely important that your backend application manages the user authentication and ensures that,&#x20;
 
-1. your applications provides a login method
+1. your application provides a login method
 2. the reveal feature is protected with Multi Factor Authentication&#x20;
 3. the user which requests to see card data is authenticated and matches with the tokens that are being requested
 
