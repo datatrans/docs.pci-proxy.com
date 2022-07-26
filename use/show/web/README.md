@@ -213,4 +213,6 @@ secureFields.init(
 
 An example implementation can be found here: [https://datatrans.github.io/secure-fields-sample/pciproxy-examples/show.html](https://datatrans.github.io/secure-fields-sample/pciproxy-examples/show.html)
 
+Or visit the GitHub repo directly [here](https://github.com/datatrans/secure-fields-sample/blob/master/pciproxy-examples/show.html)
+
 ##
