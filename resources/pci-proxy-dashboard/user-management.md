@@ -4,7 +4,7 @@ As the creator of the sandbox account you are automatically assigned with admini
 
 Navigate to the <mark style="color:blue;">**Users**</mark> menu within the <mark style="color:blue;">**Contract**</mark> section <mark style="color:blue;"></mark> to invite new users:&#x20;
 
-![](<../../.gitbook/assets/image (18).png>)
+![](<../../.gitbook/assets/image (18) (1).png>)
 
 Have a look at the table below for detailed user roles:
 

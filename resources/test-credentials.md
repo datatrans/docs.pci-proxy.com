@@ -26,6 +26,7 @@ Productive credit card information cannot be used in the sandbox.
 | <img src="../.gitbook/assets/logo_jcb (1).png" alt="" data-size="line">        | JCB      | 3569990010030400 | AAABcH0BrM6s3kgAESIAATeCFGr8AHNk | 06/2025    | 123     | No        | No     |
 | <img src="../.gitbook/assets/logo_elo.png" alt="" data-size="line">            | ELO      | 6550000000000001 | AAABcH0BrNes3kgAESIAAZlN82oMAH2p | 06/2025    | 123     | -         | -      |
 | <img src="../.gitbook/assets/logo_elo (1).png" alt="" data-size="line">        | ELO      | 6362970000457013 | AAABcH0BrOKs3kgAESIAAVLzQBQNADfQ | 06/2025    | 123     | -         | -      |
+| <img src="../.gitbook/assets/image (18).png" alt="" data-size="line">          | HCP      | 3841000000000007 | 7LHXscqwAAEAAAGCPojFf2wsu9gTAChQ | 06/2025    | 123     | No        | No     |
 | <img src="../.gitbook/assets/logo_cup.png" alt="" data-size="line">            | CUP      | 6222821234560017 | AAABcH0BrOys3kgAESIAAbnkTiwZAKFg | 06/2025    | -       | No        | Yes    |
 | <img src="../.gitbook/assets/logo_cup (1).png" alt="" data-size="line">        | CUP      | 6223164991230014 | AAABcH0BrPWs3kgAESIAASDQEWOHACL7 | 06/2025    | -       | No        | No     |
 
