@@ -4,6 +4,12 @@ description: Timeline of PCI Proxy releases
 
 # Release Notes
 
+## August 2022
+
+**New Payment method - Hipercard**
+
+Our integrations are now supporting tokenisation for local Brazilian brand Hipercard.&#x20;
+
 ## July 2022
 
 **New API - Show API**
