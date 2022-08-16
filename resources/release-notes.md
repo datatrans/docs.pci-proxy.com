@@ -8,7 +8,7 @@ description: Timeline of PCI Proxy releases
 
 **Secure Fields - Added expiry date support**
 
-The [Secure Fields](../collect/secure-fields-js/) integration is now supporting optional expiry date support.&#x20;
+It is now possible to optionally submit the expiry date in our tokenisation [Secure Fields](../collect/secure-fields-js/) integration.&#x20;
 
 **New Payment method - Hipercard**
 
