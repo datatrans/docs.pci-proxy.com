@@ -165,11 +165,8 @@ Afterwards, add an optionally expiry date, submit the form and listen for the su
 ```javascript
 $(function() {
   $("#go").click( function() {
-      secureFields.submit({ // submit the "form"
-        expm: 12, // optional
-        expy: 26 // optional
-      });
-   });
+    secureFields.submit(); // submit the "form"
+  })
 });
 
 secureFields.on("success", function(data) {
