@@ -169,18 +169,19 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/tokenizations/210329160815
 {% tab title="Response" %}
 ```json
 {
-    "alias": "AAABeO_NX9LssdexyrAAAQCsDugEAKc5",
-    "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
-    "maskedCard": "424242xxxxxx4242",
-    "aliasCVV": "MnzXPMHJQYebRpmz-WZycWHG",
-    "expiryYear": "21",
-    "expiryMonth": "09",
+    "paymentMethod": "VIS",
+    "alias": "7LHXscqwAAEAAAGCpe2M7PXWj2StAOG6",
+    "fingerprint": "F-fgxnFwN-gsIw7y80T-kpBB",
+    "maskedCard": "489537xxxxxx6287",
+    "aliasCVV": "aYsIbb_KTQSbmWDrqlPp7hXM",
+    "expiryYear": "23",
+    "expiryMonth": "02",
     "cardInfo": {
-        "brand": "VISA CREDIT",
-        "type": "credit",
+        "brand": "VISA",
+        "type": "debit",
         "usage": "consumer",
-        "country": "GB",
-        "issuer": "DATATRANS"
+        "country": "US",
+        "issuer": "U.S. REGION"
     }
 }
 ```

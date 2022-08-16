@@ -160,13 +160,16 @@ secureFields.initTokenize( "1100007006", {
 {% endtab %}
 {% endtabs %}
 
-Afterwards, submit the form and listen for the success event:
+Afterwards, add an optionally expiry date, submit the form and listen for the success event:
 
 ```javascript
 $(function() {
   $("#go").click( function() {
-    secureFields.submit(); // submit the "form"
-  })
+      secureFields.submit({ // submit the "form"
+        expm: 12, // optional
+        expy: 26 // optional
+      });
+   });
 });
 
 secureFields.on("success", function(data) {
@@ -245,10 +248,12 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/tokenizations/220112095131
 ```json
 {
     "paymentMethod": "VIS",
-    "alias": "AAABfk18LlrssdexyrAAAQalUKXvAHTw",
+    "alias": "7LHXscqwAAEAAAGCpeuGiTgkNmfcAHtC",
     "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
     "maskedCard": "424242xxxxxx4242",
-    "aliasCVV": "bkhZUcl_SFSaN8iNoeZTZirR",
+    "aliasCVV": "YtX5g1k6SL67LwoDbB-p-ZA3",
+    "expiryYear": "25",
+    "expiryMonth": "06",
     "cardInfo": {
         "brand": "VISA CREDIT",
         "type": "credit",
