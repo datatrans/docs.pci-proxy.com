@@ -249,8 +249,6 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/tokenizations/220112095131
     "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
     "maskedCard": "424242xxxxxx4242",
     "aliasCVV": "YtX5g1k6SL67LwoDbB-p-ZA3",
-    "expiryYear": "25",
-    "expiryMonth": "06",
     "cardInfo": {
         "brand": "VISA CREDIT",
         "type": "credit",
