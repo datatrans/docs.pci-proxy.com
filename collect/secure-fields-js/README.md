@@ -160,7 +160,7 @@ secureFields.initTokenize( "1100007006", {
 {% endtab %}
 {% endtabs %}
 
-Afterwards, add an optionally expiry date, submit the form and listen for the success event:
+Afterwards, submit the form and listen for the success event:
 
 ```javascript
 $(function() {
