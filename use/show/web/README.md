@@ -6,14 +6,14 @@ description: Read here how to reveal sensitive cardholder data in web applicatio
 
 ### Process overview
 
-Process description of how PCI Proxy Show API works
+Process description of how PCI Proxy Show API works in web applications.&#x20;
 
 ![Show process](<../../../.gitbook/assets/Show process.png>)
 
 1. The backend of your application receives a request to display card data
-2. Check if the cardholder is allowed to see plain text card data
-3. Assemble the request with the card or cvv tokens mapped to the cardholder and submit the request to PCI Proxy
-4. PCI Proxy returns a `transactionId` to your backend, **valid for 30 minutes** and can be **consumed one time**
+2. [Check](../security-and-compliance.md) if the cardholder is allowed to see plain text card data
+3. Assemble the request with the card and/or cvv tokens mapped to the cardholder and submit the request to PCI Proxy
+4. PCI Proxy returns a `transactionId` to your backend, **valid for 30 minutes** and can be **consumed once**
 5. Pass on the `transactionId` to your web application
 6. Load and render SecureFields.js into your HTML
 7. The JavaScript's `SecureFields.init(transactionId)` operation requests the card data
@@ -33,7 +33,7 @@ Click `Request access` in the `Request Show API access` section to open the form
 
 ### 2. Obtain a transactionId
 
-Start with requesting a `transactionId` by calling the Show API.
+Start with requesting a `transactionId` by calling the Show API from your server.&#x20;
 
 {% swagger method="post" path="/v1/transactions/secureFields/show" baseUrl="https://api.sandbox.datatrans.com" summary="Init call" %}
 {% swagger-description %}

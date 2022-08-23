@@ -6,6 +6,10 @@ description: Timeline of PCI Proxy releases
 
 ## August 2022
 
+**New API - Show API for native mobile applications**
+
+We have built a [new API](../use/show/native-mobile-apps.md) to securely reveal sensitive card data in native mobile applications.&#x20;
+
 **Secure Fields - Added expiry date support**
 
 It is now possible to optionally submit the expiry date in our tokenisation [Secure Fields](../collect/secure-fields-js/) integration.&#x20;
@@ -16,9 +20,9 @@ Our integrations are now supporting tokenisation for Brazilian card brand Hiperc
 
 ## July 2022
 
-**New API - Show API**
+**New API - Show API for web applications**
 
-We have revamped the Show API to reveal card data in mobile and web apps - see [Show](../use/show/) to learn more.&#x20;
+We have revamped the Show API to reveal card data web apps - see [Show](../use/show/) to learn more.&#x20;
 
 ## May 2022
 

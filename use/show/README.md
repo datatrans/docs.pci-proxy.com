@@ -13,7 +13,7 @@ Before you start with the integration please carefully read the [Security and Co
 {% endhint %}
 
 \
-Depending on your use-case, we currently offer the following two integration methods:
+Depending on your use-case, we offer the following two integration methods:
 
 1. [Display card data in web applications](web/)
 2. [Display card data in native mobile applications](native-mobile-apps.md)
