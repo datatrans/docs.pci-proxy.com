@@ -8,11 +8,11 @@ description: Read here how to reveal sensitive card data in native mobile applic
 
 Process description of how PCI Proxy Show API works for native mobile applications.&#x20;
 
-![Show process](<../../.gitbook/assets/Screenshot 2022-08-17 at 16.43.45.png>)
+<figure><img src="../../.gitbook/assets/Screenshot 2022-08-24 at 11.13.03.png" alt=""><figcaption><p>Show process for native mobile applications</p></figcaption></figure>
 
 1. The backend of your application receives a request to display card data
-2. [Check](security-and-compliance.md) if the cardholder is allowed to see plain text card data
-3. Assemble the request with the card and/or cvv tokens mapped to the cardholder and submit the request to PCI Proxy
+2. [Check](security-and-compliance.md) if the user is allowed to see plain text card data
+3. Assemble the request with the card and/or cvv tokens mapped to the user and submit the request to PCI Proxy
 4. PCI Proxy returns a `transactionId` to your backend. It is **valid for 30 minutes** and can be **consumed once**
 5. Pass on the `transactionId` to your mobile application
 6. Call the [Reveal](native-mobile-apps.md#reveal-api) endpoint with the `transactionId` in the body from the mobile application
