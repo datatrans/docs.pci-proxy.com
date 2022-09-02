@@ -16,6 +16,7 @@ Please find below a list of already integrated receivers.
 | [BeeRent](https://www.beerent.com/)                                                         | `pull / push` |
 | ​[Booking](https://www.booking.com/)​                                                       | `pull / push` |
 | ​[BookingCenter](https://www.bookingcenter.com/)​                                           | `pull / push` |
+| [BookingPal](https://bookingpal.com/)                                                       | `pull / push` |
 | ​[Car Rental Gateway](https://www.carrentalgateway.com/)​                                   | `pull / push` |
 | [Cenium](https://www.cenium.com/)                                                           | `pull / push` |
 | ​[Cubilis](http://www.cubilis.com/)​                                                        | `pull / push` |
@@ -32,6 +33,7 @@ Please find below a list of already integrated receivers.
 | ​[HotelPartner](http://www.hotelpartner-ym.com/en/)​                                        | `pull / push` |
 | ​[Hotel-Spider](http://www.hotel-spider.com/en/)​                                           | `pull / push` |
 | ​[HotelTime](https://www.hoteltime.com/)​                                                   | `pull / push` |
+| [Lodgea](https://www.lodgea.com/)                                                           | `pull / push` |
 | [Mercado Pago](https://www.mercadopago.com.ar/)                                             | `pull / push` |
 | ​[Merrion Hotel](https://www.merrionhotel.com/)​                                            | `pull / push` |
 | ​[Navitaire](https://www.navitaire.com/)​                                                   | `pull / push` |
