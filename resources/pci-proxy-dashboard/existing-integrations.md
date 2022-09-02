@@ -8,16 +8,21 @@ Do you miss a channel? Simply [request it in our dashboard](broken-reference).&#
 
 Please find below a list of already integrated receivers.
 
+
+
 | 3rd-Party Receiver                                                                          | type          |
 | ------------------------------------------------------------------------------------------- | ------------- |
+| [Accor](https://all.accor.com/)                                                             | `pull / push` |
 | ​[Acomodeo](https://www.acomodeo.com/)​                                                     | `pull / push` |
 | ​[Amadeus](https://amadeus.com/)​                                                           | `pull / push` |
 | ​[Availpro](http://site.availpro.com/)​                                                     | `pull / push` |
 | [BeeRent](https://www.beerent.com/)                                                         | `pull / push` |
 | ​[Booking](https://www.booking.com/)​                                                       | `pull / push` |
 | ​[BookingCenter](https://www.bookingcenter.com/)​                                           | `pull / push` |
+| [Booking Expert](https://www.bookingexpert.com/)                                            | `pull / push` |
 | [BookingPal](https://bookingpal.com/)                                                       | `pull / push` |
 | ​[Car Rental Gateway](https://www.carrentalgateway.com/)​                                   | `pull / push` |
+| [CarTrawler](http://www.cartrawler.com/)                                                    | `pull / push` |
 | [Cenium](https://www.cenium.com/)                                                           | `pull / push` |
 | ​[Cubilis](http://www.cubilis.com/)​                                                        | `pull / push` |
 | ​[D-EDGE](https://www.d-edge.com/)​                                                         | `pull / push` |
@@ -29,16 +34,20 @@ Please find below a list of already integrated receivers.
 | [FNSRooms](https://www.fnsrooms.com/)                                                       | `pull / push` |
 | ​[Guestline](https://www.guestline.com/)​                                                   | `pull / push` |
 | ​[HanseMerkur](https://www.hansemerkur.de/)​                                                | `pull / push` |
+| [Happy.rentals](https://www.happy.rentals/)                                                 | `pull / push` |
 | ​[Hastings Hotels](https://www.hastingshotels.com/)​                                        | `pull / push` |
+| [Hertz](https://www.hertz.com/)                                                             | `pull / push` |
 | ​[HotelPartner](http://www.hotelpartner-ym.com/en/)​                                        | `pull / push` |
 | ​[Hotel-Spider](http://www.hotel-spider.com/en/)​                                           | `pull / push` |
 | ​[HotelTime](https://www.hoteltime.com/)​                                                   | `pull / push` |
+| [Krossbooking](https://www.krossbooking.com/)                                               | `pull / push` |
 | [Lodgea](https://www.lodgea.com/)                                                           | `pull / push` |
 | [Mercado Pago](https://www.mercadopago.com.ar/)                                             | `pull / push` |
 | ​[Merrion Hotel](https://www.merrionhotel.com/)​                                            | `pull / push` |
 | ​[Navitaire](https://www.navitaire.com/)​                                                   | `pull / push` |
 | ​[NH Hotel Group](https://www.nh-hotels.com/)​                                              | `pull / push` |
 | [Norse](https://flynorse.com/)                                                              | `pull / push` |
+| [Omnibees](https://omnibees.com/)                                                           | `pull / push` |
 | ​[Opera](https://www.oracle.com/industries/hospitality/products/opera-cloud-services.html)​ | `pull / push` |
 | ​[Oracle Corporation](https://www.oracle.com/)​                                             | `pull / push` |
 | [Otelz.com](https://www.otelz.com/)                                                         | `pull / push` |
