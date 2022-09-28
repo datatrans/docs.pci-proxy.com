@@ -4,6 +4,12 @@ description: Timeline of PCI Proxy releases
 
 # Release Notes
 
+## September 2022
+
+#### New token format - Alias 2.0 length preserving&#x20;
+
+A new length preserving alias format has been introduced. [Here](token-formats.md) you find all available token formats.&#x20;
+
 ## August 2022
 
 **New API - Show API for native mobile applications**

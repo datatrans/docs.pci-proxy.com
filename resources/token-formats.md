@@ -1,4 +1,14 @@
+---
+description: Token format overview
+---
+
 # Token Formats
+
+{% hint style="warning" %}
+Although all formats are supported and compliant according to PCI DSS we highly recommend using the`Alias 2.0` format to run certain operations and obtain the maximum of security. \
+\
+Please refer to [Convert API](broken-reference) if you want to migrate from a legacy to the new format.&#x20;
+{% endhint %}
 
 ## Alias 2.0
 
@@ -10,6 +20,25 @@ The Alias 2.0 is our default token format. All the tokens are unique. When using
 
 * Possible characters: `A-Z`, `a-z`, `0-9`, `-`, `_`
 * Length: `32`
+* Supported features:
+  * [Network Tokenisation ](../advanced-features/network-tokenization-beta/)
+  * [Manage API](../store/manage/)
+  * Fingerprint
+
+## Alias 2.0 - Length preserving&#x20;
+
+The Alias 2.0 - Length preserving format inherits all features and functionalities of the original Alias 2.0 format with the difference that the length of the alias equals the length of the original card number.&#x20;
+
+| Input                 | Output             |
+| --------------------- | ------------------ |
+| `4242 4242 4242 4242` | `AEcyq81HSCWWGihU` |
+
+* Possible characters: `A-Z`, `a-z`, `0-9`, `-`, `_`
+* Length: `[12, 19]`, based on underlying card length
+* Supported features:
+  * [Network Tokenisation ](../advanced-features/network-tokenization-beta/)
+  * [Manage API](../store/manage/)
+  * Fingerprint
 
 ## CVV/CVC Alias
 
@@ -34,7 +63,7 @@ This format consists of the first 6 digits of the real credit card number, the a
 | `4242 4242 4242 4242`                         | <mark style="color:blue;">`424242ABCDEF4242`</mark> |
 
 * Possible characters: `A-Z`, `0-9`,&#x20;
-* Length: `lenght preserving`
+* Length: `length preserving`
 
 ## Full Substitution
 
@@ -47,8 +76,3 @@ This format consists digits only
 * Possible characters: `0-9`
 * Length: `20`
 
-
-
-{% hint style="warning" %}
-Although all formats are supported and compliant according to PCI DSS we highly recommend using`Alias 2.0` format to run certain operations. Please refer to [Convert API](broken-reference) if you want to migrate from a legacy to the new format.&#x20;
-{% endhint %}
