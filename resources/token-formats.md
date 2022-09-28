@@ -29,9 +29,9 @@ The Alias 2.0 is our default token format. All the tokens are unique. When using
 
 The Alias 2.0 - Length preserving format inherits all features and functionalities of the original Alias 2.0 format with the difference that the length of the alias equals the length of the original card number.&#x20;
 
-| Input                 | Output             |
-| --------------------- | ------------------ |
-| `4242 4242 4242 4242` | `AEcyq81HSCWWGihU` |
+| Input                 | Output                                              |
+| --------------------- | --------------------------------------------------- |
+| `4242 4242 4242 4242` | <mark style="color:blue;">`AEcyq81HSCWWGihU`</mark> |
 
 * Possible characters: `A-Z`, `a-z`, `0-9`, `-`, `_`
 * Length: `[12, 19]`, based on underlying card length
