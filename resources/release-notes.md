@@ -11,7 +11,7 @@ description: Timeline of PCI Proxy releases
 * A new cardInfo object containing card meta data will be returned by the [mobile SDKs](../collect/mobile-sdks.md).
 * API renaming to be more consistent with other PCI Proxy APIs
 
-Please refer to our dedicated [Android](https://github.com/datatrans/android-sdk/releases/) and [iOS](https://datatrans.github.io/ios-sdk/Classes/PCIPTokenization.html) release notes for more details.&#x20;
+Please refer to our dedicated [Android](https://github.com/datatrans/android-sdk/releases/) and [iOS](https://github.com/datatrans/ios-sdk/releases/) release notes for more details.&#x20;
 
 ## September 2022
 
