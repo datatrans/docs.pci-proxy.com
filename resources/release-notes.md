@@ -4,6 +4,13 @@ description: Timeline of PCI Proxy releases
 
 # Release Notes
 
+## October 2022
+
+#### Mobile SDK - Release version 2.3
+
+* A new cardInfo object containing card meta data will be returned by the [mobile SDKs](../collect/mobile-sdks.md).
+* API renaming to be more consistent with other PCI Proxy APIs
+
 ## September 2022
 
 #### New token format - Alias 2.0 length preserving&#x20;

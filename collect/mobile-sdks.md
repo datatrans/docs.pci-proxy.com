@@ -19,7 +19,7 @@ Access the latest version of our SDKs by following the links below and link the 
 
 | OS                                                                                                                                                                                                                        | Link                                                                                                                                                                                                                                                                                                                                                               | Supported version |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------- |
-| <p><img src="https://www.datatrans.ch/media/filer_public/27/69/2769efa5-24be-49a5-adf1-449486ed10c7/apple-logo.svg" alt=""><br><img src="https://img.shields.io/github/v/tag/datatrans/ios-sdk?label=ios-sdk" alt=""></p> | <p>Release notes: <a href="https://github.com/datatrans/ios-sdk/releases/">Link</a><br>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/PCIPTokenizationRequest.html">Link</a><br>Integration Link (Github): <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p></p>                                                             | 11 +              |
+| <p><img src="https://www.datatrans.ch/media/filer_public/27/69/2769efa5-24be-49a5-adf1-449486ed10c7/apple-logo.svg" alt=""><br><img src="https://img.shields.io/github/v/tag/datatrans/ios-sdk?label=ios-sdk" alt=""></p> | <p>Release notes: <a href="https://datatrans.github.io/ios-sdk/Classes/PCIPTokenization.html">Link</a><br>iOS SDK Reference: <a href="https://datatrans.github.io/ios-sdk/Classes/PCIPTokenizationRequest.html">Link</a><br>Integration Link (Github): <a href="https://github.com/datatrans/ios-sdk">Link</a></p><p></p>                                          | 11 +              |
 | ![](https://www.datatrans.ch/media/filer\_public/7e/76/7e76be9b-dc33-4551-8911-180db284a7d4/android-logo.svg)![](https://img.shields.io/github/v/tag/datatrans/android-sdk?label=android-sdk)                             | <p>Release notes: <a href="https://github.com/datatrans/android-sdk/releases/">Link</a><br>Android SDK Reference: <a href="https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html">Link</a><br>Integration Link (JFrog): <a href="https://datatrans.jfrog.io/artifactory/mobile-sdk">Link</a></p> | 5.0 +             |
 
 ## 2. Integration
@@ -54,7 +54,7 @@ repositories {
 
 dependencies {
 	...
-	implementation 'ch.datatrans:android-sdk:2.0.2' // check release notes for latest version
+	implementation 'ch.datatrans:android-sdk:2.3.0' // check release notes for latest version
 }
 ```
 {% endcode %}
@@ -65,7 +65,7 @@ If you are building an Instant app, you may exclude specific packages that are n
 ```java
 dependencies {
 	...
-	implementation ('ch.datatrans:android-sdk:2.0.2') {  // Check release notes for latest version
+	implementation ('ch.datatrans:android-sdk:2.3.1') {  // Check release notes for latest version
 		exclude group: 'io.card', module: 'android-sdk'
 	}
 }
@@ -78,18 +78,16 @@ The table below lists all the dependencies which can be excluded.
 | ------------------- | ------------------------- | ---------------------- |
 | Credit Card Scanner | `io.card`                 | `android-sdk`          |
 | Google Pay          | `com.google.android.gms`  | `play-services-wallet` |
-| PayPal              | `com.paypal.risk`         | `android-magnessdk`    |
 | Samsung Pay         | `com.samsung.android.sdk` | `samsungpay`           |
-| Twint               | `ch.twint.payment`        | `twint-sdk-android`    |
 
 ## 3. SDK initialisation&#x20;
 
-Create a tokenization object with your `merchantId` and `paymentMethodTypes` to start a tokenisation. Below is an example of the suggested minimum options to start a tokenisation with iOS (Swift) and Android (Kotlin, Java). Please read our detailed classes description for [iOS](https://datatrans.github.io/ios-sdk/Classes/PCIPTokenizationRequest.html) and [Android](https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html) to discover more initialization options.
+Create a tokenization object with your `merchantId` and `paymentMethodTypes` to start a tokenisation. Below is an example of the suggested minimum options to start a tokenisation with iOS (Swift) and Android (Kotlin, Java). Please read our detailed classes description for [iOS](https://datatrans.github.io/ios-sdk/Classes/PCIPTokenization.html) and [Android](https://datatrans.github.io/android-sdk/-datatrans%20-android%20-s-d-k/ch.datatrans.payment.api.tokenization/index.html) to discover more initialization options.
 
 {% tabs %}
 {% tab title="Swift" %}
 ```swift
-let tokenizationRequest = PCIPTokenizationRequest(merchantId: merchantId, paymentMethodTypes: [.Visa, .MasterCard]) 
+let tokenizationRequest = PCIPTokenization(merchantId: merchantId, paymentMethodTypes: [.Visa, .MasterCard]) 
 tokenizationRequest.delegate = self
 tokenizationRequest.start(presentingController: navigationController)
 ```
@@ -97,7 +95,7 @@ tokenizationRequest.start(presentingController: navigationController)
 
 {% tab title="Kotlin" %}
 ```kotlin
-val tokenizationRequest = PCIPTokenizationRequest(merchantId, [VISA, MASTER_CARD])
+val tokenizationRequest = PCIPTokenization(merchantId, [VISA, MASTER_CARD])
 tokenizationRequest.listener = this
 TransactionRegistry.startTokenizationRequest(this, tokenizationRequest)
 ```
@@ -105,14 +103,16 @@ TransactionRegistry.startTokenizationRequest(this, tokenizationRequest)
 
 {% tab title="Java" %}
 ```java
-PCIPTokenizationRequest tokenizationRequest = new PCIPTokenizationRequest(merchantId, [VISA, MASTER_CARD]);
+PCIPTokenizationRequest tokenizationRequest = new PCIPTokenization(merchantId, [VISA, MASTER_CARD]);
 tokenizationRequest.setListener(this);
 TransactionRegistry.INSTANCE.startTokenizationRequest(this, tokenizationRequest);
 ```
 {% endtab %}
 {% endtabs %}
 
-After the tokenization has been completed, `PCIPTokenizationRequestDelegate` will contain the `tokenizationId` and also tell you if a tokenization process was successful, cancelled, or resulted in an error.
+After the tokenization has been completed, listen to `PCIPTokenizationDelegate` . It will notify you about the success, error or cancel state of the processed tokenization.
+
+The `tokenizationId` and additional card meta data are returned in `PCIPTokenizationSuccess`class.
 
 ## 4. Obtain tokens
 
