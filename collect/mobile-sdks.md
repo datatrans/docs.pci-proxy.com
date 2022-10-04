@@ -110,9 +110,7 @@ TransactionRegistry.INSTANCE.startTokenizationRequest(this, tokenizationRequest)
 {% endtab %}
 {% endtabs %}
 
-After the tokenization has been completed, listen to `PCIPTokenizationDelegate` . It will notify you about the success, error or cancel state of the processed tokenization.
-
-The `tokenizationId` and additional card meta data are returned in `PCIPTokenizationSuccess`class.
+After the tokenization has been completed, your `PCIPTokenizationDelegate` (iOS) or `PCIPTokenizationListener` (Android) is notified about the success, error or cancel state of the processed tokenization. The `tokenizationId` as well as additional card meta data are returned in `PCIPTokenizationSuccess` class.
 
 ## 4. Obtain tokens
 
