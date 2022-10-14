@@ -6,6 +6,11 @@ description: Timeline of PCI Proxy releases
 
 ## October 2022
 
+#### New API - Vault API
+
+Interact directly with our [Token vault](../collect/vault.md) and tokenize card data or custom values. \
+The Vault API replaces the previous XML Alias Gateway API.&#x20;
+
 #### Mobile SDK - Release version 2.3
 
 * A new cardInfo object containing card meta data will be returned by the [mobile SDKs](../collect/mobile-sdks.md).
