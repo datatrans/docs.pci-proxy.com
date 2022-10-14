@@ -95,6 +95,13 @@ Plain text cvv code
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="custom" %}
+`<= 100`
+
+ characters 
+
+\
+
+
 Custom value of your choice
 {% endswagger-parameter %}
 
