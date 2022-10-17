@@ -23,6 +23,18 @@ Process description of how PCI Proxy Show API works in web applications.&#x20;
 TransactionIDs obtained via Show API allow access to sensitive data. Please do not store them anywhere unless absolutely necessary and consume them as soon as possible.
 {% endhint %}
 
+#### Endpoints
+
+{% tabs %}
+{% tab title="Sandbox" %}
+[https://api.sandbox.datatrans.com](https://api.sandbox.datatrans.com)
+{% endtab %}
+
+{% tab title="Production" %}
+[https://api.datatrans.com](https://api.sandbox.datatrans.com)
+{% endtab %}
+{% endtabs %}
+
 ### 1. Request access
 
 Before you start with the technical integration, you need to request access to the feature. Log into our Dashboard and navigate to the Settings menu in Project settings.&#x20;
