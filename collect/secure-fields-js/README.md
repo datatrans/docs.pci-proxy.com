@@ -300,7 +300,7 @@ Demo Basic: [https://datatrans.github.io/secure-fields-sample/](https://datatran
 Demo with horizontal fields: [https://datatrans.github.io/secure-fields-sample/pciproxy-examples/inline-example.html](https://datatrans.github.io/secure-fields-sample/pciproxy-examples/inline-example.html)\
 Demo with floating labels: [https://datatrans.github.io/secure-fields-sample/pciproxy-examples/floating-label.html](https://datatrans.github.io/secure-fields-sample/pciproxy-examples/floating-label.html)
 
-An example of how to implement this behaviour in modern web applications can be found [here](https://github.com/datatrans/secure-fields-sample/tree/master/react-example)
+An example of how to implement this behaviour in modern web applications can be found [here](https://github.com/datatrans/secure-fields-sample/tree/master/react-example-initTokenize)
 
 {% hint style="warning" %}
 In test mode, only [test credentials](broken-reference) are allowed.
