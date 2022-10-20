@@ -53,7 +53,7 @@ Productive bank information cannot be used in the sandbox.
 
 ## Test 3D Secure Cards
 
-Use the following test card data to simulate 3D Secure v1 and 3D Secure v2 transactions:
+Use the following test card data to simulate **3D Secure v2** transaction. 3D Secure v1 enabled cards are not supported anymore by the card brands since October 2022 and will therefore lead to a decline when still used.&#x20;
 
 {% hint style="warning" %}
 Productive card information cannot be used in the sandbox.
@@ -61,17 +61,14 @@ Productive card information cannot be used in the sandbox.
 
 | Brand                                                                                     | Code  | Number           | CVV  | Scenario                           |
 | ----------------------------------------------------------------------------------------- | ----- | ---------------- | ---- | ---------------------------------- |
-| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard           | `ECA` | 5200000000000080 | 123  | 3D v1 - challenge authenticated    |
 | <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard           | `ECA` | 5100001000000022 | 123  | 3D v2 - challenge authenticated    |
 | <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard           | `ECA` | 5100001000000048 | 123  | 3D v2 - challenge declined         |
 | <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard           | `ECA` | 5100001000000014 | 123  | 3D v2 - frictionless authenticated |
 | <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard           | `ECA` | 5100001000000030 | 123  | 3D v2 - frictionless declined      |
-| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                       | `VIS` | 4900000000000086 | 123  | 3D v1 - challenge authenticated    |
 | <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                       | `VIS` | 4000001000000034 | 123  | 3D v2 - frictionless declined      |
 | <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                       | `VIS` | 4000001000000018 | 123  | 3D v2 - frictionless authenticated |
 | <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                       | `VIS` | 4000001000000042 | 123  | 3D v2 - challenge declined         |
 | <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                       | `VIS` | 4000001000000026 | 123  | 3D v2 - challenge authenticated    |
-| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express | `AMX` | 375000000000007  | 1234 | 3D v1 - challenge authenticated    |
 | <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express | `AMX` | 340000100000024  | 1234 | 3D v2 - challenge authenticated    |
 | <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express | `AMX` | 340000100000040  | 1234 | 3D v2 - challenge declined         |
 | <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express | `AMX` | 340000100000016  | 1234 | 3D v2 - frictionless authenticated |
