@@ -75,8 +75,9 @@ Productive card information cannot be used in the sandbox.
 | <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express | `AMX` | 340000100000032  | 1234 | 3D v2 - frictionless declined      |
 | <img src="../.gitbook/assets/diners.svg" alt="" data-size="line">Diners Club              | `DIN` | 30569309025904   | 123  | 3D v2 - challenge authenticated    |
 | <img src="../.gitbook/assets/discover.svg" alt="" data-size="line">Discover               | `DIS` | 6011000000000004 | 123  | 3D v2 - challenge authenticated    |
+|  <img src="../.gitbook/assets/logo_jcb (1).png" alt="" data-size="line">JCB               | `JCB` | 3550998599961037 | 123  | 3D v2                              |
 
-#### Expiration Date: <a href="#expiration-date" id="expiration-date"></a>
+Expiration Date:
 
 Month: 06 (June)\
 Year: 25 (2025)\
