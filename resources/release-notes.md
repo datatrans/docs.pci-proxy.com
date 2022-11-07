@@ -4,7 +4,26 @@ description: Timeline of PCI Proxy releases
 
 # Release Notes
 
+## November 2022
+
+#### New feature - Network Tokenisation v1
+
+We have released the [PCI Proxy Network Tokenization](../advanced-features/network-tokenization/) solution.&#x20;
+
+#### New payment methods supported - 3D Secure authenticate&#x20;
+
+We have added support for the payment methods `JCB`, `DNK` and `CBL` to our [3D Secure authentication](broken-reference) solution.&#x20;
+
+#### New API - Reverse Vault API
+
+We have added detokenization support to the [Vault API](../use/vault.md).&#x20;
+
 ## October 2022
+
+#### New API - Vault API
+
+Interact directly with our [Token vault](../collect/vault.md) and tokenize card data or custom values. \
+The Vault API replaces the previous XML Alias Gateway API.&#x20;
 
 #### Mobile SDK - Release version 2.3
 

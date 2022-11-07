@@ -207,4 +207,4 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/aliases/tokenize' \
 
 #### Detokenisation
 
-The Vault API also supports detokenisation operations to convert tokens back to the original clear text value. Please contact our team if you are interested in it or have a use-case you want to discuss. &#x20;
+Please refer to the [reverse Vault API](../use/vault.md) if you need to convert sensitive data back to clear text values.&#x20;

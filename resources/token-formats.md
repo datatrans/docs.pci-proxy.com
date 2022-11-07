@@ -21,7 +21,7 @@ The Alias 2.0 is our default token format. All the tokens are unique. When using
 * Possible characters: `A-Z`, `a-z`, `0-9`, `-`, `_`
 * Length: `32`
 * Supported features:
-  * [Network Tokenisation ](../advanced-features/network-tokenization-beta/)
+  * [Network Tokenisation ](../advanced-features/network-tokenization/)
   * [Manage API](../store/manage/)
   * Fingerprint
 
@@ -36,7 +36,7 @@ The Alias 2.0 - Length preserving format inherits all features and functionaliti
 * Possible characters: `A-Z`, `a-z`, `0-9`, `-`, `_`
 * Length: `[12, 19]`, based on underlying card length
 * Supported features:
-  * [Network Tokenisation ](../advanced-features/network-tokenization-beta/)
+  * [Network Tokenisation ](../advanced-features/network-tokenization/)
   * [Manage API](../store/manage/)
   * Fingerprint
 

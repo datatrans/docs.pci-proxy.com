@@ -53,16 +53,22 @@
     * [Initialisation and styling](use/show/web/initialisation-and-styling.md)
     * [Events](use/show/web/events.md)
   * [Native mobile apps](use/show/native-mobile-apps.md)
+* [Vault](use/vault.md)
 
 ## Advanced Features
 
+* [Network Tokenization](advanced-features/network-tokenization/README.md)
+  * [How it works](advanced-features/network-tokenization/how-it-works.md)
+  * [Onboarding & Activation](advanced-features/network-tokenization/onboarding-and-activation.md)
+  * [Network Token provisioning](advanced-features/network-tokenization/network-token-provisioning.md)
+  * [Forward Network Tokens](advanced-features/network-tokenization/forward-network-tokens.md)
+  * [Account Lifecycle management](advanced-features/network-tokenization/account-lifecycle-management.md)
+  * [Testing](advanced-features/network-tokenization/testing.md)
+  * [FAQ & Terminology](advanced-features/network-tokenization/faq-and-terminology.md)
 * [Payment Orchestration](advanced-features/payment-orchestration/README.md)
   * [Supported Acquirers](advanced-features/payment-orchestration/supported-acquirers.md)
   * [Authorize / Settle](advanced-features/payment-orchestration/authorize-settle.md)
   * [Deferred Settlement](advanced-features/payment-orchestration/deferred-settlement.md)
-* [Network Tokenization (beta)](advanced-features/network-tokenization-beta/README.md)
-  * [Process overview](advanced-features/network-tokenization-beta/process-overview.md)
-  * [Terminology](advanced-features/network-tokenization-beta/terminology.md)
 * [Custom Domain](advanced-features/custom-domain.md)
 
 ## Resources
