@@ -59,23 +59,25 @@ Use the following test card data to simulate **3D Secure v2** transaction. 3D Se
 Productive card information cannot be used in the sandbox.
 {% endhint %}
 
-| Brand                                                                                     | Code  | Number           | CVV  | Scenario                           |
-| ----------------------------------------------------------------------------------------- | ----- | ---------------- | ---- | ---------------------------------- |
-| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard           | `ECA` | 5100001000000022 | 123  | 3D v2 - challenge authenticated    |
-| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard           | `ECA` | 5100001000000048 | 123  | 3D v2 - challenge declined         |
-| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard           | `ECA` | 5100001000000014 | 123  | 3D v2 - frictionless authenticated |
-| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard           | `ECA` | 5100001000000030 | 123  | 3D v2 - frictionless declined      |
-| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                       | `VIS` | 4000001000000034 | 123  | 3D v2 - frictionless declined      |
-| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                       | `VIS` | 4000001000000018 | 123  | 3D v2 - frictionless authenticated |
-| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                       | `VIS` | 4000001000000042 | 123  | 3D v2 - challenge declined         |
-| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                       | `VIS` | 4000001000000026 | 123  | 3D v2 - challenge authenticated    |
-| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express | `AMX` | 340000100000024  | 1234 | 3D v2 - challenge authenticated    |
-| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express | `AMX` | 340000100000040  | 1234 | 3D v2 - challenge declined         |
-| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express | `AMX` | 340000100000016  | 1234 | 3D v2 - frictionless authenticated |
-| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express | `AMX` | 340000100000032  | 1234 | 3D v2 - frictionless declined      |
-| <img src="../.gitbook/assets/diners.svg" alt="" data-size="line">Diners Club              | `DIN` | 30569309025904   | 123  | 3D v2 - challenge authenticated    |
-| <img src="../.gitbook/assets/discover.svg" alt="" data-size="line">Discover               | `DIS` | 6011000000000004 | 123  | 3D v2 - challenge authenticated    |
-|  <img src="../.gitbook/assets/logo_jcb (1).png" alt="" data-size="line">JCB               | `JCB` | 3550998599961037 | 123  | 3D v2                              |
+| Brand                                                                                      | Code  | Number           | CVV  | Scenario                            |
+| ------------------------------------------------------------------------------------------ | ----- | ---------------- | ---- | ----------------------------------- |
+| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard            | `ECA` | 5100001000000022 | 123  | 3DS v2 - challenge authenticated    |
+| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard            | `ECA` | 5100001000000048 | 123  | 3DS v2 - challenge declined         |
+| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard            | `ECA` | 5100001000000014 | 123  | 3DS v2 - frictionless authenticated |
+| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard            | `ECA` | 5100001000000030 | 123  | 3DS v2 - frictionless declined      |
+| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                        | `VIS` | 4000001000000034 | 123  | 3DS v2 - frictionless declined      |
+| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                        | `VIS` | 4000001000000018 | 123  | 3DS v2 - frictionless authenticated |
+| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                        | `VIS` | 4000001000000042 | 123  | 3DS v2 - challenge declined         |
+| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                        | `VIS` | 4000001000000026 | 123  | 3DS v2 - challenge authenticated    |
+| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express  | `AMX` | 340000100000024  | 1234 | 3DS v2 - challenge authenticated    |
+| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express  | `AMX` | 340000100000040  | 1234 | 3DS v2 - challenge declined         |
+| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express  | `AMX` | 340000100000016  | 1234 | 3DS v2 - frictionless authenticated |
+| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express  | `AMX` | 340000100000032  | 1234 | 3DS v2 - frictionless declined      |
+| <img src="../.gitbook/assets/diners.svg" alt="" data-size="line">Diners Club               | `DIN` | 30569309025904   | 123  | 3DS v2 - challenge                  |
+| <img src="../.gitbook/assets/discover.svg" alt="" data-size="line">Discover                | `DIS` | 6011000000000004 | 123  | 3DS v2 - challenge                  |
+|  <img src="../.gitbook/assets/logo_jcb (1).png" alt="" data-size="line">JCB                | `JCB` | 3550998599961037 | 123  | 3DS v2                              |
+| <img src="../.gitbook/assets/carte bancaire.svg" alt="" data-size="line"> Cartes Bancaires | `VIS` | 4035501000000008 | 123  | 3DS v2 - challenge                  |
+| <img src="../.gitbook/assets/carte bancaire.svg" alt="" data-size="line"> Cartes Bancaires | `VIS` | 4360000001000005 | 123  | 3DS v2 - frictionless authenticated |
 
 Expiration Date:
 
