@@ -78,6 +78,8 @@ Productive card information cannot be used in the sandbox.
 |  <img src="../.gitbook/assets/logo_jcb (1).png" alt="" data-size="line">JCB                | `JCB` | 3550998599961037 | 123  | 3DS v2                              |
 | <img src="../.gitbook/assets/carte bancaire.svg" alt="" data-size="line"> Cartes Bancaires | `VIS` | 4035501000000008 | 123  | 3DS v2 - challenge                  |
 | <img src="../.gitbook/assets/carte bancaire.svg" alt="" data-size="line"> Cartes Bancaires | `VIS` | 4360000001000005 | 123  | 3DS v2 - frictionless authenticated |
+| <img src="../.gitbook/assets/Dankort.png" alt="" data-size="line"> Dankort                 | DNK   | 5019717010103742 | 123  | 3DS v2 - frictionless authenticated |
+| <img src="../.gitbook/assets/Dankort.png" alt="" data-size="line"> Dankort                 | DNK   | 5019555544445555 | 123  | 3DS v2 - challenge                  |
 
 Expiration Date:
 
