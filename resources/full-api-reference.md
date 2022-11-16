@@ -72,6 +72,10 @@ PCI Proxy forwards the following HTTP headers to your endpoint:&#x20;
 
 ### Special Error Cases
 
+{% hint style="danger" %}
+In case of XML requests/response bodies, the charset must be specified in the Content type header, to be able to know it before actually reading the body. If not specified, PCI Proxy defaults to ISO-885901.
+{% endhint %}
+
 If PCI Proxy is able to parse and correctly match the replacement targets, but an error occurs during the tokenization or detokenization, the match will be replaced with the following possible constants (length 16):
 
 | Possible Constants | (X-CC-ERROR)                             | Description                                                                                         |
