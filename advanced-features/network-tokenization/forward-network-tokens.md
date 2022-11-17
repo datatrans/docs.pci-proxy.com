@@ -27,7 +27,7 @@ Open the setting of the integrations to review the payloads mentioned.&#x20;
 If there's no Network Token payload visible on the integration, please Request a new Integration with the button in the top right corner. Or alternatively reach out directly to our team and submit the required information.&#x20;
 {% endhint %}
 
-3\. In the next step, prepare your request according what the target is expecting and send it to the [Filter Proxy](../../use/forward-proxy/). Below is one curl example which converts from a PCI Proxy token to a Network Token and one which converts to PANs.
+3\. In the next step, prepare your request according what the target is expecting and send it to the [Forward API](../../use/forward-proxy/). Below is one curl example which converts from a PCI Proxy token to a Network Token and one which converts to PANs.
 
 {% tabs %}
 {% tab title="Converts to Network Token" %}

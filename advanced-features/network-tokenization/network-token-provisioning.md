@@ -19,8 +19,8 @@ When the scheme onboarding is completed and your account is activated for Networ
 * [SecureFields](../../collect/secure-fields-js/)
 * [Mobile SDKs](../../collect/mobile-sdks.md)
 * [3D SecureFields](../../authenticate/3d-secure-fields-js/)
-* [Vault API](../../collect/vault.md)&#x20;
 * [Filter Proxy](../../collect/filter-proxy/) (under development - coming soon)
+* Standalone API (under development - coming soon)
 
 As soon as a credit card number hits one of the above mentioned APIs we create a Network Token and the corresponding Cryptogram in the background. We map the Network Token and the meta data (cryptogram, expiry date and eci value) to the PCI Proxy token which is returned to your servers.&#x20;
 
