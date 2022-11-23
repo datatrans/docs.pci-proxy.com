@@ -112,6 +112,10 @@ TransactionRegistry.INSTANCE.startTokenizationRequest(this, tokenizationRequest)
 
 After the tokenization has been completed, your `PCIPTokenizationDelegate` (iOS) or `PCIPTokenizationListener` (Android) is notified about the success, error or cancel state of the processed tokenization. The `tokenizationId` as well as additional card meta data are returned in `PCIPTokenizationSuccess` class.
 
+{% hint style="info" %}
+It is possible to only collect the CVV code of a card. Please check`init(merchantId:cvvOnlyCard:)` for iOS and `PCIPTokenization(merchantId: String, cvvOnlyCard: CvvOnlyCard)` for Android in the respective API reference to learn more.&#x20;
+{% endhint %}
+
 ## 4. Obtain tokens
 
 To obtain the tokenized values, you first need to submit the `tokenizationId` returned by the SDK to your server.&#x20;

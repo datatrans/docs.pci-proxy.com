@@ -18,6 +18,12 @@ We have added support for the payment methods `JCB`, `DNK` and `CBL` to our [3D 
 
 We have added detokenization support to the [Vault API](../use/vault.md).&#x20;
 
+**Mobile SDK - Release version 2.4**
+
+The [mobile SDK](../collect/mobile-sdks.md) implementation is now supporting to only tokenize the CVV code.&#x20;
+
+Please refer to our dedicated [Android](https://github.com/datatrans/android-sdk/releases/) and [iOS](https://github.com/datatrans/ios-sdk/releases/) release notes for more details.&#x20;
+
 ## October 2022
 
 #### New API - Vault API
