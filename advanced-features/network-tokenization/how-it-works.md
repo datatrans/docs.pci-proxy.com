@@ -4,6 +4,8 @@ description: Learn how to use the PCI Proxy Network Token solution
 
 # How it works
 
+PCI Proxy's approach is an inbuilt Network Tokenization solution which works out of the box for all merchants when activated. It allows you to keep existing PCI Proxy integrations and saves you months of implementation work.&#x20;
+
 Follow this step-by-step guide to understand how to setup your account for the PCI Proxy Network Tokenization solution, create Network Tokens and how to forward them to receivers of your choice.&#x20;
 
 1. [Get an overview about the end-to-end process flow](how-it-works.md#high-level-process-flow-diagram)
