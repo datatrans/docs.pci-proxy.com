@@ -40,7 +40,7 @@ The graph below shows a high level end-to-end process flow from creating Network
 3. If a Network Token is returned by the schemes we are mapping it to the PCI Proxy token
 4. PCI Proxy token is returned to your servers
 5. Call the Alias status API to check if a Network Token has been created or check if an expiry date has changed
-6. Forward the PCI Proxy token to the Filter API and specify the payload according what the receiver is expecting
+6. Forward the PCI Proxy token to the Forward API and specify the payload according what the receiver is expecting
 7. Depending on the submitted payload, PCI Proxy decides whether to convert the PCI Proxy token to a PAN or a Network Token. In case of a Network Token PCI Proxy requests a new cryptogram at the schemes and populates the request with it.&#x20;
 8. Request is forwarded to the receiver for further processing
 
