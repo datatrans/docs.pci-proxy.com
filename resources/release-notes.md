@@ -4,6 +4,12 @@ description: Timeline of PCI Proxy releases
 
 # Release Notes
 
+## December 2022
+
+**New integration method - Tokenisation Link**
+
+Collect and tokenise sensitive card data with our new [Tokenisation Link](../collect/tokenisation-link/) integration.&#x20;
+
 ## November 2022
 
 #### New feature - Network Tokenisation v1
@@ -43,6 +49,8 @@ Please refer to our dedicated [Android](https://github.com/datatrans/android-sdk
 #### New token format - Alias 2.0 length preserving&#x20;
 
 A new length preserving alias format has been introduced. [Here](token-formats.md) you find all available token formats.&#x20;
+
+
 
 ## August 2022
 

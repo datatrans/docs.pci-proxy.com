@@ -4,6 +4,18 @@ The <mark style="color:blue;">**Document Vault**</mark> allows your customers to
 
 To get started, please follow the step-by-step guide below.
 
+#### Endpoints
+
+{% tabs %}
+{% tab title="Sandbox" %}
+[https://api.vault.sandbox.pci-proxy.com](https://api.link.sandbox.pci-proxy.com)
+{% endtab %}
+
+{% tab title="Production" %}
+[https://api.vault.pci-proxy.com](https://api.link.sandbox.pci-proxy.com)
+{% endtab %}
+{% endtabs %}
+
 ## 1. Request upload link
 
 To start, call our Request API from your server to create an upload link.

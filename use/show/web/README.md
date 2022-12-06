@@ -35,6 +35,18 @@ TransactionIDs obtained via Show API allow access to sensitive data. Please do n
 {% endtab %}
 {% endtabs %}
 
+#### Endpoints
+
+{% tabs %}
+{% tab title="Sandbox" %}
+[https://api.sandbox.datatrans.com](https://api.sandbox.datatrans.com)
+{% endtab %}
+
+{% tab title="Production" %}
+[https://api.datatrans.com](https://api.sandbox.datatrans.com)
+{% endtab %}
+{% endtabs %}
+
 ### 1. Request access
 
 Before you start with the technical integration, you need to request access to the feature. Log into our Dashboard and navigate to the Settings menu in Project settings.&#x20;
