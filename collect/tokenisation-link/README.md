@@ -263,7 +263,7 @@ Your PCI Proxy
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="path" required="true" %}
+{% swagger-parameter in="path" required="true" name="id" %}
 Tokenisation Link 
 
 `id`
@@ -419,7 +419,7 @@ Delete a Tokenisation Link. It can not be reactivated anymore.&#x20;
 
 {% endswagger-description %}
 
-{% swagger-parameter in="path" required="true" %}
+{% swagger-parameter in="path" required="true" name="id" %}
 Tokenisation Link 
 
 `id`
