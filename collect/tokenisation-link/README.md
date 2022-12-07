@@ -125,7 +125,7 @@ Object to submit Amex 3D acquiring data
 {% tabs %}
 {% tab title="Request" %}
 ```javascript
-curl --location --request POST 'https://link.sandbox.pci-proxy.com/77AC96tGxyKz3YjxUNypHF'
+curl --location --request POST 'https://api.link.sandbox.pci-proxy.com/v1/links'
 --header 'pci-proxy-api-key: {API Key}' \
 --header 'content-type: application/json' \
 --data-raw '{
@@ -152,7 +152,7 @@ curl --location --request POST 'https://link.sandbox.pci-proxy.com/77AC96tGxyKz3
 
 {% tab title="Request w/3D" %}
 ```javascript
-curl --location --request POST 'https://link.sandbox.pci-proxy.com/77AC96tGxyKz3YjxUNypHF'
+curl --location --request POST 'https://api.link.sandbox.pci-proxy.com/v1/links'
 --header 'Content-Type: application/json' \
 --header 'pci-proxy-api-key: {API Key}' \
 --data-raw '{
@@ -323,7 +323,7 @@ application/json; charset=UTF-8
 {% tabs %}
 {% tab title="Request" %}
 ```javascript
-curl --location --request GET 'https://link.sandbox.pci-proxy.com/77AC96tGxyKz3YjxUNypHF'
+curl --location --request GET 'https://api.link.sandbox.pci-proxy.com/v1/links/{id}'
 --header 'Content-Type: application/json'
 --header 'pci-proxy-api-key: {API Key}'
 ```
