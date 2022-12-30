@@ -190,7 +190,7 @@ Refer to the official EMVCo 3D specification 2.1.0 for parameter requirements se
 ```javascript
 curl -X POST \
   https://api.sandbox.datatrans.com/v1/transactions \
-  -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT,Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
+  -H 'Authorization: Basic MTEwMDAxNzY3NTpTejdodE5uSjdNM05YQ0lT' \
   -d '{
     "amount": 1000,
     "currency": "EUR",
