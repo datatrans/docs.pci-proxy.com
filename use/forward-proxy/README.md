@@ -25,7 +25,7 @@ Using Receivers not already listed in the Dashboard [Integrations](../../resourc
 {% endhint %}
 
 {% hint style="warning" %}
-Please note the allowed TCP ports for endpoints:
+Please note the allowed TCP ports for HTTP endpoints:
 
 **Sandbox** Port`80`and`443`
 
