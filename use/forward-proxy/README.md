@@ -23,3 +23,11 @@ PCI Proxy supports various communication methods to forward sensitive card data 
 {% hint style="success" %}
 Using Receivers not already listed in the Dashboard [Integrations](../../resources/pci-proxy-dashboard/add-integrations.md) overview must be PCI DSS compliant. Thus, a valid AOC is required to configure a new requested 3rd party that receives sensitive credit card data. Please refer to [PCI DSS Validation](../../resources/pci-dss-validation.md) for more details.
 {% endhint %}
+
+{% hint style="warning" %}
+Please note the allowed TCP ports for endpoints:
+
+**Sandbox** Port`80`and`443`
+
+**Production** Port`443`
+{% endhint %}
