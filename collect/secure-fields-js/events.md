@@ -8,7 +8,7 @@ The ready event will be emitted once the iframes are loaded.
 
 ```javascript
 secureFields.on("ready", function() { 
- // setting a placholder for the cardNumber field
+ // setting a placeholder for the cardNumber field
  secureFields.setPlaceholder("cardNumber", "Card number");
 
  // setting a placeholder for the CVV field
@@ -94,7 +94,7 @@ Where the `event` callback object has the following structure:
 
 ****
 
-**Browser autofill**
+#### **Browser autofill**
 
 Events of type `autocomplete` are triggered if a user makes use of their browser's integrated credit card autofill feature which typically provides expiry month and year alongside credit card number and cvv. While you should never come in touch with the latter, expiry data can be captured and filled into form fields located on merchant side in order to lower friction for the user during the payment process.
 
