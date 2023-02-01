@@ -117,7 +117,7 @@ An
 {% tab title="Request" %}
 ```json
 curl -L -X POST 'https://api.sandbox.datatrans.com/v1/aliases/detokenize' \
--H 'Authorization: {merchantId}:{password}' \
+-H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr' \
 -H 'Content-Type: application/json' \
 --data-raw '{
     "requests": [
@@ -165,7 +165,7 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/aliases/detokenize' \
 {% endtab %}
 {% endtabs %}
 
-
+This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../resources/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information.
 
 {% hint style="info" %}
 CVV aliases have a limited lifespan of 30 minutes and can't be detokenized anymore when expired.&#x20;

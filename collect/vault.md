@@ -152,7 +152,7 @@ Custom value of your choice
 {% tab title="Request" %}
 ```json
 curl -L -X POST 'https://api.sandbox.datatrans.com/v1/aliases/tokenize' \
--H 'Authorization: {merchantId}:{password}' \
+-H 'Authorization: Basic MTEwMDAxNzc4OTpNQUd6UUVEbkVxd001d0Vr' \
 -H 'Content-Type: application/json' \
 --data-raw '{
     "requests": [
@@ -204,6 +204,8 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/aliases/tokenize' \
 ```
 {% endtab %}
 {% endtabs %}
+
+This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../resources/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information.
 
 #### Detokenisation
 
