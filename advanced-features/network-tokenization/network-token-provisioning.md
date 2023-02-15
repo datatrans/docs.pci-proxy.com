@@ -31,7 +31,9 @@ To check whether a Network Token has been provisioned or not, please use use the
 Mapping the Network Token to the PCI Proxy token allows you to continue with all the existing PCI Proxy processes without changing your code whilst not extending your PCI scope.&#x20;
 
 {% hint style="danger" %}
-We do not return the Network Token nor the Cryptogram. They are being considered as sensitive payment information according PCI DSS and would extend your PCI scope significantly when storing or processing them together in your environment.&#x20;
+By default, we do not return the Network Token nor the Cryptogram. They are being considered as sensitive payment information according PCI DSS and would extend your PCI scope significantly when storing or processing them together in your environment. \
+\
+Contact us if you need to receive Network Tokens directly.&#x20;
 {% endhint %}
 
 Although the final goal of Network Tokenization is to remove plain text card numbers completely, PCI Proxy will still store the underlying PAN behind the PCI Proxy token for a certain transition period. This allows us to provide a fallback solution when Network Tokens can't be used as not all parties in the payment eco system are already accepting them. By keeping the PAN on our secure servers, we allow merchants to continue forwarding PANs to third party receivers who are not yet able to consume Network Tokens or if the Issuing bank is not yet supporting Network Tokens.&#x20;
