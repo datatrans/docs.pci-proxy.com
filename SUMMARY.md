@@ -35,11 +35,11 @@
 
 * [Manage](store/manage/README.md)
   * [Status](store/manage/status.md)
-  * [Convert](store/manage/convert.md)
+  * [Patch](store/manage/patch.md)
   * [Delete](store/manage/delete.md)
   * [Check](store/manage/check.md)
-  * [Update](store/manage/update.md)
-  * [Blacklist](store/manage/blacklist.md)
+  * [Convert](store/manage/convert.md)
+  * [Block](store/manage/block.md)
 
 ## USE
 

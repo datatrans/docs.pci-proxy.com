@@ -45,7 +45,7 @@ Please also ensure your account is activated and configured for 3D authenticatio
 Create a new tokenisation link and optionally submit 3D acquiring data. 
 {% endswagger-description %}
 
-{% swagger-parameter in="header" name="pci-proxy-api-key" required="true" %}
+{% swagger-parameter in="header" name="pci-proxy-api-key" required="true" type="string" %}
 Your PCI Proxy 
 
 [API Key](../../resources/pci-proxy-dashboard/api-authentication-data.md)
@@ -53,19 +53,19 @@ Your PCI Proxy
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Content-Type" required="true" %}
+{% swagger-parameter in="header" name="Content-Type" required="true" type="string" %}
 application/json; charset=UTF-8
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="reference" required="true" %}
+{% swagger-parameter in="body" name="reference" required="true" type="string" %}
 Unique reference number to identify your request. [ 1 .. 100 ] characters
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="successUrl" %}
+{% swagger-parameter in="body" name="successUrl" type="string" %}
 URL where the user will be redirected if the tokenisation was successful. If omitted a pre built success page is displayed. 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="webhookEndpoint" %}
+{% swagger-parameter in="body" name="webhookEndpoint" type="string" %}
 Webhook URL which will be called if the tokenisation was successful. 
 {% endswagger-parameter %}
 
@@ -77,7 +77,7 @@ Use this object to submit up to 6 additional parameters. They will be displayed 
 Transaction amount in the currency's smallest unit. For example use 1000 for EUR 10.00
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="currency" %}
+{% swagger-parameter in="body" name="currency" type="string" %}
 3 letter ISO-4217 character. For example 
 
 `EUR`
@@ -255,7 +255,7 @@ A Tokenisation Link can have the following status:&#x20;
 Check the status of a Link tokenization
 {% endswagger-description %}
 
-{% swagger-parameter in="header" required="true" name="pci-proxy-api-key" %}
+{% swagger-parameter in="header" required="true" name="pci-proxy-api-key" type="string" %}
 Your PCI Proxy 
 
 [API Key](../../resources/pci-proxy-dashboard/api-authentication-data.md)
@@ -263,7 +263,7 @@ Your PCI Proxy
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="path" required="true" name="id" %}
+{% swagger-parameter in="path" required="true" name="id" type="string" %}
 Tokenisation Link 
 
 `id`
@@ -275,7 +275,7 @@ Tokenisation Link
    
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Content-Type" required="true" %}
+{% swagger-parameter in="header" name="Content-Type" required="true" type="string" %}
 application/json; charset=UTF-8
 {% endswagger-parameter %}
 
@@ -419,7 +419,7 @@ Delete a Tokenisation Link. It can not be reactivated anymore.&#x20;
 
 {% endswagger-description %}
 
-{% swagger-parameter in="path" required="true" name="id" %}
+{% swagger-parameter in="path" required="true" name="id" type="string" %}
 Tokenisation Link 
 
 `id`
@@ -429,7 +429,7 @@ Tokenisation Link
 `/v1/links`
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" required="true" name="pci-proxy-api-key" %}
+{% swagger-parameter in="header" required="true" name="pci-proxy-api-key" type="string" %}
 Your PCI Proxy 
 
 [API Key](../../resources/pci-proxy-dashboard/api-authentication-data.md)
@@ -437,7 +437,7 @@ Your PCI Proxy
 
 {% endswagger-parameter %}
 
-{% swagger-parameter in="header" name="Content-Type" required="true" %}
+{% swagger-parameter in="header" name="Content-Type" required="true" type="string" %}
 application/json; charset=UTF-8
 {% endswagger-parameter %}
 

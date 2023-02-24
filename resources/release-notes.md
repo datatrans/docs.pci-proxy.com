@@ -4,6 +4,12 @@ description: Timeline of PCI Proxy releases
 
 # Release Notes
 
+## February 2023
+
+#### New Alias manage API - PATCH Alias
+
+Update an existing alias with the expiry date or remove the underlying PAN from your vault with the [PATCH Alias endpoint](../store/manage/patch.md).&#x20;
+
 ## December 2022
 
 **New integration method - Tokenisation Link**
@@ -49,8 +55,6 @@ Please refer to our dedicated [Android](https://github.com/datatrans/android-sdk
 #### New token format - Alias 2.0 length preserving&#x20;
 
 A new length preserving alias format has been introduced. [Here](token-formats.md) you find all available token formats.&#x20;
-
-
 
 ## August 2022
 

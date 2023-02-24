@@ -7,8 +7,8 @@ description: Everything about testing Network Tokenisation
 ### To get started with testing
 
 * [ ] Activate your account for Network Tokens
-* [ ] Request test credentials form our team
-* [ ] Make sure your the receiver integration is able to consume Network Tokens
+* [ ] Request test credentials from our team
+* [ ] Make sure the receiver integration is able to consume Network Tokens
 * [ ] Complete the [test cases](testing.md#test-cases)
 
 ### Test credentials

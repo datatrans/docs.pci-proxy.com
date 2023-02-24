@@ -1,7 +1,7 @@
 ---
 description: >-
   Request detailed information about an alias such as creation date, fingerprint
-  or cardinfo.
+  or card meta data.
 ---
 
 # Status
@@ -92,7 +92,7 @@ curl -L -X GET 'https://api.sandbox.datatrans.com/v1/aliases/AAABeM8amw3ssdexyrA
 {% endtabs %}
 
 {% hint style="danger" %}
-Please note that the STATUS API is only working with the latest [Alias 2.0 format](../../resources/token-formats.md#alias-2.0). \
+Please note that the Status API is only working with the two latest [Alias 2.0 format](../../resources/token-formats.md#alias-2.0). \
 Reach out to your PCI Proxy contact if you are not sure which alias format you are using.
 {% endhint %}
 

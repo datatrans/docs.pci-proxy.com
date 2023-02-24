@@ -30,6 +30,10 @@ As of November 2022, PCI Proxy is a certified Token Requestor for `VISA VTS` and
 
 Use the [Tokenization API](../../collect/secure-fields-js/#4.-obtain-the-tokens) (if you have a transactionID) or the [Alias Status API](account-lifecycle-management.md#alias-status-api) (if you have a PCI Proxy alias) and look for the `tokenInfo` object if you are not sure if a Network Token has been provisioned.&#x20;
 
+**Can we remove a PAN from the PCI Proxy Vault if a Network Token has been created?**&#x20;
+
+Yes - to remove a PAN mapped to an alias you can make use of the [Alias PATCH API.](../../store/manage/patch.md) Make sure a Network Token has been provisioned before you remove the underlying PAN by calling the [Alias Status API](../../store/manage/status.md).&#x20;
+
 **Do Network Tokens provide any liability shift?**
 
 No - in case you want to shift the liability to the issuer, strong customer authentication is still required. We recommend to use the [3D-Secure APIs](../../authenticate/overview.md) to authenticate cardholders.&#x20;
