@@ -43,6 +43,7 @@ secureFields.initTokenize(
          cvv: "cvvPlaceholder",
      },{            
          styles: styles,
+         debug: true,
          focus: "cardNumber" // or secureFields.focus("cardNumber");
      }
  );
