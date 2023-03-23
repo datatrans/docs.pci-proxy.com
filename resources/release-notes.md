@@ -8,11 +8,9 @@ description: Timeline of PCI Proxy releases
 
 **Mobile SDK - Release version 2.7**
 
-The [mobile SDK](../collect/mobile-sdks.md) implementation is now returning the expiry date of card directly to the SDK.&#x20;
+The [mobile SDK](../collect/mobile-sdks.md) implementation is now returning the expiry date of a card directly to the SDK.&#x20;
 
 Please refer to our dedicated [Android](https://github.com/datatrans/android-sdk/releases/) and [iOS](https://github.com/datatrans/ios-sdk/releases/) release notes for more details.&#x20;
-
-
 
 ## February 2023
 
