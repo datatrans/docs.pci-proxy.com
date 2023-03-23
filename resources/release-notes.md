@@ -4,6 +4,18 @@ description: Timeline of PCI Proxy releases
 
 # Release Notes
 
+## March 2023
+
+**Mobile SDK - Release version 2.7**
+
+The [mobile SDK](../collect/mobile-sdks.md) implementation is now returning the expiry date of card directly to the SDK.&#x20;
+
+Please refer to our dedicated [Android](https://github.com/datatrans/android-sdk/releases/) and [iOS](https://github.com/datatrans/ios-sdk/releases/) release notes for more details.&#x20;
+
+#### New Alias manage API - PATCH Alias
+
+Update an existing alias with the expiry date or remove the underlying PAN from your vault with the [PATCH Alias endpoint](../store/manage/patch.md).&#x20;
+
 ## February 2023
 
 #### New Alias manage API - PATCH Alias
