@@ -1,10 +1,12 @@
 ---
-description: Server-to-Server API to create tokens for PAN, CVV codes or custom values.
+description: >-
+  Server-to-Server API to create tokens or Network Tokens for PAN, CVV codes and
+  custom values.
 ---
 
 # Vault
 
-The Vault API allows you to directly interact with the PCI Proxy tokenisation vault. Simply pass your data directly from your server to the Vault endpoint to replace them with tokens. The API supports single as well as bulk tokenisation for credit card numbers, cvv codes and custom values.&#x20;
+The Vault API allows you to interact with the PCI Proxy tokenisation vault. Simply pass your data directly from your server to the Vault endpoint to replace them with tokens. The API supports single as well as bulk tokenisation for credit card numbers, cvv codes and custom values. The Vault API can also be used to create [Network Tokens](../advanced-features/network-tokenization/) directly from your server.&#x20;
 
 Please consider the following constraints when using the Vault API:&#x20;
 
@@ -207,6 +209,72 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/aliases/tokenize' \
 
 This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../resources/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information.
 
-#### Detokenisation
+### **Network Tokens**
+
+In case your merchantID is activated for Network Tokenisation, use the credit card alias returned by the Vault API and make an Alias status call to create a new Network Token. The Network Token will be mapped to the PCI Proxy alias.
+
+**Alias Status API**
+
+{% swagger method="get" path="/v1/aliases/{alias}" baseUrl="https://api.sandbox.datatrans.com" summary="Create a Network Token" %}
+{% swagger-description %}
+
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authorization" required="true" %}
+Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
+
+
+{% endswagger-parameter %}
+
+{% swagger-parameter in="header" required="true" name="Content-Type" %}
+application/json; charset=UTF-8
+{% endswagger-parameter %}
+
+{% swagger-parameter in="path" name="alias" required="true" %}
+PCI Proxy alias
+{% endswagger-parameter %}
+
+{% swagger-response status="200: OK" description="Status successfully returned" %}
+```json
+{
+    "alias": "7LHXscqwAAEAAAGEFDW3rEmNoLVdAAZE",
+    "fingerprint": "F-fgxnFwN-gsIw7y80T-kpBB",
+    "type": "CARD",
+    "masked": "489537xxxxxx6287",
+    "dateCreated": "2022-10-26T12:13:00Z",
+    "card": {
+        "expiryMonth": "02",
+        "expiryYear": "23",
+        "cardInfo": {
+            "brand": "VISA",
+            "type": "debit",
+            "usage": "consumer",
+            "country": "US",
+            "issuer": "U.S. REGION"
+        },
+        "tokenInfo": {
+            "expiryMonth": "02",
+            "expiryYear": "23"
+        }
+    }
+}
+```
+{% endswagger-response %}
+
+{% swagger-response status="400: Bad Request" description="Invalid request" %}
+```json
+{
+  "error": {
+    "code": "ALIAS_NOT_FOUND"
+  }
+```
+{% endswagger-response %}
+{% endswagger %}
+
+{% hint style="info" %}
+Check the response and look if the `tokenInfo` object is available in the response. It tells you whether we have been able to create a Network Token or not.&#x20;
+{% endhint %}
+
+### Detokenisation
 
 Please refer to the [reverse Vault API](../use/vault.md) if you need to convert sensitive data back to clear text values.&#x20;

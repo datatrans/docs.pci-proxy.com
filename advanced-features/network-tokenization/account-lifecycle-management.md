@@ -6,7 +6,7 @@ description: Keep your PCI Proxy token up to date
 
 In general, PCI Proxy ensures that your token is always up to date if a Network Token has been provisioned for the underlying card number. That means, you don't need to worry about declined authorisations due to expired card credentials anymore. We automatically update the PCI Proxy/Network Token if anything changes on the underlying card number. \
 \
-If you instead working with the PAN because your receiver can't consume Network Tokens, you can still benefit out of the Network Tokenization solution. For example check if the expiry date has changed - simply call the Alias Status API to access the latest PAN expiry date.&#x20;
+If you instead work with the PAN because your receiver does not support Network Tokens, you can still benefit out of the Network Tokenization solution. For example check if the expiry date has changed - simply call the Alias Status API to access the latest PAN expiry date.&#x20;
 
 #### Alias Status API
 

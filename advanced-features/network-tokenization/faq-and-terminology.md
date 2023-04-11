@@ -20,11 +20,19 @@
 
 ### FAQ
 
-
-
 **Which card brands are supported?**&#x20;
 
 As of November 2022, PCI Proxy is a certified Token Requestor for `VISA VTS` and `MasterCard MDES`. `AMEX AETS` is planned for mid of 2023. For any other brand please contact our team.&#x20;
+
+**Which PCI Proxy integrations are supporting Network Tokenisation?**
+
+Once your account is activated, PCI Proxy provides in-built Network Tokenisation provisioning support for the following integration methods:
+
+* [SecureFields](../../collect/secure-fields-js/)
+* [Mobile SDKs](../../collect/mobile-sdks.md)
+* [3D SecureFields](../../authenticate/3d-secure-fields-js/)
+* [Standalone API](../../collect/vault.md)
+* [Deferred Network Token creation ](../../store/manage/patch.md)
 
 #### How do I know if a Network Token has been provisioned successfully?&#x20;
 

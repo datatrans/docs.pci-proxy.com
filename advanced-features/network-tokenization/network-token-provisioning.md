@@ -19,7 +19,7 @@ When the scheme onboarding is completed and your account is activated for Networ
 * [SecureFields](../../collect/secure-fields-js/)
 * [Mobile SDKs](../../collect/mobile-sdks.md)
 * [3D SecureFields](../../authenticate/3d-secure-fields-js/)
-* [Vault API](../../collect/vault.md)&#x20;
+* [Standalone API](../../collect/vault.md)
 * [Filter Proxy](../../collect/filter-proxy/) (under development - coming soon)
 * [Deferred Network Token creation ](../../store/manage/patch.md)
 
