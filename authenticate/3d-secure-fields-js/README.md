@@ -270,7 +270,7 @@ secureFields.on("success", function(data) {
 
 The `success` event returns a `redirect` attribute which contains the 3D URL if a challenge is required. Redirect the cardholder to this URL to trigger the 3D authentication process.&#x20;
 
-Once the cardholder completed the 3D process, the browser will be redirected to the `returnUrl` passed to the `/v1/transactions/secureFields` API, with a POST request containing the variables `upptransactionId` and `status_3d` .
+Once the cardholder completed the 3D process, the browser will be redirected to the `returnUrl` passed to the `/v1/transactions/secureFields` API, with a POST request containing the variables `uppTransactionId` and `status_3d` .
 
 ## Step 6: Obtain 3D parameters and tokens
 
