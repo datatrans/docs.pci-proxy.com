@@ -7,7 +7,7 @@ description: Token format overview
 {% hint style="warning" %}
 Although all formats are supported and compliant according to PCI DSS we highly recommend using the`Alias 2.0` format to run certain operations and obtain the maximum of security. \
 \
-Please refer to [Convert API](broken-reference) if you want to migrate from a legacy to the new format.&#x20;
+Please refer to [Convert API](../store/manage/convert.md) if you want to migrate from a legacy to the new format.&#x20;
 {% endhint %}
 
 ## Alias 2.0
