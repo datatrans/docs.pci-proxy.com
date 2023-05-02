@@ -4,6 +4,12 @@ description: Timeline of PCI Proxy releases
 
 # Release Notes
 
+## April 2023
+
+#### New Status page
+
+We have migrated from our internal alerting and monitoring system to a public Status page. Subscribe and check [https://status.pci-proxy.com](https://status.pci-proxy.com/) to see if our APIs are operational.&#x20;
+
 ## March 2023
 
 **Mobile SDK - Release version 2.7**
@@ -100,7 +106,7 @@ We have released the [Document Vault](../collect/document-vault/) - a new tool t
 
 **New TOKEN endpoint**
 
-The `GET TOKEN` endpoint has been replaced with a new [TOKEN API](../collect/secure-fields-js/#4.-obtain-the-tokens). ****&#x20;
+The `GET TOKEN` endpoint has been replaced with a new [TOKEN API](../collect/secure-fields-js/#4.-obtain-the-tokens).&#x20;
 
 **Idempotency**
 
