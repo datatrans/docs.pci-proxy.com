@@ -8,7 +8,7 @@ description: Timeline of PCI Proxy releases
 
 #### New Status page
 
-We have migrated from our internal alerting and monitoring system to a public Status page. Subscribe and check [https://status.pci-proxy.com](https://status.pci-proxy.com/) to see if our APIs are operational.&#x20;
+We have migrated from our internal alerting system to a public Status page. Subscribe and check [https://status.pci-proxy.com](https://status.pci-proxy.com/) to see if our APIs are operational.&#x20;
 
 ## March 2023
 
