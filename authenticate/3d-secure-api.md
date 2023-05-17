@@ -4,11 +4,11 @@
 
 ## Before you start
 
-1. ****[**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
+1. [**Sign up**](https://dashboard.pci-proxy.com/signup) for a free PCI Proxy sandbox account.
 
 {% hint style="info" %}
 * This service requires basic authentication. Please refer to [Authentication](../resources/pci-proxy-dashboard/api-authentication-data.md) to retrieve the required credentials.&#x20;
-* Make sure to use our 3D Secure enabled test credit cards [here](broken-reference).
+* Make sure to use our 3D Secure enabled test credit cards [here](../resources/test-credentials.md#test-3d-secure-cards).
 {% endhint %}
 
 {% hint style="warning" %}
