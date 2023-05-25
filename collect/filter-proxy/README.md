@@ -34,10 +34,32 @@ PCI Proxy supports two different filter methods [`/v1/pull`](broken-reference) a
 
 Collecting card data from a partner via APIs can work in two ways. In general, either you perform a pull request to receive card data from your partner or a partner starts a push request to send you card data. PCI Proxy can extract sensitive data in both operations.
 
-* ****[**/v1/pull**](broken-reference) - You start the request.
+* [**/v1/pull**](broken-reference) - You start the request.
 
 ![](<../../.gitbook/assets/pull request.svg>)
 
-* ****[**/v1/push**](broken-reference) - Your partner starts the request.
+* [**/v1/push**](broken-reference) - Your partner starts the request.
 
 ![](<../../.gitbook/assets/push request.svg>)
+
+### 3. Network Tokenisation (optional)
+
+In case you want to create Network Tokens via the Filter API, please make sure that your payload contains the expiry date of the credit card number (month and year) and that we have configured the integration on our side accordingly (check the payload mentioned on the integration which installed on your project in the dashboard).&#x20;
+
+**Example Payload**
+
+```javascript
+    {
+      "source": {
+            "card": {
+                "cardNumber": "4242424242424242",
+                "expiry_month_number": "05",
+                "expiry_year_number": "23"
+                }
+            }
+    }
+```
+
+#### 3.1 Alias Status&#x20;
+
+Once the request received your target url, use the alias and call the [Alias Status](../../store/manage/status.md) API to check whether a Network Token has been created. Look for the `tokenInfo` object in the response. When available, a Network Token is mapped to the PCI Proxy token.&#x20;

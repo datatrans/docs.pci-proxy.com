@@ -37,7 +37,9 @@ Where the `event` callback object has the following structure:
   "fields": {
     "cardNumber": {
       "length": 0,
-      "valid": false
+      "valid": false,
+      "paymentMethod": "VIS",
+      "coBrand": "CBL", // Information about card co-branding if available
     },
     "cvv": {
       "length": 3,
@@ -77,7 +79,9 @@ Where the `event` callback object has the following structure:
   "fields": {
     "cardNumber": {
       "length": 0,
-      "valid": false
+      "valid": false,
+      "paymentMethod": "VIS",
+      "coBrand": "CBL", // Information about card co-branding if available
     },
     "cvv": {
       "length": 0,
@@ -92,7 +96,7 @@ Where the `event` callback object has the following structure:
 }
 ```
 
-****
+
 
 #### **Browser autofill**
 

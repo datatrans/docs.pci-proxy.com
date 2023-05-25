@@ -4,6 +4,20 @@ description: Timeline of PCI Proxy releases
 
 # Release Notes
 
+## May 2023
+
+**Network Tokenisation - Filter API support**&#x20;
+
+We have added support for creating Network Tokens for requests sent through the [Filter API](../collect/filter-proxy/#3.-network-tokenisation-optional).
+
+**Network Tokenisation - Vault API support**
+
+Use the [Vault API](../collect/vault.md)[ ](../collect/vault.md)to create Network Tokens directly from your server.&#x20;
+
+**SecureFields - returning information about co-branded cards**
+
+We return information about co-branded cards in the SecureFields [on.validate](../collect/secure-fields-js/events.md#on-validate) and [on.change](../collect/secure-fields-js/events.md#on-change) events.&#x20;
+
 ## April 2023
 
 #### New Status page

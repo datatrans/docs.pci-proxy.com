@@ -42,6 +42,10 @@ Due to increased security risk, the Vault API needs to be activated for your mer
 
 ### 2. Tokenisation Request
 
+{% hint style="info" %}
+Please note that you can only create Network Tokens with Vault API when your account is activated for the [Network Tokenisation](../advanced-features/network-tokenization/) feature.&#x20;
+{% endhint %}
+
 {% swagger method="post" path="/v1/aliases/tokenize" baseUrl="https://api.sandbox.datatrans.com" summary="Vault API" %}
 {% swagger-description %}
 Submit card number, cvv code or any custom data values to receive tokens in return.  
@@ -88,6 +92,15 @@ The expiry month of the card
 `= 2` characters
 
 The expiry year of the card.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="createNetworkToken" type="Boolean" %}
+true
+
+\
+
+
+Required if you want to create a Network Token while tokenizing. Expiry date is also mandatory in that case. 
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="cvv" %}
@@ -162,7 +175,8 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/aliases/tokenize' \
             "type": "CARD",
             "pan": "4242424242424242",
             "expiryMonth": "05",
-            "expiryYear": "21"
+            "expiryYear": "21",
+            "createNetworkToken": "true"
         },
         {
             "type": "CVV",
@@ -190,7 +204,8 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/aliases/tokenize' \
             "type": "CARD",
             "alias": "AGhFLt-mj0BfI3XN",
             "maskedCC": "424242xxxxxx4242",
-            "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp"
+            "fingerprint": "F-dV5V8dE0SZLoTurWbq2HZp",
+            "networkTokenCreated": true,
         },
         {
             "type": "CVV",
@@ -206,74 +221,6 @@ curl -L -X POST 'https://api.sandbox.datatrans.com/v1/aliases/tokenize' \
 ```
 {% endtab %}
 {% endtabs %}
-
-This service requires HTTP basic authentication. The required credentials can be found in our dashboard. Please refer to [API authentication data](../resources/pci-proxy-dashboard/api-authentication-data.md#basic-authentication) for more information.
-
-### **Network Tokens**
-
-In case your merchantID is activated for Network Tokenisation, use the credit card alias returned by the Vault API and make an Alias status call to create a new Network Token. The Network Token will be mapped to the PCI Proxy alias.
-
-**Alias Status API**
-
-{% swagger method="get" path="/v1/aliases/{alias}" baseUrl="https://api.sandbox.datatrans.com" summary="Create a Network Token" %}
-{% swagger-description %}
-
-{% endswagger-description %}
-
-{% swagger-parameter in="header" name="Authorization" required="true" %}
-Basic MTEwMDAwNzAwNjpLNnFYMXUkIQ==
-
-
-{% endswagger-parameter %}
-
-{% swagger-parameter in="header" required="true" name="Content-Type" %}
-application/json; charset=UTF-8
-{% endswagger-parameter %}
-
-{% swagger-parameter in="path" name="alias" required="true" %}
-PCI Proxy alias
-{% endswagger-parameter %}
-
-{% swagger-response status="200: OK" description="Status successfully returned" %}
-```json
-{
-    "alias": "7LHXscqwAAEAAAGEFDW3rEmNoLVdAAZE",
-    "fingerprint": "F-fgxnFwN-gsIw7y80T-kpBB",
-    "type": "CARD",
-    "masked": "489537xxxxxx6287",
-    "dateCreated": "2022-10-26T12:13:00Z",
-    "card": {
-        "expiryMonth": "02",
-        "expiryYear": "23",
-        "cardInfo": {
-            "brand": "VISA",
-            "type": "debit",
-            "usage": "consumer",
-            "country": "US",
-            "issuer": "U.S. REGION"
-        },
-        "tokenInfo": {
-            "expiryMonth": "02",
-            "expiryYear": "23"
-        }
-    }
-}
-```
-{% endswagger-response %}
-
-{% swagger-response status="400: Bad Request" description="Invalid request" %}
-```json
-{
-  "error": {
-    "code": "ALIAS_NOT_FOUND"
-  }
-```
-{% endswagger-response %}
-{% endswagger %}
-
-{% hint style="info" %}
-Check the response and look if the `tokenInfo` object is available in the response. It tells you whether we have been able to create a Network Token or not.&#x20;
-{% endhint %}
 
 ### Detokenisation
 
