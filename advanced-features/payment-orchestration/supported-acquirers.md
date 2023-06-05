@@ -7,3 +7,8 @@
 {% hint style="info" %}
 Do you miss an acquirer? Please [contact](../../help/contact.md) us.&#x20;
 {% endhint %}
+
+{% hint style="info" %}
+Check here all the payment methods supported by Datatrans [https://www.datatrans.ch/en/features/payment-methods/](https://www.datatrans.ch/en/features/payment-methods/)
+{% endhint %}
+
