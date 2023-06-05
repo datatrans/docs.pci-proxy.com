@@ -5,15 +5,15 @@ Within the Scale and Enterprise subscription plan the Administrator of a contrac
 {% endhint %}
 
 **Create a new Project**\
-****\
-****1) Navigate to the Projects menu within the Contract section\
+\
+1\) Navigate to the Projects menu within the Contract section\
 2\) Scroll down and press the green `Create Project` button\
 3\) Enter a name for the new Project\
 4\) Continue with setting up the integrations for this Project
 
 **Remove a Project**\
-****\
-****1) Navigate to the Projects menu within the Contract section\
+\
+1\) Navigate to the Projects menu within the Contract section\
 2\) Scroll down a little and press the red `Delete` button\
 3\) Confirm your request of deletion
 

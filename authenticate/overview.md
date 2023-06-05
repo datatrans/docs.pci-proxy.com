@@ -6,18 +6,7 @@ Protect yourself against fraudulent transactions using our unique vendor-indepen
 
 PCI Proxy complies with the latest 3D Secure 2 standard from [EMVCo](https://www.linkedin.com/company/emvco/):
 
-| Brand                                                                                                                    | Code  | Version        |
-| ------------------------------------------------------------------------------------------------------------------------ | ----- | -------------- |
-| <img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard                                          | `ECA` | 3-D Secure 2.2 |
-| <img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa                                                      | `VIS` | 3-D Secure 2.2 |
-| <img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express                                | `AMX` | 3-D Secure 2.2 |
-| <img src="../.gitbook/assets/diners.svg" alt="" data-size="line">Diners Club                                             | `DIN` | 3-D Secure 2.1 |
-| <img src="../.gitbook/assets/discover.svg" alt="" data-size="line">Discover                                              | `DIS` | 3-D Secure 2.1 |
-| <img src="../.gitbook/assets/1200px-China-UnionPay-Logo.svg.png" alt="" data-size="line"> Union Pay                      | `CUP` | 3-D Secure 2.2 |
-| <img src="../.gitbook/assets/Maestro_2016.svg.png" alt="" data-size="line">  Maestro                                     | `MAU` | 3-D Secure 2.2 |
-| <img src="../.gitbook/assets/Dankort.png" alt="" data-size="line">Dankort                                                | `DNK` | 3-D Secure 2.1 |
-| <img src="../.gitbook/assets/logo_jcb.png" alt="" data-size="line"> JCB                                                  | `JCB` | 3-D Secure 2.2 |
-| <img src="../.gitbook/assets/webimage-0D45FA73-E241-49FC-9F4CCF6FD9747B83.jpg" alt="" data-size="line"> Cartes Bancaires | `CBL` | 3-D Secure 2.2 |
+<table><thead><tr><th width="292.4400248601616">Brand</th><th width="150">Code</th><th>Version</th></tr></thead><tbody><tr><td><img src="../.gitbook/assets/mastercard.svg" alt="" data-size="line">Mastercard</td><td><code>ECA</code></td><td>3-D Secure 2.2</td></tr><tr><td><img src="../.gitbook/assets/visa.svg" alt="" data-size="line">Visa</td><td><code>VIS</code></td><td>3-D Secure 2.2</td></tr><tr><td><img src="../.gitbook/assets/card_amex-old.svg" alt="" data-size="line"> American Express</td><td><code>AMX</code></td><td>3-D Secure 2.2</td></tr><tr><td><img src="../.gitbook/assets/diners.svg" alt="" data-size="line">Diners Club</td><td><code>DIN</code></td><td>3-D Secure 2.1</td></tr><tr><td><img src="../.gitbook/assets/discover.svg" alt="" data-size="line">Discover</td><td><code>DIS</code></td><td>3-D Secure 2.1</td></tr><tr><td><img src="../.gitbook/assets/1200px-China-UnionPay-Logo.svg.png" alt="" data-size="line"> Union Pay</td><td><code>CUP</code></td><td>3-D Secure 2.2</td></tr><tr><td><img src="../.gitbook/assets/Maestro_2016.svg.png" alt="" data-size="line">  Maestro</td><td><code>MAU</code></td><td>3-D Secure 2.2</td></tr><tr><td><img src="../.gitbook/assets/Dankort.png" alt="" data-size="line">Dankort</td><td><code>DNK</code></td><td>3-D Secure 2.1</td></tr><tr><td><img src="../.gitbook/assets/logo_jcb.png" alt="" data-size="line"> JCB</td><td><code>JCB</code></td><td>3-D Secure 2.2</td></tr><tr><td><img src="../.gitbook/assets/webimage-0D45FA73-E241-49FC-9F4CCF6FD9747B83.jpg" alt="" data-size="line"> Cartes Bancaires</td><td><code>CBL</code></td><td>3-D Secure 2.2</td></tr></tbody></table>
 
 ## Integration
 

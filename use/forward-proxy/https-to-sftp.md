@@ -72,12 +72,5 @@ _Note: In test mode, only test credit cards are allowed!_
 | ----------------------------------- |
 | https://sandbox.pci-proxy.com/v1/ft |
 
-| Required parameter | Description                     | Example Value                                                                |
-| ------------------ | ------------------------------- | ---------------------------------------------------------------------------- |
-| `merchantId`       | Your Merchant ID                | 1000011011                                                                   |
-| `sign`             | Configured Security Sign        | 130709090849785405                                                           |
-| `url`              | Your SFTP endpoint              | sftp://username@example.com/folder/test-filename.t                           |
-| `file`             | The file you want to upload     | some+file+content                                                            |
-| `password`         | Your password                   | asdfölksdjfasjdh                                                             |
-| `type`             | Filetype of transmitted request | `BTA`, `TAMARA`, `DINERSMINERVA`, `TACS`, `TAED`, `VISAIBERIA` or `VISABBVA` |
+<table><thead><tr><th width="189">Required parameter</th><th width="179">Description</th><th>Example Value</th></tr></thead><tbody><tr><td><code>merchantId</code></td><td>Your Merchant ID</td><td>1000011011</td></tr><tr><td><code>sign</code></td><td>Configured Security Sign </td><td>130709090849785405</td></tr><tr><td><code>url</code></td><td>Your SFTP endpoint</td><td>sftp://username@example.com/folder/test-filename.t</td></tr><tr><td><code>file</code></td><td>The file you want to upload</td><td>some+file+content</td></tr><tr><td><code>password</code></td><td>Your password</td><td>asdfölksdjfasjdh</td></tr><tr><td><code>type</code></td><td>Filetype of transmitted request</td><td><code>BTA</code>, <code>TAMARA</code>, <code>DINERSMINERVA</code>, <code>TACS</code>, <code>TAED</code>, <code>VISAIBERIA</code> or <code>VISABBVA</code></td></tr></tbody></table>
 

@@ -4,6 +4,12 @@ description: Timeline of PCI Proxy releases
 
 # Release Notes
 
+## June 2023
+
+**New integration method - Wallet tokenisation**&#x20;
+
+Start capturing card credentials stored in Google or Apple Pay wallets with our [direct wallet integration](../collect/wallet-tokenisation/).&#x20;
+
 ## May 2023
 
 **Network Tokenisation - Filter API support**&#x20;

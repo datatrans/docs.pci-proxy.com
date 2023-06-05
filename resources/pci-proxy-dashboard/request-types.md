@@ -19,9 +19,9 @@ Receiving card data from a remote server (Channel) can work in two ways. In gene
 {% tab title="PULL via PCI Proxy" %}
 ![](<../../.gitbook/assets/pull channel (1) (1).svg>)
 
-****
 
-1. ****[**You start a request**](../../collect/filter-proxy/https/pull.md) to the PCI Proxy endpoint.
+
+1. [**You start a request**](../../collect/filter-proxy/https/pull.md) to the PCI Proxy endpoint.
 2. PCI Proxy forwards the request to the Channel API endpoint.
 3. The Channel returns a response containing sensitive data to PCI Proxy.
 4. PCI Proxy scans the response and tokenizes the card data.
@@ -59,9 +59,9 @@ Forwarding card data to a remote server (Receiver) can work in two ways. In gene
 {% tab title="PULL via PCI Proxy" %}
 ![](<../../.gitbook/assets/pull receiver (1).svg>)
 
-****
 
-1. ****[**You start a request with token**](../../use/forward-proxy/https/pull.md) to a PCI Proxy endpoint.
+
+1. [**You start a request with token**](../../use/forward-proxy/https/pull.md) to a PCI Proxy endpoint.
 2. PCI Proxy detokenizes and populates the request with card data.
 3. PCI Proxy forwards the **request with card data** to a Receiver.&#x20;
 {% endtab %}
